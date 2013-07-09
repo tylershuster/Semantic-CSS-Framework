@@ -21,36 +21,37 @@ $width-twelve: 96em;
 
 @mixin key($key){
 	@if $key == a {
-		$em: $em * 0.75;
+		* { font-size: 75%;}
 	}
 	@else if $key == b {
-		$em: $em * 0.875;
+		* { font-size: 087.5%;}
 	}
 	@else if $key == c {
-		$em: $em * 1;
+		* { font-size: 100%;}
 	}
 	@else if $key == d {
-		$em: $em * 1.125;
+		* { font-size: 112.5%;}
 	}
 	@else if $key == e {
-		$em: $em * 1.25;
+		* { font-size: 125%;}
 	}
 	@else if $key == f {
-		$em: $em * 1.375;
+		* { font-size: 137.5%;}
 	}
 	@else if $key == g {
-		$em: $em * 1.5;
+		* { font-size: 150%;}
 	}
 }
 
 @mixin tone($ratio) {
 	$line-height: ceil($ratio + 0.1)  / $ratio;//set the line height to the max lines taken by the font
-	$margin: 2/$ratio/2;
+	//$margin: 2/$ratio/2;
 	font-size: $ratio * ($em / 16) * 1em;
 	line-height: ceil($line-height * 16 * $ratio) *  1px;
 	//margin:  (($em / 16) * ($em * 1px)) 0;
-	padding-top: 0.62rem;
-	padding-bottom: 0.38rem;
+	//padding-top: 0.62rem;
+	//padding-bottom: 0.38rem;
+	margin: 0; padding: 0;
 
 }
 

@@ -876,31 +876,32 @@ header h1 {
   /*site tite*/
   display: inline-block;
   float: left;
+  line-height: 5rem;
   margin-left: 1rem;
   margin-top: 0;
-  line-height: 5rem;
+  padding: 0;
 }
-/* line 20, ../sass/partials/base/header/_common.scss */
+/* line 22, ../sass/partials/base/header/_common.scss */
 header address {
   /*address info*/
 }
-/* line 23, ../sass/partials/base/header/_common.scss */
+/* line 25, ../sass/partials/base/header/_common.scss */
 header section.masthead {
   /*masthead is centered on page*/
 }
-/* line 25, ../sass/partials/base/header/_common.scss */
+/* line 27, ../sass/partials/base/header/_common.scss */
 header section.masthead img.logo {
   /*site logo*/
 }
-/* line 26, ../sass/partials/base/header/_common.scss */
+/* line 28, ../sass/partials/base/header/_common.scss */
 header section.masthead h1 {
   /*site title*/
 }
-/* line 27, ../sass/partials/base/header/_common.scss */
+/* line 29, ../sass/partials/base/header/_common.scss */
 header section.masthead address {
   /*address info*/
 }
-/* line 29, ../sass/partials/base/header/_common.scss */
+/* line 31, ../sass/partials/base/header/_common.scss */
 header section.user {
   background-color: #ff5400;
   height: 2em;
@@ -908,20 +909,20 @@ header section.user {
   margin-right: 1rem;
   text-align: center;
 }
-/* line 35, ../sass/partials/base/header/_common.scss */
+/* line 37, ../sass/partials/base/header/_common.scss */
 header section.user a {
   color: #001060;
   text-decoration: none;
   margin: 0 1rem;
 }
-/* line 41, ../sass/partials/base/header/_common.scss */
+/* line 43, ../sass/partials/base/header/_common.scss */
 header section.social {
   height: 2em;
   text-align: right;
   display: table;
   padding-right: 1rem;
 }
-/* line 46, ../sass/partials/base/header/_common.scss */
+/* line 48, ../sass/partials/base/header/_common.scss */
 header section.social a {
   display: table-cell;
   float: right;
@@ -931,7 +932,7 @@ header section.social a {
   color: #ff5400;
   text-decoration: none;
 }
-/* line 56, ../sass/partials/base/header/_common.scss */
+/* line 58, ../sass/partials/base/header/_common.scss */
 header section.search {
   position: fixed;
   top: 2rem;
@@ -940,16 +941,16 @@ header section.search {
   text-align: right;
   padding-right: 1rem;
 }
-/* line 63, ../sass/partials/base/header/_common.scss */
+/* line 65, ../sass/partials/base/header/_common.scss */
 header section.search form input {
   height: 1.5rem;
   margin-top: 0.75em;
 }
-/* line 67, ../sass/partials/base/header/_common.scss */
+/* line 69, ../sass/partials/base/header/_common.scss */
 header section.search .compact {
   /*expanding box*/
 }
-/* line 70, ../sass/partials/base/header/_common.scss */
+/* line 72, ../sass/partials/base/header/_common.scss */
 header nav {
   position: fixed;
   top: 5em;
@@ -958,7 +959,7 @@ header nav {
   color: #001060;
   float: left;
 }
-/* line 77, ../sass/partials/base/header/_common.scss */
+/* line 79, ../sass/partials/base/header/_common.scss */
 header nav ul {
   width: 100%;
   margin: 0;
@@ -967,19 +968,19 @@ header nav ul {
   list-style: none;
   display: table;
 }
-/* line 85, ../sass/partials/base/header/_common.scss */
+/* line 87, ../sass/partials/base/header/_common.scss */
 header nav li {
   display: table-cell;
   text-align: center;
   padding: 1em;
 }
-/* line 89, ../sass/partials/base/header/_common.scss */
+/* line 91, ../sass/partials/base/header/_common.scss */
 header nav li > a {
   color: #001060;
   display: block;
   text-decoration: none;
 }
-/* line 96, ../sass/partials/base/header/_common.scss */
+/* line 98, ../sass/partials/base/header/_common.scss */
 header #show-mobile-nav {
   color: #ff5400;
   font-family: "Entypo";
@@ -993,7 +994,7 @@ header #show-mobile-nav {
 }
 
 @media all and (max-width: 639px) {
-  /* line 111, ../sass/partials/base/header/_common.scss */
+  /* line 113, ../sass/partials/base/header/_common.scss */
   .mobile-nav {
     width: calc(100% - 5rem);
     margin-top: 5rem;
@@ -1001,50 +1002,50 @@ header #show-mobile-nav {
     color: #002bff;
     z-index: 150;
   }
-  /* line 118, ../sass/partials/base/header/_common.scss */
+  /* line 120, ../sass/partials/base/header/_common.scss */
   .mobile-nav img.logo {
     /*site logo*/
   }
-  /* line 119, ../sass/partials/base/header/_common.scss */
+  /* line 121, ../sass/partials/base/header/_common.scss */
   .mobile-nav h1 {
     /*site tite*/
   }
-  /* line 120, ../sass/partials/base/header/_common.scss */
+  /* line 122, ../sass/partials/base/header/_common.scss */
   .mobile-nav address {
     /*address info*/
   }
-  /* line 123, ../sass/partials/base/header/_common.scss */
+  /* line 125, ../sass/partials/base/header/_common.scss */
   .mobile-nav section.masthead {
     /*masthead is centered on page*/
   }
-  /* line 126, ../sass/partials/base/header/_common.scss */
+  /* line 128, ../sass/partials/base/header/_common.scss */
   .mobile-nav section.masthead img.logo {
     /*site logo*/
   }
-  /* line 127, ../sass/partials/base/header/_common.scss */
+  /* line 129, ../sass/partials/base/header/_common.scss */
   .mobile-nav section.masthead h1 {
     /*site title*/
   }
-  /* line 128, ../sass/partials/base/header/_common.scss */
+  /* line 130, ../sass/partials/base/header/_common.scss */
   .mobile-nav section.masthead address {
     /*address info*/
   }
-  /* line 138, ../sass/partials/base/header/_common.scss */
+  /* line 140, ../sass/partials/base/header/_common.scss */
   .mobile-nav section.search .compact {
     /*expanding box*/
   }
-  /* line 141, ../sass/partials/base/header/_common.scss */
+  /* line 143, ../sass/partials/base/header/_common.scss */
   .mobile-nav nav {
     width: calc(100% - 5rem);
   }
-  /* line 144, ../sass/partials/base/header/_common.scss */
+  /* line 146, ../sass/partials/base/header/_common.scss */
   .mobile-nav nav li {
     display: block;
     width: 100%;
     background-color: #001060;
     color: #002bff;
   }
-  /* line 149, ../sass/partials/base/header/_common.scss */
+  /* line 151, ../sass/partials/base/header/_common.scss */
   .mobile-nav nav li > a {
     text-align: left;
     color: #002bff;
@@ -1384,7 +1385,7 @@ header #show-mobile-nav {
     width: 46.66667%;
     float: left;
     margin-right: -100%;
-    margin-left: 26.66667%;
+    margin-left: 0%;
     clear: none;
     /*masthead is centered on page*/
   }
@@ -1564,38 +1565,75 @@ article {
     margin-top: 8rem;
   }
 }
+/* line 30, ../sass/utilities/variables.scss */
+* {
+  font-size: 100%;
+}
+
 /* line 3, ../sass/partials/base/_typography.scss */
 h1 {
+  font-size: 1.5em;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  text-transform: uppercase;
   color: #001060;
   font-family: "Open Sans";
 }
 
 /* line 8, ../sass/partials/base/_typography.scss */
 h2 {
+  font-size: 1.25em;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
   color: #aaff00;
   font-family: "Open Sans";
 }
 
 /* line 13, ../sass/partials/base/_typography.scss */
 h3 {
+  font-size: 1.25em;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
   color: #9eaeff;
   font-family: "Open Sans";
 }
 
 /* line 18, ../sass/partials/base/_typography.scss */
 h4 {
+  font-size: 1.25em;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
   color: #ff5400;
   font-family: "Open Sans";
 }
 
 /* line 23, ../sass/partials/base/_typography.scss */
 h5 {
+  font-size: 1.25em;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
   color: #ff5400;
   font-family: "Open Sans";
 }
 
 /* line 28, ../sass/partials/base/_typography.scss */
 p, span, cite, time {
+  font-size: 1em;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  /*padding-top: 0.62em;padding-bottom:0.38em;*/
   color: #001060;
   font-family: "Gentium Basic";
 }

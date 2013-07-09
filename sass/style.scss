@@ -1,6 +1,6 @@
 /*--------------------------main.scss-------------------------------*/
 $key: c;					//Specify the key in which to set your piece
-$quality: dom9;				//Specify the quality of your piece. Pick something that fits the feel of the page
+$quality: maj;				//Specify the quality of your piece. Pick something that fits the feel of the page
 
 $sans: Open Sans;
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
@@ -54,8 +54,6 @@ $legacy-support-for-mozilla: false;
 // Import Utilities
 //////////////////////////////
 @import "utilities/color/color-schemer";
-
-@import "utilities/typography/music";
 
 @import "breakpoint";
 
