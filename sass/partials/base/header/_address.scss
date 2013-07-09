@@ -1,0 +1,70 @@
+address{
+	position: relative;
+	top: 2em;
+	padding-right: 1rem;
+	a.tel{}
+	a.html{}
+	a.mail{
+		span.streetAddress{}
+		span.addressLocality{}
+		span.addressRegion{}
+		span.postalCode{}
+		span.addressCountry{}
+	}
+	a.email{}
+	a.gps{}
+	@mixin social{
+		&:before{
+			display: block;
+			font-family: "Entypo";
+			text-decoration: none;
+			color: $color-tertiary;
+			float: right;
+			margin: 0 0.38rem;
+		}
+		
+	}
+	a.twitter{
+		@include social;
+		&:before{
+			content: "\f309";
+		}
+	}
+	a.gplus{
+		@include social;
+		&:before{
+			content: "\f30f";
+		}
+	}
+	a.facebook{
+		@include social;
+		&:before{
+			content: "\f30c";
+		}
+	}
+	a.linkedin{
+		@include social;
+		&:before{
+			content: "\f318";
+		}
+	}
+	a.tumblr{
+		@include social;
+		&:before{
+			content: "\f315";
+		}
+	}
+	a.instagram{
+		@include social;
+		&:before{
+			content: "\f32d";
+		}
+	}
+	a.dribbble{
+		@include social;
+		&:before{
+			content: "\f31b";
+			
+		}
+	}
+}

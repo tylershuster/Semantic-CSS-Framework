@@ -1,0 +1,205 @@
+
+@mixin key($key){
+	@if $key == a {
+		$em: $em * 0.75;
+	}
+	@else if $key == b {
+		$em: $em * 0.875;
+	}
+	@else if $key == c {
+		$em: $em * 1;
+	}
+	@else if $key == d {
+		$em: $em * 1.125;
+	}
+	@else if $key == e {
+		$em: $em * 1.25;
+	}
+	@else if $key == f {
+		$em: $em * 1.375;
+	}
+	@else if $key == g {
+		$em: $em * 1.5;
+	}
+}
+
+@mixin tone($ratio) {
+	$line-height: ceil($ratio + 0.1)  / $ratio;//set the line height to the max lines taken by the font
+	$margin: 2/$ratio/2;
+	font-size: $ratio * ($em / 16) * 1em;
+	line-height: ceil($line-height * 16 * $ratio) *  1px;
+	//margin:  (($em / 16) * ($em * 1px)) 0;
+	padding-top: 0.62rem;
+	padding-bottom: 0.38rem;
+
+}
+
+
+@mixin root-flat {@include tone(1);font-weight:normal;text-transform:lowercase;opacity:0.62;}
+@mixin root {@include tone(1.0);font-weight: normal;/*padding-top: 0.62em;padding-bottom:0.38em;*/}
+@mixin root-sharp {@include tone(1);font-style: italic;}
+@mixin note-b2 {@include tone(1.067);font-weight: normal;}
+@mixin note-2 {@include tone(1.125);font-weight: bold;}
+@mixin note-s2 {@include tone(1.2);font-weight: bold;font-style: italic;}
+@mixin note-b3 {@include tone(1.2);font-weight: normal;}
+@mixin note-3 {@include tone(1.25);font-weight: bold;}
+@mixin note-4 {@include tone(1.33);font-weight: bold;text-transform: uppercase;}
+@mixin note-s4 {@include tone(1.414);font-weight: bold;font-style: italic;}
+@mixin note-b5 {@include tone(1.414);font-weight: bold;opacity: 0.62;}
+@mixin note-5 {@include tone(1.5);font-weight: bold;text-transform: uppercase;}
+@mixin note-s5 {@include tone(1.6);font-weight: bold;font-style: italic;}
+@mixin note-b6 {@include tone(1.6);font-weight: normal;}
+@mixin note-6 {@include tone(1.667);font-weight: bold;}
+@mixin note-s6 {@include tone(1.778);font-weight: bold;font-style: italic;}
+@mixin note-b7 {@include tone(1.778);font-weight: normal;}
+@mixin note-7 {@include tone(1.875);font-weight: bold;}
+@mixin note-8 {@include tone(2);font-weight: bold;text-transform: uppercase;}
+@mixin note-s8 {@include tone(2.134);font-weight:bold;font-style: italic;}
+@mixin note-b9 {@include tone(2.134);font-weight: normal;}
+@mixin note-9 {@include tone(2.25);font-weight: bold;}
+@mixin note-s9 {@include tone(2.4);font-weight: bold;font-style: italic;}
+@mixin note-b10 {@include tone(2.5);font-weight: normal;}
+@mixin note-10 {@include tone(2.5);font-weight: bold;}
+@mixin note-11 {@include tone(2.66);font-weight: bold;text-transform: uppercase;}
+@mixin note-s11 {@include tone(2.818);font-weight: bold;font-style: italic;}
+@mixin note-b12 {@include tone(2.818);font-weight: normal;opacity: 0.62;}
+@mixin note-12 {@include tone(3);font-weight: bold;text-transform: uppercase;}
+@mixin note-s12 {@include tone(3.201);font-weight: bold;font-style: italic;}
+@mixin note-b13 {@include tone(3.201);font-weight: normal;}
+@mixin note-13 {@include tone(3.375);font-weight: bold;}
+
+
+
+@mixin typography($size){
+		@if 		$quality ==  min {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
+			@else {	@include note-b3;}
+		}
+		@else if $quality ==  maj {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
+			@else {@include note-3;}
+		}
+		@else if $quality ==  dim {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-b5; $grid-base-height: 1.414em;}
+			@else {	@include note-b3;}
+		}
+		@else if $quality ==  aug {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-s5; $grid-base-height: 1.6em;}
+			@else {@include note-3;}
+		}
+		@else if $quality ==  augmin7 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
+			@else if $size == size-two{	@include note-s5;}
+			@else {@include note-3;}
+		}
+		@else if $quality ==  sus {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
+			@else if $size == size-two{	@include note-4;}
+			@else {	@include note-4;}
+		}
+		@else if $quality ==  sus2 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
+			@else if $size == size-two{	@include note-2;}
+			@else {	@include note-2;}
+		}
+		@else if $quality ==  eleventh {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-11; $grid-base-height: 2.66em;}
+			@else if $size == size-two{	@include note-9;}
+			@else if $size == size-three{	@include note-b7;}
+			@else if $size == size-four{	@include note-5;}
+			@else {@include note-3;}
+		}
+		@else if $quality ==  min7 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
+			@else if $size == size-two{	@include note-5;}
+			@else if $size == size-three{	@include note-3;}
+			@else if $size == size-four{	@include note-b3;}
+			@else {	@include note-b3;}
+		}
+		@else if $quality ==  maj7 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-7; $grid-base-height: 1.875em;}
+			@else if $size == size-two{	@include note-5;}
+			@else if $size == size-three{	@include note-3;}
+			@else if $size == size-four{	@include note-3;}
+			@else {@include note-3;}
+		}
+		@else if $quality ==  dom7 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
+			@else if $size == size-two{	@include note-5;}
+			@else if $size == size-three{	@include note-b3;}
+			@else if $size == size-four{	@include note-b3;}
+			@else {	@include note-b3;}
+		}
+		@else if $quality ==  dim7 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
+			@else if $size == size-two{	@include note-b5;}
+			@else if $size == size-three{	@include note-b3;}
+			@else if $size == size-four{	@include note-b3;}
+			@else {	@include note-b3;}
+		}
+		@else if $quality ==  min6 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-6; $grid-base-height: 1.667em;}
+			@else if $size == size-two{	@include note-5;}
+			@else if $size == size-three{	@include note-b3;}
+			@else if $size == size-four{	@include note-b3;}
+			@else {	@include note-b3;}
+		}
+		@else if $quality ==  maj6 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-6; $grid-base-height: 1.667em;}
+			@else if $size == size-two{	@include note-5;}
+			@else if $size == size-three{	@include note-3;}
+			@else if $size == size-four{	@include note-3;}
+			@else {@include note-3;}
+		}
+		@else if $quality ==  domflat9 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-b9; $grid-base-height: 2.134em;}
+			@else if $size == size-two{	@include note-b7;}
+			@else if $size == size-three{	@include note-5;}
+			@else if $size == size-four{	@include note-3;}
+			@else {@include note-3;}
+		}
+		@else if $quality ==  domsharp9 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-s9; $grid-base-height: 2.4em;}
+			@else if $size == size-two{	@include note-b7;}
+			@else if $size == size-three{	@include note-5;}
+			@else if $size == size-four{	@include note-3;}
+			@else {@include note-3;}
+		}
+		@else if $quality ==  min9 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-9; $grid-base-height: 2.25em;}
+			@else if $size == size-two{	@include note-b7;}
+			@else if $size == size-three{	@include note-5;}
+			@else if $size == size-four{	@include note-b3;}
+			@else {	@include note-b3;}
+		}
+		@else if $quality ==  maj9 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-9; $grid-base-height: 2.25em;}
+			@else if $size == size-two{	@include note-7;}
+			@else if $size == size-three{	@include note-5;}
+			@else if $size == size-four{	@include note-3;}
+			@else {@include note-3;}
+		}
+		@else if $quality ==  perfect5 {
+			@if 		$size == size-base{	@include root;}
+			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
+			@else {	@include note-5;}
+		}
+}

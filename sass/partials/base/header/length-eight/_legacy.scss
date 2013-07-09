@@ -1,0 +1,41 @@
+/*header styles on devices from 1024px-1664px*/
+header{
+	@include grid-span(8,1,8);
+	/*multiple headers get styled into tabs. See foxnews for example*/
+	img.logo{/*site logo*/}
+	h1{/*site tite*/}
+	address{/*address info*/}
+
+	section{
+		&.masthead{
+			@include grid-span(4,3,8);
+			/*masthead is centered on page*/
+			img.logo{/*site logo*/}
+			h1{/*site title*/}
+			address{/*address info*/}
+		}
+		&.user{
+			@include grid-span(2,7,8);
+			a{}
+		}
+		&.social{
+			@include grid-span(2,5,8);
+			a{}
+		}
+		&.search{
+			@include grid-span(3,6,8);
+			form input{	}
+			.compact{/*expanding box*/}
+		}
+	}
+	nav{
+		@include grid-span(8,1,8);
+		ul{}
+		li{
+			> a{}
+		}
+	}
+	#show-mobile-nav{
+		display: none;
+	}
+}

@@ -1,0 +1,300 @@
+header{
+	height: 8rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*multiple headers get styled into tabs. See foxnews for example*/
+	img.logo{/*site logo*/
+		display: inline-block;
+		float: left;
+    	height: 5rem;
+    	margin-left: 1rem;
+	}
+	h1{/*site tite*/
+		display: inline-block;
+		float: left;
+		margin-left: 1rem;
+		margin-top: 0;
+		line-height: 5rem;
+	}
+	address{/*address info*/}
+
+	section{
+		&.masthead{
+			/*masthead is centered on page*/
+			img.logo{/*site logo*/}
+			h1{/*site title*/}
+			address{/*address info*/}
+		}
+		&.user{
+			background-color: $color-tertiary;
+			height: 2em;
+			padding: 0.38rem 0 0.62rem 0;
+			margin-right: 1rem;
+			text-align: center;
+			a{
+				color: $color-text;
+				text-decoration: none;
+				margin: 0 1rem;
+			}
+		}
+		&.social{
+			height: 2em;
+			text-align: right;
+			display: table;
+			padding-right: 1rem;
+			a{
+				display: table-cell;
+				float: right;
+				width: 1em;
+				padding: 0.5em 1em;
+				font-family: "Entypo";
+				color: $color-tertiary;
+				text-decoration: none;
+			}
+		}
+		&.search{
+			position: fixed;
+			top: 2rem;
+			right: 0;
+			height: 3rem;
+			text-align: right;
+			padding-right: 1rem;
+			form input{
+				height: 1.5rem;
+				margin-top: 0.75em;
+			}
+			.compact{/*expanding box*/}
+		}
+	}
+	nav{
+		position: fixed;
+		top: 5em;
+		height: 3rem;
+		background-color: $color-tertiary;
+		color: $color-text;
+		float: left;
+		ul{
+			width: 100%;
+			margin: 0;
+			height: 3rem;
+			padding: 0;
+			list-style: none;
+			display: table;
+		}
+		li{
+			display: table-cell;
+			text-align: center;
+			padding: 1em;
+			> a{
+				color: $color-text;
+				display: block;
+				text-decoration: none;
+			}
+		}
+	}
+	#show-mobile-nav{
+		color: $color-tertiary;
+		font-family: "Entypo";
+		font-size: 5em;
+		display: block;
+		position: fixed;
+		text-decoration: none;
+		top: -0.38rem;
+		left: -0.5em;
+		overflow: visible;
+	}
+}
+
+
+
+.mobile-nav{
+	@media all and (max-width:#{$length-five - 1 * 1px}){
+		width: calc(100% - 5rem);
+		margin-top: 5rem;
+		background-color: $color-shade;
+		color: $color-primary;
+		z-index: 150;
+		img.logo{/*site logo*/}
+		h1{/*site tite*/}
+		address{/*address info*/}
+
+		section{
+			&.masthead{
+				//@include grid-span(4,3,13);
+				/*masthead is centered on page*/
+				img.logo{/*site logo*/}
+				h1{/*site title*/}
+				address{/*address info*/}
+			}
+			&.user{
+				a{}
+			}
+			&.social{
+				a{}
+			}
+			&.search{
+				form input{	}
+				.compact{/*expanding box*/}
+			}
+		}
+		nav{
+			width: calc(100% - 5rem);
+			ul{	}
+			li{
+				display: block;
+				width: 100%;
+				background-color: $color-shade;
+				color: $color-primary;
+				> a{
+					text-align: left;
+					color: $color-primary;
+				}
+			}
+		}
+	}
+}
+
+/*navobile*/
+
+/*
+.navobile-navigation {
+  background-color: $color-shade;
+  height: 100%;
+  left: 0;
+  margin-top: 5rem;
+  overflow: auto;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 85%;
+  z-index: 1;
+  > li{
+    @include grid-span(3,2,5);
+    display: block;
+    padding: 1rem 0;
+    > a{
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+#navobile-device-pixel {
+  width: 0;
+}
+
+.navobile-bound {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+#navobile-device-pixel {
+  width: 1px;
+}
+
+.navobile-navigation ul {
+  overflow: hidden;
+}
+
+.navobile-navigation li {
+  float: none;
+  overflow: hidden;
+}
+
+.navobile-content {
+  position: relative;
+  z-index: 3;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  -moz-transition: -moz-transform 0.2s linear;
+  -o-transition: -ms-transform 0.2s linear;
+  -ms-transition: -o-transform 0.2s linear;
+  transition: transform 0.2s linear;
+}
+
+.csstransforms .navobile-content {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.csstransforms main.navobile-content-hidden {
+  -webkit-transform: translateX(85%);
+  -moz-transform: translateX(85%);
+  -ms-transform: translateX(85%);
+  -o-transform: translateX(85%);
+  transform: translateX(85%);
+}
+
+.csstransforms3d .navobile-content {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.csstransforms main.navobile-content-hidden {
+  -webkit-transform: translate3d(85%,0,0);
+  -moz-transform: translate3d(85%,0,0);
+  -ms-transform: translate3d(85%,0,0);
+  -o-transform: translate3d(85%,0,0);
+  transform: translate3d(85%,0,0);
+}
+
+
+  * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+
+
+
+  .mobile-header-bar {
+    background: #ef6e6e;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .mobile-header-bar .icon {
+   
+  }
+
+  .mobile-header-bar .icon:hover,
+  .mobile-header-bar .icon:active {
+    background: rgba(0,0,0,0.1);
+  }
+
+
+  nav ul {
+    margin: 0;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav li:first-of-type {
+    border-top: 0;
+  }
+
+ 
+
+  nav a:hover,
+  nav a:active {
+    background: rgba(0,0,0,0.1);
+  }
+
+  #navobile-navigation a:before {
+    margin-right: 10px;
+  }
+  */
+
+
+

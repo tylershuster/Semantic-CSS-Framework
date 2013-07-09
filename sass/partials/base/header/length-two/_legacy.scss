@@ -1,0 +1,17 @@
+/*styles for screens 256-384px*/
+header{
+	@include grid-span(2,1,2);
+	height: 5rem;
+	img.logo{}
+	h1{}
+	address{display: none;}
+	section{
+		&.masthead{	}
+		&.user{
+			@include grid-span(1,2,2);
+			a{}
+		}
+		&.search{display: none;}
+	}
+	nav{}
+}

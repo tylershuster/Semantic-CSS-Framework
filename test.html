@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://madebymade.github.io/jquery-navobile/javascripts/lib/modernizer.min.js"></script>
+    <script src="http://madebymade.github.io/jquery-navobile/javascripts/lib/hammer.min.js"></script>
+    <script src="http://madebymade.github.io/jquery-navobile/javascripts/lib/jquery.hammer.js"></script>
+    <script src="http://madebymade.github.io/jquery-navobile/javascripts/lib/jquery.navobile.min.js"></script>
+
+
+
+</head>
+<body>
+	<header>
+		<section class="masthead">
+			<img src="http://lorempixel.com/400/200" alt="" class="logo">
+			<h1>Site Title</h1>
+		</section>
+		<nav>
+			<ul>
+				<li><a href="#">Nav Link 1</a></li>
+				<li><a href="#">Nav Link 2</a></li>
+				<li><a href="#">Nav Link 3</a></li>
+				<li><a href="#">Nav Link 4</a></li>
+				<li><a href="#">Nav Link 5</a></li>
+			</ul>
+			<a href="#" id="show-mobile-nav">☰</a>
+		</nav>
+		<section class="user">
+			<a href="#">Login</a>
+		</section>
+		<section class="search">
+			<form action="">
+				<input type="search" value="" />
+				<input type="submit">
+			</form>
+		</section>
+		<address>
+			<a href="#" class="facebook"></a>
+			<a href="#" class="twitter"></a>
+			<a href="#" class="gplus"></a>
+		</address>
+	</header>
+	<main>
+		<article>
+			<h1>Header 1</h1>
+			<h2>Header 2</h2>
+			<h3>Header 3</h3>
+			<h4>Header 4</h4>
+			<h5>Header 5</h5>
+			<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in egestas purus. Pellentesque venenatis, tellus sit amet tempor luctus, orci augue dictum diam, et posuere mauris massa nec turpis. Pellentesque nunc nisl, gravida sit amet consectetur eget, luctus at nulla. Nunc tincidunt venenatis blandit. Vestibulum tristique interdum tortor, non consectetur libero vulputate imperdiet. Curabitur ipsum leo, consequat ut mattis id, varius non enim. Ut semper, odio eu adipiscing volutpat, risus lectus elementum nibh, sed vulputate erat felis vitae dui. Curabitur ac libero lacinia, sagittis nibh quis, mattis sem. Aenean ullamcorper tortor at risus rutrum hendrerit. Sed a consequat purus, quis semper justo. Aliquam iaculis quam sit amet nulla imperdiet pretium. Donec tempus mauris ut ornare bibendum.
+	</p>
+	<blockquote>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		<cite>Lorem Ipsum</cite>
+	</blockquote>
+	<p>
+	Curabitur convallis turpis pretium libero hendrerit, in sagittis lorem semper. Morbi facilisis sollicitudin viverra. Curabitur sagittis nisi a sodales venenatis. Sed vestibulum porta aliquet. Duis a dignissim eros. Proin sed gravida felis. Vestibulum quis aliquam elit. Donec posuere lectus nibh, eu dignissim velit adipiscing in.
+	</p>
+	<figure>
+		<img src="http://lorempixel.com/800/500" alt="">
+		<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+	</figure>
+	<p>
+	Nulla facilisi. Duis adipiscing nulla libero, nec hendrerit quam mattis ac. Proin posuere id lectus consectetur molestie. Vivamus consequat risus laoreet ligula auctor, ac accumsan risus eleifend. Nunc risus metus, interdum eget metus at, dignissim tincidunt velit. Etiam ornare diam ut auctor luctus. Donec luctus tempus quam, sit amet convallis tellus porta consectetur. Etiam pretium condimentum augue. Vestibulum quis sapien felis. Suspendisse ac facilisis libero. Mauris mauris augue, mollis sed justo nec, elementum accumsan tortor.
+	</p>
+	<p>
+	Praesent id vulputate turpis. Aliquam mauris dolor, varius in convallis non, bibendum eu nulla. Etiam nisl ante, fringilla et nisl in, interdum tincidunt purus. Suspendisse tortor purus, sodales vel risus id, feugiat consectetur nisi. Duis adipiscing sem posuere, pretium leo vel, gravida tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum condimentum arcu non lorem egestas, vel condimentum odio malesuada. Maecenas lobortis luctus diam, ac sollicitudin tellus volutpat a. Morbi lacinia dolor sit amet feugiat vulputate. Mauris suscipit tempor metus, ac venenatis libero molestie sit amet. Suspendisse at purus ac dui volutpat blandit eget ac lorem. Praesent eget adipiscing elit.
+	</p>
+	<p>
+	Sed augue nisi, ullamcorper et sem eu, dignissim mollis tellus. Integer tincidunt sollicitudin pharetra. Proin purus tortor, adipiscing at ullamcorper sit amet, feugiat a lacus. Donec consequat ligula eu quam venenatis varius. Integer id enim in lorem viverra malesuada ut feugiat nisl. Nullam nibh tellus, eleifend eu metus vel, venenatis consequat mi. Quisque pretium lacinia risus a lacinia. Duis nulla est, consequat at varius sit amet, sollicitudin ac ante. Vivamus viverra lorem eget molestie laoreet. Maecenas imperdiet vitae ipsum dignissim sagittis. Phasellus quis felis accumsan mi venenatis pellentesque vitae tristique turpis. Ut accumsan elit porta tempus porta. Aenean elementum massa ut felis viverra, eget gravida arcu vestibulum. Curabitur a pulvinar mauris.
+	</p>
+		</article>
+	</main>
+	<footer>
+		Footer Placeholder
+	</footer>
+	<script>
+		$('header>nav,section.user,header>address').wrapAll("<div class='mobile-nav'></div>");
+		$('.mobile-nav').appendTo('header');
+	</script>
+	<!--<script>
+      $(function() {
+          $("header > nav > ul").navobile({
+              bindSwipe: true,
+              cta: "#show-mobile-nav",
+              content: "main",
+              changeDOM: true
+          });
+      });
+      </script>-->
+
+</body>
+</html>

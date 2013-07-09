@@ -1,0 +1,24 @@
+figure{
+	width: 50%;
+	&:nth-of-type(even){
+		padding-right: 1rem;
+	}
+	&:nth-of-type(odd){
+		float: right;
+		padding-left: 1rem;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+	img{
+		width: 100%;
+	}
+	figcaption{}
+	video{}
+	audio{}
+	pre{}
+	figure{
+		img{}
+		figcaption{}
+	}
+	.slider{}
+}

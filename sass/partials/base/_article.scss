@@ -1,0 +1,29 @@
+article{
+	background-color: $color-primary;
+	color: $color-text;
+}
+
+/* logo left half, menu right half*/
+@media all and (min-width:#{$length-one * 1px}){
+	@import "article/length-one/legacy";
+}
+
+@media all and (min-width:#{$length-two * 1px}){
+	@import "article/length-two/legacy";
+}
+/*mobile menu swipe from left*/
+@media all and (min-width:#{$length-three * 1px}){
+	@import "article/length-three/legacy";
+}
+
+@media all and (min-width:#{$length-five * 1px}){
+	@import "article/length-five/legacy";
+}
+/*desktop nav*/
+@media all and (min-width:#{$length-eight * 1px}){
+	@import "article/length-eight/legacy";
+}
+
+@media all and (min-width:#{$length-thirteen * 1px}){
+	@import "article/length-thirteen/legacy";
+}

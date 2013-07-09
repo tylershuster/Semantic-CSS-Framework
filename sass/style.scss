@@ -1,0 +1,94 @@
+/*--------------------------main.scss-------------------------------*/
+$key: c;					//Specify the key in which to set your piece
+$quality: dom9;				//Specify the quality of your piece. Pick something that fits the feel of the page
+
+$sans: Open Sans;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+
+$serif: Gentium Basic;
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic);
+$body-font: $serif;
+$heading-font: $sans;
+
+$color: #002bff;				//Specify the color of your text
+
+$scheme: triad;			//Specify the relationship of colors on the page
+//mono(broken), complement, triad, tetrad, analogic, accented-analogic
+
+/*---------
+basic colors formulas
+-complementary
+-split-complementary
+-triadic
+-analogous
+-monochromatic
+-----------*/
+
+$icons: no;					//Specify whether or not to use icons;
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////
+// Set legacy support
+//
+// If you need support for IE6 or IE7, you should install the Box Sizing polyfill.
+// In your project's folder from the command line, type the following:
+// compass install singularitygs/box-sizing
+//////////////////////////////
+$legacy-support-for-ie6:     false;
+$legacy-support-for-ie7:     false;
+$legacy-support-for-mozilla: false;
+
+//////////////////////////////
+// Import Utilities
+//////////////////////////////
+@import "utilities/color/color-schemer";
+
+@import "utilities/typography/music";
+
+@import "breakpoint";
+
+@import "singularitygs";
+
+@import "utilities/variables";
+
+/*include z-index file with all elements according to their z-index*/
+
+$mobile-first: true;
+
+$grids: 1;
+/*not working with variable values: use context override syntax
+$grids: add-grid(2 at #{$length-two * 1px});
+$grids: add-grid(3 at #{$length-three * 1px});
+$grids: add-grid(5 at #{$length-five * 1px});
+$grids: add-grid(8 at #{$length-eight * 1px});
+$grids: add-grid(13 at #{$length-thirteen * 1px});
+*/
+
+$gutters: 1em;
+
+//////////////////////////////
+// Import Base
+//////////////////////////////
+@import "partials/base";
+
+//////////////////////////////
+// Import Core Components
+//////////////////////////////
+
+@import "partials/article";
+
+@import "partials/table";
+
+@import "partials/figure";

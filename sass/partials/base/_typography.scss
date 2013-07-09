@@ -1,0 +1,36 @@
+@include key(#{$key});
+
+h1{
+	@include typography(size-one);
+	color: $color-text;
+	font-family: '#{$heading-font}';
+}
+h2{
+	@include typography(size-two);
+	color: $color-secondary;
+	font-family: '#{$heading-font}';
+}
+h3{
+	@include typography(size-three);
+	color: $color-accent;
+	font-family: '#{$heading-font}';
+}
+h4{
+	@include typography(size-four);
+	color: $color-tertiary;
+	font-family: '#{$heading-font}';
+}
+h5{
+	@include typography(size-five);
+	color: $color-tertiary;
+	font-family: '#{$heading-font}';
+}
+p, span, cite, time{
+	@include typography(size-base);
+	color: $color-text;
+	font-family: '#{$body-font}';
+}
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+

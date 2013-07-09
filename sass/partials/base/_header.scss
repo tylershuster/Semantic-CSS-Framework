@@ -1,0 +1,37 @@
+header{
+	background-color: $color-secondary;
+	color: $color-text;
+}
+
+@import "header/address";
+@import "header/common";
+
+/* logo left half, menu right half*/
+@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two - 1 * 1px}){
+	@import "header/length-one/legacy";
+}
+
+@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three - 1 * 1px}){
+	@import "header/length-two/legacy";
+	@import "header/navobile";
+}
+/*mobile menu swipe from left*/
+@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-five - 1 * 1px}){
+	@import "header/length-three/legacy";
+	@import "header/navobile";
+}
+
+@media all and (min-width:#{$length-five * 1px}) and (max-width:#{$length-eight - 1 * 1px}){
+	@import "header/length-five/legacy";
+	@import "header/navobile";
+}
+/*desktop nav*/
+@media all and (min-width:#{$length-eight * 1px}) and (max-width:#{$length-thirteen - 1 * 1px}){
+	@import "header/length-eight/legacy";
+}
+
+@media all and (min-width:#{$length-thirteen * 1px}){
+	@import "header/length-thirteen/legacy";
+}
+
+
