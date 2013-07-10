@@ -1,7 +1,5 @@
-article{
-	background-color: $color-primary;
-	color: $color-text;
-}
+
+@import "article/common";
 
 /* logo left half, menu right half*/
 @media all and (min-width:#{$length-one * 1px}){

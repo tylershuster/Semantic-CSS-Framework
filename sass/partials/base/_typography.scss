@@ -2,7 +2,7 @@
 
 h1{
 	@include typography(size-one);
-	color: $color-text;
+	//color: $color-text;
 	font-family: '#{$heading-font}';
 }
 h2{
@@ -27,7 +27,7 @@ h5{
 }
 p, span, cite, time{
 	@include typography(size-base);
-	color: $color-text;
+	//color: $color-text;
 	font-family: '#{$body-font}';
 }
 

@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
-/* { picnicc: style.scss } */
+/* { picnicc: style } */
 /*--------------------------main.scss-------------------------------*/
 /*---------
 basic colors formulas
@@ -13,10 +13,20 @@ basic colors formulas
 -analogous
 -monochromatic
 -----------*/
-/*add contrast checks to all these*/
-/* line 59, ../sass/utilities/color/_color-schemer.scss */
+/*add contrast checks to all these
+
+if the value of the
+
+*/
+/* line 89, ../sass/utilities/color/_color-schemer.scss */
+article > h1 {
+  color: #9eafff;
+  content: "#1531ae";
+}
+
+/* line 98, ../sass/utilities/color/_color-schemer.scss */
 * body {
-  background-color: #002bff;
+  background-color: #1531ae;
 }
 
 /*128*/
@@ -754,8 +764,9 @@ optgroup::-moz-focus-inner {
 
 /* line 1, ../sass/partials/base/_header.scss */
 header {
-  background-color: #aaff00;
-  color: #001060;
+  background-color: #ae9215;
+  color: #9eafff;
+  content: "#1531ae";
 }
 
 /* line 1, ../sass/partials/base/header/_address.scss */
@@ -769,7 +780,7 @@ address a.twitter:before {
   display: block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff5400;
+  color: #002fff;
   float: right;
   margin: 0 0.38rem;
 }
@@ -782,7 +793,7 @@ address a.gplus:before {
   display: block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff5400;
+  color: #002fff;
   float: right;
   margin: 0 0.38rem;
 }
@@ -795,7 +806,7 @@ address a.facebook:before {
   display: block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff5400;
+  color: #002fff;
   float: right;
   margin: 0 0.38rem;
 }
@@ -808,7 +819,7 @@ address a.linkedin:before {
   display: block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff5400;
+  color: #002fff;
   float: right;
   margin: 0 0.38rem;
 }
@@ -821,7 +832,7 @@ address a.tumblr:before {
   display: block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff5400;
+  color: #002fff;
   float: right;
   margin: 0 0.38rem;
 }
@@ -834,7 +845,7 @@ address a.instagram:before {
   display: block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff5400;
+  color: #002fff;
   float: right;
   margin: 0 0.38rem;
 }
@@ -847,7 +858,7 @@ address a.dribbble:before {
   display: block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff5400;
+  color: #002fff;
   float: right;
   margin: 0 0.38rem;
 }
@@ -904,7 +915,7 @@ header section.masthead address {
 }
 /* line 31, ../sass/partials/base/header/_common.scss */
 header section.user {
-  background-color: #ff5400;
+  background-color: #002fff;
   height: 2em;
   padding: 0.38rem 0 0.62rem 0;
   margin-right: 1rem;
@@ -912,7 +923,8 @@ header section.user {
 }
 /* line 37, ../sass/partials/base/header/_common.scss */
 header section.user a {
-  color: #001060;
+  color: #9eafff;
+  content: "#002fff";
   text-decoration: none;
   margin: 0 1rem;
 }
@@ -930,7 +942,7 @@ header section.social a {
   width: 1em;
   padding: 0.5em 1em;
   font-family: "Entypo";
-  color: #ff5400;
+  color: #002fff;
   text-decoration: none;
 }
 /* line 58, ../sass/partials/base/header/_common.scss */
@@ -956,8 +968,9 @@ header nav {
   position: fixed;
   top: 5em;
   height: 3rem;
-  background-color: #ff5400;
-  color: #001060;
+  background-color: #002fff;
+  color: #9eafff;
+  content: "#002fff";
   float: left;
 }
 /* line 79, ../sass/partials/base/header/_common.scss */
@@ -976,14 +989,24 @@ header nav li {
   padding: 1em;
 }
 /* line 91, ../sass/partials/base/header/_common.scss */
+header nav li:hover {
+  background-color: #1531ae;
+}
+/* line 94, ../sass/partials/base/header/_common.scss */
 header nav li > a {
-  color: #001060;
+  color: #9eafff;
+  content: "#002fff";
   display: block;
   text-decoration: none;
 }
 /* line 98, ../sass/partials/base/header/_common.scss */
+header nav li > a:hover {
+  color: #9eafff;
+  content: "#1531ae";
+}
+/* line 104, ../sass/partials/base/header/_common.scss */
 header #show-mobile-nav {
-  color: #ff5400;
+  color: #002fff;
   font-family: "Entypo";
   font-size: 5em;
   display: block;
@@ -995,61 +1018,61 @@ header #show-mobile-nav {
 }
 
 @media all and (max-width: 639px) {
-  /* line 113, ../sass/partials/base/header/_common.scss */
-  .mobile-nav {
-    width: calc(100% - 5rem);
+  /* line 119, ../sass/partials/base/header/_common.scss */
+  #mobile-nav {
     margin-top: 5rem;
-    background-color: #001060;
-    color: #002bff;
+    background-color: #071242;
+    color: #9eafff;
+    content: "#1531ae";
     z-index: 150;
   }
-  /* line 120, ../sass/partials/base/header/_common.scss */
-  .mobile-nav img.logo {
+  /* line 126, ../sass/partials/base/header/_common.scss */
+  #mobile-nav img.logo {
     /*site logo*/
   }
-  /* line 121, ../sass/partials/base/header/_common.scss */
-  .mobile-nav h1 {
+  /* line 127, ../sass/partials/base/header/_common.scss */
+  #mobile-nav h1 {
     /*site tite*/
   }
-  /* line 122, ../sass/partials/base/header/_common.scss */
-  .mobile-nav address {
+  /* line 128, ../sass/partials/base/header/_common.scss */
+  #mobile-nav address {
     /*address info*/
   }
-  /* line 125, ../sass/partials/base/header/_common.scss */
-  .mobile-nav section.masthead {
+  /* line 131, ../sass/partials/base/header/_common.scss */
+  #mobile-nav section.masthead {
     /*masthead is centered on page*/
   }
-  /* line 128, ../sass/partials/base/header/_common.scss */
-  .mobile-nav section.masthead img.logo {
+  /* line 134, ../sass/partials/base/header/_common.scss */
+  #mobile-nav section.masthead img.logo {
     /*site logo*/
   }
-  /* line 129, ../sass/partials/base/header/_common.scss */
-  .mobile-nav section.masthead h1 {
+  /* line 135, ../sass/partials/base/header/_common.scss */
+  #mobile-nav section.masthead h1 {
     /*site title*/
   }
-  /* line 130, ../sass/partials/base/header/_common.scss */
-  .mobile-nav section.masthead address {
+  /* line 136, ../sass/partials/base/header/_common.scss */
+  #mobile-nav section.masthead address {
     /*address info*/
   }
-  /* line 140, ../sass/partials/base/header/_common.scss */
-  .mobile-nav section.search .compact {
+  /* line 146, ../sass/partials/base/header/_common.scss */
+  #mobile-nav section.search .compact {
     /*expanding box*/
   }
-  /* line 143, ../sass/partials/base/header/_common.scss */
-  .mobile-nav nav {
+  /* line 149, ../sass/partials/base/header/_common.scss */
+  #mobile-nav nav {
     width: calc(100% - 5rem);
   }
-  /* line 146, ../sass/partials/base/header/_common.scss */
-  .mobile-nav nav li {
+  /* line 152, ../sass/partials/base/header/_common.scss */
+  #mobile-nav nav li {
     display: block;
     width: 100%;
-    background-color: #001060;
-    color: #002bff;
+    background-color: #071242;
+    color: #1531ae;
   }
-  /* line 151, ../sass/partials/base/header/_common.scss */
-  .mobile-nav nav li > a {
+  /* line 157, ../sass/partials/base/header/_common.scss */
+  #mobile-nav nav li > a {
     text-align: left;
-    color: #002bff;
+    color: #1531ae;
   }
 }
 
@@ -1290,60 +1313,14 @@ header #show-mobile-nav {
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    height: 5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
   }
-  /* line 8, ../sass/partials/base/header/length-five/_legacy.scss */
-  header img.logo {
-    display: inline-block;
-    float: left;
-    height: 5rem;
-    margin-left: 1rem;
-  }
-  /* line 14, ../sass/partials/base/header/length-five/_legacy.scss */
-  header h1 {
-    display: inline-block;
-    float: left;
-    margin-left: 1rem;
-    margin-top: 0;
-    padding: 0em 0;
-    line-height: 5rem;
-  }
-  /* line 27, ../sass/partials/base/header/length-five/_legacy.scss */
+  /* line 11, ../sass/partials/base/header/length-five/_legacy.scss */
   header section.user {
     width: 33.33333%;
     float: left;
     margin-right: -100%;
     margin-left: 88.88889%;
     clear: none;
-    background-color: #ff5400;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 2rem;
-    padding: 0.38rem 0 0.62rem 0;
-    margin-right: 1rem;
-    text-align: center;
-  }
-  /* line 37, ../sass/partials/base/header/length-five/_legacy.scss */
-  header section.user a {
-    color: #001060;
-    text-decoration: none;
-    margin: 0 1rem;
-  }
-  /* line 48, ../sass/partials/base/header/length-five/_legacy.scss */
-  header #show-mobile-nav {
-    color: #ff5400;
-    font-family: "Entypo";
-    font-size: 5em;
-    display: block;
-    position: fixed;
-    text-decoration: none;
-    top: -0.38rem;
-    left: -0.5em;
-    overflow: visible;
   }
 
   /*navobile*/
@@ -1523,10 +1500,40 @@ header #show-mobile-nav {
     display: none;
   }
 }
-/* line 1, ../sass/partials/base/_article.scss */
+/* line 1, ../sass/partials/base/article/_common.scss */
 article {
-  background-color: #002bff;
-  color: #001060;
+  background-color: #1531ae;
+  margin: 0 auto;
+}
+/* line 3, ../sass/partials/base/article/_common.scss */
+article h1 {
+  color: #9eafff;
+  content: "#1531ae";
+}
+/* line 4, ../sass/partials/base/article/_common.scss */
+article h2 {
+  color: #9eafff;
+  content: "#1531ae";
+}
+/* line 5, ../sass/partials/base/article/_common.scss */
+article h3 {
+  color: #9eafff;
+  content: "#1531ae";
+}
+/* line 6, ../sass/partials/base/article/_common.scss */
+article h4 {
+  color: #9eafff;
+  content: "#1531ae";
+}
+/* line 7, ../sass/partials/base/article/_common.scss */
+article h5 {
+  color: #9eafff;
+  content: "#1531ae";
+}
+/* line 8, ../sass/partials/base/article/_common.scss */
+article p {
+  color: #9eafff;
+  content: "#1531ae";
 }
 
 /* logo left half, menu right half*/
@@ -1573,75 +1580,80 @@ article {
 
 /* line 3, ../sass/partials/base/_typography.scss */
 h1 {
-  font-size: 1.5em;
-  line-height: 32px;
+  font-size: 2.4em;
   margin: 0;
   padding: 0;
+  padding-top: 1rem;
+  line-height: 1.25em;
   font-weight: bold;
-  text-transform: uppercase;
-  color: #001060;
+  font-style: italic;
   font-family: "Open Sans";
 }
 
 /* line 8, ../sass/partials/base/_typography.scss */
 h2 {
-  font-size: 1.25em;
-  line-height: 32px;
+  font-size: 1.778em;
   margin: 0;
   padding: 0;
-  font-weight: bold;
-  color: #aaff00;
+  padding-top: 1rem;
+  line-height: 1.12486em;
+  font-weight: normal;
+  color: #ae9215;
   font-family: "Open Sans";
 }
 
 /* line 13, ../sass/partials/base/_typography.scss */
 h3 {
-  font-size: 1.25em;
-  line-height: 32px;
+  font-size: 1.5em;
   margin: 0;
   padding: 0;
+  padding-top: 1rem;
+  line-height: 1.33333em;
   font-weight: bold;
-  color: #9eaeff;
+  text-transform: uppercase;
+  color: #9eafff;
   font-family: "Open Sans";
 }
 
 /* line 18, ../sass/partials/base/_typography.scss */
 h4 {
   font-size: 1.25em;
-  line-height: 32px;
   margin: 0;
   padding: 0;
+  padding-top: 1rem;
+  line-height: 1.6em;
   font-weight: bold;
-  color: #ff5400;
+  color: #002fff;
   font-family: "Open Sans";
 }
 
 /* line 23, ../sass/partials/base/_typography.scss */
 h5 {
   font-size: 1.25em;
-  line-height: 32px;
   margin: 0;
   padding: 0;
+  padding-top: 1rem;
+  line-height: 1.6em;
   font-weight: bold;
-  color: #ff5400;
+  color: #002fff;
   font-family: "Open Sans";
 }
 
 /* line 28, ../sass/partials/base/_typography.scss */
 p, span, cite, time {
   font-size: 1em;
-  line-height: 32px;
   margin: 0;
   padding: 0;
+  padding-top: 1rem;
+  line-height: 2em;
   font-weight: normal;
   /*padding-top: 0.62em;padding-bottom:0.38em;*/
-  color: #001060;
   font-family: "Gentium Basic";
 }
 
 /* line 1, ../sass/partials/_article.scss */
 article {
-  background-color: #002bff;
+  background-color: #1531ae;
   max-width: 60em;
   padding: 0 1em;
   /*the twelve disciples*/
@@ -1683,7 +1695,7 @@ article blockquote {
 /* line 2, ../sass/partials/article/_blockquote.scss */
 article blockquote:before {
   content: "“";
-  color: #ff5400;
+  color: #002fff;
   font-size: 8em;
   line-height: 1rem;
   position: relative;
@@ -1707,7 +1719,7 @@ article blockquote:nth-of-type(odd) {
 /* line 23, ../sass/partials/article/_blockquote.scss */
 article blockquote:nth-of-type(odd) > p {
   margin: 0 auto;
-  color: #aaff00;
+  color: #ae9215;
   position: relative;
   z-index: 150;
   /*breaks terrible with two lines of text*/
@@ -1715,7 +1727,7 @@ article blockquote:nth-of-type(odd) > p {
 /* line 37, ../sass/partials/article/_blockquote.scss */
 article blockquote > cite {
   font-family: Open Sans;
-  color: #aaff00;
+  color: #ae9215;
   float: left;
   margin-left: 50%;
   padding-top: 0;
@@ -1816,6 +1828,45 @@ article .promotional .opinion {
 /* line 13, ../sass/partials/_figure.scss */
 .post section.comments figure {
   margin-left: 1rem;
+}
+
+/* line 1, ../sass/partials/_z-index.scss */
+header {
+  z-index: 100;
+}
+/* line 3, ../sass/partials/_z-index.scss */
+header img.logo {
+  z-index: 101;
+}
+/* line 4, ../sass/partials/_z-index.scss */
+header h1 {
+  z-index: 102;
+}
+/* line 5, ../sass/partials/_z-index.scss */
+header address {
+  z-index: 103;
+}
+/* line 8, ../sass/partials/_z-index.scss */
+header section.user {
+  z-index: 104;
+}
+/* line 10, ../sass/partials/_z-index.scss */
+header section.user a {
+  z-index: 105;
+}
+/* line 12, ../sass/partials/_z-index.scss */
+header section.search {
+  z-index: 106;
+}
+
+/* line 18, ../sass/partials/_z-index.scss */
+main {
+  z-index: 0;
+}
+
+/* line 21, ../sass/partials/_z-index.scss */
+footer {
+  z-index: -100;
 }
 
 /* { / picnicc } */

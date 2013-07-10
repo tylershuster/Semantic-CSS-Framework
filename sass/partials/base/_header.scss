@@ -1,6 +1,6 @@
 header{
 	background-color: $color-secondary;
-	color: $color-text;
+	@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);
 }
 
 @import "header/address";

@@ -2,7 +2,7 @@
 
 // Defaults
 $cs-primary           : #f00 !default;
-$cs-scheme            : $scheme !default;   // mono, complement, triad, tetrad, analogic, accented-analogic
+$cs-scheme            : $scheme;   // mono, complement, triad, tetrad, analogic, accented-analogic
 $cs-hue-offset        : 30 !default;
 $cs-brightness-offset : false !default;
 $cs-color-model       : rgb !default;    // rgb, ryb
@@ -37,23 +37,62 @@ $color-shade: null;
 $color-primary: cs-primary($color);
 $color-secondary: cs-secondary($color);
 $color-tertiary: cs-tertiary($color);
-/*add contrast checks to all these*/
+
+
+
+/*add contrast checks to all these
+
+if the value of the
+
+*/
 
 @if lightness($color) < 38{//if the page is a very dark page
 	$color-accent: tint($color, 38%);
 	$color-shade: tint($color, 62%);
+	$dark-text-color: $color-accent;
+	$light-text-color: $color-shade;
+	//the page is very dark
 }
 @else if lightness($color) < 62{//if the page is of average lightness
 	$color-accent: tint(equalize($color), 62%);
 	$color-shade: shade($color, 62%);
+	$dark-text-color: $color-shade;
+	$light-text-color: $color-accent;
+	//the page is average 
 } 
 @else{//the page is very light
 	$color-accent: equalize($color);
 	$color-shade: shade($color, 62%);
+	$dark-text-color: $color-shade;
+	$light-text-color: $color-accent;
+	//the page isvery light
+}
+$dark-text-color: $color-shade;
+	$light-text-color: $color-accent;
+
+
+
+@mixin text-contrast($bg-color, $dark-text: $dark-text-color, $light-text: $light-text-color) {
+	//http://codepen.io/bluesaunders/pen/FCLaz
+  $color-brightness: round((red($bg-color) * 299) + (green($bg-color) * 587) + (blue($bg-color) * 114) / 1000);
+  $light-text-brightness: round((red($light-text) * 299) + (green($light-text) * 587) + (blue($light-text) * 114) / 1000);
+  $dark-text-brightness: round((red($dark-text) * 299) + (green($dark-text) * 587) + (blue($dark-text) * 114) / 1000);
+  @if abs($color-brightness - $light-text-brightness) > abs($color-brightness - $dark-text-brightness) {
+    color: $light-text;
+  }
+  @else {
+    color: $dark-text;
+  }
+  content: "#{$bg-color}";
+}
+
+article > h1{
+	@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);
 }
 
 
 
-$color-text: $color-shade;
+
+//$color-text: $color-shade;
 
 * body {background-color: $color-primary;}

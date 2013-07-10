@@ -35,7 +35,7 @@ header{
 			margin-right: 1rem;
 			text-align: center;
 			a{
-				color: $color-text;
+				@include text-contrast($color-tertiary, $dark-text: $dark-text-color, $light-text: $light-text-color);
 				text-decoration: none;
 				margin: 0 1rem;
 			}
@@ -74,7 +74,7 @@ header{
 		top: 5em;
 		height: 3rem;
 		background-color: $color-tertiary;
-		color: $color-text;
+		@include text-contrast($color-tertiary, $dark-text: $dark-text-color, $light-text: $light-text-color);
 		float: left;
 		ul{
 			width: 100%;
@@ -88,10 +88,16 @@ header{
 			display: table-cell;
 			text-align: center;
 			padding: 1em;
+			&:hover{
+				background-color: $color-primary;
+			}
 			> a{
-				color: $color-text;
+				@include text-contrast($color-tertiary, $dark-text: $dark-text-color, $light-text: $light-text-color);
 				display: block;
 				text-decoration: none;
+				&:hover{
+					@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);
+				}
 			}
 		}
 	}
@@ -110,12 +116,12 @@ header{
 
 
 
-.mobile-nav{
+#mobile-nav{
 	@media all and (max-width:#{$length-five - 1 * 1px}){
-		width: calc(100% - 5rem);
+		//width: calc(100% - 5rem);
 		margin-top: 5rem;
 		background-color: $color-shade;
-		color: $color-primary;
+		@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);
 		z-index: 150;
 		img.logo{/*site logo*/}
 		h1{/*site tite*/}

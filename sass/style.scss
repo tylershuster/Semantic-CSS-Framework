@@ -1,7 +1,7 @@
 /* { picnicc: style } */
 /*--------------------------main.scss-------------------------------*/
 $key: c;					//Specify the key in which to set your piece
-$quality: maj;				//Specify the quality of your piece. Pick something that fits the feel of the page
+$quality: domsharp9;				//Specify the quality of your piece. Pick something that fits the feel of the page
 
 $sans: Open Sans;
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
@@ -11,9 +11,9 @@ $serif: Gentium Basic;
 $body-font: $serif;
 $heading-font: $sans;
 
-$color: #002bff;				//Specify the color of your text
+$color: #1531AE;				//Specify the color of your text
 
-$scheme: triad;			//Specify the relationship of colors on the page
+$scheme: complement;			//Specify the relationship of colors on the page
 //mono(broken), complement, triad, tetrad, analogic, accented-analogic
 
 /*---------
@@ -91,4 +91,6 @@ $gutters: 1em;
 @import "partials/table";
 
 @import "partials/figure";
+
+@import "partials/z-index";
 /* { / picnicc } */

@@ -1,0 +1,23 @@
+header{
+	z-index: 100;
+	img.logo{z-index: 101;}
+	h1{z-index: 102;}
+	address{z-index: 103;}
+	section{
+		&.masthead{	}
+		&.user{
+			z-index: 104;
+			a{z-index: 105;}
+		}
+		&.search{z-index: 106;}
+	}
+	nav{	}
+}
+
+
+main{
+	z-index: 0;
+}
+footer{
+	z-index: -100;
+}
