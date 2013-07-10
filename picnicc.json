@@ -1,5 +1,5 @@
 {
   "version" : "1.0.0" ,
   "assets"  : ["https://raw.github.com/herrshuster/style.css/gh-pages/sass/style.scss"],
-  "bits"    : ["style.css"]
+  "bits"    : ["style"]
 }
