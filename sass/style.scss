@@ -1,3 +1,4 @@
+/* { picnicc: style.scss } */
 /*--------------------------main.scss-------------------------------*/
 $key: c;					//Specify the key in which to set your piece
 $quality: maj;				//Specify the quality of your piece. Pick something that fits the feel of the page
@@ -90,3 +91,4 @@ $gutters: 1em;
 @import "partials/table";
 
 @import "partials/figure";
+/* { / picnicc } */

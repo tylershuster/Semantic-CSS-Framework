@@ -3,6 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
+/* { picnicc: style.scss } */
 /*--------------------------main.scss-------------------------------*/
 /*---------
 basic colors formulas
@@ -1816,3 +1817,5 @@ article .promotional .opinion {
 .post section.comments figure {
   margin-left: 1rem;
 }
+
+/* { / picnicc } */
