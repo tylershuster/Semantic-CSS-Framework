@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Build a Custom Style.css</title>
+</head>
+<body>
+	<form name="my-form" action="https://picni.cc/api/v1/build/" method="post">
+  <input type="hidden" name="username" value="herrshuster">
+  <input type="hidden" name="project" value="style.css">
+  <input type="hidden" name="parse" value="sass-to-css">
+
+  <!-- the address of your picnicc.json file (required) -->
+  <input type="hidden" name="picnicc" value="https://raw.github.com/herrshuster/style.css/gh-pages/picnicc.json">
+
+  <!-- And now let's turn our "bits" into field values -->
+  <label>
+    Do you need Module 1?
+    <input type="checkbox" name="bits[]" value="style.css">
+  </label>
+ 
+
+  <button>Get your custom build</button>
+</form>
+</body>
+</html>
