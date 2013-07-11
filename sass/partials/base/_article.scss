@@ -3,25 +3,25 @@
 
 /* logo left half, menu right half*/
 @media all and (min-width:#{$length-one * 1px}){
-	@import "article/length-one/legacy";
+	@import "article/length-one";
 }
 
 @media all and (min-width:#{$length-two * 1px}){
-	@import "article/length-two/legacy";
+	@import "article/length-two";
 }
 /*mobile menu swipe from left*/
 @media all and (min-width:#{$length-three * 1px}){
-	@import "article/length-three/legacy";
+	@import "article/length-three";
 }
 
 @media all and (min-width:#{$length-five * 1px}){
-	@import "article/length-five/legacy";
+	@import "article/length-five";
 }
 /*desktop nav*/
 @media all and (min-width:#{$length-eight * 1px}){
-	@import "article/length-eight/legacy";
+	@import "article/length-eight";
 }
 
 @media all and (min-width:#{$length-thirteen * 1px}){
-	@import "article/length-thirteen/legacy";
+	@import "article/length-thirteen";
 }

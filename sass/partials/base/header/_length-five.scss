@@ -1,6 +1,6 @@
 /*styles for devices from 640-1024px wide*/
 header{
-	@include grid-span(5,1,5);
+	@include column(5,5);
 	img.logo{}
 	h1{}
 	address{}
@@ -9,7 +9,7 @@ header{
 
 		}
 		&.user{
-			@include grid-span(2,5,5);
+			@include column(2,5);
 			a{}
 		}
 		&.search{}

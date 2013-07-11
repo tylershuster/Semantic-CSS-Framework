@@ -1,6 +1,7 @@
-/*header styles on devices from 1024px-1664px*/
+/*styles for devices from 1664px up*/
 header{
-	@include grid-span(8,1,8);
+	@include column(13,13);
+	
 	/*multiple headers get styled into tabs. See foxnews for example*/
 	img.logo{/*site logo*/}
 	h1{/*site tite*/}
@@ -8,31 +9,32 @@ header{
 
 	section{
 		&.masthead{
-			@include grid-span(4,1,8);
+			//@include column(4,13);
 			/*masthead is centered on page*/
 			img.logo{/*site logo*/}
 			h1{/*site title*/}
 			address{/*address info*/}
 		}
 		&.user{
-			@include grid-span(2,7,8);
+			@include column(2,13);
+			@include push(0,13);
 			a{}
 		}
 		&.social{
-			@include grid-span(2,5,8);
+			@include column(2,13);
 			a{}
 		}
 		&.search{
-			@include grid-span(3,6,8);
+			@include column(3,13);
 			form input{	}
 			.compact{/*expanding box*/}
 		}
 	}
 	nav{
-		@include grid-span(8,1,8);
-		ul{}
+		@include column(13,13);
+		ul{	}
 		li{
-			> a{}
+			> a{ }
 		}
 	}
 	#show-mobile-nav{

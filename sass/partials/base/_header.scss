@@ -8,30 +8,30 @@ header{
 
 /* logo left half, menu right half*/
 @media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two - 1 * 1px}){
-	@import "header/length-one/legacy";
+	@import "header/length-one";
 }
 
 @media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three - 1 * 1px}){
-	@import "header/length-two/legacy";
+	@import "header/length-two";
 	@import "header/navobile";
 }
 /*mobile menu swipe from left*/
 @media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-five - 1 * 1px}){
-	@import "header/length-three/legacy";
+	@import "header/length-three";
 	@import "header/navobile";
 }
 
 @media all and (min-width:#{$length-five * 1px}) and (max-width:#{$length-eight - 1 * 1px}){
-	@import "header/length-five/legacy";
+	@import "header/length-five";
 	@import "header/navobile";
 }
 /*desktop nav*/
 @media all and (min-width:#{$length-eight * 1px}) and (max-width:#{$length-thirteen - 1 * 1px}){
-	@import "header/length-eight/legacy";
+	@import "header/length-eight";
 }
 
 @media all and (min-width:#{$length-thirteen * 1px}){
-	@import "header/length-thirteen/legacy";
+	@import "header/length-thirteen";
 }
 
 

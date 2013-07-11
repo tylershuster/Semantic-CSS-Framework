@@ -1,3 +1,13 @@
+//////////////////////////////
+// BLOCKQUOTE
+//
+// Use cases:
+//
+// Article pull quote : article > blockquote
+//
+//////////////////////////////
+
+
 blockquote{
 	&:before{
 		content: "“";
@@ -8,7 +18,7 @@ blockquote{
 		font-family: $serif;
 		@include opacity(0.62);
 	}
-	width: 50%;
+	width: 50%;//this should only be when it's inside an article. fix this shit
 	padding: 0.62rem 1rem 0 1rem;
 	&:nth-of-type(even){
 		float: right;
@@ -45,23 +55,4 @@ blockquote{
 			content: "- ";
 		}
 	}
-	/*
-	@media all and (max-width:#{$length-three - 1 * 1px}){
-		width: 100%;
-	}
-	@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-five - 1 * 1px}){
-		width: 50%;
-	}
-
-	@media all and (min-width:#{$length-five * 1px}) and (max-width:#{$length-eight - 1 * 1px}){
-		width: 60%;
-	}
-	@media all and (min-width:#{$length-eight * 1px}) and (max-width:#{$length-thirteen - 1 * 1px}){
-		width: 62.5%;
-	}
-
-	@media all and (min-width:#{$length-thirteen * 1px}){
-		width: 61.5%;
-	}
-	*/
 }

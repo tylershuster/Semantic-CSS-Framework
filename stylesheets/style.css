@@ -29,20 +29,27 @@ article > h1 {
   background-color: #1531ae;
 }
 
+/* line 41, ../sass/utilities/_layout.scss */
+body {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 27, ../sass/utilities/_layout.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../sass/utilities/_layout.scss */
+body:after {
+  clear: both;
+}
+
 /*128*/
 /*256*/
 /*384*/
 /*640*/
 /*1024*/
 /*1664*/
-/*include z-index file with all elements according to their z-index*/
-/*not working with variable values: use context override syntax
-$grids: add-grid(2 at 256px);
-$grids: add-grid(3 at 384px);
-$grids: add-grid(5 at 640px);
-$grids: add-grid(8 at 1024px);
-$grids: add-grid(13 at 1664px);
-*/
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -757,9 +764,9 @@ optgroup::-moz-focus-inner {
 
 /* line 697, ../sass/partials/base/_normalize.scss */
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 /* line 1, ../sass/partials/base/_header.scss */
@@ -1042,34 +1049,34 @@ header #show-mobile-nav {
   #mobile-nav section.masthead {
     /*masthead is centered on page*/
   }
-  /* line 134, ../sass/partials/base/header/_common.scss */
+  /* line 133, ../sass/partials/base/header/_common.scss */
   #mobile-nav section.masthead img.logo {
     /*site logo*/
   }
-  /* line 135, ../sass/partials/base/header/_common.scss */
+  /* line 134, ../sass/partials/base/header/_common.scss */
   #mobile-nav section.masthead h1 {
     /*site title*/
   }
-  /* line 136, ../sass/partials/base/header/_common.scss */
+  /* line 135, ../sass/partials/base/header/_common.scss */
   #mobile-nav section.masthead address {
     /*address info*/
   }
-  /* line 146, ../sass/partials/base/header/_common.scss */
+  /* line 145, ../sass/partials/base/header/_common.scss */
   #mobile-nav section.search .compact {
     /*expanding box*/
   }
-  /* line 149, ../sass/partials/base/header/_common.scss */
+  /* line 148, ../sass/partials/base/header/_common.scss */
   #mobile-nav nav {
     width: calc(100% - 5rem);
   }
-  /* line 152, ../sass/partials/base/header/_common.scss */
+  /* line 151, ../sass/partials/base/header/_common.scss */
   #mobile-nav nav li {
     display: block;
     width: 100%;
     background-color: #071242;
     color: #1531ae;
   }
-  /* line 157, ../sass/partials/base/header/_common.scss */
+  /* line 156, ../sass/partials/base/header/_common.scss */
   #mobile-nav nav li > a {
     text-align: left;
     color: #1531ae;
@@ -1218,39 +1225,33 @@ header #show-mobile-nav {
 /* logo left half, menu right half*/
 @media all and (min-width: 128px) and (max-width: 255px) {
   /*Styles for devices from 128-256px wide*/
-  /* line 2, ../sass/partials/base/header/length-one/_legacy.scss */
+  /* line 2, ../sass/partials/base/header/_length-one.scss */
   header {
+    display: inline;
+    float: left;
     width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
   }
 }
 @media all and (min-width: 256px) and (max-width: 383px) {
   /*styles for screens 256-384px*/
-  /* line 2, ../sass/partials/base/header/length-two/_legacy.scss */
+  /* line 2, ../sass/partials/base/header/_length-two.scss */
   header {
+    display: inline;
+    float: left;
     width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
     height: 5rem;
   }
-  /* line 7, ../sass/partials/base/header/length-two/_legacy.scss */
+  /* line 7, ../sass/partials/base/header/_length-two.scss */
   header address {
     display: none;
   }
-  /* line 10, ../sass/partials/base/header/length-two/_legacy.scss */
+  /* line 10, ../sass/partials/base/header/_length-two.scss */
   header section.user {
-    width: 33.33333%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
+    display: inline;
+    float: left;
+    width: 50%;
   }
-  /* line 14, ../sass/partials/base/header/length-two/_legacy.scss */
+  /* line 14, ../sass/partials/base/header/_length-two.scss */
   header section.search {
     display: none;
   }
@@ -1268,28 +1269,24 @@ header #show-mobile-nav {
 /*mobile menu swipe from left*/
 @media all and (min-width: 384px) and (max-width: 639px) {
   /*styles for devices from 384-640 px wide*/
-  /* line 2, ../sass/partials/base/header/length-three/_legacy.scss */
+  /* line 2, ../sass/partials/base/header/_length-three.scss */
   header {
+    display: inline;
+    float: left;
     width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
     height: 5rem;
   }
-  /* line 7, ../sass/partials/base/header/length-three/_legacy.scss */
+  /* line 7, ../sass/partials/base/header/_length-three.scss */
   header address {
     display: none;
   }
-  /* line 10, ../sass/partials/base/header/length-three/_legacy.scss */
+  /* line 10, ../sass/partials/base/header/_length-three.scss */
   header section.user {
-    width: 20%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
+    display: inline;
+    float: left;
+    width: 33.33333%;
   }
-  /* line 14, ../sass/partials/base/header/length-three/_legacy.scss */
+  /* line 14, ../sass/partials/base/header/_length-three.scss */
   header section.search {
     display: none;
   }
@@ -1306,21 +1303,17 @@ header #show-mobile-nav {
 }
 @media all and (min-width: 640px) and (max-width: 1023px) {
   /*styles for devices from 640-1024px wide*/
-  /* line 2, ../sass/partials/base/header/length-five/_legacy.scss */
+  /* line 2, ../sass/partials/base/header/_length-five.scss */
   header {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-  /* line 11, ../sass/partials/base/header/length-five/_legacy.scss */
-  header section.user {
-    width: 33.33333%;
+    display: inline;
     float: left;
-    margin-right: -100%;
-    margin-left: 88.88889%;
-    clear: none;
+    width: 100%;
+  }
+  /* line 11, ../sass/partials/base/header/_length-five.scss */
+  header section.user {
+    display: inline;
+    float: left;
+    width: 40%;
   }
 
   /*navobile*/
@@ -1337,165 +1330,145 @@ header #show-mobile-nav {
 /*desktop nav*/
 @media all and (min-width: 1024px) and (max-width: 1663px) {
   /*header styles on devices from 1024px-1664px*/
-  /* line 2, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 2, ../sass/partials/base/header/_length-eight.scss */
   header {
+    display: inline;
+    float: left;
     width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
     /*multiple headers get styled into tabs. See foxnews for example*/
   }
-  /* line 5, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 5, ../sass/partials/base/header/_length-eight.scss */
   header img.logo {
     /*site logo*/
   }
-  /* line 6, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 6, ../sass/partials/base/header/_length-eight.scss */
   header h1 {
     /*site tite*/
   }
-  /* line 7, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 7, ../sass/partials/base/header/_length-eight.scss */
   header address {
     /*address info*/
   }
-  /* line 10, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 10, ../sass/partials/base/header/_length-eight.scss */
   header section.masthead {
-    width: 46.66667%;
+    display: inline;
     float: left;
-    margin-right: -100%;
-    margin-left: 0%;
-    clear: none;
+    width: 50%;
     /*masthead is centered on page*/
   }
-  /* line 13, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 13, ../sass/partials/base/header/_length-eight.scss */
   header section.masthead img.logo {
     /*site logo*/
   }
-  /* line 14, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 14, ../sass/partials/base/header/_length-eight.scss */
   header section.masthead h1 {
     /*site title*/
   }
-  /* line 15, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 15, ../sass/partials/base/header/_length-eight.scss */
   header section.masthead address {
     /*address info*/
   }
-  /* line 17, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 17, ../sass/partials/base/header/_length-eight.scss */
   header section.user {
-    width: 20%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-  /* line 21, ../sass/partials/base/header/length-eight/_legacy.scss */
-  header section.social {
-    width: 20%;
+    display: inline;
     float: left;
-    margin-right: -100%;
-    margin-left: 53.33333%;
-    clear: none;
+    width: 25%;
   }
-  /* line 25, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 21, ../sass/partials/base/header/_length-eight.scss */
+  header section.social {
+    display: inline;
+    float: left;
+    width: 25%;
+  }
+  /* line 25, ../sass/partials/base/header/_length-eight.scss */
   header section.search {
-    width: 33.33333%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
+    display: inline;
+    float: left;
+    width: 37.5%;
   }
-  /* line 28, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 28, ../sass/partials/base/header/_length-eight.scss */
   header section.search .compact {
     /*expanding box*/
   }
-  /* line 31, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 31, ../sass/partials/base/header/_length-eight.scss */
   header nav {
+    display: inline;
+    float: left;
     width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
   }
-  /* line 38, ../sass/partials/base/header/length-eight/_legacy.scss */
+  /* line 38, ../sass/partials/base/header/_length-eight.scss */
   header #show-mobile-nav {
     display: none;
   }
 }
 @media all and (min-width: 1664px) {
   /*styles for devices from 1664px up*/
-  /* line 2, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 2, ../sass/partials/base/header/_length-thirteen.scss */
   header {
+    display: inline;
+    float: left;
     width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
     /*multiple headers get styled into tabs. See foxnews for example*/
   }
-  /* line 6, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 6, ../sass/partials/base/header/_length-thirteen.scss */
   header img.logo {
     /*site logo*/
   }
-  /* line 7, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 7, ../sass/partials/base/header/_length-thirteen.scss */
   header h1 {
     /*site tite*/
   }
-  /* line 8, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 8, ../sass/partials/base/header/_length-thirteen.scss */
   header address {
     /*address info*/
   }
-  /* line 11, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 11, ../sass/partials/base/header/_length-thirteen.scss */
   header section.masthead {
     /*masthead is centered on page*/
   }
-  /* line 14, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 14, ../sass/partials/base/header/_length-thirteen.scss */
   header section.masthead img.logo {
     /*site logo*/
   }
-  /* line 15, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 15, ../sass/partials/base/header/_length-thirteen.scss */
   header section.masthead h1 {
     /*site title*/
   }
-  /* line 16, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 16, ../sass/partials/base/header/_length-thirteen.scss */
   header section.masthead address {
     /*address info*/
   }
-  /* line 18, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 18, ../sass/partials/base/header/_length-thirteen.scss */
   header section.user {
-    width: 20%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
+    display: inline;
+    float: left;
+    width: 15.38462%;
+    position: absolute;
+    right: 0%;
   }
-  /* line 22, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 23, ../sass/partials/base/header/_length-thirteen.scss */
   header section.social {
-    width: 12%;
+    display: inline;
     float: left;
-    margin-right: -100%;
-    margin-left: 32%;
-    clear: none;
+    width: 15.38462%;
   }
-  /* line 26, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 27, ../sass/partials/base/header/_length-thirteen.scss */
   header section.search {
-    width: 20%;
+    display: inline;
     float: left;
-    margin-right: -100%;
-    margin-left: 40%;
-    clear: none;
+    width: 23.07692%;
   }
-  /* line 29, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 30, ../sass/partials/base/header/_length-thirteen.scss */
   header section.search .compact {
     /*expanding box*/
   }
-  /* line 32, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 33, ../sass/partials/base/header/_length-thirteen.scss */
   header nav {
+    display: inline;
+    float: left;
     width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
   }
-  /* line 39, ../sass/partials/base/header/length-thirteen/_legacy.scss */
+  /* line 40, ../sass/partials/base/header/_length-thirteen.scss */
   header #show-mobile-nav {
     display: none;
   }
@@ -1542,7 +1515,7 @@ article p {
 }
 @media all and (min-width: 256px) {
   /*styles for screens 256-384px*/
-  /* line 2, ../sass/partials/base/article/length-two/_legacy.scss */
+  /* line 2, ../sass/partials/base/article/_length-two.scss */
   article {
     margin-top: 5rem;
   }
@@ -1553,7 +1526,7 @@ article p {
 }
 @media all and (min-width: 640px) {
   /*styles for devices from 640-1024px wide*/
-  /* line 2, ../sass/partials/base/article/length-five/_legacy.scss */
+  /* line 2, ../sass/partials/base/article/_length-five.scss */
   article {
     margin-top: 5rem;
   }
@@ -1561,19 +1534,19 @@ article p {
 /*desktop nav*/
 @media all and (min-width: 1024px) {
   /*header styles on devices from 1024px-1664px*/
-  /* line 2, ../sass/partials/base/article/length-eight/_legacy.scss */
+  /* line 2, ../sass/partials/base/article/_length-eight.scss */
   article {
     margin-top: 8rem;
   }
 }
 @media all and (min-width: 1664px) {
   /*styles for devices from 1664px up*/
-  /* line 2, ../sass/partials/base/article/length-thirteen/_legacy.scss */
+  /* line 2, ../sass/partials/base/article/_length-thirteen.scss */
   article {
     margin-top: 8rem;
   }
 }
-/* line 30, ../sass/utilities/variables.scss */
+/* line 27, ../sass/utilities/_variables.scss */
 * {
   font-size: 100%;
 }
@@ -1662,7 +1635,7 @@ article {
 article time {
   /*articles must include the time on which they were published*/
 }
-/* line 1, ../sass/partials/article/_blockquote.scss */
+/* line 11, ../sass/partials/article/_blockquote.scss */
 article blockquote {
   width: 50%;
   padding: 0.62rem 1rem 0 1rem;
@@ -1672,27 +1645,8 @@ article blockquote {
   	padding-top: 0.62em;
   	font-style: italic;
   }*/
-  	/*
-  	@media all and (max-width:383px){
-  		width: 100%;
-  	}
-  	@media all and (min-width:384px) and (max-width:639px){
-  		width: 50%;
-  	}
-  
-  	@media all and (min-width:640px) and (max-width:1023px){
-  		width: 60%;
-  	}
-  	@media all and (min-width:1024px) and (max-width:1663px){
-  		width: 62.5%;
-  	}
-  
-  	@media all and (min-width:1664px){
-  		width: 61.5%;
-  	}
-  	*/
 }
-/* line 2, ../sass/partials/article/_blockquote.scss */
+/* line 12, ../sass/partials/article/_blockquote.scss */
 article blockquote:before {
   content: "“";
   color: #002fff;
@@ -1700,23 +1654,26 @@ article blockquote:before {
   line-height: 1rem;
   position: relative;
   font-family: Gentium Basic;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=62);
+  filter: alpha(opactiy=62);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=62)";
+  -moz-opacity: 0.62;
+  -khtml-opacity: 0.62;
   opacity: 0.62;
 }
-/* line 13, ../sass/partials/article/_blockquote.scss */
+/* line 23, ../sass/partials/article/_blockquote.scss */
 article blockquote:nth-of-type(even) {
   float: right;
   margin-right: 12%;
   margin-left: 1rem;
 }
-/* line 18, ../sass/partials/article/_blockquote.scss */
+/* line 28, ../sass/partials/article/_blockquote.scss */
 article blockquote:nth-of-type(odd) {
   float: left;
   margin: 0;
   margin-bottom: 1em;
   text-align: center;
 }
-/* line 23, ../sass/partials/article/_blockquote.scss */
+/* line 33, ../sass/partials/article/_blockquote.scss */
 article blockquote:nth-of-type(odd) > p {
   margin: 0 auto;
   color: #ae9215;
@@ -1724,7 +1681,7 @@ article blockquote:nth-of-type(odd) > p {
   z-index: 150;
   /*breaks terrible with two lines of text*/
 }
-/* line 37, ../sass/partials/article/_blockquote.scss */
+/* line 47, ../sass/partials/article/_blockquote.scss */
 article blockquote > cite {
   font-family: Open Sans;
   color: #ae9215;
@@ -1733,26 +1690,26 @@ article blockquote > cite {
   padding-top: 0;
   text-align: left;
 }
-/* line 44, ../sass/partials/article/_blockquote.scss */
+/* line 54, ../sass/partials/article/_blockquote.scss */
 article blockquote > cite:before {
   content: "- ";
 }
-/* line 1, ../sass/partials/article/_figure.scss */
+/* line 9, ../sass/partials/article/_figure.scss */
 article figure {
   width: 50%;
 }
-/* line 3, ../sass/partials/article/_figure.scss */
+/* line 11, ../sass/partials/article/_figure.scss */
 article figure:nth-of-type(even) {
   padding-right: 1rem;
 }
-/* line 6, ../sass/partials/article/_figure.scss */
+/* line 14, ../sass/partials/article/_figure.scss */
 article figure:nth-of-type(odd) {
   float: right;
   padding-left: 1rem;
   margin-bottom: 1em;
   text-align: center;
 }
-/* line 12, ../sass/partials/article/_figure.scss */
+/* line 20, ../sass/partials/article/_figure.scss */
 article figure img {
   width: 100%;
 }

@@ -56,26 +56,12 @@ $legacy-support-for-mozilla: false;
 //////////////////////////////
 @import "utilities/color/color-schemer";
 
-@import "breakpoint";
+@import "utilities/opacity";
 
-@import "singularitygs";
+@import "utilities/layout";
 
 @import "utilities/variables";
 
-/*include z-index file with all elements according to their z-index*/
-
-$mobile-first: true;
-
-$grids: 1;
-/*not working with variable values: use context override syntax
-$grids: add-grid(2 at #{$length-two * 1px});
-$grids: add-grid(3 at #{$length-three * 1px});
-$grids: add-grid(5 at #{$length-five * 1px});
-$grids: add-grid(8 at #{$length-eight * 1px});
-$grids: add-grid(13 at #{$length-thirteen * 1px});
-*/
-
-$gutters: 1em;
 
 //////////////////////////////
 // Import Base

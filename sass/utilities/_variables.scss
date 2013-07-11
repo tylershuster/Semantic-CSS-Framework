@@ -1,6 +1,3 @@
-
-
-
 $em: 16;
 
 $length-one: $em * 8;/*128*/
@@ -227,3 +224,8 @@ $width-twelve: 96em;
 			@else {	@include note-5;}
 		}
 }
+
+
+
+$max-width: 100%;
+
