@@ -1,5 +1,6 @@
 /*styles for devices from 640-1024px wide*/
 header{
+	height: 5rem;
 	@include column(5,5);
 	img.logo{}
 	h1{}
@@ -15,102 +16,45 @@ header{
 		&.search{}
 	}
 	nav{
+		background-color: $color-dark;
+		width: 38%;
+		height: 100%;
+		z-index: 999;
+		li{
+			display: block;
+			
+			text-align: left;
+		}
+
 
 	}
 }
-
-
-
-
-
-
-
-	/* Only show the menu link on smaller screens */
-	.slide-toggle {
-		display: block;
-	}
-
-	/*
-	 * The transition value determines the speed
-	 * at which the content will slide over
-	 */
-	.slide {
+nav {
 		-webkit-transition: -webkit-transform 500ms ease;
 		-moz-transition: -moz-transform 500ms ease;
 		-o-transition: -o-transform 500ms ease;
 		transition: transform 500ms ease;
-	}
-
-	/*
-	 * Enable hardware acceleration and stop flickering
-	 * More details: http://indiegamr.com/ios6-html-hardware-acceleration-changes-and-how-to-fix-them/
-	 * Add more browser prefixes as required for your environment
-	 */
-	.slide,
-	.nav {
 		-webkit-transform: translateZ(0);
 		-moz-transform: translateZ(0);
 		-webkit-perspective: 1000;
 		-moz-perspective: 1000;
 		-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;
-	}
-
-	/*
-	 * When the checkbox is checked slide the content
-	 * over and the checkbox with it
-	 */
-	.slide-checkbox:checked ~ .slide {
-		-webkit-transform: translateX(70%) scale(1);
-		-moz-transform: translateX(70%) scale(1);
-		-ms-transform: translateX(70%) scale(1);
-		-o-transform: translateX(70%) scale(1);
-		transform: translateX(70%) scale(1);
-
-	}
-
-	.nav {
-		height: 100%;
-		background: #333;
-		border-radius: 0;
-
-		/*
-		 * The width determines how much of the page you want to
-		 * remain visible once the menu slides over
-		 */
-		width: 70%;
-
-		/*
-		 * Must be absolutely positioned otherwise it won't sit
-		 * side by side with the content but instead above it
-		 * */
-		position: absolute;
-		left: 0;
-		top: 0;
-
-		/* Keeps the menu hidden off-canvas to the left */
 		-webkit-transform: translateX(-100%);
 		-moz-transform: translateX(-100%);
 		-ms-transform: translateX(-100%);
 		-o-transform: translateX(-100%);
 		transform: translateX(-100%);
 	}
+.slide-checkbox:checked ~ nav {
+		-webkit-transform: translateX(0%) scale(1);
+		-moz-transform: translateX(0%) scale(1);
+		-ms-transform: translateX(0%) scale(1);
+		-o-transform: translateX(0%) scale(1);
+		transform: translateX(0%) scale(1);
 
-	.nav li {
-		float: none;
 	}
 
-	.nav li a {
-		border-top: 1px solid #222;
-		border-bottom: 1px solid #444;
-		padding: 12px 12px;
+.slide-toggle {
+		display: block;
 	}
-
-	.nav li:first-child a {
-		border-top: none;
-	}
-
-	.nav li:last-child a {
-		border-bottom: none;
-	}
-

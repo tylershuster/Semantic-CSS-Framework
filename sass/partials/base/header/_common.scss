@@ -160,66 +160,16 @@ header{
 }
 
 
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body,
-html {
-		height: 100%;
-}
-
-
-
-/* Also relates to the pseudo class & sibling bug */
-@-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
-
-
-
-
-
-
-/* @group .nav */
-.nav {
-	width: 100%;
-	//margin: 0 0 20px 0;
-	//padding: 5px 0;
-	//background: #333;
-	//border-radius: 3px;
-	overflow: hidden;
-}
-
-.nav li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	float: left;
-}
-
-.nav li a {
-	display: block;
-	//padding: 5px 20px;
-	text-decoration: none;
-	//background: #333;
-	//color: #f9f9f9;
-}
-
-.nav li a:hover {
-	//background: #2e2e2e;
-}
-
-/* @end nav */
-
 /* This is the clickable label */
 .slide-toggle {
 	float: right;
 	cursor: pointer;
-	position: relative;
+	position: fixed;
+	top:-1.9rem;
+	left: -2rem;
 	z-index: 1;
 	display: none;
-	margin: 10px 10px 0 0;
+	color: $color-secondary;
 }
 
 /* Kill the nasty outlines everywhere */
@@ -233,14 +183,9 @@ html {
 
 /* The :after pseudo element has an icon that covers the checkbox */
 .slide-toggle:after {
-	content: "!";
-	color: #f9f9f9;
-	background: #333;
-	display: block;
-	height: 30px;
-	width: 38px;
-	border-radius: 3px;
-	font: 24px/30px 'responav';
+	content: "☰";	
+	display: block;		
+	font: 8rem 'Entypo';
 	text-align: center;
 	margin-left: -19px;
 }
@@ -254,8 +199,9 @@ html {
 
 /* When it's checked replace the menu icon with a close icon */
 .slide-checkbox:checked ~ .slide-toggle:after {
-	content: '"';
+	content: '☰';
 }
+
 
 
 /*only show mobile nav on @media handheld*/
@@ -263,7 +209,7 @@ html {
 /*navobile*/
 
 /*
-.navobile-navigation {
+nav ulobile-navigation {
   background-color: $color-dark;
   height: 100%;
   left: 0;
@@ -291,7 +237,7 @@ html {
   width: 0;
 }
 
-.navobile-bound {
+nav ulobile-bound {
   overflow-x: hidden;
   width: 100%;
 }
@@ -300,16 +246,16 @@ html {
   width: 1px;
 }
 
-.navobile-navigation ul {
+nav ulobile-navigation ul {
   overflow: hidden;
 }
 
-.navobile-navigation li {
+nav ulobile-navigation li {
   float: none;
   overflow: hidden;
 }
 
-.navobile-content {
+nav ulobile-content {
   position: relative;
   z-index: 3;
   -webkit-transition: -webkit-transform 0.2s linear;
@@ -319,7 +265,7 @@ html {
   transition: transform 0.2s linear;
 }
 
-.csstransforms .navobile-content {
+.csstransforms nav ulobile-content {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -327,7 +273,7 @@ html {
   transform: translateX(0);
 }
 
-.csstransforms main.navobile-content-hidden {
+.csstransforms mainnav ulobile-content-hidden {
   -webkit-transform: translateX(85%);
   -moz-transform: translateX(85%);
   -ms-transform: translateX(85%);
@@ -335,7 +281,7 @@ html {
   transform: translateX(85%);
 }
 
-.csstransforms3d .navobile-content {
+.csstransforms3d nav ulobile-content {
   -webkit-transform: translate3d(0,0,0);
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
@@ -343,7 +289,7 @@ html {
   transform: translate3d(0,0,0);
 }
 
-.csstransforms main.navobile-content-hidden {
+.csstransforms mainnav ulobile-content-hidden {
   -webkit-transform: translate3d(85%,0,0);
   -moz-transform: translate3d(85%,0,0);
   -ms-transform: translate3d(85%,0,0);
