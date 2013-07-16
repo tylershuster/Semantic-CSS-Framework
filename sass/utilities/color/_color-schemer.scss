@@ -30,69 +30,41 @@ $color-schemer-loaded : true;
 $color-primary: null;
 $color-secondary: null;
 $color-tertiary: null;//rare
-$color-accent: null;
-$color-shade: null;
-
+$color-light: null;
+$color-dark: null;
+$color-text: null;
+$color-background: null;
 
 $color-primary: cs-primary($color);
 $color-secondary: cs-secondary($color);
 $color-tertiary: cs-tertiary($color);
+$color-light: set-lightness($color-primary, 87%);
+$color-dark: set-lightness($color-primary, 13%);
 
-
-
-/*add contrast checks to all these
-
-if the value of the
-
-*/
-
-@if lightness($color) < 38{//if the page is a very dark page
-	$color-accent: tint($color, 38%);
-	$color-shade: tint($color, 62%);
-	$dark-text-color: $color-accent;
-	$light-text-color: $color-shade;
-	//the page is very dark
+@if $tone == white {
+	* body{ background-color: #ffffff;$color-background: #ffffff;color: $color-dark;$color-text: $color-dark;}
 }
-@else if lightness($color) < 62{//if the page is of average lightness
-	$color-accent: tint(equalize($color), 62%);
-	$color-shade: shade($color, 62%);
-	$dark-text-color: $color-shade;
-	$light-text-color: $color-accent;
-	//the page is average 
-} 
-@else{//the page is very light
-	$color-accent: equalize($color);
-	$color-shade: shade($color, 62%);
-	$dark-text-color: $color-shade;
-	$light-text-color: $color-accent;
-	//the page isvery light
+@else if $tone == light {
+	* body { background-color: $color-light;$color-background: $color-light;color: $color-dark;$color-text: $color-dark;}
 }
-$dark-text-color: $color-shade;
-	$light-text-color: $color-accent;
-
-
-
-@mixin text-contrast($bg-color, $dark-text: $dark-text-color, $light-text: $light-text-color) {
-	//http://codepen.io/bluesaunders/pen/FCLaz
-  $color-brightness: round((red($bg-color) * 299) + (green($bg-color) * 587) + (blue($bg-color) * 114) / 1000);
-  $light-text-brightness: round((red($light-text) * 299) + (green($light-text) * 587) + (blue($light-text) * 114) / 1000);
-  $dark-text-brightness: round((red($dark-text) * 299) + (green($dark-text) * 587) + (blue($dark-text) * 114) / 1000);
-  @if abs($color-brightness - $light-text-brightness) > abs($color-brightness - $dark-text-brightness) {
-    color: $light-text;
-  }
-  @else {
-    color: $dark-text;
-  }
-  content: "#{$bg-color}";
+@else if $tone == dark {
+	* body { background-color: $color-dark;$color-background: $color-dark;color: $color-light;$color-text: $color-light;}
+}
+@else if $tone == black{
+	* body { background-color: #000000;$color-background: #000000;color: $color-light;$color-text: $color-light;}
 }
 
-article > h1{
-	@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);
-}
 
 
 
 
 //$color-text: $color-shade;
 
-* body {background-color: $color-primary;}
+//* body {background-color: $color-primary;}
+
+
+
+
+
+
+

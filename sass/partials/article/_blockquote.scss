@@ -3,23 +3,26 @@
 //
 // Use cases:
 //
-// Article pull quote : article > blockquote
+// Article pull quote : article > blockquote.pullquote
+// -When pulling a quote from an article for emphasis
 //
 //////////////////////////////
 
 
 blockquote{
+	border-left: 1px solid $color-secondary;
 	&:before{
 		content: "“";
 		color: $color-tertiary;
 		font-size: 8em;
 		line-height: 1rem;
 		position: relative;
+		//margin-left: calc(-100% + 2rem);
+		top: 4rem;
 		font-family: $serif;
 		@include opacity(0.62);
 	}
-	width: 50%;//this should only be when it's inside an article. fix this shit
-	padding: 0.62rem 1rem 0 1rem;
+	//padding: 0.62rem 1rem 0 1rem;
 	&:nth-of-type(even){
 		float: right;
 		margin-right: 12%;
@@ -29,11 +32,13 @@ blockquote{
 		float: left;
 		margin: 0;
 		margin-bottom: 1em;
-		text-align: center;
+		text-align: left;
 		> p{
-			margin: 0 auto;
+			display: block;
 			color: $color-secondary;
 			position: relative;
+			top: -3rem;
+			left: 1rem;
 			z-index: 150;
 			/*breaks terrible with two lines of text*/
 		}
@@ -45,11 +50,11 @@ blockquote{
 		font-style: italic;
 	}*/
 	> cite{
+		display: block;
 		font-family: $sans;
 		color: $color-secondary;
 		float: left;
-		margin-left: 50%;
-		padding-top: 0;
+		margin-left: 38%;
 		text-align: left;
 		&:before{
 			content: "- ";

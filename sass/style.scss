@@ -1,20 +1,35 @@
 /* { picnicc: style } */
 /*--------------------------main.scss-------------------------------*/
+//////////////////////////////
+// Typography
+//////////////////////////////
+
 $key: c;					//Specify the key in which to set your piece
+
 $quality: domsharp9;				//Specify the quality of your piece. Pick something that fits the feel of the page
 
 $sans: Open Sans;
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
 
 $serif: Gentium Basic;
+
 @import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic);
+
 $body-font: $serif;
+
 $heading-font: $sans;
 
-$color: #1531AE;				//Specify the color of your text
+//////////////////////////////
+// Color
+//////////////////////////////
 
-$scheme: complement;			//Specify the relationship of colors on the page
+$color: blue;				//Specify your page's primary color
+
+$scheme: triad;			//Specify the relationship of colors on the page
 //mono(broken), complement, triad, tetrad, analogic, accented-analogic
+
+$tone: dark !default;			//Specify background color: white, light, dark, or black
 
 /*---------
 basic colors formulas

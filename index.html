@@ -12,6 +12,8 @@
     <script src="http://madebymade.github.io/jquery-navobile/javascripts/lib/jquery.hammer.js"></script>
     <script src="http://madebymade.github.io/jquery-navobile/javascripts/lib/jquery.navobile.min.js"></script>
     <script src="../style.css/javascripts/jquery.pageslide.min.js"></script>
+    <script src="../style.css/javascripts/jquery.baseline.js"></script>
+    <script src="../style.css/javascripts/tables.js"></script>
 </head>
 <body>
 	<header>
@@ -19,15 +21,17 @@
 			<img src="http://lorempixel.com/400/200" alt="" class="logo">
 			<h1>Site Title</h1>
 		</section>
-		<nav>
-			<ul>
+    <input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
+    <label for="slide-checkbox" class="slide-toggle" onclick></label>
+		<nav class="slide">
+			<ul class="nav">
 				<li><a href="#">Nav Link 1</a></li>
 				<li><a href="#">Nav Link 2</a></li>
 				<li><a href="#">Nav Link 3</a></li>
 				<li><a href="#">Nav Link 4</a></li>
 				<li><a href="#">Nav Link 5</a></li>
 			</ul>
-			<a href="#mobile-nav" id="show-mobile-nav">☰</a>
+			<!--<a href="#mobile-nav" id="show-mobile-nav">☰</a>-->
 		</nav>
 		<section class="user">
 			<a href="#">Login</a>
@@ -43,19 +47,17 @@
 			<a href="#" class="twitter"></a>
 			<a href="#" class="gplus"></a>
 		</address>
+    <a href="#mobile-nav" id="show-mobile-nav">☰</a>
 	</header>
 	<main>
 		<article>
 			<h1>The Primary Header of the Document</h1>
 			<h2>The subheader</h2>
-			<a href="#mobile-nav" id="show-mobile-nav">☰</a>
-			
-			
 			<p>
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in egestas purus. Pellentesque venenatis, tellus sit amet tempor luctus, orci augue dictum diam, et posuere mauris massa nec turpis. Pellentesque nunc nisl, gravida sit amet consectetur eget, luctus at nulla. Nunc tincidunt venenatis blandit. Vestibulum tristique interdum tortor, non consectetur libero vulputate imperdiet. Curabitur ipsum leo, consequat ut mattis id, varius non enim. Ut semper, odio eu adipiscing volutpat, risus lectus elementum nibh, sed vulputate erat felis vitae dui. Curabitur ac libero lacinia, sagittis nibh quis, mattis sem. Aenean ullamcorper tortor at risus rutrum hendrerit. Sed a consequat purus, quis semper justo. Aliquam iaculis quam sit amet nulla imperdiet pretium. Donec tempus mauris ut ornare bibendum.
 	</p>
 	<blockquote>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 		<cite>Lorem Ipsum</cite>
 	</blockquote>
 	<p>
@@ -81,12 +83,20 @@
 	Sed augue nisi, ullamcorper et sem eu, dignissim mollis tellus. Integer tincidunt sollicitudin pharetra. Proin purus tortor, adipiscing at ullamcorper sit amet, feugiat a lacus. Donec consequat ligula eu quam venenatis varius. Integer id enim in lorem viverra malesuada ut feugiat nisl. Nullam nibh tellus, eleifend eu metus vel, venenatis consequat mi. Quisque pretium lacinia risus a lacinia. Duis nulla est, consequat at varius sit amet, sollicitudin ac ante. Vivamus viverra lorem eget molestie laoreet. Maecenas imperdiet vitae ipsum dignissim sagittis. Phasellus quis felis accumsan mi venenatis pellentesque vitae tristique turpis. Ut accumsan elit porta tempus porta. Aenean elementum massa ut felis viverra, eget gravida arcu vestibulum. Curabitur a pulvinar mauris.
 	</p>
 	<address>
+    Generic Address Text
 	  <strong>Company Name, Inc.</strong><br>
-	  811 7th Ave, Suite 700<br>
-	  Manhattan, NY 10019<br>
-	  <abbr title="Phone">P:</abbr> (487) 487-4874
+    <a href="#" class="mail">
+      <span class="streetAddress">811 7th Ave, Suite 700</span>
+      <span class="addressLocality">Manhattan</span><span class="addressRegion">NY</span><span class="postalCode">10019</span>
+    </a>
+	  <a href="#" class="tel">(487) 487-4874</a>
+    <a href="#" class="email">tyler.herrshuster@gmail.com</a>
+    <a href="#" class="gps"></a>
+    <a href="#" class="twitter"></a>
+    <a href="#" class="gplus"></a>
+    <a href="#" class="facebook"></a>
 	</address>
-	<details>
+	<!--<details>
   <summary>More info</summary>
   <div>
     <p>Additional information</p>
@@ -115,7 +125,7 @@
       <li>Point 2</li>
     </ul>
   </div>
-</details>
+</details>-->
 <figure>
   <img src="http://placehold.it/240x240" alt="Image Alt Text">
   <figcaption>Figcaption content</figcaption>
@@ -511,7 +521,7 @@ p q r s t u v w x y z { | } ~
 	<footer>
 		Footer Placeholder
 	</footer>
-	<script>
+	<!--<script>
 	$(document).ready(function(){
 		$('body').attr('data-role', 'page');
 		$('header').attr('data-role', 'header');
@@ -519,9 +529,9 @@ p q r s t u v w x y z { | } ~
 		$('header>nav,section.user,header>address').wrapAll("<div id='mobile-nav'></div>");
 		$('#mobile-nav').prependTo($('header'));
 	});
-	</script>
+	</script>-->
 	<script>
-	$('#show-mobile-nav').pageslide({direction: 'right', modal: false});
+  $('img').baseline(16);
 	</script>
 	
 	<!--<script>

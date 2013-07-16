@@ -1,4 +1,5 @@
 header{
+	background-color: $color-primary;
 	height: 8rem;
 	position: fixed;
 	top: 0;
@@ -11,13 +12,13 @@ header{
     	margin-left: 1rem;
 	}
 	h1{/*site tite*/
+		color: $color-secondary;
 		display: inline-block;
 		float: left;
 		line-height: 5rem;
 		margin-left: 1rem;
 		margin-top: 0;
 		padding: 0;
-		
 	}
 	address{/*address info*/}
 
@@ -31,13 +32,12 @@ header{
 		&.user{
 			background-color: $color-tertiary;
 			height: 2em;
-			padding: 0.38rem 0 0.62rem 0;
+			//padding: 0.38rem 0 0.62rem 0;
 			margin-right: 1rem;
 			text-align: center;
 			a{
-				@include text-contrast($color-tertiary, $dark-text: $dark-text-color, $light-text: $light-text-color);
 				text-decoration: none;
-				margin: 0 1rem;
+				margin: 0.38rem 1rem 0.62rem 1rem;
 			}
 		}
 		&.social{
@@ -73,8 +73,7 @@ header{
 		position: fixed;
 		top: 5em;
 		height: 3rem;
-		background-color: $color-tertiary;
-		@include text-contrast($color-tertiary, $dark-text: $dark-text-color, $light-text: $light-text-color);
+		background-color: $color-secondary;
 		float: left;
 		ul{
 			width: 100%;
@@ -89,20 +88,19 @@ header{
 			text-align: center;
 			padding: 1em;
 			&:hover{
-				background-color: $color-primary;
+				background-color: $color-background;
+				a{
+					color: $color-secondary;
+				}
 			}
 			> a{
-				@include text-contrast($color-tertiary, $dark-text: $dark-text-color, $light-text: $light-text-color);
 				display: block;
 				text-decoration: none;
-				&:hover{
-					@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);
-				}
 			}
 		}
 	}
 	#show-mobile-nav{
-		color: $color-tertiary;
+		color: $color-secondary;
 		font-family: "Entypo";
 		font-size: 5em;
 		display: block;
@@ -120,8 +118,7 @@ header{
 	@media all and (max-width:#{$length-five - 1 * 1px}){
 		//width: calc(100% - 5rem);
 		margin-top: 5rem;
-		background-color: $color-shade;
-		@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);
+		background-color: $color-dark;
 		z-index: 150;
 		img.logo{/*site logo*/}
 		h1{/*site tite*/}
@@ -151,7 +148,7 @@ header{
 			li{
 				display: block;
 				width: 100%;
-				background-color: $color-shade;
+				background-color: $color-dark;
 				color: $color-primary;
 				> a{
 					text-align: left;
@@ -162,11 +159,112 @@ header{
 	}
 }
 
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+		height: 100%;
+}
+
+
+
+/* Also relates to the pseudo class & sibling bug */
+@-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
+
+
+
+
+
+
+/* @group .nav */
+.nav {
+	width: 100%;
+	//margin: 0 0 20px 0;
+	//padding: 5px 0;
+	//background: #333;
+	//border-radius: 3px;
+	overflow: hidden;
+}
+
+.nav li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.nav li a {
+	display: block;
+	//padding: 5px 20px;
+	text-decoration: none;
+	//background: #333;
+	//color: #f9f9f9;
+}
+
+.nav li a:hover {
+	//background: #2e2e2e;
+}
+
+/* @end nav */
+
+/* This is the clickable label */
+.slide-toggle {
+	float: right;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	display: none;
+	margin: 10px 10px 0 0;
+}
+
+/* Kill the nasty outlines everywhere */
+.slide-toggle,
+.slide-toggle:active,
+.slide-toggle:focus {
+	border: none !important;
+	outline: none !important;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* The :after pseudo element has an icon that covers the checkbox */
+.slide-toggle:after {
+	content: "!";
+	color: #f9f9f9;
+	background: #333;
+	display: block;
+	height: 30px;
+	width: 38px;
+	border-radius: 3px;
+	font: 24px/30px 'responav';
+	text-align: center;
+	margin-left: -19px;
+}
+
+/* This is the checkbox */
+.slide-checkbox {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+/* When it's checked replace the menu icon with a close icon */
+.slide-checkbox:checked ~ .slide-toggle:after {
+	content: '"';
+}
+
+
+/*only show mobile nav on @media handheld*/
+
 /*navobile*/
 
 /*
 .navobile-navigation {
-  background-color: $color-shade;
+  background-color: $color-dark;
   height: 100%;
   left: 0;
   margin-top: 5rem;

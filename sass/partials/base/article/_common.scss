@@ -1,10 +1,6 @@
 article{
-	background-color: $color-primary;
-	h1{@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);}
-	h2{@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);}
-	h3{@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);}
-	h4{@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);}
-	h5{@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);}
-	p{@include text-contrast($color-primary, $dark-text: $dark-text-color, $light-text: $light-text-color);}
 	margin: 0 auto;
+	blockquote{
+		width: 50%;
+	}
 }

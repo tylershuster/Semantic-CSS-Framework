@@ -2,7 +2,7 @@
 
 h1{
 	@include typography(size-one);
-	//color: $color-text;
+	color: $color-primary;
 	font-family: '#{$heading-font}';
 }
 h2{
@@ -12,17 +12,17 @@ h2{
 }
 h3{
 	@include typography(size-three);
-	color: $color-accent;
+	color: $color-tertiary;
 	font-family: '#{$heading-font}';
 }
 h4{
 	@include typography(size-four);
-	color: $color-tertiary;
+	color: $color-text;
 	font-family: '#{$heading-font}';
 }
 h5{
 	@include typography(size-five);
-	color: $color-tertiary;
+	color: $color-text;
 	font-family: '#{$heading-font}';
 }
 p, span, cite, time{
