@@ -13,7 +13,7 @@ basic colors formulas
 -analogous
 -monochromatic
 -----------*/
-/* line 51, ../sass/utilities/color/_color-schemer.scss */
+/* line 64, ../sass/utilities/color/_color-schemer.scss */
 * body {
   background-color: #000042;
   color: #bdbdff;
@@ -988,22 +988,23 @@ header section.masthead address {
 header section.user {
   background-color: #ff8000;
   height: 2em;
-  margin-right: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 0;
   text-align: center;
 }
-/* line 38, ../sass/partials/base/header/_common.scss */
+/* line 41, ../sass/partials/base/header/_common.scss */
 header section.user a {
   text-decoration: none;
-  margin: 0.38rem 1rem 0.62rem 1rem;
 }
-/* line 43, ../sass/partials/base/header/_common.scss */
+/* line 46, ../sass/partials/base/header/_common.scss */
 header section.social {
   height: 2em;
   text-align: right;
   display: table;
   padding-right: 1rem;
 }
-/* line 48, ../sass/partials/base/header/_common.scss */
+/* line 51, ../sass/partials/base/header/_common.scss */
 header section.social a {
   display: table-cell;
   float: right;
@@ -1013,7 +1014,7 @@ header section.social a {
   color: #ff8000;
   text-decoration: none;
 }
-/* line 58, ../sass/partials/base/header/_common.scss */
+/* line 61, ../sass/partials/base/header/_common.scss */
 header section.search {
   position: fixed;
   top: 2rem;
@@ -1022,16 +1023,16 @@ header section.search {
   text-align: right;
   padding-right: 1rem;
 }
-/* line 65, ../sass/partials/base/header/_common.scss */
+/* line 68, ../sass/partials/base/header/_common.scss */
 header section.search form input {
   height: 1.5rem;
   margin-top: 0.75em;
 }
-/* line 69, ../sass/partials/base/header/_common.scss */
+/* line 72, ../sass/partials/base/header/_common.scss */
 header section.search .compact {
   /*expanding box*/
 }
-/* line 72, ../sass/partials/base/header/_common.scss */
+/* line 75, ../sass/partials/base/header/_common.scss */
 header nav {
   position: fixed;
   top: 5em;
@@ -1039,7 +1040,7 @@ header nav {
   background-color: #80ff00;
   float: left;
 }
-/* line 78, ../sass/partials/base/header/_common.scss */
+/* line 81, ../sass/partials/base/header/_common.scss */
 header nav ul {
   width: 100%;
   margin: 0;
@@ -1048,26 +1049,26 @@ header nav ul {
   list-style: none;
   display: table;
 }
-/* line 86, ../sass/partials/base/header/_common.scss */
+/* line 89, ../sass/partials/base/header/_common.scss */
 header nav li {
   display: table-cell;
   text-align: center;
   padding: 1em;
 }
-/* line 90, ../sass/partials/base/header/_common.scss */
+/* line 93, ../sass/partials/base/header/_common.scss */
 header nav li:hover {
   background-color: #000042;
 }
-/* line 92, ../sass/partials/base/header/_common.scss */
+/* line 95, ../sass/partials/base/header/_common.scss */
 header nav li:hover a {
   color: #80ff00;
 }
-/* line 96, ../sass/partials/base/header/_common.scss */
+/* line 99, ../sass/partials/base/header/_common.scss */
 header nav li > a {
   display: block;
   text-decoration: none;
 }
-/* line 102, ../sass/partials/base/header/_common.scss */
+/* line 105, ../sass/partials/base/header/_common.scss */
 header #show-mobile-nav {
   color: #80ff00;
   font-family: "Entypo";
@@ -1080,65 +1081,8 @@ header #show-mobile-nav {
   overflow: visible;
 }
 
-@media all and (max-width: 639px) {
-  /* line 117, ../sass/partials/base/header/_common.scss */
-  #mobile-nav {
-    margin-top: 5rem;
-    background-color: #000042;
-    z-index: 150;
-  }
-  /* line 123, ../sass/partials/base/header/_common.scss */
-  #mobile-nav img.logo {
-    /*site logo*/
-  }
-  /* line 124, ../sass/partials/base/header/_common.scss */
-  #mobile-nav h1 {
-    /*site tite*/
-  }
-  /* line 125, ../sass/partials/base/header/_common.scss */
-  #mobile-nav address {
-    /*address info*/
-  }
-  /* line 128, ../sass/partials/base/header/_common.scss */
-  #mobile-nav section.masthead {
-    /*masthead is centered on page*/
-  }
-  /* line 130, ../sass/partials/base/header/_common.scss */
-  #mobile-nav section.masthead img.logo {
-    /*site logo*/
-  }
-  /* line 131, ../sass/partials/base/header/_common.scss */
-  #mobile-nav section.masthead h1 {
-    /*site title*/
-  }
-  /* line 132, ../sass/partials/base/header/_common.scss */
-  #mobile-nav section.masthead address {
-    /*address info*/
-  }
-  /* line 142, ../sass/partials/base/header/_common.scss */
-  #mobile-nav section.search .compact {
-    /*expanding box*/
-  }
-  /* line 145, ../sass/partials/base/header/_common.scss */
-  #mobile-nav nav {
-    width: calc(100% - 5rem);
-  }
-  /* line 148, ../sass/partials/base/header/_common.scss */
-  #mobile-nav nav li {
-    display: block;
-    width: 100%;
-    background-color: #000042;
-    color: blue;
-  }
-  /* line 153, ../sass/partials/base/header/_common.scss */
-  #mobile-nav nav li > a {
-    text-align: left;
-    color: blue;
-  }
-}
-
 /* This is the clickable label */
-/* line 164, ../sass/partials/base/header/_common.scss */
+/* line 123, ../sass/partials/base/header/_common.scss */
 .slide-toggle {
   float: right;
   cursor: pointer;
@@ -1151,7 +1095,7 @@ header #show-mobile-nav {
 }
 
 /* Kill the nasty outlines everywhere */
-/* line 178, ../sass/partials/base/header/_common.scss */
+/* line 137, ../sass/partials/base/header/_common.scss */
 .slide-toggle,
 .slide-toggle:active,
 .slide-toggle:focus {
@@ -1161,7 +1105,7 @@ header #show-mobile-nav {
 }
 
 /* The :after pseudo element has an icon that covers the checkbox */
-/* line 185, ../sass/partials/base/header/_common.scss */
+/* line 144, ../sass/partials/base/header/_common.scss */
 .slide-toggle:after {
   content: "☰";
   display: block;
@@ -1171,7 +1115,7 @@ header #show-mobile-nav {
 }
 
 /* This is the checkbox */
-/* line 194, ../sass/partials/base/header/_common.scss */
+/* line 153, ../sass/partials/base/header/_common.scss */
 .slide-checkbox {
   position: absolute;
   top: -9999px;
@@ -1179,151 +1123,12 @@ header #show-mobile-nav {
 }
 
 /* When it's checked replace the menu icon with a close icon */
-/* line 201, ../sass/partials/base/header/_common.scss */
+/* line 160, ../sass/partials/base/header/_common.scss */
 .slide-checkbox:checked ~ .slide-toggle:after {
   content: '☰';
 }
 
 /*only show mobile nav on @media handheld*/
-/*navobile*/
-/*
-nav ulobile-navigation {
-  background-color: $color-dark;
-  height: 100%;
-  left: 0;
-  margin-top: 5rem;
-  overflow: auto;
-  padding: 0 1rem;
-  position: fixed;
-  top: 0;
-  width: 85%;
-  z-index: 1;
-  > li{
-    @include grid-span(3,2,5);
-    display: block;
-    padding: 1rem 0;
-    > a{
-      color: $color-primary;
-      text-decoration: none;
-    }
-  }
-}
-
-
-
-#navobile-device-pixel {
-  width: 0;
-}
-
-nav ulobile-bound {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-#navobile-device-pixel {
-  width: 1px;
-}
-
-nav ulobile-navigation ul {
-  overflow: hidden;
-}
-
-nav ulobile-navigation li {
-  float: none;
-  overflow: hidden;
-}
-
-nav ulobile-content {
-  position: relative;
-  z-index: 3;
-  -webkit-transition: -webkit-transform 0.2s linear;
-  -moz-transition: -moz-transform 0.2s linear;
-  -o-transition: -ms-transform 0.2s linear;
-  -ms-transition: -o-transform 0.2s linear;
-  transition: transform 0.2s linear;
-}
-
-.csstransforms nav ulobile-content {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-}
-
-.csstransforms mainnav ulobile-content-hidden {
-  -webkit-transform: translateX(85%);
-  -moz-transform: translateX(85%);
-  -ms-transform: translateX(85%);
-  -o-transform: translateX(85%);
-  transform: translateX(85%);
-}
-
-.csstransforms3d nav ulobile-content {
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-.csstransforms mainnav ulobile-content-hidden {
-  -webkit-transform: translate3d(85%,0,0);
-  -moz-transform: translate3d(85%,0,0);
-  -ms-transform: translate3d(85%,0,0);
-  -o-transform: translate3d(85%,0,0);
-  transform: translate3d(85%,0,0);
-}
-
-
-  * {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-
-
-
-
-  .mobile-header-bar {
-    background: #ef6e6e;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
-  .mobile-header-bar .icon {
-   
-  }
-
-  .mobile-header-bar .icon:hover,
-  .mobile-header-bar .icon:active {
-    background: rgba(0,0,0,0.1);
-  }
-
-
-  nav ul {
-    margin: 0;
-  }
-
-  nav li {
-    margin: 0;
-  }
-
-  nav li:first-of-type {
-    border-top: 0;
-  }
-
- 
-
-  nav a:hover,
-  nav a:active {
-    background: rgba(0,0,0,0.1);
-  }
-
-  #navobile-navigation a:before {
-    margin-right: 10px;
-  }
-  */
 /* logo left half, menu right half*/
 @media all and (min-width: 128px) and (max-width: 255px) {
   /*Styles for devices from 128-256px wide*/
@@ -1354,15 +1159,51 @@ nav ulobile-content {
   header section.search {
     display: none;
   }
+  /* line 16, ../sass/partials/base/header/_length-two.scss */
+  header nav {
+    background-color: #bdbdff;
+    width: 62%;
+    height: 100%;
+    z-index: 999;
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  /* line 36, ../sass/partials/base/header/_length-two.scss */
+  header nav li {
+    display: block;
+    text-align: left;
+  }
 
-  /* line 1, ../sass/partials/base/header/_navobile.scss */
-  .navobile-mobile-only {
+  /* line 43, ../sass/partials/base/header/_length-two.scss */
+  .slide-checkbox:checked ~ nav {
+    -webkit-transform: translateX(0%) scale(1);
+    -moz-transform: translateX(0%) scale(1);
+    -ms-transform: translateX(0%) scale(1);
+    -o-transform: translateX(0%) scale(1);
+    transform: translateX(0%) scale(1);
+  }
+
+  /* line 52, ../sass/partials/base/header/_length-two.scss */
+  .slide-toggle {
     display: block;
   }
 
-  /* line 2, ../sass/partials/base/header/_navobile.scss */
-  .navobile-desktop-only, .mobile-only {
-    display: none;
+  /* line 56, ../sass/partials/base/header/_length-two.scss */
+  .slide-checkbox:checked ~ .slide-toggle:after {
+    margin-left: -30px;
   }
 }
 /*mobile menu swipe from left*/
@@ -1387,15 +1228,51 @@ nav ulobile-content {
   header section.search {
     display: none;
   }
+  /* line 16, ../sass/partials/base/header/_length-three.scss */
+  header nav {
+    background-color: #bdbdff;
+    width: 50%;
+    height: 100%;
+    z-index: 999;
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  /* line 36, ../sass/partials/base/header/_length-three.scss */
+  header nav li {
+    display: block;
+    text-align: left;
+  }
 
-  /* line 1, ../sass/partials/base/header/_navobile.scss */
-  .navobile-mobile-only {
+  /* line 43, ../sass/partials/base/header/_length-three.scss */
+  .slide-checkbox:checked ~ nav {
+    -webkit-transform: translateX(0%) scale(1);
+    -moz-transform: translateX(0%) scale(1);
+    -ms-transform: translateX(0%) scale(1);
+    -o-transform: translateX(0%) scale(1);
+    transform: translateX(0%) scale(1);
+  }
+
+  /* line 52, ../sass/partials/base/header/_length-three.scss */
+  .slide-toggle {
     display: block;
   }
 
-  /* line 2, ../sass/partials/base/header/_navobile.scss */
-  .navobile-desktop-only, .mobile-only {
-    display: none;
+  /* line 56, ../sass/partials/base/header/_length-three.scss */
+  .slide-checkbox:checked ~ .slide-toggle:after {
+    margin-left: -30px;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1023px) {
@@ -1413,19 +1290,10 @@ nav ulobile-content {
   }
   /* line 18, ../sass/partials/base/header/_length-five.scss */
   header nav {
-    background-color: #000042;
+    background-color: #bdbdff;
     width: 38%;
     height: 100%;
     z-index: 999;
-  }
-  /* line 23, ../sass/partials/base/header/_length-five.scss */
-  header nav li {
-    display: block;
-    text-align: left;
-  }
-
-  /* line 32, ../sass/partials/base/header/_length-five.scss */
-  nav {
     -webkit-transition: -webkit-transform 500ms ease;
     -moz-transition: -moz-transform 500ms ease;
     -o-transition: -o-transform 500ms ease;
@@ -1442,8 +1310,13 @@ nav ulobile-content {
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+  /* line 38, ../sass/partials/base/header/_length-five.scss */
+  header nav li {
+    display: block;
+    text-align: left;
+  }
 
-  /* line 49, ../sass/partials/base/header/_length-five.scss */
+  /* line 45, ../sass/partials/base/header/_length-five.scss */
   .slide-checkbox:checked ~ nav {
     -webkit-transform: translateX(0%) scale(1);
     -moz-transform: translateX(0%) scale(1);
@@ -1452,19 +1325,14 @@ nav ulobile-content {
     transform: translateX(0%) scale(1);
   }
 
-  /* line 58, ../sass/partials/base/header/_length-five.scss */
+  /* line 54, ../sass/partials/base/header/_length-five.scss */
   .slide-toggle {
     display: block;
   }
 
-  /* line 1, ../sass/partials/base/header/_navobile.scss */
-  .navobile-mobile-only {
-    display: block;
-  }
-
-  /* line 2, ../sass/partials/base/header/_navobile.scss */
-  .navobile-desktop-only, .mobile-only {
-    display: none;
+  /* line 58, ../sass/partials/base/header/_length-five.scss */
+  .slide-checkbox:checked ~ .slide-toggle:after {
+    margin-left: -30px;
   }
 }
 /*desktop nav*/
@@ -1648,6 +1516,102 @@ article blockquote {
     margin-top: 8rem;
   }
 }
+/* line 2, ../sass/partials/base/_address.scss */
+address a, address span {
+  display: block;
+}
+/* line 15, ../sass/partials/base/_address.scss */
+address a.twitter:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  color: #ff8000;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 27, ../sass/partials/base/_address.scss */
+address a.twitter:before {
+  content: "\f309";
+}
+/* line 15, ../sass/partials/base/_address.scss */
+address a.gplus:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  color: #ff8000;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 33, ../sass/partials/base/_address.scss */
+address a.gplus:before {
+  content: "\f30f";
+}
+/* line 15, ../sass/partials/base/_address.scss */
+address a.facebook:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  color: #ff8000;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 39, ../sass/partials/base/_address.scss */
+address a.facebook:before {
+  content: "\f30c";
+}
+/* line 15, ../sass/partials/base/_address.scss */
+address a.linkedin:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  color: #ff8000;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 45, ../sass/partials/base/_address.scss */
+address a.linkedin:before {
+  content: "\f318";
+}
+/* line 15, ../sass/partials/base/_address.scss */
+address a.tumblr:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  color: #ff8000;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 51, ../sass/partials/base/_address.scss */
+address a.tumblr:before {
+  content: "\f315";
+}
+/* line 15, ../sass/partials/base/_address.scss */
+address a.instagram:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  color: #ff8000;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 57, ../sass/partials/base/_address.scss */
+address a.instagram:before {
+  content: "\f32d";
+}
+/* line 15, ../sass/partials/base/_address.scss */
+address a.dribbble:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  color: #ff8000;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 63, ../sass/partials/base/_address.scss */
+address a.dribbble:before {
+  content: "\f31b";
+}
+
 /* line 1, ../sass/partials/_article.scss */
 article {
   max-width: 60em;

@@ -34,6 +34,7 @@ $color-light: null;
 $color-dark: null;
 $color-text: null;
 $color-background: null;
+$color-drawer: null;
 
 $color-primary: cs-primary($color);
 $color-secondary: cs-secondary($color);
@@ -42,16 +43,40 @@ $color-light: set-lightness($color-primary, 87%);
 $color-dark: set-lightness($color-primary, 13%);
 
 @if $tone == white {
-	* body{ background-color: #ffffff;$color-background: #ffffff;color: $color-dark;$color-text: $color-dark;}
+	* body {
+		background-color: #ffffff;
+		$color-background: #ffffff;
+		color: $color-dark;
+		$color-text: $color-dark;
+		$color-drawer: $color-light ;
+	}
 }
 @else if $tone == light {
-	* body { background-color: $color-light;$color-background: $color-light;color: $color-dark;$color-text: $color-dark;}
+	* body {
+		background-color: $color-light;
+		$color-background: $color-light;
+		color: $color-dark;
+		$color-text: $color-dark;
+		$color-drawer: #ffffff;
+	}
 }
 @else if $tone == dark {
-	* body { background-color: $color-dark;$color-background: $color-dark;color: $color-light;$color-text: $color-light;}
+	* body {
+		background-color: $color-dark;
+		$color-background: $color-dark;
+		color: $color-light;
+		$color-text: $color-light;
+		$color-drawer: $color-light;
+	}
 }
 @else if $tone == black{
-	* body { background-color: #000000;$color-background: #000000;color: $color-light;$color-text: $color-light;}
+	* body {
+		background-color: #000000;
+		$color-background: #000000;
+		color: $color-light;
+		$color-text: $color-light;
+		$color-drawer: $color-dark;
+	}
 }
 
 

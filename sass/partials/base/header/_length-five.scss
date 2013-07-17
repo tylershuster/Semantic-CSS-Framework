@@ -16,20 +16,10 @@ header{
 		&.search{}
 	}
 	nav{
-		background-color: $color-dark;
+		background-color: $color-drawer;
 		width: 38%;
 		height: 100%;
 		z-index: 999;
-		li{
-			display: block;
-			
-			text-align: left;
-		}
-
-
-	}
-}
-nav {
 		-webkit-transition: -webkit-transform 500ms ease;
 		-moz-transition: -moz-transform 500ms ease;
 		-o-transition: -o-transform 500ms ease;
@@ -45,7 +35,13 @@ nav {
 		-ms-transform: translateX(-100%);
 		-o-transform: translateX(-100%);
 		transform: translateX(-100%);
+		li{
+			display: block;
+			text-align: left;
+		}
 	}
+}
+
 .slide-checkbox:checked ~ nav {
 		-webkit-transform: translateX(0%) scale(1);
 		-moz-transform: translateX(0%) scale(1);
@@ -58,3 +54,5 @@ nav {
 .slide-toggle {
 		display: block;
 	}
+
+.slide-checkbox:checked ~ .slide-toggle:after {margin-left: -30px;}
