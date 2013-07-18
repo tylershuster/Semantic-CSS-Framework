@@ -12,7 +12,7 @@ header{
     	margin-left: 1rem;
 	}
 	h1{/*site tite*/
-		color: $color-secondary;
+		color: $color-accent;
 		display: inline-block;
 		float: left;
 		line-height: 5rem;
@@ -30,44 +30,52 @@ header{
 			address{/*address info*/}
 		}
 		&.user{
-			background-color: $color-tertiary;
-			height: 2em;
+			background-color: $color-secondary;
 			//padding: 0.38rem 0 0.62rem 0;
-			//margin-right: 1rem;
-			position: absolute;
-			right: 1rem;
-			top: 0;
+			margin-right: 1rem;
+			height: 3rem;
+			display: table;
+			@include box-shadow;
+			//position: absolute;
+			//right: 1rem;
+			//top: 0;
 			text-align: center;
+			float: right;			
 			a{
+				display: table-cell;
+				vertical-align: middle;
 				text-decoration: none;
+				/*&:after{
+					content: " |";
+				}
+				&:last-of-type:after{
+					content: "";
+				}*/
 				//margin: 0.38rem 1rem 0.62rem 1rem;
 			}
 		}
-		&.social{
-			height: 2em;
-			text-align: right;
-			display: table;
-			padding-right: 1rem;
-			a{
-				display: table-cell;
-				float: right;
-				width: 1em;
-				padding: 0.5em 1em;
-				font-family: "Entypo";
-				color: $color-tertiary;
-				text-decoration: none;
-			}
-		}
 		&.search{
-			position: fixed;
-			top: 2rem;
-			right: 0;
-			height: 3rem;
+			//position: fixed;
+			//top: 2rem;
+			//right: 0;
+			position: absolute;
+			top: 3rem;
+			right: 1rem;
+			height: 2rem;
 			text-align: right;
-			padding-right: 1rem;
-			form input{
-				height: 1.5rem;
-				margin-top: 0.75em;
+			form {
+				height: 2rem;
+				input[type="search"]{
+					height: 1.5rem;
+					margin-top: 0.25rem;
+					border: 0;
+				}
+				input[type="submit"]{
+					height: 1.5rem;
+					margin-top: 0.25rem;
+					border: 0;
+					padding: 0 0.5rem;					
+				}
 			}
 			.compact{/*expanding box*/}
 		}
@@ -76,8 +84,9 @@ header{
 		position: fixed;
 		top: 5em;
 		height: 3rem;
-		background-color: $color-secondary;
+		background-color: $color-secondary;		
 		float: left;
+		@include box-shadow;
 		ul{
 			width: 100%;
 			margin: 0;
@@ -90,16 +99,16 @@ header{
 			display: table-cell;
 			text-align: center;
 			padding: 1em;
+			> a{
+				display: block;
+				text-decoration: none;
+			}
 			&:hover{
 				background-color: $color-background;
 				a{
 					color: $color-secondary;
 				}
-			}
-			> a{
-				display: block;
-				text-decoration: none;
-			}
+			}			
 		}
 	}
 	#show-mobile-nav{

@@ -1,7 +1,9 @@
 header address{
-	position: relative;
-	top: 2em;
-	padding-right: 1rem;
+	display: none;
+	position: absolute;
+	top: 3em;
+	right: 1rem;
+	padding-top: 0.5rem;
 	a.tel{}
 	a.html{}
 	a.mail{
@@ -15,14 +17,13 @@ header address{
 	a.gps{}
 	@mixin social{
 		&:before{
-			display: block;
+			display: inline-block;
 			font-family: "Entypo";
 			text-decoration: none;
 			color: $color-tertiary;
 			float: right;
 			margin: 0 0.38rem;
-		}
-		
+		}		
 	}
 	a.twitter{
 		@include social;

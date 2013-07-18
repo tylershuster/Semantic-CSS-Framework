@@ -1,8 +1,5 @@
 article{
 	max-width: 60em;
 	padding: 0 1em;
-	time{/*articles must include the time on which they were published*/}
-	@import "article/blockquote";
-	@import "article/figure";
-	@import "article/classes";
+	time{/*articles must include the time on which they were published*/}	
 }

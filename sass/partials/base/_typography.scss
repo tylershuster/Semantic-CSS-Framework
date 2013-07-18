@@ -25,11 +25,12 @@ h5{
 	color: $color-text;
 	font-family: '#{$heading-font}';
 }
-p, span, cite, time{
+p, span, time{
 	@include typography(size-base);
 	//color: $color-text;
 	font-family: '#{$body-font}';
 }
+a{color: $color-accent;}
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 

@@ -13,10 +13,10 @@ basic colors formulas
 -analogous
 -monochromatic
 -----------*/
-/* line 64, ../sass/utilities/color/_color-schemer.scss */
+/* line 46, ../sass/utilities/color/_color-schemer.scss */
 * body {
-  background-color: #000042;
-  color: #bdbdff;
+  background-color: #ffffff;
+  color: #000042;
 }
 
 /* line 41, ../sass/utilities/_layout.scss */
@@ -759,18 +759,18 @@ optgroup::-moz-focus-inner {
   box-sizing: content-box;
 }
 
-/* line 27, ../sass/utilities/_variables.scss */
+/* line 29, ../sass/utilities/_variables.scss */
 * {
   font-size: 100%;
 }
 
 /* line 3, ../sass/partials/base/_typography.scss */
 h1 {
-  font-size: 2.4em;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  padding-top: 0.54rem;
+  padding-bottom: 0.45rem;
   margin: 0;
-  padding: 0;
-  padding-top: 1rem;
-  line-height: 1.25em;
   font-weight: bold;
   font-style: italic;
   color: blue;
@@ -779,159 +779,398 @@ h1 {
 
 /* line 8, ../sass/partials/base/_typography.scss */
 h2 {
-  font-size: 1.778em;
+  font-size: 1.778rem;
+  line-height: 2rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.75rem;
   margin: 0;
-  padding: 0;
-  padding-top: 1rem;
-  line-height: 1.12486em;
   font-weight: normal;
-  color: #80ff00;
+  color: #7f00ff;
   font-family: "Open Sans";
 }
 
 /* line 13, ../sass/partials/base/_typography.scss */
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 0.41rem;
+  padding-bottom: 0.6rem;
   margin: 0;
-  padding: 0;
-  padding-top: 1rem;
-  line-height: 1.33333em;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ff8000;
   font-family: "Open Sans";
 }
 
 /* line 18, ../sass/partials/base/_typography.scss */
 h4 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
   margin: 0;
-  padding: 0;
-  padding-top: 1rem;
-  line-height: 1.6em;
   font-weight: bold;
-  color: #bdbdff;
+  color: #000042;
   font-family: "Open Sans";
 }
 
 /* line 23, ../sass/partials/base/_typography.scss */
 h5 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
   margin: 0;
-  padding: 0;
-  padding-top: 1rem;
-  line-height: 1.6em;
   font-weight: bold;
-  color: #bdbdff;
+  color: #000042;
   font-family: "Open Sans";
 }
 
 /* line 28, ../sass/partials/base/_typography.scss */
-p, span, cite, time {
-  font-size: 1em;
+p, span, time {
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
   margin: 0;
-  padding: 0;
-  padding-top: 1rem;
-  line-height: 2em;
   font-weight: normal;
   /*padding-top: 0.62em;padding-bottom:0.38em;*/
   font-family: "Gentium Basic";
 }
 
-/* line 1, ../sass/partials/base/header/_address.scss */
-header address {
-  position: relative;
-  top: 2em;
-  padding-right: 1rem;
+/* line 33, ../sass/partials/base/_typography.scss */
+a {
+  color: yellow;
 }
-/* line 17, ../sass/partials/base/header/_address.scss */
-header address a.twitter:before {
+
+/* line 14, ../sass/partials/base/_address.scss */
+address a.twitter:before {
   display: block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff8000;
   float: right;
   margin: 0 0.38rem;
 }
-/* line 29, ../sass/partials/base/header/_address.scss */
+/* line 26, ../sass/partials/base/_address.scss */
+address a.twitter:before {
+  content: "\f309";
+}
+/* line 14, ../sass/partials/base/_address.scss */
+address a.gplus:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 32, ../sass/partials/base/_address.scss */
+address a.gplus:before {
+  content: "\f30f";
+}
+/* line 14, ../sass/partials/base/_address.scss */
+address a.facebook:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 38, ../sass/partials/base/_address.scss */
+address a.facebook:before {
+  content: "\f30c";
+}
+/* line 14, ../sass/partials/base/_address.scss */
+address a.linkedin:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 44, ../sass/partials/base/_address.scss */
+address a.linkedin:before {
+  content: "\f318";
+}
+/* line 14, ../sass/partials/base/_address.scss */
+address a.tumblr:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 50, ../sass/partials/base/_address.scss */
+address a.tumblr:before {
+  content: "\f315";
+}
+/* line 14, ../sass/partials/base/_address.scss */
+address a.instagram:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 56, ../sass/partials/base/_address.scss */
+address a.instagram:before {
+  content: "\f32d";
+}
+/* line 14, ../sass/partials/base/_address.scss */
+address a.dribbble:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 62, ../sass/partials/base/_address.scss */
+address a.dribbble:before {
+  content: "\f31b";
+}
+
+/* line 12, ../sass/partials/base/_blockquote.scss */
+blockquote {
+  padding-top: 2px;
+  margin: 1rem 0 0 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* line 17, ../sass/partials/base/_blockquote.scss */
+blockquote p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  margin: 0;
+  font-weight: bold;
+  color: #7f00ff;
+}
+/* line 21, ../sass/partials/base/_blockquote.scss */
+blockquote:nth-of-type(odd) {
+  float: left;
+  text-align: left;
+  padding-left: 2.5rem;
+  border-left: 0.5rem solid #7f00ff;
+  padding-right: 1rem;
+}
+/* line 28, ../sass/partials/base/_blockquote.scss */
+blockquote:nth-of-type(odd) > cite {
+  float: left;
+  text-align: left;
+}
+/* line 30, ../sass/partials/base/_blockquote.scss */
+blockquote:nth-of-type(even) {
+  float: right;
+  text-align: right;
+  padding-right: 2.5rem;
+  border-right: 0.5rem solid #7f00ff;
+  padding-left: 1rem;
+}
+/* line 37, ../sass/partials/base/_blockquote.scss */
+blockquote:nth-of-type(even) > cite {
+  float: right;
+  text-align: right;
+}
+/* line 39, ../sass/partials/base/_blockquote.scss */
+blockquote > cite {
+  font-family: Open Sans;
+  color: #7f00ff;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+/* line 45, ../sass/partials/base/_blockquote.scss */
+blockquote > cite:before {
+  content: "- ";
+}
+
+/* line 9, ../sass/partials/base/_figure.scss */
+figure {
+  width: 50%;
+}
+/* line 11, ../sass/partials/base/_figure.scss */
+figure:nth-of-type(even) {
+  padding-right: 1rem;
+}
+/* line 14, ../sass/partials/base/_figure.scss */
+figure:nth-of-type(odd) {
+  float: right;
+  padding-left: 1rem;
+  text-align: center;
+}
+/* line 19, ../sass/partials/base/_figure.scss */
+figure img {
+  width: 100%;
+}
+/* line 22, ../sass/partials/base/_figure.scss */
+figure figcaption {
+  font-size: 0.85rem;
+  line-height: 1rem;
+  font-family: "Open Sans";
+}
+
+/* line 1, ../sass/partials/base/_classes.scss */
+.academic {
+  /*the academy should ideally be concerned only with the representation of truth and not bound by temporal, spatial, or personal relevancy.*/
+}
+
+/*the twelve disciples*/
+/* line 5, ../sass/partials/base/_classes.scss */
+.fictional {
+  /*any content that does not literally represent canonical reality*/
+}
+/* line 7, ../sass/partials/base/_classes.scss */
+.fictional .news {
+  /*fox news, alternate reality updates, etc*/
+}
+/* line 10, ../sass/partials/base/_classes.scss */
+.fictional .archive {
+  /*wookiepedia, etc*/
+}
+/* line 13, ../sass/partials/base/_classes.scss */
+.fictional .opinion {
+  /*satire*/
+}
+
+/* line 17, ../sass/partials/base/_classes.scss */
+.personal {
+  /*content relating to the author of the article. Should have span.author or <a rel="author">*/
+}
+/* line 19, ../sass/partials/base/_classes.scss */
+.personal .news {
+  /*blog*/
+}
+/* line 22, ../sass/partials/base/_classes.scss */
+.personal .archive {
+  /*structured blog*/
+}
+/* line 25, ../sass/partials/base/_classes.scss */
+.personal .opinion {
+  /*personal opinion*/
+}
+
+/* line 29, ../sass/partials/base/_classes.scss */
+.professional {
+  /*content pertinent to a profession; of little use outside context*/
+}
+/* line 31, ../sass/partials/base/_classes.scss */
+.professional .news {
+  /*medical discoveries, golf tournament coverage, etc*/
+}
+/* line 34, ../sass/partials/base/_classes.scss */
+.professional .archive {
+  /*technical writing*/
+}
+/* line 37, ../sass/partials/base/_classes.scss */
+.professional .opinion {
+  /*opinion for those in the field*/
+}
+
+/* line 41, ../sass/partials/base/_classes.scss */
+.promotional {
+  /*content intended to further a cause related to, but not directly about, the author*/
+}
+/* line 43, ../sass/partials/base/_classes.scss */
+.promotional .news {
+  /*press releases, etc*/
+}
+/* line 46, ../sass/partials/base/_classes.scss */
+.promotional .archive {
+  /*product information, specifications, etc*/
+}
+/* line 49, ../sass/partials/base/_classes.scss */
+.promotional .opinion {
+  /*reviews, etc*/
+}
+
+/* line 1, ../sass/partials/base/header/_address.scss */
+header address {
+  display: none;
+  position: absolute;
+  top: 3em;
+  right: 1rem;
+  padding-top: 0.5rem;
+}
+/* line 19, ../sass/partials/base/header/_address.scss */
+header address a.twitter:before {
+  display: inline-block;
+  font-family: "Entypo";
+  text-decoration: none;
+  float: right;
+  margin: 0 0.38rem;
+}
+/* line 30, ../sass/partials/base/header/_address.scss */
 header address a.twitter:before {
   content: "\f309";
 }
-/* line 17, ../sass/partials/base/header/_address.scss */
+/* line 19, ../sass/partials/base/header/_address.scss */
 header address a.gplus:before {
-  display: block;
+  display: inline-block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff8000;
   float: right;
   margin: 0 0.38rem;
 }
-/* line 35, ../sass/partials/base/header/_address.scss */
+/* line 36, ../sass/partials/base/header/_address.scss */
 header address a.gplus:before {
   content: "\f30f";
 }
-/* line 17, ../sass/partials/base/header/_address.scss */
+/* line 19, ../sass/partials/base/header/_address.scss */
 header address a.facebook:before {
-  display: block;
+  display: inline-block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff8000;
   float: right;
   margin: 0 0.38rem;
 }
-/* line 41, ../sass/partials/base/header/_address.scss */
+/* line 42, ../sass/partials/base/header/_address.scss */
 header address a.facebook:before {
   content: "\f30c";
 }
-/* line 17, ../sass/partials/base/header/_address.scss */
+/* line 19, ../sass/partials/base/header/_address.scss */
 header address a.linkedin:before {
-  display: block;
+  display: inline-block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff8000;
   float: right;
   margin: 0 0.38rem;
 }
-/* line 47, ../sass/partials/base/header/_address.scss */
+/* line 48, ../sass/partials/base/header/_address.scss */
 header address a.linkedin:before {
   content: "\f318";
 }
-/* line 17, ../sass/partials/base/header/_address.scss */
+/* line 19, ../sass/partials/base/header/_address.scss */
 header address a.tumblr:before {
-  display: block;
+  display: inline-block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff8000;
   float: right;
   margin: 0 0.38rem;
 }
-/* line 53, ../sass/partials/base/header/_address.scss */
+/* line 54, ../sass/partials/base/header/_address.scss */
 header address a.tumblr:before {
   content: "\f315";
 }
-/* line 17, ../sass/partials/base/header/_address.scss */
+/* line 19, ../sass/partials/base/header/_address.scss */
 header address a.instagram:before {
-  display: block;
+  display: inline-block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff8000;
   float: right;
   margin: 0 0.38rem;
 }
-/* line 59, ../sass/partials/base/header/_address.scss */
+/* line 60, ../sass/partials/base/header/_address.scss */
 header address a.instagram:before {
   content: "\f32d";
 }
-/* line 17, ../sass/partials/base/header/_address.scss */
+/* line 19, ../sass/partials/base/header/_address.scss */
 header address a.dribbble:before {
-  display: block;
+  display: inline-block;
   font-family: "Entypo";
   text-decoration: none;
-  color: #ff8000;
   float: right;
   margin: 0 0.38rem;
 }
-/* line 65, ../sass/partials/base/header/_address.scss */
+/* line 66, ../sass/partials/base/header/_address.scss */
 header address a.dribbble:before {
   content: "\f31b";
 }
@@ -956,7 +1195,7 @@ header img.logo {
 /* line 14, ../sass/partials/base/header/_common.scss */
 header h1 {
   /*site tite*/
-  color: #80ff00;
+  color: yellow;
   display: inline-block;
   float: left;
   line-height: 5rem;
@@ -986,61 +1225,65 @@ header section.masthead address {
 }
 /* line 32, ../sass/partials/base/header/_common.scss */
 header section.user {
-  background-color: #ff8000;
-  height: 2em;
-  position: absolute;
-  right: 1rem;
-  top: 0;
-  text-align: center;
-}
-/* line 41, ../sass/partials/base/header/_common.scss */
-header section.user a {
-  text-decoration: none;
-}
-/* line 46, ../sass/partials/base/header/_common.scss */
-header section.social {
-  height: 2em;
-  text-align: right;
-  display: table;
-  padding-right: 1rem;
-}
-/* line 51, ../sass/partials/base/header/_common.scss */
-header section.social a {
-  display: table-cell;
-  float: right;
-  width: 1em;
-  padding: 0.5em 1em;
-  font-family: "Entypo";
-  color: #ff8000;
-  text-decoration: none;
-}
-/* line 61, ../sass/partials/base/header/_common.scss */
-header section.search {
-  position: fixed;
-  top: 2rem;
-  right: 0;
+  background-color: #7f00ff;
+  margin-right: 1rem;
   height: 3rem;
+  display: table;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62);
+  text-align: center;
+  float: right;
+}
+/* line 44, ../sass/partials/base/header/_common.scss */
+header section.user a {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  /*&:after{
+  	content: " |";
+  }
+  &:last-of-type:after{
+  	content: "";
+  }*/
+}
+/* line 57, ../sass/partials/base/header/_common.scss */
+header section.search {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  height: 2rem;
   text-align: right;
-  padding-right: 1rem;
+}
+/* line 66, ../sass/partials/base/header/_common.scss */
+header section.search form {
+  height: 2rem;
 }
 /* line 68, ../sass/partials/base/header/_common.scss */
-header section.search form input {
+header section.search form input[type="search"] {
   height: 1.5rem;
-  margin-top: 0.75em;
+  margin-top: 0.25rem;
+  border: 0;
 }
-/* line 72, ../sass/partials/base/header/_common.scss */
+/* line 73, ../sass/partials/base/header/_common.scss */
+header section.search form input[type="submit"] {
+  height: 1.5rem;
+  margin-top: 0.25rem;
+  border: 0;
+  padding: 0 0.5rem;
+}
+/* line 80, ../sass/partials/base/header/_common.scss */
 header section.search .compact {
   /*expanding box*/
 }
-/* line 75, ../sass/partials/base/header/_common.scss */
+/* line 83, ../sass/partials/base/header/_common.scss */
 header nav {
   position: fixed;
   top: 5em;
   height: 3rem;
-  background-color: #80ff00;
+  background-color: #7f00ff;
   float: left;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62);
 }
-/* line 81, ../sass/partials/base/header/_common.scss */
+/* line 90, ../sass/partials/base/header/_common.scss */
 header nav ul {
   width: 100%;
   margin: 0;
@@ -1049,28 +1292,28 @@ header nav ul {
   list-style: none;
   display: table;
 }
-/* line 89, ../sass/partials/base/header/_common.scss */
+/* line 98, ../sass/partials/base/header/_common.scss */
 header nav li {
   display: table-cell;
   text-align: center;
   padding: 1em;
 }
-/* line 93, ../sass/partials/base/header/_common.scss */
-header nav li:hover {
-  background-color: #000042;
-}
-/* line 95, ../sass/partials/base/header/_common.scss */
-header nav li:hover a {
-  color: #80ff00;
-}
-/* line 99, ../sass/partials/base/header/_common.scss */
+/* line 102, ../sass/partials/base/header/_common.scss */
 header nav li > a {
   display: block;
   text-decoration: none;
 }
-/* line 105, ../sass/partials/base/header/_common.scss */
+/* line 106, ../sass/partials/base/header/_common.scss */
+header nav li:hover {
+  background-color: white;
+}
+/* line 108, ../sass/partials/base/header/_common.scss */
+header nav li:hover a {
+  color: #7f00ff;
+}
+/* line 114, ../sass/partials/base/header/_common.scss */
 header #show-mobile-nav {
-  color: #80ff00;
+  color: #7f00ff;
   font-family: "Entypo";
   font-size: 5em;
   display: block;
@@ -1082,7 +1325,7 @@ header #show-mobile-nav {
 }
 
 /* This is the clickable label */
-/* line 123, ../sass/partials/base/header/_common.scss */
+/* line 132, ../sass/partials/base/header/_common.scss */
 .slide-toggle {
   float: right;
   cursor: pointer;
@@ -1091,11 +1334,11 @@ header #show-mobile-nav {
   left: -2rem;
   z-index: 1;
   display: none;
-  color: #80ff00;
+  color: #7f00ff;
 }
 
 /* Kill the nasty outlines everywhere */
-/* line 137, ../sass/partials/base/header/_common.scss */
+/* line 146, ../sass/partials/base/header/_common.scss */
 .slide-toggle,
 .slide-toggle:active,
 .slide-toggle:focus {
@@ -1105,7 +1348,7 @@ header #show-mobile-nav {
 }
 
 /* The :after pseudo element has an icon that covers the checkbox */
-/* line 144, ../sass/partials/base/header/_common.scss */
+/* line 153, ../sass/partials/base/header/_common.scss */
 .slide-toggle:after {
   content: "☰";
   display: block;
@@ -1115,7 +1358,7 @@ header #show-mobile-nav {
 }
 
 /* This is the checkbox */
-/* line 153, ../sass/partials/base/header/_common.scss */
+/* line 162, ../sass/partials/base/header/_common.scss */
 .slide-checkbox {
   position: absolute;
   top: -9999px;
@@ -1123,7 +1366,7 @@ header #show-mobile-nav {
 }
 
 /* When it's checked replace the menu icon with a close icon */
-/* line 160, ../sass/partials/base/header/_common.scss */
+/* line 169, ../sass/partials/base/header/_common.scss */
 .slide-checkbox:checked ~ .slide-toggle:after {
   content: '☰';
 }
@@ -1134,7 +1377,6 @@ header #show-mobile-nav {
   /*Styles for devices from 128-256px wide*/
   /* line 2, ../sass/partials/base/header/_length-one.scss */
   header {
-    float: left;
     width: 100%;
   }
 }
@@ -1142,7 +1384,6 @@ header #show-mobile-nav {
   /*styles for screens 256-384px*/
   /* line 2, ../sass/partials/base/header/_length-two.scss */
   header {
-    float: left;
     width: 100%;
     height: 5rem;
   }
@@ -1152,7 +1393,6 @@ header #show-mobile-nav {
   }
   /* line 10, ../sass/partials/base/header/_length-two.scss */
   header section.user {
-    float: left;
     width: 50%;
   }
   /* line 14, ../sass/partials/base/header/_length-two.scss */
@@ -1211,7 +1451,6 @@ header #show-mobile-nav {
   /*styles for devices from 384-640 px wide*/
   /* line 2, ../sass/partials/base/header/_length-three.scss */
   header {
-    float: left;
     width: 100%;
     height: 5rem;
   }
@@ -1221,7 +1460,6 @@ header #show-mobile-nav {
   }
   /* line 10, ../sass/partials/base/header/_length-three.scss */
   header section.user {
-    float: left;
     width: 33.33333%;
   }
   /* line 14, ../sass/partials/base/header/_length-three.scss */
@@ -1280,12 +1518,10 @@ header #show-mobile-nav {
   /* line 2, ../sass/partials/base/header/_length-five.scss */
   header {
     height: 5rem;
-    float: left;
     width: 100%;
   }
   /* line 12, ../sass/partials/base/header/_length-five.scss */
   header section.user {
-    float: left;
     width: 40%;
   }
   /* line 18, ../sass/partials/base/header/_length-five.scss */
@@ -1340,7 +1576,6 @@ header #show-mobile-nav {
   /*header styles on devices from 1024px-1664px*/
   /* line 2, ../sass/partials/base/header/_length-eight.scss */
   header {
-    float: left;
     width: 100%;
     /*multiple headers get styled into tabs. See foxnews for example*/
   }
@@ -1358,7 +1593,6 @@ header #show-mobile-nav {
   }
   /* line 10, ../sass/partials/base/header/_length-eight.scss */
   header section.masthead {
-    float: left;
     width: 50%;
     /*masthead is centered on page*/
   }
@@ -1376,17 +1610,14 @@ header #show-mobile-nav {
   }
   /* line 17, ../sass/partials/base/header/_length-eight.scss */
   header section.user {
-    float: left;
     width: 25%;
   }
   /* line 21, ../sass/partials/base/header/_length-eight.scss */
   header section.social {
-    float: left;
     width: 25%;
   }
   /* line 25, ../sass/partials/base/header/_length-eight.scss */
   header section.search {
-    float: left;
     width: 37.5%;
   }
   /* line 28, ../sass/partials/base/header/_length-eight.scss */
@@ -1395,7 +1626,6 @@ header #show-mobile-nav {
   }
   /* line 31, ../sass/partials/base/header/_length-eight.scss */
   header nav {
-    float: left;
     width: 100%;
   }
   /* line 38, ../sass/partials/base/header/_length-eight.scss */
@@ -1407,7 +1637,6 @@ header #show-mobile-nav {
   /*styles for devices from 1664px up*/
   /* line 2, ../sass/partials/base/header/_length-thirteen.scss */
   header {
-    float: left;
     width: 100%;
     /*multiple headers get styled into tabs. See foxnews for example*/
   }
@@ -1441,19 +1670,16 @@ header #show-mobile-nav {
   }
   /* line 18, ../sass/partials/base/header/_length-thirteen.scss */
   header section.user {
-    float: left;
     width: 15.38462%;
     position: absolute;
     right: 0%;
   }
   /* line 23, ../sass/partials/base/header/_length-thirteen.scss */
   header section.social {
-    float: left;
     width: 15.38462%;
   }
   /* line 27, ../sass/partials/base/header/_length-thirteen.scss */
   header section.search {
-    float: left;
     width: 23.07692%;
   }
   /* line 30, ../sass/partials/base/header/_length-thirteen.scss */
@@ -1462,7 +1688,6 @@ header #show-mobile-nav {
   }
   /* line 33, ../sass/partials/base/header/_length-thirteen.scss */
   header nav {
-    float: left;
     width: 100%;
   }
   /* line 40, ../sass/partials/base/header/_length-thirteen.scss */
@@ -1516,258 +1741,14 @@ article blockquote {
     margin-top: 8rem;
   }
 }
-/* line 2, ../sass/partials/base/_address.scss */
-address a, address span {
-  display: block;
-}
-/* line 15, ../sass/partials/base/_address.scss */
-address a.twitter:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  color: #ff8000;
-  float: right;
-  margin: 0 0.38rem;
-}
-/* line 27, ../sass/partials/base/_address.scss */
-address a.twitter:before {
-  content: "\f309";
-}
-/* line 15, ../sass/partials/base/_address.scss */
-address a.gplus:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  color: #ff8000;
-  float: right;
-  margin: 0 0.38rem;
-}
-/* line 33, ../sass/partials/base/_address.scss */
-address a.gplus:before {
-  content: "\f30f";
-}
-/* line 15, ../sass/partials/base/_address.scss */
-address a.facebook:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  color: #ff8000;
-  float: right;
-  margin: 0 0.38rem;
-}
-/* line 39, ../sass/partials/base/_address.scss */
-address a.facebook:before {
-  content: "\f30c";
-}
-/* line 15, ../sass/partials/base/_address.scss */
-address a.linkedin:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  color: #ff8000;
-  float: right;
-  margin: 0 0.38rem;
-}
-/* line 45, ../sass/partials/base/_address.scss */
-address a.linkedin:before {
-  content: "\f318";
-}
-/* line 15, ../sass/partials/base/_address.scss */
-address a.tumblr:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  color: #ff8000;
-  float: right;
-  margin: 0 0.38rem;
-}
-/* line 51, ../sass/partials/base/_address.scss */
-address a.tumblr:before {
-  content: "\f315";
-}
-/* line 15, ../sass/partials/base/_address.scss */
-address a.instagram:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  color: #ff8000;
-  float: right;
-  margin: 0 0.38rem;
-}
-/* line 57, ../sass/partials/base/_address.scss */
-address a.instagram:before {
-  content: "\f32d";
-}
-/* line 15, ../sass/partials/base/_address.scss */
-address a.dribbble:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  color: #ff8000;
-  float: right;
-  margin: 0 0.38rem;
-}
-/* line 63, ../sass/partials/base/_address.scss */
-address a.dribbble:before {
-  content: "\f31b";
-}
-
 /* line 1, ../sass/partials/_article.scss */
 article {
   max-width: 60em;
   padding: 0 1em;
-  /*the twelve disciples*/
 }
 /* line 4, ../sass/partials/_article.scss */
 article time {
   /*articles must include the time on which they were published*/
-}
-/* line 12, ../sass/partials/article/_blockquote.scss */
-article blockquote {
-  border-left: 1px solid #80ff00;
-  /*> p{
-  	color: $color-tertiary;
-  	padding-right: 3em;
-  	padding-top: 0.62em;
-  	font-style: italic;
-  }*/
-}
-/* line 14, ../sass/partials/article/_blockquote.scss */
-article blockquote:before {
-  content: "“";
-  color: #ff8000;
-  font-size: 8em;
-  line-height: 1rem;
-  position: relative;
-  top: 4rem;
-  font-family: Gentium Basic;
-  filter: alpha(opactiy=62);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=62)";
-  -moz-opacity: 0.62;
-  -khtml-opacity: 0.62;
-  opacity: 0.62;
-}
-/* line 26, ../sass/partials/article/_blockquote.scss */
-article blockquote:nth-of-type(even) {
-  float: right;
-  margin-right: 12%;
-  margin-left: 1rem;
-}
-/* line 31, ../sass/partials/article/_blockquote.scss */
-article blockquote:nth-of-type(odd) {
-  float: left;
-  margin: 0;
-  margin-bottom: 1em;
-  text-align: left;
-}
-/* line 36, ../sass/partials/article/_blockquote.scss */
-article blockquote:nth-of-type(odd) > p {
-  display: block;
-  color: #80ff00;
-  position: relative;
-  top: -3rem;
-  left: 1rem;
-  /*breaks terrible with two lines of text*/
-}
-/* line 51, ../sass/partials/article/_blockquote.scss */
-article blockquote > cite {
-  display: block;
-  font-family: Open Sans;
-  color: #80ff00;
-  float: left;
-  margin-left: 38%;
-  text-align: left;
-}
-/* line 58, ../sass/partials/article/_blockquote.scss */
-article blockquote > cite:before {
-  content: "- ";
-}
-/* line 9, ../sass/partials/article/_figure.scss */
-article figure {
-  width: 50%;
-}
-/* line 11, ../sass/partials/article/_figure.scss */
-article figure:nth-of-type(even) {
-  padding-right: 1rem;
-}
-/* line 14, ../sass/partials/article/_figure.scss */
-article figure:nth-of-type(odd) {
-  float: right;
-  padding-left: 1rem;
-  margin-bottom: 1em;
-  text-align: center;
-}
-/* line 20, ../sass/partials/article/_figure.scss */
-article figure img {
-  width: 100%;
-}
-/* line 1, ../sass/partials/article/_classes.scss */
-article .academic {
-  /*the academy should ideally be concerned only with the representation of truth and not bound by temporal, spatial, or personal relevancy.*/
-}
-/* line 5, ../sass/partials/article/_classes.scss */
-article .fictional {
-  /*any content that does not literally represent canonical reality*/
-}
-/* line 7, ../sass/partials/article/_classes.scss */
-article .fictional .news {
-  /*fox news, alternate reality updates, etc*/
-}
-/* line 10, ../sass/partials/article/_classes.scss */
-article .fictional .archive {
-  /*wookiepedia, etc*/
-}
-/* line 13, ../sass/partials/article/_classes.scss */
-article .fictional .opinion {
-  /*satire*/
-}
-/* line 17, ../sass/partials/article/_classes.scss */
-article .personal {
-  /*content relating to the author of the article. Should have span.author or <a rel="author">*/
-}
-/* line 19, ../sass/partials/article/_classes.scss */
-article .personal .news {
-  /*blog*/
-}
-/* line 22, ../sass/partials/article/_classes.scss */
-article .personal .archive {
-  /*structured blog*/
-}
-/* line 25, ../sass/partials/article/_classes.scss */
-article .personal .opinion {
-  /*personal opinion*/
-}
-/* line 29, ../sass/partials/article/_classes.scss */
-article .professional {
-  /*content pertinent to a profession; of little use outside context*/
-}
-/* line 31, ../sass/partials/article/_classes.scss */
-article .professional .news {
-  /*medical discoveries, golf tournament coverage, etc*/
-}
-/* line 34, ../sass/partials/article/_classes.scss */
-article .professional .archive {
-  /*technical writing*/
-}
-/* line 37, ../sass/partials/article/_classes.scss */
-article .professional .opinion {
-  /*opinion for those in the field*/
-}
-/* line 41, ../sass/partials/article/_classes.scss */
-article .promotional {
-  /*content intended to further a cause related to, but not directly about, the author*/
-}
-/* line 43, ../sass/partials/article/_classes.scss */
-article .promotional .news {
-  /*press releases, etc*/
-}
-/* line 46, ../sass/partials/article/_classes.scss */
-article .promotional .archive {
-  /*product information, specifications, etc*/
-}
-/* line 49, ../sass/partials/article/_classes.scss */
-article .promotional .opinion {
-  /*reviews, etc*/
 }
 
 /* Foundation v2.1.4 http://foundation.zurb.com */

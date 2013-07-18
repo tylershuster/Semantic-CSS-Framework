@@ -38,7 +38,7 @@ $color-drawer: null;
 
 $color-primary: cs-primary($color);
 $color-secondary: cs-secondary($color);
-$color-tertiary: cs-tertiary($color);
+$color-accent: cs-tertiary($color);
 $color-light: set-lightness($color-primary, 87%);
 $color-dark: set-lightness($color-primary, 13%);
 

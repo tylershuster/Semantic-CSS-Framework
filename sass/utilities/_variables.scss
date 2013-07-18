@@ -14,7 +14,9 @@ $width-four: 32em;
 $width-six: 48em;
 $width-twelve: 96em;
 
-
+@mixin box-shadow{
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62);
+}
 
 @mixin key($key){
 	@if $key == a {
@@ -40,54 +42,50 @@ $width-twelve: 96em;
 	}
 }
 
-@mixin tone($ratio) {
-	$line-height: ceil($ratio + 0.1)  / $ratio;//set the line height to the max lines taken by the font
-	//$margin: 2/$ratio/2;
-	font-size: $ratio * ($em / 16) * 1em;
-	margin: 0; padding: 0;
-	padding-top: 1rem;
-	line-height: $line-height * 1em;
-	//padding-top: ceil($line-height) / $line-height * 1em;
-	//margin:  (($em / 16) * ($em * 1px)) 0;
-	//padding-top: 0.62rem;
-	//padding-bottom: 0.38rem;
-	
-
+@mixin typography-calculator($font-size, $line-height, $padding-top, $padding-bottom){
+	font-size: $font-size * 1rem;
+	line-height: $line-height * 1rem;
+	padding-top: $padding-top * 1rem;
+	padding-bottom: $padding-bottom * 1rem;
+	margin: 0;
 }
 
 
-@mixin root-flat {@include tone(1);font-weight:normal;text-transform:lowercase;opacity:0.62;}
-@mixin root {@include tone(1.0);font-weight: normal;/*padding-top: 0.62em;padding-bottom:0.38em;*/}
-@mixin root-sharp {@include tone(1);font-style: italic;}
-@mixin note-b2 {@include tone(1.067);font-weight: normal;}
-@mixin note-2 {@include tone(1.125);font-weight: bold;}
-@mixin note-s2 {@include tone(1.2);font-weight: bold;font-style: italic;}
-@mixin note-b3 {@include tone(1.2);font-weight: normal;}
-@mixin note-3 {@include tone(1.25);font-weight: bold;}
-@mixin note-4 {@include tone(1.33);font-weight: bold;text-transform: uppercase;}
-@mixin note-s4 {@include tone(1.414);font-weight: bold;font-style: italic;}
-@mixin note-b5 {@include tone(1.414);font-weight: bold;opacity: 0.62;}
-@mixin note-5 {@include tone(1.5);font-weight: bold;text-transform: uppercase;}
-@mixin note-s5 {@include tone(1.6);font-weight: bold;font-style: italic;}
-@mixin note-b6 {@include tone(1.6);font-weight: normal;}
-@mixin note-6 {@include tone(1.667);font-weight: bold;}
-@mixin note-s6 {@include tone(1.778);font-weight: bold;font-style: italic;}
-@mixin note-b7 {@include tone(1.778);font-weight: normal;}
-@mixin note-7 {@include tone(1.875);font-weight: bold;}
-@mixin note-8 {@include tone(2);font-weight: bold;text-transform: uppercase;}
-@mixin note-s8 {@include tone(2.134);font-weight:bold;font-style: italic;}
-@mixin note-b9 {@include tone(2.134);font-weight: normal;}
-@mixin note-9 {@include tone(2.25);font-weight: bold;}
-@mixin note-s9 {@include tone(2.4);font-weight: bold;font-style: italic;}
-@mixin note-b10 {@include tone(2.5);font-weight: normal;}
-@mixin note-10 {@include tone(2.5);font-weight: bold;}
-@mixin note-11 {@include tone(2.66);font-weight: bold;text-transform: uppercase;}
-@mixin note-s11 {@include tone(2.818);font-weight: bold;font-style: italic;}
-@mixin note-b12 {@include tone(2.818);font-weight: normal;opacity: 0.62;}
-@mixin note-12 {@include tone(3);font-weight: bold;text-transform: uppercase;}
-@mixin note-s12 {@include tone(3.201);font-weight: bold;font-style: italic;}
-@mixin note-b13 {@include tone(3.201);font-weight: normal;}
-@mixin note-13 {@include tone(3.375);font-weight: bold;}
+
+
+
+@mixin root-flat {@include typography-calculator(1,2,0.75,0.25);font-weight:normal;text-transform:lowercase;opacity:0.62;}
+@mixin root {@include typography-calculator(1,2,0.75,0.25);font-weight: normal;/*padding-top: 0.62em;padding-bottom:0.38em;*/}
+@mixin root-sharp {@include typography-calculator(1,2,0.75,0.25);font-style: italic;}
+@mixin note-b2 {@include typography-calculator(1.067,2,0.6,0.4);font-weight: normal;}
+@mixin note-2 {@include typography-calculator(1.125,2,0.55,0.45);font-weight: bold;}
+@mixin note-s2 {@include typography-calculator(1.2,2,0.55,0.45);font-weight: bold;font-style: italic;}
+@mixin note-b3 {@include typography-calculator(1.2,2,0.55,0.45);font-weight: normal;}
+@mixin note-3 {@include typography-calculator(1.25,2,0.55,0.45);font-weight: bold;}
+@mixin note-4 {@include typography-calculator(1.33,2,0.5,0.5);font-weight: bold;text-transform: uppercase;}
+@mixin note-s4 {@include typography-calculator(1.414,2,0.45,0.55);font-weight: bold;font-style: italic;}
+@mixin note-b5 {@include typography-calculator(1.414,2,0.45,0.55);font-weight: bold;opacity: 0.62;}
+@mixin note-5 {@include typography-calculator(1.5,2,0.41,0.6);font-weight: bold;text-transform: uppercase;}
+@mixin note-s5 {@include typography-calculator(1.62,2,0.38,0.6);font-weight: bold;font-style: italic;}
+@mixin note-b6 {@include typography-calculator(1.62,2,0.38,0.6);font-weight: normal;}
+@mixin note-6 {@include typography-calculator(1.667,2,0.35,0.65);font-weight: bold;}
+@mixin note-s6 {@include typography-calculator(1.778,2,0.25,0.75);font-weight: bold;font-style: italic;}
+@mixin note-b7 {@include typography-calculator(1.778,2,0.25,0.75);font-weight: normal;}
+@mixin note-7 {@include typography-calculator(1.875,2,0.25,0.75);font-weight: bold;}
+@mixin note-8 {@include typography-calculator(2,2,0.22,0.75);font-weight: bold;text-transform: uppercase;}
+@mixin note-s8 {@include typography-calculator(2.134,3,0.68,0.3);font-weight:bold;font-style: italic;}
+@mixin note-b9 {@include typography-calculator(2.134,3,0.68,0.3);font-weight: normal;}
+@mixin note-9 {@include typography-calculator(2.25,3,0.68,0.3);font-weight: bold;}
+@mixin note-s9 {@include typography-calculator(2.4,3,0.54,0.45);font-weight: bold;font-style: italic;}
+@mixin note-b10 {@include typography-calculator(2.5,3,0.55,0.45);font-weight: normal;}
+@mixin note-10 {@include typography-calculator(2.5,3,0.55,0.45);font-weight: bold;}
+@mixin note-11 {@include typography-calculator(2.66,3,0.47,0.54);font-weight: bold;text-transform: uppercase;}
+@mixin note-s11 {@include typography-calculator(2.818,3,0.43,0.54);font-weight: bold;font-style: italic;}
+@mixin note-b12 {@include typography-calculator(2.818,3,0.43,0.54);font-weight: normal;opacity: 0.62;}
+@mixin note-12 {@include typography-calculator(3,3,0.39,0.6);font-weight: bold;text-transform: uppercase;}
+@mixin note-s12 {@include typography-calculator(3.201,0.75,0.25);font-weight: bold;font-style: italic;}
+@mixin note-b13 {@include typography-calculator(3.201,0.75,0.25);font-weight: normal;}
+@mixin note-13 {@include typography-calculator(3.375,0.7,0.3);font-weight: bold;}
 
 
 

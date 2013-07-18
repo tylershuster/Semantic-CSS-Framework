@@ -14,13 +14,16 @@ figure{
 	&:nth-of-type(odd){
 		float: right;
 		padding-left: 1rem;
-		margin-bottom: 1em;
 		text-align: center;
 	}
 	img{
 		width: 100%;
 	}
-	figcaption{}
+	figcaption{
+		font-size: 0.85rem;
+		line-height: 1rem;
+		font-family: '#{$heading-font}';
+	}
 	video{}
 	audio{}
 	pre{}

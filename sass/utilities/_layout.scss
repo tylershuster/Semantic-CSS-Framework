@@ -53,7 +53,7 @@ body {
 }
 @mixin column($x,$columns:$columns) {
 	//display: inline;
-	float: left;
+	//float: left;
 	width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns));
 	//margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns));
 	// *width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns))-$correction;
