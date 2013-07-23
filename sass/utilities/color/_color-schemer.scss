@@ -27,6 +27,7 @@ $color-schemer-loaded : true;
 
 //dark or light page check
 
+
 $color-primary: null;
 $color-secondary: null;
 $color-tertiary: null;//rare
@@ -35,12 +36,41 @@ $color-dark: null;
 $color-text: null;
 $color-background: null;
 $color-drawer: null;
+$color-accent: null;
 
 $color-primary: cs-primary($color);
 $color-secondary: cs-secondary($color);
-$color-accent: cs-tertiary($color);
+//$color-accent: invert(cs-tertiary($color));
 $color-light: set-lightness($color-primary, 87%);
 $color-dark: set-lightness($color-primary, 13%);
+$color-drawer: set-saturation($color-primary, 0%);
+
+
+
+
+@if $scheme == mono{
+	
+}
+
+@else if $scheme == complement{
+	
+}
+
+@else if $scheme == triad{
+	
+}
+
+@else if $scheme == tetrad{
+	
+}
+
+@else if $scheme == analogic{
+	
+}
+
+@else if $scheme == accented-analogic{
+	
+}
 
 @if $tone == white {
 	* body {
@@ -48,7 +78,8 @@ $color-dark: set-lightness($color-primary, 13%);
 		$color-background: #ffffff;
 		color: $color-dark;
 		$color-text: $color-dark;
-		$color-drawer: $color-light ;
+		//$color-drawer: $color-light;
+		$color-accent: set-lightness($color-secondary, 15%);
 	}
 }
 @else if $tone == light {
@@ -57,7 +88,8 @@ $color-dark: set-lightness($color-primary, 13%);
 		$color-background: $color-light;
 		color: $color-dark;
 		$color-text: $color-dark;
-		$color-drawer: #ffffff;
+		//$color-drawer: #ffffff;
+		$color-accent: set-lightness($color-secondary, 15%);
 	}
 }
 @else if $tone == dark {
@@ -66,7 +98,8 @@ $color-dark: set-lightness($color-primary, 13%);
 		$color-background: $color-dark;
 		color: $color-light;
 		$color-text: $color-light;
-		$color-drawer: $color-light;
+		$color-drawer: set-lightness($color-drawer, 13%);
+		$color-accent: set-lightness($color-secondary, 85%);
 	}
 }
 @else if $tone == black{
@@ -75,7 +108,8 @@ $color-dark: set-lightness($color-primary, 13%);
 		$color-background: #000000;
 		color: $color-light;
 		$color-text: $color-light;
-		$color-drawer: $color-dark;
+		//$color-drawer: $color-dark;
+		$color-accent: set-lightness($color-secondary, 85%);
 	}
 }
 

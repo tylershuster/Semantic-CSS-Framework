@@ -1,14 +1,34 @@
 address{
-	a.tel{}
-	a.html{}
+	a{
+		display: block;
+		//@include typography(size-base);
+	}
+	a.tel{@include typography(size-base);}
+	a.html{@include typography(size-base);}
 	a.mail{
-		span.streetAddress{}
-		span.addressLocality{}
-		span.addressRegion{}
-		span.postalCode{}
+		span.streetAddress{
+			&:after{
+				content: " ";
+			}
+		}
+		span.addressLocality{
+			&:after{
+				content: " ";
+			}
+		}
+		span.addressRegion{
+			&:after{
+				content: " ";
+			}
+		}
+		span.postalCode{
+			&:after{
+				content: " ";
+			}
+		}
 		span.addressCountry{}
 	}
-	a.email{}
+	a.email{@include typography(size-base);}
 	a.gps{}
 	@mixin social{
 		&:before{
@@ -16,10 +36,9 @@ address{
 			font-family: "Entypo";
 			text-decoration: none;
 			color: $color-tertiary;
-			float: right;
+			float: left;
 			margin: 0 0.38rem;
 		}
-		
 	}
 	a.twitter{
 		@include social;

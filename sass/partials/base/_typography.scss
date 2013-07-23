@@ -4,31 +4,49 @@ h1{
 	@include typography(size-one);
 	color: $color-primary;
 	font-family: '#{$heading-font}';
+	small{
+		/*style for small version*/
+	}
 }
 h2{
 	@include typography(size-two);
 	color: $color-secondary;
 	font-family: '#{$heading-font}';
+	small{
+		/*style for small version*/
+	}
 }
 h3{
 	@include typography(size-three);
 	color: $color-tertiary;
 	font-family: '#{$heading-font}';
+	small{
+		/*style for small version*/
+	}
 }
 h4{
 	@include typography(size-four);
 	color: $color-text;
 	font-family: '#{$heading-font}';
+	small{
+		/*style for small version*/
+	}
 }
 h5{
 	@include typography(size-five);
 	color: $color-text;
 	font-family: '#{$heading-font}';
+	small{
+		/*style for small version*/
+	}
 }
 p, span, time{
 	@include typography(size-base);
 	//color: $color-text;
 	font-family: '#{$body-font}';
+	small{
+		/*style for small version*/
+	}
 }
 a{color: $color-accent;}
 

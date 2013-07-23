@@ -18,12 +18,23 @@
 <body>
 	<header>
 		<section class="masthead">
-			<img src="http://lorempixel.com/400/200" alt="" class="logo">
-			<h1>Site Title</h1>
+			<img src="logo.png" alt="" class="logo">
+			<h1>Tyler Shuster</h1>
 		</section>
     <input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
     <label for="slide-checkbox" class="slide-toggle" onclick></label>
 		<nav>
+        <section class="search">
+          <form action="">
+            <input type="search" value="" />
+            <input type="submit">
+          </form>
+        </section>
+        <address>
+          <a href="#" class="facebook"></a>
+          <a href="#" class="twitter"></a>
+          <a href="#" class="gplus"></a>
+        </address>
 			<ul>
 				<li><a href="#">Nav Link 1</a></li>
 				<li><a href="#">Nav Link 2</a></li>
@@ -36,17 +47,7 @@
 		<section class="user">
 			<a href="#">Login</a><a href="#">Register</a>
 		</section>
-		<section class="search">
-			<form action="">
-				<input type="search" value="" />
-				<input type="submit">
-			</form>
-		</section>
-		<address>
-			<a href="#" class="facebook"></a>
-			<a href="#" class="twitter"></a>
-			<a href="#" class="gplus"></a>
-		</address>   
+	   
 	</header>
 	<main>
 		<article>
@@ -56,7 +57,7 @@
       <h4>The subheader</h4>
       <h5>The subheader</h5>
 			<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in egestas purus. Pellentesque venenatis, tellus sit amet tempor luctus, orci augue dictum diam, et posuere mauris massa nec turpis. Pellentesque nunc nisl, gravida sit amet consectetur eget, luctus at nulla. Nunc tincidunt venenatis blandit. Vestibulum tristique interdum tortor, non consectetur libero vulputate imperdiet. Curabitur ipsum leo, consequat ut mattis id, varius non enim. Ut semper, odio eu adipiscing volutpat, risus lectus elementum nibh, sed vulputate erat felis vitae dui. Curabitur ac libero lacinia, sagittis nibh quis, mattis sem. Aenean ullamcorper tortor at risus rutrum hendrerit. Sed a consequat purus, quis semper justo. Aliquam iaculis quam sit amet nulla imperdiet pretium. Donec tempus mauris ut ornare bibendum.
+	Lorem ipsum dolor sit amet, <a href="">consectetur adipiscing</a> elit. Maecenas in egestas purus. Pellentesque venenatis, tellus sit amet tempor luctus, orci augue dictum diam, et posuere mauris massa nec turpis. Pellentesque nunc nisl, gravida sit amet consectetur eget, luctus at nulla. Nunc tincidunt venenatis blandit. Vestibulum tristique interdum tortor, non consectetur libero vulputate imperdiet. Curabitur ipsum leo, consequat ut mattis id, varius non enim. Ut semper, odio eu adipiscing volutpat, risus lectus elementum nibh, sed vulputate erat felis vitae dui. Curabitur ac libero lacinia, sagittis nibh quis, mattis sem. Aenean ullamcorper tortor at risus rutrum hendrerit. Sed a consequat purus, quis semper justo. Aliquam iaculis quam sit amet nulla imperdiet pretium. Donec tempus mauris ut ornare bibendum.
 	</p>
 	<blockquote>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
@@ -95,8 +96,8 @@
 	Sed augue nisi, ullamcorper et sem eu, dignissim mollis tellus. Integer tincidunt sollicitudin pharetra. Proin purus tortor, adipiscing at ullamcorper sit amet, feugiat a lacus. Donec consequat ligula eu quam venenatis varius. Integer id enim in lorem viverra malesuada ut feugiat nisl. Nullam nibh tellus, eleifend eu metus vel, venenatis consequat mi. Quisque pretium lacinia risus a lacinia. Duis nulla est, consequat at varius sit amet, sollicitudin ac ante. Vivamus viverra lorem eget molestie laoreet. Maecenas imperdiet vitae ipsum dignissim sagittis. Phasellus quis felis accumsan mi venenatis pellentesque vitae tristique turpis. Ut accumsan elit porta tempus porta. Aenean elementum massa ut felis viverra, eget gravida arcu vestibulum. Curabitur a pulvinar mauris.
 	</p>
 	<address>
-    Generic Address Text
-	  <strong>Company Name, Inc.</strong><br>
+    <p>Generic Address Text</p>
+	  <p><strong>Company Name, Inc.</strong></p>
     <a href="#" class="mail">
       <span class="streetAddress">811 7th Ave, Suite 700</span>
       <span class="addressLocality">Manhattan</span><span class="addressRegion">NY</span><span class="postalCode">10019</span>
@@ -155,7 +156,7 @@
     <div><label>Text input with placeholder</label> <input type="text" placeholder="I'm placeholder text"></div>
     <div><label>Readonly input</label> <input type="text" value="Read only text input" readonly></div>
     <div><label>Disabled input</label> <input type="text" value="Disabled text input" disabled></div>
-    <div><label>Required input <span class="required">*</span></label> <input type="text" required></div>
+    <div><label class="required">Required input</label> <input type="text" required></div>
     <div><label>Email input</label> <input type="email"></div>
     <div><label>Search input</label> <input type="search"></div>
     <div><label>Speech recognition input</label> <input type="text" id="speech" name="speech" x-webkit-speech=""></div>
@@ -534,7 +535,7 @@ p q r s t u v w x y z { | } ~
 		Footer Placeholder
 	</footer>
 	<script>
-  $('img').baseline(16);
+  $('img, video').baseline(16);
 	</script>
 </body>
 </html>
