@@ -1393,7 +1393,7 @@ header nav li:hover a {
   float: left;
   cursor: pointer;
   position: fixed;
-  top: -0.38rem;
+  top: -1rem;
   z-index: 1;
   display: none;
   color: #d9ffb3;
@@ -1721,9 +1721,15 @@ header nav li:hover a {
 }
 /* line 1, ../sass/partials/base/article/_common.scss */
 article {
+  max-width: 60em;
+  padding: 0 1em;
   margin: 0 auto;
 }
-/* line 4, ../sass/partials/base/article/_common.scss */
+/* line 5, ../sass/partials/base/article/_common.scss */
+article time {
+  /*articles must include the time on which they were published*/
+}
+/* line 6, ../sass/partials/base/article/_common.scss */
 article blockquote {
   width: 50%;
 }
@@ -1795,16 +1801,6 @@ label {
 /* line 19, ../sass/partials/base/forms/_input.scss */
 label.required:after {
   content: "*";
-}
-
-/* line 1, ../sass/partials/_article.scss */
-article {
-  max-width: 60em;
-  padding: 0 1em;
-}
-/* line 4, ../sass/partials/_article.scss */
-article time {
-  /*articles must include the time on which they were published*/
 }
 
 /* Foundation v2.1.4 http://foundation.zurb.com */

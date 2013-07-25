@@ -1,6 +1,8 @@
 article{
-	
+	max-width: 60em;
+	padding: 0 1em;
 	margin: 0 auto;
+	time{/*articles must include the time on which they were published*/}
 	blockquote{
 		width: 50%;
 	}
