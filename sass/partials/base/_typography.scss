@@ -48,8 +48,22 @@ p, span, time{
 		/*style for small version*/
 	}
 }
-a{color: $color-accent;}
+a{
+	//color: $color-accent;
+	color: $color-text;
+	text-decoration: underline;
+	&:hover{
+		color: $color-accent;
+	}
+	&.external{
+		&:before{
+			content: "🔗 ";
+			font-family: 'entypo', 'sans-serif';
+		}
+	}
+}
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 

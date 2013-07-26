@@ -1,0 +1,14 @@
+aside{
+	position: relative;
+	left: -1rem;
+	width: 8rem;
+	float: left;
+	margin-left: -8rem;
+	h3{
+		text-align: right;
+	}
+	p{
+		text-align: right;
+		color: $color-accent;
+	}
+}

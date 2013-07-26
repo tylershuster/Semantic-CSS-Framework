@@ -143,11 +143,13 @@ header{
 
 /* The :after pseudo element has an icon that covers the checkbox */
 .slide-toggle:after {
-	content: "☰";	
+	content: "\f0c9";	
 	display: block;
-	font: 5rem 'Entypo';
+	font: 3rem 'fontawesome';
 	text-align: center;
-	margin-left: -19px;
+	padding-right: 2rem;
+	margin-left: -1rem;
+	margin-top: 1.2rem;
 }
 
 /* This is the checkbox */
@@ -159,7 +161,7 @@ header{
 
 /* When it's checked replace the menu icon with a close icon */
 .slide-checkbox:checked ~ .slide-toggle:after {
-	content: '☰';
+	content: '\f0c9';
 }
 
 
