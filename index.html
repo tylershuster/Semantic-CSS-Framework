@@ -24,17 +24,14 @@
     <input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
     <label for="slide-checkbox" class="slide-toggle" onclick></label>
 		<nav>
-        <section class="search">
-          <form action="">
-            <input type="search" value="" />
-            <input type="submit">
-          </form>
-        </section>
-        <address>
-          <a href="#" class="facebook"></a>
-          <a href="#" class="twitter"></a>
-          <a href="#" class="gplus"></a>
-        </address>
+      <address>
+        <a href="#" class="facebook"></a>
+        <a href="#" class="twitter"></a>
+        <a href="#" class="gplus"></a>
+      </address>
+      <section class="user">
+        <a href="#">Login</a><a href="#">Register</a>
+      </section>
 			<ul>
 				<li><a href="#">Nav Link 1</a></li>
 				<li><a href="#">Nav Link 2</a></li>
@@ -42,11 +39,14 @@
 				<li><a href="#">Nav Link 4</a></li>
 				<li><a href="#">Nav Link 5</a></li>
 			</ul>
-			<!--<a href="#mobile-nav" id="show-mobile-nav">☰</a>-->
+      
 		</nav>
-		<section class="user">
-			<a href="#">Login</a><a href="#">Register</a>
-		</section>
+		
+    <section class="search">
+      <form>
+        <input type="search" placeholder="Search" />
+      </form>
+    </section>
 	   
 	</header>
 	<main>
@@ -180,7 +180,7 @@
     <script>
       if (document.querySelector) {
         document.querySelector('#range').onchange = function(e) {
-          e.target.nextElementSibling.innerText = e.target.value;
+e.target.nextElementSibling.innerText = e.target.value;
         }
       }
     </script>

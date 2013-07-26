@@ -17,11 +17,12 @@ header{
 			@include column(1,2);
 			a{}
 		}
-		&.search{display: none;}
+		&.search{}
 	}
 	nav{
+		width: 62%;
 		ul{
-			width: 62%;
+			
 		}
 		li{	}
 	}

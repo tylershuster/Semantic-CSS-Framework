@@ -16,16 +16,20 @@ header{
 
 		}
 		&.user{
-			@include column(2,5);
 			a{}
 		}
 		&.search{}
 	}
 	nav{
 		height: 100%;
+		width: 38%;
 		ul{
-			width: 38%;
+			
 		}
 		li{	}
 	}
 }
+
+
+
+
