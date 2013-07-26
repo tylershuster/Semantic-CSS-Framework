@@ -1,27 +1,68 @@
+article{
+	max-width: 60em;
+	padding: 0 1em;
+	margin: 0 auto;
+	time{/*articles must include the time on which they were published*/}
 
-@import "article/common";
+	/* logo left half, menu right half*/
+	@media all and (min-width:#{$length-one * 1px}){
+		/*Styles for devices from 128-256px wide*/
+		
+	}
 
-/* logo left half, menu right half*/
-@media all and (min-width:#{$length-one * 1px}){
-	@import "article/length-one";
+	@media all and (min-width:#{$length-two * 1px}){
+		/*styles for screens 256-384px*/
+		margin-top: 5rem;
+		blockquote{
+			width: 100%;
+		}
+		figure{
+			width: 100%;
+		}
+	}
+	/*mobile menu swipe from left*/
+	@media all and (min-width:#{$length-three * 1px}){
+		/*styles for devices from 384-640 px wide*/
+		margin-top: 5rem;
+		blockquote{
+			width: 100%;
+		}
+		figure{
+			width: 100%;
+		}
+	}
+
+	@media all and (min-width:#{$length-five * 1px}){
+		/*styles for devices from 640-1024px wide*/
+		margin-top: 5rem;
+		blockquote{
+			width: 50%;
+		}
+		figure{
+			width: 50%;
+		}
+	}
+	/*desktop nav*/
+	@media all and (min-width:#{$length-eight * 1px}){
+		/*styles on devices from 1024px-1664px*/
+		margin-top: 8rem;
+		blockquote{
+			width: 50%;
+		}
+		figure{
+			width: 50%;
+		}
+	}
+
+	@media all and (min-width:#{$length-thirteen * 1px}){
+		/*styles for devices from 1664px up*/
+		margin-top: 8rem;
+		blockquote{
+			width: 50%;
+		}
+		figure{
+			width: 50%;
+		}	
+	}
 }
 
-@media all and (min-width:#{$length-two * 1px}){
-	@import "article/length-two";
-}
-/*mobile menu swipe from left*/
-@media all and (min-width:#{$length-three * 1px}){
-	@import "article/length-three";
-}
-
-@media all and (min-width:#{$length-five * 1px}){
-	@import "article/length-five";
-}
-/*desktop nav*/
-@media all and (min-width:#{$length-eight * 1px}){
-	@import "article/length-eight";
-}
-
-@media all and (min-width:#{$length-thirteen * 1px}){
-	@import "article/length-thirteen";
-}

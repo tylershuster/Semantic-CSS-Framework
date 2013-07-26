@@ -1788,102 +1788,101 @@ header nav li:hover a {
     display: none;
   }
 }
-/* line 1, ../sass/partials/base/article/_common.scss */
+/* line 1, ../sass/partials/base/_article.scss */
 article {
   max-width: 60em;
   padding: 0 1em;
   margin: 0 auto;
+  /* logo left half, menu right half*/
+  /*mobile menu swipe from left*/
+  /*desktop nav*/
 }
-/* line 5, ../sass/partials/base/article/_common.scss */
+/* line 5, ../sass/partials/base/_article.scss */
 article time {
   /*articles must include the time on which they were published*/
 }
-/* line 6, ../sass/partials/base/article/_common.scss */
-article blockquote {
-  width: 50%;
-}
-
-/* logo left half, menu right half*/
 @media all and (min-width: 128px) {
-  /*Styles for devices from 128-256px wide*/
+  /* line 1, ../sass/partials/base/_article.scss */
+  article {
+    /*Styles for devices from 128-256px wide*/
+  }
 }
 @media all and (min-width: 256px) {
-  /*styles for screens 256-384px*/
-  /* line 2, ../sass/partials/base/article/_length-two.scss */
+  /* line 1, ../sass/partials/base/_article.scss */
   article {
+    /*styles for screens 256-384px*/
     margin-top: 5rem;
   }
-  /* line 4, ../sass/partials/base/article/_length-two.scss */
+  /* line 16, ../sass/partials/base/_article.scss */
   article blockquote {
     width: 100%;
   }
-  /* line 7, ../sass/partials/base/article/_length-two.scss */
+  /* line 19, ../sass/partials/base/_article.scss */
   article figure {
     width: 100%;
   }
 }
-/*mobile menu swipe from left*/
 @media all and (min-width: 384px) {
-  /*styles for devices from 384-640 px wide*/
-  /* line 2, ../sass/partials/base/article/_length-three.scss */
+  /* line 1, ../sass/partials/base/_article.scss */
   article {
+    /*styles for devices from 384-640 px wide*/
     margin-top: 5rem;
   }
-  /* line 4, ../sass/partials/base/article/_length-three.scss */
+  /* line 27, ../sass/partials/base/_article.scss */
   article blockquote {
     width: 100%;
   }
-  /* line 7, ../sass/partials/base/article/_length-three.scss */
+  /* line 30, ../sass/partials/base/_article.scss */
   article figure {
     width: 100%;
   }
 }
 @media all and (min-width: 640px) {
-  /*styles for devices from 640-1024px wide*/
-  /* line 2, ../sass/partials/base/article/_length-five.scss */
+  /* line 1, ../sass/partials/base/_article.scss */
   article {
+    /*styles for devices from 640-1024px wide*/
     margin-top: 5rem;
   }
-  /* line 4, ../sass/partials/base/article/_length-five.scss */
+  /* line 38, ../sass/partials/base/_article.scss */
   article blockquote {
     width: 50%;
   }
-  /* line 7, ../sass/partials/base/article/_length-five.scss */
+  /* line 41, ../sass/partials/base/_article.scss */
   article figure {
     width: 50%;
   }
 }
-/*desktop nav*/
 @media all and (min-width: 1024px) {
-  /*header styles on devices from 1024px-1664px*/
-  /* line 2, ../sass/partials/base/article/_length-eight.scss */
+  /* line 1, ../sass/partials/base/_article.scss */
   article {
+    /*styles on devices from 1024px-1664px*/
     margin-top: 8rem;
   }
-  /* line 4, ../sass/partials/base/article/_length-eight.scss */
+  /* line 49, ../sass/partials/base/_article.scss */
   article blockquote {
     width: 50%;
   }
-  /* line 7, ../sass/partials/base/article/_length-eight.scss */
+  /* line 52, ../sass/partials/base/_article.scss */
   article figure {
     width: 50%;
   }
 }
 @media all and (min-width: 1664px) {
-  /*styles for devices from 1664px up*/
-  /* line 2, ../sass/partials/base/article/_length-thirteen.scss */
+  /* line 1, ../sass/partials/base/_article.scss */
   article {
+    /*styles for devices from 1664px up*/
     margin-top: 8rem;
   }
-  /* line 4, ../sass/partials/base/article/_length-thirteen.scss */
+  /* line 60, ../sass/partials/base/_article.scss */
   article blockquote {
     width: 50%;
   }
-  /* line 7, ../sass/partials/base/article/_length-thirteen.scss */
+  /* line 63, ../sass/partials/base/_article.scss */
   article figure {
     width: 50%;
   }
 }
+
 /* line 1, ../sass/partials/base/_aside.scss */
 aside {
   position: relative;
