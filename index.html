@@ -103,7 +103,7 @@
   </p>
   <aside>
     <h3>Lorem Ipsum</h3>
-    <p>Sed augue nisi, ullamcorper et sem eu, dignissim mollis tellus. Integer tincidunt sollicitudin pharetra. Proin purus tortor, adipiscing at ullamcorper sit amet, feugiat a lacus. Donec consequat ligula eu quam venenatis varius.</p>
+    <p>Sed augue nisi, ullamcorper et sem eu, dignissim mollis tellus. Integer tincidunt sollicitudin pharetra. </p>
   </aside>
   <p>
   Sed augue nisi, ullamcorper et sem eu, dignissim mollis tellus. Integer tincidunt sollicitudin pharetra. Proin purus tortor, adipiscing at ullamcorper sit amet, feugiat a lacus. Donec consequat ligula eu quam venenatis varius. Integer id enim in lorem viverra malesuada ut feugiat nisl. Nullam nibh tellus, eleifend eu metus vel, venenatis consequat mi. Quisque pretium lacinia risus a lacinia. Duis nulla est, consequat at varius sit amet, sollicitudin ac ante. Vivamus viverra lorem eget molestie laoreet. Maecenas imperdiet vitae ipsum dignissim sagittis. Phasellus quis felis accumsan mi venenatis pellentesque vitae tristique turpis. Ut accumsan elit porta tempus porta. Aenean elementum massa ut felis viverra, eget gravida arcu vestibulum. Curabitur a pulvinar mauris.
@@ -111,123 +111,255 @@
   <p>
   Sed augue nisi, ullamcorper et sem eu, dignissim mollis tellus. Integer tincidunt sollicitudin pharetra. Proin purus tortor, adipiscing at ullamcorper sit amet, feugiat a lacus. Donec consequat ligula eu quam venenatis varius. Integer id enim in lorem viverra malesuada ut feugiat nisl. Nullam nibh tellus, eleifend eu metus vel, venenatis consequat mi. Quisque pretium lacinia risus a lacinia. Duis nulla est, consequat at varius sit amet, sollicitudin ac ante. Vivamus viverra lorem eget molestie laoreet. Maecenas imperdiet vitae ipsum dignissim sagittis. Phasellus quis felis accumsan mi venenatis pellentesque vitae tristique turpis. Ut accumsan elit porta tempus porta. Aenean elementum massa ut felis viverra, eget gravida arcu vestibulum. Curabitur a pulvinar mauris.
   </p>
+  <p>This is a single paragraph of text</p>
+  </article>
 
-	<address>
-    <p>Generic Address Text</p>
-	  <p><strong>Company Name, Inc.</strong></p>
+	<!--<address>
+    <span>Generic Address Text</span>
+	  <span><strong>Company Name, Inc.</strong></span>
     <a href="#" class="mail">
       <span class="streetAddress">811 7th Ave, Suite 700</span>
       <span class="addressLocality">Manhattan</span><span class="addressRegion">NY</span><span class="postalCode">10019</span>
     </a>
-	  <a href="#" class="tel">(487) 487-4874</a>
-    <a href="#" class="email">tyler.herrshuster@gmail.com</a>
+	  <a href="#" class="tel"><span>(487) 487-4874</span></a>
+    <a href="#" class="email"><span>tyler.herrshuster@gmail.com</span></a>
     <a href="#" class="gps"></a>
     <a href="#" class="twitter"></a>
     <a href="#" class="gplus"></a>
     <a href="#" class="facebook"></a>
-	</address>
-	<!--<details>
-  <summary>More info</summary>
-  <div>
-    <p>Additional information</p>
-    <ul>
-      <li>Point 1</li>
-      <li>Point 2</li>
-    </ul>
-  </div>
-</details>
-<details>
-  <summary>More info</summary>
-  <div>
-    <p>Additional information</p>
-    <ul>
-      <li>Point 1</li>
-      <li>Point 2</li>
-    </ul>
-  </div>
-</details>
-<details>
-  <summary>More info</summary>
-  <div>
-    <p>Additional information</p>
-    <ul>
-      <li>Point 1</li>
-      <li>Point 2</li>
-    </ul>
-  </div>
-</details>-->
-<figure>
-  <img src="http://placehold.it/240x240" alt="Image Alt Text">
-  <figcaption>Figcaption content</figcaption>
-</figure>
-<figure>
-  <img src="http://placehold.it/240x240" alt="Image Alt Text">
-  <figcaption>
-    <h4>Figure Title</h4>
-    Figcaption content
-  </figcaption>
-</figure>
+	</address>-->
+	
+<h3>Meter</h3>
+<p>
+  <span><meter value="100" max="100" low="70" high="90">100%</meter> A meter displaying 100%.</span>
+  <span><meter value="85" max="100" low="70" high="90">85%</meter> A meter displaying 85%.</span>
+  <span><meter value="50" max="100" low="70" high="90">50%</meter> A meter displaying 50%.</span>
+  <span><meter value="0" max="100" low="70" high="90">0%</meter> A meter displaying 0%.</span>
+</p>
+
+<h3>Progress</h3>
+<p>
+  <span><progress value="100" max="100">100%</progress> A progress displaying 100%.</span>
+  <span><progress value="85" max="100">85%</progress> A progress displaying 85%.</span>
+  <span><progress value="50" max="100">50%</progress> A progress displaying 50%.</span>
+  <span><progress value="0" max="100">0%</progress> A progress displaying 0%.</span>
+</p>
+
+
 <form>
-  <fieldset>
-    <div><label>Text input</label> <input type="text"></div>
-    <div><label>Text input with placeholder</label> <input type="text" placeholder="I'm placeholder text"></div>
-    <div><label>Readonly input</label> <input type="text" value="Read only text input" readonly></div>
-    <div><label>Disabled input</label> <input type="text" value="Disabled text input" disabled></div>
-    <div><label class="required">Required input</label> <input type="text" required></div>
-    <div><label>Email input</label> <input type="email"></div>
-    <div><label>Search input</label> <input type="search"></div>
-    <div><label>Speech recognition input</label> <input type="text" id="speech" name="speech" x-webkit-speech=""></div>
-    <div><label>Tel input</label> <input type="tel"></div>
-    <div><label>Phone (International)</label> <input name="field_country_code" maxlength="3" /> - <input name="field_city_code" maxlength="4" /> - <input name="field_phone_int" maxlength="8" /></div>
-    <div><label>URL input</label> <input type="url" placeholder="http://"></div>
-    <div><label>Password input</label> <input type="password" value="password"></div>
-    <div><label>Select field</label> <select><option>Option 01</option><option>Option 02</option></select></div>
-    <div><label>Multiple select field</label><select multiple size="5"><option>Option 1</option><option>Option 2</option><option>Option 3</option><option>Option 4</option><option>Option 5</option><option>Option 6</option><option>Option 7</option><option>Option 8</option><option>Option 9</option><option>Option 10</option></select></div>
-    <div><label>Radio input</label> <input type="radio" name="rad"></div>
-    <div><label>Checkbox input</label> <input type="checkbox"></div>
-    <div><label><input type="radio" name="rad"> Radio input</label></div>
-    <div><label><input type="checkbox"> Checkbox input</label></div>
-    <div><label>File input</label> <input type="file"></div>
-    <div><label>Textarea</label> <textarea cols="30" rows="5" >Textarea text</textarea></div>
-    <div><label>Color input</label> <input type="color" value="#000000"></div>
-    <div><label>Number input</label> <input type="number" value="5" min="0" max="10"></div>
-    <div><label>Range input</label> <input type="range" id="range" value="0" min="0" max="100"> <output for="range">0</output> 
-    <script>
-      if (document.querySelector) {
-        document.querySelector('#range').onchange = function(e) {
-e.target.nextElementSibling.innerText = e.target.value;
-        }
-      }
-    </script>
-    </div>
-    <div><label>Date input</label> <input type="date"></div>
-    <div><label>Month input</label> <input type="month"></div>
-    <div><label>Week input</label> <input type="week"></div>
-    <div><label>Time input</label> <input type="time"></div>
-    <div><label>Datetime input</label> <input type="datetime"></div>
-    <div><label>Datetime-local input</label> <input type="datetime-local"></div>
-  </fieldset>  
+  <label>Text input</label>
+  <input type="text">
 </form>
 <form>
-  <fieldset>
-    <div><label>Disabled text input</label> <input type="text" value="Disabled text input" disabled></div>
-    <div><label>Disabled select field</label> <select disabled><option>Option 01</option><option>Option 02</option></select></div>
-    <div><label>Disabled file input</label> <input type="file" disabled></div>
-    <div><label>Disabled radio input</label> <input type="radio" name="rad" disabled></div>
-    <div><label>Disabled checkbox input</label> <input type="checkbox" disabled></div>
-    <div><label>Disabled color input</label> <input type="color" value="#000000" disabled></div>
-    <div><label>Disabled range input</label> <input type="range" disabled></div>
-    <div><label>Disabled number input</label> <input type="number" value="5" min="0" max="10" disabled></div>
-    <div><label>Disabled textarea</label> <textarea cols="30" rows="5" disabled>Textarea text</textarea></div>
+  <label>Text input with placeholder</label>
+  <input type="text" placeholder="I'm placeholder text">
+</form>
+<form>
+  <label>Readonly input</label>
+  <input type="text" value="Read only text input" readonly>
+</form>
+<form>
+  <label>Disabled input</label>
+  <input type="text" value="Disabled text input" disabled>
+</form>
+<form>
+  <label class="required">Required input</label>
+  <input type="text" required>
+</form>
+<form>
+  <label>Email input</label>
+  <input type="email">
+</form>
+<form>
+  <label>Search input</label>
+  <input type="search">
+</form>
+<form>
+  <label>Speech recognition input</label>
+  <input type="text" id="speech" name="speech" x-webkit-speech="">
+</form>
+<form>
+  <label>Tel input</label>
+  <input type="tel">
+</form>
+<form>
+  <label>Phone (International)</label>
+  <input name="field_country_code" maxlength="3" /> - 
+  <input name="field_city_code" maxlength="4" /> - 
+  <input name="field_phone_int" maxlength="8" />
+</form>
+<form>
+  <label>URL input</label>
+  <input type="url" placeholder="http://">
+</form>
+<form>
+  <label>Password input</label>
+  <input type="password" value="password">
+</form>
+<form>
+  <label>Select field</label>
+  <select>
+    <option>Option 01</option>
+    <option>Option 02</option>
+  </select>
+</form>
+<form>
+  <label>Multiple select field</label>
+  <select multiple size="5">
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+    <option>Option 4</option>
+    <option>Option 5</option>
+    <option>Option 6</option>
+    <option>Option 7</option>
+    <option>Option 8</option>
+    <option>Option 9</option>
+    <option>Option 10</option>
+  </select>
+</form>
+<form>
+  <label>Radio input</label>
+  <input type="radio" name="rad">
+</form>
+<form>
+  <label>Checkbox input</label>
+  <input type="checkbox">
+</form>
+<form>
+  <label>Radio Input</label>
+  <input type="radio" name="rad">
+  <input type="radio" name="rad">
+  <input type="radio" name="rad">
+  <input type="radio" name="rad">
+  <input type="radio" name="rad">
+</form>
+<form>
+  <label><input type="checkbox"> Checkbox input</label>
+</form>
+<form>
+  <label>File input</label>
+  <input type="file">
+</form>
+<form>
+  <label>Textarea</label> <textarea cols="30" rows="5" >Textarea text</textarea>
+</form>
+<form>
+  <label>Color input</label>
+  <input type="color" value="#000000">
+</form>
+<form>
+  <label>Number input</label>
+  <input type="number" value="5" min="0" max="10">
+</form>
+<form>
+  <label>Range input</label>
+  <input type="range" id="range" value="0" min="0" max="100">
+  <output for="range">0</output>
+  <script>
+    if (document.querySelector) {
+      document.querySelector('#range').onchange = function(e) {
+        e.target.nextElementSibling.innerText = e.target.value;
+      }
+    }
+  </script>
+</form>
+<form>
+  <label>Date input</label>
+  <input type="date">
+</form>
+<form>
+  <label>Month input</label>
+  <input type="month">
+</form>
+<form>
+  <label>Week input</label>
+  <input type="week">
+</form>
+<form>
+  <label>Time input</label>
+  <input type="time">
+</form>
+<form>
+  <label>Datetime input</label>
+  <input type="datetime">
+</form>
+<form>
+  <label>Datetime-local input</label>
+  <input type="datetime-local">
+</form>
+</form>
+
+<form>
+  <label>Disabled text input</label>
+  <input type="text" value="Disabled text input" disabled>
+</form>
+<form>
+  <label>Disabled select field</label>
+  <select disabled>
+    <option>Option 01</option>
+    <option>Option 02</option>
+  </select>
+</form>
+<form>
+  <label>Disabled file input</label>
+  <input type="file" disabled>
+</form>
+<form>
+  <label>Disabled radio input</label>
+  <input type="radio" name="rad" disabled>
+</form>
+<form>
+  <label>Disabled checkbox input</label>
+  <input type="checkbox" disabled>
+</form>
+<form>
+  <label>Disabled color input</label>
+  <input type="color" value="#000000" disabled>
+</form>
+<form>
+  <label>Disabled range input</label>
+  <input type="range" disabled>
+</form>
+<form>
+  <label>Disabled number input</label>
+  <input type="number" value="5" min="0" max="10" disabled>
+</form>
+<form>
+  <label>Disabled textarea</label>
+  <textarea cols="30" rows="5" disabled>Textarea text</textarea>
+</form>
+
+<form>
+  <fieldset class="login">
+    <legend>Login</legend>
+    <input type="text"><label>Username</label>
+    <input type="password" value="password"><label>Password</label>
   </fieldset>
 </form>
+
 <form>
   <fieldset>
-    <div><label>Readonly text input</label> <input type="text" value="Readonly text input" readonly></div>
-    <div><label>Readonly color input</label> <input type="color" value="#000000" readonly></div>
-    <div><label>Readonly range input</label> <input type="range" readonly></div>
-    <div><label>Readonly number input</label> <input type="number" value="5" min="0" max="10" readonly></div>
-    <div><label>Readonly textarea</label> <textarea cols="30" rows="5" readonly>Textarea text</textarea></div>
+    <form>
+      <label>Readonly text input</label>
+      <input type="text" value="Readonly text input" readonly>
+    </form>
+    <form>
+      <label>Readonly color input</label>
+      <input type="color" value="#000000" readonly>
+    </form>
+    <form>
+      <label>Readonly range input</label>
+      <input type="range" readonly>
+    </form>
+    <form>
+      <label>Readonly number input</label>
+      <input type="number" value="5" min="0" max="10" readonly>
+    </form>
+    <form>
+      <label>Readonly textarea</label>
+      <textarea cols="30" rows="5" readonly>Textarea text</textarea>
+    </form>
   </fieldset>  
 </form>
 <form>
@@ -341,6 +473,17 @@ e.target.nextElementSibling.innerText = e.target.value;
     <p><input type="submit" value="Submit"></p>
   </fieldset>
 </form>
+<figure>
+  <img src="http://placehold.it/240x240" alt="Image Alt Text">
+  <figcaption>Figcaption content</figcaption>
+</figure>
+<figure>
+  <img src="http://placehold.it/240x240" alt="Image Alt Text">
+  <figcaption>
+    <h4>Figure Title</h4>
+    Figcaption content
+  </figcaption>
+</figure>
 <dl>
   <dt>Description name</dt>
   <dd>Description value</dd>
@@ -413,16 +556,36 @@ e.target.nextElementSibling.innerText = e.target.value;
 </audio>
 <h3>Missing Audio</h3>
 <audio controls></audio>
-<h3>Meter</h3>
-<p><meter value="100" max="100" low="70" high="90">100%</meter> A meter displaying 100%.</p>
-<p><meter value="85" max="100" low="70" high="90">85%</meter> A meter displaying 85%.</p>
-<p><meter value="50" max="100" low="70" high="90">50%</meter> A meter displaying 50%.</p>
-<p><meter value="0" max="100" low="70" high="90">0%</meter> A meter displaying 0%.</p>
-<h3>Progress</h3>
-<p><progress value="100" max="100">100%</progress> A progress displaying 100%.</p>
-<p><progress value="85" max="100">85%</progress> A progress displaying 85%.</p>
-<p><progress value="50" max="100">50%</progress> A progress displaying 50%.</p>
-<p><progress value="0" max="100">0%</progress> A progress displaying 0%.</p>
+<details>
+  <summary>More info</summary>
+  <div>
+    <p>Additional information</p>
+    <ul>
+      <li>Point 1</li>
+      <li>Point 2</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary>More info</summary>
+  <div>
+    <p>Additional information</p>
+    <ul>
+      <li>Point 1</li>
+      <li>Point 2</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary>More info</summary>
+  <div>
+    <p>Additional information</p>
+    <ul>
+      <li>Point 1</li>
+      <li>Point 2</li>
+    </ul>
+  </div>
+</details>
 <pre>
 P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /
@@ -546,7 +709,7 @@ p q r s t u v w x y z { | } ~
   <li><a href="#">Library</a> <span class="divider">/</span></li>
   <li class="active">Data</li>
 </ul>
-		</article>
+		
 	</main>
 	<footer>
 		Footer Placeholder

@@ -8,8 +8,9 @@ header{
 	img.logo{/*site logo*/
 		display: inline-block;
 		float: left;
-    	height: #{$header-height};
-    	margin-left: 1rem;
+    	height: #{$nav-height};
+    	margin-top: #{($header-height - $nav-height) / 2};
+    	//margin-left: 1rem;
 	}
 	h1{/*site tite*/
 		color: $color-accent;
@@ -99,9 +100,9 @@ header{
 		}
 		li{
 			display: table-cell;
-			text-align: center;
-			padding-top: 1em;
+			text-align: center;			
 			> a{
+				padding-top: 1em;
 				display: block;
 				text-decoration: none;
 			}
@@ -241,6 +242,10 @@ header{
 				padding-left: 1rem;
 				display: block;
 				text-align: left;
+				> a{
+					padding-top: 1rem;
+					height: 2rem;
+				}
 			}
 			-webkit-transition: -webkit-transform 500ms ease;
 			-moz-transition: -moz-transform 500ms ease;

@@ -24,12 +24,12 @@ $heading-font: $sans;
 // Color
 //////////////////////////////
 
-$color: blue;				//Specify your page's primary color
+$color: white;				//Specify your page's primary color
 
 $scheme: triad;			//Specify the relationship of colors on the page
 //mono(broken), complement, triad, tetrad, analogic, accented-analogic
 
-$tone: dark !default;			//Specify background color: white, light, dark, or black
+$tone: light !default;			//Specify background color: white, light, dark, or black
 
 /*---------
 basic colors formulas

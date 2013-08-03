@@ -3,6 +3,20 @@ article{
 	padding: 0 1em;
 	margin: 0 auto;
 	time{/*articles must include the time on which they were published*/}
+	figure{
+		//width: 50%;//a problem
+		&:nth-of-type(even){
+			padding-right: 1rem;
+		}
+		&:nth-of-type(odd){
+			float: right;
+			padding-left: 1rem;
+			text-align: center;
+		}
+		img{
+			width: 100%;
+		}
+	}
 
 	/* logo left half, menu right half*/
 	@media all and (min-width:#{$length-one * 1px}){

@@ -7,18 +7,7 @@
 //
 //////////////////////////////
 figure{
-	width: 50%;//a problem
-	&:nth-of-type(even){
-		padding-right: 1rem;
-	}
-	&:nth-of-type(odd){
-		float: right;
-		padding-left: 1rem;
-		text-align: center;
-	}
-	img{
-		width: 100%;
-	}
+	img{}
 	figcaption{
 		font-size: 0.85rem;
 		line-height: 1rem;

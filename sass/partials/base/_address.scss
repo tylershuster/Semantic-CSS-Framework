@@ -1,43 +1,51 @@
 address{
-	a{
+	span{
 		display: block;
-		//@include typography(size-base);
 	}
-	a.tel{@include typography(size-base);}
-	a.html{@include typography(size-base);}
+	a.tel{
+		font-style: normal;
+		display: block;
+	}
+	a.html{
+		font-style: normal;
+		display: block;
+	}
 	a.mail{
-		span.streetAddress{
+		display: block;
+		height: 1rem;
+		span{
+			display: block;
+			float: left;
+			font-style: normal;
 			&:after{
-				content: " ";
+				content: "\00a0"
 			}
 		}
-		span.addressLocality{
-			&:after{
-				content: " ";
-			}
-		}
-		span.addressRegion{
-			&:after{
-				content: " ";
-			}
-		}
-		span.postalCode{
-			&:after{
-				content: " ";
-			}
-		}
+		span.streetAddress{}
+		span.addressLocality{}
+		span.addressRegion{}
+		span.postalCode{}
 		span.addressCountry{}
 	}
-	a.email{@include typography(size-base);}
-	a.gps{}
+	a.email{
+		font-style: normal;
+		display: block;
+	}
+	a.gps{
+		font-style: normal;
+		display: block;
+	}
 	@mixin social{
+		display: block;
+		height: 1rem;
+		float: left;
+		padding: 0 0.5rem;
 		&:before{
 			display: block;
 			font-family: "Entypo";
 			text-decoration: none;
 			color: $color-tertiary;
 			float: left;
-			margin: 0 0.38rem;
 		}
 	}
 	a.twitter{

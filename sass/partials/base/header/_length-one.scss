@@ -1,4 +1,7 @@
 /*Styles for devices from 128-256px wide*/
 header{
 	@include column(1,1);
+	h1{
+		@include typography(size-two);
+	}
 }

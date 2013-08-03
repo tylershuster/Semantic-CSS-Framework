@@ -54,8 +54,8 @@ $width-twelve: 96em;
 
 
 
-@mixin root-flat {@include typography-calculator(1,2,0.75,0.25);font-weight:normal;text-transform:lowercase;opacity:0.62;}
-@mixin root {@include typography-calculator(1,2,0.75,0.25);font-weight: normal;/*padding-top: 0.62em;padding-bottom:0.38em;*/}
+@mixin root-flat {@include typography-calculator(1,1,0,0);font-weight:normal;}
+@mixin root {@include typography-calculator(1,2,0.75,0.25);font-weight: normal;}
 @mixin root-sharp {@include typography-calculator(1,2,0.75,0.25);font-style: italic;}
 @mixin note-b2 {@include typography-calculator(1.067,2,0.6,0.4);font-weight: normal;}
 @mixin note-2 {@include typography-calculator(1.125,2,0.55,0.45);font-weight: bold;}
@@ -92,44 +92,52 @@ $width-twelve: 96em;
 @mixin typography($size){
 		@if 		$quality ==  min {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
 			@else {	@include note-b3;}
 		}
 		@else if $quality ==  maj {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
 			@else {@include note-3;}
 		}
 		@else if $quality ==  dim {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-b5; $grid-base-height: 1.414em;}
 			@else {	@include note-b3;}
 		}
 		@else if $quality ==  aug {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-s5; $grid-base-height: 1.6em;}
 			@else {@include note-3;}
 		}
 		@else if $quality ==  augmin7 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
 			@else if $size == size-two{	@include note-s5;}
 			@else {@include note-3;}
 		}
 		@else if $quality ==  sus {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
 			@else if $size == size-two{	@include note-4;}
 			@else {	@include note-4;}
 		}
 		@else if $quality ==  sus2 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
 			@else if $size == size-two{	@include note-2;}
 			@else {	@include note-2;}
 		}
 		@else if $quality ==  eleventh {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-11; $grid-base-height: 2.66em;}
 			@else if $size == size-two{	@include note-9;}
 			@else if $size == size-three{	@include note-b7;}
@@ -138,6 +146,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  min7 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
 			@else if $size == size-two{	@include note-5;}
 			@else if $size == size-three{	@include note-3;}
@@ -146,6 +155,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  maj7 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-7; $grid-base-height: 1.875em;}
 			@else if $size == size-two{	@include note-5;}
 			@else if $size == size-three{	@include note-3;}
@@ -154,6 +164,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  dom7 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
 			@else if $size == size-two{	@include note-5;}
 			@else if $size == size-three{	@include note-b3;}
@@ -162,6 +173,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  dim7 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
 			@else if $size == size-two{	@include note-b5;}
 			@else if $size == size-three{	@include note-b3;}
@@ -170,6 +182,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  min6 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-6; $grid-base-height: 1.667em;}
 			@else if $size == size-two{	@include note-5;}
 			@else if $size == size-three{	@include note-b3;}
@@ -178,6 +191,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  maj6 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-6; $grid-base-height: 1.667em;}
 			@else if $size == size-two{	@include note-5;}
 			@else if $size == size-three{	@include note-3;}
@@ -186,6 +200,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  domflat9 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-b9; $grid-base-height: 2.134em;}
 			@else if $size == size-two{	@include note-b7;}
 			@else if $size == size-three{	@include note-5;}
@@ -194,6 +209,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  domsharp9 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-s9; $grid-base-height: 2.4em;}
 			@else if $size == size-two{	@include note-b7;}
 			@else if $size == size-three{	@include note-5;}
@@ -202,6 +218,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  min9 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-9; $grid-base-height: 2.25em;}
 			@else if $size == size-two{	@include note-b7;}
 			@else if $size == size-three{	@include note-5;}
@@ -210,6 +227,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  maj9 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-9; $grid-base-height: 2.25em;}
 			@else if $size == size-two{	@include note-7;}
 			@else if $size == size-three{	@include note-5;}
@@ -218,6 +236,7 @@ $width-twelve: 96em;
 		}
 		@else if $quality ==  perfect5 {
 			@if 		$size == size-base{	@include root;}
+			@else if $size == size-span{ @include root-flat;}
 			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
 			@else {	@include note-5;}
 		}

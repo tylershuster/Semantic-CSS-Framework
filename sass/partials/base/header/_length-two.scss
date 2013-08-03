@@ -7,6 +7,7 @@ header{
 		left: 1.5rem;
 	}
 	h1{
+		@include typography(size-two);
 		position: relative;
 		left: 1.5rem;
 	}

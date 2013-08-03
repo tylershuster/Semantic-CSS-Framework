@@ -40,13 +40,17 @@ h5{
 		/*style for small version*/
 	}
 }
-p, span, time{
+p, time{
 	@include typography(size-base);
 	//color: $color-text;
 	font-family: '#{$body-font}';
 	small{
 		/*style for small version*/
 	}
+}
+span{
+	@include typography(size-span);
+	font-family: '#{$body-font}';
 }
 a{
 	//color: $color-accent;
@@ -57,8 +61,8 @@ a{
 	}
 	&.external{
 		&:before{
-			content: "🔗 ";
-			font-family: 'entypo', 'sans-serif';
+			//content: "🔗 ";
+			//font-family: 'entypo', 'sans-serif';
 		}
 	}
 }

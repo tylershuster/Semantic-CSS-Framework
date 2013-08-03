@@ -1,0 +1,18 @@
+fieldset{
+	box-sizing: border-box;
+	border: 1px solid $color-accent;
+	margin: 0;
+	padding: 0;
+	legend{
+
+	}
+	&.login{
+		input[type="text"]{
+
+		}
+		input[type="password"]{
+
+		}
+
+	}
+}

@@ -1,17 +1,18 @@
-input[type="text"],input[type="email"],input[type="search"],input[type="url"],input[type="password"],input[type="radio"],input[type="tel"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"]{
+input[type="text"],input[type="email"],input[type="search"],input[type="url"],input[type="password"],input[type="tel"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"]{
 	height: 1.5rem;
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 	border: 0;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-
-fieldset{
-	box-sizing: border-box;
-	border: 1px solid $color-accent;
-	margin: 0;
-	padding: 0;
+input[type="radio"]{
+	height: 1rem;
+	&:after{
+		content: attr(name);
+		display: block;
+	}
 }
+
 
 input[type="search"], input[type="submit"]{
 	border-radius: 3px;
