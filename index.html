@@ -130,80 +130,105 @@
 	</address>-->
 	
 <h3>Meter</h3>
-<p>
-  <span><meter value="100" max="100" low="70" high="90">100%</meter> A meter displaying 100%.</span>
-  <span><meter value="85" max="100" low="70" high="90">85%</meter> A meter displaying 85%.</span>
-  <span><meter value="50" max="100" low="70" high="90">50%</meter> A meter displaying 50%.</span>
-  <span><meter value="0" max="100" low="70" high="90">0%</meter> A meter displaying 0%.</span>
-</p>
+<div class="row">
+  <figure class="small-6 large-3 columns">
+    <meter value="100" max="100" low="70" high="90">100%</meter>
+    <figcaption>A meter displaying 100%.</figcaption>
+  </figure>
+  <figure class="small-6 large-3 columns">
+    <meter value="85" max="100" low="70" high="90">85%</meter>
+    <figcaption>A meter displaying 85%.</figcaption>
+  </figure>
+  <figure class="small-6 large-3 columns">
+    <meter value="50" max="100" low="70" high="90">50%</meter>
+    <figcaption>A meter displaying 50%.</figcaption>
+  </figure>
+  <figure class="small-6 large-3 columns">
+    <meter value="0" max="100" low="70" high="90">0%</meter>
+    <figcaption>A meter displaying 0%.</figcaption>
+  </figure>
+</div>
+
 
 <h3>Progress</h3>
-<p>
-  <span><progress value="100" max="100">100%</progress> A progress displaying 100%.</span>
-  <span><progress value="85" max="100">85%</progress> A progress displaying 85%.</span>
-  <span><progress value="50" max="100">50%</progress> A progress displaying 50%.</span>
-  <span><progress value="0" max="100">0%</progress> A progress displaying 0%.</span>
-</p>
+<div class="row">
+  <figure class="small-6 large-3 columns">
+    <progress value="100" max="100">100%</progress>
+    <figcaption>A progress displaying 100%.</figcaption>
+  </figure>
+  <figure class="small-6 large-3 columns">
+    <progress value="85" max="100">85%</progress>
+    <figcaption>A progress displaying 85%.</figcaption>
+  </figure>
+  <figure class="small-6 large-3 columns">
+    <progress value="50" max="100">50%</progress>
+    <figcaption>A progress displaying 50%.</figcaption>
+  </figure>
+  <figure class="small-6 large-3 columns">
+    <progress value="0" max="100">0%</progress>
+    <figcaption>A progress displaying 0%.</figcaption>
+  </figure>
+</div>
 
 
-<form>
+<form class="small-6 large-3 columns">
   <label>Text input</label>
   <input type="text">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Text input with placeholder</label>
   <input type="text" placeholder="I'm placeholder text">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Readonly input</label>
   <input type="text" value="Read only text input" readonly>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Disabled input</label>
   <input type="text" value="Disabled text input" disabled>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label class="required">Required input</label>
   <input type="text" required>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Email input</label>
   <input type="email">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Search input</label>
   <input type="search">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Speech recognition input</label>
   <input type="text" id="speech" name="speech" x-webkit-speech="">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Tel input</label>
   <input type="tel">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Phone (International)</label>
-  <input name="field_country_code" maxlength="3" /> - 
-  <input name="field_city_code" maxlength="4" /> - 
+  <input name="field_country_code" maxlength="3" /><span>-</span> 
+  <input name="field_city_code" maxlength="4" /><span>-</span> 
   <input name="field_phone_int" maxlength="8" />
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>URL input</label>
   <input type="url" placeholder="http://">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Password input</label>
   <input type="password" value="password">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Select field</label>
   <select>
     <option>Option 01</option>
     <option>Option 02</option>
   </select>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Multiple select field</label>
   <select multiple size="5">
     <option>Option 1</option>
@@ -218,15 +243,15 @@
     <option>Option 10</option>
   </select>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Radio input</label>
   <input type="radio" name="rad">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Checkbox input</label>
   <input type="checkbox">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Radio Input</label>
   <input type="radio" name="rad">
   <input type="radio" name="rad">
@@ -234,25 +259,25 @@
   <input type="radio" name="rad">
   <input type="radio" name="rad">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label><input type="checkbox"> Checkbox input</label>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>File input</label>
   <input type="file">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Textarea</label> <textarea cols="30" rows="5" >Textarea text</textarea>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Color input</label>
   <input type="color" value="#000000">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Number input</label>
   <input type="number" value="5" min="0" max="10">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Range input</label>
   <input type="range" id="range" value="0" min="0" max="100">
   <output for="range">0</output>
@@ -264,73 +289,73 @@
     }
   </script>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Date input</label>
   <input type="date">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Month input</label>
   <input type="month">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Week input</label>
   <input type="week">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Time input</label>
   <input type="time">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Datetime input</label>
   <input type="datetime">
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Datetime-local input</label>
   <input type="datetime-local">
 </form>
 </form>
 
-<form>
+<form class="small-6 large-3 columns">
   <label>Disabled text input</label>
   <input type="text" value="Disabled text input" disabled>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Disabled select field</label>
   <select disabled>
     <option>Option 01</option>
     <option>Option 02</option>
   </select>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Disabled file input</label>
   <input type="file" disabled>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Disabled radio input</label>
   <input type="radio" name="rad" disabled>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Disabled checkbox input</label>
   <input type="checkbox" disabled>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Disabled color input</label>
   <input type="color" value="#000000" disabled>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Disabled range input</label>
   <input type="range" disabled>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Disabled number input</label>
   <input type="number" value="5" min="0" max="10" disabled>
 </form>
-<form>
+<form class="small-6 large-3 columns">
   <label>Disabled textarea</label>
   <textarea cols="30" rows="5" disabled>Textarea text</textarea>
 </form>
 
-<form>
+<form class="small-6 large-3 columns">
   <fieldset class="login">
     <legend>Login</legend>
     <input type="text"><label>Username</label>
@@ -338,30 +363,28 @@
   </fieldset>
 </form>
 
-<form>
-  <fieldset>
-    <form>
-      <label>Readonly text input</label>
-      <input type="text" value="Readonly text input" readonly>
-    </form>
-    <form>
-      <label>Readonly color input</label>
-      <input type="color" value="#000000" readonly>
-    </form>
-    <form>
-      <label>Readonly range input</label>
-      <input type="range" readonly>
-    </form>
-    <form>
-      <label>Readonly number input</label>
-      <input type="number" value="5" min="0" max="10" readonly>
-    </form>
-    <form>
-      <label>Readonly textarea</label>
-      <textarea cols="30" rows="5" readonly>Textarea text</textarea>
-    </form>
-  </fieldset>  
+
+<form class="small-6 large-3 columns">
+  <label>Readonly text input</label>
+  <input type="text" value="Readonly text input" readonly>
 </form>
+<form class="small-6 large-3 columns">
+  <label>Readonly color input</label>
+  <input type="color" value="#000000" readonly>
+</form>
+<form class="small-6 large-3 columns">
+  <label>Readonly range input</label>
+  <input type="range" readonly>
+</form>
+<form class="small-6 large-3 columns">
+  <label>Readonly number input</label>
+  <input type="number" value="5" min="0" max="10" readonly>
+</form>
+<form class="small-6 large-3 columns">
+  <label>Readonly textarea</label>
+  <textarea cols="30" rows="5" readonly>Textarea text</textarea>
+</form>
+
 <form>
   <fieldset>
     <div>
@@ -456,23 +479,21 @@
     </div>
   </fieldset> 
 </form>
-<form>
-  <fieldset>
-    <legend>Fieldset with legend</legend>
-    <p><label>Text Input</label> <input type="text"></p>
-    <p><input type="submit" value="Submit"></p>
-  </fieldset>
-  <fieldset>
-    <p>Fieldset without legend</p>
-    <p><label>Text Input</label> <input type="text"></p>
-    <p><input type="submit" value="Submit"></p>
-  </fieldset>
-  <fieldset>
-    <legend>Fieldset with a very, very, very, very, very, long legend that can test the display of word wrapping to see how it looks.</legend>
-    <p><label>Text Input</label> <input type="text"></p>
-    <p><input type="submit" value="Submit"></p>
-  </fieldset>
-</form>
+
+  <legend>Fieldset with legend</legend>
+  <p><label>Text Input</label> <input type="text"></p>
+  <p><input type="submit" value="Submit"></p>
+</fieldset>
+<fieldset>
+  <p>Fieldset without legend</p>
+  <p><label>Text Input</label> <input type="text"></p>
+  <p><input type="submit" value="Submit"></p>
+</fieldset>
+<fieldset>
+  <legend>Fieldset with a very, very, very, very, very, long legend that can test the display of word wrapping to see how it looks.</legend>
+  <p><label>Text Input</label> <input type="text"></p>
+  <p><input type="submit" value="Submit"></p>
+
 <figure>
   <img src="http://placehold.it/240x240" alt="Image Alt Text">
   <figcaption>Figcaption content</figcaption>

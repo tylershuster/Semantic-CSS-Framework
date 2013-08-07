@@ -1,5 +1,92 @@
 form{
+	label,span{
+		@include typography(vcenter);
+		height: 0.89rem;
+	}
 	display: block;
 	float: left;
-	margin-right: 1rem;
+	input{		
+		padding: 0 0.5rem;
+		&[maxlength="1"]{
+			//hack
+			width: 1em;
+		}
+		&[maxlength="2"]{
+			//hack
+			width: 2em;
+		}
+		&[maxlength="3"]{
+			//hack
+			width: 3em;
+		}
+		&[maxlength="4"]{
+			//hack
+			width: 4em;
+		}
+		&[maxlength="5"]{
+			//hack
+			width: 5em;
+		}
+		&[maxlength="6"]{
+			//hack
+			width: 6em;
+		}
+		&[maxlength="7"]{
+			//hack
+			width: 7em;
+		}
+		&[maxlength="8"]{
+			//hack
+			width: 8em;
+		}
+		&[maxlength="9"]{
+			//hack
+			width: 9em;
+		}
+		&[maxlength="10"]{
+			//hack
+			width: 10em;
+		}
+		&[maxlength="11"]{
+			//hack
+			width: 11em;
+		}
+		&[maxlength="12"]{
+			//hack
+			width: 12em;
+		}
+		&[maxlength="13"]{
+			//hack
+			width: 13em;
+		}
+		&[maxlength="14"]{
+			//hack
+			width: 14em;
+		}
+		&[maxlength="15"]{
+			//hack
+			width: 15em;
+		}
+		&[maxlength="16"]{
+			//hack
+			width: 16em;
+		}
+		&[maxlength="17"]{
+			//hack
+			width: 17em;
+		}
+		&[maxlength="18"]{
+			//hack
+			width: 18em;
+		}
+		&[maxlength="19"]{
+			//hack
+			width: 19em;
+		}
+		&[maxlength="20"]{
+			//hack
+			width: 20em;
+		}
+		
+	}
 }
