@@ -1,60 +1,78 @@
 @include key(#{$key});
 
 h1{
+	@include text-shadow;
 	@include typography(size-one);
 	color: $color-primary;
 	font-family: '#{$heading-font}';
-	small{
-		/*style for small version*/
+	& + small{
+		opacity: 0.85;
+		@include typography(size-two);
+		line-height: 1em;
 	}
 }
 h2{
+	@include text-shadow;
 	@include typography(size-two);
 	color: $color-secondary;
 	font-family: '#{$heading-font}';
-	small{
-		/*style for small version*/
+	& + small{
+		opacity: 0.85;
+		@include typography(size-three);
+		line-height: 1em;
 	}
 }
 h3{
+	@include text-shadow;
 	@include typography(size-three);
 	color: $color-tertiary;
 	font-family: '#{$heading-font}';
-	small{
-		/*style for small version*/
+	& + small{
+		opacity: 0.85;
+		@include typography(size-four);
+		line-height: 1em;
 	}
 }
 h4{
+	@include text-shadow;
 	@include typography(size-four);
 	color: $color-text;
 	font-family: '#{$heading-font}';
-	small{
-		/*style for small version*/
+	& + small{
+		opacity: 0.85;
+		@include typography(size-five);
+		line-height: 1em;
 	}
 }
 h5{
+	@include text-shadow;
 	@include typography(size-five);
 	color: $color-text;
 	font-family: '#{$heading-font}';
-	small{
-		/*style for small version*/
+	& + small{
+		opacity: 0.85;
+		@include typography(size-base);
+		line-height: 1em;
 	}
 }
 p, time{
 	@include typography(size-base);
 	//color: $color-text;
 	font-family: '#{$body-font}';
-	small{
+	& + small{
+		opacity: 0.85;
 		/*style for small version*/
+		line-height: 1em;
 	}
+
 }
 span{
 	@include typography(size-span);
 	font-family: '#{$body-font}';
 }
-a{
+a,a:visited{
 	//color: $color-accent;
-	color: $color-text;
+	color: inherit;
 	text-decoration: underline;
 	&:hover{
 		color: $color-accent;
@@ -67,6 +85,28 @@ a{
 	}
 }
 
+small:before{
+	content: " ";
+}
+/*needs to be less intrusive
+p.drop-cap:first-letter, article>p:first-of-type:first-letter, article>h1 + p:first-letter{
+	float: left;
+	margin-right: 1rem;
+	font-size: 7em;
+	line-height: 0.9;
+	margin-bottom: -0.1em;
+
+}
+
+article>h2 + p:first-letter, article>h3 + p:first-letter, article>h4 + p:first-letter, article>h5 + p:first-letter{
+	float: left;
+	margin-right: 0.5rem;
+	font-size: 4em;
+	line-height: 1;	
+}
+
+
+article>p:first-of-type::first-line{font-variant:small-caps;text-transform:lowercase;}*/
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 

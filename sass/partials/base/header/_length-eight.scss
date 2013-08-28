@@ -2,7 +2,7 @@
 header{
 	@include column(8,8);
 	/*multiple headers get styled into tabs. See foxnews for example*/
-	img.logo{margin-left: 1rem;/*site logo*/}
+	.logo{margin-left: 0.75rem;/*site logo*/}
 	h1{/*site tite*/}
 	address{/*address info*/}
 
@@ -10,7 +10,7 @@ header{
 		&.masthead{
 			@include column(4,8);
 			/*masthead is centered on page*/
-			img.logo{/*site logo*/}
+			.logo{/*site logo*/}
 			h1{/*site title*/}
 			address{/*address info*/}
 		}

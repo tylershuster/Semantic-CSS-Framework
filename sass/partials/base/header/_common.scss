@@ -1,11 +1,11 @@
 header{
 	background-color: $color-primary;
-	height: #{$header-height + $nav-height};
+	height: #{$header-height + $nav-height};//only on larger screens. move inside mq
 	position: fixed;
 	top: 0;
 	left: 0;
 	/*multiple headers get styled into tabs. See foxnews for example*/
-	img.logo{/*site logo*/
+	.logo{/*site logo*/
 		display: inline-block;
 		float: left;
     	height: #{$nav-height};
@@ -13,7 +13,7 @@ header{
     	//margin-left: 1rem;
 	}
 	h1{/*site tite*/
-		color: $color-accent;
+		color: $color-background;
 		display: inline-block;
 		float: left;
 		line-height: #{$header-height};
@@ -28,12 +28,12 @@ header{
 			position: absolute;
 			margin: 0 auto;
 			/*masthead is centered on page*/
-			img.logo{/*site logo*/}
-			h1{color: $color-accent;/*site title*/}
+			.logo{/*site logo*/}
+			h1{/*site title*/}
 			address{/*address info*/}
 		}
 		&.user{
-			background-color: $color-secondary;
+			background-color: $color-drawer;
 			//padding: 0.38rem 0 0.62rem 0;
 			//margin-right: 1rem;
 			height: #{$nav-height};
@@ -86,30 +86,34 @@ header{
 	nav{
 		
 		ul{
-			position: fixed;
+			position: absolute;
 			top: #{$header-height};
 			height: #{$nav-height};
-			background-color: $color-secondary;		
+			background-color: $color-drawer;		
 			float: left;
 			width: 100%;
 			margin: 0;			
 			padding: 0;
 			list-style: none;
 			display: table;
+			table-layout: fixed;
 			@include box-shadow;
 		}
 		li{
 			display: table-cell;
-			text-align: center;			
+			text-align: center;	
+			table-layout: fixed;	
+			vertical-align: middle;	
 			> a{
-				padding-top: 1em;
-				display: block;
+				display: table-cell;				
 				text-decoration: none;
+				vertical-align: middle;
+				width: 2%;				
 			}
 			&:hover{
-				background-color: $color-background;
-				a{
-					color: $color-secondary;
+				background-color: $color-primary;
+				a, a:hover{
+					color: $color-background;
 				}
 			}			
 		}
@@ -124,12 +128,12 @@ header{
 .slide-toggle {
 	float: left;
 	cursor: pointer;
-	position: fixed;
+	position: absolute;
 	top:-1rem;
 	//left: -2rem;
 	z-index: 1;
 	display: none;
-	color: $color-accent;
+	color: $color-drawer;
 }
 
 /* Kill the nasty outlines everywhere */
@@ -182,7 +186,7 @@ header{
 					position:absolute;
 					width:0;
 					height:1rem;
-					border: 0.3rem solid white;
+					border: 0.3rem solid $color-drawer;
 					top: 2.62rem;
 					right:-0.62rem;
 					-webkit-border-radius:3px;
@@ -243,8 +247,8 @@ header{
 				display: block;
 				text-align: left;
 				> a{
-					padding-top: 1rem;
-					height: 2rem;
+					padding: 1rem 0;
+					height: 3rem;
 				}
 			}
 			-webkit-transition: -webkit-transform 500ms ease;

@@ -1,0 +1,103 @@
+
+.row{
+	float: left;
+	width: 100%;
+	margin: 0;			
+	padding: 0;
+	display: table;
+	table-layout: fixed;
+	> div, >li{
+		display: block;		
+		table-layout: fixed;	
+		vertical-align: middle;
+		width: 50%;
+		&.column{
+			padding:0.5rem;		
+		}
+		> *{
+			display: block;
+			width: 100%;
+		}
+		> .row{
+			display: table;
+		}
+	}	
+}
+
+div.two{
+	width: 100%;
+}
+div.three{
+	width: 150%;
+}
+div.four{
+	width: 200%;
+}
+
+@media all and (min-width: 0px) and (max-width:#{$length-five * 1px}){
+	div.two, div.three, div.four{width:100%}
+	.row{
+		display: block;
+		> div, >li{
+			width: 100%;
+		}
+	}
+}
+
+@media all and (min-width: #{$length-five * 1px}) and (max-width:#{$length-eight * 1px}){
+	div.two, div.three, div.four{width:100%}
+	.row{
+		> div{
+			float:left;				
+			&:nth-last-of-type(2) + div:nth-of-type(odd){
+				width: 100%;
+			}
+		}
+		> li{
+			float: left;
+			&:nth-last-of-type(2) + li:nth-of-type(odd){
+				width: 100%;
+			}
+		}
+		
+	}
+}
+
+@media all and (min-width:#{$length-eight * 1px}){
+	.row{
+		> div, >li{
+			display: table-cell;
+		}
+	}
+}
+
+/* logo left half, menu right half*/
+@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+	div:nth-last-of-type()
+}
+
+@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+	@import "header/length-two";
+}
+/*mobile menu swipe from left*/
+@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-five * 1px}){
+	@import "header/length-three";
+}
+
+@media all and (min-width:#{$length-five * 1px}) and (max-width:#{$length-eight * 1px}){
+	div:nth-last-of-type(11), div:nth-last-of-type(11) + div, div:nth-last-of-type(11) + div + div, div:nth-last-of-type(11) + div + div + div, div:nth-last-of-type(11) + div + div + div + div{
+		width: 20%; /*$five on the top*/
+	} 
+}
+/*desktop nav*/
+@media all and (min-width:#{$length-eight * 1px}) and (max-width:#{$length-thirteen * 1px}){
+	main{margin-top:#{$header-height + $nav-height};}
+	@import "header/length-eight";
+}
+
+@media all and (min-width:#{$length-thirteen * 1px}){
+	main{margin-top:#{$header-height + $nav-height};}
+	@import "header/length-thirteen";
+}
+
+

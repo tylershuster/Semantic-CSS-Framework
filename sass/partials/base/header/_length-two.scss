@@ -2,14 +2,16 @@
 header{
 	height: 5rem;
 	@include column(2,2);
-	img.logo{
+	@include box-shadow;
+	.logo{
 		position: relative;
-		left: 1.5rem;
+		left: 0.75rem;
 	}
-	h1{
-		@include typography(size-two);
-		position: relative;
-		left: 1.5rem;
+	h1{	
+		position: absolute;
+		left: 4.2rem;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	address{display: none;}
 	section{

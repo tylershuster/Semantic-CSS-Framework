@@ -2,15 +2,16 @@
 header{
 	height: 5rem;
 	@include column(3,3);
-	img.logo{
+	@include box-shadow;
+	.logo{
 		position: relative;
-		left: 1.5rem;
+		left: 0.75rem;
 	}
 	h1{
 		position: relative;
-		left: 1.5rem;
+		left: 0.75rem;
 	}
-	address{display: none;}
+	address{/*display: none;*/}
 	section{
 		&.masthead{	}
 		&.user{

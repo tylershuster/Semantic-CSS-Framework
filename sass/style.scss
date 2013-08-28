@@ -4,9 +4,9 @@
 // Typography
 //////////////////////////////
 
-$key: c;					//Specify the key in which to set your piece
+$key: d;					//Specify the key in which to set your piece (d)
 
-$quality: domsharp9;				//Specify the quality of your piece. Pick something that fits the feel of the page
+$quality: min6;				//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
 
 $sans: Open Sans;
 
@@ -24,37 +24,15 @@ $heading-font: $sans;
 // Color
 //////////////////////////////
 
-$color: white;				//Specify your page's primary color
-
-$scheme: triad;			//Specify the relationship of colors on the page
+$color: #0086BD;				//Specify your page's primary color (#0086BD)
+/*#{$color}*/
+$scheme: mono;			//Specify the relationship of colors on the page (mono)
 //mono(broken), complement, triad, tetrad, analogic, accented-analogic
-
-$tone: light !default;			//Specify background color: white, light, dark, or black
-
-/*---------
-basic colors formulas
--complementary
--split-complementary
--triadic
--analogous
--monochromatic
------------*/
-
+/*#{$scheme}*/
+$tone: white !default;			//Specify background color: white, light, dark, or black (white)
+/*#{$tone}*/
 $icons: no;					//Specify whether or not to use icons;
-
-
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
-
-
-
-
-
-
-
-
-
-
 //////////////////////////////
 // Set legacy support
 //
@@ -85,8 +63,9 @@ $legacy-support-for-mozilla: false;
 
 //////////////////////////////
 // Import Grids
+
 //////////////////////////////
-@import "utilities/grids/foundation.scss";
+/*@import "utilities/grids/foundation.scss";*/
 
 //////////////////////////////
 // Import Core Components
@@ -98,3 +77,17 @@ $legacy-support-for-mozilla: false;
 
 @import "partials/z-index";
 /* { / picnicc } */
+/*
+* body, header{background-image: url(../bg.png);}
+nav ul{background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2P4//8/AxI2RuGAaBQOTADOAWEAjAwwnWPnCWYAAAAASUVORK5CYII=);}/*http://purelycss.com/data-uri-tileable-transparent-patterns/#*/
+$grid-red: red($color-accent);
+$grid-green: green($color-accent);
+$grid-blue: blue($color-accent);
+/*
+red: #{$grid-red}
+green: #{$grid-green}
+blue: #{$grid-blue}
+
+@import url("http://basehold.it/#{$font-base}/#{$grid-red}/#{$grid-green}/#{$grid-blue}");
+
+*/

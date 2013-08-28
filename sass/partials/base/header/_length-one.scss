@@ -1,7 +1,12 @@
 /*Styles for devices from 128-256px wide*/
 header{
+	height: $header-height;
 	@include column(1,1);
+	@include box-shadow;
 	h1{
-		@include typography(size-two);
+		position: absolute;
+		left: 3rem;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 }

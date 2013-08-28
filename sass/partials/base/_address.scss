@@ -44,35 +44,36 @@ address{
 			display: block;
 			font-family: "Entypo";
 			text-decoration: none;
-			color: $color-tertiary;
+			font-style: normal;
+			color: $color-background;
 			float: left;
 		}
 	}
-	a.twitter{
+	a[href*="twitter.com/"]{
 		@include social;
 		&:before{
 			content: "\f309";
 		}
 	}
-	a.gplus{
+	a[href*="plus.google.com/"]{
 		@include social;
 		&:before{
 			content: "\f30f";
 		}
 	}
-	a.facebook{
+	a[href*="facebook.com/"]{
 		@include social;
 		&:before{
 			content: "\f30c";
 		}
 	}
-	a.linkedin{
+	a[href*="linkedin.com/"]{
 		@include social;
 		&:before{
 			content: "\f318";
 		}
 	}
-	a.tumblr{
+	a[href*="tumblr"]{
 		@include social;
 		&:before{
 			content: "\f315";
