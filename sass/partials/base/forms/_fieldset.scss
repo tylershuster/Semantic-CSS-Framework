@@ -1,6 +1,7 @@
 fieldset{
 	box-sizing: border-box;
-	border: 1px solid $color-accent;
+	/*(border: 1px solid $color-accent;*/
+	border: none;
 	margin: 0;
 	padding: 0;
 	legend{

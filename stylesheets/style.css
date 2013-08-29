@@ -39,6 +39,32 @@ body:after {
 /*640*/
 /*1024*/
 /*1664*/
+/*  ======== Flexbox Mixins ==============
+	------------------------
+	Copyright (c) 2013 Brian Franco
+	
+	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+	The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+	------------------------
+
+	This is a set of mixins for those who want to mess
+	around with flexbox using the native support of current
+	browsers. For full support table check: http://caniuse.com/flexbox
+
+	Basically this will use:
+		Fallback, old syntax (IE10, Safari, mobile webkit browsers)
+		Prefixed standard syntax (Chrome)
+		Final standards syntax (FF, IE11, Opera 12.1)
+
+	------------------------
+	This was inspired by: 
+		http://dev.opera.com/articles/view/advanced-cross-browser-flexbox/
+	With help from: 
+		http://www.w3.org/TR/css3-flexbox/
+		http://the-echoplex.net/flexyboxes/
+		http://msdn.microsoft.com/en-us/library/ie/hh772069%28v=vs.85%29.aspx
+*/
 /* line 1, ../sass/partials/_base.scss */
 main {
   margin-top: 5rem;
@@ -49,7 +75,7 @@ main {
   overflow: hidden;
 }
 
-/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -2061,7 +2087,7 @@ progress {
 .row > div, .row > li {
   display: block;
   table-layout: fixed;
-  vertical-align: middle;
+  vertical-align: top;
   width: 50%;
 }
 /* line 14, ../sass/partials/base/_panels.scss */
@@ -2111,32 +2137,32 @@ div.four {
 @media all and (min-width: 640px) and (max-width: 1024px) {
   /* line 48, ../sass/partials/base/_panels.scss */
   div.two, div.three, div.four {
-    width: 100%;
+    width: 50%;
   }
 
-  /* line 50, ../sass/partials/base/_panels.scss */
+  /* line 52, ../sass/partials/base/_panels.scss */
   .row > div {
     float: left;
   }
-  /* line 52, ../sass/partials/base/_panels.scss */
-  .row > div:nth-last-of-type(2) + div:nth-of-type(odd) {
-    width: auto;
-    min-width: 50%;
-    max-width: 100%;
+  /* line 55, ../sass/partials/base/_panels.scss */
+  .row > div .row > div {
+    display: table-cell;
   }
-  /* line 58, ../sass/partials/base/_panels.scss */
+  /* line 60, ../sass/partials/base/_panels.scss */
+  .row > div:nth-last-of-type(2) + div:nth-of-type(odd) {
+    width: 100%;
+  }
+  /* line 64, ../sass/partials/base/_panels.scss */
   .row > li {
     float: left;
   }
-  /* line 60, ../sass/partials/base/_panels.scss */
+  /* line 66, ../sass/partials/base/_panels.scss */
   .row > li:nth-last-of-type(2) + li:nth-of-type(odd) {
-    width: auto;
-    min-width: 50%;
-    max-width: 100%;
+    width: 100%;
   }
 }
 @media all and (min-width: 1024px) {
-  /* line 71, ../sass/partials/base/_panels.scss */
+  /* line 75, ../sass/partials/base/_panels.scss */
   .row > div, .row > li {
     display: table-cell;
   }
@@ -2329,7 +2355,8 @@ textarea {
 /* line 1, ../sass/partials/base/forms/_fieldset.scss */
 fieldset {
   box-sizing: border-box;
-  border: 1px solid #0027bd;
+  /*(border: 1px solid $color-accent;*/
+  border: none;
   margin: 0;
   padding: 0;
 }
