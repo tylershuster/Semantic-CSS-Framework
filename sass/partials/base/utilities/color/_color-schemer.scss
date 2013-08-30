@@ -1,14 +1,14 @@
 @import "color-schemer/blend-modes";
 
-// Defaults
+/* Defaults*/
 $cs-primary           : $color;
-$cs-scheme            : $scheme;   // mono, complement, triad, tetrad, analogic, accented-analogic
+$cs-scheme            : $scheme;   /* mono, complement, triad, tetrad, analogic, accented-analogic*/
 $cs-hue-offset        : 30 !default;
 $cs-brightness-offset : false !default;
-$cs-color-model       : rgb !default;    // rgb, ryb
+$cs-color-model       : rgb !default;    /* rgb, ryb*/
 $cs-colorblind        : normal !default;
 
-// Partials
+/* Partials*/
 @import "color-schemer/interpolation";
 @import "color-schemer/cmyk";
 @import "color-schemer/ryb";
@@ -21,7 +21,7 @@ $cs-colorblind        : normal !default;
 
 @import "color-schemer/mixins";
 
-// Tell other files that this is loaded.
+/* Tell other files that this is loaded.*/
 $color-schemer-loaded : true;
 
 $color-primary: null;
@@ -29,7 +29,7 @@ $color-secondary: null;
 $color-tertiary: null;
 $color-background: null;
 $color-accent: null;
-$color-drawer: /*light if tone is dark, dark if tone is light, light if tone is white, dark if tone is black*/null;
+$color-drawer: null; /*light if tone is dark, dark if tone is light, light if tone is white, dark if tone is black*/
 
 @function color-secondaryer($tone){
 	@if $scheme == mono{
@@ -192,12 +192,12 @@ $color-drawer: color-drawerer($tone);
 
 
 
-//dark or light page check
+/*dark or light page check*/
 
 /*
 $color-primary: null;
 $color-secondary: null;
-$color-tertiary: null;//rare
+$color-tertiary: null;/*rare*/
 $color-light: null;
 $color-dark: null;
 $color-text: null;
@@ -207,7 +207,7 @@ $color-accent: null;
 
 $color-primary: cs-primary($color);
 $color-secondary: cs-secondary($color);
-//$color-accent: invert(cs-tertiary($color));
+/*$color-accent: invert(cs-tertiary($color));*/
 $color-light: set-lightness($color-primary, 87%);
 $color-dark: set-lightness($color-primary, 13%);
 $color-drawer: set-saturation($color-primary, 0%);
@@ -245,7 +245,7 @@ $color-drawer: set-saturation($color-primary, 0%);
 		$color-background: #ffffff;
 		color: $color-dark;
 		$color-text: $color-dark;
-		//$color-drawer: $color-light;
+		/*$color-drawer: $color-light;*/
 		$color-accent: set-lightness($color-secondary, 15%);
 	}
 }
@@ -255,7 +255,7 @@ $color-drawer: set-saturation($color-primary, 0%);
 		$color-background: $color-light;
 		color: $color-dark;
 		$color-text: $color-dark;
-		//$color-drawer: #ffffff;
+		/*$color-drawer: #ffffff;*/
 		$color-accent: set-lightness($color-secondary, 15%);
 	}
 }
@@ -275,7 +275,7 @@ $color-drawer: set-saturation($color-primary, 0%);
 		$color-background: #000000;
 		color: $color-light;
 		$color-text: $color-light;
-		//$color-drawer: $color-dark;
+		/*$color-drawer: $color-dark;*/
 		$color-accent: set-lightness($color-secondary, 85%);
 	}
 }
@@ -284,9 +284,9 @@ $color-drawer: set-saturation($color-primary, 0%);
 
 
 
-//$color-text: $color-shade;
+/*$color-text: $color-shade;*/
 
-//* body {background-color: $color-primary;}
+/** body {background-color: $color-primary;}*/
 
 
 
