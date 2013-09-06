@@ -3,7 +3,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-@import url("http://basehold.it/22/0/39/189");
 /* { picnicc: style } */
 /*--------------------------main.scss-------------------------------*/
 /*Set in the key of f domsharp9. mono color scheme based on #0086bd with a white background.*/
@@ -41,7 +40,7 @@ body:after {
 /* line 1, ../sass/partials/_base.scss */
 main {
   margin-top: 5rem;
-  padding: 0 1rem;
+  /*padding:0 1rem;*/
   max-width: 60em;
   margin-left: auto;
   margin-right: auto;
@@ -1129,21 +1128,21 @@ article {
   /*desktop nav*/
 }
 /* line 5, ../sass/partials/elements/_article.scss */
-article time {
+article > time {
   /*articles must include the time on which they were published*/
 }
 /* line 8, ../sass/partials/elements/_article.scss */
-article figure:nth-of-type(even) {
+article > figure:nth-of-type(even) {
   padding-right: 1rem;
 }
 /* line 11, ../sass/partials/elements/_article.scss */
-article figure:nth-of-type(odd) {
+article > figure:nth-of-type(odd) {
   float: right;
   padding-left: 1rem;
   text-align: center;
 }
 /* line 16, ../sass/partials/elements/_article.scss */
-article figure img {
+article > figure img {
   width: 100%;
 }
 /* line 20, ../sass/partials/elements/_article.scss */
@@ -1151,32 +1150,38 @@ article > p:first-of-type:first-letter, article h1 + p:first-letter {
   color: #0027bd;
 }
 /* line 23, ../sass/partials/elements/_article.scss */
-article ul {
+article > ul {
   font-family: "Gentium Basic";
   margin: 0;
   padding: 0;
 }
 /* line 31, ../sass/partials/elements/_article.scss */
-article aside {
-  width: 50%;
+article > aside {
+  width: 100%;
+}
+/* line 34, ../sass/partials/elements/_article.scss */
+article > blockquote {
+  width: 100%;
 }
 @media all and (min-width: 128px) {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*Styles for devices from 128-256px wide*/
+    margin: 0 0.5rem;
+  }
+  /* line 42, ../sass/partials/elements/_article.scss */
+  article > figure {
+    width: 100%;
   }
 }
 @media all and (min-width: 256px) {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*styles for screens 256-384px*/
+    margin: 0 1rem;
   }
-  /* line 44, ../sass/partials/elements/_article.scss */
-  article blockquote {
-    width: 100%;
-  }
-  /* line 47, ../sass/partials/elements/_article.scss */
-  article figure {
+  /* line 51, ../sass/partials/elements/_article.scss */
+  article > figure {
     width: 100%;
   }
 }
@@ -1184,13 +1189,10 @@ article aside {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*styles for devices from 384-640 px wide*/
+    margin: 0 2rem;
   }
-  /* line 55, ../sass/partials/elements/_article.scss */
-  article blockquote {
-    width: 100%;
-  }
-  /* line 58, ../sass/partials/elements/_article.scss */
-  article figure {
+  /* line 60, ../sass/partials/elements/_article.scss */
+  article > figure {
     width: 100%;
   }
 }
@@ -1198,13 +1200,10 @@ article aside {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*styles for devices from 640-1024px wide*/
-  }
-  /* line 66, ../sass/partials/elements/_article.scss */
-  article blockquote {
-    width: 50%;
+    margin: 0 3rem;
   }
   /* line 69, ../sass/partials/elements/_article.scss */
-  article figure {
+  article > blockquote, article > figure, article > aside {
     width: 50%;
   }
 }
@@ -1212,13 +1211,10 @@ article aside {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*styles on devices from 1024px-1664px*/
+    margin: 0 4rem;
   }
-  /* line 77, ../sass/partials/elements/_article.scss */
-  article blockquote {
-    width: 50%;
-  }
-  /* line 80, ../sass/partials/elements/_article.scss */
-  article figure {
+  /* line 78, ../sass/partials/elements/_article.scss */
+  article > blockquote, article > figure, article > aside {
     width: 50%;
   }
 }
@@ -1226,13 +1222,10 @@ article aside {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*styles for devices from 1664px up*/
+    margin: 0;
   }
-  /* line 88, ../sass/partials/elements/_article.scss */
-  article blockquote {
-    width: 50%;
-  }
-  /* line 91, ../sass/partials/elements/_article.scss */
-  article figure {
+  /* line 87, ../sass/partials/elements/_article.scss */
+  article > blockquote, article > figure, article > aside {
     width: 50%;
   }
 }
@@ -1240,7 +1233,7 @@ article aside {
 /* line 2, ../sass/partials/elements/_aside.scss */
 aside {
   padding-top: 2px;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0;
   box-sizing: border-box;
 }
 /* line 6, ../sass/partials/elements/_aside.scss */
@@ -2098,6 +2091,13 @@ code {
   line-height: 1rem;
 }
 
+/* line 9, ../sass/partials/elements/_code.scss */
+p > code {
+  font-size: 85%;
+  margin: 0 0.2rem;
+  padding: 0.1rem 0.3rem;
+}
+
 /* line 1, ../sass/partials/elements/_pre.scss */
 pre {
   color: white;
@@ -2517,3 +2517,6 @@ footer {
                                                                                                                                                                 /*
 * body, header{background-image: url(../bg.png);}
 nav ul{background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2P4//8/AxI2RuGAaBQOTADOAWEAjAwwnWPnCWYAAAAASUVORK5CYII=);}/*http://purelycss.com/data-uri-tileable-transparent-patterns/#*/
+/*
+@import url("http://basehold.it/22/0/39/189");
+*/
