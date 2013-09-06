@@ -20,9 +20,13 @@ select{
 }
 input[type="radio"]{
 	height: 1rem;
+	box-shadow: none;
+	width: auto;
 	&:after{
 		content: attr(name);
 		display: block;
+		position: relative;
+		left: 1rem;
 	}
 }
 

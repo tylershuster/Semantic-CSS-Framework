@@ -8,7 +8,7 @@ h1{
 	& + small{
 		opacity: 0.85;
 		@include typography(size-two);
-		line-height: 1em;
+		display: block;
 	}
 }
 h2{
@@ -19,7 +19,7 @@ h2{
 	& + small{
 		opacity: 0.85;
 		@include typography(size-three);
-		line-height: 1em;
+		display: block;
 	}
 }
 h3{
@@ -30,7 +30,7 @@ h3{
 	& + small{
 		opacity: 0.85;
 		@include typography(size-four);
-		line-height: 1em;
+		display: block;
 	}
 }
 h4{
@@ -41,7 +41,7 @@ h4{
 	& + small{
 		opacity: 0.85;
 		@include typography(size-five);
-		line-height: 1em;
+		display: block;
 	}
 }
 h5{
@@ -52,7 +52,7 @@ h5{
 	& + small{
 		opacity: 0.85;
 		@include typography(size-base);
-		line-height: 1em;
+		display: block;
 	}
 }
 p, time{
@@ -62,7 +62,7 @@ p, time{
 	& + small{
 		opacity: 0.85;
 		/*style for small version*/
-		line-height: 1em;
+		display: block;
 	}
 
 }

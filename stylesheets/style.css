@@ -3,9 +3,10 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url("http://basehold.it/22/0/39/189");
 /* { picnicc: style } */
 /*--------------------------main.scss-------------------------------*/
-/*Set in the key of d min6. mono color scheme based on #0086bd with a white background.*/
+/*Set in the key of f domsharp9. mono color scheme based on #0086bd with a white background.*/
 /* Defaults*/
 /* mono, complement, triad, tetrad, analogic, accented-analogic*/
 /* rgb, ryb*/
@@ -731,128 +732,133 @@ optgroup::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-/* line 22, ../sass/partials/base/utilities/_mixins.scss */
+/* line 30, ../sass/partials/base/utilities/_mixins.scss */
 html {
-  font-size: 112.5%;
+  font-size: 137.5%;
 }
 
 /* line 3, ../sass/partials/base/_typography.scss */
 h1 {
   /*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
-  font-size: 1.667rem;
-  line-height: 2rem;
-  padding-top: 0.35rem;
-  padding-bottom: 0.65rem;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  padding-top: 0.54rem;
+  padding-bottom: 0.45rem;
   margin: 0;
   font-style: normal;
   font-weight: normal;
   font-weight: bold;
+  font-style: italic;
   color: #0086bd;
   font-family: "Open Sans";
 }
 /* line 8, ../sass/partials/base/_typography.scss */
 h1 + small {
   opacity: 0.85;
-  font-size: 1.5rem;
+  font-size: 1.778rem;
   line-height: 2rem;
-  padding-top: 0.41rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.75rem;
   margin: 0;
   font-style: normal;
   font-weight: normal;
-  font-weight: bold;
-  line-height: 1em;
+  display: block;
 }
 
 /* line 14, ../sass/partials/base/_typography.scss */
 h2 {
   /*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
-  font-size: 1.5rem;
+  font-size: 1.778rem;
   line-height: 2rem;
-  padding-top: 0.41rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.75rem;
   margin: 0;
   font-style: normal;
   font-weight: normal;
-  font-weight: bold;
   color: #005a80;
   font-family: "Open Sans";
 }
 /* line 19, ../sass/partials/base/_typography.scss */
 h2 + small {
   opacity: 0.85;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
+  padding-top: 0.41rem;
+  padding-bottom: 0.6rem;
   margin: 0;
   font-style: normal;
   font-weight: normal;
-  line-height: 1em;
+  font-weight: bold;
+  display: block;
 }
 
 /* line 25, ../sass/partials/base/_typography.scss */
 h3 {
   /*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
+  padding-top: 0.41rem;
+  padding-bottom: 0.6rem;
   margin: 0;
   font-style: normal;
   font-weight: normal;
+  font-weight: bold;
   color: #21a7de;
   font-family: "Open Sans";
 }
 /* line 30, ../sass/partials/base/_typography.scss */
 h3 + small {
   opacity: 0.85;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 2rem;
   padding-top: 0.55rem;
   padding-bottom: 0.45rem;
   margin: 0;
   font-style: normal;
   font-weight: normal;
-  line-height: 1em;
+  font-weight: bold;
+  display: block;
 }
 
 /* line 36, ../sass/partials/base/_typography.scss */
 h4 {
   /*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 2rem;
   padding-top: 0.55rem;
   padding-bottom: 0.45rem;
   margin: 0;
   font-style: normal;
   font-weight: normal;
+  font-weight: bold;
   color: #005a80;
   font-family: "Open Sans";
 }
 /* line 41, ../sass/partials/base/_typography.scss */
 h4 + small {
   opacity: 0.85;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 2rem;
   padding-top: 0.55rem;
   padding-bottom: 0.45rem;
   margin: 0;
   font-style: normal;
   font-weight: normal;
-  line-height: 1em;
+  font-weight: bold;
+  display: block;
 }
 
 /* line 47, ../sass/partials/base/_typography.scss */
 h5 {
   /*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 2rem;
   padding-top: 0.55rem;
   padding-bottom: 0.45rem;
   margin: 0;
   font-style: normal;
   font-weight: normal;
+  font-weight: bold;
   color: #005a80;
   font-family: "Open Sans";
 }
@@ -866,7 +872,7 @@ h5 + small {
   margin: 0;
   font-style: normal;
   font-weight: normal;
-  line-height: 1em;
+  display: block;
 }
 
 /* line 58, ../sass/partials/base/_typography.scss */
@@ -884,7 +890,7 @@ p, time {
 p + small, time + small {
   opacity: 0.85;
   /*style for small version*/
-  line-height: 1em;
+  display: block;
 }
 
 /* line 69, ../sass/partials/base/_typography.scss */
@@ -1268,13 +1274,14 @@ blockquote {
 }
 /* line 17, ../sass/partials/elements/_blockquote.scss */
 blockquote p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 2rem;
   padding-top: 0.55rem;
   padding-bottom: 0.45rem;
   margin: 0;
   font-style: normal;
   font-weight: normal;
+  font-weight: bold;
   color: #005a80;
 }
 /* line 21, ../sass/partials/elements/_blockquote.scss */
@@ -1371,9 +1378,11 @@ figure figcaption {
   font-size: 0.85rem;
   line-height: 1rem;
   font-family: "Open Sans";
+  position: relative;
+  bottom: -0.2rem;
 }
 
-/* line 39, ../sass/partials/elements/_figure.scss */
+/* line 41, ../sass/partials/elements/_figure.scss */
 .post section.comments figure {
   margin-left: 1rem;
 }
@@ -2086,6 +2095,7 @@ code {
   color: white;
   background-color: #005a80;
   padding: 0 0.2rem;
+  line-height: 1rem;
 }
 
 /* line 1, ../sass/partials/elements/_pre.scss */
@@ -2235,14 +2245,18 @@ select {
 /* line 21, ../sass/partials/elements/forms/_input.scss */
 input[type="radio"] {
   height: 1rem;
+  box-shadow: none;
+  width: auto;
 }
-/* line 23, ../sass/partials/elements/forms/_input.scss */
+/* line 25, ../sass/partials/elements/forms/_input.scss */
 input[type="radio"]:after {
   content: attr(name);
   display: block;
+  position: relative;
+  left: 1rem;
 }
 
-/* line 29, ../sass/partials/elements/forms/_input.scss */
+/* line 33, ../sass/partials/elements/forms/_input.scss */
 input[type="checkbox"] {
   padding: 0;
   margin: 0;
@@ -2251,12 +2265,12 @@ input[type="checkbox"] {
   box-shadow: none;
 }
 
-/* line 38, ../sass/partials/elements/forms/_input.scss */
+/* line 42, ../sass/partials/elements/forms/_input.scss */
 input[type="search"], input[type="submit"] {
   border-radius: 3px;
 }
 
-/* line 41, ../sass/partials/elements/forms/_input.scss */
+/* line 45, ../sass/partials/elements/forms/_input.scss */
 output {
   font-size: 1rem;
   line-height: 2rem;
@@ -2267,7 +2281,7 @@ output {
   font-weight: normal;
 }
 
-/* line 44, ../sass/partials/elements/forms/_input.scss */
+/* line 48, ../sass/partials/elements/forms/_input.scss */
 label {
   font-size: 1rem;
   line-height: 2rem;
@@ -2277,12 +2291,12 @@ label {
   font-style: normal;
   font-weight: normal;
 }
-/* line 47, ../sass/partials/elements/forms/_input.scss */
+/* line 51, ../sass/partials/elements/forms/_input.scss */
 label.required:after {
   content: "*";
 }
 
-/* line 53, ../sass/partials/elements/forms/_input.scss */
+/* line 57, ../sass/partials/elements/forms/_input.scss */
 textarea {
   padding: 1rem 0 0 0.62rem;
   border: 0;
@@ -2292,93 +2306,92 @@ textarea {
 /*@import "utilities/grids/foundation.scss";*/
 /* line 2, ../sass/partials/_panels.scss */
 .row {
-  float: left;
   width: 100%;
   margin: 0;
   padding: 0;
   display: table;
   table-layout: fixed;
 }
-/* line 9, ../sass/partials/_panels.scss */
+/* line 8, ../sass/partials/_panels.scss */
 .row > div, .row > li {
   display: block;
   table-layout: fixed;
   vertical-align: top;
   width: 50%;
 }
-/* line 14, ../sass/partials/_panels.scss */
+/* line 13, ../sass/partials/_panels.scss */
 .row > div.column, .row > li.column {
-  padding: 0.5rem;
+  padding: 0 0.5rem 1rem 0.5rem;
 }
-/* line 17, ../sass/partials/_panels.scss */
+/* line 16, ../sass/partials/_panels.scss */
 .row > div > *, .row > li > * {
   display: block;
   width: 100%;
 }
-/* line 21, ../sass/partials/_panels.scss */
+/* line 20, ../sass/partials/_panels.scss */
 .row > div > .row, .row > li > .row {
   display: table;
 }
 
-/* line 27, ../sass/partials/_panels.scss */
+/* line 26, ../sass/partials/_panels.scss */
 div.two {
   width: 100%;
 }
 
-/* line 30, ../sass/partials/_panels.scss */
+/* line 29, ../sass/partials/_panels.scss */
 div.three {
   width: 150%;
 }
 
-/* line 33, ../sass/partials/_panels.scss */
+/* line 32, ../sass/partials/_panels.scss */
 div.four {
   width: 200%;
 }
 
 @media all and (min-width: 0px) and (max-width: 640px) {
-  /* line 38, ../sass/partials/_panels.scss */
+  /* line 37, ../sass/partials/_panels.scss */
   div.two, div.three, div.four {
     width: 100%;
   }
 
-  /* line 39, ../sass/partials/_panels.scss */
+  /* line 38, ../sass/partials/_panels.scss */
   .row {
     display: block;
   }
-  /* line 41, ../sass/partials/_panels.scss */
+  /* line 40, ../sass/partials/_panels.scss */
   .row > div, .row > li {
     width: 100%;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 48, ../sass/partials/_panels.scss */
+  /* line 47, ../sass/partials/_panels.scss */
   div.two, div.three, div.four {
     width: 50%;
   }
 
-  /* line 52, ../sass/partials/_panels.scss */
+  /* line 51, ../sass/partials/_panels.scss */
   .row > div {
     float: left;
   }
-  /* line 55, ../sass/partials/_panels.scss */
+  /* line 54, ../sass/partials/_panels.scss */
   .row > div .row > div {
     display: table-cell;
   }
-  /* line 60, ../sass/partials/_panels.scss */
+  /* line 59, ../sass/partials/_panels.scss */
   .row > div:nth-last-of-type(2) + div:nth-of-type(odd) {
     width: 100%;
   }
-  /* line 64, ../sass/partials/_panels.scss */
+  /* line 63, ../sass/partials/_panels.scss */
   .row > li {
     float: left;
   }
-  /* line 66, ../sass/partials/_panels.scss */
+  /* line 65, ../sass/partials/_panels.scss */
   .row > li:nth-last-of-type(2) + li:nth-of-type(odd) {
     width: 100%;
   }
 }
 @media all and (min-width: 1024px) {
-  /* line 75, ../sass/partials/_panels.scss */
+  /* line 74, ../sass/partials/_panels.scss */
   .row > div, .row > li {
     display: table-cell;
   }
@@ -2504,11 +2517,3 @@ footer {
                                                                                                                                                                 /*
 * body, header{background-image: url(../bg.png);}
 nav ul{background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2P4//8/AxI2RuGAaBQOTADOAWEAjAwwnWPnCWYAAAAASUVORK5CYII=);}/*http://purelycss.com/data-uri-tileable-transparent-patterns/#*/
-/*
-red: 0
-green: 39
-blue: 189
-
-@import url("http://basehold.it/18/0/39/189");
-
-*/

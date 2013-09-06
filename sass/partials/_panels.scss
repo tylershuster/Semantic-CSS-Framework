@@ -1,6 +1,5 @@
 
 .row{
-	float: left;
 	width: 100%;
 	margin: 0;			
 	padding: 0;
@@ -12,7 +11,7 @@
 		vertical-align: top;
 		width: 50%;
 		&.column{
-			padding:0.5rem;		
+			padding:0 0.5rem 1rem 0.5rem;		
 		}
 		> *{
 			display: block;

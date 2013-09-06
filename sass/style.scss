@@ -6,9 +6,9 @@
 // Typography
 //////////////////////////////
 
-$key: d;					//Specify the key in which to set your piece (d)
+$key: f;					//Specify the key in which to set your piece (d)
 
-$quality: min6;				//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
+$quality: domsharp9;				//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
 
 $sans: Open Sans;
 
@@ -132,11 +132,8 @@ nav ul{background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAY
 $grid-red: red($color-accent);
 $grid-green: green($color-accent);
 $grid-blue: blue($color-accent);
-/*
-red: #{$grid-red}
-green: #{$grid-green}
-blue: #{$grid-blue}
+
 
 @import url("http://basehold.it/#{$font-base}/#{$grid-red}/#{$grid-green}/#{$grid-blue}");
 
-*/
+

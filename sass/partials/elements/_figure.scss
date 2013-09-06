@@ -12,6 +12,8 @@ figure{
 		font-size: 0.85rem;
 		line-height: 1rem;
 		font-family: '#{$heading-font}';
+		position: relative;
+		bottom: -0.2rem;
 	}
 	video{}
 	audio{}
