@@ -22,6 +22,8 @@ $body-font: $serif;
 
 $heading-font: $sans;
 
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500);
+
 //////////////////////////////
 // Color
 //////////////////////////////
@@ -96,6 +98,10 @@ $legacy-support-for-mozilla: false;
 @import "partials/elements/table";
 
 @import "partials/elements/ul";
+
+@import "partials/elements/code";
+
+@import "partials/elements/pre";
 
 @import "partials/elements/forms/index";
 

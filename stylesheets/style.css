@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
 @import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 /* { picnicc: style } */
@@ -2076,6 +2077,22 @@ ul.blog h1 a {
 /* line 5, ../sass/partials/elements/_ul.scss */
 ul.blog li {
   margin-bottom: 1rem;
+}
+
+/* line 1, ../sass/partials/elements/_code.scss */
+code {
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: -1px;
+  color: white;
+  background-color: #005a80;
+  padding: 0 0.2rem;
+}
+
+/* line 1, ../sass/partials/elements/_pre.scss */
+pre {
+  color: white;
+  background-color: #005a80;
+  padding: 1rem;
 }
 
 /* line 1, ../sass/partials/elements/forms/_index.scss */
