@@ -38,80 +38,316 @@
 
 @mixin typography-calculator($font-size, $line-height, $padding-top, $padding-bottom){
 	font-size: $font-size * 1rem;
-	line-height: $line-height * 1rem;
+	line-height: $line-height * 1rem;/* what times the font-size will equal the closest whole number? round(font-size) = font-size * line-height, round(font-size) / font-size = line-height */
 	padding-top: $padding-top * 1rem;
 	padding-bottom: $padding-bottom * 1rem;
 	margin: 0;
 	font-style:normal;
 	font-weight: normal;
 }
+@if $quality ==  maj{}
+@else if $quality ==  dim{}
+@else if $quality ==  aug{}
+@else if $quality ==  augmin7{}
+@else if $quality ==  sus{}
+@else if $quality ==  sus2{}
+@else if $quality ==  eleventh{}
+@else if $quality ==  min7{}
+@else if $quality ==  maj7{}
+@else if $quality ==  dom7{}
+@else if $quality ==  dim7{}
+@else if $quality ==  min6{}
+@else if $quality ==  maj6{}
+@else if $quality ==  domflat9{}
+@else if $quality ==  domsharp9{}
+@else if $quality ==  min9{}
+@else if $quality ==  maj9{}
+@else if $quality ==  perfect5{}
 
+
+
+@function typography($element,$attribute){
+	@if $attribute == font-size {
+		@return font-size($element);
+	}
+	@else if $attribute == line-height {
+		@return line-height($element)
+	}
+	@else if $attribute == padding-top{
+		@return padding-top($element);
+	}
+	@else if $attribute == padding-bottom{
+		@return padding-bottom($element);
+	}
+}
+
+@function font-size($element){
+	@if $quality ==  min{
+		@if $element == h1{@return 1.5}
+		@else if $element == h2{@return 1.2}
+		@else if $element == h3{@return 1.2}
+		@else if $element == h4{@return 1.2}
+		@else if $element == h5{@return 1.2}
+		@else if $element == h6{@return 1.2}
+		@else{@return 1}
+	}
+	@else if $quality ==  maj{
+		@if $element == h1{@return 1.5}
+		@else if $element == h2{@return 1.25}
+		@else if $element == h3{@return 1.25}
+		@else if $element == h4{@return 1.25}
+		@else if $element == h5{@return 1.25}
+		@else if $element == h6{@return 1.25}
+		@else{@return 1}
+	}
+	@else if $quality ==  dim{
+		@if $element == h1{@return 1.414}
+		@else if $element == h2{@return 1.2}
+		@else if $element == h3{@return 1.2}
+		@else if $element == h4{@return 1.2}
+		@else if $element == h5{@return 1.2}
+		@else if $element == h6{@return 1.2}
+		@else{@return 1}
+	}
+	@else if $quality ==  aug{
+		@if $element == h1{@return 1.62}
+		@else if $element == h2{@return 1.25}
+		@else if $element == h3{@return 1.25}
+		@else if $element == h4{@return 1.25}
+		@else if $element == h5{@return 1.25}
+		@else if $element == h6{@return 1.25}
+		@else{@return 1}
+	}
+	@else if $quality ==  augmin7{
+		@if $element == h1{@return 1.778}
+		@else if $element == h2{@return 1.62}
+		@else if $element == h3{@return 1.25}
+		@else if $element == h4{@return 1.25}
+		@else if $element == h5{@return 1.25}
+		@else if $element == h6{@return 1.25}
+		@else{@return 1}
+	}
+	@else if $quality ==  sus{
+		@if $element == h1{@return 1.5}
+		@else if $element == h2{@return 1.33}
+		@else if $element == h3{@return 1.33}
+		@else if $element == h4{@return 1.33}
+		@else if $element == h5{@return 1.33}
+		@else if $element == h6{@return 1.33}
+		@else{@return 1}
+	}
+	@else if $quality ==  sus2{
+		@if $element == h1{@return 1.5}
+		@else if $element == h2{@return 1.125}
+		@else if $element == h3{@return 1.125}
+		@else if $element == h4{@return 1.125}
+		@else if $element == h5{@return 1.125}
+		@else if $element == h6{@return 1.125}
+		@else{@return 1}
+	}
+	@else if $quality ==  eleventh{
+		@if $element == h1{@return 2.66}
+		@else if $element == h2{@return 2.25}
+		@else if $element == h3{@return 1.778}
+		@else if $element == h4{@return 1.5}
+		@else if $element == h5{@return 1.25}
+		@else if $element == h6{@return 1.25}
+		@else{@return 1}
+	}
+	@else if $quality ==  min7{
+		@if $element == h1{@return 1.778}
+		@else if $element == h2{@return 1.5}
+		@else if $element == h3{@return 1.25}
+		@else if $element == h4{@return 1.2}
+		@else if $element == h5{@return 1.2}
+		@else if $element == h6{@return 1.2}
+		@else{@return 1}
+	}
+	@else if $quality ==  maj7{
+		@if $element == h1{@return 1.875}
+		@else if $element == h2{@return 1.5}
+		@else if $element == h3{@return 1.25}
+		@else if $element == h4{@return 1.25}
+		@else if $element == h5{@return 1.25}
+		@else if $element == h6{@return 1.25}
+		@else{@return 1}
+	}
+	@else if $quality ==  dom7{
+		@if $element == h1{@return 1.778}
+		@else if $element == h2{@return }
+		@else if $element == h3{@return }
+		@else if $element == h4{@return }
+		@else if $element == h5{@return }
+		@else if $element == h6{@return }
+		@else{@return 1}
+	}
+	@else if $quality ==  dim7{
+		@if $element == h1{@return }
+		@else if $element == h2{@return }
+		@else if $element == h3{@return }
+		@else if $element == h4{@return }
+		@else if $element == h5{@return }
+		@else if $element == h6{@return }
+		@else{@return 1}
+	}
+	@else if $quality ==  min6{
+		@if $element == h1{@return }
+		@else if $element == h2{@return }
+		@else if $element == h3{@return }
+		@else if $element == h4{@return }
+		@else if $element == h5{@return }
+		@else if $element == h6{@return }
+		@else{@return 1}
+	}
+	@else if $quality ==  maj6{
+		@if $element == h1{@return }
+		@else if $element == h2{@return }
+		@else if $element == h3{@return }
+		@else if $element == h4{@return }
+		@else if $element == h5{@return }
+		@else if $element == h6{@return }
+		@else{@return 1}
+	}
+	@else if $quality ==  domflat9{
+		@if $element == h1{@return }
+		@else if $element == h2{@return }
+		@else if $element == h3{@return }
+		@else if $element == h4{@return }
+		@else if $element == h5{@return }
+		@else if $element == h6{@return }
+		@else{@return 1}
+	}
+	@else if $quality ==  domsharp9{
+		@if $element == h1{@return }
+		@else if $element == h2{@return }
+		@else if $element == h3{@return }
+		@else if $element == h4{@return }
+		@else if $element == h5{@return }
+		@else if $element == h6{@return }
+		@else{@return 1}
+	}
+	@else if $quality ==  min9{
+		@if $element == h1{@return }
+		@else if $element == h2{@return }
+		@else if $element == h3{@return }
+		@else if $element == h4{@return }
+		@else if $element == h5{@return }
+		@else if $element == h6{@return }
+		@else{@return 1}
+	}
+	@else if $quality ==  maj9{
+		@if $element == h1{@return }
+		@else if $element == h2{@return }
+		@else if $element == h3{@return }
+		@else if $element == h4{@return }
+		@else if $element == h5{@return }
+		@else if $element == h6{@return }
+		@else{@return 1}
+	}
+	@else if $quality ==  perfect5{
+		@if $element == h1{@return }
+		@else if $element == h2{@return }
+		@else if $element == h3{@return }
+		@else if $element == h4{@return }
+		@else if $element == h5{@return }
+		@else if $element == h6{@return }
+		@else{@return 1}
+	}	
+}
 @mixin text-centered {@include typography-calculator(1,2,0.5,0);}
+
 @mixin root-flat {@include typography-calculator(1,1,0.75,0.25);}
+
 @mixin root {@include typography-calculator(1,2,0.75,0.25);}
+
 @mixin root-sharp {@include typography-calculator(1,2,0.75,0.25);font-style:italic;}
+
 @mixin note-b2 {@include typography-calculator(1.067,2,0.6,0.4);}
+
 @mixin note-2 {@include typography-calculator(1.125,2,0.55,0.45);font-weight:bold;}
+
 @mixin note-s2 {@include typography-calculator(1.2,2,0.55,0.45);font-weight:bold;font-style:italic;}
+
 @mixin note-b3 {@include typography-calculator(1.2,2,0.55,0.45);}
+
 @mixin note-3 {@include typography-calculator(1.25,2,0.55,0.45);font-weight:bold;}
+
 @mixin note-4 {@include typography-calculator(1.33,2,0.5,0.5);font-weight:bold;}
+
 @mixin note-s4 {@include typography-calculator(1.414,2,0.45,0.55);font-weight:bold;font-style:italic;}
+
 @mixin note-b5 {@include typography-calculator(1.414,2,0.45,0.55);font-weight:bold;opacity:0.62;}
+
 @mixin note-5 {@include typography-calculator(1.5,2,0.41,0.6);font-weight:bold;}
+
 @mixin note-s5 {@include typography-calculator(1.62,2,0.38,0.6);font-weight:bold;font-style:italic;}
+
 @mixin note-b6 {@include typography-calculator(1.62,2,0.38,0.6);}
+
 @mixin note-6 {@include typography-calculator(1.667,2,0.35,0.65);font-weight:bold;}
+
 @mixin note-s6 {@include typography-calculator(1.778,2,0.25,0.75);font-weight:bold;font-style:italic;}
+
 @mixin note-b7 {@include typography-calculator(1.778,2,0.25,0.75);}
+
 @mixin note-7 {@include typography-calculator(1.875,2,0.25,0.75);font-weight:bold;}
+
 @mixin note-8 {@include typography-calculator(2,2,0.22,0.75);font-weight:bold;}
+
 @mixin note-s8 {@include typography-calculator(2.134,3,0.68,0.3);font-weight:bold;font-style:italic;}
+
 @mixin note-b9 {@include typography-calculator(2.134,3,0.68,0.3);}
+
 @mixin note-9 {@include typography-calculator(2.25,3,0.68,0.3);font-weight:bold;}
+
 @mixin note-s9 {@include typography-calculator(2.4,3,0.54,0.45);font-weight:bold;font-style:italic;}
+
 @mixin note-b10 {@include typography-calculator(2.5,3,0.55,0.45);}
+
 @mixin note-10 {@include typography-calculator(2.5,3,0.55,0.45);font-weight:bold;}
+
 @mixin note-11 {@include typography-calculator(2.66,3,0.47,0.54);font-weight:bold;}
+
 @mixin note-s11 {@include typography-calculator(2.818,3,0.43,0.54);font-weight:bold;font-style:italic;}
+
 @mixin note-b12 {@include typography-calculator(2.818,3,0.43,0.54);}
+
 @mixin note-12 {@include typography-calculator(3,3,0.39,0.6);font-weight:bold;}
-@mixin note-s12 {@include typography-calculator(3.201,0.75,0.25);font-weight:bold;font-style:italic;}
-@mixin note-b13 {@include typography-calculator(3.201,0.75,0.25);}
-@mixin note-13 {@include typography-calculator(3.375,0.7,0.3);font-weight:bold;}
+
+@mixin note-s12 {@include typography-calculator(3.201,4,0.75,0.25);font-weight:bold;font-style:italic;}
+
+@mixin note-b13 {@include typography-calculator(3.201,4,0.75,0.25);}
+
+@mixin note-13 {@include typography-calculator(3.375,4,0.7,0.3);font-weight:bold;}
+
 
 @mixin typography($size){
 		@if 		$quality ==  min {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
 			@else {	@include note-b3;}
 		}
 		@else if $quality ==  maj {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
 			@else {@include note-3;}
 		}
 		@else if $quality ==  dim {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-b5; $grid-base-height: 1.414em;}
 			@else {	@include note-b3;}
 		}
 		@else if $quality ==  aug {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-s5; $grid-base-height: 1.6em;}
 			@else {@include note-3;}
 		}
 		@else if $quality ==  augmin7 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
 			@else if $size == size-two{	@include note-s5;}
@@ -119,7 +355,6 @@
 		}
 		@else if $quality ==  sus {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
 			@else if $size == size-two{	@include note-4;}
@@ -127,7 +362,6 @@
 		}
 		@else if $quality ==  sus2 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
 			@else if $size == size-two{	@include note-2;}
@@ -135,7 +369,6 @@
 		}
 		@else if $quality ==  eleventh {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-11; $grid-base-height: 2.66em;}
 			@else if $size == size-two{	@include note-9;}
@@ -145,7 +378,6 @@
 		}
 		@else if $quality ==  min7 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
 			@else if $size == size-two{	@include note-5;}
@@ -155,7 +387,6 @@
 		}
 		@else if $quality ==  maj7 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-7; $grid-base-height: 1.875em;}
 			@else if $size == size-two{	@include note-5;}
@@ -165,7 +396,6 @@
 		}
 		@else if $quality ==  dom7 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
 			@else if $size == size-two{	@include note-5;}
@@ -175,7 +405,6 @@
 		}
 		@else if $quality ==  dim7 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-b7; $grid-base-height: 1.778em;}
 			@else if $size == size-two{	@include note-b5;}
@@ -185,7 +414,6 @@
 		}
 		@else if $quality ==  min6 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-6; $grid-base-height: 1.667em;}
 			@else if $size == size-two{	@include note-5;}
@@ -195,7 +423,6 @@
 		}
 		@else if $quality ==  maj6 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-6; $grid-base-height: 1.667em;}
 			@else if $size == size-two{	@include note-5;}
@@ -205,7 +432,6 @@
 		}
 		@else if $quality ==  domflat9 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-b9; $grid-base-height: 2.134em;}
 			@else if $size == size-two{	@include note-b7;}
@@ -215,7 +441,6 @@
 		}
 		@else if $quality ==  domsharp9 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-s9; $grid-base-height: 2.4em;}
 			@else if $size == size-two{	@include note-b7;}
@@ -225,7 +450,6 @@
 		}
 		@else if $quality ==  min9 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-9; $grid-base-height: 2.25em;}
 			@else if $size == size-two{	@include note-b7;}
@@ -235,7 +459,6 @@
 		}
 		@else if $quality ==  maj9 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-9; $grid-base-height: 2.25em;}
 			@else if $size == size-two{	@include note-7;}
@@ -245,7 +468,6 @@
 		}
 		@else if $quality ==  perfect5 {
 			@if 		$size == size-base{	@include root;}
-			@else if $size == size-span{ @include root-flat;}
 			@else if $size == vcenter{ @include text-centered}
 			@else if $size == size-one{	@include note-5; $grid-base-height: 1.5em;}
 			@else {	@include note-5;}

@@ -83,9 +83,8 @@ header{
 			.compact{/*expanding box*/}
 		}
 	}
-	nav{
-		
-		ul{
+	nav{		
+		>ul{
 			position: absolute;
 			top: #{$header-height};
 			height: #{$nav-height};
@@ -98,25 +97,35 @@ header{
 			display: table;
 			table-layout: fixed;
 			@include box-shadow;
-		}
-		li{
-			display: table-cell;
-			text-align: center;	
-			table-layout: fixed;	
-			vertical-align: middle;	
-			> a{
-				display: table-cell;				
-				text-decoration: none;
-				vertical-align: middle;
-				width: 2%;				
-			}
-			&:hover{
-				background-color: $color-primary;
-				a, a:hover{
-					color: $color-background;
+			li{
+				display: table-cell;
+				text-align: center;	
+				table-layout: fixed;	
+				vertical-align: middle;	
+				> a{
+					display: table-cell;				
+					text-decoration: none;
+					vertical-align: middle;
+					width: 2%;				
 				}
-			}			
+				&:hover{
+					background-color: $color-primary;
+					a, a:hover{
+						color: $color-background;
+					}
+				}
+				ul{
+					overflow: hidden;
+					width: 100%;
+					li{
+						float:left;
+						width: 100%;
+
+					}
+				}		
+			}
 		}
+		
 	}
 }
 

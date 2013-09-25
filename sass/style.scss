@@ -6,7 +6,7 @@
 // Typography
 //////////////////////////////
 
-$key: f;					//Specify the key in which to set your piece (d)
+$key: c;					//Specify the key in which to set your piece (d)
 
 $quality: domsharp9;				//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
 
@@ -133,7 +133,7 @@ $grid-red: red($color-accent);
 $grid-green: green($color-accent);
 $grid-blue: blue($color-accent);
 
-/*
+
 @import url("http://basehold.it/#{$font-base}/#{$grid-red}/#{$grid-green}/#{$grid-blue}");
-*/
+
 

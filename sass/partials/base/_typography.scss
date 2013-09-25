@@ -2,13 +2,20 @@
 
 h1{
 	@include text-shadow;
-	@include typography(size-one);
+	font-size: typography(h1,font-size) * 1rem;
+	line-height: typography(h1,line-height) * 1rem;
+	padding-top: typography(h1,padding-top) * 1rem;
+	padding-bottom: typography(h1,padding-bottom) * 1rem;
 	color: $color-primary;
 	font-family: '#{$heading-font}';
 	& + small{
 		opacity: 0.85;
 		@include typography(size-two);
 		display: block;
+	}
+	&.uber{
+		font-size: typography(h1,font-size) * 2rem;
+		line-height: typography(h1,line-height) * 2rem;	
 	}
 }
 h2{
@@ -21,6 +28,9 @@ h2{
 		@include typography(size-three);
 		display: block;
 	}
+	&.uber{
+		@include typography(size-);
+	}
 }
 h3{
 	@include text-shadow;
@@ -31,6 +41,9 @@ h3{
 		opacity: 0.85;
 		@include typography(size-four);
 		display: block;
+	}
+	&.uber{
+		@include typography(size-);
 	}
 }
 h4{
@@ -43,6 +56,9 @@ h4{
 		@include typography(size-five);
 		display: block;
 	}
+	&.uber{
+		@include typography(size-);
+	}
 }
 h5{
 	@include text-shadow;
@@ -54,9 +70,13 @@ h5{
 		@include typography(size-base);
 		display: block;
 	}
+	&.uber{
+		@include typography(size-);
+	}
 }
 p, time{
 	@include typography(size-base);
+	line-height: 2;
 	//color: $color-text;
 	font-family: '#{$body-font}';
 	& + small{
@@ -65,10 +85,6 @@ p, time{
 		display: block;
 	}
 
-}
-span{
-	@include typography(size-span);
-	font-family: '#{$body-font}';
 }
 a,a:visited{
 	//color: $color-accent;
@@ -88,6 +104,8 @@ a,a:visited{
 small:before{
 	content: " ";
 }
+
+
 /*needs to be less intrusive
 p.drop-cap:first-letter, article>p:first-of-type:first-letter, article>h1 + p:first-letter{
 	float: left;
