@@ -1132,89 +1132,191 @@ article > time {
   /*articles must include the time on which they were published*/
 }
 /* line 8, ../sass/partials/elements/_article.scss */
-article > figure:nth-of-type(even) {
-  padding-right: 1rem;
-}
-/* line 11, ../sass/partials/elements/_article.scss */
 article > figure:nth-of-type(odd) {
   float: right;
   padding-left: 1rem;
 }
-/* line 15, ../sass/partials/elements/_article.scss */
+/* line 12, ../sass/partials/elements/_article.scss */
+article > figure:nth-of-type(even) {
+  padding-right: 1rem;
+}
+/* line 16, ../sass/partials/elements/_article.scss */
 article > figure img {
   width: 100%;
 }
-/* line 19, ../sass/partials/elements/_article.scss */
+/* line 20, ../sass/partials/elements/_article.scss */
 article > p:first-of-type:first-letter, article h1 + p:first-letter {
   color: #0027bd;
 }
-/* line 22, ../sass/partials/elements/_article.scss */
+/* line 23, ../sass/partials/elements/_article.scss */
 article > ul {
   font-family: "Gentium Basic";
   margin: 0;
   padding: 0;
 }
-/* line 30, ../sass/partials/elements/_article.scss */
+/* line 31, ../sass/partials/elements/_article.scss */
 article > aside {
   width: 100%;
 }
-/* line 33, ../sass/partials/elements/_article.scss */
+/* line 34, ../sass/partials/elements/_article.scss */
 article > blockquote {
   width: 100%;
 }
-@media all and (min-width: 128px) {
+@media all and (min-width: 128px) and (max-width: 256px) {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*Styles for devices from 128-256px wide*/
     margin: 0 0.5rem;
   }
-  /* line 41, ../sass/partials/elements/_article.scss */
-  article > figure {
-    width: 100%;
+  /* line 43, ../sass/partials/elements/_article.scss */
+  article > blockquote, article > figure, article > aside {
+    width: calc(100% + 1rem);
+  }
+  /* line 46, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(odd), article > figure:nth-of-type(even) {
+    padding: 0;
+  }
+  /* line 49, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
+    right: 0.5rem;
+    margin-right: -0.5rem;
+  }
+  /* line 53, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -0.5rem;
+  }
+  /* line 56, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
+    left: 0.5rem;
+    margin-left: -0.5rem;
+  }
+  /* line 60, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -0.5rem;
   }
 }
-@media all and (min-width: 256px) {
+@media all and (min-width: 256px) and (max-width: 384px) {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*styles for screens 256-384px*/
     margin: 0 1rem;
   }
-  /* line 50, ../sass/partials/elements/_article.scss */
-  article > figure {
-    width: 100%;
+  /* line 70, ../sass/partials/elements/_article.scss */
+  article > blockquote, article > figure, article > aside {
+    width: calc(100% + 2rem);
+  }
+  /* line 73, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(odd), article > figure:nth-of-type(even) {
+    padding: 0;
+  }
+  /* line 76, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
+    right: 1rem;
+    margin-right: -1rem;
+  }
+  /* line 80, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -1rem;
+  }
+  /* line 83, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
+    left: 1rem;
+    margin-left: -1rem;
+  }
+  /* line 87, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -1rem;
   }
 }
-@media all and (min-width: 384px) {
+@media all and (min-width: 384px) and (max-width: 640px) {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*styles for devices from 384-640 px wide*/
     margin: 0 2rem;
   }
-  /* line 59, ../sass/partials/elements/_article.scss */
-  article > figure {
-    width: 100%;
+  /* line 97, ../sass/partials/elements/_article.scss */
+  article > blockquote, article > figure, article > aside {
+    width: calc(100% + 4rem);
+  }
+  /* line 100, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(odd), article > figure:nth-of-type(even) {
+    padding: 0;
+  }
+  /* line 103, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
+    right: 2rem;
+    margin-right: -2rem;
+  }
+  /* line 107, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -2rem;
+  }
+  /* line 110, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
+    left: 2rem;
+    margin-left: -2rem;
+  }
+  /* line 114, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -2rem;
   }
 }
-@media all and (min-width: 640px) {
+@media all and (min-width: 640px) and (max-width: 1024px) {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*styles for devices from 640-1024px wide*/
     margin: 0 3rem;
   }
-  /* line 68, ../sass/partials/elements/_article.scss */
+  /* line 124, ../sass/partials/elements/_article.scss */
   article > blockquote, article > figure, article > aside {
     width: 50%;
   }
+  /* line 127, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
+    right: 3rem;
+    margin-right: -3rem;
+  }
+  /* line 131, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -3rem;
+  }
+  /* line 134, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
+    left: 3rem;
+    margin-left: -3rem;
+  }
+  /* line 138, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -3rem;
+  }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1024px) and (max-width: 1664px) {
   /* line 1, ../sass/partials/elements/_article.scss */
   article {
     /*styles on devices from 1024px-1664px*/
     margin: 0 4rem;
   }
-  /* line 77, ../sass/partials/elements/_article.scss */
+  /* line 148, ../sass/partials/elements/_article.scss */
   article > blockquote, article > figure, article > aside {
     width: 50%;
+  }
+  /* line 151, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
+    right: 4rem;
+    margin-right: -4rem;
+  }
+  /* line 155, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -4rem;
+  }
+  /* line 158, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
+    left: 4rem;
+    margin-left: -4rem;
+  }
+  /* line 162, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -4rem;
   }
 }
 @media all and (min-width: 1664px) {
@@ -1223,38 +1325,64 @@ article > blockquote {
     /*styles for devices from 1664px up*/
     margin: 0;
   }
-  /* line 86, ../sass/partials/elements/_article.scss */
+  /* line 172, ../sass/partials/elements/_article.scss */
   article > blockquote, article > figure, article > aside {
     width: 50%;
+  }
+  /* line 175, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
+    right: 5rem;
+    margin-right: -5rem;
+  }
+  /* line 179, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -5rem;
+  }
+  /* line 182, ../sass/partials/elements/_article.scss */
+  article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
+    left: 5rem;
+    margin-left: -5rem;
+  }
+  /* line 186, ../sass/partials/elements/_article.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -5rem;
   }
 }
 
 /* line 2, ../sass/partials/elements/_aside.scss */
 aside {
   padding-top: 2px;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   box-sizing: border-box;
+  position: relative;
 }
-/* line 6, ../sass/partials/elements/_aside.scss */
+/* line 7, ../sass/partials/elements/_aside.scss */
 aside p {
   color: #005a80;
 }
-/* line 9, ../sass/partials/elements/_aside.scss */
+/* line 10, ../sass/partials/elements/_aside.scss */
 aside ul {
   text-align: left;
-  margin-left: 1rem;
 }
-/* line 13, ../sass/partials/elements/_aside.scss */
-aside:nth-of-type(odd) {
-  float: left;
-  text-align: left;
-  padding: 0 1rem;
+/* line 12, ../sass/partials/elements/_aside.scss */
+aside ul:nth-of-type(even) {
+  padding-right: 1rem;
+}
+/* line 15, ../sass/partials/elements/_aside.scss */
+aside ul:nth-of-type(odd) {
+  padding-left: 1rem;
 }
 /* line 19, ../sass/partials/elements/_aside.scss */
+aside:nth-of-type(odd) {
+  float: left;
+  text-align: right;
+  padding-right: 1rem;
+}
+/* line 25, ../sass/partials/elements/_aside.scss */
 aside:nth-of-type(even) {
   float: right;
-  text-align: right;
-  padding: 0 1rem;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 /* line 12, ../sass/partials/elements/_blockquote.scss */
@@ -1273,32 +1401,30 @@ blockquote p {
   color: #005a80;
 }
 /* line 24, ../sass/partials/elements/_blockquote.scss */
-blockquote:nth-of-type(odd) {
+article blockquote:nth-of-type(odd) {
   float: left;
-  text-align: left;
-  padding-left: 1.5rem;
-  border-left: 0.5rem solid #005a80;
+  text-align: right;
+  position: relative;
   padding-right: 1rem;
 }
-/* line 31, ../sass/partials/elements/_blockquote.scss */
-blockquote:nth-of-type(odd) > cite {
+/* line 30, ../sass/partials/elements/_blockquote.scss */
+article blockquote:nth-of-type(odd) > cite {
+  float: right;
+  text-align: right;
+}
+/* line 32, ../sass/partials/elements/_blockquote.scss */
+article blockquote:nth-of-type(even) {
+  float: right;
+  text-align: left;
+  position: relative;
+  padding-left: 1rem;
+}
+/* line 38, ../sass/partials/elements/_blockquote.scss */
+article blockquote:nth-of-type(even) > cite {
   float: left;
   text-align: left;
 }
-/* line 33, ../sass/partials/elements/_blockquote.scss */
-blockquote:nth-of-type(even) {
-  float: right;
-  text-align: right;
-  padding-right: 1.5rem;
-  border-right: 0.5rem solid #005a80;
-  padding-left: 1rem;
-}
 /* line 40, ../sass/partials/elements/_blockquote.scss */
-blockquote:nth-of-type(even) > cite {
-  float: right;
-  text-align: right;
-}
-/* line 42, ../sass/partials/elements/_blockquote.scss */
 blockquote > cite {
   font-family: Open Sans;
   color: #005a80;
@@ -1306,7 +1432,7 @@ blockquote > cite {
   line-height: 1rem;
   margin-bottom: 1rem;
 }
-/* line 48, ../sass/partials/elements/_blockquote.scss */
+/* line 46, ../sass/partials/elements/_blockquote.scss */
 blockquote > cite:before {
   content: "- ";
 }
