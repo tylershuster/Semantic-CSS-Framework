@@ -98,8 +98,7 @@ header{
 			table-layout: fixed;
 			@include box-shadow;
 			li{
-				display: table-cell;
-				text-align: center;	
+				display: table-cell;					
 				table-layout: fixed;	
 				vertical-align: middle;	
 				> a{
@@ -181,7 +180,7 @@ header{
 
 /*only show mobile nav on @media handheld*/
 
-@media all and (max-width:#{$length-eight - 1 * 1px}){
+@media all and (max-width:#{$length-eight * 1px}){
 	header{
 		section.search{
 			top: 0;

@@ -32,6 +32,8 @@ header{
 		@include column(8,8);
 		ul{}
 		li{
+			float: none;
+			text-align: center;
 			> a{}
 		}
 	}

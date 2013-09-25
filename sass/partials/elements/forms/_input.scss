@@ -43,10 +43,16 @@ input[type="search"], input[type="submit"]{
 	border-radius: 3px;
 }
 output{
-	@include typography(size-base);
+	font-size: typography(p,font-size) * 1rem;
+	line-height: typography(p,line-height) * 1rem;
+	padding-top: typography(p,padding-top) * 1rem;
+	padding-bottom: typography(p,padding-bottom) * 1rem;
 }
 label{
-	@include typography(size-base);
+	font-size: typography(p,font-size) * 1rem;
+	line-height: typography(p,line-height) * 1rem;
+	padding-top: typography(p,padding-top) * 1rem;
+	padding-bottom: typography(p,padding-bottom) * 1rem;
 	&.required{
 		&:after{
 			content: "*";

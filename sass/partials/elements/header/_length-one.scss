@@ -9,4 +9,12 @@ header{
 		white-space: nowrap;
 		overflow: hidden;
 	}
+	nav{
+		ul{
+			li{
+				text-align: left;
+				float: left;
+			}
+		}
+	}
 }

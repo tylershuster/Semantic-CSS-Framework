@@ -1,10 +1,16 @@
 dl{
 	font-family: '#{$body-font}';
 	dt{
-		@include typography(size-base);
+		font-size: typography(p,font-size) * 1rem;
+		line-height: typography(p,line-height) * 1rem;
+		padding-top: typography(p,padding-top) * 1rem;
+		padding-bottom: typography(p,padding-bottom) * 1rem;
 	}
 	dd{
-		@include typography(size-base);
+		font-size: typography(p,font-size) * 1rem;
+		line-height: typography(p,line-height) * 1rem;
+		padding-top: typography(p,padding-top) * 1rem;
+		padding-bottom: typography(p,padding-bottom) * 1rem;
 	}
 	span{
 		/*inline definitions*/

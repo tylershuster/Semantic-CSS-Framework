@@ -1,6 +1,10 @@
 form{
 	label,span{
-		@include typography(vcenter);
+		font-size: typography(p,font-size) * 1rem;
+		line-height: typography(p,line-height) * 1rem;
+		padding-top: typography(p,padding-top) * 1rem;
+		padding-bottom: typography(p,padding-bottom) * 1rem;
+		text-align: center;
 		//height: 0.89rem;
 	}
 	display: block;
