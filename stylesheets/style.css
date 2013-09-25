@@ -3,10 +3,9 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-@import url("http://basehold.it/20/0/39/189");
 /* { picnicc: style } */
 /*--------------------------main.scss-------------------------------*/
-/*Set in the key of e domsharp9. mono color scheme based on #0086bd with a white background.*/
+/*Set in the key of d domsharp9. mono color scheme based on #0086bd with a white background.*/
 /* Defaults*/
 /* mono, complement, triad, tetrad, analogic, accented-analogic*/
 /* rgb, ryb*/
@@ -733,9 +732,9 @@ optgroup::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-/* line 26, ../sass/partials/base/utilities/_mixins.scss */
+/* line 22, ../sass/partials/base/utilities/_mixins.scss */
 html {
-  font-size: 125%;
+  font-size: 112.5%;
 }
 
 /* line 3, ../sass/partials/base/_typography.scss */
@@ -2538,3 +2537,6 @@ footer {
                                                                                                                                                                 /*
 * body, header{background-image: url(../bg.png);}
 nav ul{background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2P4//8/AxI2RuGAaBQOTADOAWEAjAwwnWPnCWYAAAAASUVORK5CYII=);}/*http://purelycss.com/data-uri-tileable-transparent-patterns/#*/
+/*
+@import url("http://basehold.it/18/0/39/189");
+*/
