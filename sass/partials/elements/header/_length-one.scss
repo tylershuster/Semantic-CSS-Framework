@@ -14,6 +14,41 @@ header{
 			li{
 				text-align: left;
 				float: left;
+				width: 100%;
+				a{
+					display: table-cell;
+				}
+				ul{
+					left: -9999px;	
+					& + a:after{					
+						bottom: 0;
+						top: 0;
+						margin: auto;
+						left: calc(100% + 0.2rem);			
+					}								
+					li{					
+						a{
+
+						}
+					}
+				}
+				&:hover{
+				ul{
+					margin: auto;
+					left: 0;
+					top: 0;
+					bottom: 0;
+				}
+				a:after{
+					left: calc(100% + 1.2rem);				
+					border-top: 0.75rem solid $color-drawer;
+					-webkit-transform: rotate(-90deg);
+					-moz-transform: rotate(-90deg);
+					-o-transform: rotate(-90deg);
+					-ms-transform: rotate(-90deg);
+					transform: rotate(-90deg);
+				}
+			}
 			}
 		}
 	}

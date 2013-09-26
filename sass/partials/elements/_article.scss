@@ -39,7 +39,7 @@ article{
 	@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
 		/*Styles for devices from 128-256px wide*/
 		$article-margin-length-one: 0.5rem;
-		margin: 0 0.5rem;
+		padding: 0 0.5rem;
 		>blockquote, >figure, >aside{
 			width: calc(100% + #{2 * $article-margin-length-one})
 		}
@@ -65,7 +65,7 @@ article{
 	@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
 		/*styles for screens 256-384px*/
 		$article-margin-length-two: 1rem;
-		margin: 0 1rem;
+		padding: 0 1rem;
 		//margin-top: #{$header-height};
 		>blockquote, >figure, >aside{
 			width: calc(100% + #{2 * $article-margin-length-two})
@@ -92,10 +92,13 @@ article{
 	@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-five * 1px}){
 		/*styles for devices from 384-640 px wide*/
 		$article-margin-length-three: 2rem;
-		margin: 0 2rem;
+		padding: 0 2rem;
 		//margin-top: #{$header-height};
-		>blockquote, >figure, >aside{
+		>blockquote, >figure{
 			width: calc(100% + #{2 * $article-margin-length-three})
+		}
+		>aside{
+			width: 50%;
 		}
 		>figure:nth-of-type(odd), >figure:nth-of-type(even){
 			padding: 0;
@@ -119,9 +122,12 @@ article{
 	@media all and (min-width:#{$length-five * 1px}) and (max-width:#{$length-eight * 1px}){
 		/*styles for devices from 640-1024px wide*/
 		$article-margin-length-five: 3rem;
-		margin: 0 3rem;
+		padding: 0 3rem;
 		//margin-top: #{$header-height};
-		>blockquote, >figure, >aside{
+		>blockquote, >figure{
+			width: 50%;
+		}
+		>aside{
 			width: 50%;
 		}
 		>blockquote:nth-of-type(odd), >aside:nth-of-type(odd){
@@ -143,10 +149,13 @@ article{
 	@media all and (min-width:#{$length-eight * 1px}) and (max-width:#{$length-thirteen * 1px}){
 		/*styles on devices from 1024px-1664px*/
 		$article-margin-length-eight: 4rem;
-		margin: 0 4rem;
+		padding: 0 4rem;
 		//margin-top: #{$header-height + $nav-height};
-		>blockquote, >figure, >aside{
+		>blockquote, >figure{
 			width: 50%;
+		}
+		>aside{
+			width: 33%;
 		}
 		>blockquote:nth-of-type(odd), >aside:nth-of-type(odd){
 			right: $article-margin-length-eight;
@@ -167,10 +176,13 @@ article{
 	@media all and (min-width:#{$length-thirteen * 1px}){
 		/*styles for devices from 1664px up*/
 		$article-margin-length-thirteen: 5rem;
-		margin: 0;
+		padding: 0;
 		//margin-top: #{$header-height + $nav-height};
-		>blockquote, >figure, >aside{
+		>blockquote, >figure{
 			width: 50%;
+		}
+		>aside{
+			width: 25%;
 		}
 		>blockquote:nth-of-type(odd), >aside:nth-of-type(odd){
 			right: $article-margin-length-thirteen;

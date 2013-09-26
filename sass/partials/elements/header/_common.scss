@@ -87,10 +87,11 @@ header{
 		>ul{
 			position: absolute;
 			top: #{$header-height};
-			height: #{$nav-height};
+			min-height: #{$nav-height};
 			background-color: $color-drawer;		
 			float: left;
 			width: 100%;
+			height: auto;
 			margin: 0;			
 			padding: 0;
 			list-style: none;
@@ -101,17 +102,49 @@ header{
 				display: table-cell;					
 				table-layout: fixed;	
 				vertical-align: middle;	
-				> a{
-					display: table-cell;				
-					text-decoration: none;
-					vertical-align: middle;
-					width: 2%;				
+				position: relative;
+				> a{									
+					text-decoration: none;							
+				}
+				ul{
+					background-color: $color-drawer;
+					display: table;
+					position: absolute;
+					padding: 0;
+					@include box-shadow;
+					transition: all $transition-length ease-in-out;
+					-moz-transition: all $transition-length ease-in-out;
+					-webkit-transition: all $transition-length ease-in-out;
+					& + a{
+						position: relative;
+					}
+					& + a:after{
+						content: ' ';
+						display: block;
+						width: 0; 
+						height: 0; 
+						position: absolute;
+						border-top: #{$nav-height / 4} solid $color-primary; 
+						border-left: #{$nav-height / 8} solid transparent; 
+						border-right: #{$nav-height / 8} solid transparent;
+						transition: all $transition-length ease-in-out;
+						-moz-transition: all $transition-length ease-in-out;
+						-webkit-transition: all $transition-length ease-in-out;				
+					}								
+					li{
+						display: table;					
+						height: $nav-height;
+						a{
+							display: table-cell;
+							vertical-align: middle;
+						}
+					}
 				}
 				&:hover{
 					background-color: $color-primary;
-					a, a:hover{
+					>a, >a:hover{
 						color: $color-background;
-					}
+					}					
 				}
 				ul{
 					overflow: hidden;
@@ -123,8 +156,7 @@ header{
 					}
 				}		
 			}
-		}
-		
+		}		
 	}
 }
 
@@ -204,7 +236,7 @@ header{
 					-webkit-appearance: none;
 					margin-top: 1rem;
 					float:right;
-					-webkit-transition: all .4s ease-in-out;
+					-webkit-transition: all $transition-length ease-in-out;
 					display:block;
 					position:relative;
 					outline:none;
@@ -231,12 +263,10 @@ header{
 		nav{
 			position: fixed;
 			top: #{$header-height};
-			height: 100%;
-			background-color: $color-drawer;
+			height: 100%;			
 			height: 100%;
 			z-index: 999;
-			padding-bottom: 100%;
-			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62);
+			padding-bottom: 100%;			
 			section.user{
 				width: 100%;
 				& + ul{
@@ -247,8 +277,7 @@ header{
 				display: block;
 				position:relative;
 				top: 0;
-				background-color: transparent;
-				box-shadow: none;
+				background-color: $color-drawer;
 			}
 			li{
 				padding-left: 1rem;
@@ -259,10 +288,10 @@ header{
 					height: 3rem;
 				}
 			}
-			-webkit-transition: -webkit-transform 500ms ease;
-			-moz-transition: -moz-transform 500ms ease;
-			-o-transition: -o-transform 500ms ease;
-			transition: transform 500ms ease;
+			-webkit-transition: -webkit-transform $transition-length ease;
+			-moz-transition: -moz-transform $transition-length ease;
+			-o-transition: -o-transform $transition-length ease;
+			transition: transform $transition-length ease;
 			-webkit-transform: translateZ(0);
 			-moz-transform: translateZ(0);
 			-webkit-perspective: 1000;

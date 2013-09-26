@@ -37,6 +37,23 @@ header{
 			float: none;
 			text-align: center;
 			> a{ }
+			ul{
+				top: -9999px;
+				& + a:after{
+					bottom: 0;
+					top: 0;
+					margin: auto;					
+					left: calc(100% + 0.2rem);
+				}
+			}
+			&:hover{
+				>ul{
+					top: $nav-height;
+				}
+				a:after{
+					border-top: 0.75rem solid $color-drawer;
+				}
+			}
 		}
 	}
 	#show-mobile-nav{

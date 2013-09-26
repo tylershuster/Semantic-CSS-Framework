@@ -1,5 +1,11 @@
 @include key(#{$key});
-
+small{
+	color: mix($color-text, $color-background);
+	font-size: typography(small,font-size) * 1rem;
+	line-height: typography(small,line-height) * 1rem;
+	padding-top: typography(small,padding-top) * 1rem;
+	padding-bottom: typography(small,padding-bottom) * 1rem;	
+}
 h1{
 	@include text-shadow;
 	font-size: typography(h1,font-size) * 1rem;
@@ -10,7 +16,7 @@ h1{
 	color: $color-primary;
 	font-family: '#{$heading-font}';
 	& + small{
-		opacity: 0.85;
+		color: mix($color-primary, $color-background);
 		font-size: typography(h2,font-size) * 1rem;
 		line-height: typography(h2,line-height) * 1rem;
 		padding-top: typography(h2,padding-top) * 1rem;
@@ -36,7 +42,7 @@ h2{
 	color: $color-secondary;
 	font-family: '#{$heading-font}';
 	& + small{
-		opacity: 0.85;
+		color: mix($color-secondary, $color-background);
 		font-size: typography(h3,font-size) * 1rem;
 		line-height: typography(h3,line-height) * 1rem;
 		padding-top: typography(h3,padding-top) * 1rem;
@@ -62,7 +68,7 @@ h3{
 	color: $color-tertiary;
 	font-family: '#{$heading-font}';
 	& + small{
-		opacity: 0.85;
+		color: mix($color-tertiary, $color-background);
 		font-size: typography(h4,font-size) * 1rem;
 		line-height: typography(h4,line-height) * 1rem;
 		padding-top: typography(h4,padding-top) * 1rem;
@@ -88,7 +94,7 @@ h4{
 	color: $color-text;
 	font-family: '#{$heading-font}';
 	& + small{
-		opacity: 0.85;
+		color: mix($color-text, $color-background);
 		font-size: typography(h5,font-size) * 1rem;
 		line-height: typography(h5,line-height) * 1rem;
 		padding-top: typography(h5,padding-top) * 1rem;
@@ -114,7 +120,7 @@ h5{
 	color: $color-text;
 	font-family: '#{$heading-font}';
 	& + small{
-		opacity: 0.85;
+		color: mix($color-text, $color-background);
 		font-size: typography(p,font-size) * 1rem;
 		line-height: typography(p,line-height) * 1rem;
 		padding-top: typography(p,padding-top) * 1rem;
@@ -139,13 +145,8 @@ p, time{
 	line-height: 2;
 	//color: $color-text;
 	font-family: '#{$body-font}';
-	& + small{
-		opacity: 0.85;
-		/*style for small version*/
-		display: block;
-	}
-
 }
+
 a,a:visited{
 	//color: $color-accent;
 	color: inherit;
