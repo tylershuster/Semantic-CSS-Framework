@@ -5,7 +5,7 @@
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 /* { picnicc: style } */
 /*--------------------------main.scss-------------------------------*/
-/*Set in the key of c domsharp9. mono color scheme based on #0086bd with a white background.*/
+/*Set in the key of c domsharp9. analogic color scheme based on #841219 with a light background.*/
 /* Defaults*/
 /* mono, complement, triad, tetrad, analogic, accented-analogic*/
 /* rgb, ryb*/
@@ -14,8 +14,8 @@
 /*light if tone is dark, dark if tone is light, light if tone is white, dark if tone is black*/
 /* line 142, ../sass/partials/base/utilities/color/_color-schemer.scss */
 * body {
-  color: #005a80;
-  background-color: white;
+  color: #700f15;
+  background-color: #f08f95;
 }
 
 /* line 41, ../sass/partials/base/utilities/_layout.scss */
@@ -71,7 +71,7 @@ main {
   background-image: attr(data-background-image url);
 }
 
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -755,21 +755,34 @@ optgroup::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-/* line 18, ../sass/partials/base/utilities/_mixins.scss */
-html {
-  font-size: 100%;
+@media all and (min-width: 384px) and (max-width: 1664px) {
+  /* line 21, ../sass/partials/base/_typography.scss */
+  html {
+    font-size: 100%;
+  }
 }
-
-/* line 2, ../sass/partials/base/_typography.scss */
+@media all and (min-width: 256px) and (max-width: 384px) {
+  /* line 23, ../sass/partials/base/_typography.scss */
+  html {
+    font-size: 87.5%;
+  }
+}
+@media all and (min-width: 128px) and (max-width: 256px) {
+  /* line 25, ../sass/partials/base/_typography.scss */
+  html {
+    font-size: 75%;
+  }
+}
+/* line 64, ../sass/partials/base/_typography.scss */
 small {
-  color: #7facbf;
+  color: #b04f55;
   font-size: 0.85rem;
   line-height: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.25rem;
 }
 
-/* line 9, ../sass/partials/base/_typography.scss */
+/* line 71, ../sass/partials/base/_typography.scss */
 h1 {
   /*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
   font-size: 2.4rem;
@@ -777,12 +790,12 @@ h1 {
   padding-top: 0.54rem;
   padding-bottom: 0.45rem;
   margin: 0;
-  color: #0086bd;
+  color: #841219;
   font-family: "Open Sans";
 }
-/* line 18, ../sass/partials/base/_typography.scss */
+/* line 80, ../sass/partials/base/_typography.scss */
 h1 + small {
-  color: #7fc2de;
+  color: #ba5057;
   font-size: 1.778rem;
   line-height: 2rem;
   padding-top: 0.25rem;
@@ -790,7 +803,7 @@ h1 + small {
   margin: 0;
   display: block;
 }
-/* line 27, ../sass/partials/base/_typography.scss */
+/* line 89, ../sass/partials/base/_typography.scss */
 h1.uber, .uber h1 {
   font-size: 4.8rem;
   line-height: 5rem;
@@ -799,7 +812,7 @@ h1.uber, .uber h1 {
   margin: 0;
 }
 
-/* line 35, ../sass/partials/base/_typography.scss */
+/* line 97, ../sass/partials/base/_typography.scss */
 h2 {
   /*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
   font-size: 1.778rem;
@@ -807,12 +820,12 @@ h2 {
   padding-top: 0.25rem;
   padding-bottom: 0.75rem;
   margin: 0;
-  color: #005a80;
+  color: #844412;
   font-family: "Open Sans";
 }
-/* line 44, ../sass/partials/base/_typography.scss */
+/* line 106, ../sass/partials/base/_typography.scss */
 h2 + small {
-  color: #7facbf;
+  color: #ba6953;
   font-size: 1.5rem;
   line-height: 2rem;
   padding-top: 0.41rem;
@@ -820,7 +833,7 @@ h2 + small {
   margin: 0;
   display: block;
 }
-/* line 53, ../sass/partials/base/_typography.scss */
+/* line 115, ../sass/partials/base/_typography.scss */
 h2.uber, .uber h2 {
   font-size: 3.556rem;
   line-height: 4rem;
@@ -829,7 +842,7 @@ h2.uber, .uber h2 {
   margin: 0;
 }
 
-/* line 61, ../sass/partials/base/_typography.scss */
+/* line 123, ../sass/partials/base/_typography.scss */
 h3 {
   /*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
   font-size: 1.5rem;
@@ -837,12 +850,12 @@ h3 {
   padding-top: 0.41rem;
   padding-bottom: 0.6rem;
   margin: 0;
-  color: #21a7de;
+  color: #841252;
   font-family: "Open Sans";
 }
-/* line 70, ../sass/partials/base/_typography.scss */
+/* line 132, ../sass/partials/base/_typography.scss */
 h3 + small {
-  color: #90d3ee;
+  color: #ba5073;
   font-size: 1.25rem;
   line-height: 2rem;
   padding-top: 0.55rem;
@@ -850,7 +863,7 @@ h3 + small {
   margin: 0;
   display: block;
 }
-/* line 79, ../sass/partials/base/_typography.scss */
+/* line 141, ../sass/partials/base/_typography.scss */
 h3.uber, .uber h3 {
   font-size: 3rem;
   line-height: 3rem;
@@ -859,7 +872,7 @@ h3.uber, .uber h3 {
   margin: 0;
 }
 
-/* line 87, ../sass/partials/base/_typography.scss */
+/* line 149, ../sass/partials/base/_typography.scss */
 h4 {
   /*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
   font-size: 1.25rem;
@@ -867,12 +880,12 @@ h4 {
   padding-top: 0.55rem;
   padding-bottom: 0.45rem;
   margin: 0;
-  color: #005a80;
+  color: #700f15;
   font-family: "Open Sans";
 }
-/* line 96, ../sass/partials/base/_typography.scss */
+/* line 158, ../sass/partials/base/_typography.scss */
 h4 + small {
-  color: #7facbf;
+  color: #b04f55;
   font-size: 1.25rem;
   line-height: 2rem;
   padding-top: 0.55rem;
@@ -880,7 +893,7 @@ h4 + small {
   margin: 0;
   display: block;
 }
-/* line 105, ../sass/partials/base/_typography.scss */
+/* line 167, ../sass/partials/base/_typography.scss */
 h4.uber, .uber h4 {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -889,7 +902,7 @@ h4.uber, .uber h4 {
   margin: 0;
 }
 
-/* line 113, ../sass/partials/base/_typography.scss */
+/* line 175, ../sass/partials/base/_typography.scss */
 h5 {
   /*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
   font-size: 1.25rem;
@@ -897,12 +910,12 @@ h5 {
   padding-top: 0.55rem;
   padding-bottom: 0.45rem;
   margin: 0;
-  color: #005a80;
+  color: #700f15;
   font-family: "Open Sans";
 }
-/* line 122, ../sass/partials/base/_typography.scss */
+/* line 184, ../sass/partials/base/_typography.scss */
 h5 + small {
-  color: #7facbf;
+  color: #b04f55;
   font-size: 1rem;
   line-height: 2rem;
   padding-top: 0.75rem;
@@ -910,7 +923,7 @@ h5 + small {
   margin: 0;
   display: block;
 }
-/* line 131, ../sass/partials/base/_typography.scss */
+/* line 193, ../sass/partials/base/_typography.scss */
 h5.uber, .uber h5 {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -919,7 +932,7 @@ h5.uber, .uber h5 {
   margin: 0;
 }
 
-/* line 139, ../sass/partials/base/_typography.scss */
+/* line 201, ../sass/partials/base/_typography.scss */
 p, time {
   font-size: 1rem;
   line-height: 2rem;
@@ -930,17 +943,17 @@ p, time {
   font-family: "Gentium Basic";
 }
 
-/* line 150, ../sass/partials/base/_typography.scss */
+/* line 212, ../sass/partials/base/_typography.scss */
 a, a:visited {
   color: inherit;
   text-decoration: underline;
 }
-/* line 154, ../sass/partials/base/_typography.scss */
+/* line 216, ../sass/partials/base/_typography.scss */
 a:hover, a:visited:hover {
-  color: #0027bd;
+  color: #630d12;
 }
 
-/* line 165, ../sass/partials/base/_typography.scss */
+/* line 227, ../sass/partials/base/_typography.scss */
 small:before {
   content: " ";
 }
@@ -1016,7 +1029,7 @@ address a[href*="twitter.com/"]:before {
   font-family: "Entypo";
   text-decoration: none;
   font-style: normal;
-  color: white;
+  color: #f08f95;
   float: left;
 }
 /* line 54, ../sass/partials/elements/_address.scss */
@@ -1036,7 +1049,7 @@ address a[href*="plus.google.com/"]:before {
   font-family: "Entypo";
   text-decoration: none;
   font-style: normal;
-  color: white;
+  color: #f08f95;
   float: left;
 }
 /* line 60, ../sass/partials/elements/_address.scss */
@@ -1056,7 +1069,7 @@ address a[href*="facebook.com/"]:before {
   font-family: "Entypo";
   text-decoration: none;
   font-style: normal;
-  color: white;
+  color: #f08f95;
   float: left;
 }
 /* line 66, ../sass/partials/elements/_address.scss */
@@ -1076,7 +1089,7 @@ address a[href*="linkedin.com/"]:before {
   font-family: "Entypo";
   text-decoration: none;
   font-style: normal;
-  color: white;
+  color: #f08f95;
   float: left;
 }
 /* line 72, ../sass/partials/elements/_address.scss */
@@ -1096,7 +1109,7 @@ address a[href*="tumblr"]:before {
   font-family: "Entypo";
   text-decoration: none;
   font-style: normal;
-  color: white;
+  color: #f08f95;
   float: left;
 }
 /* line 78, ../sass/partials/elements/_address.scss */
@@ -1116,7 +1129,7 @@ address a.instagram:before {
   font-family: "Entypo";
   text-decoration: none;
   font-style: normal;
-  color: white;
+  color: #f08f95;
   float: left;
 }
 /* line 84, ../sass/partials/elements/_address.scss */
@@ -1136,7 +1149,7 @@ address a.dribbble:before {
   font-family: "Entypo";
   text-decoration: none;
   font-style: normal;
-  color: white;
+  color: #f08f95;
   float: left;
 }
 /* line 90, ../sass/partials/elements/_address.scss */
@@ -1172,7 +1185,7 @@ article > figure img {
 }
 /* line 20, ../sass/partials/elements/_article.scss */
 article > p:first-of-type:first-letter, article h1 + p:first-letter {
-  color: #0027bd;
+  color: #630d12;
 }
 /* line 23, ../sass/partials/elements/_article.scss */
 article > ul {
@@ -1408,12 +1421,12 @@ aside h1, aside h2, aside h3, aside h4, aside h5 {
   padding-top: 0.55rem;
   padding-bottom: 0.45rem;
   margin: 0;
-  color: #005a80;
+  color: #700f15;
   font-family: "Gentium Basic";
 }
 /* line 19, ../sass/partials/elements/_aside.scss */
 aside p {
-  color: #7facbf;
+  color: #b04f55;
   font-size: 0.85rem;
   line-height: 1rem;
   padding-top: 0.75rem;
@@ -1457,7 +1470,7 @@ blockquote p {
   line-height: 2rem;
   padding-top: 0.55rem;
   padding-bottom: 0.45rem;
-  color: #005a80;
+  color: #844412;
 }
 /* line 24, ../sass/partials/elements/_blockquote.scss */
 article blockquote:nth-of-type(odd) {
@@ -1486,7 +1499,7 @@ article blockquote:nth-of-type(even) > cite {
 /* line 40, ../sass/partials/elements/_blockquote.scss */
 blockquote > cite {
   font-family: Open Sans;
-  color: #005a80;
+  color: #844412;
   font-size: 0.85rem;
   line-height: 1rem;
   margin-bottom: 1rem;
@@ -1542,7 +1555,7 @@ dl ol {
 
 /* line 11, ../sass/partials/elements/_figure.scss */
 figure img + figcaption {
-  color: #7facbf;
+  color: #b04f55;
   font-size: 0.85rem;
   line-height: 1rem;
   padding-top: 0.75rem;
@@ -1579,7 +1592,7 @@ header address {
 
 /* line 1, ../sass/partials/elements/header/_common.scss */
 header {
-  background-color: #0086bd;
+  background-color: #841219;
   height: 8rem;
   position: fixed;
   top: 0;
@@ -1597,7 +1610,7 @@ header .logo {
 /* line 15, ../sass/partials/elements/header/_common.scss */
 header h1 {
   /*site tite*/
-  color: white;
+  color: #f08f95;
   display: inline-block;
   float: left;
   line-height: 5rem;
@@ -1629,10 +1642,12 @@ header section.masthead address {
 }
 /* line 35, ../sass/partials/elements/header/_common.scss */
 header section.user {
-  background-color: white;
+  background-color: #cc797e;
   height: 3rem;
   display: table;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+  border: 1px solid;
+  border-color: #d38b90 #c5676c #c5676c #d38b90;
   position: absolute;
   right: 0;
   top: 0;
@@ -1684,7 +1699,7 @@ header nav > ul {
   position: absolute;
   top: 5rem;
   min-height: 3rem;
-  background-color: white;
+  background-color: #cc797e;
   float: left;
   width: 100%;
   height: auto;
@@ -1693,79 +1708,97 @@ header nav > ul {
   list-style: none;
   display: table;
   table-layout: fixed;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+  box-sizing: content-box;
 }
 /* line 101, ../sass/partials/elements/header/_common.scss */
+header nav > ul > div {
+  display: none;
+}
+/* line 107, ../sass/partials/elements/header/_common.scss */
 header nav > ul li {
-  display: table-cell;
+  box-sizing: border-box;
   table-layout: fixed;
   vertical-align: middle;
   position: relative;
 }
-/* line 106, ../sass/partials/elements/header/_common.scss */
+/* line 112, ../sass/partials/elements/header/_common.scss */
 header nav > ul li > a {
   text-decoration: none;
 }
-/* line 109, ../sass/partials/elements/header/_common.scss */
+/* line 116, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul {
-  background-color: white;
+  background-color: #cc797e;
   display: table;
   position: absolute;
   padding: 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+  border: 1px solid;
+  border-color: #d38b90 #c5676c #c5676c #d38b90;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
-/* line 118, ../sass/partials/elements/header/_common.scss */
+/* line 123, ../sass/partials/elements/header/_common.scss */
+header nav > ul li ul li {
+  margin-bottom: -100%;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+/* line 127, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul + a {
   position: relative;
 }
-/* line 121, ../sass/partials/elements/header/_common.scss */
+/* line 130, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul + a:after {
   content: ' ';
   display: block;
   width: 0;
   height: 0;
   position: absolute;
-  border-top: 0.75rem solid #0086bd;
+  border-top: 0.75rem solid #841219;
   border-left: 0.375rem solid transparent;
   border-right: 0.375rem solid transparent;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
-/* line 134, ../sass/partials/elements/header/_common.scss */
+/* line 141, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul li {
   display: table;
   height: 3rem;
 }
-/* line 137, ../sass/partials/elements/header/_common.scss */
+/* line 144, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul li a {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 143, ../sass/partials/elements/header/_common.scss */
+/* line 150, ../sass/partials/elements/header/_common.scss */
 header nav > ul li:hover {
-  background-color: #0086bd;
+  background-color: #841219;
+  border: none;
 }
-/* line 145, ../sass/partials/elements/header/_common.scss */
+/* line 154, ../sass/partials/elements/header/_common.scss */
+header nav > ul li:hover > ul li {
+  margin-bottom: 0;
+}
+/* line 158, ../sass/partials/elements/header/_common.scss */
 header nav > ul li:hover > a, header nav > ul li:hover > a:hover {
-  color: white;
+  color: #f08f95;
 }
-/* line 149, ../sass/partials/elements/header/_common.scss */
+/* line 162, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul {
   overflow: hidden;
   width: 100%;
 }
-/* line 152, ../sass/partials/elements/header/_common.scss */
+/* line 165, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul li {
   float: left;
   width: 100%;
 }
 
 /* This is the clickable label */
-/* line 168, ../sass/partials/elements/header/_common.scss */
+/* line 181, ../sass/partials/elements/header/_common.scss */
 .slide-toggle {
   float: left;
   cursor: pointer;
@@ -1773,11 +1806,11 @@ header nav > ul li ul li {
   top: -1rem;
   z-index: 1;
   display: none;
-  color: white;
+  color: #cc797e;
 }
 
 /* Kill the nasty outlines everywhere */
-/* line 182, ../sass/partials/elements/header/_common.scss */
+/* line 195, ../sass/partials/elements/header/_common.scss */
 .slide-toggle,
 .slide-toggle:active,
 .slide-toggle:focus {
@@ -1787,7 +1820,7 @@ header nav > ul li ul li {
 }
 
 /* The :after pseudo element has an icon that covers the checkbox */
-/* line 189, ../sass/partials/elements/header/_common.scss */
+/* line 202, ../sass/partials/elements/header/_common.scss */
 .slide-toggle:after {
   content: "\f0c9";
   display: block;
@@ -1799,7 +1832,7 @@ header nav > ul li ul li {
 }
 
 /* This is the checkbox */
-/* line 200, ../sass/partials/elements/header/_common.scss */
+/* line 213, ../sass/partials/elements/header/_common.scss */
 .slide-checkbox {
   position: absolute;
   top: -9999px;
@@ -1807,41 +1840,43 @@ header nav > ul li ul li {
 }
 
 /* When it's checked replace the menu icon with a close icon */
-/* line 207, ../sass/partials/elements/header/_common.scss */
+/* line 220, ../sass/partials/elements/header/_common.scss */
 .slide-checkbox:checked ~ .slide-toggle:after {
   content: '\f0c9';
 }
 
 /*only show mobile nav on @media handheld*/
 @media all and (max-width: 1024px) {
-  /* line 217, ../sass/partials/elements/header/_common.scss */
+  /* line 230, ../sass/partials/elements/header/_common.scss */
   header section.search {
     top: 0;
     height: 5rem;
     margin-right: 1rem;
   }
-  /* line 221, ../sass/partials/elements/header/_common.scss */
+  /* line 234, ../sass/partials/elements/header/_common.scss */
   header section.search form {
     width: 100%;
     height: 5rem;
   }
-  /* line 224, ../sass/partials/elements/header/_common.scss */
+  /* line 237, ../sass/partials/elements/header/_common.scss */
   header section.search form:after {
     content: "";
     position: absolute;
     width: 0;
     height: 1rem;
-    border: 0.3rem solid white;
+    border: 0.3rem solid #cc797e;
     top: 2.62rem;
     right: -0.62rem;
     -webkit-border-radius: 3px;
     -webkit-transform: rotate(-45deg);
   }
-  /* line 235, ../sass/partials/elements/header/_common.scss */
+  /* line 248, ../sass/partials/elements/header/_common.scss */
   header section.search form input[type="search"] {
     -webkit-appearance: none;
     margin-top: 1rem;
     float: right;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     display: block;
     position: relative;
@@ -1852,25 +1887,25 @@ header nav > ul li ul li {
     -webkit-border-radius: 50px;
     outline: none;
   }
-  /* line 248, ../sass/partials/elements/header/_common.scss */
+  /* line 261, ../sass/partials/elements/header/_common.scss */
   header section.search form input[type="search"]::-webkit-search-cancel-button {
     display: none;
   }
-  /* line 251, ../sass/partials/elements/header/_common.scss */
+  /* line 264, ../sass/partials/elements/header/_common.scss */
   header section.search form input[type="search"]:hover, header section.search form input[type="search"]:focus {
     width: 200px;
   }
-  /* line 254, ../sass/partials/elements/header/_common.scss */
+  /* line 267, ../sass/partials/elements/header/_common.scss */
   header section.search form input[type="search"]:hover::-webkit-input-placeholder {
     color: #cae0ef;
     font-style: italic;
     font-size: 13px;
   }
-  /* line 261, ../sass/partials/elements/header/_common.scss */
+  /* line 274, ../sass/partials/elements/header/_common.scss */
   header section.search ::-webkit-input-placeholder {
     color: transparent;
   }
-  /* line 263, ../sass/partials/elements/header/_common.scss */
+  /* line 276, ../sass/partials/elements/header/_common.scss */
   header nav {
     position: fixed;
     top: 5rem;
@@ -1888,40 +1923,40 @@ header nav > ul li ul li {
     -moz-perspective: 1000;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-101%);
+    -moz-transform: translateX(-101%);
+    -ms-transform: translateX(-101%);
+    -o-transform: translateX(-101%);
+    transform: translateX(-101%);
   }
-  /* line 270, ../sass/partials/elements/header/_common.scss */
+  /* line 283, ../sass/partials/elements/header/_common.scss */
   header nav section.user {
     width: 100%;
   }
-  /* line 272, ../sass/partials/elements/header/_common.scss */
+  /* line 285, ../sass/partials/elements/header/_common.scss */
   header nav section.user + ul {
     top: 3rem;
   }
-  /* line 276, ../sass/partials/elements/header/_common.scss */
+  /* line 289, ../sass/partials/elements/header/_common.scss */
   header nav ul {
     display: block;
     position: relative;
     top: 0;
-    background-color: white;
+    background-color: #cc797e;
   }
-  /* line 282, ../sass/partials/elements/header/_common.scss */
+  /* line 295, ../sass/partials/elements/header/_common.scss */
   header nav li {
     padding-left: 1rem;
     display: block;
     text-align: left;
   }
-  /* line 286, ../sass/partials/elements/header/_common.scss */
+  /* line 299, ../sass/partials/elements/header/_common.scss */
   header nav li > a {
     padding: 1rem 0;
     height: 3rem;
   }
 
-  /* line 308, ../sass/partials/elements/header/_common.scss */
+  /* line 321, ../sass/partials/elements/header/_common.scss */
   .slide-checkbox:checked ~ nav {
     -webkit-transform: translateX(0%) scale(1);
     -moz-transform: translateX(0%) scale(1);
@@ -1930,368 +1965,18 @@ header nav > ul li ul li {
     transform: translateX(0%) scale(1);
   }
 
-  /* line 317, ../sass/partials/elements/header/_common.scss */
+  /* line 330, ../sass/partials/elements/header/_common.scss */
   .slide-toggle {
     display: block;
   }
 
-  /* line 321, ../sass/partials/elements/header/_common.scss */
+  /* line 334, ../sass/partials/elements/header/_common.scss */
   .slide-checkbox:checked ~ .slide-toggle:after {
     margin-left: -30px;
   }
 }
-/* logo left half, menu right half*/
-@media all and (min-width: 128px) and (max-width: 256px) {
-  /*Styles for devices from 128-256px wide*/
-  /* line 2, ../sass/partials/elements/header/_length-one.scss */
-  header {
-    height: 5rem;
-    width: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
-  }
-  /* line 6, ../sass/partials/elements/header/_length-one.scss */
-  header h1 {
-    position: absolute;
-    left: 3rem;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  /* line 14, ../sass/partials/elements/header/_length-one.scss */
-  header nav ul li {
-    text-align: left;
-    float: left;
-    width: 100%;
-  }
-  /* line 18, ../sass/partials/elements/header/_length-one.scss */
-  header nav ul li a {
-    display: table-cell;
-  }
-  /* line 21, ../sass/partials/elements/header/_length-one.scss */
-  header nav ul li ul {
-    left: -9999px;
-  }
-  /* line 23, ../sass/partials/elements/header/_length-one.scss */
-  header nav ul li ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 36, ../sass/partials/elements/header/_length-one.scss */
-  header nav ul li:hover ul {
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-  }
-  /* line 42, ../sass/partials/elements/header/_length-one.scss */
-  header nav ul li:hover a:after {
-    left: calc(100% + 1.2rem);
-    border-top: 0.75rem solid white;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-}
-@media all and (min-width: 256px) and (max-width: 384px) {
-  /*styles for screens 256-384px*/
-  /* line 2, ../sass/partials/elements/header/_length-two.scss */
-  header {
-    height: 5rem;
-    width: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
-  }
-  /* line 6, ../sass/partials/elements/header/_length-two.scss */
-  header .logo {
-    position: relative;
-    left: 0.75rem;
-  }
-  /* line 10, ../sass/partials/elements/header/_length-two.scss */
-  header h1 {
-    position: absolute;
-    left: 4.2rem;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  /* line 16, ../sass/partials/elements/header/_length-two.scss */
-  header address {
-    display: none;
-  }
-  /* line 19, ../sass/partials/elements/header/_length-two.scss */
-  header section.user {
-    width: 50%;
-  }
-  /* line 25, ../sass/partials/elements/header/_length-two.scss */
-  header nav {
-    width: 62%;
-  }
-  /* line 30, ../sass/partials/elements/header/_length-two.scss */
-  header nav li {
-    text-align: left;
-    float: left;
-    width: 100%;
-  }
-  /* line 34, ../sass/partials/elements/header/_length-two.scss */
-  header nav li a {
-    display: table-cell;
-  }
-  /* line 37, ../sass/partials/elements/header/_length-two.scss */
-  header nav li ul {
-    left: -9999px;
-  }
-  /* line 39, ../sass/partials/elements/header/_length-two.scss */
-  header nav li ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 52, ../sass/partials/elements/header/_length-two.scss */
-  header nav li:hover ul {
-    margin: auto;
-    left: 100%;
-    top: 0;
-    bottom: 0;
-  }
-  /* line 58, ../sass/partials/elements/header/_length-two.scss */
-  header nav li:hover a:after {
-    left: calc(100% + 1.2rem);
-    border-top: 0.75rem solid white;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-}
-/*mobile menu swipe from left*/
-@media all and (min-width: 384px) and (max-width: 640px) {
-  /*styles for devices from 384-640 px wide*/
-  /* line 2, ../sass/partials/elements/header/_length-three.scss */
-  header {
-    height: 5rem;
-    width: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
-  }
-  /* line 6, ../sass/partials/elements/header/_length-three.scss */
-  header .logo {
-    position: relative;
-    left: 0.75rem;
-  }
-  /* line 10, ../sass/partials/elements/header/_length-three.scss */
-  header h1 {
-    position: relative;
-    left: 0.75rem;
-  }
-  /* line 14, ../sass/partials/elements/header/_length-three.scss */
-  header address {
-    /*display: none;*/
-  }
-  /* line 17, ../sass/partials/elements/header/_length-three.scss */
-  header section.user {
-    width: 33.33333%;
-  }
-  /* line 23, ../sass/partials/elements/header/_length-three.scss */
-  header nav {
-    width: 50%;
-  }
-  /* line 28, ../sass/partials/elements/header/_length-three.scss */
-  header nav li {
-    text-align: left;
-    float: left;
-    width: 100%;
-  }
-  /* line 32, ../sass/partials/elements/header/_length-three.scss */
-  header nav li a {
-    display: table-cell;
-  }
-  /* line 35, ../sass/partials/elements/header/_length-three.scss */
-  header nav li ul {
-    left: -9999px;
-  }
-  /* line 37, ../sass/partials/elements/header/_length-three.scss */
-  header nav li ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 50, ../sass/partials/elements/header/_length-three.scss */
-  header nav li:hover ul {
-    margin: auto;
-    left: 100%;
-    top: 0;
-    bottom: 0;
-  }
-  /* line 56, ../sass/partials/elements/header/_length-three.scss */
-  header nav li:hover a:after {
-    left: calc(100% + 1.2rem);
-    border-top: 0.75rem solid white;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-}
-@media all and (min-width: 640px) and (max-width: 1024px) {
-  /*styles for devices from 640-1024px wide*/
-  /* line 2, ../sass/partials/elements/header/_length-five.scss */
-  header {
-    height: 5rem;
-    width: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
-  }
-  /* line 6, ../sass/partials/elements/header/_length-five.scss */
-  header .logo {
-    position: relative;
-    left: 0.75rem;
-  }
-  /* line 10, ../sass/partials/elements/header/_length-five.scss */
-  header h1 {
-    position: relative;
-    left: 0.75rem;
-  }
-  /* line 24, ../sass/partials/elements/header/_length-five.scss */
-  header nav {
-    height: 100%;
-    width: 38%;
-  }
-  /* line 28, ../sass/partials/elements/header/_length-five.scss */
-  header nav li {
-    text-align: left;
-    float: left;
-    width: 100%;
-  }
-  /* line 32, ../sass/partials/elements/header/_length-five.scss */
-  header nav li a {
-    display: table-cell;
-  }
-  /* line 35, ../sass/partials/elements/header/_length-five.scss */
-  header nav li ul {
-    left: -9999px;
-  }
-  /* line 37, ../sass/partials/elements/header/_length-five.scss */
-  header nav li ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 50, ../sass/partials/elements/header/_length-five.scss */
-  header nav li:hover ul {
-    margin: auto;
-    left: 100%;
-    top: 0;
-    bottom: 0;
-  }
-  /* line 56, ../sass/partials/elements/header/_length-five.scss */
-  header nav li:hover a:after {
-    left: calc(100% + 1.2rem);
-    border-top: 0.75rem solid white;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-}
-/*desktop nav*/
-@media all and (min-width: 1024px) and (max-width: 1664px) {
-  /* line 22, ../sass/partials/elements/_header.scss */
-  main {
-    margin-top: 8rem;
-  }
-
-  /*header styles on devices from 1024px-1664px*/
-  /* line 2, ../sass/partials/elements/header/_length-eight.scss */
-  header {
-    width: 100%;
-    /*multiple headers get styled into tabs. See foxnews for example*/
-  }
-  /* line 5, ../sass/partials/elements/header/_length-eight.scss */
-  header .logo {
-    margin-left: 0.75rem;
-    /*site logo*/
-  }
-  /* line 6, ../sass/partials/elements/header/_length-eight.scss */
-  header h1 {
-    /*site tite*/
-  }
-  /* line 7, ../sass/partials/elements/header/_length-eight.scss */
-  header address {
-    /*address info*/
-  }
-  /* line 10, ../sass/partials/elements/header/_length-eight.scss */
-  header section.masthead {
-    width: 50%;
-    /*masthead is centered on page*/
-  }
-  /* line 13, ../sass/partials/elements/header/_length-eight.scss */
-  header section.masthead .logo {
-    /*site logo*/
-  }
-  /* line 14, ../sass/partials/elements/header/_length-eight.scss */
-  header section.masthead h1 {
-    /*site title*/
-  }
-  /* line 15, ../sass/partials/elements/header/_length-eight.scss */
-  header section.masthead address {
-    /*address info*/
-  }
-  /* line 17, ../sass/partials/elements/header/_length-eight.scss */
-  header section.user {
-    width: 25%;
-  }
-  /* line 21, ../sass/partials/elements/header/_length-eight.scss */
-  header section.social {
-    width: 25%;
-  }
-  /* line 25, ../sass/partials/elements/header/_length-eight.scss */
-  header section.search {
-    width: 37.5%;
-  }
-  /* line 28, ../sass/partials/elements/header/_length-eight.scss */
-  header section.search .compact {
-    /*expanding box*/
-  }
-  /* line 31, ../sass/partials/elements/header/_length-eight.scss */
-  header nav {
-    width: 100%;
-  }
-  /* line 34, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li {
-    float: none;
-    text-align: center;
-  }
-  /* line 38, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li ul {
-    top: -9999px;
-  }
-  /* line 40, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 48, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li:hover > ul {
-    top: 3rem;
-  }
-  /* line 51, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li:hover a:after {
-    border-top: 0.75rem solid white;
-  }
-  /* line 57, ../sass/partials/elements/header/_length-eight.scss */
-  header #show-mobile-nav {
-    display: none;
-  }
-}
 @media all and (min-width: 1664px) {
-  /* line 27, ../sass/partials/elements/_header.scss */
+  /* line 11, ../sass/partials/elements/_header.scss */
   main {
     margin-top: 8rem;
   }
@@ -2353,33 +2038,467 @@ header nav > ul li ul li {
   header nav {
     width: 100%;
   }
-  /* line 36, ../sass/partials/elements/header/_length-thirteen.scss */
+  /* line 35, ../sass/partials/elements/header/_length-thirteen.scss */
+  header nav > ul {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    border: 1px solid;
+    border-color: #d38b90 #c5676c #c5676c #d38b90;
+  }
+  /* line 37, ../sass/partials/elements/header/_length-thirteen.scss */
+  header nav > ul > div + li {
+    border-left: 1px solid #de8489;
+  }
+  /* line 41, ../sass/partials/elements/header/_length-thirteen.scss */
   header nav li {
     float: none;
     text-align: center;
+    display: table-cell;
   }
-  /* line 40, ../sass/partials/elements/header/_length-thirteen.scss */
+  /* line 46, ../sass/partials/elements/header/_length-thirteen.scss */
+  header nav li > ul {
+    top: 50%;
+  }
+  /* line 48, ../sass/partials/elements/header/_length-thirteen.scss */
+  header nav li > ul div + li {
+    border-top: 1px solid #de8489;
+  }
+  /* line 51, ../sass/partials/elements/header/_length-thirteen.scss */
+  header nav li > ul + a:after {
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: calc(100% + 0.2rem);
+  }
+  /* line 59, ../sass/partials/elements/header/_length-thirteen.scss */
+  header nav li:hover ul {
+    top: 100%;
+  }
+  /* line 62, ../sass/partials/elements/header/_length-thirteen.scss */
+  header nav li:hover a:after {
+    border-top: 0.75rem solid #cc797e;
+  }
+  /* line 68, ../sass/partials/elements/header/_length-thirteen.scss */
+  header #show-mobile-nav {
+    display: none;
+  }
+}
+/*desktop nav*/
+@media all and (min-width: 1024px) and (max-width: 1664px) {
+  /* line 17, ../sass/partials/elements/_header.scss */
+  main {
+    margin-top: 8rem;
+  }
+
+  /*header styles on devices from 1024px-1664px*/
+  /* line 2, ../sass/partials/elements/header/_length-eight.scss */
+  header {
+    width: 100%;
+    /*multiple headers get styled into tabs. See foxnews for example*/
+  }
+  /* line 5, ../sass/partials/elements/header/_length-eight.scss */
+  header .logo {
+    margin-left: 0.75rem;
+    /*site logo*/
+  }
+  /* line 6, ../sass/partials/elements/header/_length-eight.scss */
+  header h1 {
+    /*site tite*/
+  }
+  /* line 7, ../sass/partials/elements/header/_length-eight.scss */
+  header address {
+    /*address info*/
+  }
+  /* line 10, ../sass/partials/elements/header/_length-eight.scss */
+  header section.masthead {
+    width: 50%;
+    /*masthead is centered on page*/
+  }
+  /* line 13, ../sass/partials/elements/header/_length-eight.scss */
+  header section.masthead .logo {
+    /*site logo*/
+  }
+  /* line 14, ../sass/partials/elements/header/_length-eight.scss */
+  header section.masthead h1 {
+    /*site title*/
+  }
+  /* line 15, ../sass/partials/elements/header/_length-eight.scss */
+  header section.masthead address {
+    /*address info*/
+  }
+  /* line 17, ../sass/partials/elements/header/_length-eight.scss */
+  header section.user {
+    width: 25%;
+  }
+  /* line 21, ../sass/partials/elements/header/_length-eight.scss */
+  header section.social {
+    width: 25%;
+  }
+  /* line 25, ../sass/partials/elements/header/_length-eight.scss */
+  header section.search {
+    width: 37.5%;
+  }
+  /* line 28, ../sass/partials/elements/header/_length-eight.scss */
+  header section.search .compact {
+    /*expanding box*/
+  }
+  /* line 31, ../sass/partials/elements/header/_length-eight.scss */
+  header nav {
+    width: 100%;
+  }
+  /* line 33, ../sass/partials/elements/header/_length-eight.scss */
+  header nav > ul {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    border: 1px solid;
+    border-color: #d38b90 #c5676c #c5676c #d38b90;
+  }
+  /* line 35, ../sass/partials/elements/header/_length-eight.scss */
+  header nav > ul > div + li {
+    border-left: 1px solid #de8489;
+  }
+  /* line 39, ../sass/partials/elements/header/_length-eight.scss */
+  header nav li {
+    float: none;
+    text-align: center;
+    display: table-cell;
+  }
+  /* line 44, ../sass/partials/elements/header/_length-eight.scss */
+  header nav li > ul {
+    top: 50%;
+  }
+  /* line 46, ../sass/partials/elements/header/_length-eight.scss */
+  header nav li > ul div + li {
+    border-top: 1px solid #de8489;
+  }
+  /* line 49, ../sass/partials/elements/header/_length-eight.scss */
+  header nav li > ul + a:after {
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: calc(100% + 0.2rem);
+  }
+  /* line 57, ../sass/partials/elements/header/_length-eight.scss */
+  header nav li:hover ul {
+    top: 100%;
+  }
+  /* line 60, ../sass/partials/elements/header/_length-eight.scss */
+  header nav li:hover a:after {
+    border-top: 0.75rem solid #cc797e;
+  }
+  /* line 66, ../sass/partials/elements/header/_length-eight.scss */
+  header #show-mobile-nav {
+    display: none;
+  }
+}
+@media all and (min-width: 640px) and (max-width: 1024px) {
+  /*styles for devices from 640-1024px wide*/
+  /* line 2, ../sass/partials/elements/header/_length-five.scss */
+  header {
+    height: 5rem;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    border: 1px solid;
+    border-color: #9a151d #6e0f15 #6e0f15 #9a151d;
+  }
+  /* line 6, ../sass/partials/elements/header/_length-five.scss */
+  header .logo {
+    position: relative;
+    left: 0.75rem;
+  }
+  /* line 10, ../sass/partials/elements/header/_length-five.scss */
+  header h1 {
+    position: relative;
+    left: 0.75rem;
+  }
+  /* line 19, ../sass/partials/elements/header/_length-five.scss */
+  header section.user {
+    box-sizing: content-box;
+    right: -2px;
+  }
+  /* line 26, ../sass/partials/elements/header/_length-five.scss */
+  header nav {
+    height: 100%;
+    width: 38%;
+  }
+  /* line 29, ../sass/partials/elements/header/_length-five.scss */
+  header nav > ul {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    border: 1px solid;
+    border-color: #d38b90 #c5676c #c5676c #d38b90;
+  }
+  /* line 31, ../sass/partials/elements/header/_length-five.scss */
+  header nav > ul div + li {
+    border-top: 1px solid #de8489;
+  }
+  /* line 35, ../sass/partials/elements/header/_length-five.scss */
+  header nav li {
+    text-align: left;
+    float: left;
+    width: 100%;
+    display: block;
+  }
+  /* line 40, ../sass/partials/elements/header/_length-five.scss */
+  header nav li a {
+    display: table-cell;
+  }
+  /* line 43, ../sass/partials/elements/header/_length-five.scss */
   header nav li ul {
-    top: -9999px;
+    left: -100%;
   }
-  /* line 42, ../sass/partials/elements/header/_length-thirteen.scss */
+  /* line 45, ../sass/partials/elements/header/_length-five.scss */
   header nav li ul + a:after {
     bottom: 0;
     top: 0;
     margin: auto;
     left: calc(100% + 0.2rem);
   }
-  /* line 50, ../sass/partials/elements/header/_length-thirteen.scss */
-  header nav li:hover > ul {
-    top: 3rem;
+  /* line 58, ../sass/partials/elements/header/_length-five.scss */
+  header nav li:hover ul {
+    left: 100%;
   }
-  /* line 53, ../sass/partials/elements/header/_length-thirteen.scss */
+  /* line 61, ../sass/partials/elements/header/_length-five.scss */
   header nav li:hover a:after {
-    border-top: 0.75rem solid white;
+    left: calc(100% + 1.2rem);
+    border-top: 0.75rem solid #cc797e;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
-  /* line 59, ../sass/partials/elements/header/_length-thirteen.scss */
-  header #show-mobile-nav {
+}
+/*mobile menu swipe from left*/
+@media all and (min-width: 384px) and (max-width: 640px) {
+  /*styles for devices from 384-640 px wide*/
+  /* line 2, ../sass/partials/elements/header/_length-three.scss */
+  header {
+    height: 5rem;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    border: 1px solid;
+    border-color: #9a151d #6e0f15 #6e0f15 #9a151d;
+  }
+  /* line 6, ../sass/partials/elements/header/_length-three.scss */
+  header .logo {
+    position: relative;
+    left: 0.75rem;
+  }
+  /* line 10, ../sass/partials/elements/header/_length-three.scss */
+  header h1 {
+    position: relative;
+    left: 0.75rem;
+  }
+  /* line 14, ../sass/partials/elements/header/_length-three.scss */
+  header address {
+    /*display: none;*/
+  }
+  /* line 17, ../sass/partials/elements/header/_length-three.scss */
+  header section.user {
+    box-sizing: content-box;
+    right: -2px;
+    width: 33.33333%;
+  }
+  /* line 25, ../sass/partials/elements/header/_length-three.scss */
+  header nav {
+    width: 50%;
+  }
+  /* line 27, ../sass/partials/elements/header/_length-three.scss */
+  header nav > ul {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    border: 1px solid;
+    border-color: #d38b90 #c5676c #c5676c #d38b90;
+  }
+  /* line 29, ../sass/partials/elements/header/_length-three.scss */
+  header nav > ul div + li {
+    border-top: 1px solid #de8489;
+  }
+  /* line 33, ../sass/partials/elements/header/_length-three.scss */
+  header nav li {
+    text-align: left;
+    float: left;
+    width: 100%;
+    display: block;
+  }
+  /* line 38, ../sass/partials/elements/header/_length-three.scss */
+  header nav li a {
+    display: table-cell;
+  }
+  /* line 41, ../sass/partials/elements/header/_length-three.scss */
+  header nav li ul {
+    left: -100%;
+  }
+  /* line 43, ../sass/partials/elements/header/_length-three.scss */
+  header nav li ul + a:after {
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: calc(100% + 0.2rem);
+  }
+  /* line 56, ../sass/partials/elements/header/_length-three.scss */
+  header nav li:hover ul {
+    left: 100%;
+  }
+  /* line 59, ../sass/partials/elements/header/_length-three.scss */
+  header nav li:hover a:after {
+    left: calc(100% + 1.2rem);
+    border-top: 0.75rem solid #cc797e;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+@media all and (min-width: 256px) and (max-width: 384px) {
+  /*styles for screens 256-384px*/
+  /* line 2, ../sass/partials/elements/header/_length-two.scss */
+  header {
+    height: 5rem;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    border: 1px solid;
+    border-color: #9a151d #6e0f15 #6e0f15 #9a151d;
+  }
+  /* line 6, ../sass/partials/elements/header/_length-two.scss */
+  header .logo {
+    position: relative;
+    left: 0.75rem;
+  }
+  /* line 10, ../sass/partials/elements/header/_length-two.scss */
+  header h1 {
+    position: absolute;
+    left: 4.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  /* line 16, ../sass/partials/elements/header/_length-two.scss */
+  header address {
     display: none;
+  }
+  /* line 19, ../sass/partials/elements/header/_length-two.scss */
+  header section.user {
+    width: 50%;
+    box-sizing: content-box;
+    right: -2px;
+  }
+  /* line 27, ../sass/partials/elements/header/_length-two.scss */
+  header nav {
+    width: 62%;
+  }
+  /* line 29, ../sass/partials/elements/header/_length-two.scss */
+  header nav > ul {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    border: 1px solid;
+    border-color: #d38b90 #c5676c #c5676c #d38b90;
+  }
+  /* line 31, ../sass/partials/elements/header/_length-two.scss */
+  header nav > ul div + li {
+    border-top: 1px solid #de8489;
+  }
+  /* line 35, ../sass/partials/elements/header/_length-two.scss */
+  header nav li {
+    text-align: left;
+    float: left;
+    width: 100%;
+    display: block;
+  }
+  /* line 40, ../sass/partials/elements/header/_length-two.scss */
+  header nav li a {
+    display: table-cell;
+  }
+  /* line 43, ../sass/partials/elements/header/_length-two.scss */
+  header nav li ul {
+    left: -100%;
+  }
+  /* line 45, ../sass/partials/elements/header/_length-two.scss */
+  header nav li ul + a:after {
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: calc(100% + 0.2rem);
+  }
+  /* line 57, ../sass/partials/elements/header/_length-two.scss */
+  header nav li:hover {
+    left: 100%;
+  }
+  /* line 59, ../sass/partials/elements/header/_length-two.scss */
+  header nav li:hover a:after {
+    left: calc(100% + 1.2rem);
+    border-top: 0.75rem solid #cc797e;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+/* logo left half, menu right half*/
+@media all and (min-width: 128px) and (max-width: 256px) {
+  /*Styles for devices from 128-256px wide*/
+  /* line 2, ../sass/partials/elements/header/_length-one.scss */
+  header {
+    height: 5rem;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    border: 1px solid;
+    border-color: #9a151d #6e0f15 #6e0f15 #9a151d;
+  }
+  /* line 6, ../sass/partials/elements/header/_length-one.scss */
+  header h1 {
+    position: absolute;
+    left: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  /* line 12, ../sass/partials/elements/header/_length-one.scss */
+  header section.user {
+    box-sizing: content-box;
+    right: -2px;
+  }
+  /* line 17, ../sass/partials/elements/header/_length-one.scss */
+  header nav > ul {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    border: 1px solid;
+    border-color: #d38b90 #c5676c #c5676c #d38b90;
+  }
+  /* line 19, ../sass/partials/elements/header/_length-one.scss */
+  header nav > ul div + li {
+    border-top: 1px solid #de8489;
+  }
+  /* line 22, ../sass/partials/elements/header/_length-one.scss */
+  header nav > ul li {
+    text-align: left;
+    float: left;
+    width: 100%;
+    display: block;
+  }
+  /* line 27, ../sass/partials/elements/header/_length-one.scss */
+  header nav > ul li a {
+    display: table-cell;
+  }
+  /* line 30, ../sass/partials/elements/header/_length-one.scss */
+  header nav > ul li ul {
+    left: -100%;
+  }
+  /* line 32, ../sass/partials/elements/header/_length-one.scss */
+  header nav > ul li ul + a:after {
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: calc(100% + 0.2rem);
+  }
+  /* line 45, ../sass/partials/elements/header/_length-one.scss */
+  header nav > ul li:hover ul {
+    left: 100%;
+  }
+  /* line 48, ../sass/partials/elements/header/_length-one.scss */
+  header nav > ul li:hover a:after {
+    left: calc(100% + 1.2rem);
+    border-top: 0.75rem solid #cc797e;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
 }
 /* line 1, ../sass/partials/elements/_meter.scss */
@@ -2507,8 +2626,8 @@ ul.blog li {
 code {
   font-family: 'Source Code Pro', monospace;
   letter-spacing: -1px;
-  color: white;
-  background-color: #005a80;
+  color: #f08f95;
+  background-color: #700f15;
   padding: 0 0.2rem;
   line-height: 1rem;
 }
@@ -2522,8 +2641,8 @@ p > code {
 
 /* line 1, ../sass/partials/elements/_pre.scss */
 pre {
-  color: white;
-  background-color: #005a80;
+  color: #f08f95;
+  background-color: #700f15;
   padding: 1rem;
 }
 
@@ -2636,8 +2755,8 @@ fieldset {
 
 /* line 1, ../sass/partials/elements/forms/_input.scss */
 input, input[type="text"], input[type="range"], input[type="email"], input[type="search"], input[type="url"], input[type="password"], input[type="tel"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"] {
-  background-color: white;
-  color: #005a80;
+  background-color: #cc797e;
+  color: #700f15;
   height: 1.5rem;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -2659,7 +2778,7 @@ input[type="color"] {
 /* line 17, ../sass/partials/elements/forms/_input.scss */
 select {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
-  border-color: white;
+  border-color: #f08f95;
 }
 
 /* line 21, ../sass/partials/elements/forms/_input.scss */
@@ -2890,39 +3009,39 @@ header {
 }
 /* line 3, ../sass/partials/_z-index.scss */
 header img.logo {
-  z-index: 101;
-}
-/* line 4, ../sass/partials/_z-index.scss */
-header h1 {
-  z-index: 102;
+  z-index: 110;
 }
 /* line 5, ../sass/partials/_z-index.scss */
+header h1 {
+  z-index: 110;
+}
+/* line 7, ../sass/partials/_z-index.scss */
 header address {
-  z-index: 103;
+  z-index: 110;
 }
-/* line 8, ../sass/partials/_z-index.scss */
-header section.user {
-  z-index: 104;
+/* line 9, ../sass/partials/_z-index.scss */
+header section {
+  z-index: 110;
 }
-/* line 10, ../sass/partials/_z-index.scss */
-header section.user a {
-  z-index: 105;
-}
-/* line 12, ../sass/partials/_z-index.scss */
-header section.search {
-  z-index: 106;
-}
-/* line 14, ../sass/partials/_z-index.scss */
+/* line 17, ../sass/partials/_z-index.scss */
 header .slide-toggle {
-  z-index: 102;
+  z-index: 120;
+}
+/* line 18, ../sass/partials/_z-index.scss */
+header nav {
+  z-index: 110;
+}
+/* line 22, ../sass/partials/_z-index.scss */
+header nav ul li ul {
+  z-index: -999;
 }
 
-/* line 19, ../sass/partials/_z-index.scss */
+/* line 32, ../sass/partials/_z-index.scss */
 main {
   z-index: 0;
 }
 
-/* line 22, ../sass/partials/_z-index.scss */
+/* line 35, ../sass/partials/_z-index.scss */
 footer {
   z-index: -100;
 }
@@ -2932,5 +3051,5 @@ footer {
 * body, header{background-image: url(../bg.png);}
 nav ul{background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2P4//8/AxI2RuGAaBQOTADOAWEAjAwwnWPnCWYAAAAASUVORK5CYII=);}/*http://purelycss.com/data-uri-tileable-transparent-patterns/#*/
 /*
-@import url("http://basehold.it/16/0/39/189");
+@import url("http://basehold.it/16/99/13/18");
 */

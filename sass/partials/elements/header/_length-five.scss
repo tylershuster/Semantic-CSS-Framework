@@ -2,7 +2,7 @@
 header{
 	height: 5rem;
 	@include column(5,5);
-	@include box-shadow;
+	@include box-shadow($color-primary);
 	.logo{
 		position: relative;
 		left: 0.75rem;
@@ -17,6 +17,8 @@ header{
 
 		}
 		&.user{
+			box-sizing: content-box;
+			right: -2px;
 			a{}
 		}
 		&.search{}
@@ -24,16 +26,22 @@ header{
 	nav{
 		height: 100%;
 		width: 38%;
-		ul{	}
+		>ul{			
+			@include box-shadow($color-drawer);
+			div + li{
+				border-top: 1px solid mix($color-background,$color-drawer);
+			}
+		}
 		li{
 			text-align: left;
 			float: left;
 			width: 100%;
+			display: block;	
 			a{
 				display: table-cell;	
 			}
 			ul{
-				left: -9999px;	
+				left: -100%;
 				& + a:after{					
 					bottom: 0;
 					top: 0;
@@ -48,11 +56,8 @@ header{
 			}
 			&:hover{
 				ul{
-					margin: auto;
 					left: 100%;
-					top: 0;
-					bottom: 0;
-				}
+				}			
 				a:after{
 					left: calc(100% + 1.2rem);				
 					border-top: 0.75rem solid $color-drawer;

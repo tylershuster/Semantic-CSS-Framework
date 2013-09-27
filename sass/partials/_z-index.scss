@@ -1,18 +1,31 @@
 header{
 	z-index: 100;
-	img.logo{z-index: 101;}
-	h1{z-index: 102;}
-	address{z-index: 103;}
+	img.logo{
+		z-index: 110;}
+	h1{
+		z-index: 110;}
+	address{
+		z-index: 110;}
 	section{
+		z-index: 110;
 		&.masthead{	}
 		&.user{
-			z-index: 104;
-			a{z-index: 105;}
+			a{}
 		}
-		&.search{z-index: 106;}
+		&.search{}
 	}
-	.slide-toggle{z-index:102;}
-	nav{	}
+	.slide-toggle{z-index: 120;}
+	nav{
+		z-index: 110;
+		ul{
+			li{
+				ul{
+					z-index: -999;
+				}
+			}
+		}
+
+	}
 }
 
 

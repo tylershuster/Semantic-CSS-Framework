@@ -1,40 +1,19 @@
-@mixin box-shadow{
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);	
+@mixin box-shadow($on-background){
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+	border: 1px solid;
+	border-color: lighten($on-background,5%) darken($on-background,5%) darken($on-background,5%) lighten($on-background,5%);
 }
 @mixin text-shadow{
 	/*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
 }
 
-@mixin key($key){
-	@if $key == a {
-		html { font-size: 75%;}
-		$font-base: 12;
-	}
-	@else if $key == b {
-		html { font-size: 87.5%;}
-		$font-base: 14;
-	}
-	@else if $key == c {
-		html { font-size: 100%;}
-		$font-base: 16;
-	}
-	@else if $key == d {
-		html { font-size: 112.5%;}
-		$font-base: 18;
-	}
-	@else if $key == e {
-		html { font-size: 125%;}
-		$font-base: 20;
-	}
-	@else if $key == f {
-		html { font-size: 137.5%;}
-		$font-base: 22;
-	}
-	@else if $key == g {
-		html { font-size: 150%;}
-		$font-base: 24;
-	}
+@mixin transition{
+	transition: all $transition-length ease-in-out;
+	-moz-transition: all $transition-length ease-in-out;
+	-webkit-transition: all $transition-length ease-in-out;
 }
+
+
 /*
 @if $quality ==  maj{}
 @else if $quality ==  dim{}

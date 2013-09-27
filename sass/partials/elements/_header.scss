@@ -1,31 +1,37 @@
 @import "header/address";
 @import "header/common";
 
-/* logo left half, menu right half*/
-@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
-	@import "header/length-one";
-}
 
-@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
-	@import "header/length-two";
-}
-/*mobile menu swipe from left*/
-@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-five * 1px}){
-	@import "header/length-three";
-}
 
-@media all and (min-width:#{$length-five * 1px}) and (max-width:#{$length-eight * 1px}){
-	@import "header/length-five";
-}
-/*desktop nav*/
-@media all and (min-width:#{$length-eight * 1px}) and (max-width:#{$length-thirteen * 1px}){
-	main{margin-top:#{$header-height + $nav-height};}
-	@import "header/length-eight";
-}
+
+
+
 
 @media all and (min-width:#{$length-thirteen * 1px}){
 	main{margin-top:#{$header-height + $nav-height};}
 	@import "header/length-thirteen";
 }
 
+/*desktop nav*/
+@media all and (min-width:#{$length-eight * 1px}) and (max-width:#{$length-thirteen * 1px}){
+	main{margin-top:#{$header-height + $nav-height};}
+	@import "header/length-eight";
+}
 
+@media all and (min-width:#{$length-five * 1px}) and (max-width:#{$length-eight * 1px}){
+	@import "header/length-five";
+}
+
+/*mobile menu swipe from left*/
+@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-five * 1px}){
+	@import "header/length-three";
+}
+
+@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+	@import "header/length-two";
+}
+
+/* logo left half, menu right half*/
+@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+	@import "header/length-one";
+}

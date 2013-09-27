@@ -1,4 +1,66 @@
-@include key(#{$key});
+@if $key == a {	
+	@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+		html {font-size: 75%;}}
+	@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+		html {font-size: 62.5%;}}	
+	@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+		html {font-size: 50%;}}
+	$font-base: 12;
+}
+@else if $key == b {
+	@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+		html {font-size: 87.5%;}}
+	@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+		html {font-size: 75%;}}	
+	@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+		html {font-size: 62.5%;}}	
+	$font-base: 14;
+}
+@else if $key == c {
+	@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+		html {font-size: 100%;}}
+	@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+		html {font-size: 87.5%;}}	
+	@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+		html {font-size: 75%;}}	
+	$font-base: 16;
+}
+@else if $key == d {
+	@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+		html {font-size: 112.5%;}}
+	@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+		html {font-size: 100%;}}	
+	@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+		html {font-size: 87.5%;}}
+	$font-base: 18;
+}
+@else if $key == e {
+	@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+		html {font-size: 125%;}}
+	@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+		html {font-size: 112.5%;}}	
+	@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+		html {font-size: 100%;}}	
+	$font-base: 20;
+}
+@else if $key == f {
+	@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+		html {font-size: 137.5%;}}
+	@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+		html {font-size: 125%;}}	
+	@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+		html {font-size: 112.5%;}}	
+	$font-base: 22;
+}
+@else if $key == g {
+	@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+		html {font-size: 150%;}}
+	@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+		html {font-size: 137.5%;}}	
+	@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+		html {font-size: 125%;}}
+	$font-base: 24;
+}
 small{
 	color: mix($color-text, $color-background);
 	font-size: typography(small,font-size) * 1rem;

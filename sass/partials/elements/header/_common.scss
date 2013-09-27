@@ -1,5 +1,5 @@
 header{
-	background-color: $color-primary;
+	background-color: $color-primary;	
 	height: #{$header-height + $nav-height};//only on larger screens. move inside mq
 	position: fixed;
 	top: 0;
@@ -38,7 +38,7 @@ header{
 			//margin-right: 1rem;
 			height: #{$nav-height};
 			display: table;
-			@include box-shadow;
+			@include box-shadow($color-drawer);
 			position: absolute;
 			right: 0;
 			top: 0;
@@ -97,24 +97,33 @@ header{
 			list-style: none;
 			display: table;
 			table-layout: fixed;
-			@include box-shadow;
-			li{
-				display: table-cell;					
+			box-sizing: content-box;
+			>div{
+				display:none;
+			}
+			>div + li{
+				
+			}
+			li{		
+				box-sizing: border-box;										
 				table-layout: fixed;	
 				vertical-align: middle;	
 				position: relative;
 				> a{									
-					text-decoration: none;							
+					text-decoration: none;
+												
 				}
 				ul{
 					background-color: $color-drawer;
 					display: table;
 					position: absolute;
 					padding: 0;
-					@include box-shadow;
-					transition: all $transition-length ease-in-out;
-					-moz-transition: all $transition-length ease-in-out;
-					-webkit-transition: all $transition-length ease-in-out;
+					@include box-shadow($color-drawer);
+					@include transition;
+					li{
+						margin-bottom: -100%;
+						@include transition;
+					}
 					& + a{
 						position: relative;
 					}
@@ -127,9 +136,7 @@ header{
 						border-top: #{$nav-height / 4} solid $color-primary; 
 						border-left: #{$nav-height / 8} solid transparent; 
 						border-right: #{$nav-height / 8} solid transparent;
-						transition: all $transition-length ease-in-out;
-						-moz-transition: all $transition-length ease-in-out;
-						-webkit-transition: all $transition-length ease-in-out;				
+						@include transition;				
 					}								
 					li{
 						display: table;					
@@ -142,6 +149,12 @@ header{
 				}
 				&:hover{
 					background-color: $color-primary;
+					border: none;
+					>ul{
+						li{
+							margin-bottom: 0;
+						}
+					}
 					>a, >a:hover{
 						color: $color-background;
 					}					
@@ -236,7 +249,7 @@ header{
 					-webkit-appearance: none;
 					margin-top: 1rem;
 					float:right;
-					-webkit-transition: all $transition-length ease-in-out;
+					@include transition;
 					display:block;
 					position:relative;
 					outline:none;
@@ -298,11 +311,11 @@ header{
 			-moz-perspective: 1000;
 			-webkit-backface-visibility: hidden;
 			-moz-backface-visibility: hidden;
-			-webkit-transform: translateX(-100%);
-			-moz-transform: translateX(-100%);
-			-ms-transform: translateX(-100%);
-			-o-transform: translateX(-100%);
-			transform: translateX(-100%);
+			-webkit-transform: translateX(-101%);
+			-moz-transform: translateX(-101%);
+			-ms-transform: translateX(-101%);
+			-o-transform: translateX(-101%);
+			transform: translateX(-101%);
 		}
 	}
 	.slide-checkbox:checked ~ nav {

@@ -32,13 +32,22 @@ header{
 	}
 	nav{
 		@include column(13,13);
-		ul{	}
+		>ul{		
+			@include box-shadow($color-drawer);	
+			>div + li{
+				border-left: 1px solid mix($color-background,$color-drawer);
+			}
+		}
 		li{
 			float: none;
 			text-align: center;
+			display: table-cell;
 			> a{ }
-			ul{
-				top: -9999px;
+			>ul{
+				top: 50%;				
+				div + li{
+					border-top: 1px solid mix($color-background,$color-drawer);
+				}
 				& + a:after{
 					bottom: 0;
 					top: 0;
@@ -46,10 +55,10 @@ header{
 					left: calc(100% + 0.2rem);
 				}
 			}
-			&:hover{
-				>ul{
-					top: $nav-height;
-				}
+			&:hover{	
+				ul{
+					top: 100%;
+				}			
 				a:after{
 					border-top: 0.75rem solid $color-drawer;
 				}
