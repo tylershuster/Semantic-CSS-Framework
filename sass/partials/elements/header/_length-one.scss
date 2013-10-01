@@ -3,8 +3,13 @@ header{
 	height: $header-height;
 	@include column(1,1);
 	@include box-shadow($color-primary);
+	address{
+		a, a:before{
+			color: $color-primary;
+		}
+	}
 	section.masthead{
-		margin-left: #{$nav-height + 1rem};
+		margin-left: #{$nav-height + 1.5rem};
 	}
 	section.user{
 		box-sizing: content-box;
@@ -21,9 +26,7 @@ header{
 				float: left;
 				width: 100%;
 				display: block;	
-				a{
-					display: table-cell;
-				}
+				
 				ul{
 					left: -100%;	
 					& + a:after{					

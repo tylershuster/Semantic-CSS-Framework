@@ -23,11 +23,12 @@ header{
 		white-space: nowrap;
 	}
 	.logo + h1{
-		margin-left: #{$nav-height + 1rem};
+		margin-left: #{$nav-height + 1.5rem};
 	}
 	address{
 		height: #{$nav-height};
-		a{
+		a, a:before{
+			color: $color-background;
 			text-decoration: none;
 		}
 	}
@@ -122,7 +123,8 @@ header{
 				position: relative;
 				> a{									
 					text-decoration: none;
-												
+					width: 100%;
+					display: block;												
 				}
 				ul{
 					background-color: $color-drawer;

@@ -22,6 +22,7 @@
 					<a href="https://plus.google.com/104346126731383465661"></a>
 			</address>
 			<ul>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="semantics.html">Semantics</a></li>
 					<li><a href="typography.html">Typography</a></li>
 					<li><a href="header.html">Header</a></li>
@@ -41,12 +42,11 @@
 	<main>
 		<section class="hero">
 			<h1>The Semantic CSS Framework</h1>
-			<h2>99% Classless, 100% Semantic</h2>
-			<p>The Semantic CSS Framework is a response to current web design trends, namely:</p>
+			<h2>99% Classless, 100% Semantic</h2>			
 			<ul>
 				<li>Semantics</li>
 				<li>Flat Design</li>
-				<li>A Focus on Typography</li>
+				<li>Meaningful Typography</li>
 			</ul>
 			<a href="https://github.com/herrshuster/Semantic-CSS-Framework">GitHub Link</a>
 		</section>
@@ -55,7 +55,7 @@
 		<section class="hero">
 			<article>
 				<h2>The Problem</h2>
-				<p>With the advent of CSS frameworks as a standard contention in the web industry, there has been an explosion of classism. That is to say, markup on the web is littered with classes like "col-12-3," "tiny button," and others. These classes are usually hooks into the applied CSS framework, like Foundation, Bootstrap, or Gumby. This makes it very easy for web developers to quickly prototype designs without having to go through and build each element.</p>
+				<p>With the advent of CSS frameworks as a standard contention in the web industry, there has been an explosion of classism. That is to say, markup on the web is littered with classes like <code>col-12-3</code>, <code>tiny button</code>, and others. These classes are usually hooks into the applied CSS framework, like Foundation, Bootstrap, or Gumby. This makes it very easy for web developers to quickly prototype designs without having to go through and build each element.</p>
 				<p>However, this ruins the semantics of the web <a href="semantics.html">(Read More Here)</a>The Semantic CSS Framework tries to put that right. The entire codebase uses semantic selectors to style as many elements as conceivable. Its philosophy maintains that if a pattern appears unique to a user, there is a way to define that pattern in CSS with as few classes as possible.</p>
 			</article>			
 		</section>
@@ -67,23 +67,14 @@
 			
 			
 			<h3><small>Design Patterns</small></h3>
-			<p>The answer to this problem is design patterns. Users will never see "button class="tiny round"," or "figure class="carousel"," but they will see a button at the end of a contact form, and they will see an image carousel. The markup for each distinct visual element will usually follow a unique pattern. For instance, a "figure > ol > li x 10 > img" is inherently a slideshow. There is no other conceivable visual element that will be a series of ordered images inside a figure. Therefore, why use classes? They can be helpful for rapid prototyping, but serve no purpose in deployment.</p>
-			<p>The Semantic CSS Framework is based on these design patterns. Its philosophy is that 99% of all conceivable elements can be selected in CSS using these design patterns. There are a number of classes, but they are semantic. By this I mean that any class names not only describe the visual appearance of the element, but also its function &amp; content. For instance, "row" is a fairly semantic class name IF it is only used to describe a group of elements whose width is 100%. "section.colophon" is also semantic, as there is no colophon element, but colophons are to be displayed differently than other footer text. "article > aside.author" behaves in a similar fashion.</p>
+			<p>The answer to this problem is design patterns. Users will never see <code>button class="tiny round"</code>," or <code>figure class="carousel"</code>, but they will see a button at the end of a contact form, and they will see an image carousel. The markup for each distinct visual element will usually follow a unique pattern. For instance, a <code>figure > ol > li x 10 > img</code> is inherently a slideshow. There is no other conceivable visual element that will be a series of ordered images inside a figure. Therefore, why use classes? They can be helpful for rapid prototyping, but serve no purpose in deployment.</p>
+			<p>The Semantic CSS Framework is based on these design patterns. Its philosophy is that 99% of all conceivable elements can be selected in CSS using these design patterns. There are a number of classes, but they are semantic. By this I mean that any class names not only describe the visual appearance of the element, but also its function &amp; content. For instance, "row" is a fairly semantic class name IF it is only used to describe a group of elements whose width is 100%. <code>section.colophon</code> is also semantic, as there is no colophon element, but colophons are to be displayed differently than other footer text. <code>article > aside.author</code> behaves in a similar fashion.</p>
 			<h4>Further Reading:</h4>
 			<ul>
 				<li><a href="http://css-tricks.com/semantic-class-names/">Semantic Class Names</a> - CSS Tricks</li>
 				<li><a href="http://coding.smashingmagazine.com/2013/08/20/semantic-css-with-intelligent-selectors/">Semantic CSS With Intelligent Selectors</a> - Smashing Magazine</li>
 			</ul>	
-			<h3>Musical Typography</h3>
-			<p>One of the aims of modern web design is for <a href="http://alistapart.com/article/more-meaningful-typography">more meaningful typography</a>. However, designing with modular scales has its limitations.</p>
-			<p>First, it's predictable. Using the golden ratio to set typographic ratios is a time-tested tradition, but it results in web pages with a very familiar feel. While this may be optimal at times, what are we to do when we want to set a page's type with a different mood? Fortunately, there is already a set of ratios that is used to established moods. It's the musical scale.</p>
-			<p>The musical scale has two components: key and quality. The key of a musical scale determines the root note. Its quality defines the specific ratios that can be used to produce notes. We have similar typographic conventions. The rem unit is calculated from the "Root EleMent" font-size, and the quality can be seen as the ratios of h1-h6. The Semantic CSS framework converts established musical ratios based on these conventions.</p>
-			<aside>This is not the first time this has been done. See the excellent <a href="http://24ways.org/2011/composing-the-new-canon/">Composing the New Canon</a> for a more detailed exploration.</aside>
-			<p>It does this through the use of SASS. When compiling the stylesheet, typographic ratios are calculated based on the ratio between notes in the chosen quality, for example domsharp9. The key sets the root element size, with C being 100%. See <a href="elements.html#typography">typography</a> for more.</p>
-			<h4>Further Reading:</h4>
-			<ul>
-				<li><a href="http://viljamis.com/blog/2012/typography/">On Typography</a> - Viljami Salminen</li>
-			</ul>
+			
 
 
 
