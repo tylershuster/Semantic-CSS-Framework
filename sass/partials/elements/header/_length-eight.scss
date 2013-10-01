@@ -1,13 +1,13 @@
 /*header styles on devices from 1024px-1664px*/
 header{
 	@include column(8,8);
-	/*multiple headers get styled into tabs. See foxnews for example*/
-	.logo{margin-left: 0.75rem;/*site logo*/}
+	/*multiple headers get styled into tabs. See foxnews for example*/	
 	h1{/*site tite*/}
 	address{/*address info*/}
 
 	section{
 		&.masthead{
+			margin-left: 1rem;
 			@include column(4,8);
 			/*masthead is centered on page*/
 			.logo{/*site logo*/}

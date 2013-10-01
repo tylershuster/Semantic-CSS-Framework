@@ -1,8 +1,15 @@
-ul.blog{
-	list-style: none;
-	padding:0;
-	h1 a{text-decoration: none;}
-	li{
-		margin-bottom: 1rem;
+ul{
+	list-style-position:inside;
+	padding: 0;
+	article &{
+		list-style-position:outside;
+	}
+	.blog{
+		list-style: none;
+		padding:0;
+		h1 a{text-decoration: none;}
+		li{
+			margin-bottom: 1rem;
+		}
 	}
 }

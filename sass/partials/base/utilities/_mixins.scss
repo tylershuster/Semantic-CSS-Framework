@@ -1,20 +1,67 @@
 @mixin box-shadow($on-background){
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
 	@if $skeu == faux-flat{
 		border: 1px solid;
-		border-color: lighten($on-background,5%) darken($on-background,5%) darken($on-background,5%) lighten($on-background,5%);
+		@if $tone == black{
+			box-shadow: none;
+		}
+		@else{
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+		}
+		@if $tone == white{
+			border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);
+		}
+		@else{
+			border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);
+		}
+	}
+	@else if $skeu == cartoon{
+		border: 2px solid;
+		border-color: tint($on-background,15%) shade($on-background,15%) shade($on-background,15%) tint($on-background,15%);
+		box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.85);
 	}
 }
 
-@mixin box-shadow-inset($on-background){
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
+@mixin box-shadow-inset($on-background){	
 	@if $skeu == faux-flat{
 		border: 1px solid;
-		border-color: darken($on-background,5%) lighten($on-background,5%) lighten($on-background,5%) darken($on-background,5%);
+		@if $tone == white{
+			border-color: shade($on-background,15%) set-lightness($on-background,85%) set-lightness($on-background,85%) shade($on-background,15%);
+		}
+		@else{
+			border-color: shade($on-background,5%) tint($on-background,5%) tint($on-background,5%) shade($on-background,5%);
+		}
+		@if $tone == black{
+			box-shadow: none;
+		}
+		@else{
+			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
+		}
+	}
+	@else if $skeu == cartoon{
+		border: 2px solid;
+		border-color: shade($on-background,15%) tint($on-background,15%) tint($on-background,15%) shade($on-background,15%);
+		box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.85) inset;
 	}
 }
 @mixin text-shadow{
-	/*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
+	@if $skeu == faux-flat{
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.62);
+	}
+	@else if $skeu == cartoon{
+		text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.85);
+	}
+}
+@mixin text-shadow-inset{
+	@if $skeu == faux-flat{
+		text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.62);
+  	}
+    @else if $skeu == cartoon{
+    	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.85);
+    }
+   	-webkit-background-clip: text;
+   	-moz-background-clip: text;
+       	 background-clip: text;
+  
 }
 
 @mixin transition{

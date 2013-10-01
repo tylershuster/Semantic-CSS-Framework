@@ -3,11 +3,13 @@ header{
 	height: $header-height;
 	@include column(1,1);
 	@include box-shadow($color-primary);
-	h1{
-		position: absolute;
-		left: 3rem;
-		white-space: nowrap;
-		overflow: hidden;
+	address{
+		a, a:before{
+			color: $color-primary;
+		}
+	}
+	section.masthead{
+		margin-left: #{$nav-height + 1.5rem};
 	}
 	section.user{
 		box-sizing: content-box;
@@ -24,9 +26,7 @@ header{
 				float: left;
 				width: 100%;
 				display: block;	
-				a{
-					display: table-cell;
-				}
+				
 				ul{
 					left: -100%;	
 					& + a:after{					
@@ -41,10 +41,7 @@ header{
 						}
 					}
 				}
-				&:hover{
-					ul{
-						left: 100%;
-					}				
+				&:hover{								
 					a:after{
 						left: calc(100% + 1.2rem);				
 						border-top: 0.75rem solid $color-drawer;
@@ -54,6 +51,11 @@ header{
 						-ms-transform: rotate(-90deg);
 						transform: rotate(-90deg);
 					}
+					ul{
+						left: 0;
+						z-index: 999;
+						width: 110%;
+					}	
 				}
 			}
 		}

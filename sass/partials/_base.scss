@@ -1,9 +1,19 @@
+html{
+	height: 100%;
+}
+body{
+	@media all and (min-width:0px) and (max-width:#{$length-eight * 1px}){
+		height: calc(100% - #{$header-height});
+	}
+	height: calc(100% - #{$header-height + $nav-height});
+}
 main{
+	height: 100%;
 	margin-top: $header-height;
 	/*padding:0 1rem;*/
 	margin-left: auto;
 	margin-right: auto;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 [data-background-image*="http"]{

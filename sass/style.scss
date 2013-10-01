@@ -12,7 +12,45 @@ $quality: domsharp9;				//Specify the quality of your piece. Pick something that
 
 $sans: Open Sans;
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg'),
+         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
 
 $serif: Gentium Basic;
 
@@ -28,16 +66,16 @@ $heading-font: $sans;
 // Color
 //////////////////////////////
 
-$color: #841219;				//Specify your page's primary color (#0086BD)
+$color: #2093A2;				//Specify your page's primary color (#0086BD)
 
-$scheme: analogic;			//Specify the relationship of colors on the page (mono)
+$scheme: triad;			//Specify the relationship of colors on the page (mono)
 //mono(broken), complement, triad, tetrad, analogic, accented-analogic
 
 $tone: light !default;			//Specify background color: white, light, dark, or black (white)
 
 $icons: no;					//Specify whether or not to use icons;
 
-$skeu: faux-flat;
+$skeu: flat;
 
 /*Set in the key of #{$key} #{$quality}. #{$scheme} color scheme based on #{$color} with a #{$tone} background.*/
 

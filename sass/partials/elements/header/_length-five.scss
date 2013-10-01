@@ -3,18 +3,14 @@ header{
 	height: 5rem;
 	@include column(5,5);
 	@include box-shadow($color-primary);
-	.logo{
-		position: relative;
-		left: 0.75rem;
+	address{
+		a, a:before{
+			color: $color-primary;
+		}
 	}
-	h1{
-		position: relative;
-		left: 0.75rem;
-	}
-	address{}
 	section{
 		&.masthead{
-
+			margin-left: #{$nav-height + 1.5rem};
 		}
 		&.user{
 			box-sizing: content-box;
@@ -37,9 +33,7 @@ header{
 			float: left;
 			width: 100%;
 			display: block;	
-			a{
-				display: table-cell;	
-			}
+			
 			ul{
 				left: -100%;
 				& + a:after{					

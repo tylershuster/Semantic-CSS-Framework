@@ -6,6 +6,12 @@ aside{
 	position: relative;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	color: mix($color-text, $color-background);
+	font-size: typography(small,font-size) * 1rem;
+	line-height: typography(small,line-height) * 1rem;
+	padding-top: typography(small,padding-top) * 1rem;
+	padding-bottom: typography(small,padding-bottom) * 1rem;
+	font-family: '#{$heading-font}';
 	h1,h2,h3,h4,h5{
 		@include text-shadow;
 		font-size: typography(h4,font-size) * 1rem;
