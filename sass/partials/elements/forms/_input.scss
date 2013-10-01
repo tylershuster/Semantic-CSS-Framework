@@ -1,47 +1,155 @@
-input,input[type="text"],input[type="range"],input[type="email"],input[type="search"],input[type="url"],input[type="password"],input[type="tel"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"]{
-	background-color: $color-drawer;
-	color: $color-text;
+input{
 	height: 1.5rem;
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-	border: 0;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
-	width: 100%;
-}
-input:not([type]){
-	padding: 0;
-}
-input[type="color"]{
-	padding: 1px 0;
-}
-select{
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
-	border-color: $color-background;
-}
-input[type="radio"]{
-	height: 1rem;
-	box-shadow: none;
-	width: auto;
-	&:after{
-		content: attr(name);
-		display: block;
-		position: relative;
-		left: 1rem;
+	&[type="text"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+		&:disabled{
+			background-color: $color-background;
+			color: $color-drawer;
+		}
+	}
+	&[type="range"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="email"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="search"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="url"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="password"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="tel"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="date"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="month"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="week"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="time"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="datetime"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&[type="number"]{
+		background-color: $color-drawer;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-background);
+	}
+	&:not([type]){
+		padding: 0;
+	}
+	&[type="color"]{
+		padding: 1px 0;
+	}
+	&[type="radio"]{
+		height: 1rem;
+		box-shadow: none;
+		width: auto;
+		&:after{
+			content: attr(name);
+			display: block;
+			position: relative;
+			left: 1rem;
+		}
+	}
+	&[type="checkbox"]{
+		padding: 0;
+		margin: 0;
+		height: 1rem;
+		border:0;
+		box-shadow: none;
+	}
+
+
+	&[type="submit"]{
+		border-radius: 3px;
 	}
 }
 
-input[type="checkbox"]{
-	padding: 0;
-	margin: 0;
-	height: 1rem;
-	border:0;
-	box-shadow: none;
+
+select{
+	background-color: $color-drawer;
+	@include box-shadow-inset($color-background);	
+	&:focus{
+		outline: none;
+	}
 }
 
 
-input[type="search"], input[type="submit"]{
-	border-radius: 3px;
-}
+
 output{
 	font-size: typography(p,font-size) * 1rem;
 	line-height: typography(p,line-height) * 1rem;
@@ -63,5 +171,55 @@ label{
 textarea{
 	padding: 1rem 0 0 0.62rem;
 	border: 0;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
+	color: $color-text;
+	background-color: $color-drawer;
+	@include box-shadow-inset($color-background);
+	&:disabled{
+		background-color: $color-background;
+		color: $color-drawer;
+	}
+}
+
+::-webkit-scrollbar              { width: 1rem; }
+::-webkit-scrollbar-button       {  }
+::-webkit-scrollbar-track        { background-color: $color-drawer;@include box-shadow-inset($color-drawer); }
+::-webkit-scrollbar-track-piece  { /* 4 */ }
+::-webkit-scrollbar-thumb        { background-color: $color-primary;@include box-shadow($color-primary); }
+::-webkit-scrollbar-corner       { /* 6 */ }
+::-webkit-resizer                { /* 7 */ }
+
+::-webkit-inner-spin-button{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+::-webkit-slider-thumb{
+	-webkit-appearance: none;	
+	background-color: $color-text;
+	@include box-shadow($color-primary);
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+}
+
+::-webkit-media-controls-play-button{
+	-webkit-appearance: none;
+	height: 0;
+	width: 0;
+	border-top: 0.5rem solid transparent;
+	border-left: 1rem solid $color-text;
+	border-bottom: 0.5rem solid transparent;
+}
+
+::-webkit-media-controls-panel{
+	background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), 0.8);
+}
+
+::-webkit-media-slider-container{
+	border: none;
+	background-color: $color-drawer;
+}
+
+::-webkit-media-controls-current-time-display{
+	color: $color-text;
 }

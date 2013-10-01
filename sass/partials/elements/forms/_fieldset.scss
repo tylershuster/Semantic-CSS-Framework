@@ -3,9 +3,22 @@ fieldset{
 	/*(border: 1px solid $color-accent;*/
 	border: none;
 	margin: 0;
-	padding: 0;
-	legend{
+	padding: 1rem;
+	@include box-shadow($color-background);
+	>fieldset{
+		padding:0 0 1rem 0;
+		box-shadow: none;
+		border: none;
+		>fieldset{
 
+		}
+	}
+	>form{
+		width: 100%;
+	}
+	legend{
+		font-size: typography(h5,font-size) * 1rem;
+		line-height: typography(h5,line-height) * 1rem;
 	}
 	&.login{
 		input[type="text"]{

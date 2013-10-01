@@ -1,10 +1,66 @@
+@media all and (min-width:#{$length-eight * 1px}){
+	.row{
+		display: flex;		
+		>*{
+			display: flex;
+			flex-grow: 1;
+			min-width: 25%;
+		}
+		>.row{
+			max-width: 50%;
+		}
+		>.two{
+			flex-grow: 2;
+		}
+		>.three{
+			flex-grow: 3;
+		}
+		>.four{
+			flex-grow: 4;
+		}
+	}
+}
+@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-eight * 1px}){
+	.row{
+		display: flex;
+		>*{
+			display: flex;
+			flex-grow: 1;
+			min-width: 50%;
+		}
+		>.row{
+			display: block;
+			width: 100%;
+		}
+	}
+}
+@media all and (min-width: 0px) and (max-width:#{$length-three * 1px}){
+	.row{
+		display: block;
+		>*{
+			display: block;
+		}
+	}
 
+}
+.row{
+	width: 100%;
+	flex-wrap: wrap;
+	@include clearfix;
+}
+.column{
+	padding: 0 0.5rem;
+}
+/*
 .row{
 	width: 100%;	
 	padding: 0;
 	margin: 0 auto;
 	display: table;
 	table-layout: fixed;
+	>.row{
+		width: 50%;
+	}
 	> div, >li{
 		display: block;		
 		table-layout: fixed;	
@@ -15,6 +71,7 @@
 		}
 		> *{
 			display: block;
+			display: flex;
 			width: 100%;
 		}
 		> .row{
@@ -33,11 +90,22 @@ div.four{
 	width: 200%;
 }
 
+@media all and (min-width: 0px) and (max-width:#{$length-three * 1px}){
+	.row{
+		> div, >li{
+			> *{display:block;}
+		}
+	}
+}
+
 @media all and (min-width: 0px) and (max-width:#{$length-five * 1px}){
 	div.two, div.three, div.four{width:100%}
 	.row{
 		display: block;
-		> div, >li{
+		>.row{
+			width: 100%;
+		}
+		> div, >li{			
 			width: 100%;
 		}
 	}
@@ -48,6 +116,9 @@ div.four{
 		width: 50%;
 	}
 	.row{
+		>.row{
+			width: 50%;
+		}
 		> div{
 			float:left;	
 			.row{
@@ -76,3 +147,4 @@ div.four{
 		}
 	}
 }
+*/

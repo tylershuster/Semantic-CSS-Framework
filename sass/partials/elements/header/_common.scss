@@ -71,7 +71,7 @@ header{
 				input[type="search"]{
 					height: 1.5rem;
 					margin-top: 0.25rem;
-					border: 0;
+					@include box-shadow-inset($color-primary);				
 				}
 				input[type="submit"]{
 					height: 1.5rem;

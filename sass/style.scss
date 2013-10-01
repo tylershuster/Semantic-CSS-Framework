@@ -37,6 +37,8 @@ $tone: light !default;			//Specify background color: white, light, dark, or blac
 
 $icons: no;					//Specify whether or not to use icons;
 
+$skeu: faux-flat;
+
 /*Set in the key of #{$key} #{$quality}. #{$scheme} color scheme based on #{$color} with a #{$tone} background.*/
 
 //////////////////////////////
@@ -137,3 +139,8 @@ $grid-blue: blue($color-accent);
 @import url("http://basehold.it/#{$font-base}/#{$grid-red}/#{$grid-green}/#{$grid-blue}");
 */
 
+@media print {
+  a[href]:after {
+    content: " (" attr(href) ") ";
+  }
+}

@@ -287,47 +287,57 @@
 </div>
 
 <div class="row">
-  <div class="column">
-     <form class="">
-       <label>Email input</label>
-       <input type="email">
-     </form>
+  <div class="row">
+    <div class="column">
+       <form class="">
+         <label>Email input</label>
+         <input type="email">
+       </form>
+    </div>
+    <div class="column">
+       <form class="">
+         <label>Search input</label>
+         <input type="search">
+       </form>
+    </div>
+    <div class="column">
+       <form class="">
+         <label>Speech input</label>
+         <input type="text" id="speech" name="speech" x-webkit-speech="">
+       </form>
+    </div>
+    <div class="column">
+       <form class="">
+         <label>Tel input</label>
+         <input type="tel">
+       </form>
+    </div>
   </div>
-  <div class="column">
-     <form class="">
-       <label>Search input</label>
-       <input type="search">
-     </form>
-  </div>
-  <div class="column">
-     <form class="">
-       <label>Speech input</label>
-       <input type="text" id="speech" name="speech" x-webkit-speech="">
-     </form>
-  </div>
-  <div class="column">
-     <form class="">
-       <label>Tel input</label>
-       <input type="tel">
-     </form>
-  </div>
-  <div class="column">
-     <form class="">
-       <label>URL input</label>
-       <input type="url" placeholder="http://">
-     </form>
-  </div>
-  <div class="column">
-     <form class="">
-       <label>Password input</label>
-       <input type="password" value="password">
-     </form>
-  </div>
-  <div class="column">
-     <form class="">
-       <label>File input</label>
-       <input type="file">
-     </form>
+  <div class="row">
+    <div class="column">
+       <form class="">
+         <label>URL input</label>
+         <input type="url" placeholder="http://">
+       </form>
+    </div>
+    <div class="column">
+       <form class="">
+         <label>Password input</label>
+         <input type="password" value="password">
+       </form>
+    </div>
+    <div class="column">
+       <form class="">
+         <label>File input</label>
+         <input type="file">
+       </form>
+    </div>
+    <div class="column">    
+      <form class="">
+        <label>Disabled file input</label>
+        <input type="file" disabled>
+      </form>
+    </div>
   </div>
 </div>
 
@@ -389,6 +399,12 @@
        <input type="color" value="#000000" disabled>
      </form>
   </div>
+  <div class="column">
+    <form class="">
+      <label>Readonly color input</label>
+      <input type="color" value="#000000" readonly>
+    </form>
+  </div>
 </div>
 
 
@@ -401,9 +417,15 @@
   </div>
   <div class="column">
      <form class="">
-     <label>Disabled input</label>
+     <label>Disabled number input</label>
      <input type="number" value="5" min="0" max="10" disabled>
      </form>
+  </div>
+  <div class="column">
+    <form class="">
+      <label>Readonly number input</label>
+      <input type="number" value="5" min="0" max="10" readonly>
+    </form>
   </div>
 </div>
 
@@ -499,6 +521,12 @@
      </form>
   </div>
   <div class="column">
+    <form class="">
+      <label>Readonly range input</label>
+      <input type="range" readonly>
+    </form>
+  </div>
+  <div class="column">
      <form class="">
      <label>Multiple select field</label>
      <select multiple size="5">
@@ -529,51 +557,72 @@
      <textarea cols="30" rows="5" disabled>Textarea text</textarea>
      </form>
   </div>
+  <div class="column">
+    <form class="">
+      <label>Readonly textarea</label>
+      <textarea cols="30" rows="5" readonly>Textarea text</textarea>
+    </form>
+  </div>
+  <div class="column">
+    <form class="">
+      <label>Readonly text input</label>
+      <input type="text" value="Readonly text input" readonly>
+    </form>
+  </div>
 </div>
 
-<form class="">
-  <label>Disabled text input</label>
-  <input type="text" value="Disabled text input" disabled>
-</form>
-
-<form class="">
-  <label>Disabled file input</label>
-  <input type="file" disabled>
-</form>
 
 
 
 
 
-<form class="">
-  <fieldset class="login">
-     <legend>Login</legend>
-     <input type="text"><label>Username</label>
-     <input type="password" value="password"><label>Password</label>
-  </fieldset>
+
+
+
+
+
+<form class="row">
+  <div class="column">
+    <fieldset class="login">
+       <legend>Login</legend>
+       <input type="text"><label>Username</label>
+       <input type="password" value="password"><label>Password</label>
+    </fieldset>
+  </div>
+  <div class="column">
+    <fieldset>
+      <legend>Contact Us</legend>
+      <fieldset>
+        <form style="display:none;">
+          <label style="display:none;">First Name</label><input style="display:none;" type="text">
+        </form>
+        <form>
+          <label>First Name</label><input type="text">
+        </form>
+        <form>
+          <label>Last Name</label><input type="text">
+        </form>
+        <form>
+          <label>Email</label><input type="text">
+        </form>
+      </fieldset>
+      <fieldset>
+        <form>
+          <label>Subject</label><input type="text">
+        </form>
+        <form>
+          <label>Message</label><textarea name="message" id="" cols="30" rows="10"></textarea>
+        </form>
+      </fieldset>
+    </fieldset>
+  </div>
 </form>
 
 
-<form class="">
-  <label>Readonly text input</label>
-  <input type="text" value="Readonly text input" readonly>
-</form>
-<form class="">
-  <label>Readonly color input</label>
-  <input type="color" value="#000000" readonly>
-</form>
-<form class="">
-  <label>Readonly range input</label>
-  <input type="range" readonly>
-</form>
-<form class="">
-  <label>Readonly number input</label>
-  <input type="number" value="5" min="0" max="10" readonly>
-</form>
-<form class="">
-  <label>Readonly textarea</label>
-  <textarea cols="30" rows="5" readonly>Textarea text</textarea>
-</form>
+
+
+
+
 
 <form>
   <fieldset>
