@@ -69,7 +69,6 @@ small{
 	padding-bottom: typography(small,padding-bottom) * 1rem;	
 }
 h1{
-	@include text-shadow;
 	font-size: typography(h1,font-size) * 1rem;
 	line-height: typography(h1,line-height) * 1rem;
 	padding-top: typography(h1,padding-top) * 1rem;
@@ -95,7 +94,6 @@ h1{
 	}
 }
 h2{
-	@include text-shadow;
 	font-size: typography(h2,font-size) * 1rem;
 	line-height: typography(h2,line-height) * 1rem;
 	padding-top: typography(h2,padding-top) * 1rem;
@@ -121,7 +119,6 @@ h2{
 	}
 }
 h3{
-	@include text-shadow;
 	font-size: typography(h3,font-size) * 1rem;
 	line-height: typography(h3,line-height) * 1rem;
 	padding-top: typography(h3,padding-top) * 1rem;
@@ -147,7 +144,6 @@ h3{
 	}
 }
 h4{
-	@include text-shadow;
 	font-size: typography(h4,font-size) * 1rem;
 	line-height: typography(h4,line-height) * 1rem;
 	padding-top: typography(h4,padding-top) * 1rem;
@@ -173,7 +169,6 @@ h4{
 	}
 }
 h5{
-	@include text-shadow;
 	font-size: typography(h5,font-size) * 1rem;
 	line-height: typography(h5,line-height) * 1rem;
 	padding-top: typography(h5,padding-top) * 1rem;

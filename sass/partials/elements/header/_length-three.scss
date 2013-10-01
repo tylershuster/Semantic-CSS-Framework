@@ -3,17 +3,9 @@ header{
 	height: 5rem;
 	@include column(3,3);
 	@include box-shadow($color-primary);
-	.logo{
-		position: relative;
-		left: 0.75rem;
-	}
-	h1{
-		position: relative;
-		left: 0.75rem;
-	}
 	address{/*display: none;*/}
 	section{
-		&.masthead{	}
+		&.masthead{margin-left: #{$nav-height + 1rem};	}
 		&.user{
 			box-sizing: content-box;
 			right: -2px;
@@ -52,10 +44,7 @@ header{
 					}
 				}
 			}
-			&:hover{	
-				ul{
-					left: 100%;
-				}			
+			&:hover{								
 				a:after{
 					left: calc(100% + 1.2rem);				
 					border-top: 0.75rem solid $color-drawer;
@@ -65,7 +54,10 @@ header{
 					-ms-transform: rotate(-90deg);
 					transform: rotate(-90deg);
 				}
+				ul{
+					left: 100%;
+				}
 			}
 		}
-	}
+	}	
 }

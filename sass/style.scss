@@ -28,12 +28,12 @@ $heading-font: $sans;
 // Color
 //////////////////////////////
 
-$color: #841219;				//Specify your page's primary color (#0086BD)
+$color: #2093A2;				//Specify your page's primary color (#0086BD)
 
-$scheme: analogic;			//Specify the relationship of colors on the page (mono)
+$scheme: triad;			//Specify the relationship of colors on the page (mono)
 //mono(broken), complement, triad, tetrad, analogic, accented-analogic
 
-$tone: light !default;			//Specify background color: white, light, dark, or black (white)
+$tone: white !default;			//Specify background color: white, light, dark, or black (white)
 
 $icons: no;					//Specify whether or not to use icons;
 

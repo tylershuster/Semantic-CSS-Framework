@@ -14,7 +14,13 @@
 	}
 }
 @mixin text-shadow{
-	/*text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);*/
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.62);
+}
+@mixin text-shadow-inset{
+	text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.62);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
 }
 
 @mixin transition{

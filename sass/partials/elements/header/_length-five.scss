@@ -3,18 +3,10 @@ header{
 	height: 5rem;
 	@include column(5,5);
 	@include box-shadow($color-primary);
-	.logo{
-		position: relative;
-		left: 0.75rem;
-	}
-	h1{
-		position: relative;
-		left: 0.75rem;
-	}
 	address{}
 	section{
 		&.masthead{
-
+			margin-left: #{$nav-height + 1rem};
 		}
 		&.user{
 			box-sizing: content-box;
