@@ -31,6 +31,12 @@ $color-background: null;
 $color-accent: null;
 $color-drawer: null; /*light if tone is dark, dark if tone is light, light if tone is white, dark if tone is black*/
 
+@function color-primaryer($tone){
+
+	@return cs-primary($tone);
+}
+
+
 @function color-secondaryer($tone){
 	@if $scheme == mono{
 		@return color-texter($tone);
@@ -43,7 +49,7 @@ $color-drawer: null; /*light if tone is dark, dark if tone is light, light if to
 
 @function color-texter($tone){
 	@if $tone == white{
-		@return set-lightness($color, 25%);
+		@return set-lightness($color, 15%);
 
 	}
 	@else if $tone == light{
@@ -55,7 +61,7 @@ $color-drawer: null; /*light if tone is dark, dark if tone is light, light if to
 		
 	}
 	@else if $tone == black{
-		@return set-lightness($color, 75%);
+		@return set-lightness($color, 85%);
 		
 	}
 }
@@ -81,57 +87,44 @@ $color-drawer: null; /*light if tone is dark, dark if tone is light, light if to
 
 @function color-backgrounder($tone){
 	@if $tone == white{
-		@return #ffffff;
+		@return set-lightness($color, 98%);
 
 	}
 	@else if $tone == light{
-		@if lightness($color) > 60{
-			@if lightness($color) < 90{
-				@return set-lightness($color, 60%);
-			}
-		}
-		@return set-lightness($color, 75%);
-		/*if this is too close to the tone of cs-primary, make it lighter*/
+		@return set-lightness($color, 85%);
 		
 	}
 	@else if $tone == dark{
-		$background-possibility: set-lightness($color, 25%);
-		@if lightness($color) > 10{
-			@if lightness($color) < 40{
-				@return set-lightness($color, 40%);
-			}
-		}
-		@return set-lightness($color, 25%);
-		/*if this is too close to the tone of cs-primary, make it darker*/
+		@return set-lightness($color, 15%);
 		
 	}
 	@else if $tone == black{
-		@return #060606;
+		@return set-lightness($color, 02%);
 		
 	}
 }
 
 @function color-drawerer($tone){
 	@if $tone == white{
-		@return #ffffff;
+		@return set-lightness(color-backgrounder($tone), 90%);
 
 	}
 	@else if $tone == light{
-		@return shade(color-backgrounder($tone), 15%);
+		@return set-lightness(color-backgrounder($tone), 80%);
 		
 	}
 	@else if $tone == dark{
-		@return tint(color-backgrounder($tone), 15%);
+		@return set-lightness(color-backgrounder($tone), 20%);
 		
 	}
 	@else if $tone == black{
-		@return tint(color-backgrounder($tone), 5%);
+		@return set-lightness(color-backgrounder($tone), 10%);
 		
 	}
 }
 
 
-$color-primary: cs-primary($color);
+$color-primary: color-primaryer($color);
 $color-secondary: color-secondaryer($tone);
 $color-tertiary: cs-tertiary($color);
 $color-text: color-texter($tone);
