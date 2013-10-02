@@ -12,8 +12,7 @@ aside{
 	padding-top: typography(small,padding-top) * 1rem;
 	padding-bottom: typography(small,padding-bottom) * 1rem;
 	font-family: '#{$heading-font}';
-	h1,h2,h3,h4,h5{
-		@include text-shadow;
+	h1,h2,h3,h4,h5{		
 		font-size: typography(h4,font-size) * 1rem;
 		line-height: typography(h4,line-height) * 1rem;
 		padding-top: typography(h4,padding-top) * 1rem;

@@ -7,6 +7,7 @@
 //
 //////////////////////////////
 figure{
+	width: 100%;
 	img{
 		& + figcaption{
 			color: mix($color-text, $color-background);

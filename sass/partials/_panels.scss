@@ -3,11 +3,11 @@
 		display: flex;		
 		>*{
 			display: flex;
-			flex-grow: 1;
-			min-width: 25%;
+			flex-grow: 1;			
 		}
 		>.row{
 			max-width: 50%;
+			flex-basis: 49%;
 		}
 		>.two{
 			flex-grow: 2;
@@ -20,21 +20,27 @@
 		}
 	}
 }
-@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-eight * 1px}){
+@media all and (min-width:#{$length-five * 1px}) and (max-width:#{$length-eight * 1px}){
 	.row{
 		display: flex;
 		>*{
 			display: flex;
 			flex-grow: 1;
-			min-width: 50%;
+			flex-basis: 49%;
 		}
 		>.row{
 			display: block;
 			width: 100%;
+			flex-basis: 100%;
+			>*{
+				flex-basis: 49%;
+				float: left;
+				width: 50%;
+			}
 		}
 	}
 }
-@media all and (min-width: 0px) and (max-width:#{$length-three * 1px}){
+@media all and (min-width: 0px) and (max-width:#{$length-five * 1px}){
 	.row{
 		display: block;
 		>*{

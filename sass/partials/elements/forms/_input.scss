@@ -141,6 +141,7 @@ input{
 
 
 select{
+	border: none;
 	background-color: $color-drawer;
 	@include box-shadow-inset($color-background);	
 	&:focus{
@@ -180,11 +181,11 @@ textarea{
 	}
 }
 
-::-webkit-scrollbar              { width: 1rem; }
+::-webkit-scrollbar              { width: 1rem; overflow:hidden;}
 ::-webkit-scrollbar-button       {  }
-::-webkit-scrollbar-track        { background-color: $color-drawer;@include box-shadow-inset($color-drawer); }
-::-webkit-scrollbar-track-piece  { /* 4 */ }
-::-webkit-scrollbar-thumb        { background-color: $color-primary;@include box-shadow($color-primary); }
+::-webkit-scrollbar-track        { background-color: $color-drawer;@include box-shadow-inset($color-drawer); overflow:hidden;}
+::-webkit-scrollbar-track-piece  {  overflow:hidden; }
+::-webkit-scrollbar-thumb        { width: calc(100% - 2px); background-color: $color-primary;@include box-shadow($color-primary); }
 ::-webkit-scrollbar-corner       { /* 6 */ }
 ::-webkit-resizer                { /* 7 */ }
 
@@ -196,7 +197,7 @@ textarea{
 ::-webkit-slider-thumb{
 	-webkit-appearance: none;	
 	background-color: $color-text;
-	@include box-shadow($color-primary);
+	@include box-shadow($color-text);
 	width: 1rem;
 	height: 1rem;
 	border-radius: 50%;
@@ -222,4 +223,39 @@ textarea{
 
 ::-webkit-media-controls-current-time-display{
 	color: $color-text;
+}
+
+::-webkit-meter-bar{
+	background: $color-drawer;
+	@include box-shadow-inset($color-background);
+	overflow: hidden;
+}
+
+
+::-webkit-meter-optimum-value{
+	background: green;
+	@include box-shadow(green);
+}
+::-webkit-meter-suboptimum-value{
+	background: yellow;
+	@include box-shadow(yellow);
+}
+
+::-webkit-meter-even-less-good-value{
+	background: red;
+	@include box-shadow(red);
+}
+
+::-webkit-file-upload-button{
+	-webkit-appearance: none;
+	border: none;
+	color: $color-background;
+	background-color: $color-accent;
+	@include box-shadow($color-accent);
+	height: 1.5rem;
+}
+::-webkit-file-upload-button:disabled{
+	color: $color-accent;
+	background-color: $color-drawer;
+	@include box-shadow($color-drawer);
 }

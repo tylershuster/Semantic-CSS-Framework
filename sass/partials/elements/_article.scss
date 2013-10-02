@@ -17,10 +17,18 @@ article{
 			width: 100%;
 		}
 	}
+	>aside{		
+		width: 100%;
+		padding: 0 1rem;
+	}
+	>blockquote{
+		width: 100%;
+	}
+
 	&>p:first-of-type:first-letter, h1 + p:first-letter{
 		color: $color-accent;
 	}
-	>ul{
+	ul{
 		font-family: '#{$body-font}';
 		margin: 0;
 		padding: 0;
@@ -28,13 +36,6 @@ article{
 			
 		}
 	}
-	>aside{
-		width: 100%;
-	}
-	>blockquote{
-		width: 100%;
-	}
-
 	/* logo left half, menu right half*/
 	@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
 		/*Styles for devices from 128-256px wide*/
