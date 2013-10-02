@@ -3,6 +3,10 @@ form{
 	float: left;
 	width: 100%;
 	flex-wrap: wrap;
+	align-items: center;
+	&:focus{
+		outline: none;
+	}
 	@media all and (min-width:#{$length-three * 1px}){
 		display: flex;
 		width: 100%;
@@ -42,11 +46,10 @@ form{
 		padding: 0 0.5rem;
 		/*background-color: $color-drawer;
 		@include box-shadow($color-background);*/
-		margin-top: 0.15rem;
 		position: relative;
 		line-height: 1.5rem;
 		float: left;
-		margin-right: 1rem;
+		margin: 0.25rem 0;
 	}	
 	input{
 		display: block;			

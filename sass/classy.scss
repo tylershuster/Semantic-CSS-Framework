@@ -1,0 +1,197 @@
+$quality: null;
+$key: null;
+
+@import "partials/base/utilities/opacity";
+@import "partials/base/utilities/layout";
+@import "partials/base/utilities/variables";
+@import "partials/base/utilities/mixins";
+
+
+$keys: a, b, c, d, e, f, g;
+$qualities: maj, dim, aug, augmin7, sus, sus2, eleventh, min7, maj7, dom7, dim7, min6, maj6, domflat9, domsharp9, min9, maj9, perfect5; 
+$schemes: mono, complement, triad, tetrad, analogic, accented-analogic;
+$tones: white, light, dark, black;
+
+
+@each $classy-quality in $qualities {
+	$quality: $classy-quality;
+	.#{$classy-quality}{
+		& h1{
+			font-size: typography(h1,font-size) * 1rem;
+			line-height: typography(h1,line-height) * 1rem;
+			padding-top: typography(h1,padding-top) * 1rem;
+			padding-bottom: typography(h1,padding-bottom) * 1rem;
+			font-weight: typography(h1,font-weight);
+			font-style: typography(h1,font-style);
+			margin: 0;
+			&.uber, .uber &{
+				font-size: typography(h1,font-size) * 2rem;
+				line-height: typography(h1,line-height) * 2rem;
+				padding-top: typography(h1,padding-top) * 2rem;
+				padding-bottom: typography(h1,padding-bottom) * 2rem;
+				font-weight: typography(h1,font-weight);
+				font-style: typography(h1,font-style);
+				margin: 0;
+			}
+		}
+		& h2{
+			font-size: typography(h2,font-size) * 1rem;
+			line-height: typography(h2,line-height) * 1rem;
+			padding-top: typography(h2,padding-top) * 1rem;
+			padding-bottom: typography(h2,padding-bottom) * 1rem;
+			font-weight: typography(h2,font-weight);
+			font-style: typography(h2,font-style);
+			margin: 0;
+			&.uber, .uber &{
+				font-size: typography(h2,font-size) * 2rem;
+				line-height: typography(h2,line-height) * 2rem;
+				padding-top: typography(h2,padding-top) * 2rem;
+				padding-bottom: typography(h2,padding-bottom) * 2rem;
+				font-weight: typography(h2,font-weight);
+				font-style: typography(h2,font-style);
+				margin: 0;
+			}
+		}
+		& h2{
+			font-size: typography(h2,font-size) * 1rem;
+			line-height: typography(h2,line-height) * 1rem;
+			padding-top: typography(h2,padding-top) * 1rem;
+			padding-bottom: typography(h2,padding-bottom) * 1rem;
+			font-weight: typography(h2,font-weight);
+			font-style: typography(h2,font-style);
+			margin: 0;
+			&.uber, .uber &{
+				font-size: typography(h2,font-size) * 2rem;
+				line-height: typography(h2,line-height) * 2rem;
+				padding-top: typography(h2,padding-top) * 2rem;
+				padding-bottom: typography(h2,padding-bottom) * 2rem;
+				font-weight: typography(h2,font-weight);
+				font-style: typography(h2,font-style);
+				margin: 0;
+			}
+		}
+		& h3{
+			font-size: typography(h3,font-size) * 1rem;
+			line-height: typography(h3,line-height) * 1rem;
+			padding-top: typography(h3,padding-top) * 1rem;
+			padding-bottom: typography(h3,padding-bottom) * 1rem;
+			font-weight: typography(h3,font-weight);
+			font-style: typography(h3,font-style);
+			margin: 0;
+			&.uber, .uber &{
+				font-size: typography(h3,font-size) * 2rem;
+				line-height: typography(h3,line-height) * 2rem;
+				padding-top: typography(h3,padding-top) * 2rem;
+				padding-bottom: typography(h3,padding-bottom) * 2rem;
+				font-weight: typography(h3,font-weight);
+				font-style: typography(h3,font-style);
+				margin: 0;
+			}
+		}
+		& h4{
+			font-size: typography(h4,font-size) * 1rem;
+			line-height: typography(h4,line-height) * 1rem;
+			padding-top: typography(h4,padding-top) * 1rem;
+			padding-bottom: typography(h4,padding-bottom) * 1rem;
+			font-weight: typography(h4,font-weight);
+			font-style: typography(h4,font-style);
+			margin: 0;
+			&.uber, .uber &{
+				font-size: typography(h4,font-size) * 2rem;
+				line-height: typography(h4,line-height) * 2rem;
+				padding-top: typography(h4,padding-top) * 2rem;
+				padding-bottom: typography(h4,padding-bottom) * 2rem;
+				font-weight: typography(h4,font-weight);
+				font-style: typography(h4,font-style);
+				margin: 0;
+			}
+		}
+		& p{
+			font-size: typography(p,font-size) * 1rem;
+			line-height: typography(p,line-height) * 1rem;
+			padding-top: typography(p,padding-top) * 1rem;
+			padding-bottom: typography(p,padding-bottom) * 1rem;
+			font-weight: typography(p,font-weight);
+			font-style: typography(p,font-style);
+			margin: 0;
+			&.uber, .uber &{
+				font-size: typography(p,font-size) * 2rem;
+				line-height: typography(p,line-height) * 2rem;
+				padding-top: typography(p,padding-top) * 2rem;
+				padding-bottom: typography(p,padding-bottom) * 2rem;
+				font-weight: typography(p,font-weight);
+				font-style: typography(p,font-style);
+				margin: 0;
+			}
+		}
+	}
+}
+
+@each $classy-key in $keys{
+	$key: $classy-key;
+	.#{$classy-key}{
+		@if $key == a {	
+			@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+				& {font-size: 75%;}}
+			@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+				& {font-size: 62.5%;}}	
+			@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+				& {font-size: 50%;}}
+			$font-base: 12;
+		}
+		@else if $key == b {
+			@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+				& {font-size: 87.5%;}}
+			@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+				& {font-size: 75%;}}	
+			@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+				& {font-size: 62.5%;}}	
+			$font-base: 14;
+		}
+		@else if $key == c {
+			@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+				& {font-size: 100%;}}
+			@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+				& {font-size: 87.5%;}}	
+			@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+				& {font-size: 75%;}}	
+			$font-base: 16;
+		}
+		@else if $key == d {
+			@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+				& {font-size: 112.5%;}}
+			@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+				& {font-size: 100%;}}	
+			@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+				& {font-size: 87.5%;}}
+			$font-base: 18;
+		}
+		@else if $key == e {
+			@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+				& {font-size: 125%;}}
+			@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+				& {font-size: 112.5%;}}	
+			@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+				& {font-size: 100%;}}	
+			$font-base: 20;
+		}
+		@else if $key == f {
+			@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+				& {font-size: 137.5%;}}
+			@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+				& {font-size: 125%;}}	
+			@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+				& {font-size: 112.5%;}}	
+			$font-base: 22;
+		}
+		@else if $key == g {
+			@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-thirteen * 1px}){
+				& {font-size: 150%;}}
+			@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+				& {font-size: 137.5%;}}	
+			@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+				& {font-size: 125%;}}
+			$font-base: 24;
+		}
+	}
+}

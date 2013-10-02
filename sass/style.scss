@@ -66,16 +66,16 @@ $heading-font: $sans;
 // Color
 //////////////////////////////
 
-$color: #2093A2;				//Specify your page's primary color (#0086BD)
+$color: #0086BD;				//Specify your page's primary color (#0086BD)
 
 $scheme: triad;			//Specify the relationship of colors on the page (mono)
-//mono(broken), complement, triad, tetrad, analogic, accented-analogic
+//mono, complement, triad, tetrad, analogic, accented-analogic
 
 $tone: light !default;			//Specify background color: white, light, dark, or black (white)
 
 $icons: no;					//Specify whether or not to use icons;
 
-$skeu: flat;
+$skeu: faux-flat;
 
 /*Set in the key of #{$key} #{$quality}. #{$scheme} color scheme based on #{$color} with a #{$tone} background.*/
 
@@ -165,6 +165,17 @@ $legacy-support-for-mozilla: false;
 
 @import "partials/z-index";
 
+
+hr{
+    height: 2px;
+    margin: calc(0.5rem - 1px) 0;
+    padding: 0;
+    border: none;
+    background-color: $color-background;
+    @include box-shadow-inset($color-background);
+    box-sizing: border-box;
+}
+
 /* { / picnicc } */
 /*
 * body, header{background-image: url(../bg.png);}
@@ -173,9 +184,9 @@ $grid-red: red($color-accent);
 $grid-green: green($color-accent);
 $grid-blue: blue($color-accent);
 
-/*
-@import url("http://basehold.it/#{$font-base}/#{$grid-red}/#{$grid-green}/#{$grid-blue}");
-*/
+
+//@import url("http://basehold.it/#{$font-base}/#{$grid-red}/#{$grid-green}/#{$grid-blue}");
+
 
 @media print {
   a[href]:after {
