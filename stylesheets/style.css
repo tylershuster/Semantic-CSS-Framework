@@ -111,7 +111,7 @@ main {
   background-image: attr(data-background-image url);
 }
 
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -1212,22 +1212,23 @@ article > figure img {
   width: 100%;
 }
 /* line 20, ../sass/partials/elements/_article.scss */
+article > aside {
+  width: 100%;
+  padding: 0 1rem;
+}
+/* line 24, ../sass/partials/elements/_article.scss */
+article > blockquote {
+  width: 100%;
+}
+/* line 28, ../sass/partials/elements/_article.scss */
 article > p:first-of-type:first-letter, article h1 + p:first-letter {
   color: #186e79;
 }
-/* line 23, ../sass/partials/elements/_article.scss */
-article > ul {
+/* line 31, ../sass/partials/elements/_article.scss */
+article ul {
   font-family: "Gentium Basic";
   margin: 0;
   padding: 0;
-}
-/* line 31, ../sass/partials/elements/_article.scss */
-article > aside {
-  width: 100%;
-}
-/* line 34, ../sass/partials/elements/_article.scss */
-article > blockquote {
-  width: 100%;
 }
 @media all and (min-width: 128px) and (max-width: 256px) {
   /* line 1, ../sass/partials/elements/_article.scss */
@@ -1235,29 +1236,29 @@ article > blockquote {
     /*Styles for devices from 128-256px wide*/
     padding: 0 0.5rem;
   }
-  /* line 43, ../sass/partials/elements/_article.scss */
+  /* line 44, ../sass/partials/elements/_article.scss */
   article > blockquote, article > figure, article > aside {
     width: calc(100% + 1rem);
   }
-  /* line 46, ../sass/partials/elements/_article.scss */
+  /* line 47, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(odd), article > figure:nth-of-type(even) {
     padding: 0;
   }
-  /* line 49, ../sass/partials/elements/_article.scss */
+  /* line 50, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
     right: 0.5rem;
     margin-right: -0.5rem;
   }
-  /* line 53, ../sass/partials/elements/_article.scss */
+  /* line 54, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(odd) {
     margin-right: -0.5rem;
   }
-  /* line 56, ../sass/partials/elements/_article.scss */
+  /* line 57, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
     left: 0.5rem;
     margin-left: -0.5rem;
   }
-  /* line 60, ../sass/partials/elements/_article.scss */
+  /* line 61, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(even) {
     margin-left: -0.5rem;
   }
@@ -1268,29 +1269,29 @@ article > blockquote {
     /*styles for screens 256-384px*/
     padding: 0 1rem;
   }
-  /* line 70, ../sass/partials/elements/_article.scss */
+  /* line 71, ../sass/partials/elements/_article.scss */
   article > blockquote, article > figure, article > aside {
     width: calc(100% + 2rem);
   }
-  /* line 73, ../sass/partials/elements/_article.scss */
+  /* line 74, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(odd), article > figure:nth-of-type(even) {
     padding: 0;
   }
-  /* line 76, ../sass/partials/elements/_article.scss */
+  /* line 77, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
     right: 1rem;
     margin-right: -1rem;
   }
-  /* line 80, ../sass/partials/elements/_article.scss */
+  /* line 81, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(odd) {
     margin-right: -1rem;
   }
-  /* line 83, ../sass/partials/elements/_article.scss */
+  /* line 84, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
     left: 1rem;
     margin-left: -1rem;
   }
-  /* line 87, ../sass/partials/elements/_article.scss */
+  /* line 88, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(even) {
     margin-left: -1rem;
   }
@@ -1301,33 +1302,33 @@ article > blockquote {
     /*styles for devices from 384-640 px wide*/
     padding: 0 2rem;
   }
-  /* line 97, ../sass/partials/elements/_article.scss */
+  /* line 98, ../sass/partials/elements/_article.scss */
   article > blockquote, article > figure {
     width: calc(100% + 4rem);
   }
-  /* line 100, ../sass/partials/elements/_article.scss */
+  /* line 101, ../sass/partials/elements/_article.scss */
   article > aside {
     width: 50%;
   }
-  /* line 103, ../sass/partials/elements/_article.scss */
+  /* line 104, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(odd), article > figure:nth-of-type(even) {
     padding: 0;
   }
-  /* line 106, ../sass/partials/elements/_article.scss */
+  /* line 107, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
     right: 2rem;
     margin-right: -2rem;
   }
-  /* line 110, ../sass/partials/elements/_article.scss */
+  /* line 111, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(odd) {
     margin-right: -2rem;
   }
-  /* line 113, ../sass/partials/elements/_article.scss */
+  /* line 114, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
     left: 2rem;
     margin-left: -2rem;
   }
-  /* line 117, ../sass/partials/elements/_article.scss */
+  /* line 118, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(even) {
     margin-left: -2rem;
   }
@@ -1338,29 +1339,29 @@ article > blockquote {
     /*styles for devices from 640-1024px wide*/
     padding: 0 3rem;
   }
-  /* line 127, ../sass/partials/elements/_article.scss */
+  /* line 128, ../sass/partials/elements/_article.scss */
   article > blockquote, article > figure {
     width: 50%;
   }
-  /* line 130, ../sass/partials/elements/_article.scss */
+  /* line 131, ../sass/partials/elements/_article.scss */
   article > aside {
     width: 50%;
   }
-  /* line 133, ../sass/partials/elements/_article.scss */
+  /* line 134, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
     right: 3rem;
     margin-right: -3rem;
   }
-  /* line 137, ../sass/partials/elements/_article.scss */
+  /* line 138, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(odd) {
     margin-right: -3rem;
   }
-  /* line 140, ../sass/partials/elements/_article.scss */
+  /* line 141, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
     left: 3rem;
     margin-left: -3rem;
   }
-  /* line 144, ../sass/partials/elements/_article.scss */
+  /* line 145, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(even) {
     margin-left: -3rem;
   }
@@ -1371,29 +1372,29 @@ article > blockquote {
     /*styles on devices from 1024px-1664px*/
     padding: 0 4rem;
   }
-  /* line 154, ../sass/partials/elements/_article.scss */
+  /* line 155, ../sass/partials/elements/_article.scss */
   article > blockquote, article > figure {
     width: 50%;
   }
-  /* line 157, ../sass/partials/elements/_article.scss */
+  /* line 158, ../sass/partials/elements/_article.scss */
   article > aside {
     width: 33%;
   }
-  /* line 160, ../sass/partials/elements/_article.scss */
+  /* line 161, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
     right: 4rem;
     margin-right: -4rem;
   }
-  /* line 164, ../sass/partials/elements/_article.scss */
+  /* line 165, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(odd) {
     margin-right: -4rem;
   }
-  /* line 167, ../sass/partials/elements/_article.scss */
+  /* line 168, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
     left: 4rem;
     margin-left: -4rem;
   }
-  /* line 171, ../sass/partials/elements/_article.scss */
+  /* line 172, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(even) {
     margin-left: -4rem;
   }
@@ -1404,29 +1405,29 @@ article > blockquote {
     /*styles for devices from 1664px up*/
     padding: 0;
   }
-  /* line 181, ../sass/partials/elements/_article.scss */
+  /* line 182, ../sass/partials/elements/_article.scss */
   article > blockquote, article > figure {
     width: 50%;
   }
-  /* line 184, ../sass/partials/elements/_article.scss */
+  /* line 185, ../sass/partials/elements/_article.scss */
   article > aside {
     width: 25%;
   }
-  /* line 187, ../sass/partials/elements/_article.scss */
+  /* line 188, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(odd), article > aside:nth-of-type(odd) {
     right: 5rem;
     margin-right: -5rem;
   }
-  /* line 191, ../sass/partials/elements/_article.scss */
+  /* line 192, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(odd) {
     margin-right: -5rem;
   }
-  /* line 194, ../sass/partials/elements/_article.scss */
+  /* line 195, ../sass/partials/elements/_article.scss */
   article > blockquote:nth-of-type(even), article > aside:nth-of-type(even) {
     left: 5rem;
     margin-left: -5rem;
   }
-  /* line 198, ../sass/partials/elements/_article.scss */
+  /* line 199, ../sass/partials/elements/_article.scss */
   article > figure:nth-of-type(even) {
     margin-left: -5rem;
   }
@@ -1457,7 +1458,7 @@ aside h1, aside h2, aside h3, aside h4, aside h5 {
   color: #15616a;
   font-family: "Gentium Basic";
 }
-/* line 25, ../sass/partials/elements/_aside.scss */
+/* line 24, ../sass/partials/elements/_aside.scss */
 aside p {
   color: #55a0aa;
   font-size: 0.85rem;
@@ -1466,25 +1467,25 @@ aside p {
   padding-bottom: 0.25rem;
   font-family: "Open Sans";
 }
-/* line 33, ../sass/partials/elements/_aside.scss */
+/* line 32, ../sass/partials/elements/_aside.scss */
 aside ul {
   text-align: left;
   list-style-position: inside;
 }
-/* line 36, ../sass/partials/elements/_aside.scss */
+/* line 35, ../sass/partials/elements/_aside.scss */
 aside ul:nth-of-type(even) {
   padding-right: 1rem;
 }
-/* line 39, ../sass/partials/elements/_aside.scss */
+/* line 38, ../sass/partials/elements/_aside.scss */
 aside ul:nth-of-type(odd) {
   padding-left: 1rem;
 }
-/* line 43, ../sass/partials/elements/_aside.scss */
+/* line 42, ../sass/partials/elements/_aside.scss */
 aside:nth-of-type(odd) {
   float: left;
   text-align: left;
 }
-/* line 48, ../sass/partials/elements/_aside.scss */
+/* line 47, ../sass/partials/elements/_aside.scss */
 aside:nth-of-type(even) {
   float: right;
   text-align: right;
@@ -1586,7 +1587,11 @@ dl ol {
   /*dictionary definitions*/
 }
 
-/* line 11, ../sass/partials/elements/_figure.scss */
+/* line 9, ../sass/partials/elements/_figure.scss */
+figure {
+  width: 100%;
+}
+/* line 12, ../sass/partials/elements/_figure.scss */
 figure img + figcaption {
   color: #55a0aa;
   font-size: 0.85rem;
@@ -1599,7 +1604,7 @@ figure img + figcaption {
   text-align: center;
 }
 
-/* line 47, ../sass/partials/elements/_figure.scss */
+/* line 48, ../sass/partials/elements/_figure.scss */
 .post section.comments figure {
   margin-left: 1rem;
 }
@@ -2648,6 +2653,7 @@ form {
   display: block;
   float: left;
   width: 100%;
+  flex-wrap: wrap;
 }
 @media all and (min-width: 384px) {
   /* line 1, ../sass/partials/elements/forms/_index.scss */
@@ -2655,55 +2661,58 @@ form {
     display: flex;
     width: 100%;
   }
-  /* line 8, ../sass/partials/elements/forms/_index.scss */
+  /* line 9, ../sass/partials/elements/forms/_index.scss */
   form input {
     display: flex;
   }
 }
-/* line 12, ../sass/partials/elements/forms/_index.scss */
+/* line 13, ../sass/partials/elements/forms/_index.scss */
 form label, form span {
   font-size: 1rem;
   line-height: 2rem;
+  white-space: nowrap;
+}
+/* line 19, ../sass/partials/elements/forms/_index.scss */
+form label {
+  flex-grow: 0;
 }
 @media all and (min-width: 128px) and (max-width: 256px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
+  /* line 19, ../sass/partials/elements/forms/_index.scss */
   form label {
-    width: 100%;
     display: block;
   }
 }
 @media all and (min-width: 256px) and (max-width: 384px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
+  /* line 19, ../sass/partials/elements/forms/_index.scss */
   form label {
-    width: 100%;
     display: block;
   }
 }
 @media all and (min-width: 384px) and (max-width: 640px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
+  /* line 19, ../sass/partials/elements/forms/_index.scss */
   form label {
     min-width: 33%;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
+  /* line 19, ../sass/partials/elements/forms/_index.scss */
   form label {
     min-width: 25%;
   }
 }
 @media all and (min-width: 1024px) and (max-width: 1664px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
+  /* line 19, ../sass/partials/elements/forms/_index.scss */
   form label {
     min-width: 10%;
   }
 }
 @media all and (min-width: 1664px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
+  /* line 19, ../sass/partials/elements/forms/_index.scss */
   form label {
     min-width: 10%;
   }
 }
-/* line 39, ../sass/partials/elements/forms/_index.scss */
+/* line 40, ../sass/partials/elements/forms/_index.scss */
 form label {
   height: 1.5rem;
   padding: 0 0.5rem;
@@ -2713,8 +2722,9 @@ form label {
   position: relative;
   line-height: 1.5rem;
   float: left;
+  margin-right: 1rem;
 }
-/* line 49, ../sass/partials/elements/forms/_index.scss */
+/* line 51, ../sass/partials/elements/forms/_index.scss */
 form input {
   display: block;
   flex-grow: 1;
@@ -2722,88 +2732,88 @@ form input {
   padding: 0 0.5rem;
 }
 @media all and (max-width: 384px) {
-  /* line 49, ../sass/partials/elements/forms/_index.scss */
+  /* line 51, ../sass/partials/elements/forms/_index.scss */
   form input {
     width: 100%;
   }
 }
-/* line 57, ../sass/partials/elements/forms/_index.scss */
+/* line 59, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="1"] {
   width: 1em;
 }
-/* line 61, ../sass/partials/elements/forms/_index.scss */
+/* line 63, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="2"] {
   width: 2em;
 }
-/* line 65, ../sass/partials/elements/forms/_index.scss */
+/* line 67, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="3"] {
   width: 3em;
 }
-/* line 69, ../sass/partials/elements/forms/_index.scss */
+/* line 71, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="4"] {
   width: 4em;
 }
-/* line 73, ../sass/partials/elements/forms/_index.scss */
+/* line 75, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="5"] {
   width: 5em;
 }
-/* line 77, ../sass/partials/elements/forms/_index.scss */
+/* line 79, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="6"] {
   width: 6em;
 }
-/* line 81, ../sass/partials/elements/forms/_index.scss */
+/* line 83, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="7"] {
   width: 7em;
 }
-/* line 85, ../sass/partials/elements/forms/_index.scss */
+/* line 87, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="8"] {
   width: 8em;
 }
-/* line 89, ../sass/partials/elements/forms/_index.scss */
+/* line 91, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="9"] {
   width: 9em;
 }
-/* line 93, ../sass/partials/elements/forms/_index.scss */
+/* line 95, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="10"] {
   width: 10em;
 }
-/* line 97, ../sass/partials/elements/forms/_index.scss */
+/* line 99, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="11"] {
   width: 11em;
 }
-/* line 101, ../sass/partials/elements/forms/_index.scss */
+/* line 103, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="12"] {
   width: 12em;
 }
-/* line 105, ../sass/partials/elements/forms/_index.scss */
+/* line 107, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="13"] {
   width: 13em;
 }
-/* line 109, ../sass/partials/elements/forms/_index.scss */
+/* line 111, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="14"] {
   width: 14em;
 }
-/* line 113, ../sass/partials/elements/forms/_index.scss */
+/* line 115, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="15"] {
   width: 15em;
 }
-/* line 117, ../sass/partials/elements/forms/_index.scss */
+/* line 119, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="16"] {
   width: 16em;
 }
-/* line 121, ../sass/partials/elements/forms/_index.scss */
+/* line 123, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="17"] {
   width: 17em;
 }
-/* line 125, ../sass/partials/elements/forms/_index.scss */
+/* line 127, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="18"] {
   width: 18em;
 }
-/* line 129, ../sass/partials/elements/forms/_index.scss */
+/* line 131, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="19"] {
   width: 19em;
 }
-/* line 133, ../sass/partials/elements/forms/_index.scss */
+/* line 135, ../sass/partials/elements/forms/_index.scss */
 form input[maxlength="20"] {
   width: 20em;
 }
@@ -2981,14 +2991,15 @@ input[type="submit"] {
 
 /* line 143, ../sass/partials/elements/forms/_input.scss */
 select {
+  border: none;
   background-color: #7ebec6;
 }
-/* line 146, ../sass/partials/elements/forms/_input.scss */
+/* line 147, ../sass/partials/elements/forms/_input.scss */
 select:focus {
   outline: none;
 }
 
-/* line 153, ../sass/partials/elements/forms/_input.scss */
+/* line 154, ../sass/partials/elements/forms/_input.scss */
 output {
   font-size: 1rem;
   line-height: 2rem;
@@ -2996,68 +3007,71 @@ output {
   padding-bottom: 0.25rem;
 }
 
-/* line 159, ../sass/partials/elements/forms/_input.scss */
+/* line 160, ../sass/partials/elements/forms/_input.scss */
 label {
   font-size: 1rem;
   line-height: 2rem;
   padding-top: 0.75rem;
   padding-bottom: 0.25rem;
 }
-/* line 165, ../sass/partials/elements/forms/_input.scss */
+/* line 166, ../sass/partials/elements/forms/_input.scss */
 label.required:after {
   content: "*";
 }
 
-/* line 171, ../sass/partials/elements/forms/_input.scss */
+/* line 172, ../sass/partials/elements/forms/_input.scss */
 textarea {
   padding: 1rem 0 0 0.62rem;
   border: 0;
   color: #15616a;
   background-color: #7ebec6;
 }
-/* line 177, ../sass/partials/elements/forms/_input.scss */
+/* line 178, ../sass/partials/elements/forms/_input.scss */
 textarea:disabled {
   background-color: #95e0ea;
   color: #7ebec6;
 }
 
-/* line 183, ../sass/partials/elements/forms/_input.scss */
+/* line 184, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-scrollbar {
   width: 1rem;
-}
-
-/* line 185, ../sass/partials/elements/forms/_input.scss */
-::-webkit-scrollbar-track {
-  background-color: #7ebec6;
+  overflow: hidden;
 }
 
 /* line 186, ../sass/partials/elements/forms/_input.scss */
-::-webkit-scrollbar-track-piece {
-  /* 4 */
+::-webkit-scrollbar-track {
+  background-color: #7ebec6;
+  overflow: hidden;
 }
 
 /* line 187, ../sass/partials/elements/forms/_input.scss */
-::-webkit-scrollbar-thumb {
-  background-color: #2093a2;
+::-webkit-scrollbar-track-piece {
+  overflow: hidden;
 }
 
 /* line 188, ../sass/partials/elements/forms/_input.scss */
+::-webkit-scrollbar-thumb {
+  width: calc(100% - 2px);
+  background-color: #2093a2;
+}
+
+/* line 189, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-scrollbar-corner {
   /* 6 */
 }
 
-/* line 189, ../sass/partials/elements/forms/_input.scss */
+/* line 190, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-resizer {
   /* 7 */
 }
 
-/* line 191, ../sass/partials/elements/forms/_input.scss */
+/* line 192, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* line 196, ../sass/partials/elements/forms/_input.scss */
+/* line 197, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: #15616a;
@@ -3066,7 +3080,7 @@ textarea:disabled {
   border-radius: 50%;
 }
 
-/* line 205, ../sass/partials/elements/forms/_input.scss */
+/* line 206, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-controls-play-button {
   -webkit-appearance: none;
   height: 0;
@@ -3076,20 +3090,56 @@ textarea:disabled {
   border-bottom: 0.5rem solid transparent;
 }
 
-/* line 214, ../sass/partials/elements/forms/_input.scss */
+/* line 215, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-controls-panel {
   background-color: rgba(126, 190, 198, 0.8);
 }
 
-/* line 218, ../sass/partials/elements/forms/_input.scss */
+/* line 219, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-slider-container {
   border: none;
   background-color: #7ebec6;
 }
 
-/* line 223, ../sass/partials/elements/forms/_input.scss */
+/* line 224, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-controls-current-time-display {
   color: #15616a;
+}
+
+/* line 228, ../sass/partials/elements/forms/_input.scss */
+::-webkit-meter-bar {
+  background: #7ebec6;
+  overflow: hidden;
+}
+
+/* line 235, ../sass/partials/elements/forms/_input.scss */
+::-webkit-meter-optimum-value {
+  background: green;
+}
+
+/* line 239, ../sass/partials/elements/forms/_input.scss */
+::-webkit-meter-suboptimum-value {
+  background: yellow;
+}
+
+/* line 244, ../sass/partials/elements/forms/_input.scss */
+::-webkit-meter-even-less-good-value {
+  background: red;
+}
+
+/* line 249, ../sass/partials/elements/forms/_input.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: none;
+  border: none;
+  color: #95e0ea;
+  background-color: #186e79;
+  height: 1.5rem;
+}
+
+/* line 257, ../sass/partials/elements/forms/_input.scss */
+::-webkit-file-upload-button:disabled {
+  color: #186e79;
+  background-color: #7ebec6;
 }
 
 /*@import "utilities/grids/foundation.scss";*/
@@ -3102,11 +3152,11 @@ textarea:disabled {
   .row > * {
     display: flex;
     flex-grow: 1;
-    min-width: 25%;
   }
-  /* line 9, ../sass/partials/_panels.scss */
+  /* line 8, ../sass/partials/_panels.scss */
   .row > .row {
     max-width: 50%;
+    flex-basis: 49%;
   }
   /* line 12, ../sass/partials/_panels.scss */
   .row > .two {
@@ -3121,7 +3171,7 @@ textarea:disabled {
     flex-grow: 4;
   }
 }
-@media all and (min-width: 384px) and (max-width: 1024px) {
+@media all and (min-width: 640px) and (max-width: 1024px) {
   /* line 24, ../sass/partials/_panels.scss */
   .row {
     display: flex;
@@ -3130,25 +3180,32 @@ textarea:disabled {
   .row > * {
     display: flex;
     flex-grow: 1;
-    min-width: 50%;
+    flex-basis: 49%;
   }
   /* line 31, ../sass/partials/_panels.scss */
   .row > .row {
     display: block;
     width: 100%;
+    flex-basis: 100%;
+  }
+  /* line 35, ../sass/partials/_panels.scss */
+  .row > .row > * {
+    flex-basis: 49%;
+    float: left;
+    width: 50%;
   }
 }
-@media all and (min-width: 0px) and (max-width: 384px) {
-  /* line 38, ../sass/partials/_panels.scss */
+@media all and (min-width: 0px) and (max-width: 640px) {
+  /* line 44, ../sass/partials/_panels.scss */
   .row {
     display: block;
   }
-  /* line 40, ../sass/partials/_panels.scss */
+  /* line 46, ../sass/partials/_panels.scss */
   .row > * {
     display: block;
   }
 }
-/* line 46, ../sass/partials/_panels.scss */
+/* line 52, ../sass/partials/_panels.scss */
 .row {
   width: 100%;
   flex-wrap: wrap;
@@ -3164,7 +3221,7 @@ textarea:disabled {
   clear: both;
 }
 
-/* line 51, ../sass/partials/_panels.scss */
+/* line 57, ../sass/partials/_panels.scss */
 .column {
   padding: 0 0.5rem;
 }

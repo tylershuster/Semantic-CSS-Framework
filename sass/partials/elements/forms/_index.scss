@@ -2,6 +2,7 @@ form{
 	display: block;
 	float: left;
 	width: 100%;
+	flex-wrap: wrap;
 	@media all and (min-width:#{$length-three * 1px}){
 		display: flex;
 		width: 100%;
@@ -13,14 +14,14 @@ form{
 		font-size: typography(p,font-size) * 1rem;
 		line-height: typography(p,line-height) * 1rem;		
 		//height: 0.89rem;
+		white-space: nowrap;
 	}
 	label{
+		flex-grow: 0;
 		@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
-			width: 100%;
 			display: block;
 		}
 		@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
-			width: 100%;
 			display: block;
 		}
 		@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-five * 1px}){
@@ -45,6 +46,7 @@ form{
 		position: relative;
 		line-height: 1.5rem;
 		float: left;
+		margin-right: 1rem;
 	}	
 	input{
 		display: block;			
