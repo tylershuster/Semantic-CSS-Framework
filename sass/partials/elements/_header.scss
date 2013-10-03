@@ -8,13 +8,13 @@
 
 
 @media all and (min-width:#{$length-thirteen * 1px}){
-	main{margin-top:#{$header-height + $nav-height};}
+	main{padding-top:#{$header-height + $nav-height};}
 	@import "header/length-thirteen";
 }
 
 /*desktop nav*/
 @media all and (min-width:#{$length-eight * 1px}) and (max-width:#{$length-thirteen * 1px}){
-	main{margin-top:#{$header-height + $nav-height};}
+	main{padding-top:#{$header-height + $nav-height};}
 	@import "header/length-eight";
 }
 

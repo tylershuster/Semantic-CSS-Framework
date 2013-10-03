@@ -99,7 +99,6 @@ body {
 /* line 10, ../sass/partials/_base.scss */
 main {
   height: 100%;
-  margin-top: 5rem;
   /*padding:0 1rem;*/
   margin-left: auto;
   margin-right: auto;
@@ -2102,7 +2101,7 @@ header nav > ul li ul li {
 @media all and (min-width: 1664px) {
   /* line 11, ../sass/partials/elements/_header.scss */
   main {
-    margin-top: 8rem;
+    padding-top: 8rem;
   }
 
   /*styles for devices from 1664px up*/
@@ -2206,7 +2205,7 @@ header nav > ul li ul li {
 @media all and (min-width: 1024px) and (max-width: 1664px) {
   /* line 17, ../sass/partials/elements/_header.scss */
   main {
-    margin-top: 8rem;
+    padding-top: 8rem;
   }
 
   /*header styles on devices from 1024px-1664px*/
