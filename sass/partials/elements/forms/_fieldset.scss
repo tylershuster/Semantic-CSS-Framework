@@ -4,21 +4,144 @@ fieldset{
 	border: none;
 	margin: 0;
 	padding: 1rem;
-	@include box-shadow($color-background);
+	position: relative;
+	padding-top: #{(typography(h5,line-height) * 1rem) + 1rem};
+	@include box-shadow-inset($color-background);
+	>.row{
+		width: 100%;
+		display: block;
+		>div{
+			width:50%;
+			float: left;
+			&.column{
+				padding-left: 0.5rem;
+				padding-right: 0.5rem;
+			}
+		}
+		>form{
+			width: 100%;
+		}
+	}
 	>fieldset{
-		padding:0 0 1rem 0;
+		padding:0;
+		margin-bottom: 1rem;
 		box-shadow: none;
 		border: none;
+		//@include box-shadow-inset($color-background);
+		input{
+			
+		}
 		>fieldset{
 
 		}
 	}
-	>form{
+	legend + fieldset{
+		//margin-top: 3rem;
+	}
+	form{
 		width: 100%;
+		label{
+			text-align: center;
+			@include box-shadow-inset($color-background);
+			background-color: $color-primary;
+			color: $color-background;
+			padding-top: 0.2rem;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="search"],
+		input[type="speech"],
+		input[type="url"],
+		input[type="password"],
+		input[type="tel"],
+		input[type="number"],
+		input[type="date"],
+		input[type="datetime-local"],
+		input[type="month"],
+		input[type="week"],
+		input[type="datetime"],
+		input[type="time"],
+		input[type="datetime"],
+		input[type="range"]	
+		{
+			/*box-shadow: none;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 2px groove $color-drawer;*/
+			margin: 0;
+			height: 2rem;
+			fieldset &{
+				border-top: none;
+				border-right: 1px solid rgba(255,255,255,0.5);
+				border-bottom: 2px groove $color-drawer;
+				border-left: none;
+				box-shadow: none;
+			}
+		}
+		&:first-of-type{
+			input[type="text"],
+			input[type="email"],
+			input[type="search"],
+			input[type="speech"],
+			input[type="url"],
+			input[type="password"],
+			input[type="tel"],
+			input[type="number"],
+			input[type="date"],
+			input[type="datetime-local"],
+			input[type="month"],
+			input[type="week"],
+			input[type="datetime"],
+			input[type="time"],
+			input[type="datetime"],
+			input[type="range"]{
+				border-top: 1px solid rgba(0,0,0,0.5);
+			}
+		
+		}
+		&:last-of-type{
+			input[type="text"],
+			input[type="email"],
+			input[type="search"],
+			input[type="speech"],
+			input[type="url"],
+			input[type="password"],
+			input[type="tel"],
+			input[type="number"],
+			input[type="date"],
+			input[type="datetime-local"],
+			input[type="month"],
+			input[type="week"],
+			input[type="datetime"],
+			input[type="time"],
+			input[type="datetime"],
+			input[type="range"]{
+				border-bottom: 1px solid rgba(255,255,255,0.5);
+			}
+		}
+		label{
+			box-shadow: none;
+			border: none;
+			margin: 0;
+			height: 2rem;
+		}
+		
+	}
+	hr{
+		display: flex;
+		height: 0;
+		box-sizing: content-box;
+		border: 1px solid $color-background;
+		width: 100%;
+		margin: 0;
 	}
 	legend{
 		font-size: typography(h5,font-size) * 1rem;
 		line-height: typography(h5,line-height) * 1rem;
+		position: absolute;
+		top: 0.5rem;
+		left: 1rem;
 	}
 	&.login{
 		input[type="text"]{

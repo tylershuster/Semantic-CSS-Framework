@@ -1,15 +1,13 @@
 form{
 	display: block;
 	float: left;
-	width: 100%;
 	flex-wrap: wrap;
 	align-items: center;
 	&:focus{
 		outline: none;
 	}
 	@media all and (min-width:#{$length-three * 1px}){
-		display: flex;
-		width: 100%;
+		display: flex;		
 		input{
 			display: flex;
 		}

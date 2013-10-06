@@ -1,115 +1,139 @@
+$color-input-background: $color-drawer;
+@mixin input-disabled{
+	background-color: $color-background;
+	color: $color-drawer;
+}
+
 input{
 	height: 1.5rem;
 	&[type="text"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 		&:disabled{
-			background-color: $color-background;
-			color: $color-drawer;
+			@include input-disabled;
 		}
 	}
 	&[type="range"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="email"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="search"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="url"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="password"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="tel"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="date"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
+	}
+	&[type="datetime-local"]{
+		background-color: $color-input-background;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="month"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="week"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="time"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="datetime"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="number"]{
-		background-color: $color-drawer;
+		background-color: $color-input-background;
 		color: $color-text;
 		margin-top: 0.25rem;
 		margin-bottom: 0.25rem;
 		border: 0;
-		@include box-shadow-inset($color-background);
+		@include box-shadow-inset($color-input-background);
+		&:disabled{
+			@include input-disabled;
+		}
 	}
 	&:not([type]){
 		padding: 0;
+	}
+	&[name*="field"]{
+		background-color: $color-input-background;
+		color: $color-text;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow-inset($color-input-background);
 	}
 	&[type="color"]{
 		padding: 0;
@@ -119,8 +143,21 @@ input{
 		margin: 0.25rem 0;
 		&::-webkit-color-swatch-wrapper{
 			padding: 0.3rem;
-			background: white;
-			@include box-shadow(white);			
+			background: $color-input-background;
+			@include box-shadow($color-input-background);			
+		}
+		&:disabled{
+			&::-webkit-color-swatch-wrapper{
+				background-color: $color-background;
+				@include box-shadow-inset($color-input-background);
+			}
+		}
+		&[readonly]{
+			padding: 0;
+			&::-webkit-color-swatch-wrapper{
+				background-color: $color-background;
+				border: none;
+			}
 		}
 		&::-webkit-color-swatch{
 			border: none;
@@ -138,12 +175,12 @@ input{
 		&:before{
 			width: 1rem;
 			height: 1rem;
-			background-color: $color-drawer;
+			background-color: $color-input-background;
 			display: block;
 			content:"";
 			border-radius: 50%;
 			padding: 0.46rem 0 0rem 0.09rem;
-			@include box-shadow-inset($color-background);
+			@include box-shadow-inset($color-input-background);
 		}
 		&:checked:before{
 			content: "\2022";
@@ -168,10 +205,10 @@ input{
 		&:before{
 			width: 1rem;
 			height: 1rem;
-			background-color: $color-drawer;
+			background-color: $color-input-background;
 			display: block;
 			content:"";
-			@include box-shadow-inset($color-background);
+			@include box-shadow-inset($color-input-background);
 			font-size: 1.5rem;
 			padding-left: 0.1rem;
 
@@ -186,7 +223,13 @@ input{
 
 
 	&[type="submit"]{
-		border-radius: 3px;
+		border-radius: 1px;
+		background-color: $color-accent;
+		color: $color-drawer;
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+		border: 0;
+		@include box-shadow($color-accent);
 	}
 	&[type="file"]{
 		margin: 0.25rem 0;
@@ -197,11 +240,14 @@ input{
 
 select{
 	border: none;
-	background-color: $color-drawer;
-	@include box-shadow-inset($color-background);	
+	background-color: $color-input-background;
+	@include box-shadow-inset($color-input-background);	
 	&:focus{
 		outline: none;
 		box-shadow: none;
+	}
+	&:disabled{
+		@include input-disabled;
 	}
 	&::-webkit-scrollbar-track{
 		margin-top: -1px;
@@ -232,11 +278,20 @@ textarea{
 	padding: 1rem 0 0 0.62rem;
 	border: 0;
 	color: $color-text;
-	background-color: $color-drawer;
-	@include box-shadow-inset($color-background);
+	background-color: $color-input-background;
+	@include box-shadow-inset($color-input-background);
+	&:before{
+		content: "hi";
+		display: block;
+		width: 5rem;
+		height: 1rem;
+		background: red;
+		position: relative;
+		bottom: 3rem;
+		z-index: 999;
+	}
 	&:disabled{
-		background-color: $color-background;
-		color: $color-drawer;
+		@include input-disabled;
 	}
 }
 
@@ -245,7 +300,7 @@ textarea{
 }
 
 ::-webkit-scrollbar-track {
-	background-color: $color-drawer;
+	background-color: $color-input-background;
 	@include box-shadow-inset($color-drawer);
 	margin-top: -1px;
 }
@@ -314,7 +369,7 @@ textarea{
 
 ::-webkit-media-slider-container{
 	border: none;
-	background-color: $color-drawer;
+	background-color: $color-input-background;
 }
 
 ::-webkit-media-controls-current-time-display{
@@ -323,7 +378,7 @@ textarea{
 
 ::-webkit-meter-bar{
 	background: $color-drawer;
-	@include box-shadow-inset($color-background);
+	@include box-shadow-inset($color-input-background);
 	overflow: hidden;
 }
 
@@ -352,7 +407,7 @@ textarea{
 }
 ::-webkit-file-upload-button:disabled{
 	color: $color-accent;
-	background-color: $color-drawer;
+	background-color: $color-input-background;
 	@include box-shadow($color-drawer);
 }
 
@@ -367,4 +422,11 @@ input::-webkit-calendar-picker-indicator:hover{
 	color: red;
 	width: 1rem;
 	height: 100%;
+}
+progress{
+	-webkit-appearance: none;
+	&::-webkit-progress-bar{
+		background-color: $color-input-background;
+		@include box-shadow-inset($color-background);
+	}
 }

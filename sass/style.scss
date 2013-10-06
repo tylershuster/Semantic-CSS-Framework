@@ -143,11 +143,13 @@ $legacy-support-for-mozilla: false;
 
 @import "partials/elements/pre";
 
+@import "partials/elements/forms/input";
+
 @import "partials/elements/forms/index";
 
 @import "partials/elements/forms/fieldset";
 
-@import "partials/elements/forms/input";
+
 
 //////////////////////////////
 // Import Grids
