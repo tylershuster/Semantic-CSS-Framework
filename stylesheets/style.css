@@ -2762,213 +2762,213 @@ pre {
   padding: 1rem;
 }
 
-/* line 7, ../sass/partials/elements/forms/_input.scss */
+/* line 8, ../sass/partials/elements/forms/_input.scss */
 input {
   height: 1.5rem;
 }
-/* line 9, ../sass/partials/elements/forms/_input.scss */
+/* line 10, ../sass/partials/elements/forms/_input.scss */
 input[type="text"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 16, ../sass/partials/elements/forms/_input.scss */
+/* line 17, ../sass/partials/elements/forms/_input.scss */
 input[type="text"]:disabled {
   background-color: #b3e9ff;
   color: #99e1ff;
 }
-/* line 20, ../sass/partials/elements/forms/_input.scss */
+/* line 21, ../sass/partials/elements/forms/_input.scss */
 input[type="range"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 28, ../sass/partials/elements/forms/_input.scss */
+/* line 29, ../sass/partials/elements/forms/_input.scss */
 input[type="email"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 36, ../sass/partials/elements/forms/_input.scss */
+/* line 37, ../sass/partials/elements/forms/_input.scss */
 input[type="search"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 44, ../sass/partials/elements/forms/_input.scss */
+/* line 45, ../sass/partials/elements/forms/_input.scss */
 input[type="url"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 52, ../sass/partials/elements/forms/_input.scss */
+/* line 53, ../sass/partials/elements/forms/_input.scss */
 input[type="password"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 60, ../sass/partials/elements/forms/_input.scss */
+/* line 61, ../sass/partials/elements/forms/_input.scss */
 input[type="tel"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 68, ../sass/partials/elements/forms/_input.scss */
+/* line 69, ../sass/partials/elements/forms/_input.scss */
 input[type="date"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 76, ../sass/partials/elements/forms/_input.scss */
+/* line 77, ../sass/partials/elements/forms/_input.scss */
 input[type="datetime-local"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 84, ../sass/partials/elements/forms/_input.scss */
+/* line 85, ../sass/partials/elements/forms/_input.scss */
 input[type="month"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 92, ../sass/partials/elements/forms/_input.scss */
+/* line 93, ../sass/partials/elements/forms/_input.scss */
 input[type="week"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 100, ../sass/partials/elements/forms/_input.scss */
+/* line 101, ../sass/partials/elements/forms/_input.scss */
 input[type="time"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 108, ../sass/partials/elements/forms/_input.scss */
+/* line 109, ../sass/partials/elements/forms/_input.scss */
 input[type="datetime"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 116, ../sass/partials/elements/forms/_input.scss */
+/* line 117, ../sass/partials/elements/forms/_input.scss */
 input[type="number"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 123, ../sass/partials/elements/forms/_input.scss */
+/* line 124, ../sass/partials/elements/forms/_input.scss */
 input[type="number"]:disabled {
   background-color: #b3e9ff;
   color: #99e1ff;
 }
-/* line 127, ../sass/partials/elements/forms/_input.scss */
+/* line 128, ../sass/partials/elements/forms/_input.scss */
 input:not([type]) {
   padding: 0;
 }
-/* line 130, ../sass/partials/elements/forms/_input.scss */
+/* line 131, ../sass/partials/elements/forms/_input.scss */
 input[name*="field"] {
   background-color: #99e1ff;
   color: #005a80;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.5) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.5);
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 138, ../sass/partials/elements/forms/_input.scss */
+/* line 139, ../sass/partials/elements/forms/_input.scss */
 input[type="color"] {
   padding: 0;
   border: none;
   max-width: 3rem;
   height: 1.5rem;
-  margin: 0.25rem 0;
+  margin: calc((2rem - 1.5rem) / 2) 0;
 }
-/* line 144, ../sass/partials/elements/forms/_input.scss */
+/* line 145, ../sass/partials/elements/forms/_input.scss */
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0.3rem;
   background: #99e1ff;
@@ -2977,7 +2977,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
   border-color: #9ee2ff #91d5f2 #91d5f2 #9ee2ff;
 }
-/* line 150, ../sass/partials/elements/forms/_input.scss */
+/* line 151, ../sass/partials/elements/forms/_input.scss */
 input[type="color"]:disabled::-webkit-color-swatch-wrapper {
   background-color: #b3e9ff;
   border: 1px solid;
@@ -2985,16 +2985,16 @@ input[type="color"]:disabled::-webkit-color-swatch-wrapper {
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 155, ../sass/partials/elements/forms/_input.scss */
+/* line 156, ../sass/partials/elements/forms/_input.scss */
 input[type="color"][readonly] {
   padding: 0;
 }
-/* line 157, ../sass/partials/elements/forms/_input.scss */
+/* line 158, ../sass/partials/elements/forms/_input.scss */
 input[type="color"][readonly]::-webkit-color-swatch-wrapper {
   background-color: #b3e9ff;
   border: none;
 }
-/* line 162, ../sass/partials/elements/forms/_input.scss */
+/* line 163, ../sass/partials/elements/forms/_input.scss */
 input[type="color"]::-webkit-color-swatch {
   border: none;
   border: 1px solid;
@@ -3002,7 +3002,7 @@ input[type="color"]::-webkit-color-swatch {
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 167, ../sass/partials/elements/forms/_input.scss */
+/* line 168, ../sass/partials/elements/forms/_input.scss */
 input[type="radio"] {
   height: 1rem;
   box-shadow: none;
@@ -3012,7 +3012,7 @@ input[type="radio"] {
   align-items: center;
   margin: 0.5rem 0.2rem 0.5rem 0;
 }
-/* line 175, ../sass/partials/elements/forms/_input.scss */
+/* line 176, ../sass/partials/elements/forms/_input.scss */
 input[type="radio"]:before {
   width: 1rem;
   height: 1rem;
@@ -3026,14 +3026,14 @@ input[type="radio"]:before {
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 185, ../sass/partials/elements/forms/_input.scss */
+/* line 186, ../sass/partials/elements/forms/_input.scss */
 input[type="radio"]:checked:before {
   content: "\2022";
   color: #00648d;
   font-size: 2rem;
   line-height: 0;
 }
-/* line 192, ../sass/partials/elements/forms/_input.scss */
+/* line 193, ../sass/partials/elements/forms/_input.scss */
 input[type="radio"]:after {
   content: attr(name);
   color: #005a80;
@@ -3043,12 +3043,12 @@ input[type="radio"]:after {
   margin-right: 0.2rem;
   flex-grow: 1;
 }
-/* line 202, ../sass/partials/elements/forms/_input.scss */
+/* line 203, ../sass/partials/elements/forms/_input.scss */
 input[type="checkbox"] {
   height: 1rem;
   -webkit-appearance: none;
 }
-/* line 205, ../sass/partials/elements/forms/_input.scss */
+/* line 206, ../sass/partials/elements/forms/_input.scss */
 input[type="checkbox"]:before {
   width: 1rem;
   height: 1rem;
@@ -3062,33 +3062,33 @@ input[type="checkbox"]:before {
   font-size: 1.5rem;
   padding-left: 0.1rem;
 }
-/* line 216, ../sass/partials/elements/forms/_input.scss */
+/* line 217, ../sass/partials/elements/forms/_input.scss */
 input[type="checkbox"]:checked:before {
   content: "\2713";
   color: #00648d;
   line-height: 0;
   padding-top: 0.2rem;
 }
-/* line 225, ../sass/partials/elements/forms/_input.scss */
+/* line 226, ../sass/partials/elements/forms/_input.scss */
 input[type="submit"] {
   border-radius: 1px;
   background-color: #00648d;
   color: #99e1ff;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   border: 1px solid;
   border-radius: 1px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
   border-color: #0c6b92 #005f85 #005f85 #0c6b92;
 }
-/* line 234, ../sass/partials/elements/forms/_input.scss */
+/* line 235, ../sass/partials/elements/forms/_input.scss */
 input[type="file"] {
-  margin: 0.25rem 0;
+  margin: calc((2rem - 1.5rem) / 2) 0;
   padding: 0;
 }
 
-/* line 241, ../sass/partials/elements/forms/_input.scss */
+/* line 242, ../sass/partials/elements/forms/_input.scss */
 select {
   border: none;
   background-color: #99e1ff;
@@ -3097,22 +3097,22 @@ select {
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 245, ../sass/partials/elements/forms/_input.scss */
+/* line 246, ../sass/partials/elements/forms/_input.scss */
 select:focus {
   outline: none;
   box-shadow: none;
 }
-/* line 249, ../sass/partials/elements/forms/_input.scss */
+/* line 250, ../sass/partials/elements/forms/_input.scss */
 select:disabled {
   background-color: #b3e9ff;
   color: #99e1ff;
 }
-/* line 252, ../sass/partials/elements/forms/_input.scss */
+/* line 253, ../sass/partials/elements/forms/_input.scss */
 select::-webkit-scrollbar-track {
   margin-top: -1px;
 }
 
-/* line 259, ../sass/partials/elements/forms/_input.scss */
+/* line 260, ../sass/partials/elements/forms/_input.scss */
 output {
   font-size: 1rem;
   line-height: 2rem;
@@ -3120,19 +3120,19 @@ output {
   padding-bottom: 0.25rem;
 }
 
-/* line 265, ../sass/partials/elements/forms/_input.scss */
+/* line 266, ../sass/partials/elements/forms/_input.scss */
 label {
   font-size: 1rem;
   line-height: 2rem;
   padding-top: 0.75rem;
   padding-bottom: 0.25rem;
 }
-/* line 271, ../sass/partials/elements/forms/_input.scss */
+/* line 272, ../sass/partials/elements/forms/_input.scss */
 label.required:after {
   content: "*";
 }
 
-/* line 277, ../sass/partials/elements/forms/_input.scss */
+/* line 278, ../sass/partials/elements/forms/_input.scss */
 textarea {
   padding: 1rem 0 0 0.62rem;
   border: 0;
@@ -3143,7 +3143,7 @@ textarea {
   border-radius: 1px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 283, ../sass/partials/elements/forms/_input.scss */
+/* line 284, ../sass/partials/elements/forms/_input.scss */
 textarea:before {
   content: "hi";
   display: block;
@@ -3154,18 +3154,18 @@ textarea:before {
   bottom: 3rem;
   z-index: 999;
 }
-/* line 293, ../sass/partials/elements/forms/_input.scss */
+/* line 294, ../sass/partials/elements/forms/_input.scss */
 textarea:disabled {
   background-color: #b3e9ff;
   color: #99e1ff;
 }
 
-/* line 298, ../sass/partials/elements/forms/_input.scss */
+/* line 299, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-scrollbar {
   width: 1rem;
 }
 
-/* line 302, ../sass/partials/elements/forms/_input.scss */
+/* line 303, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-scrollbar-track {
   background-color: #99e1ff;
   border: 1px solid;
@@ -3175,7 +3175,7 @@ textarea:disabled {
   margin-top: -1px;
 }
 
-/* line 308, ../sass/partials/elements/forms/_input.scss */
+/* line 309, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-scrollbar-thumb {
   width: calc(100% - 2px);
   width: 50%;
@@ -3188,24 +3188,24 @@ textarea:disabled {
   border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-/* line 316, ../sass/partials/elements/forms/_input.scss */
+/* line 317, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-scrollbar-corner {
   /* 6 */
 }
 
-/* line 317, ../sass/partials/elements/forms/_input.scss */
+/* line 318, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-resizer {
   /* 7 */
 }
 
-/* line 319, ../sass/partials/elements/forms/_input.scss */
+/* line 320, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
   width: 1rem;
   height: 100%;
 }
-/* line 324, ../sass/partials/elements/forms/_input.scss */
+/* line 325, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-inner-spin-button:before {
   width: 0;
   height: 0;
@@ -3217,7 +3217,7 @@ textarea:disabled {
   bottom: 1rem;
   left: 25%;
 }
-/* line 335, ../sass/partials/elements/forms/_input.scss */
+/* line 336, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-inner-spin-button:after {
   width: 0;
   height: 0;
@@ -3230,7 +3230,7 @@ textarea:disabled {
   left: -25%;
 }
 
-/* line 348, ../sass/partials/elements/forms/_input.scss */
+/* line 349, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: #005a80;
@@ -3243,7 +3243,7 @@ textarea:disabled {
   border-radius: 50%;
 }
 
-/* line 357, ../sass/partials/elements/forms/_input.scss */
+/* line 358, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-controls-play-button {
   -webkit-appearance: none;
   height: 0;
@@ -3253,23 +3253,23 @@ textarea:disabled {
   border-bottom: 0.5rem solid transparent;
 }
 
-/* line 366, ../sass/partials/elements/forms/_input.scss */
+/* line 367, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-controls-panel {
   background-color: rgba(153, 225, 255, 0.8);
 }
 
-/* line 370, ../sass/partials/elements/forms/_input.scss */
+/* line 371, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-slider-container {
   border: none;
   background-color: #99e1ff;
 }
 
-/* line 375, ../sass/partials/elements/forms/_input.scss */
+/* line 376, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-controls-current-time-display {
   color: #005a80;
 }
 
-/* line 379, ../sass/partials/elements/forms/_input.scss */
+/* line 380, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-meter-bar {
   background: #99e1ff;
   border: 1px solid;
@@ -3279,7 +3279,7 @@ textarea:disabled {
   overflow: hidden;
 }
 
-/* line 386, ../sass/partials/elements/forms/_input.scss */
+/* line 387, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-meter-optimum-value {
   background: green;
   border: 1px solid;
@@ -3288,7 +3288,7 @@ textarea:disabled {
   border-color: #0c860c #007900 #007900 #0c860c;
 }
 
-/* line 390, ../sass/partials/elements/forms/_input.scss */
+/* line 391, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-meter-suboptimum-value {
   background: yellow;
   border: 1px solid;
@@ -3297,7 +3297,7 @@ textarea:disabled {
   border-color: #ffff0c #f2f200 #f2f200 #ffff0c;
 }
 
-/* line 395, ../sass/partials/elements/forms/_input.scss */
+/* line 396, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-meter-even-less-good-value {
   background: red;
   border: 1px solid;
@@ -3306,7 +3306,7 @@ textarea:disabled {
   border-color: #ff0c0c #f20000 #f20000 #ff0c0c;
 }
 
-/* line 400, ../sass/partials/elements/forms/_input.scss */
+/* line 401, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: none;
   border: none;
@@ -3319,7 +3319,7 @@ textarea:disabled {
   height: 1.5rem;
 }
 
-/* line 408, ../sass/partials/elements/forms/_input.scss */
+/* line 409, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-file-upload-button:disabled {
   color: #00648d;
   background-color: #99e1ff;
@@ -3329,12 +3329,12 @@ textarea:disabled {
   border-color: #9ee2ff #91d5f2 #91d5f2 #9ee2ff;
 }
 
-/* line 414, ../sass/partials/elements/forms/_input.scss */
+/* line 415, ../sass/partials/elements/forms/_input.scss */
 input::-webkit-calendar-picker-indicator:hover {
   background-color: transparent;
 }
 
-/* line 418, ../sass/partials/elements/forms/_input.scss */
+/* line 419, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-clear-button {
   -webkit-appearance: none;
   content: "x";
@@ -3344,11 +3344,11 @@ input::-webkit-calendar-picker-indicator:hover {
   height: 100%;
 }
 
-/* line 426, ../sass/partials/elements/forms/_input.scss */
+/* line 427, ../sass/partials/elements/forms/_input.scss */
 progress {
   -webkit-appearance: none;
 }
-/* line 428, ../sass/partials/elements/forms/_input.scss */
+/* line 429, ../sass/partials/elements/forms/_input.scss */
 progress::-webkit-progress-bar {
   background-color: #99e1ff;
   border: 1px solid;
@@ -3606,87 +3606,85 @@ fieldset form input[type="range"] {
   border-left: none;
   border-right: none;
   border-bottom: 2px groove $color-drawer;*/
+  box-shadow: none;
+  border-color: none;
   margin: 0;
   height: 2rem;
-}
-/* line 74, ../sass/partials/elements/forms/_fieldset.scss */
-fieldset fieldset form input[type="text"], fieldset
-fieldset form input[type="email"], fieldset
-fieldset form input[type="search"], fieldset
-fieldset form input[type="speech"], fieldset
-fieldset form input[type="url"], fieldset
-fieldset form input[type="password"], fieldset
-fieldset form input[type="tel"], fieldset
-fieldset form input[type="number"], fieldset
-fieldset form input[type="date"], fieldset
-fieldset form input[type="datetime-local"], fieldset
-fieldset form input[type="month"], fieldset
-fieldset form input[type="week"], fieldset
-fieldset form input[type="datetime"], fieldset
-fieldset form input[type="time"], fieldset
-fieldset form input[type="datetime"], fieldset
-fieldset form input[type="range"] {
   border-top: none;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 2px groove #99e1ff;
+  border-bottom: 1px groove #99e1ff;
   border-left: none;
   box-shadow: none;
 }
-/* line 98, ../sass/partials/elements/forms/_fieldset.scss */
-fieldset form:first-of-type input[type="text"],
-fieldset form:first-of-type input[type="email"],
-fieldset form:first-of-type input[type="search"],
-fieldset form:first-of-type input[type="speech"],
-fieldset form:first-of-type input[type="url"],
-fieldset form:first-of-type input[type="password"],
-fieldset form:first-of-type input[type="tel"],
-fieldset form:first-of-type input[type="number"],
-fieldset form:first-of-type input[type="date"],
-fieldset form:first-of-type input[type="datetime-local"],
-fieldset form:first-of-type input[type="month"],
-fieldset form:first-of-type input[type="week"],
-fieldset form:first-of-type input[type="datetime"],
-fieldset form:first-of-type input[type="time"],
-fieldset form:first-of-type input[type="datetime"],
-fieldset form:first-of-type input[type="range"] {
+/* line 82, ../sass/partials/elements/forms/_fieldset.scss */
+fieldset form input {
+  border-top: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px groove #99e1ff;
+  border-left: none;
+  box-shadow: none;
+}
+/* line 90, ../sass/partials/elements/forms/_fieldset.scss */
+fieldset form:first-of-type input {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
-/* line 119, ../sass/partials/elements/forms/_fieldset.scss */
-fieldset form:last-of-type input[type="text"],
-fieldset form:last-of-type input[type="email"],
-fieldset form:last-of-type input[type="search"],
-fieldset form:last-of-type input[type="speech"],
-fieldset form:last-of-type input[type="url"],
-fieldset form:last-of-type input[type="password"],
-fieldset form:last-of-type input[type="tel"],
-fieldset form:last-of-type input[type="number"],
-fieldset form:last-of-type input[type="date"],
-fieldset form:last-of-type input[type="datetime-local"],
-fieldset form:last-of-type input[type="month"],
-fieldset form:last-of-type input[type="week"],
-fieldset form:last-of-type input[type="datetime"],
-fieldset form:last-of-type input[type="time"],
-fieldset form:last-of-type input[type="datetime"],
-fieldset form:last-of-type input[type="range"] {
+/* line 96, ../sass/partials/elements/forms/_fieldset.scss */
+fieldset form:last-of-type input {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 123, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 100, ../sass/partials/elements/forms/_fieldset.scss */
 fieldset form label {
   box-shadow: none;
   border: none;
   margin: 0;
   height: 2rem;
 }
-/* line 131, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 110, ../sass/partials/elements/forms/_fieldset.scss */
+fieldset div form label {
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+/* line 114, ../sass/partials/elements/forms/_fieldset.scss */
+fieldset div form:first-of-type input, fieldset div form:first-of-type label {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+/* line 119, ../sass/partials/elements/forms/_fieldset.scss */
+fieldset div form:last-of-type input, fieldset div form:last-of-type label {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 125, ../sass/partials/elements/forms/_fieldset.scss */
 fieldset hr {
   display: flex;
-  height: 0;
-  box-sizing: content-box;
-  border: 1px solid #b3e9ff;
+  height: 2px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   width: 100%;
   margin: 0;
 }
-/* line 139, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 133, ../sass/partials/elements/forms/_fieldset.scss */
+fieldset hr + form {
+  height: calc(2rem - 2px);
+}
+/* line 150, ../sass/partials/elements/forms/_fieldset.scss */
+fieldset hr + form input[type="text"],
+fieldset hr + form input[type="email"],
+fieldset hr + form input[type="search"],
+fieldset hr + form input[type="speech"],
+fieldset hr + form input[type="url"],
+fieldset hr + form input[type="password"],
+fieldset hr + form input[type="tel"],
+fieldset hr + form input[type="number"],
+fieldset hr + form input[type="date"],
+fieldset hr + form input[type="datetime-local"],
+fieldset hr + form input[type="month"],
+fieldset hr + form input[type="week"],
+fieldset hr + form input[type="datetime"],
+fieldset hr + form input[type="time"],
+fieldset hr + form input[type="datetime"],
+fieldset hr + form input[type="range"] {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+/* line 155, ../sass/partials/elements/forms/_fieldset.scss */
 fieldset legend {
   font-size: 1.25rem;
   line-height: 2rem;

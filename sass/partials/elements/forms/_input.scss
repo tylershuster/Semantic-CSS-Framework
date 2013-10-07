@@ -1,16 +1,17 @@
 $color-input-background: $color-drawer;
+$height-form-input: 1.5rem;
 @mixin input-disabled{
 	background-color: $color-background;
 	color: $color-drawer;
 }
 
 input{
-	height: 1.5rem;
+	height: $height-form-input;
 	&[type="text"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 		&:disabled{
@@ -20,104 +21,104 @@ input{
 	&[type="range"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="email"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="search"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="url"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="password"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="tel"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="date"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="datetime-local"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="month"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="week"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="time"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="datetime"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
 	&[type="number"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 		&:disabled{
@@ -130,8 +131,8 @@ input{
 	&[name*="field"]{
 		background-color: $color-input-background;
 		color: $color-text;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow-inset($color-input-background);
 	}
@@ -140,7 +141,7 @@ input{
 		border: none;
 		max-width: 3rem;
 		height: 1.5rem;
-		margin: 0.25rem 0;
+		margin: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2) 0;
 		&::-webkit-color-swatch-wrapper{
 			padding: 0.3rem;
 			background: $color-input-background;
@@ -226,13 +227,13 @@ input{
 		border-radius: 1px;
 		background-color: $color-accent;
 		color: $color-drawer;
-		margin-top: 0.25rem;
-		margin-bottom: 0.25rem;
+		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
 		@include box-shadow($color-accent);
 	}
 	&[type="file"]{
-		margin: 0.25rem 0;
+		margin: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2) 0;
 		padding: 0;
 	}
 }

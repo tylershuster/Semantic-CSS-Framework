@@ -69,17 +69,69 @@ fieldset{
 			border-left: none;
 			border-right: none;
 			border-bottom: 2px groove $color-drawer;*/
+			box-shadow: none;
+			border-color: none;
 			margin: 0;
-			height: 2rem;
-			fieldset &{
-				border-top: none;
-				border-right: 1px solid rgba(255,255,255,0.5);
-				border-bottom: 2px groove $color-drawer;
-				border-left: none;
-				box-shadow: none;
-			}
+			height: #{ceil($height-form-input)};	
+			border-top: none;
+			border-right: 1px solid rgba(255,255,255,0.5);
+			border-bottom: 1px groove $color-drawer;
+			border-left: none;
+			box-shadow: none;	
+		}
+		input{
+			border-top: none;
+			border-right: 1px solid rgba(255,255,255,0.5);
+			border-bottom: 1px groove $color-drawer;
+			border-left: none;
+			box-shadow: none;
 		}
 		&:first-of-type{
+			input{
+				border-top: 1px solid rgba(0,0,0,0.5);
+			}
+		
+		}
+		&:last-of-type{
+			input{
+				border-bottom: 1px solid rgba(255,255,255,0.5);
+			}
+		}
+		label{
+			box-shadow: none;
+			border: none;
+			margin: 0;
+			height: #{ceil($height-form-input)};
+		}
+		
+	}
+	div{
+		form{
+			label{				
+				border-left: 1px solid $color-3d-dark;;
+			}
+			&:first-of-type{
+				input, label{
+					border-top: 1px solid $color-3d-dark;
+				}
+			}
+			&:last-of-type{
+				input, label{
+					border-bottom: 1px solid $color-3d-light;
+				}				
+			}
+		}
+	}
+	hr{
+		display: flex;
+		height: 2px;
+		box-sizing: border-box;
+		border-top: 1px solid $color-3d-light;
+		border-bottom: 1px solid $color-3d-dark;
+		width: 100%;
+		margin: 0;
+		& + form{
+			height: calc(#{ceil($height-form-input)} - 2px);
 			input[type="text"],
 			input[type="email"],
 			input[type="search"],
@@ -98,43 +150,7 @@ fieldset{
 			input[type="range"]{
 				border-top: 1px solid rgba(0,0,0,0.5);
 			}
-		
 		}
-		&:last-of-type{
-			input[type="text"],
-			input[type="email"],
-			input[type="search"],
-			input[type="speech"],
-			input[type="url"],
-			input[type="password"],
-			input[type="tel"],
-			input[type="number"],
-			input[type="date"],
-			input[type="datetime-local"],
-			input[type="month"],
-			input[type="week"],
-			input[type="datetime"],
-			input[type="time"],
-			input[type="datetime"],
-			input[type="range"]{
-				border-bottom: 1px solid rgba(255,255,255,0.5);
-			}
-		}
-		label{
-			box-shadow: none;
-			border: none;
-			margin: 0;
-			height: 2rem;
-		}
-		
-	}
-	hr{
-		display: flex;
-		height: 0;
-		box-sizing: content-box;
-		border: 1px solid $color-background;
-		width: 100%;
-		margin: 0;
 	}
 	legend{
 		font-size: typography(h5,font-size) * 1rem;
