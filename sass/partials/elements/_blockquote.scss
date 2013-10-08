@@ -21,6 +21,9 @@ blockquote{
 		padding-bottom: typography(h4,padding-bottom) * 1rem;
 		color: $color-secondary;
 	}
+	>img{
+		width: 100%;
+	}
 	article &:nth-of-type(odd){
 		float: left;
 		text-align: right;

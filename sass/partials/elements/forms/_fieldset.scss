@@ -47,45 +47,18 @@ fieldset{
 			color: $color-background;
 			padding-top: 0.2rem;
 		}
-		input[type="text"],
-		input[type="email"],
-		input[type="search"],
-		input[type="speech"],
-		input[type="url"],
-		input[type="password"],
-		input[type="tel"],
-		input[type="number"],
-		input[type="date"],
-		input[type="datetime-local"],
-		input[type="month"],
-		input[type="week"],
-		input[type="datetime"],
-		input[type="time"],
-		input[type="datetime"],
-		input[type="range"]	
-		{
-			/*box-shadow: none;
-			border-top: none;
-			border-left: none;
-			border-right: none;
-			border-bottom: 2px groove $color-drawer;*/
+		input{
+			
 			box-shadow: none;
 			border-color: none;
 			margin: 0;
 			height: #{ceil($height-form-input)};	
 			border-top: none;
 			border-right: 1px solid rgba(255,255,255,0.5);
-			border-bottom: 1px groove $color-drawer;
+			border-bottom: 1px dotted $color-primary;
 			border-left: none;
 			box-shadow: none;	
-		}
-		input{
-			border-top: none;
-			border-right: 1px solid rgba(255,255,255,0.5);
-			border-bottom: 1px groove $color-drawer;
-			border-left: none;
-			box-shadow: none;
-		}
+		}	
 		&:first-of-type{
 			input{
 				border-top: 1px solid rgba(0,0,0,0.5);
@@ -102,21 +75,32 @@ fieldset{
 			border: none;
 			margin: 0;
 			height: #{ceil($height-form-input)};
+			//border-bottom: 1px dotted $color-background;
 		}
 		
 	}
+	textarea{
+		border-top: none;
+		box-shadow: none;
+	}
 	div{
+		display: flex;
+		flex-wrap: wrap;
+		float: left;
+		width: 100%;
+		border: 1px inset $color-background;
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 		form{
 			label{				
-				border-left: 1px solid $color-3d-dark;;
+				//border-left: 1px solid $color-3d-dark;;
 			}
 			&:first-of-type{
-				input, label{
+				label{
 					border-top: 1px solid $color-3d-dark;
 				}
 			}
 			&:last-of-type{
-				input, label{
+				label{
 					border-bottom: 1px solid $color-3d-light;
 				}				
 			}
@@ -124,33 +108,22 @@ fieldset{
 	}
 	hr{
 		display: flex;
-		height: 2px;
-		box-sizing: border-box;
-		border-top: 1px solid $color-3d-light;
-		border-bottom: 1px solid $color-3d-dark;
+		height: 0px;
+		//box-sizing: border-box;
+		//border-top: 1px solid $color-3d-light;
+		//border-bottom: 1px solid $color-3d-dark;
 		width: 100%;
 		margin: 0;
+		border: none;
+		//margin: -1px 0;	
 		& + form{
-			height: calc(#{ceil($height-form-input)} - 2px);
-			input[type="text"],
-			input[type="email"],
-			input[type="search"],
-			input[type="speech"],
-			input[type="url"],
-			input[type="password"],
-			input[type="tel"],
-			input[type="number"],
-			input[type="date"],
-			input[type="datetime-local"],
-			input[type="month"],
-			input[type="week"],
-			input[type="datetime"],
-			input[type="time"],
-			input[type="datetime"],
-			input[type="range"]{
-				border-top: 1px solid rgba(0,0,0,0.5);
+			label{
+				border-top: 1px solid $color-background;
 			}
-		}
+			input{
+				border-top: 1px solid $color-background;
+			}
+		}	
 	}
 	legend{
 		font-size: typography(h5,font-size) * 1rem;
