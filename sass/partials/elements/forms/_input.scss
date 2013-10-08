@@ -7,120 +7,62 @@ $height-form-input: 1.5rem;
 
 input{
 	height: $height-form-input;
+	background-color: $color-input-background;
+	color: $color-text;
+	margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+	margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+	border: 0;
+	@include box-shadow-inset($color-input-background);
+	&:focus{
+		-webkit-box-shadow: $color-3d-dark 0 0 3px 0 inset;
+		box-shadow: $color-3d-dark 0 0 3px 0 inset;
+		border-bottom: none;
+		
+	}
 	&[type="text"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 		&:disabled{
 			@include input-disabled;
 		}
 	}
 	&[type="range"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="email"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="search"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="url"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="password"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="tel"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="date"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="datetime-local"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="month"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="week"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="time"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="datetime"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="number"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 		&:disabled{
 			@include input-disabled;
 		}
@@ -129,15 +71,11 @@ input{
 		padding: 0;
 	}
 	&[name*="field"]{
-		background-color: $color-input-background;
-		color: $color-text;
-		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-		border: 0;
-		@include box-shadow-inset($color-input-background);
+		
 	}
 	&[type="color"]{
 		padding: 0;
+		box-shadow: none;
 		border: none;
 		max-width: 3rem;
 		height: 1.5rem;
@@ -168,20 +106,22 @@ input{
 	&[type="radio"]{
 		height: 1rem;
 		box-shadow: none;
+		border: none;
 		width: auto;
 		-webkit-appearance: none;
 		display: flex;
 		align-items: center;
 		margin: 0.5rem 0.2rem 0.5rem 0;
+		background-color: transparent;
 		&:before{
 			width: 1rem;
 			height: 1rem;
 			background-color: $color-input-background;
 			display: block;
-			content:"";
-			border-radius: 50%;
+			content:"";			
 			padding: 0.46rem 0 0rem 0.09rem;
 			@include box-shadow-inset($color-input-background);
+			border-radius: 50%;
 		}
 		&:checked:before{
 			content: "\2022";
@@ -203,6 +143,8 @@ input{
 	&[type="checkbox"]{
 		height: 1rem;
 		-webkit-appearance:none;
+		box-shadow: none;
+		border: none;
 		&:before{
 			width: 1rem;
 			height: 1rem;
@@ -223,8 +165,7 @@ input{
 	}
 
 
-	&[type="submit"]{
-		border-radius: 1px;
+	&[type="submit"]{		
 		background-color: $color-accent;
 		color: $color-drawer;
 		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
@@ -235,6 +176,8 @@ input{
 	&[type="file"]{
 		margin: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2) 0;
 		padding: 0;
+		background-color: transparent;
+		border: none;
 	}
 }
 
@@ -384,19 +327,7 @@ textarea{
 }
 
 
-::-webkit-meter-optimum-value{
-	background: green;
-	@include box-shadow(green);
-}
-::-webkit-meter-suboptimum-value{
-	background: yellow;
-	@include box-shadow(yellow);
-}
 
-::-webkit-meter-even-less-good-value{
-	background: red;
-	@include box-shadow(red);
-}
 
 ::-webkit-file-upload-button{
 	-webkit-appearance: none;
@@ -429,5 +360,20 @@ progress{
 	&::-webkit-progress-bar{
 		background-color: $color-input-background;
 		@include box-shadow-inset($color-background);
+	}
+}
+meter{
+	&::-webkit-meter-optimum-value{
+		background: green;
+		@include box-shadow(green);
+	}
+	&::-webkit-meter-suboptimum-value{
+		background: yellow;
+		@include box-shadow(yellow);
+	}
+
+	&::-webkit-meter-even-less-good-value{
+		background: red;
+		@include box-shadow(red);
 	}
 }
