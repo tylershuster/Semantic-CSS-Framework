@@ -14,8 +14,8 @@ input{
 	border: 0;
 	@include box-shadow-inset($color-input-background);
 	&:focus{
-		-webkit-box-shadow: $color-3d-dark 0 0 3px 0 inset;
-		box-shadow: $color-3d-dark 0 0 3px 0 inset;
+		-webkit-box-shadow: $color__3d--dark 0 0 3px 0 inset;
+		box-shadow: $color__3d--dark 0 0 3px 0 inset;
 		border-bottom: none;
 		
 	}
@@ -238,6 +238,29 @@ textarea{
 		@include input-disabled;
 	}
 }
+button{
+	form{
+		label{
+			
+		}
+		input{
+			&[type="radio"]{
+
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 ::-webkit-scrollbar {
 	width: 1rem;

@@ -92,16 +92,16 @@ fieldset{
 		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 		form{
 			label{				
-				//border-left: 1px solid $color-3d-dark;;
+				//border-left: 1px solid $color__3d--dark;;
 			}
 			&:first-of-type{
 				label{
-					border-top: 1px solid $color-3d-dark;
+					border-top: 1px solid $color__3d--dark;
 				}
 			}
 			&:last-of-type{
 				label{
-					border-bottom: 1px solid $color-3d-light;
+					border-bottom: 1px solid $color__3d--light;
 				}				
 			}
 		}
@@ -110,8 +110,8 @@ fieldset{
 		display: flex;
 		height: 0px;
 		//box-sizing: border-box;
-		//border-top: 1px solid $color-3d-light;
-		//border-bottom: 1px solid $color-3d-dark;
+		//border-top: 1px solid $color__3d--light;
+		//border-bottom: 1px solid $color__3d--dark;
 		width: 100%;
 		margin: 0;
 		border: none;

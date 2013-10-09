@@ -9,7 +9,9 @@ header{
 		}
 	}
 	section{
-		&.masthead{margin-left: #{$nav-height + 1.5rem};	}
+		&.masthead{
+			//margin-left: #{$unit__nav--height + 1.5rem};
+		}
 		&.user{
 			box-sizing: content-box;
 			right: -2px;

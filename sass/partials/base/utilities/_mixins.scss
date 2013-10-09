@@ -25,7 +25,7 @@
 @mixin box-shadow-inset($on-background){	
 	@if $skeu == faux-flat{
 		border: 1px solid;
-		border-color: $color-3d-dark $color-3d-light $color-3d-light $color-3d-dark;	
+		border-color: $color__3d--dark $color__3d--light $color__3d--light $color__3d--dark;	
 		border-radius: 1px;	
 		@if $tone == black{
 			box-shadow: none;
@@ -62,9 +62,9 @@
 }
 
 @mixin transition{
-	transition: all $transition-length ease-in-out;
-	-moz-transition: all $transition-length ease-in-out;
-	-webkit-transition: all $transition-length ease-in-out;
+	transition: all $length__transition ease-in-out;
+	-moz-transition: all $length__transition ease-in-out;
+	-webkit-transition: all $length__transition ease-in-out;
 }
 
 

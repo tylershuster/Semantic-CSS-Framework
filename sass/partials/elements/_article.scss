@@ -37,7 +37,7 @@ article{
 		}
 	}
 	/* logo left half, menu right half*/
-	@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+	@media all and (min-width:#{$unit__base-x-one * 1px}) and (max-width:#{$unit__base-x-two * 1px}){
 		/*Styles for devices from 128-256px wide*/
 		$article-margin-length-one: 0.5rem;
 		padding: 0 0.5rem;
@@ -63,11 +63,11 @@ article{
 		}
 	}
 
-	@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+	@media all and (min-width:#{$unit__base-x-two * 1px}) and (max-width:#{$unit__base-x-three * 1px}){
 		/*styles for screens 256-384px*/
 		$article-margin-length-two: 1rem;
 		padding: 0 1rem;
-		//margin-top: #{$header-height};
+		//margin-top: #{$unit__header--height};
 		>blockquote, >figure, >aside{
 			width: calc(100% + #{2 * $article-margin-length-two})
 		}
@@ -90,11 +90,11 @@ article{
 		}
 	}
 	/*mobile menu swipe from left*/
-	@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-five * 1px}){
+	@media all and (min-width:#{$unit__base-x-three * 1px}) and (max-width:#{$unit__base-x-five * 1px}){
 		/*styles for devices from 384-640 px wide*/
 		$article-margin-length-three: 2rem;
 		padding: 0 2rem;
-		//margin-top: #{$header-height};
+		//margin-top: #{$unit__header--height};
 		>blockquote, >figure{
 			width: calc(100% + #{2 * $article-margin-length-three})
 		}
@@ -120,11 +120,11 @@ article{
 		}
 	}
 
-	@media all and (min-width:#{$length-five * 1px}) and (max-width:#{$length-eight * 1px}){
+	@media all and (min-width:#{$unit__base-x-five * 1px}) and (max-width:#{$unit__base-x-eight * 1px}){
 		/*styles for devices from 640-1024px wide*/
 		$article-margin-length-five: 3rem;
 		padding: 0 3rem;
-		//margin-top: #{$header-height};
+		//margin-top: #{$unit__header--height};
 		>blockquote, >figure{
 			width: 50%;
 		}
@@ -147,11 +147,11 @@ article{
 		}
 	}
 	/*desktop nav*/
-	@media all and (min-width:#{$length-eight * 1px}) and (max-width:#{$length-thirteen * 1px}){
+	@media all and (min-width:#{$unit__base-x-eight * 1px}) and (max-width:#{$unit__base-x-thirteen * 1px}){
 		/*styles on devices from 1024px-1664px*/
 		$article-margin-length-eight: 4rem;
 		padding: 0 4rem;
-		//margin-top: #{$header-height + $nav-height};
+		//margin-top: #{$unit__header--height + $unit__nav--height};
 		>blockquote, >figure{
 			width: 50%;
 		}
@@ -174,11 +174,11 @@ article{
 		}
 	}
 
-	@media all and (min-width:#{$length-thirteen * 1px}){
+	@media all and (min-width:#{$unit__base-x-thirteen * 1px}){
 		/*styles for devices from 1664px up*/
 		$article-margin-length-thirteen: 5rem;
 		padding: 0;
-		//margin-top: #{$header-height + $nav-height};
+		//margin-top: #{$unit__header--height + $unit__nav--height};
 		>blockquote, >figure{
 			width: 50%;
 		}

@@ -1,6 +1,6 @@
 /*Styles for devices from 128-256px wide*/
 header{
-	height: $header-height;
+	height: $unit__header--height;
 	@include column(1,1);
 	@include box-shadow($color-primary);
 	address{
@@ -9,7 +9,7 @@ header{
 		}
 	}
 	section.masthead{
-		margin-left: #{$nav-height + 1.5rem};
+		//margin-left: #{$unit__nav--height + 1.5rem};
 	}
 	section.user{
 		box-sizing: content-box;

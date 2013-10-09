@@ -6,7 +6,7 @@ form{
 	&:focus{
 		outline: none;
 	}
-	@media all and (min-width:#{$length-three * 1px}){
+	@media all and (min-width:#{$unit__base-x-three * 1px}){
 		display: flex;		
 		input{
 			display: flex;
@@ -20,22 +20,22 @@ form{
 	}
 	label{
 		flex-grow: 0;
-		@media all and (min-width:#{$length-one * 1px}) and (max-width:#{$length-two * 1px}){
+		@media all and (min-width:#{$unit__base-x-one * 1px}) and (max-width:#{$unit__base-x-two * 1px}){
 			display: block;
 		}
-		@media all and (min-width:#{$length-two * 1px}) and (max-width:#{$length-three * 1px}){
+		@media all and (min-width:#{$unit__base-x-two * 1px}) and (max-width:#{$unit__base-x-three * 1px}){
 			display: block;
 		}
-		@media all and (min-width:#{$length-three * 1px}) and (max-width:#{$length-five * 1px}){
+		@media all and (min-width:#{$unit__base-x-three * 1px}) and (max-width:#{$unit__base-x-five * 1px}){
 			min-width: 33%;
 		}
-		@media all and (min-width:#{$length-five * 1px}) and (max-width:#{$length-eight * 1px}){
+		@media all and (min-width:#{$unit__base-x-five * 1px}) and (max-width:#{$unit__base-x-eight * 1px}){
 			min-width: 25%;
 		}
-		@media all and (min-width:#{$length-eight * 1px}) and (max-width:#{$length-thirteen * 1px}){
+		@media all and (min-width:#{$unit__base-x-eight * 1px}) and (max-width:#{$unit__base-x-thirteen * 1px}){
 			min-width: 10%;
 		}
-		@media all and (min-width:#{$length-thirteen * 1px}){
+		@media all and (min-width:#{$unit__base-x-thirteen * 1px}){
 			min-width: 10%;
 		}
 	}
@@ -54,7 +54,7 @@ form{
 		flex-grow: 1;	
 		float: left;
 		padding: 0 0.5rem;
-		@media all and (max-width:#{$length-three * 1px}){
+		@media all and (max-width:#{$unit__base-x-three * 1px}){
 			width: 100%;
 		}
 		&[maxlength="1"]{
