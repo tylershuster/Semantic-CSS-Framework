@@ -1,5 +1,5 @@
 header{
-	background-color: $color-primary;	
+	background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);	
 	height: #{$unit__header--height + $unit__nav--height};//only on larger screens. move inside mq
 	position: fixed;
 	top: 0;
@@ -13,7 +13,6 @@ header{
     	margin-left: 1rem;
 	}
 	h1{/*site tite*/
-		color: $color-background;
 		display: inline-block;
 		float: left;
 		line-height: #{$unit__header--height};
@@ -48,7 +47,7 @@ header{
 			}
 			.logo + h1{
 				position: relative;
-				top: -0.6rem;
+				top: -1rem;
 			}
 			address{/*address info*/}
 		}
@@ -91,8 +90,7 @@ header{
 				height: 2rem;
 				input[type="search"]{
 					height: 1.5rem;
-					margin-top: 0.25rem;
-					@include box-shadow-inset($color-primary);				
+					margin-top: 0.25rem;								
 				}
 				input[type="submit"]{
 					height: 1.5rem;
@@ -109,7 +107,8 @@ header{
 			position: absolute;
 			top: #{$unit__header--height};
 			min-height: #{$unit__nav--height};
-			background-color: $color-drawer;		
+			//background-color: $color-drawer;		
+			background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);
 			float: left;
 			width: 100%;
 			height: auto;
@@ -207,10 +206,10 @@ header{
 	//left: -2rem;
 	z-index: 1;
 	display: none;
-	color: $color-drawer;
+	color: $color-primary;
 	margin: 0;
 	position: absolute;
-	top: #{$unit__nav--height / 2.7};
+	top: #{$unit__nav--height / 3};
 	bottom: 0;
 	left: 1rem;
 	right: auto;

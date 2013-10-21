@@ -12,6 +12,7 @@ input{
 	margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 	margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 	border: 0;
+	margin-right: 1px;
 	@include box-shadow-inset($color-input-background);
 	&:focus{
 		-webkit-box-shadow: $color__3d--dark 0 0 3px 0 inset;
@@ -128,6 +129,7 @@ input{
 			color: $color-accent;
 			font-size: 2rem;
 			line-height: 0;
+			margin-top: 1px;
 
 		}
 		&:after{
@@ -223,6 +225,9 @@ textarea{
 	border: 0;
 	color: $color-text;
 	background-color: $color-input-background;
+	@if $skeu == 'faux-flat' {
+		border-radius: $unit__form--input--border-radius;
+	}
 	@include box-shadow-inset($color-input-background);
 	&:before{
 		content: "hi";
@@ -293,7 +298,7 @@ button{
 		height: 0;
 		border-left: 0.25rem solid transparent;
 		border-right: 0.25rem solid transparent;
-		border-bottom: 0.5rem solid $color-accent;
+		border-bottom: 0.5rem solid $color-primary;
 		content: "";
 		position: relative;
 		bottom: 1rem;
@@ -304,7 +309,7 @@ button{
 		height: 0;
 		border-left: 0.25rem solid transparent;
 		border-right: 0.25rem solid transparent;
-		border-top: 0.5rem solid $color-accent;
+		border-top: 0.5rem solid $color-primary;
 		content: "";
 		position: relative;
 		top: 1.2rem;
@@ -349,14 +354,16 @@ button{
 	overflow: hidden;
 }
 
+::-webkit-input-speech-button{
 
+}
 
 
 ::-webkit-file-upload-button{
 	-webkit-appearance: none;
 	border: none;
 	color: $color-background;
-	background-color: $color-accent;
+	background-color: $color-primary;
 	@include box-shadow($color-accent);
 	height: 1.5rem;
 }

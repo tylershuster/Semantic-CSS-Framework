@@ -1,4 +1,6 @@
-dl{
+article dl{
+	float: left;
+	clear: both;
 	font-family: '#{$body-font}';
 	dt{
 		font-size: typography(p,font-size) * 1rem;
@@ -7,10 +9,10 @@ dl{
 		padding-bottom: typography(p,padding-bottom) * 1rem;
 	}
 	dd{
-		font-size: typography(p,font-size) * 1rem;
-		line-height: typography(p,line-height) * 1rem;
-		padding-top: typography(p,padding-top) * 1rem;
-		padding-bottom: typography(p,padding-bottom) * 1rem;
+		font-size: typography(small,font-size) * 1rem;
+		line-height: typography(small,line-height) * 1rem;
+		padding-top: typography(small,padding-top) * 1rem;
+		padding-bottom: typography(small,padding-bottom) * 1rem;
 	}
 	span{
 		/*inline definitions*/

@@ -54,6 +54,9 @@ form{
 		flex-grow: 1;	
 		float: left;
 		padding: 0 0.5rem;
+		@if $skeu == 'faux-flat' {
+			border-radius: $unit__form--input--border-radius;
+		}
 		@media all and (max-width:#{$unit__base-x-three * 1px}){
 			width: 100%;
 		}
