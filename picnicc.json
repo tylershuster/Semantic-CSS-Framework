@@ -1,31 +1,6 @@
 {
   "version" : "1.0.0" ,
-"assets" : [
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/base/utilities/color/_color-schemer.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/base/utilities/_opacity.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/base/utilities/_layout.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/base/utilities/_variables.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/base/utilities/_mixins.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/_base.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_address.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_article.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_aside.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_blockquote.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_definitions.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_figure.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_footer.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_header.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_meter.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_progress.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_table.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/_ul.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/forms/_index.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/forms/_fieldset.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/elements/forms/_input.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/_panels.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/_classes.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/partials/_z-index.scss",
-  "https://raw.github.com/herrshuster/style.css/gh-pages/sass/style.scss"],
+"assets" : ["https://raw.github.com/herrshuster/semantic-css-framework/gh-pages/picnicc.scss"],
    "bits" : ["style"]
 }
 
