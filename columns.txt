@@ -1,0 +1,4 @@
+the container needs to be set to the appropriate amount of columns at each breakpoint
+
+
+then the mixin needs to be able to calculate the number of columns that it's in at the time, and to adjust how many columns it is. write this yourself

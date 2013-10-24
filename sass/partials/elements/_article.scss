@@ -1,0 +1,205 @@
+article{
+	max-width: 60em;
+	padding: 0;
+	margin: 0 auto;
+	background-color: $color-background;
+	>time{/*articles must include the time on which they were published*/}
+	>figure{
+		//width: 50%;//a problem
+		&:nth-of-type(odd){
+			float: right;
+			padding-left: 1rem;			
+		}	
+		&:nth-of-type(even){
+			padding-right: 1rem;
+		}
+				
+		img{
+			width: 100%;
+		}
+	}
+	>aside{		
+		width: 100%;
+		padding: 0 1rem;
+	}
+	>blockquote{
+		width: 100%;
+	}
+
+	&>p:first-of-type:first-letter, h1 + p:first-letter{
+		color: $color-accent;
+	}
+	ul{
+		font-family: '#{$body-font}';
+		margin: 0;
+		padding: 0;
+		li{
+			
+		}
+	}
+	/* logo left half, menu right half*/
+	@media all and (min-width:#{$unit__base-x-one * 1px}) and (max-width:#{$unit__base-x-two * 1px}){
+		/*Styles for devices from 128-256px wide*/
+		$article-margin-length-one: 0.5rem;
+		padding: 0 0.5rem;
+		>blockquote, >figure, >aside{
+			width: calc(100% + #{2 * $article-margin-length-one})
+		}
+		>figure:nth-of-type(odd), >figure:nth-of-type(even){
+			padding: 0;
+		}
+		>blockquote:nth-of-type(odd), >aside:nth-of-type(odd){
+			right: $article-margin-length-one ;
+			margin-right: $article-margin-length-one  * -1;
+		}	
+		>figure:nth-of-type(odd){
+			margin-right: $article-margin-length-one  * -1;
+		}
+		>blockquote:nth-of-type(even), >aside:nth-of-type(even) {
+			left: $article-margin-length-one ;
+			margin-left: $article-margin-length-one  * -1;
+		}
+		>figure:nth-of-type(even){
+			margin-left: $article-margin-length-one  * -1;
+		}
+	}
+
+	@media all and (min-width:#{$unit__base-x-two * 1px}) and (max-width:#{$unit__base-x-three * 1px}){
+		/*styles for screens 256-384px*/
+		$article-margin-length-two: 1rem;
+		padding: 0 2rem;
+		//margin-top: #{$unit__header--height};
+		>blockquote, >figure, >aside{
+			width: calc(100% + #{2 * $article-margin-length-two})
+		}
+		>figure:nth-of-type(odd), >figure:nth-of-type(even){
+			padding: 0;
+		}
+		>blockquote:nth-of-type(odd), >aside:nth-of-type(odd){
+			right: $article-margin-length-two ;
+			margin-right: $article-margin-length-two  * -1;
+		}
+		>figure:nth-of-type(odd){
+			margin-right: $article-margin-length-two  * -1;
+		}
+		>blockquote:nth-of-type(even), >aside:nth-of-type(even) {
+			left: $article-margin-length-two ;
+			margin-left: $article-margin-length-two  * -1;
+		}
+		>figure:nth-of-type(even){
+			margin-left: $article-margin-length-two  * -1;
+		}
+	}
+	/*mobile menu swipe from left*/
+	@media all and (min-width:#{$unit__base-x-three * 1px}) and (max-width:#{$unit__base-x-five * 1px}){
+		/*styles for devices from 384-640 px wide*/
+		$article-margin-length-three: 2rem;
+		padding: 0 3rem;
+		//margin-top: #{$unit__header--height};
+		>blockquote, >figure{
+			width: calc(100% + #{2 * $article-margin-length-three})
+		}
+		>aside{
+			width: 50%;
+		}
+		>figure:nth-of-type(odd), >figure:nth-of-type(even){
+			padding: 0;
+		}
+		>blockquote:nth-of-type(odd), >aside:nth-of-type(odd){
+			right: $article-margin-length-three ;
+			margin-right: $article-margin-length-three * -1;
+		}
+		>figure:nth-of-type(odd){
+			margin-right: $article-margin-length-three * -1;
+		}
+		>blockquote:nth-of-type(even), >aside:nth-of-type(even) {
+			left: $article-margin-length-three;
+			margin-left: $article-margin-length-three * -1;
+		}
+		>figure:nth-of-type(even){
+			margin-left: $article-margin-length-three * -1;
+		}
+	}
+
+	@media all and (min-width:#{$unit__base-x-five * 1px}) and (max-width:#{$unit__base-x-eight * 1px}){
+		/*styles for devices from 640-1024px wide*/
+		$article-margin-length-five: 3rem;
+		padding: 0 4rem;
+		//margin-top: #{$unit__header--height};
+		>blockquote, >figure{
+			width: 50%;
+		}
+		>aside{
+			width: 50%;
+		}
+		>blockquote:nth-of-type(odd), >aside:nth-of-type(odd){
+			right: $article-margin-length-five;
+			margin-right: $article-margin-length-five * -1;
+		}
+		>figure:nth-of-type(odd){
+			margin-right: $article-margin-length-five * -1;
+		}
+		>blockquote:nth-of-type(even), >aside:nth-of-type(even) {
+			left: $article-margin-length-five;
+			margin-left: $article-margin-length-five * -1;
+		}
+		>figure:nth-of-type(even){
+			margin-left: $article-margin-length-five * -1;
+		}
+	}
+	/*desktop nav*/
+	@media all and (min-width:#{$unit__base-x-eight * 1px}) and (max-width:#{$unit__base-x-thirteen * 1px}){
+		/*styles on devices from 1024px-1664px*/
+		$article-margin-length-eight: 4rem;
+		padding: 0 5rem;
+		//margin-top: #{$unit__header--height + $unit__nav--height};
+		>blockquote, >figure{
+			width: 50%;
+		}
+		>aside{
+			width: 33%;
+		}
+		>blockquote:nth-of-type(odd), >aside:nth-of-type(odd){
+			right: $article-margin-length-eight;
+			margin-right: $article-margin-length-eight * -1;
+		}
+		>figure:nth-of-type(odd){
+			margin-right: $article-margin-length-eight * -1;
+		}
+		>blockquote:nth-of-type(even), >aside:nth-of-type(even) {
+			left: $article-margin-length-eight;
+			margin-left: $article-margin-length-eight * -1;
+		}
+		>figure:nth-of-type(even){
+			margin-left: $article-margin-length-eight * -1;
+		}
+	}
+
+	@media all and (min-width:#{$unit__base-x-thirteen * 1px}){
+		/*styles for devices from 1664px up*/
+		$article-margin-length-thirteen: 5rem;
+		padding: 0 6rem;
+		//margin-top: #{$unit__header--height + $unit__nav--height};
+		>blockquote, >figure{
+			width: 50%;
+		}
+		>aside{
+			width: 25%;
+		}
+		>blockquote:nth-of-type(odd), >aside:nth-of-type(odd){
+			right: $article-margin-length-thirteen;
+			margin-right: $article-margin-length-thirteen * -1;
+		}
+		>figure:nth-of-type(odd){
+			margin-right: $article-margin-length-thirteen * -1;
+		}
+		>blockquote:nth-of-type(even), >aside:nth-of-type(even) {
+			left: $article-margin-length-thirteen;
+			margin-left: $article-margin-length-thirteen * -1;
+		}
+		>figure:nth-of-type(even){
+			margin-left: $article-margin-length-thirteen * -1;
+		}
+	}
+}
+
