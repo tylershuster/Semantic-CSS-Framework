@@ -36,36 +36,39 @@
   <input type="hidden" name="parse" value="sass-to-css">
 
   <!-- the address of your picnicc.json file (required) -->
-  <input type="hidden" name="picnicc" value="https://raw.github.com/herrshuster/Semantic-CSS-Framework/gh-pages/picnicc.json">
+  <input type="hidden" name="picnicc" value="https://raw.github.com/herrshuster/style.css/gh-pages/picnicc.json">
 
   <!-- And now let's turn our "bits" into field values -->
-  <form>
-    
-    <input type="checkbox" name="bits[]" value="style"><label>Do you need Module 1?</label>
-  </label>
-  <form>
-    
-    <input type="text" name="sass[$key]" value="d"><label>Key</label>
-  </form>
-  <form>
-    
-    <input type="text" name="sass[$quality]" value="min6"><label>Quality</label>
-  </form>
-  <form>
-    
-    <input type="text" name="sass[$color]" value="#ff0000"><label>Color</label>
-  </form>
-  <form>
-    
-    <input type="text" name="sass[$scheme]" value="mono"><label>Scheme</label>
-  </form>
-  <form>
-    
-    <input type="text" name="sass[$tone]" value="white"><label>Tone</label>
-  </form>
+  <fieldset>
+  <form><label>
+    Do you need Module 1?
+    <input type="checkbox" name="bits[]" value="style">
+  </label></form>
+  <form><label>
+    Key
+    <input type="text" name="sass[$key]" value="d">
+  </label></form>
+  <form><label>
+    Quality
+    <input type="text" name="sass[$quality]" value="min6">
+  </label></form>
+  <form><label>
+    Color
+    <input type="text" name="sass[$color]" value="#ff0000">
+  </label></form>
+  <form><label>
+    Scheme
+    <input type="text" name="sass[$scheme]" value="mono">
+  </label></form>
+  <form><label>
+    Tone
+    <input type="text" name="sass[$tone]" value="white">
+  </label></form>
+
  
 
   <button>Get your custom build</button>
+  </fieldset>
 </form>
 </main>
 </body>
