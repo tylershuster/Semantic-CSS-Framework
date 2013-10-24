@@ -73,7 +73,7 @@ $color: #0F4DA8;				//Specify your page's primary color (#0086BD)
 $scheme: mono;			//Specify the relationship of colors on the page (mono)
 //mono, complement, triad, tetrad, analogic, accented-analogic
 
-$tone: white !default;			//Specify background color: white, light, dark, or black (white)
+$tone: white;			//Specify background color: white, light, dark, or black (white)
 
 $icons: no;					//Specify whether or not to use icons;
 
