@@ -1,0 +1,41 @@
+@import "./header/address.roo";
+@import "./header/common.roo";
+
+
+
+
+
+
+
+@media all and (min-width:#{$unit__base-x-thirteen * 1px}){
+	main{padding-top:#{$unit__header--height + $unit__nav--height};}
+	@import "./header/length-thirteen.roo";
+}
+
+/*desktop nav*/
+@media all and (min-width:#{$unit__base-x-eight * 1px}) and (max-width:#{$unit__base-x-thirteen * 1px}){
+	main{padding-top:#{$unit__header--height + $unit__nav--height};}
+	@import "./header/length-eight.roo";
+}
+
+@media all and (min-width:#{$unit__base-x-five * 1px}) and (max-width:#{$unit__base-x-eight * 1px}){
+	main{padding-top:#{$unit__header--height};}
+	@import "./header/length-five.roo";
+}
+
+/*mobile menu swipe from left*/
+@media all and (min-width:#{$unit__base-x-three * 1px}) and (max-width:#{$unit__base-x-five * 1px}){
+	main{padding-top:#{$unit__header--height};}
+	@import "./header/length-three.roo";
+}
+
+@media all and (min-width:#{$unit__base-x-two * 1px}) and (max-width:#{$unit__base-x-three * 1px}){
+	main{padding-top:#{$unit__header--height};}
+	@import "./header/length-two.roo";
+}
+
+/* logo left half, menu right half*/
+@media all and (min-width:#{$unit__base-x-one * 1px}) and (max-width:#{$unit__base-x-two * 1px}){
+	main{padding-top:#{$unit__header--height};}
+	@import "./header/length-one.roo";
+}

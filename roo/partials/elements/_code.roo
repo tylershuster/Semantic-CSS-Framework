@@ -1,0 +1,14 @@
+code{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: bold;
+	color: $color-text;
+	background-color: $color-drawer;
+	padding: 0 0.2rem;
+	line-height: 1rem;
+	@include box-shadow-inset($color-background);
+}
+p>code{
+	font-size: 85%;
+	margin: 0 0.2rem;
+	padding: 0.1rem 0.3rem;
+}
