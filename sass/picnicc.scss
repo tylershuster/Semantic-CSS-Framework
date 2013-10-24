@@ -6,9 +6,7 @@
 // Typography
 //////////////////////////////
 
-$key: e;					//Specify the key in which to set your piece (d)
-
-$quality: aug;				//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
+		//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
 
 $sans: Open Sans;
 
@@ -67,13 +65,7 @@ $heading-font: $sans;
 //////////////////////////////
 // Color
 //////////////////////////////
-
-$color: #0F4DA8;				//Specify your page's primary color (#0086BD)
-
-$scheme: mono;			//Specify the relationship of colors on the page (mono)
-//mono, complement, triad, tetrad, analogic, accented-analogic
-
-$tone: white !default;			//Specify background color: white, light, dark, or black (white)
+	//Specify background color: white, light, dark, or black (white)
 
 $icons: no;					//Specify whether or not to use icons;
 
