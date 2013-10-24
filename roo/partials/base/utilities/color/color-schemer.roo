@@ -1,0 +1,138 @@
+@import "./color-schemer/blend-modes.roo";
+
+/* Defaults*/
+$cs-primary = $color;
+$cs-scheme = $scheme;   /* mono, complement, triad, tetrad, analogic, accented-analogic*/
+$cs-hue-offset = 30;
+$cs-brightness-offset = false;
+$cs-color-model = rgb;    /* rgb, ryb*/
+$cs-colorblind = normal;
+
+/* Partials*/
+@import "./color-schemer/interpolation.roo";
+@import "./color-schemer/cmyk.roo";
+@import "./color-schemer/ryb.roo";
+@import "./color-schemer/colorblind.roo";
+@import "./color-schemer/equalize.roo";
+@import "./color-schemer/mix.roo";
+@import "./color-schemer/tint-shade.roo";
+@import "./color-schemer/color-adjustments.roo";
+@import "./color-schemer/color-schemer.roo";
+
+@import "./color-schemer/mixins.roo";
+
+/* Tell other files that this is loaded.*/
+$color-schemer-loaded = true;
+
+$color-primary = null;
+$color-secondary = null;
+$color-tertiary = null;
+$color-background = null;
+$color-accent = null;
+$color-drawer = null; /*light if tone is dark, dark if tone is light, light if tone is white, dark if tone is black*/
+
+$color-primaryer = @function $tone {
+
+	@return cs-primary($tone);
+}
+
+
+$color-secondaryer = @function $tone {
+	@if $scheme == mono{
+		@return color-texter($tone);
+	}
+	@else{
+		@return cs-secondary($color);
+	}
+}
+
+
+$color-texter = @function $tone {
+	@if $tone == white{
+		@return set-lightness($color, 15%);
+
+	}
+	@else if $tone == light{
+		@return set-lightness($color, 25%);
+		
+	}
+	@else if $tone == dark{
+		@return set-lightness($color, 75%);
+		
+	}
+	@else if $tone == black{
+		@return set-lightness($color, 85%);
+		
+	}
+}
+
+$color-accenter = @function $tone {
+	@if $tone == white{
+		@return adjust-hue($color, 30deg);
+
+	}
+	@else if $tone == light{
+		@return shade($color, 25%);
+		
+	}
+	@else if $tone == dark{
+		@return tint($color, 25%);
+		
+	}
+	@else if $tone == black{
+		@return adjust-hue($color, -30deg);
+		
+	}
+}
+
+$color-backgrounder = @function $tone {
+	@if $tone == white{
+		@return set-lightness($color, 98%);
+
+	}
+	@else if $tone == light{
+		@return set-lightness($color, 85%);
+		
+	}
+	@else if $tone == dark{
+		@return set-lightness($color, 15%);
+		
+	}
+	@else if $tone == black{
+		@return set-lightness($color, 02%);
+		
+	}
+}
+
+$color-drawerer = @function $tone {
+	@if $tone == white{
+		@return set-lightness(color-backgrounder($tone), 90%);
+
+	}
+	@else if $tone == light{
+		@return set-lightness(color-backgrounder($tone), 80%);
+		
+	}
+	@else if $tone == dark{
+		@return set-lightness(color-backgrounder($tone), 20%);
+		
+	}
+	@else if $tone == black{
+		@return set-lightness(color-backgrounder($tone), 10%);
+		
+	}
+}
+
+
+$color-primary: color-primaryer($color);
+$color-secondary: color-secondaryer($tone);
+$color-tertiary: cs-tertiary($color);
+$color-text: color-texter($tone);
+$color-accent: color-accenter($tone);
+$color-background: color-backgrounder($tone);
+$color-drawer: color-drawerer($tone);
+
+* body{
+	color: $color-text;
+	background-color: $color-background;
+}

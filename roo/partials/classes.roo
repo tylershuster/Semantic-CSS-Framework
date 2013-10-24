@@ -1,0 +1,68 @@
+.academic{
+	/*the academy should ideally be concerned only with the representation of truth and not bound by temporal, spatial, or personal relevancy.*/
+}
+/*the twelve disciples*/
+.fictional{
+	/*any content that does not literally represent canonical reality*/
+	.news{
+		/*fox news, alternate reality updates, etc*/
+	}
+	.archive{
+		/*wookiepedia, etc*/
+	}
+	.opinion{
+		/*satire*/
+	}
+}
+.personal{
+	/*content relating to the author of the article. Should have span.author or <a rel="author">*/
+	.news{
+		/*blog*/
+	}
+	.archive{
+		/*structured blog*/
+	}
+	.opinion{
+		/*personal opinion*/
+	}
+}
+.professional{
+	/*content pertinent to a profession; of little use outside context*/
+	.news{
+		/*medical discoveries, golf tournament coverage, etc*/
+	}
+	.archive{
+		/*technical writing*/
+	}
+	.opinion{
+		/*opinion for those in the field*/
+	}
+}
+.promotional{
+	/*content intended to further a cause related to, but not directly about, the author*/
+	.news{
+		/*press releases, etc*/
+	}
+	.archive{
+		/*product information, specifications, etc*/
+	}
+	.opinion{
+		/*reviews, etc*/
+	}
+}
+
+section{
+	&.hero{
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+		&>*{
+			width: 100%;
+			flex-grow: 1;
+		}
+	}
+}
