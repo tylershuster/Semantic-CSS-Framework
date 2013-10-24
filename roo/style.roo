@@ -9,7 +9,11 @@ $key = null;
 
 $key = e;					//Specify the key in which to set your piece (d)
 
+<<<<<<< HEAD:roo/style.roo
 $quality = aug;				//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
+=======
+$quality: maj9;				//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
+>>>>>>> master:sass/style.scss
 
 $sans = Open Sans;
 
