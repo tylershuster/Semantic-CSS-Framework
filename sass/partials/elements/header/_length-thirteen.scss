@@ -8,7 +8,7 @@ header{
 
 	section{
 		&.masthead{
-			margin-left: 1rem;
+			//margin-left: 1rem;
 			//@include column(4,13);
 			/*masthead is centered on page*/
 			.logo{/*site logo*/}
@@ -33,7 +33,8 @@ header{
 	nav{
 		@include column(13,13);
 		>ul{		
-			@include box-shadow($color-drawer);	
+			@include box-shadow($color-drawer);
+			border-top: 0;
 			>div + li{
 				border-left: 1px solid mix($color-background,$color-drawer);
 			}
@@ -44,7 +45,7 @@ header{
 			display: table-cell;
 			> a{ }
 			>ul{
-				top: 50%;				
+				top: 50%;			
 				div + li{
 					border-top: 1px solid mix($color-background,$color-drawer);
 				}

@@ -15,11 +15,14 @@ blockquote{
 	box-sizing: border-box;
 	text-align: center;
 	p{
-		font-size: typography(h4,font-size) * 1rem;
-		line-height: typography(h4,line-height) * 1rem;
-		padding-top: typography(h4,padding-top) * 1rem;
-		padding-bottom: typography(h4,padding-bottom) * 1rem;
+		font-size: typography(h3,font-size) * 1rem;
+		line-height: typography(h3,line-height) * 1rem;
+		padding-top: typography(h3,padding-top) * 1rem;
+		padding-bottom: typography(h3,padding-bottom) * 1rem;
 		color: $color-secondary;
+	}
+	>img{
+		width: 100%;
 	}
 	article &:nth-of-type(odd){
 		float: left;

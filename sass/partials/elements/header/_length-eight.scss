@@ -7,8 +7,8 @@ header{
 
 	section{
 		&.masthead{
-			margin-left: 1rem;
-			@include column(4,8);
+			//margin-left: 1rem;
+			//@include column(4,8);
 			/*masthead is centered on page*/
 			.logo{/*site logo*/}
 			h1{/*site title*/}
@@ -32,6 +32,7 @@ header{
 		@include column(8,8);
 		>ul{			
 			@include box-shadow($color-drawer);
+			border-top: 0;
 			>div + li{
 				border-left: 1px solid mix($color-background,$color-drawer);
 			}

@@ -1,11 +1,12 @@
 @mixin box-shadow($on-background){
 	@if $skeu == faux-flat{
 		border: 1px solid;
+		border-radius: 1px;
 		@if $tone == black{
 			box-shadow: none;
 		}
 		@else{
-			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.38);
 		}
 		@if $tone == white{
 			border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);
@@ -19,39 +20,46 @@
 		border-color: tint($on-background,15%) shade($on-background,15%) shade($on-background,15%) tint($on-background,15%);
 		box-shadow: 2px 2px 0px rgba(red(set-lightness($color-primary, 10%)), blue(set-lightness($color-primary, 10%)), green(set-lightness($color-primary, 10%)), 0.85);
 	}
+	@if $glass == yes {
+		/*write code to make transparent gradient from on-background color*/
+	}
 }
 
 @mixin box-shadow-inset($on-background){	
 	@if $skeu == faux-flat{
-		border: 1px solid;
-		border-color: rgba(0,0,0,0.5) rgba(255,255,255,0.5) rgba(255,255,255,0.5) rgba(0,0,0,0.5);		
+		border: $unit__shadow-size solid;
+		border-color: mix($color__3d--dark, $on-background, 75%) mix($color__3d--light, $on-background, 15%) mix($color__3d--light, $on-background, 15%) mix($color__3d--dark, $on-background, 75%);	
+		border-radius: $unit__shadow-size;	
 		@if $tone == black{
 			box-shadow: none;
 		}
 		@else{
-			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
+			box-shadow: 0 $unit__shadow-size $unit__shadow-size 0 rgba(0, 0, 0, 0.38) inset;
 		}
 	}
 	@else if $skeu == cartoon{
-		border: 2px solid;
+		border: $unit__shadow-size solid;
 		border-color: shade($on-background,15%) tint($on-background,15%) tint($on-background,15%) shade($on-background,15%);
-		box-shadow: 2px 2px 0px rgba(red(set-lightness($color-primary, 10%)), blue(set-lightness($color-primary, 10%)), green(set-lightness($color-primary, 10%)), 0.85) inset;
+		box-shadow: $unit__shadow-size $unit__shadow-size 0px rgba(red(set-lightness($color-primary, 10%)), blue(set-lightness($color-primary, 10%)), green(set-lightness($color-primary, 10%)), 0.85) inset;
 	}	
+	@if $glass == yes {
+		/*write code to make transparent gradient from on-background color*/
+	}
 }
 @mixin text-shadow{
 	@if $skeu == faux-flat{
-		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.42);
+		text-shadow: $unit__shadow-size $unit__shadow-size 0px rgba(0, 0, 0, 0.42);
 	}
 	@else if $skeu == cartoon{
-		text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.85);
+		text-shadow: $unit__shadow-size $unit__shadow-size 0px rgba(0, 0, 0, 0.85);
 	}
 }
 @mixin text-shadow-inset{
 	@if $skeu == faux-flat{
-		text-shadow: 1px -1px 0px rgba(0, 0, 0, 0.42);
+		text-shadow: $unit__shadow-size -$unit__shadow-size 0px rgba(0, 0, 0, 0.42);
   	}
     @else if $skeu == cartoon{
-    	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.85);
+    	text-shadow: $unit__shadow-size $unit__shadow-size 0px rgba(0, 0, 0, 0.85);
     }
    	-webkit-background-clip: text;
    	-moz-background-clip: text;
@@ -60,9 +68,9 @@
 }
 
 @mixin transition{
-	transition: all $transition-length ease-in-out;
-	-moz-transition: all $transition-length ease-in-out;
-	-webkit-transition: all $transition-length ease-in-out;
+	transition: all $length__transition ease-in-out;
+	-moz-transition: all $length__transition ease-in-out;
+	-webkit-transition: all $length__transition ease-in-out;
 }
 
 

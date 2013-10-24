@@ -1,36 +1,33 @@
 $em: 16;
 
-$length-one: $em * 8;
+$unit__base-x-one: $em * 8;
 
-$length-two: $length-one * 2;
+$unit__base-x-two: $unit__base-x-one * 2;
 
-$length-three: $length-one * 3;
+$unit__base-x-three: $unit__base-x-one * 3;
 
-$length-five: $length-one * 5;
+$unit__base-x-five: $unit__base-x-one * 5;
 
-$length-eight: $length-one * 8;
+$unit__base-x-eight: $unit__base-x-one * 8;
 
-$length-thirteen: $length-one * 13;
-
-$width-one: 8em;
-
-$width-two: 16em;
-
-$width-three: 24em;
-
-$width-four: 32em;
-
-$width-six: 48em;
-
-$width-twelve: 96em;
+$unit__base-x-thirteen: $unit__base-x-one * 13;
 
 $font-base: null;
 
 $max-width: 100%;
 
-$header-height: 5rem;
+$unit__header--height: 5rem;
 
-$nav-height: 3rem;
+$unit__nav--height: 3rem;
 
-$transition-length: 0.5s;
+$length__transition: 0.5s;
 
+$color__3d--dark: rgba(0,0,0,0.5);
+
+$color__3d--light: rgba(255,255,255,0.5);
+
+$unit__form--input--border-radius: 2px;
+
+$unit__header--opacity: 1;
+
+$unit__shadow-size: 1px;
