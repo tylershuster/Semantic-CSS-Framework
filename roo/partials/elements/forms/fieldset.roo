@@ -1,0 +1,194 @@
+fieldset{
+	box-sizing: border-box;
+	/*(border: 1px solid $color-accent;*/
+	border: none;
+	margin: 0;
+	padding: 1rem;
+	position: relative;
+	padding-top: #{(typography(h5,line-height) * 1rem) + 1rem};
+	background-color: $color-background;
+	@mixin $box-shadow-inset($color-background);
+	>.row{
+		width: 100%;
+		display: block;
+		>div{
+			width:50%;
+			float: left;
+			&.column{
+				padding-left: 0.5rem;
+				padding-right: 0.5rem;
+			}
+		}
+		>form{
+			width: 100%;
+		}
+	}
+	>fieldset{
+		padding:0;
+		margin-bottom: 1rem;
+		box-shadow: none;
+		border: none;
+		//@mixin $box-shadow-inset($color-background);
+		input{
+			
+		}
+		>fieldset{
+
+		}
+	}
+	legend + fieldset{
+		//margin-top: 3rem;
+	}
+	form{
+		width: 100%;
+		label{
+			text-align: center;
+			@mixin $box-shadow-inset($color-background);
+			background-color: $color-primary;
+			color: $color-background;
+			padding-top: 0.2rem;
+		}
+		input{
+			
+			box-shadow: none;
+			border-color: none;
+			margin: 0;
+			height: #{ceil($height-form-input)};	
+			border-top: none;
+			border-right: 1px solid rgba(255,255,255,0.5);
+			border-bottom: 1px dotted $color-primary;
+			border-left: none;
+			box-shadow: none;	
+		}	
+		&:first-of-type{
+			input{
+				border-top: 1px solid rgba(0,0,0,0.5);
+			}
+		
+		}
+		&:last-of-type{
+			input{
+				border-bottom: 1px solid rgba(255,255,255,0.5);
+			}
+		}
+		label{
+			box-shadow: none;
+			border: none;
+			margin: 0;
+			height: #{ceil($height-form-input)};
+			//border-bottom: 1px dotted $color-background;
+		}
+		
+	}
+	textarea{
+		border-top: none;
+		box-shadow: none;
+	}
+	div{
+		display: flex;
+		flex-wrap: wrap;
+		float: left;
+		width: 100%;
+		border: 1px inset $color-background;
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
+		form{
+			label{				
+				//border-left: 1px solid $color__3d--dark;;
+			}
+			&:first-of-type{
+				label{
+					border-top: 1px solid $color__3d--dark;
+				}
+			}
+			&:last-of-type{
+				label{
+					border-bottom: 1px solid $color__3d--light;
+				}				
+			}
+		}
+	}
+	hr{
+		display: flex;
+		height: 0px;
+		//box-sizing: border-box;
+		//border-top: 1px solid $color__3d--light;
+		//border-bottom: 1px solid $color__3d--dark;
+		width: 100%;
+		margin: 0;
+		border: none;
+		//margin: -1px 0;	
+		& + form{
+			label{
+				border-top: 1px solid $color-background;
+			}
+			input{
+				border-top: 1px solid $color-background;
+			}
+		}	
+	}
+	legend{
+		font-size: typography(h5,font-size) * 1rem;
+		line-height: typography(h5,line-height) * 1rem;
+		position: absolute;
+		top: 0.5rem;
+		left: 1rem;
+	}
+	&.login{
+		input[type="text"]{
+
+		}
+		input[type="password"]{
+
+		}
+
+	}
+}
+
+fieldset.experimental{
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	float: left;
+	padding: 0;
+	box-shadow: none;
+	border: none;
+	& + fieldset.experimental{
+		form{
+			border-top: none;
+		}
+	}
+	form{
+		display: table-cell;
+		width: 2%;
+		float: none;
+		border-width: 1px 1px 1px 0;
+		border-style: solid;
+		border-color: $color-text;
+		padding: 0 0.5rem;
+		background: transparent;
+		/*make this respond to row> nesting*/
+		&:hover{
+			background-color: $color-drawer;
+			@mixin $box-shadow-inset($color-background);
+			border-width: 1px 1px 1px 0;
+			border-style: solid;
+			border-color: $color-text;
+		}
+		&:last-of-type{
+			border-right: 0;
+		}		
+		label{
+			width: 100%;
+			background-color: transparent;
+			text-align: left;
+			color: $color-text;
+			text-transform: uppercase;
+			font-size: 85%;
+		}
+		input{
+			width: 100%;
+			background: transparent;
+			border: none;
+		}
+	}
+}
