@@ -1,0 +1,201 @@
+/* { picnicc: style } */
+
+/*--------------------------main.scss-------------------------------*/
+
+//////////////////////////////
+// Typography
+//////////////////////////////
+
+$key: e;					//Specify the key in which to set your piece (d)
+
+$quality: maj9;				//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
+
+$sans: Open Sans;
+
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg'),
+         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+$serif: Gentium Basic;
+
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic);
+
+$body-font: $serif;
+
+/*human-font, machine-font, copy-font*/
+
+$heading-font: $sans;
+
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500);
+
+//////////////////////////////
+// Color
+//////////////////////////////
+
+$color: #0F4DA8;				//Specify your page's primary color (#0086BD)
+
+$scheme: mono;			//Specify the relationship of colors on the page (mono)
+//mono, complement, triad, tetrad, analogic, accented-analogic
+
+$tone: white !default;			//Specify background color: white, light, dark, or black (white)
+
+$icons: no;					//Specify whether or not to use icons;
+
+$skeu: faux-flat;
+
+$glass: no;
+
+/*Set in the key of #{$key} #{$quality}. #{$scheme} color scheme based on #{$color} with a #{$tone} background.*/
+
+//////////////////////////////
+// Set legacy support
+//
+// If you need support for IE6 or IE7, you should install the Box Sizing polyfill.
+// In your project's folder from the command line, type the following:
+// compass install singularitygs/box-sizing
+//////////////////////////////
+
+$legacy-support-for-ie6:     false;
+$legacy-support-for-ie7:     false;
+$legacy-support-for-mozilla: false;
+
+//////////////////////////////
+// Import Utilities
+//////////////////////////////
+
+@import "partials/base/utilities/color/color-schemer";
+
+@import "partials/base/utilities/opacity";
+
+@import "partials/base/utilities/layout";
+
+@import "partials/base/utilities/variables";
+
+@import "partials/base/utilities/mixins";
+
+//////////////////////////////
+// Import Base
+//////////////////////////////
+
+@import "partials/base";
+
+//////////////////////////////
+// Import Elements
+//////////////////////////////
+
+@import "partials/elements/address";
+
+@import "partials/elements/article";
+
+@import "partials/elements/aside";
+
+@import "partials/elements/blockquote";
+
+@import "partials/elements/definitions";
+
+@import "partials/elements/figure";
+
+@import "partials/elements/footer";
+
+@import "partials/elements/header";
+
+@import "partials/elements/meter";
+
+@import "partials/elements/progress";
+
+@import "partials/elements/table";
+
+@import "partials/elements/ul";
+
+@import "partials/elements/code";
+
+@import "partials/elements/pre";
+
+@import "partials/elements/forms/input";
+
+@import "partials/elements/forms/index";
+
+@import "partials/elements/forms/fieldset";
+
+
+
+//////////////////////////////
+// Import Grids
+//////////////////////////////
+
+/*@import "utilities/grids/foundation.scss";*/
+
+//////////////////////////////
+// Import Core Components
+//////////////////////////////
+
+@import "partials/panels";
+
+@import "partials/classes";
+
+@import "partials/z-index";
+
+
+hr{
+    height: 2px;
+    margin: calc(0.5rem - 1px) 0;
+    padding: 0;
+    border: none;
+    background-color: $color-background;
+    @include box-shadow-inset($color-background);
+    box-sizing: border-box;
+}
+
+/* { / picnicc } */
+/*
+* body, header{background-image: url(../bg.png);}
+nav ul{background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2P4//8/AxI2RuGAaBQOTADOAWEAjAwwnWPnCWYAAAAASUVORK5CYII=);}/*http://purelycss.com/data-uri-tileable-transparent-patterns/#*/
+$grid-red: red($color-accent);
+$grid-green: green($color-accent);
+$grid-blue: blue($color-accent);
+
+
+//@import url("http://basehold.it/#{$font-base}/#{$grid-red}/#{$grid-green}/#{$grid-blue}");
+
+
+@media print {
+  a[href]:after {
+    content: " (" attr(href) ") ";
+  }
+}
