@@ -623,10 +623,10 @@ $legacy-support-for-mozilla: false;
 /* Defaults*/
 $cs-primary           : $color;
 $cs-scheme            : $scheme;   /* mono, complement, triad, tetrad, analogic, accented-analogic*/
-$cs-hue-offset        : 30 !default;
-$cs-brightness-offset : false !default;
-$cs-color-model       : rgb !default;    /* rgb, ryb*/
-$cs-colorblind        : normal !default;
+$cs-hue-offset        : 30 ;
+$cs-brightness-offset : false ;
+$cs-color-model       : rgb ;    /* rgb, ryb*/
+$cs-colorblind        : normal ;
 
 /* Partials*/
 @function cs-interpolate($value, $units: 360, $stops: $ryb-interpolation) {
