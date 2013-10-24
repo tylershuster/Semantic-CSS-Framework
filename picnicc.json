@@ -1,6 +1,6 @@
 {
   "version" : "1.0.0" ,
-"assets" : ["https://raw.github.com/herrshuster/semantic-css-framework/gh-pages/picnicc.scss"],
+"assets" : ["https://raw.github.com/herrshuster/semantic-css-framework/gh-pages/sass/picnicc.scss"],
    "bits" : ["style"]
 }
 
