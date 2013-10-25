@@ -58,11 +58,12 @@ section{
 		justify-content: center;
 		align-items: center;
 		align-content: center;
-		flex-wrap: wrap;
+		//flex-wrap: wrap;
 		text-align: center;
 		&>*{
 			width: 100%;
 			flex-grow: 1;
+			padding: 0 0.5rem;
 		}
 	}
 }

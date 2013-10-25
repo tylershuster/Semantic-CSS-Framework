@@ -89,7 +89,6 @@ html {
 /* line 4, ../sass/partials/_base.scss */
 body {
   height: calc(100% - 5rem);
-  background-image: url(http://lorempixel.com/1920/1080/);
   overflow-x: hidden;
 }
 @media all and (min-width: 0px) and (max-width: 1024px) {
@@ -113,7 +112,7 @@ main {
   background-image: attr(data-background-image url);
 }
 
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -1624,8 +1623,8 @@ article dl ol {
   /*dictionary definitions*/
 }
 
-/* line 9, ../sass/partials/elements/_figure.scss */
-figure {
+/* line 10, ../sass/partials/elements/_figure.scss */
+figure img {
   width: 100%;
 }
 /* line 12, ../sass/partials/elements/_figure.scss */
@@ -3842,13 +3841,13 @@ section.hero {
   justify-content: center;
   align-items: center;
   align-content: center;
-  flex-wrap: wrap;
   text-align: center;
 }
 /* line 63, ../sass/partials/_classes.scss */
 section.hero > * {
   width: 100%;
   flex-grow: 1;
+  padding: 0 0.5rem;
 }
 
 /* line 1, ../sass/partials/_z-index.scss */

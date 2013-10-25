@@ -6,7 +6,7 @@ body{
 		height: calc(100% - #{$unit__header--height});
 	}
 	height: calc(100% - #{$unit__header--height + $unit__nav--height});
-	background-image: url(http://lorempixel.com/1920/1080/);
+	//background-image: url(http://lorempixel.com/1920/1080/);
 	overflow-x: hidden;
 }
 main{
