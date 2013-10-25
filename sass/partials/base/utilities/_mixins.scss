@@ -6,7 +6,7 @@
 			box-shadow: none;
 		}
 		@else{
-			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.38);
+			box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
 		}
 		@if $tone == white{
 			border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);
@@ -34,7 +34,7 @@
 			box-shadow: none;
 		}
 		@else{
-			box-shadow: 0 $unit__shadow-size $unit__shadow-size 0 rgba(0, 0, 0, 0.38) inset;
+			box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;
 		}
 	}
 	@else if $skeu == cartoon{

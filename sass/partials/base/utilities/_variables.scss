@@ -16,9 +16,9 @@ $font-base: null;
 
 $max-width: 100%;
 
-$unit__header--height: 5rem;
+$unit__header--height: 3rem;
 
-$unit__nav--height: 3rem;
+$unit__nav--height: 2rem;
 
 $length__transition: 0.5s;
 
@@ -31,3 +31,7 @@ $unit__form--input--border-radius: 2px;
 $unit__header--opacity: 1;
 
 $unit__shadow-size: 1px;
+
+$unit__shadow-blur: 1px;
+
+$unit__shadow-opacity: 0.25;

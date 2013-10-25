@@ -15,15 +15,15 @@ header{
 			address{/*address info*/}
 		}
 		&.user{
-			@include column(2,8);
+			
 			a{}
 		}
 		&.social{
-			@include column(2,8);
+			
 			a{}
 		}
 		&.search{
-			@include column(3,8);
+			
 			form input{	}
 			.compact{/*expanding box*/}
 		}

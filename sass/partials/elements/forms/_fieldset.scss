@@ -164,7 +164,7 @@ fieldset.experimental{
 		border-width: 1px 1px 1px 0;
 		border-style: solid;
 		border-color: $color-text;
-		padding: 0 0.5rem;
+		padding: 0;
 		background: transparent;
 		/*make this respond to row> nesting*/
 		&:hover{
@@ -189,6 +189,11 @@ fieldset.experimental{
 			width: 100%;
 			background: transparent;
 			border: none;
+			padding: 0 0.5rem;
+			box-shadow: none;
+			&:hover,
+			&:active,
+			&:focus{border-top: 1px dashed rgba(red($color-text),green($color-text),blue($color-text),0.3);}
 		}
 	}
 }

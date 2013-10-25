@@ -1,6 +1,6 @@
 /*styles for screens 256-384px*/
 header{
-	height: 5rem;
+	height: $unit__header--height;
 	@include column(2,2);
 	@include box-shadow($color-drawer);	
 	address{

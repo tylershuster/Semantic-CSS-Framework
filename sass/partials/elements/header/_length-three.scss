@@ -1,6 +1,6 @@
 /*styles for devices from 384-640 px wide*/
 header{
-	height: 5rem;
+	height: $unit__header--height;
 	@include column(3,3);
 	@include box-shadow($color-drawer);
 	address{
