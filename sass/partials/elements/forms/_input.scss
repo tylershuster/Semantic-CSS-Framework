@@ -1,5 +1,5 @@
 $color-input-background: $color-drawer;
-$height-form-input: 1.5rem;
+
 @mixin input-disabled{
 	background-color: $color-background;
 	color: $color-drawer;
@@ -9,61 +9,32 @@ input{
 	height: $height-form-input;
 	background-color: $color-input-background;
 	color: $color-text;
-	margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
-	margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
+	margin-top: #{(ceil($height-form-input) - $height-form-input) / 2};
+	margin-bottom: #{(ceil($height-form-input) - $height-form-input) / 2};
 	border: 0;
 	margin-right: 1px;
 	@include box-shadow-inset($color-input-background);
 	&:focus{
-		-webkit-box-shadow: $color__3d--dark 0 0 3px 0 inset;
-		box-shadow: $color__3d--dark 0 0 3px 0 inset;
-		border-bottom: none;
-		
+		box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;
 	}
-	&[type="text"]{
-		
+	&[type="text"]{		
 		&:disabled{
 			@include input-disabled;
 		}
 	}
-	&[type="range"]{
-		
-	}
-	&[type="email"]{
-		
-	}
-	&[type="search"]{
-		
-	}
-	&[type="url"]{
-		
-	}
-	&[type="password"]{
-		
-	}
-	&[type="tel"]{
-		
-	}
-	&[type="date"]{
-		
-	}
-	&[type="datetime-local"]{
-		
-	}
-	&[type="month"]{
-		
-	}
-	&[type="week"]{
-		
-	}
-	&[type="time"]{
-		
-	}
-	&[type="datetime"]{
-		
-	}
-	&[type="number"]{
-		
+	&[type="range"]{}
+	&[type="email"]{}
+	&[type="search"]{}
+	&[type="url"]{}
+	&[type="password"]{}
+	&[type="tel"]{}
+	&[type="date"]{}
+	&[type="datetime-local"]{}
+	&[type="month"]{}
+	&[type="week"]{}
+	&[type="time"]{}
+	&[type="datetime"]{}
+	&[type="number"]{		
 		&:disabled{
 			@include input-disabled;
 		}
@@ -71,9 +42,7 @@ input{
 	&:not([type]){
 		padding: 0;
 	}
-	&[name*="field"]{
-		
-	}
+	&[name*="field"]{}
 	&[type="color"]{
 		padding: 0;
 		box-shadow: none;

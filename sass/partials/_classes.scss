@@ -60,6 +60,7 @@ section{
 		align-content: center;
 		//flex-wrap: wrap;
 		text-align: center;
+		padding: 0 calc((100% - #{$max-width}) / 2);
 		&>*{
 			width: 100%;
 			flex-grow: 1;

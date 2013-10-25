@@ -1,7 +1,12 @@
 header address{
 	position: absolute;
-	top: 1.5rem;
-	right: 1rem;
-	padding-top: 0.5rem;
+	bottom: #{$unit__nav--height};
+	height: #{$unit__header--height};
+	right: 0;
+	padding-right: 0.5rem;
+	a{
+		line-height: #{$unit__header--height};
+		height: #{$unit__header--height};
+	}
 	
 }

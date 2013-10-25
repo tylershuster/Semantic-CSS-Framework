@@ -29,7 +29,7 @@
 }
 
 /*human-font, machine-font, copy-font*/
-/*Set in the key of e maj9. mono color scheme based on #0f4da8 with a white background.*/
+/*Set in the key of c maj. mono color scheme based on #0f4da8 with a white background.*/
 /* Defaults*/
 /* mono, complement, triad, tetrad, analogic, accented-analogic*/
 /* rgb, ryb*/
@@ -112,7 +112,7 @@ main {
   background-image: attr(data-background-image url);
 }
 
-/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -790,22 +790,21 @@ optgroup::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-/* line 39, ../sass/partials/base/_typography.scss */
+/* line 21, ../sass/partials/base/_typography.scss */
 html {
-  font-size: 125%;
-  /*find me*/
+  font-size: 100%;
 }
 
 @media all and (min-width: 256px) and (max-width: 384px) {
-  /* line 41, ../sass/partials/base/_typography.scss */
+  /* line 23, ../sass/partials/base/_typography.scss */
   html {
-    font-size: 112.5%;
+    font-size: 87.5%;
   }
 }
 @media all and (min-width: 128px) and (max-width: 256px) {
-  /* line 43, ../sass/partials/base/_typography.scss */
+  /* line 25, ../sass/partials/base/_typography.scss */
   html {
-    font-size: 100%;
+    font-size: 75%;
   }
 }
 /* line 64, ../sass/partials/base/_typography.scss */
@@ -821,10 +820,10 @@ small {
 
 /* line 73, ../sass/partials/base/_typography.scss */
 h1 {
-  font-size: 2.25rem;
-  line-height: 3rem;
-  padding-top: 0.72rem;
-  padding-bottom: 0.26rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 0.47rem;
+  padding-bottom: 0.54rem;
   font-weight: bold;
   font-style: normal;
   margin: 0;
@@ -834,10 +833,10 @@ h1 {
 /* line 84, ../sass/partials/base/_typography.scss */
 h1 + small, h1 > small {
   color: #82a3d3;
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   line-height: 2rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
   font-weight: bold;
   font-style: normal;
   margin: 0;
@@ -845,10 +844,10 @@ h1 + small, h1 > small {
 }
 /* line 95, ../sass/partials/base/_typography.scss */
 h1.uber, .uber h1 {
-  font-size: 4.5rem;
-  line-height: 5rem;
-  padding-top: 1.44rem;
-  padding-bottom: 0.52rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding-top: 0.94rem;
+  padding-bottom: 1.08rem;
   font-weight: bold;
   font-style: normal;
   margin: 0;
@@ -856,10 +855,10 @@ h1.uber, .uber h1 {
 
 /* line 105, ../sass/partials/base/_typography.scss */
 h2 {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   line-height: 2rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
   font-weight: bold;
   font-style: normal;
   margin: 0;
@@ -869,10 +868,10 @@ h2 {
 /* line 116, ../sass/partials/base/_typography.scss */
 h2 + small, h2 > small {
   color: #7e8ca2;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2rem;
-  padding-top: 0.47rem;
-  padding-bottom: 0.54rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
   font-weight: bold;
   font-style: normal;
   margin: 0;
@@ -880,10 +879,10 @@ h2 + small, h2 > small {
 }
 /* line 127, ../sass/partials/base/_typography.scss */
 h2.uber, .uber h2 {
-  font-size: 3.75rem;
-  line-height: 4rem;
-  padding-top: 0.5rem;
-  padding-bottom: 1.5rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  padding-top: 1.1rem;
+  padding-bottom: 0.9rem;
   font-weight: bold;
   font-style: normal;
   margin: 0;
@@ -891,10 +890,10 @@ h2.uber, .uber h2 {
 
 /* line 137, ../sass/partials/base/_typography.scss */
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2rem;
-  padding-top: 0.47rem;
-  padding-bottom: 0.54rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
   font-weight: bold;
   font-style: normal;
   margin: 0;
@@ -915,10 +914,10 @@ h3 + small, h3 > small {
 }
 /* line 159, ../sass/partials/base/_typography.scss */
 h3.uber, .uber h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3rem;
-  padding-top: 0.94rem;
-  padding-bottom: 1.08rem;
+  padding-top: 1.1rem;
+  padding-bottom: 0.9rem;
   font-weight: bold;
   font-style: normal;
   margin: 0;
@@ -1530,10 +1529,10 @@ blockquote {
 }
 /* line 17, ../sass/partials/elements/_blockquote.scss */
 blockquote p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2rem;
-  padding-top: 0.47rem;
-  padding-bottom: 0.54rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
   color: #062046;
 }
 /* line 24, ../sass/partials/elements/_blockquote.scss */
@@ -1575,6 +1574,14 @@ blockquote > cite {
 /* line 49, ../sass/partials/elements/_blockquote.scss */
 blockquote > cite:before {
   content: "- ";
+}
+
+/* line 1, ../sass/partials/elements/_button.scss */
+button {
+  background-color: #0f4da8;
+  border: none;
+  height: 2rem;
+  color: #f6f9fe;
 }
 
 /* line 1, ../sass/partials/elements/_definitions.scss */
@@ -1659,9 +1666,15 @@ section.colophon {
 /* line 1, ../sass/partials/elements/header/_address.scss */
 header address {
   position: absolute;
-  top: 1.5rem;
-  right: 1rem;
-  padding-top: 0.5rem;
+  bottom: 2rem;
+  height: 3rem;
+  right: 0;
+  padding-right: 0.5rem;
+}
+/* line 7, ../sass/partials/elements/header/_address.scss */
+header address a {
+  line-height: 3rem;
+  height: 3rem;
 }
 
 /* line 1, ../sass/partials/elements/header/_common.scss */
@@ -1671,9 +1684,10 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  box-sizing: content-box;
   /*multiple headers get styled into tabs. See foxnews for example*/
 }
-/* line 8, ../sass/partials/elements/header/_common.scss */
+/* line 9, ../sass/partials/elements/header/_common.scss */
 header .logo {
   /*site logo*/
   display: inline-block;
@@ -1682,7 +1696,7 @@ header .logo {
   margin-top: 0.33333rem;
   margin-left: 1rem;
 }
-/* line 15, ../sass/partials/elements/header/_common.scss */
+/* line 16, ../sass/partials/elements/header/_common.scss */
 header h1 {
   /*site tite*/
   display: inline-block;
@@ -1691,27 +1705,23 @@ header h1 {
   margin-top: 0;
   padding: 0;
   white-space: nowrap;
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   line-height: 2rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
   font-weight: bold;
   font-style: normal;
 }
-/* line 29, ../sass/partials/elements/header/_common.scss */
+/* line 30, ../sass/partials/elements/header/_common.scss */
 header .logo + h1 {
   margin-left: 1rem;
 }
-/* line 32, ../sass/partials/elements/header/_common.scss */
-header address {
-  height: 2rem;
-}
-/* line 34, ../sass/partials/elements/header/_common.scss */
+/* line 35, ../sass/partials/elements/header/_common.scss */
 header address a, header address a:before {
   color: #f6f9fe;
   text-decoration: none;
 }
-/* line 41, ../sass/partials/elements/header/_common.scss */
+/* line 42, ../sass/partials/elements/header/_common.scss */
 header section.masthead {
   position: absolute;
   margin: 0 auto;
@@ -1719,41 +1729,39 @@ header section.masthead {
   text-align: center;
   width: 100%;
   padding: 0 1rem;
+  height: 3rem;
   /*masthead should be centered on page*/
 }
-/* line 49, ../sass/partials/elements/header/_common.scss */
+/* line 51, ../sass/partials/elements/header/_common.scss */
 header section.masthead .logo {
   float: none;
   /*site logo*/
 }
-/* line 51, ../sass/partials/elements/header/_common.scss */
+/* line 53, ../sass/partials/elements/header/_common.scss */
 header section.masthead h1 {
   float: none;
 }
-/* line 54, ../sass/partials/elements/header/_common.scss */
+/* line 56, ../sass/partials/elements/header/_common.scss */
 header section.masthead .logo + h1 {
   position: relative;
   top: -0.25rem;
 }
-/* line 58, ../sass/partials/elements/header/_common.scss */
+/* line 60, ../sass/partials/elements/header/_common.scss */
 header section.masthead address {
   /*address info*/
 }
-/* line 60, ../sass/partials/elements/header/_common.scss */
+/* line 62, ../sass/partials/elements/header/_common.scss */
 header section.user {
   background-color: #d0e1fb;
   height: 1.5rem;
   display: table;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+  border: none;
   position: absolute;
   right: 0;
   top: 0;
   text-align: center;
 }
-/* line 72, ../sass/partials/elements/header/_common.scss */
+/* line 74, ../sass/partials/elements/header/_common.scss */
 header section.user a {
   display: table-cell;
   vertical-align: middle;
@@ -1771,7 +1779,7 @@ header section.user a {
   	content: "";
   }*/
 }
-/* line 91, ../sass/partials/elements/header/_common.scss */
+/* line 93, ../sass/partials/elements/header/_common.scss */
 header section.search {
   position: absolute;
   top: 3rem;
@@ -1779,86 +1787,92 @@ header section.search {
   height: 2rem;
   text-align: right;
 }
-/* line 100, ../sass/partials/elements/header/_common.scss */
+/* line 102, ../sass/partials/elements/header/_common.scss */
 header section.search form {
   float: right;
   height: 2rem;
 }
-/* line 103, ../sass/partials/elements/header/_common.scss */
+/* line 105, ../sass/partials/elements/header/_common.scss */
 header section.search form input[type="search"] {
   height: 1.5rem;
   margin-top: 0.25rem;
 }
-/* line 107, ../sass/partials/elements/header/_common.scss */
+/* line 109, ../sass/partials/elements/header/_common.scss */
 header section.search form input[type="submit"] {
   height: 1.5rem;
   margin-top: 0.25rem;
   border: 0;
   padding: 0 0.5rem;
 }
-/* line 114, ../sass/partials/elements/header/_common.scss */
+/* line 116, ../sass/partials/elements/header/_common.scss */
 header section.search .compact {
   /*expanding box*/
 }
-/* line 118, ../sass/partials/elements/header/_common.scss */
-header nav > ul {
-  position: absolute;
+/* line 119, ../sass/partials/elements/header/_common.scss */
+header nav {
+  position: relative;
   top: 3rem;
+}
+/* line 122, ../sass/partials/elements/header/_common.scss */
+header nav > ul {
+  position: relative;
+  max-width: 60em;
   min-height: 2rem;
   background-color: #d0e1fb;
-  float: left;
+  float: none;
   width: 100%;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   display: table;
   table-layout: fixed;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
-/* line 133, ../sass/partials/elements/header/_common.scss */
+/* line 137, ../sass/partials/elements/header/_common.scss */
 header nav > ul > div {
   display: none;
 }
-/* line 139, ../sass/partials/elements/header/_common.scss */
+/* line 143, ../sass/partials/elements/header/_common.scss */
 header nav > ul li {
   box-sizing: border-box;
   table-layout: fixed;
   vertical-align: middle;
   position: relative;
 }
-/* line 144, ../sass/partials/elements/header/_common.scss */
+/* line 148, ../sass/partials/elements/header/_common.scss */
 header nav > ul li > a {
   text-decoration: none;
   width: 100%;
   display: block;
 }
-/* line 149, ../sass/partials/elements/header/_common.scss */
+/* line 153, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul {
   background-color: #d0e1fb;
   display: table;
   position: absolute;
   padding: 0;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+  border: none;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
-/* line 156, ../sass/partials/elements/header/_common.scss */
+/* line 160, ../sass/partials/elements/header/_common.scss */
+header nav > ul li ul:hover {
+  border: 1px none none none;
+}
+/* line 163, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul li {
   margin-bottom: -100%;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
-/* line 160, ../sass/partials/elements/header/_common.scss */
+/* line 167, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul + a {
   position: relative;
 }
-/* line 163, ../sass/partials/elements/header/_common.scss */
+/* line 170, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul + a:after {
   content: ' ';
   display: block;
@@ -1872,43 +1886,42 @@ header nav > ul li ul + a:after {
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
-/* line 174, ../sass/partials/elements/header/_common.scss */
+/* line 181, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul li {
   display: table;
   height: 2rem;
 }
-/* line 177, ../sass/partials/elements/header/_common.scss */
+/* line 184, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul li a {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 183, ../sass/partials/elements/header/_common.scss */
+/* line 190, ../sass/partials/elements/header/_common.scss */
 header nav > ul li:hover {
   background-color: #0f4da8;
   border: none;
-  outline: 1px solid #0f4da8;
 }
-/* line 188, ../sass/partials/elements/header/_common.scss */
+/* line 195, ../sass/partials/elements/header/_common.scss */
 header nav > ul li:hover > ul li {
   margin-bottom: 0;
 }
-/* line 192, ../sass/partials/elements/header/_common.scss */
+/* line 199, ../sass/partials/elements/header/_common.scss */
 header nav > ul li:hover > a, header nav > ul li:hover > a:hover {
   color: #f6f9fe;
 }
-/* line 196, ../sass/partials/elements/header/_common.scss */
+/* line 203, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul {
   overflow: hidden;
   width: 100%;
 }
-/* line 199, ../sass/partials/elements/header/_common.scss */
+/* line 206, ../sass/partials/elements/header/_common.scss */
 header nav > ul li ul li {
   float: left;
   width: 100%;
 }
 
 /* This is the clickable label */
-/* line 215, ../sass/partials/elements/header/_common.scss */
+/* line 222, ../sass/partials/elements/header/_common.scss */
 .slide-toggle {
   float: left;
   cursor: pointer;
@@ -1925,7 +1938,7 @@ header nav > ul li ul li {
 }
 
 /* Kill the nasty outlines everywhere */
-/* line 234, ../sass/partials/elements/header/_common.scss */
+/* line 241, ../sass/partials/elements/header/_common.scss */
 .slide-toggle,
 .slide-toggle:active,
 .slide-toggle:focus {
@@ -1935,13 +1948,12 @@ header nav > ul li ul li {
 }
 
 /* The :after pseudo element has an icon that covers the checkbox */
-/* line 241, ../sass/partials/elements/header/_common.scss */
+/* line 248, ../sass/partials/elements/header/_common.scss */
 .slide-toggle:after {
   content: "\f0c9";
   display: block;
   font: 2rem "fontawesome";
   text-align: center;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.42);
   height: 1.7rem;
   -webkit-transition: -webkit-transform 0.25s ease;
   -moz-transition: -moz-transform 0.25s ease;
@@ -1950,7 +1962,7 @@ header nav > ul li ul li {
 }
 
 /* This is the checkbox */
-/* line 255, ../sass/partials/elements/header/_common.scss */
+/* line 262, ../sass/partials/elements/header/_common.scss */
 .slide-checkbox {
   position: absolute;
   top: -9999px;
@@ -1958,25 +1970,25 @@ header nav > ul li ul li {
 }
 
 /* When it's checked replace the menu icon with a close icon */
-/* line 262, ../sass/partials/elements/header/_common.scss */
+/* line 269, ../sass/partials/elements/header/_common.scss */
 .slide-checkbox:checked ~ .slide-toggle:after {
   content: '\f0c9';
 }
 
 /*only show mobile nav on @media handheld*/
 @media all and (max-width: 1024px) {
-  /* line 272, ../sass/partials/elements/header/_common.scss */
+  /* line 279, ../sass/partials/elements/header/_common.scss */
   header section.search {
     top: 0;
     height: 3rem;
     margin-right: 1rem;
   }
-  /* line 276, ../sass/partials/elements/header/_common.scss */
+  /* line 283, ../sass/partials/elements/header/_common.scss */
   header section.search form {
     width: 100%;
     height: 3rem;
   }
-  /* line 279, ../sass/partials/elements/header/_common.scss */
+  /* line 286, ../sass/partials/elements/header/_common.scss */
   header section.search form:after {
     content: "";
     position: absolute;
@@ -1988,7 +2000,7 @@ header nav > ul li ul li {
     -webkit-border-radius: 3px;
     -webkit-transform: rotate(-45deg);
   }
-  /* line 290, ../sass/partials/elements/header/_common.scss */
+  /* line 297, ../sass/partials/elements/header/_common.scss */
   header section.search form input[type="search"] {
     -webkit-appearance: none;
     float: right;
@@ -2007,28 +2019,29 @@ header nav > ul li ul li {
     background-color: #f6f9fe;
     border-color: #0f4da8;
   }
-  /* line 305, ../sass/partials/elements/header/_common.scss */
+  /* line 312, ../sass/partials/elements/header/_common.scss */
   header section.search form input[type="search"]::-webkit-search-cancel-button {
     display: none;
   }
-  /* line 308, ../sass/partials/elements/header/_common.scss */
+  /* line 315, ../sass/partials/elements/header/_common.scss */
   header section.search form input[type="search"]:hover, header section.search form input[type="search"]:focus {
     width: 200px;
   }
-  /* line 311, ../sass/partials/elements/header/_common.scss */
+  /* line 318, ../sass/partials/elements/header/_common.scss */
   header section.search form input[type="search"]:hover::-webkit-input-placeholder {
     color: #cae0ef;
     font-style: italic;
     font-size: 13px;
   }
-  /* line 318, ../sass/partials/elements/header/_common.scss */
+  /* line 325, ../sass/partials/elements/header/_common.scss */
   header section.search ::-webkit-input-placeholder {
     color: transparent;
   }
-  /* line 320, ../sass/partials/elements/header/_common.scss */
+  /* line 327, ../sass/partials/elements/header/_common.scss */
   header nav {
     position: fixed;
     top: 3rem;
+    left: -1px;
     height: 100%;
     height: 100%;
     z-index: 999;
@@ -2054,51 +2067,55 @@ header nav > ul li ul li {
     -ms-transform-origin: 50% -100%;
     transform-origin: 50% -100%;
   }
-  /* line 327, ../sass/partials/elements/header/_common.scss */
+  /* line 335, ../sass/partials/elements/header/_common.scss */
   header nav section.user {
     width: 100%;
   }
-  /* line 329, ../sass/partials/elements/header/_common.scss */
+  /* line 337, ../sass/partials/elements/header/_common.scss */
   header nav section.user + ul {
     top: 2rem;
   }
-  /* line 333, ../sass/partials/elements/header/_common.scss */
+  /* line 341, ../sass/partials/elements/header/_common.scss */
   header nav ul {
     display: block;
-    position: relative;
+    float: left;
     top: 0;
     background-color: #d0e1fb;
   }
-  /* line 339, ../sass/partials/elements/header/_common.scss */
+  /* line 347, ../sass/partials/elements/header/_common.scss */
   header nav address {
+    margin-top: 0;
     width: auto;
-    height: 1.33333rem;
+    height: 2rem;
     background-color: #d0e1fb;
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
-    top: 0.33333rem;
-    right: 0;
+    top: 0;
+    left: 0;
+    padding-left: 0.5rem;
     text-align: center;
+    border-bottom: 1px solid #d0e1fb;
   }
-  /* line 349, ../sass/partials/elements/header/_common.scss */
+  /* line 358, ../sass/partials/elements/header/_common.scss */
+  header nav address a {
+    line-height: 2rem;
+    height: 2rem;
+  }
+  /* line 363, ../sass/partials/elements/header/_common.scss */
   header nav address + ul {
     top: 2rem;
   }
-  /* line 352, ../sass/partials/elements/header/_common.scss */
+  /* line 366, ../sass/partials/elements/header/_common.scss */
   header nav li {
     padding-left: 1rem;
     display: block;
     text-align: left;
   }
-  /* line 356, ../sass/partials/elements/header/_common.scss */
+  /* line 370, ../sass/partials/elements/header/_common.scss */
   header nav li > a {
     padding: 1rem 0;
     height: 3rem;
   }
 
-  /* line 383, ../sass/partials/elements/header/_common.scss */
+  /* line 397, ../sass/partials/elements/header/_common.scss */
   .slide-checkbox:checked ~ nav {
     -webkit-transform: translateY(0) scale3d(1, 1, 1);
     -moz-transform: translateY(0) scale3d(1, 1, 1);
@@ -2107,14 +2124,13 @@ header nav > ul li ul li {
     transform: translateY(0) scale3d(1, 1, 1);
   }
 
-  /* line 392, ../sass/partials/elements/header/_common.scss */
+  /* line 406, ../sass/partials/elements/header/_common.scss */
   .slide-toggle {
     display: block;
   }
 
-  /* line 396, ../sass/partials/elements/header/_common.scss */
+  /* line 410, ../sass/partials/elements/header/_common.scss */
   .slide-checkbox:checked ~ .slide-toggle:after {
-    text-shadow: 0px 0px rgba(0, 0, 0, 0.42);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -2135,6 +2151,7 @@ header nav > ul li ul li {
   /* line 2, ../sass/partials/elements/header/_length-thirteen.scss */
   header {
     width: 100%;
+    border: none;
     /*multiple headers get styled into tabs. See foxnews for example*/
   }
   /* line 6, ../sass/partials/elements/header/_length-thirteen.scss */
@@ -2185,10 +2202,6 @@ header nav > ul li ul li {
   }
   /* line 35, ../sass/partials/elements/header/_length-thirteen.scss */
   header nav > ul {
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
     border-top: 0;
   }
   /* line 38, ../sass/partials/elements/header/_length-thirteen.scss */
@@ -2240,82 +2253,79 @@ header nav > ul li ul li {
   /* line 2, ../sass/partials/elements/header/_length-eight.scss */
   header {
     width: 100%;
+    border: none;
     /*multiple headers get styled into tabs. See foxnews for example*/
   }
-  /* line 5, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 6, ../sass/partials/elements/header/_length-eight.scss */
   header h1 {
     /*site tite*/
   }
-  /* line 6, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 7, ../sass/partials/elements/header/_length-eight.scss */
   header address {
     /*address info*/
   }
-  /* line 9, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 10, ../sass/partials/elements/header/_length-eight.scss */
   header section.masthead {
     /*masthead is centered on page*/
   }
-  /* line 13, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 14, ../sass/partials/elements/header/_length-eight.scss */
   header section.masthead .logo {
     /*site logo*/
   }
-  /* line 14, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 15, ../sass/partials/elements/header/_length-eight.scss */
   header section.masthead h1 {
     /*site title*/
   }
-  /* line 15, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 16, ../sass/partials/elements/header/_length-eight.scss */
   header section.masthead address {
     /*address info*/
   }
-  /* line 28, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 29, ../sass/partials/elements/header/_length-eight.scss */
   header section.search .compact {
     /*expanding box*/
   }
-  /* line 31, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 32, ../sass/partials/elements/header/_length-eight.scss */
   header nav {
     width: 100%;
   }
-  /* line 33, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 34, ../sass/partials/elements/header/_length-eight.scss */
   header nav > ul {
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
     border-top: 0;
   }
-  /* line 36, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 37, ../sass/partials/elements/header/_length-eight.scss */
   header nav > ul > div + li {
     border-left: 1px solid #e3edfc;
   }
-  /* line 40, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 41, ../sass/partials/elements/header/_length-eight.scss */
   header nav li {
     float: none;
     text-align: center;
     display: table-cell;
   }
-  /* line 45, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 46, ../sass/partials/elements/header/_length-eight.scss */
   header nav li > ul {
     top: 50%;
   }
-  /* line 47, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 48, ../sass/partials/elements/header/_length-eight.scss */
   header nav li > ul div + li {
     border-top: 1px solid #e3edfc;
   }
-  /* line 50, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 51, ../sass/partials/elements/header/_length-eight.scss */
   header nav li > ul + a:after {
     bottom: 0;
     top: 0;
     margin: auto;
     left: calc(100% + 0.2rem);
   }
-  /* line 58, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 59, ../sass/partials/elements/header/_length-eight.scss */
   header nav li:hover ul {
     top: 100%;
   }
-  /* line 61, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 62, ../sass/partials/elements/header/_length-eight.scss */
   header nav li:hover a:after {
     border-top: 0.75rem solid #d0e1fb;
   }
-  /* line 67, ../sass/partials/elements/header/_length-eight.scss */
+  /* line 68, ../sass/partials/elements/header/_length-eight.scss */
   header #show-mobile-nav {
     display: none;
   }
@@ -2331,10 +2341,7 @@ header nav > ul li ul li {
   header {
     height: 3rem;
     width: 100%;
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+    border: none;
   }
   /* line 7, ../sass/partials/elements/header/_length-five.scss */
   header address a, header address a:before {
@@ -2352,10 +2359,7 @@ header nav > ul li ul li {
   }
   /* line 25, ../sass/partials/elements/header/_length-five.scss */
   header nav > ul {
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+    border: none;
   }
   /* line 27, ../sass/partials/elements/header/_length-five.scss */
   header nav > ul div + li {
@@ -2406,10 +2410,7 @@ header nav > ul li ul li {
   header {
     height: 3rem;
     width: 100%;
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+    border: none;
   }
   /* line 7, ../sass/partials/elements/header/_length-three.scss */
   header address a, header address a:before {
@@ -2427,10 +2428,7 @@ header nav > ul li ul li {
   }
   /* line 25, ../sass/partials/elements/header/_length-three.scss */
   header nav > ul {
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+    border: none;
   }
   /* line 27, ../sass/partials/elements/header/_length-three.scss */
   header nav > ul div + li {
@@ -2480,10 +2478,7 @@ header nav > ul li ul li {
   header {
     height: 3rem;
     width: 100%;
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+    border: none;
   }
   /* line 7, ../sass/partials/elements/header/_length-two.scss */
   header address a, header address a:before {
@@ -2501,10 +2496,7 @@ header nav > ul li ul li {
   }
   /* line 25, ../sass/partials/elements/header/_length-two.scss */
   header nav > ul {
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+    border: none;
   }
   /* line 27, ../sass/partials/elements/header/_length-two.scss */
   header nav > ul div + li {
@@ -2557,10 +2549,7 @@ header nav > ul li ul li {
   header {
     height: 3rem;
     width: 100%;
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+    border: none;
   }
   /* line 7, ../sass/partials/elements/header/_length-one.scss */
   header address a, header address a:before {
@@ -2573,10 +2562,7 @@ header nav > ul li ul li {
   }
   /* line 19, ../sass/partials/elements/header/_length-one.scss */
   header nav > ul {
-    border: 1px solid;
-    border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+    border: none;
   }
   /* line 21, ../sass/partials/elements/header/_length-one.scss */
   header nav > ul div + li {
@@ -2750,18 +2736,13 @@ ul .blog li {
 /* line 1, ../sass/partials/elements/_code.scss */
 code {
   font-family: 'Source Code Pro', monospace;
-  font-weight: bold;
   color: #062046;
   background-color: #d0e1fb;
   padding: 0 0.2rem;
   line-height: 1rem;
-  border: 1px solid;
-  border-color: rgba(123, 124, 127, 0.625) rgba(246, 249, 254, 0.925) rgba(246, 249, 254, 0.925) rgba(123, 124, 127, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
 }
 
-/* line 10, ../sass/partials/elements/_code.scss */
+/* line 9, ../sass/partials/elements/_code.scss */
 p > code {
   font-size: 85%;
   margin: 0 0.2rem;
@@ -2780,36 +2761,30 @@ input {
   height: 1.5rem;
   background-color: #d0e1fb;
   color: #062046;
-  margin-top: calc((2rem - 1.5rem) / 2);
-  margin-bottom: calc((2rem - 1.5rem) / 2);
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   border: 0;
   margin-right: 1px;
-  border: 1px solid;
-  border-color: rgba(104, 112, 125, 0.625) rgba(210, 226, 251, 0.925) rgba(210, 226, 251, 0.925) rgba(104, 112, 125, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
 }
 /* line 17, ../sass/partials/elements/forms/_input.scss */
 input:focus {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 0 inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 0 inset;
-  border-bottom: none;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
 }
-/* line 25, ../sass/partials/elements/forms/_input.scss */
+/* line 21, ../sass/partials/elements/forms/_input.scss */
 input[type="text"]:disabled {
   background-color: #f6f9fe;
   color: #d0e1fb;
 }
-/* line 67, ../sass/partials/elements/forms/_input.scss */
+/* line 38, ../sass/partials/elements/forms/_input.scss */
 input[type="number"]:disabled {
   background-color: #f6f9fe;
   color: #d0e1fb;
 }
-/* line 71, ../sass/partials/elements/forms/_input.scss */
+/* line 42, ../sass/partials/elements/forms/_input.scss */
 input:not([type]) {
   padding: 0;
 }
-/* line 77, ../sass/partials/elements/forms/_input.scss */
+/* line 46, ../sass/partials/elements/forms/_input.scss */
 input[type="color"] {
   padding: 0;
   box-shadow: none;
@@ -2818,41 +2793,30 @@ input[type="color"] {
   height: 1.5rem;
   margin: calc((2rem - 1.5rem) / 2) 0;
 }
-/* line 84, ../sass/partials/elements/forms/_input.scss */
+/* line 53, ../sass/partials/elements/forms/_input.scss */
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0.3rem;
   background: #d0e1fb;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+  border: none;
 }
-/* line 90, ../sass/partials/elements/forms/_input.scss */
+/* line 59, ../sass/partials/elements/forms/_input.scss */
 input[type="color"]:disabled::-webkit-color-swatch-wrapper {
   background-color: #f6f9fe;
-  border: 1px solid;
-  border-color: rgba(104, 112, 125, 0.625) rgba(210, 226, 251, 0.925) rgba(210, 226, 251, 0.925) rgba(104, 112, 125, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
 }
-/* line 95, ../sass/partials/elements/forms/_input.scss */
+/* line 64, ../sass/partials/elements/forms/_input.scss */
 input[type="color"][readonly] {
   padding: 0;
 }
-/* line 97, ../sass/partials/elements/forms/_input.scss */
+/* line 66, ../sass/partials/elements/forms/_input.scss */
 input[type="color"][readonly]::-webkit-color-swatch-wrapper {
   background-color: #f6f9fe;
   border: none;
 }
-/* line 102, ../sass/partials/elements/forms/_input.scss */
+/* line 71, ../sass/partials/elements/forms/_input.scss */
 input[type="color"]::-webkit-color-swatch {
   border: none;
-  border: 1px solid;
-  border-color: rgba(127, 127, 127, 0.625) rgba(255, 255, 255, 0.925) rgba(255, 255, 255, 0.925) rgba(127, 127, 127, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
 }
-/* line 107, ../sass/partials/elements/forms/_input.scss */
+/* line 76, ../sass/partials/elements/forms/_input.scss */
 input[type="radio"] {
   height: 1rem;
   box-shadow: none;
@@ -2864,7 +2828,7 @@ input[type="radio"] {
   margin: 0.5rem 0.2rem 0.5rem 0;
   background-color: transparent;
 }
-/* line 117, ../sass/partials/elements/forms/_input.scss */
+/* line 86, ../sass/partials/elements/forms/_input.scss */
 input[type="radio"]:before {
   width: 1rem;
   height: 1rem;
@@ -2872,13 +2836,9 @@ input[type="radio"]:before {
   display: block;
   content: "";
   padding: 0.46rem 0 0rem 0.09rem;
-  border: 1px solid;
-  border-color: rgba(104, 112, 125, 0.625) rgba(210, 226, 251, 0.925) rgba(210, 226, 251, 0.925) rgba(104, 112, 125, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
   border-radius: 50%;
 }
-/* line 127, ../sass/partials/elements/forms/_input.scss */
+/* line 96, ../sass/partials/elements/forms/_input.scss */
 input[type="radio"]:checked:before {
   content: "\2022";
   color: #1e0fa8;
@@ -2886,7 +2846,7 @@ input[type="radio"]:checked:before {
   line-height: 0;
   margin-top: 1px;
 }
-/* line 135, ../sass/partials/elements/forms/_input.scss */
+/* line 104, ../sass/partials/elements/forms/_input.scss */
 input[type="radio"]:after {
   content: attr(name);
   color: #062046;
@@ -2896,47 +2856,40 @@ input[type="radio"]:after {
   margin-right: 0.2rem;
   flex-grow: 1;
 }
-/* line 145, ../sass/partials/elements/forms/_input.scss */
+/* line 114, ../sass/partials/elements/forms/_input.scss */
 input[type="checkbox"] {
   height: 1rem;
   -webkit-appearance: none;
   box-shadow: none;
   border: none;
 }
-/* line 150, ../sass/partials/elements/forms/_input.scss */
+/* line 119, ../sass/partials/elements/forms/_input.scss */
 input[type="checkbox"]:before {
   width: 1rem;
   height: 1rem;
   background-color: #d0e1fb;
   display: block;
   content: "";
-  border: 1px solid;
-  border-color: rgba(104, 112, 125, 0.625) rgba(210, 226, 251, 0.925) rgba(210, 226, 251, 0.925) rgba(104, 112, 125, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
   font-size: 1.5rem;
   padding-left: 0.1rem;
 }
-/* line 161, ../sass/partials/elements/forms/_input.scss */
+/* line 130, ../sass/partials/elements/forms/_input.scss */
 input[type="checkbox"]:checked:before {
   content: "\2713";
   color: #1e0fa8;
   line-height: 0;
   padding-top: 0.2rem;
 }
-/* line 170, ../sass/partials/elements/forms/_input.scss */
+/* line 139, ../sass/partials/elements/forms/_input.scss */
 input[type="submit"] {
   background-color: #1e0fa8;
   color: #d0e1fb;
   margin-top: calc((2rem - 1.5rem) / 2);
   margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #bfb9f9 #190c8e #190c8e #bfb9f9;
+  border: none;
 }
-/* line 178, ../sass/partials/elements/forms/_input.scss */
+/* line 147, ../sass/partials/elements/forms/_input.scss */
 input[type="file"] {
   margin: calc((2rem - 1.5rem) / 2) 0;
   padding: 0;
@@ -2944,31 +2897,27 @@ input[type="file"] {
   border: none;
 }
 
-/* line 187, ../sass/partials/elements/forms/_input.scss */
+/* line 156, ../sass/partials/elements/forms/_input.scss */
 select {
   border: none;
   background-color: #d0e1fb;
-  border: 1px solid;
-  border-color: rgba(104, 112, 125, 0.625) rgba(210, 226, 251, 0.925) rgba(210, 226, 251, 0.925) rgba(104, 112, 125, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
 }
-/* line 191, ../sass/partials/elements/forms/_input.scss */
+/* line 160, ../sass/partials/elements/forms/_input.scss */
 select:focus {
   outline: none;
   box-shadow: none;
 }
-/* line 195, ../sass/partials/elements/forms/_input.scss */
+/* line 164, ../sass/partials/elements/forms/_input.scss */
 select:disabled {
   background-color: #f6f9fe;
   color: #d0e1fb;
 }
-/* line 198, ../sass/partials/elements/forms/_input.scss */
+/* line 167, ../sass/partials/elements/forms/_input.scss */
 select::-webkit-scrollbar-track {
   margin-top: -1px;
 }
 
-/* line 205, ../sass/partials/elements/forms/_input.scss */
+/* line 174, ../sass/partials/elements/forms/_input.scss */
 output {
   font-size: 1rem;
   line-height: 2rem;
@@ -2976,31 +2925,26 @@ output {
   padding-bottom: 0.25rem;
 }
 
-/* line 211, ../sass/partials/elements/forms/_input.scss */
+/* line 180, ../sass/partials/elements/forms/_input.scss */
 label {
   font-size: 1rem;
   line-height: 2rem;
   padding-top: 0.75rem;
   padding-bottom: 0.25rem;
 }
-/* line 217, ../sass/partials/elements/forms/_input.scss */
+/* line 186, ../sass/partials/elements/forms/_input.scss */
 label.required:after {
   content: "*";
 }
 
-/* line 223, ../sass/partials/elements/forms/_input.scss */
+/* line 192, ../sass/partials/elements/forms/_input.scss */
 textarea {
   padding: 1rem 0 0 0.62rem;
   border: 0;
   color: #062046;
   background-color: #d0e1fb;
-  border-radius: 2px;
-  border: 1px solid;
-  border-color: rgba(104, 112, 125, 0.625) rgba(210, 226, 251, 0.925) rgba(210, 226, 251, 0.925) rgba(104, 112, 125, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
 }
-/* line 232, ../sass/partials/elements/forms/_input.scss */
+/* line 201, ../sass/partials/elements/forms/_input.scss */
 textarea:before {
   content: "hi";
   display: block;
@@ -3011,58 +2955,51 @@ textarea:before {
   bottom: 3rem;
   z-index: 999;
 }
-/* line 242, ../sass/partials/elements/forms/_input.scss */
+/* line 211, ../sass/partials/elements/forms/_input.scss */
 textarea:disabled {
   background-color: #f6f9fe;
   color: #d0e1fb;
 }
 
-/* line 270, ../sass/partials/elements/forms/_input.scss */
+/* line 239, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-scrollbar {
   width: 1rem;
 }
 
-/* line 274, ../sass/partials/elements/forms/_input.scss */
+/* line 243, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-scrollbar-track {
   background-color: #d0e1fb;
-  border: 1px solid;
-  border-color: rgba(104, 112, 125, 0.625) rgba(210, 226, 251, 0.925) rgba(210, 226, 251, 0.925) rgba(104, 112, 125, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
   margin-top: -1px;
 }
 
-/* line 280, ../sass/partials/elements/forms/_input.scss */
+/* line 249, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-scrollbar-thumb {
   width: calc(100% - 2px);
   width: 50%;
   background-color: #0f4da8;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #b9d3f9 #0c418e #0c418e #b9d3f9;
+  border: none;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-/* line 288, ../sass/partials/elements/forms/_input.scss */
+/* line 257, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-scrollbar-corner {
   /* 6 */
 }
 
-/* line 289, ../sass/partials/elements/forms/_input.scss */
+/* line 258, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-resizer {
   /* 7 */
 }
 
-/* line 291, ../sass/partials/elements/forms/_input.scss */
+/* line 260, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
   width: 1rem;
   height: 100%;
 }
-/* line 296, ../sass/partials/elements/forms/_input.scss */
+/* line 265, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-inner-spin-button:before {
   width: 0;
   height: 0;
@@ -3074,7 +3011,7 @@ textarea:disabled {
   bottom: 1rem;
   left: 25%;
 }
-/* line 307, ../sass/partials/elements/forms/_input.scss */
+/* line 276, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-inner-spin-button:after {
   width: 0;
   height: 0;
@@ -3087,20 +3024,17 @@ textarea:disabled {
   left: -25%;
 }
 
-/* line 320, ../sass/partials/elements/forms/_input.scss */
+/* line 289, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: #062046;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #b9d3f9 #051b3b #051b3b #b9d3f9;
+  border: none;
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
 }
 
-/* line 329, ../sass/partials/elements/forms/_input.scss */
+/* line 298, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-controls-play-button {
   -webkit-appearance: none;
   height: 0;
@@ -3110,61 +3044,51 @@ textarea:disabled {
   border-bottom: 0.5rem solid transparent;
 }
 
-/* line 338, ../sass/partials/elements/forms/_input.scss */
+/* line 307, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-controls-panel {
   background-color: rgba(208, 225, 251, 0.8);
 }
 
-/* line 342, ../sass/partials/elements/forms/_input.scss */
+/* line 311, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-slider-container {
   border: none;
   background-color: #d0e1fb;
 }
 
-/* line 347, ../sass/partials/elements/forms/_input.scss */
+/* line 316, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-media-controls-current-time-display {
   color: #062046;
 }
 
-/* line 351, ../sass/partials/elements/forms/_input.scss */
+/* line 320, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-meter-bar {
   background: #d0e1fb;
-  border: 1px solid;
-  border-color: rgba(104, 112, 125, 0.625) rgba(210, 226, 251, 0.925) rgba(210, 226, 251, 0.925) rgba(104, 112, 125, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
   overflow: hidden;
 }
 
-/* line 362, ../sass/partials/elements/forms/_input.scss */
+/* line 331, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: none;
   border: none;
   color: #f6f9fe;
   background-color: #0f4da8;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #bfb9f9 #190c8e #190c8e #bfb9f9;
+  border: none;
   height: 1.5rem;
 }
 
-/* line 370, ../sass/partials/elements/forms/_input.scss */
+/* line 339, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-file-upload-button:disabled {
   color: #1e0fa8;
   background-color: #d0e1fb;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #b9d3f9 #b0bfd5 #b0bfd5 #b9d3f9;
+  border: none;
 }
 
-/* line 376, ../sass/partials/elements/forms/_input.scss */
+/* line 345, ../sass/partials/elements/forms/_input.scss */
 input::-webkit-calendar-picker-indicator:hover {
   background-color: transparent;
 }
 
-/* line 380, ../sass/partials/elements/forms/_input.scss */
+/* line 349, ../sass/partials/elements/forms/_input.scss */
 ::-webkit-clear-button {
   -webkit-appearance: none;
   content: "x";
@@ -3174,42 +3098,29 @@ input::-webkit-calendar-picker-indicator:hover {
   height: 100%;
 }
 
-/* line 388, ../sass/partials/elements/forms/_input.scss */
+/* line 357, ../sass/partials/elements/forms/_input.scss */
 progress {
   -webkit-appearance: none;
 }
-/* line 390, ../sass/partials/elements/forms/_input.scss */
+/* line 359, ../sass/partials/elements/forms/_input.scss */
 progress::-webkit-progress-bar {
   background-color: #d0e1fb;
-  border: 1px solid;
-  border-color: rgba(123, 124, 127, 0.625) rgba(246, 249, 254, 0.925) rgba(246, 249, 254, 0.925) rgba(123, 124, 127, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
 }
 
-/* line 396, ../sass/partials/elements/forms/_input.scss */
+/* line 365, ../sass/partials/elements/forms/_input.scss */
 meter::-webkit-meter-optimum-value {
   background: green;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #b3ffb3 #006c00 #006c00 #b3ffb3;
+  border: none;
 }
-/* line 400, ../sass/partials/elements/forms/_input.scss */
+/* line 369, ../sass/partials/elements/forms/_input.scss */
 meter::-webkit-meter-suboptimum-value {
   background: yellow;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #ffffb3 #d8d800 #d8d800 #ffffb3;
+  border: none;
 }
-/* line 405, ../sass/partials/elements/forms/_input.scss */
+/* line 374, ../sass/partials/elements/forms/_input.scss */
 meter::-webkit-meter-even-less-good-value {
   background: red;
-  border: 1px solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #ffb3b3 #d80000 #d80000 #ffb3b3;
+  border: none;
 }
 
 /* line 1, ../sass/partials/elements/forms/_index.scss */
@@ -3296,7 +3207,6 @@ form input {
   flex-grow: 1;
   float: left;
   padding: 0 0.5rem;
-  border-radius: 2px;
 }
 @media all and (max-width: 384px) {
   /* line 52, ../sass/partials/elements/forms/_index.scss */
@@ -3395,10 +3305,6 @@ fieldset {
   position: relative;
   padding-top: 3rem;
   background-color: #f6f9fe;
-  border: 1px solid;
-  border-color: rgba(123, 124, 127, 0.625) rgba(246, 249, 254, 0.925) rgba(246, 249, 254, 0.925) rgba(123, 124, 127, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
 }
 /* line 11, ../sass/partials/elements/forms/_fieldset.scss */
 fieldset > .row {
@@ -3433,10 +3339,6 @@ fieldset form {
 /* line 44, ../sass/partials/elements/forms/_fieldset.scss */
 fieldset form label {
   text-align: center;
-  border: 1px solid;
-  border-color: rgba(123, 124, 127, 0.625) rgba(246, 249, 254, 0.925) rgba(246, 249, 254, 0.925) rgba(123, 124, 127, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
   background-color: #0f4da8;
   color: #f6f9fe;
   padding-top: 0.2rem;
@@ -3544,10 +3446,6 @@ fieldset.experimental form {
 /* line 170, ../sass/partials/elements/forms/_fieldset.scss */
 fieldset.experimental form:hover {
   background-color: #d0e1fb;
-  border: 1px solid;
-  border-color: rgba(123, 124, 127, 0.625) rgba(246, 249, 254, 0.925) rgba(246, 249, 254, 0.925) rgba(123, 124, 127, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
   border-width: 1px 1px 1px 0;
   border-style: solid;
   border-color: #062046;
@@ -3842,8 +3740,9 @@ section.hero {
   align-items: center;
   align-content: center;
   text-align: center;
+  padding: 0 calc((100% - 60em) / 2);
 }
-/* line 63, ../sass/partials/_classes.scss */
+/* line 64, ../sass/partials/_classes.scss */
 section.hero > * {
   width: 100%;
   flex-grow: 1;
@@ -3893,17 +3792,13 @@ footer {
   z-index: -100;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 hr {
   height: 2px;
   margin: calc(0.5rem - 1px) 0;
   padding: 0;
   border: none;
   background-color: #f6f9fe;
-  border: 1px solid;
-  border-color: rgba(123, 124, 127, 0.625) rgba(246, 249, 254, 0.925) rgba(246, 249, 254, 0.925) rgba(123, 124, 127, 0.625);
-  border-radius: 1px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
   box-sizing: border-box;
 }
 
@@ -3912,7 +3807,7 @@ hr {
 * body, header{background-image: url(../bg.png);}
 nav ul{background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2P4//8/AxI2RuGAaBQOTADOAWEAjAwwnWPnCWYAAAAASUVORK5CYII=);}/*http://purelycss.com/data-uri-tileable-transparent-patterns/#*/
 @media print {
-  /* line 198, ../sass/style.scss */
+  /* line 200, ../sass/style.scss */
   a[href]:after {
     content: " (" attr(href) ") ";
   }

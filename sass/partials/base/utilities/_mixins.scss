@@ -20,6 +20,9 @@
 		border-color: tint($on-background,15%) shade($on-background,15%) shade($on-background,15%) tint($on-background,15%);
 		box-shadow: 2px 2px 0px rgba(red(set-lightness($color-primary, 10%)), blue(set-lightness($color-primary, 10%)), green(set-lightness($color-primary, 10%)), 0.85);
 	}
+	@else if $skeu == flat{
+		border: none;
+	}
 	@if $glass == yes {
 		/*write code to make transparent gradient from on-background color*/
 	}
@@ -34,7 +37,7 @@
 			box-shadow: none;
 		}
 		@else{
-			box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;
+			//box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;
 		}
 	}
 	@else if $skeu == cartoon{

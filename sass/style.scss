@@ -6,9 +6,9 @@
 // Typography
 //////////////////////////////
 
-$key: e;					//Specify the key in which to set your piece (d)
+$key: c;					//Specify the key in which to set your piece (d)
 
-$quality: maj9;				//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
+$quality: maj;				//Specify the quality of your piece. Pick something that fits the feel of the page (min6)
 
 $sans: Open Sans;
 
@@ -77,7 +77,7 @@ $tone: white !default;			//Specify background color: white, light, dark, or blac
 
 $icons: no;					//Specify whether or not to use icons;
 
-$skeu: faux-flat;
+$skeu: flat;
 
 $glass: no;
 
@@ -126,6 +126,8 @@ $legacy-support-for-mozilla: false;
 @import "partials/elements/aside";
 
 @import "partials/elements/blockquote";
+
+@import "partials/elements/button";
 
 @import "partials/elements/definitions";
 

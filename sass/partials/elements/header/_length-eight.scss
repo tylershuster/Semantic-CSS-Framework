@@ -1,6 +1,7 @@
 /*header styles on devices from 1024px-1664px*/
 header{
 	@include column(8,8);
+	@include box-shadow($color-drawer);
 	/*multiple headers get styled into tabs. See foxnews for example*/	
 	h1{/*site tite*/}
 	address{/*address info*/}
@@ -31,7 +32,7 @@ header{
 	nav{
 		@include column(8,8);
 		>ul{			
-			@include box-shadow($color-drawer);
+			
 			border-top: 0;
 			>div + li{
 				border-left: 1px solid mix($color-background,$color-drawer);
