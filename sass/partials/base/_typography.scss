@@ -93,6 +93,10 @@ h1{
 		display: inline;
 	}
 	&.uber, .uber &{
+		small{
+			position: relative;
+			bottom: typography(h1,padding-bottom) * 1rem;
+		}
 		font-size: typography(h1,font-size) * 2rem;
 		line-height: ceil(typography(h1,font-size) * 2rem);
 		padding-top: typography(h1,padding-top) * 2rem;
@@ -125,6 +129,10 @@ h2{
 		display: inline;
 	}
 	&.uber, .uber &{
+		small{
+			position: relative;
+			bottom: typography(h2,padding-bottom) * 1rem;
+		}
 		font-size: typography(h2,font-size) * 2rem;
 		line-height: ceil(typography(h2,font-size) * 2rem);
 		padding-top: typography(h2,padding-top) * 2rem;
@@ -157,6 +165,10 @@ h3{
 		display: inline;
 	}
 	&.uber, .uber &{
+		small{
+			position: relative;
+			bottom: typography(h3,padding-bottom) * 1rem;
+		}
 		font-size: typography(h3,font-size) * 2rem;
 		line-height: ceil(typography(h3,font-size) * 2rem);
 		padding-top: typography(h3,padding-top) * 2rem;
@@ -189,6 +201,10 @@ h4{
 		display: inline;
 	}
 	&.uber, .uber &{
+		small{
+			position: relative;
+			bottom: typography(h4,padding-bottom) * 1rem;
+		}
 		font-size: typography(h4,font-size) * 2rem;
 		line-height: ceil(typography(h4,font-size) * 2rem);
 		padding-top: typography(h4,padding-top) * 2rem;
@@ -221,6 +237,10 @@ h5{
 		display: inline;
 	}
 	&.uber, .uber &{
+		small{
+			position: relative;
+			bottom: typography(h5,padding-bottom) * 1rem;
+		}
 		font-size: typography(h5,font-size) * 2rem;
 		line-height: ceil(typography(h5,font-size) * 2rem);
 		padding-top: typography(h5,padding-top) * 2rem;
