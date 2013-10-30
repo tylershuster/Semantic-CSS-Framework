@@ -2,8 +2,8 @@ header address{
 	position: absolute;
 	bottom: #{$unit__nav--height};
 	height: #{$unit__header--height};
-	right: 0;
-	padding-right: 0.5rem;
+	left: 0;
+	padding-left: 0.5rem;
 	a{
 		line-height: #{$unit__header--height};
 		height: #{$unit__header--height};

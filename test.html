@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0, user-scalable=no" />
 	<title>Document</title>
 	<link rel="stylesheet" href="stylesheets/style.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body>
 	<header>
@@ -20,9 +21,9 @@
 					<a href="http://twitter.com/tylershuster"></a>
 					<a href="https://plus.google.com/104346126731383465661"></a>
 			</address>
-			<section class="user">
+			<!--<section class="user">
 		     <a href="#">Login</a><a href="#">Register</a>
-		   </section>
+		   </section>-->
 			<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="semantics.html">Semantics</a></li>
@@ -1110,7 +1111,34 @@
 	
 	</main>
 		<script>
-	$('img, video').baseline(16);
+	//$('img, video').baseline(16);
+
+	var previousScroll = 0;
+
+		$(window).scroll(function(){
+			var currentScroll = $(this).scrollTop();
+			if (currentScroll > previousScroll){
+				if ( $( "header" ).hasClass( "collapsed" ) ) {/*do nothing*/}
+				else {$("header").addClass("collapsed");
+
+				}
+			} else {
+				if ($("header").hasClass("collapsed")){
+					$("header").removeClass("collapsed");					
+				}
+				else{}
+			}
+	       previousScroll = currentScroll;
+	    });
+	    $("header").hover(function() {
+	    	if ($(window).scrollTop() > 0){
+	    		$(this).toggleClass("collapsed");
+	    	}	    	
+	    });
+
+
+
 	</script>
+
 </body>
 </html>

@@ -20,13 +20,13 @@ $unit__header--height: 3rem;
 
 $unit__nav--height: 2rem;
 
-$length__transition: 0.5s;
+$length__transition: 0.4s;
 
 $color__3d--dark: rgba(0,0,0,0.5);
 
 $color__3d--light: rgba(255,255,255,0.5);
 
-$unit__form--input--border-radius: 2px;
+$unit__border-radius: 2px;
 
 $unit__header--opacity: 1;
 
@@ -37,3 +37,5 @@ $unit__shadow-blur: 1px;
 $unit__shadow-opacity: 0.25;
 
 $height-form-input: 1.5rem;
+
+$style__animation-ease: ease-in-out;

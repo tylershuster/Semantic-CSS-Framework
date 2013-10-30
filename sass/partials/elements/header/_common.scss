@@ -5,6 +5,9 @@ header{
 	top: 0;
 	left: 0;
 	box-sizing: content-box;
+	min-height: $unit__nav--height;
+	transition: all $length__transition $style__animation-ease;
+			-webkit-transition: all $length__transition $style__animation-ease;
 	/*multiple headers get styled into tabs. See foxnews for example*/
 	.logo{/*site logo*/
 		display: inline-block;		
@@ -21,11 +24,11 @@ header{
 		padding: 0;
 		white-space: nowrap;
 		font-size: typography(h2,font-size) * 1rem;
-	line-height: typography(h2,line-height) * 1rem;
-	padding-top: typography(h2,padding-top) * 1rem;
-	padding-bottom: typography(h2,padding-bottom) * 1rem;
-	font-weight: typography(h2,font-weight);
-	font-style: typography(h2,font-style);
+		line-height: typography(h2,line-height) * 1rem;
+		padding-top: typography(h2,padding-top) * 1rem;
+		padding-bottom: typography(h2,padding-bottom) * 1rem;
+		font-weight: typography(h2,font-weight);
+		font-style: typography(h2,font-style);
 	}
 	.logo + h1{
 		margin-left: 1rem;
@@ -46,7 +49,9 @@ header{
 			text-align: center;
 			width: 100%;
 			padding: 0 1rem;
-			height: #{$unit__header--height};		
+			height: #{$unit__header--height};	
+			transition: all $length__transition $style__animation-ease;
+			-webkit-transition: all $length__transition $style__animation-ease;	
 			/*masthead should be centered on page*/
 			.logo{
 				float: none;/*site logo*/}
@@ -95,16 +100,22 @@ header{
 			//top: 2rem;
 			//right: 0;
 			position: absolute;
-			top: 3rem;
+			top: 0;
 			right: 1rem;
-			height: 2rem;
+			height: $unit__header--height;
+			display: table;
 			text-align: right;
+			transition: all $length__transition $style__animation-ease;
+			-webkit-transition: all $length__transition $style__animation-ease;
 			form {
-				float: right;
+				display: table-cell;
+				vertical-align: middle;
 				height: 2rem;
+				float: none;
 				input[type="search"]{
 					height: 1.5rem;
-					margin-top: 0.25rem;								
+					margin-top: 0.25rem;	
+					text-align: right;							
 				}
 				input[type="submit"]{
 					height: 1.5rem;
@@ -114,11 +125,15 @@ header{
 				}
 			}
 			.compact{/*expanding box*/}
+			@include small-search-box;
+			margin-right: 1rem;
 		}
 	}
 	nav{
 		position: relative;
 		top: #{$unit__header--height};	
+		transition: all $length__transition $style__animation-ease;
+			-webkit-transition: all $length__transition $style__animation-ease;
 		>ul{
 			position: relative;
 			max-width: $max-width;			
@@ -145,6 +160,23 @@ header{
 				table-layout: fixed;	
 				vertical-align: middle;	
 				position: relative;
+				border-radius: $unit__border-radius;
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+				&:hover{
+					background-color: $color-primary;
+					border: none;
+					//outline: 1px solid $color-primary;
+					>ul{
+						@include box-shadow($color-primary);
+						li{
+							margin-bottom: 0;
+						}
+					}
+					>a, >a:hover{
+						color: $color-background;
+					}					
+				}
 				> a{									
 					text-decoration: none;
 					width: 100%;
@@ -155,6 +187,9 @@ header{
 					display: table;
 					position: absolute;
 					padding: 0;
+					border-radius: $unit__border-radius;
+					border-top-right-radius: 0;
+					border-top-left-radius: 0;
 					@include box-shadow($color-drawer);
 					@include transition;
 					&:hover{
@@ -163,6 +198,11 @@ header{
 					li{
 						margin-bottom: -100%;
 						@include transition;
+						border-radius: 0;
+						&:last-of-type{
+							border-bottom-right-radius: $unit__border-radius;
+							border-bottom-left-radius: $unit__border-radius;
+						}
 					}
 					& + a{
 						position: relative;
@@ -187,22 +227,10 @@ header{
 						}
 					}
 				}
-				&:hover{
-					background-color: $color-primary;
-					border: none;
-					//outline: 1px solid $color-primary;
-					>ul{
-						li{
-							margin-bottom: 0;
-						}
-					}
-					>a, >a:hover{
-						color: $color-background;
-					}					
-				}
 				ul{
 					overflow: hidden;
 					width: 100%;
+					border: 0;
 					li{
 						float:left;
 						width: 100%;
@@ -252,10 +280,10 @@ header{
 	text-align: center;	
 	@include text-shadow;
 	height: #{$unit__nav--height * 0.85};
-	-webkit-transition: -webkit-transform #{$length__transition / 2} ease;
-			-moz-transition: -moz-transform #{$length__transition / 2} ease;
-			-o-transition: -o-transform #{$length__transition / 2} ease;
-			transition: transform #{$length__transition / 2} ease;
+	-webkit-transition: -webkit-transform #{$length__transition / 2} $style__animation-ease;
+			-moz-transition: -moz-transform #{$length__transition / 2} $style__animation-ease;
+			-o-transition: -o-transform #{$length__transition / 2} $style__animation-ease;
+			transition: transform #{$length__transition / 2} $style__animation-ease;
 }
 
 /* This is the checkbox */
@@ -271,58 +299,15 @@ header{
 }
 
 
-
 /*only show mobile nav on @media handheld*/
 
 @media all and (max-width:#{$unit__base-x-eight * 1px}){
 	header{
 		section.search{
-			top: 0;
-			height: #{$unit__header--height};
+			@include small-search-box;
+			right: 1rem;
+			left: auto;
 			margin-right: 1rem;
-			form {
-				width:100%;
-				height: #{$unit__header--height};
-				&:after{
-					content:"";
-					position:absolute;
-					width:0;
-					height:1rem;
-					border: 0.2rem solid $color-primary;
-					top: 1.52rem;
-					right:-0.52rem;
-					-webkit-border-radius:3px;
-					-webkit-transform: rotate(-45deg);
-				}
-				input[type="search"]{
-					-webkit-appearance: none;					
-					float:right;
-					@include transition;
-					display:block;
-					position:relative;
-					bottom: 0.3rem;
-					right: -0.3rem;
-					outline:none;
-					line-height:24px;
-					width:1.5rem;					
-					-webkit-border-radius:50px;
-					outline:none;
-					background-color: $color-background;
-					border-color: $color-primary;
-					&::-webkit-search-cancel-button{
-						display: none; 
-					}
-					&:hover, &:focus{
-						width:200px;
-					}
-					&:hover::-webkit-input-placeholder{
-						color:#cae0ef;
-						font-style:italic;
-						font-size:13px;
-					}
-				}
-			}			
-			::-webkit-input-placeholder {color:transparent;}			
 		}
 		nav{
 			position: fixed;
@@ -372,10 +357,10 @@ header{
 					height: 3rem;
 				}
 			}
-			-webkit-transition: -webkit-transform #{$length__transition / 2} ease;
-			-moz-transition: -moz-transform #{$length__transition / 2} ease;
-			-o-transition: -o-transform #{$length__transition / 2} ease;
-			transition: transform #{$length__transition / 2} ease;
+			-webkit-transition: -webkit-transform #{$length__transition / 2} $style__animation-ease;
+			-moz-transition: -moz-transform #{$length__transition / 2} $style__animation-ease;
+			-o-transition: -o-transform #{$length__transition / 2} $style__animation-ease;
+			transition: transform #{$length__transition / 2} $style__animation-ease;
 			-webkit-transform: translateZ(0);
 			-moz-transform: translateZ(0);
 			-webkit-perspective: 1000;

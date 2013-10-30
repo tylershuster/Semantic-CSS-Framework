@@ -13,9 +13,19 @@ input{
 	margin-bottom: #{(ceil($height-form-input) - $height-form-input) / 2};
 	border: 0;
 	margin-right: 1px;
+	border-radius: $unit__border-radius;
+	transition: box-shadow #{$length__transition / 3} $style__animation-ease;
+	-webkit-transition: box-shadow #{$length__transition / 3} $style__animation-ease;
+	-moz-transition: box-shadow #{$length__transition / 3} $style__animation-ease;
+	-o-transition: box-shadow #{$length__transition / 3} $style__animation-ease;
 	@include box-shadow-inset($color-input-background);
 	&:focus{
-		box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;
+		@if $skeu == faux-flat{
+			box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;
+		}
+		@else if $skeu == flat{
+			box-shadow: 0 0 $unit__border-radius $color-accent;
+		}
 	}
 	&[type="text"]{		
 		&:disabled{
@@ -89,7 +99,7 @@ input{
 			background-color: $color-input-background;
 			display: block;
 			content:"";			
-			padding: 0.46rem 0 0rem 0.09rem;
+			padding: 0.5rem 0 0rem 0.15rem;
 			@include box-shadow-inset($color-input-background);
 			border-radius: 50%;
 		}
@@ -195,7 +205,7 @@ textarea{
 	color: $color-text;
 	background-color: $color-input-background;
 	@if $skeu == 'faux-flat' {
-		border-radius: $unit__form--input--border-radius;
+		border-radius: $unit__border-radius;
 	}
 	@include box-shadow-inset($color-input-background);
 	&:before{
@@ -251,8 +261,8 @@ button{
 	width: 50%;
 	background-color: $color-primary;
 	@include box-shadow($color-primary);
-	border-right: 1px solid rgba(255,255,255,0.5);
-	border-left: 1px solid rgba(0,0,0,0.5);
+	//border-right: 1px solid rgba(255,255,255,0.5);
+	//border-left: 1px solid rgba(0,0,0,0.5);
 }
 ::-webkit-scrollbar-corner       { /* 6 */ }
 ::-webkit-resizer                { /* 7 */ }

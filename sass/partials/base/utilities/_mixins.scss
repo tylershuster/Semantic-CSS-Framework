@@ -44,7 +44,7 @@
 		border: $unit__shadow-size solid;
 		border-color: shade($on-background,15%) tint($on-background,15%) tint($on-background,15%) shade($on-background,15%);
 		box-shadow: $unit__shadow-size $unit__shadow-size 0px rgba(red(set-lightness($color-primary, 10%)), blue(set-lightness($color-primary, 10%)), green(set-lightness($color-primary, 10%)), 0.85) inset;
-	}	
+	}
 	@if $glass == yes {
 		/*write code to make transparent gradient from on-background color*/
 	}
@@ -781,4 +781,54 @@ $note13: 3.375, 4, 0.7, 0.3, bold, normal;
 			}
 		}
 	}
+}
+
+
+@mixin small-search-box{
+	top: 0;
+	height: #{$unit__header--height};
+	//margin-right: 1rem;
+	form {
+		width:100%;
+		height: #{$unit__header--height};
+		&:after{
+			content:"";
+			position:absolute;
+			width:0;
+			height:1rem;
+			border: 0.2rem solid $color-primary;
+			top: 1.52rem;
+			right:-0.52rem;
+			-webkit-border-radius:3px;
+			-webkit-transform: rotate(-45deg);
+		}
+		input[type="search"]{
+			-webkit-appearance: none;					
+			float:right;
+			@include transition;
+			display:block;
+			position:relative;
+			bottom: 0.3rem;
+			right: -0.3rem;
+			outline:none;
+			line-height:24px;
+			width:1.5rem;					
+			-webkit-border-radius:50px;
+			outline:none;
+			background-color: $color-background;
+			border-color: $color-primary;
+			&::-webkit-search-cancel-button{
+				display: none; 
+			}
+			&:hover, &:focus{
+				width:200px;
+			}
+			&:hover::-webkit-input-placeholder{
+				color:#cae0ef;
+				font-style:italic;
+				font-size:13px;
+			}
+		}
+	}			
+	::-webkit-input-placeholder {color:transparent;}
 }

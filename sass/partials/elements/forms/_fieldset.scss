@@ -46,7 +46,7 @@ fieldset{
 			@include box-shadow-inset($color-background);
 			background-color: $color-primary;
 			color: $color-background;
-			padding-top: 0.2rem;
+			padding-top: 0.2rem;			
 		}
 		input{
 			
@@ -58,7 +58,7 @@ fieldset{
 			border-right: 1px solid rgba(255,255,255,0.5);
 			border-bottom: 1px dotted $color-primary;
 			border-left: none;
-			box-shadow: none;	
+			box-shadow: none;		
 		}	
 		&:first-of-type{
 			input{

@@ -23,6 +23,7 @@ blockquote{
 	}
 	>img{
 		width: 100%;
+		border-radius: $unit__border-radius;
 	}
 	article &:nth-of-type(odd){
 		float: left;
