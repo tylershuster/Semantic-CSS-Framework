@@ -1,0 +1,30 @@
+/* { picnicc: style } */
+//////////////////
+//TYPOGRAPHY
+//////////////////
+$key: c;
+$quality: maj;
+$sans: Open Sans;
+$serif: Gentium Basic;
+$body-font: $serif;
+$heading-font: $sans;
+//human-font, machine-font, copy-font
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic");
+@import url("http://fonts.googleapis.com/css?family=Source+Code+Pro:500");
+//////////////////
+//COLOR
+//////////////////
+$color: #0F4DA8;
+$scheme: mono;//mono, complement, triad, tetrad, analogic, accented-analogic
+$tone: white;//white, light, dark, black
+//////////////////
+//OTHER
+//////////////////
+$icons: no;
+$skeu: flat;
+$glass: no;
+$grid: on;
+/*Set in the key of #{$key} #{$quality}. #{$scheme} color scheme based on #{$color} with a #{$tone} background.*/
+@import "style";
+/* { / picnicc } */

@@ -1,0 +1,90 @@
+
+
+/*--------------------------main.scss-------------------------------*/
+
+$key: c !default;
+$quality: maj !default;
+$serif: Gentium Basic !default;
+$body-font: $serif !default;
+/*human-font, machine-font, copy-font*/
+$heading-font: $sans !default;
+
+//////////////////////////////
+// Import Utilities
+//////////////////////////////
+@import "partials/base/utilities/color/color-schemer";
+@import "partials/base/utilities/opacity";
+@import "partials/base/utilities/layout";
+@import "partials/base/utilities/variables";
+@import "partials/base/utilities/mixins";
+//////////////////////////////
+// Import Base
+//////////////////////////////
+@import "partials/base";
+//////////////////////////////
+// Import Elements
+//////////////////////////////
+@import "partials/elements/address";
+@import "partials/elements/article";
+@import "partials/elements/aside";
+@import "partials/elements/blockquote";
+@import "partials/elements/button";
+@import "partials/elements/definitions";
+@import "partials/elements/figure";
+@import "partials/elements/footer";
+@import "partials/elements/header";
+@import "partials/elements/meter";
+@import "partials/elements/progress";
+@import "partials/elements/table";
+@import "partials/elements/ul";
+@import "partials/elements/code";
+@import "partials/elements/pre";
+@import "partials/elements/forms/input";
+@import "partials/elements/forms/index";
+@import "partials/elements/forms/fieldset";
+//////////////////////////////
+// Import Grids
+//////////////////////////////
+/*@import "utilities/grids/foundation.scss";*/
+//////////////////////////////
+// Import Core Components
+//////////////////////////////
+@import "partials/panels";
+@import "partials/classes";
+@import "partials/z-index";
+hr{
+    height: 2px;
+    margin: calc(0.5rem - 1px) 0;
+    padding: 0;
+    border: none;
+    background-color: $color-background;
+    @include box-shadow-inset($color-background);
+    box-sizing: border-box;
+}
+
+$grid: off !default;
+@if $grid == on{
+    $grid-red: red($color-accent);
+    $grid-green: green($color-accent);
+    $grid-blue: blue($color-accent);
+    body:after{
+        width: 100%;
+        height: 10000px;
+        background: url(http://basehold.it/image.php?height=#{$font-base}&r=#{$grid-red}&g=15&b=#{$grid-blue}) repeat top left;
+        content: "";
+        display: block;
+        top: 0;
+        right: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        pointer-events: none;
+    }
+}
+
+
+@media print {
+  a[href]:after {
+    content: " (" attr(href) ") ";
+  }
+}

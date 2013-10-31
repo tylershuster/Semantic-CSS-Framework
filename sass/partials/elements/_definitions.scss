@@ -1,47 +1,51 @@
-article dl{
+dl{
 	float: left;
 	clear: both;
 	font-family: '#{$body-font}';
+	margin: 0;
 	dt{
 		font-size: typography(p,font-size) * 1rem;
 		line-height: typography(p,line-height) * 1rem;
 		padding-top: typography(p,padding-top) * 1rem;
-		padding-bottom: typography(p,padding-bottom) * 1rem;
-	}
+		padding-bottom: typography(p,padding-bottom) * 1rem;}
 	dd{
 		font-size: typography(small,font-size) * 1rem;
 		line-height: typography(small,line-height) * 1rem;
 		padding-top: typography(small,padding-top) * 1rem;
-		padding-bottom: typography(small,padding-bottom) * 1rem;
-	}
-	span{
-		/*inline definitions*/
-		display: block;
-		dt{
-			display: inline-block;
-			float: left;
-			margin: 0;
-			&:after{
-			content: ":";
-			}
-		}
-		dd{
-			display: inline-block;
-			float: left;
-			margin: 0;
-		}
-	}
+		padding-bottom: typography(small,padding-bottom) * 1rem;}
 	ol{
-		/*dictionary definitions*/
+		//dictionary definitions
+		counter-reset: li;
+		padding: 0;
 		dt{
-			
-			
-
-		}
-		dl{
-			
-			
-
-		}
-	}
-}
+			font-size: typography(h4,font-size) * 1rem;
+			font-weight: bold;
+			display: inline;
+			padding: 0;
+			line-height: typography(h4,font-size) * 1rem;
+			margin-left: -2rem;}
+		dd{
+			font-size: typography(p,font-size) * 1rem;
+			line-height: typography(p,font-size) * 1rem;
+			padding-top: typography(p,padding-top) * 1rem;
+			padding-bottom: typography(p,padding-bottom) * 1rem;
+			font-weight: typography(p,font-weight);
+			font-style: typography(p,font-style);}
+		li{
+			padding: 0 0 1rem 0;
+			display: inline;
+			float: left;
+			width: 100%;			
+			ol{
+				padding: 0;
+				display: inline;
+				li{
+					float: none;
+					&:before{
+						content: counter(li) ".";
+						counter-increment: li;
+						margin-right: 0.2rem;
+						font-weight: bold;}}				
+				dd{
+					margin: 0;
+					display: inline;}}}}}

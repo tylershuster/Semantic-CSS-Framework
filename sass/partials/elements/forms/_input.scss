@@ -2,8 +2,7 @@ $color-input-background: $color-drawer;
 
 @mixin input-disabled{
 	background-color: $color-background;
-	color: $color-drawer;
-}
+	color: $color-drawer;}
 
 input{
 	height: $height-form-input;
@@ -21,17 +20,12 @@ input{
 	@include box-shadow-inset($color-input-background);
 	&:focus{
 		@if $skeu == faux-flat{
-			box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;
-		}
+			box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;}
 		@else if $skeu == flat{
-			box-shadow: 0 0 $unit__border-radius $color-accent;
-		}
-	}
+			box-shadow: 0 0 $unit__border-radius $color-accent;}}
 	&[type="text"]{		
 		&:disabled{
-			@include input-disabled;
-		}
-	}
+			@include input-disabled;}}
 	&[type="range"]{}
 	&[type="email"]{}
 	&[type="search"]{}
@@ -46,12 +40,9 @@ input{
 	&[type="datetime"]{}
 	&[type="number"]{		
 		&:disabled{
-			@include input-disabled;
-		}
-	}
+			@include input-disabled;}}
 	&:not([type]){
-		padding: 0;
-	}
+		padding: 0;}
 	&[name*="field"]{}
 	&[type="color"]{
 		padding: 0;
@@ -63,26 +54,19 @@ input{
 		&::-webkit-color-swatch-wrapper{
 			padding: 0.3rem;
 			background: $color-input-background;
-			@include box-shadow($color-input-background);			
-		}
+			@include box-shadow($color-input-background);}
 		&:disabled{
 			&::-webkit-color-swatch-wrapper{
 				background-color: $color-background;
-				@include box-shadow-inset($color-input-background);
-			}
-		}
+				@include box-shadow-inset($color-input-background);}}
 		&[readonly]{
 			padding: 0;
 			&::-webkit-color-swatch-wrapper{
 				background-color: $color-background;
-				border: none;
-			}
-		}
+				border: none;}}
 		&::-webkit-color-swatch{
 			border: none;
-			@include box-shadow-inset(white);
-		}
-	}
+			@include box-shadow-inset(white);}}
 	&[type="radio"]{
 		height: 1rem;
 		box-shadow: none;
@@ -100,17 +84,12 @@ input{
 			display: block;
 			content:"";			
 			padding: 0.5rem 0 0rem 0.15rem;
+			@include box-shadow($color-input-background);
+			border-radius: 50%;}
+		&:checked:before{
 			@include box-shadow-inset($color-input-background);
 			border-radius: 50%;
-		}
-		&:checked:before{
-			content: "\2022";
-			color: $color-accent;
-			font-size: 2rem;
-			line-height: 0;
-			margin-top: 1px;
-
-		}
+			background-color: $color-accent;}
 		&:after{
 			content: attr(name);
 			color: $color-text;
@@ -118,14 +97,13 @@ input{
 			position: relative;
 			left: 0.2rem;
 			margin-right: 0.2rem;
-			flex-grow: 1;
-		}
-	}
+			flex-grow: 1;}}
 	&[type="checkbox"]{
 		height: 1rem;
 		-webkit-appearance:none;
 		box-shadow: none;
 		border: none;
+		flex-grow: 0;
 		&:before{
 			width: 1rem;
 			height: 1rem;
@@ -134,34 +112,24 @@ input{
 			content:"";
 			@include box-shadow-inset($color-input-background);
 			font-size: 1.5rem;
-			padding-left: 0.1rem;
-
-		}
+			padding-left: 0.1rem;}
 		&:checked:before{
 			content: "\2713";
 			color: $color-accent;
 			line-height: 0;
-			padding-top: 0.2rem;
-		}
-	}
-
-
+			padding-top: 0.2rem;}}
 	&[type="submit"]{		
 		background-color: $color-accent;
 		color: $color-drawer;
 		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
-		@include box-shadow($color-accent);
-	}
+		@include box-shadow($color-accent);}
 	&[type="file"]{
 		margin: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2) 0;
 		padding: 0;
 		background-color: transparent;
-		border: none;
-	}
-}
-
+		border: none;}}
 
 select{
 	border: none;
@@ -169,35 +137,20 @@ select{
 	@include box-shadow-inset($color-input-background);	
 	&:focus{
 		outline: none;
-		box-shadow: none;
-	}
+		box-shadow: none;}
 	&:disabled{
-		@include input-disabled;
-	}
+		@include input-disabled;}
 	&::-webkit-scrollbar-track{
-		margin-top: -1px;
-	}
-}
-
-
+		margin-top: -1px;}}
 
 output{
-	font-size: typography(p,font-size) * 1rem;
-	line-height: typography(p,line-height) * 1rem;
-	padding-top: typography(p,padding-top) * 1rem;
-	padding-bottom: typography(p,padding-bottom) * 1rem;
-}
+	@include font-properties-for(p);}
+
 label{
-	font-size: typography(p,font-size) * 1rem;
-	line-height: typography(p,line-height) * 1rem;
-	padding-top: typography(p,padding-top) * 1rem;
-	padding-bottom: typography(p,padding-bottom) * 1rem;
+	@include font-properties-for(p);
 	&.required{
 		&:after{
-			content: "*";
-		}
-	}
-}
+			content: "*";}}}
 
 textarea{
 	padding: 1rem 0 0 0.62rem;
@@ -205,35 +158,16 @@ textarea{
 	color: $color-text;
 	background-color: $color-input-background;
 	@if $skeu == 'faux-flat' {
-		border-radius: $unit__border-radius;
-	}
-	@include box-shadow-inset($color-input-background);
-	&:before{
-		content: "hi";
-		display: block;
-		width: 5rem;
-		height: 1rem;
-		background: red;
-		position: relative;
-		bottom: 3rem;
-		z-index: 999;
-	}
+		border-radius: $unit__border-radius;}
+	@include box-shadow-inset($color-input-background);	
 	&:disabled{
-		@include input-disabled;
-	}
-}
+		@include input-disabled;}}
+
 button{
 	form{
-		label{
-			
-		}
+		label{}
 		input{
-			&[type="radio"]{
-
-			}
-		}
-	}
-}
+			&[type="radio"]{}}}}
 
 
 
@@ -259,19 +193,22 @@ button{
 ::-webkit-scrollbar-thumb {
 	width: calc(100% - 2px);
 	width: 50%;
-	background-color: $color-primary;
-	@include box-shadow($color-primary);
+	background-color: $color-background;
+	@include box-shadow($color-background);
 	//border-right: 1px solid rgba(255,255,255,0.5);
 	//border-left: 1px solid rgba(0,0,0,0.5);
 }
 ::-webkit-scrollbar-corner       { /* 6 */ }
 ::-webkit-resizer                { /* 7 */ }
-
+::-webkit-textfield-decoration-container{
+	position: relative;
+}
 ::-webkit-inner-spin-button{
 	-webkit-appearance: none;
 	margin: 0;
 	width: 1rem;
 	height: 100%;
+	position: relative;
 	&:before{
 		width: 0;
 		height: 0;
@@ -279,8 +216,8 @@ button{
 		border-right: 0.25rem solid transparent;
 		border-bottom: 0.5rem solid $color-primary;
 		content: "";
-		position: relative;
-		bottom: 1rem;
+		position: absolute;
+		bottom: 0.75rem;
 		left: 25%;
 	}
 	&:after{
@@ -290,9 +227,9 @@ button{
 		border-right: 0.25rem solid transparent;
 		border-top: 0.5rem solid $color-primary;
 		content: "";
-		position: relative;
-		top: 1.2rem;
-		left: -25%;
+		position: absolute;
+		top: 0.75rem;
+		left: 25%;
 	}
 }
 
@@ -347,7 +284,7 @@ button{
 	height: 1.5rem;
 }
 ::-webkit-file-upload-button:disabled{
-	color: $color-accent;
+	color: $color-background;
 	background-color: $color-input-background;
 	@include box-shadow($color-drawer);
 }

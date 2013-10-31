@@ -1,7 +1,7 @@
 @mixin box-shadow($on-background){
 	@if $skeu == faux-flat{
 		border: 1px solid;
-		border-radius: 1px;
+		border-radius: $unit__border-radius;
 		@if $tone == black{
 			box-shadow: none;
 		}
@@ -831,4 +831,11 @@ $note13: 3.375, 4, 0.7, 0.3, bold, normal;
 		}
 	}			
 	::-webkit-input-placeholder {color:transparent;}
+}
+@mixin prefixer($property, $value){
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-o-#{$property}: $value;
+	-ms-#{$property}: $value;
+	#{$property}: $value;
 }

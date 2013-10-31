@@ -16,29 +16,15 @@ fieldset{
 			float: left;
 			&.column{
 				padding-left: 0.5rem;
-				padding-right: 0.5rem;
-			}
-		}
+				padding-right: 0.5rem;}}
 		>form{
-			width: 100%;
-		}
-	}
+			width: 100%;}}
 	>fieldset{
 		padding:0;
 		margin-bottom: 1rem;
 		box-shadow: none;
 		border: none;
-		//@include box-shadow-inset($color-background);
-		input{
-			
-		}
-		>fieldset{
-
-		}
-	}
-	legend + fieldset{
-		//margin-top: 3rem;
-	}
+		border-radius: $unit__border-radius;}
 	form{
 		width: 100%;
 		label{
@@ -46,10 +32,9 @@ fieldset{
 			@include box-shadow-inset($color-background);
 			background-color: $color-primary;
 			color: $color-background;
-			padding-top: 0.2rem;			
-		}
-		input{
-			
+			padding-top: 0.2rem;	
+			border-radius: 0;}
+		input{			
 			box-shadow: none;
 			border-color: none;
 			margin: 0;
@@ -58,32 +43,22 @@ fieldset{
 			border-right: 1px solid rgba(255,255,255,0.5);
 			border-bottom: 1px dotted $color-primary;
 			border-left: none;
-			box-shadow: none;		
-		}	
+			box-shadow: none;	
+			border-radius: 0;}	
 		&:first-of-type{
 			input{
-				border-top: 1px solid rgba(0,0,0,0.5);
-			}
-		
-		}
+				border-top: 1px solid rgba(0,0,0,0.5);}}
 		&:last-of-type{
 			input{
-				border-bottom: 1px solid rgba(255,255,255,0.5);
-			}
-		}
+				border-bottom: 1px solid rgba(255,255,255,0.5);}}
 		label{
 			box-shadow: none;
 			border: none;
 			margin: 0;
-			height: #{ceil($height-form-input)};
-			//border-bottom: 1px dotted $color-background;
-		}
-		
-	}
+			height: #{ceil($height-form-input)};}}
 	textarea{
 		border-top: none;
-		box-shadow: none;
-	}
+		box-shadow: none;}
 	div{
 		display: flex;
 		flex-wrap: wrap;
@@ -91,58 +66,33 @@ fieldset{
 		width: 100%;
 		border: 1px inset $color-background;
 		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
-		form{
-			label{				
-				//border-left: 1px solid $color__3d--dark;;
-			}
+		form{			
 			&:first-of-type{
 				label{
-					border-top: 1px solid $color__3d--dark;
-				}
-			}
+					border-top: 1px solid $color__3d--dark;}}
 			&:last-of-type{
 				label{
-					border-bottom: 1px solid $color__3d--light;
-				}				
-			}
-		}
-	}
+					border-bottom: 1px solid $color__3d--light;}}}}
 	hr{
 		display: flex;
 		height: 0px;
-		//box-sizing: border-box;
-		//border-top: 1px solid $color__3d--light;
-		//border-bottom: 1px solid $color__3d--dark;
 		width: 100%;
 		margin: 0;
 		border: none;
-		//margin: -1px 0;	
 		& + form{
 			label{
-				border-top: 1px solid $color-background;
-			}
+				border-top: 1px solid $color-background;}
 			input{
-				border-top: 1px solid $color-background;
-			}
-		}	
-	}
+				border-top: 1px solid $color-background;}}}
 	legend{
 		font-size: typography(h5,font-size) * 1rem;
 		line-height: typography(h5,line-height) * 1rem;
 		position: absolute;
 		top: 0.5rem;
-		left: 1rem;
-	}
+		left: 1rem;}
 	&.login{
-		input[type="text"]{
-
-		}
-		input[type="password"]{
-
-		}
-
-	}
-}
+		input[type="text"]{}
+		input[type="password"]{}}}
 
 fieldset.experimental{
 	display: table;
@@ -154,9 +104,7 @@ fieldset.experimental{
 	border: none;
 	& + fieldset.experimental{
 		form{
-			border-top: none;
-		}
-	}
+			border-top: none;}}
 	form{
 		display: table-cell;
 		width: 2%;
@@ -166,25 +114,22 @@ fieldset.experimental{
 		border-color: $color-text;
 		padding: 0;
 		background: transparent;
-		/*make this respond to row> nesting*/
+		//make this respond to row> nesting
 		&:hover{
 			background-color: $color-drawer;
 			@include box-shadow-inset($color-background);
 			border-width: 1px 1px 1px 0;
 			border-style: solid;
-			border-color: $color-text;
-		}
+			border-color: $color-text;}
 		&:last-of-type{
-			border-right: 0;
-		}		
+			border-right: 0;}		
 		label{
 			width: 100%;
 			background-color: transparent;
 			text-align: left;
 			color: $color-text;
 			text-transform: uppercase;
-			font-size: 85%;
-		}
+			font-size: 85%;}
 		input{
 			width: 100%;
 			background: transparent;
@@ -193,7 +138,6 @@ fieldset.experimental{
 			box-shadow: none;
 			&:hover,
 			&:active,
-			&:focus{border-top: 1px dashed rgba(red($color-text),green($color-text),blue($color-text),0.3);}
-		}
-	}
+			&:focus{
+				border-top: 1px dashed rgba(red($color-text),green($color-text),blue($color-text),0.3);}}}
 }

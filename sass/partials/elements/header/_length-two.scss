@@ -5,66 +5,39 @@ header{
 	@include box-shadow($color-drawer);	
 	address{
 		a, a:before{
-			color: $color-primary;
-		}
-	}
+			color: $color-primary;}}
 	section{
-		&.masthead{
-			//margin-left: #{$unit__nav--height + 1.5rem};
-		}
+		&.masthead{}
 		&.user{
 			@include column(1,2);
 			box-sizing: content-box;
-			right: -2px;
-			a{}
-		}
-		&.search{}
-	}
+			right: -2px;}
+		&.search{}}
 	nav{
 		width: 62%;
 		>ul{	
 			@include box-shadow($color-drawer);		
 			div + li{
-				border-top: 1px solid mix($color-background,$color-drawer);
-			}
-		}
+				border-top: 1px solid mix($color-background,$color-drawer);}}
 		li{
 			text-align: left;
 			float: left;
 			width: 100%;
-			display: block;	
-			
+			display: block;				
 			ul{
 				left: -100%;		
 				& + a:after{					
 					bottom: 0;
 					top: 0;
 					margin: auto;
-					left: calc(100% + 0.2rem);			
-				}								
-				li{					
-					a{
-
-					}
-				}
-			}
+					left: calc(100% + 0.2rem);}}
 			&:hover{							
 				a:after{
 					left: calc(100% + 1.2rem);				
 					border-top: 0.75rem solid $color-drawer;
-					-webkit-transform: rotate(-90deg);
-					-moz-transform: rotate(-90deg);
-					-o-transform: rotate(-90deg);
-					-ms-transform: rotate(-90deg);
-					transform: rotate(-90deg);
-				}
+					@include prefixer(transform, rotate(-90deg));}
 				ul{
 					left: 100%;
 					z-index: 999;
-					width: 110%;
-				}
-			}
-		}
-	}
-}
+					width: 110%;}}}}}
 

@@ -1,4 +1,3 @@
-
 aside{
 	padding-top: 2px;
 	margin: 0.5rem 0;
@@ -7,47 +6,26 @@ aside{
 	padding-left: 1rem;
 	padding-right: 1rem;
 	color: mix($color-text, $color-background);
-	font-size: typography(small,font-size) * 1rem;
-	line-height: typography(small,line-height) * 1rem;
-	padding-top: typography(small,padding-top) * 1rem;
-	padding-bottom: typography(small,padding-bottom) * 1rem;
+	@include font-properties-for(small);
 	font-family: '#{$heading-font}';
 	h1,h2,h3,h4,h5{		
-		font-size: typography(h4,font-size) * 1rem;
-		line-height: typography(h4,line-height) * 1rem;
-		padding-top: typography(h4,padding-top) * 1rem;
-		padding-bottom: typography(h4,padding-bottom) * 1rem;
-		margin: 0;
+		@include font-properties-for(h4);
 		color: $color-text;
-		font-family: '#{$body-font}';
-	}
+		font-family: '#{$body-font}';}
 	p{
 		color: mix($color-text, $color-background);
-		font-size: typography(small,font-size) * 1rem;
-		line-height: typography(small,line-height) * 1rem;
-		padding-top: typography(small,padding-top) * 1rem;
-		padding-bottom: typography(small,padding-bottom) * 1rem;
-		font-family: '#{$heading-font}';
-	}
+		@include font-properties-for(small);
+		font-family: '#{$heading-font}';}
 	ul{
 		text-align: left;
 		list-style-position:inside;
 		&:nth-of-type(even){
-			padding-right: 1rem;
-		}
+			padding-right: 1rem;}
 		&:nth-of-type(odd){
-			padding-left: 1rem;
-		}
-	}
+			padding-left: 1rem;}}
 	&:nth-of-type(odd){
 		float: left;
-		text-align: left;		
-		> p{}
-	}
+		text-align: left;}
 	&:nth-of-type(even){
 		float: right;
-		text-align: right;		
-		> p{}
-	}
-	
-}
+		text-align: right;}}

@@ -74,7 +74,7 @@ header{
 	@media all and (min-width:#{$unit__base-x-eight * 1px}){
 		//height: auto;
 		//top: -3rem;
-		background-color: transparent;
+		background-color: $color-background;
 		section.search{
 			display: none;
 		}

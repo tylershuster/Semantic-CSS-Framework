@@ -1,41 +1,21 @@
-$em: 16;
-
-$unit__base-x-one: $em * 8;
-
-$unit__base-x-two: $unit__base-x-one * 2;
-
-$unit__base-x-three: $unit__base-x-one * 3;
-
-$unit__base-x-five: $unit__base-x-one * 5;
-
-$unit__base-x-eight: $unit__base-x-one * 8;
-
-$unit__base-x-thirteen: $unit__base-x-one * 13;
-
-$font-base: null;
-
-$max-width: 60em;
-
-$unit__header--height: 3rem;
-
-$unit__nav--height: 2rem;
-
-$length__transition: 0.4s;
-
-$color__3d--dark: rgba(0,0,0,0.5);
-
-$color__3d--light: rgba(255,255,255,0.5);
-
-$unit__border-radius: 2px;
-
-$unit__header--opacity: 1;
-
-$unit__shadow-size: 1px;
-
-$unit__shadow-blur: 1px;
-
-$unit__shadow-opacity: 0.25;
-
-$height-form-input: 1.5rem;
-
-$style__animation-ease: ease-in-out;
+$em: 16 !default;
+$unit__base-x-one: $em * 8 !default;
+$unit__base-x-two: $unit__base-x-one * 2 !default;
+$unit__base-x-three: $unit__base-x-one * 3 !default;
+$unit__base-x-five: $unit__base-x-one * 5 !default;
+$unit__base-x-eight: $unit__base-x-one * 8 !default;
+$unit__base-x-thirteen: $unit__base-x-one * 13 !default;
+$font-base: null !default;
+$max-width: 60em !default;
+$unit__header--height: 3rem !default;
+$unit__nav--height: 2rem !default;
+$length__transition: 0.4s !default;
+$color__3d--dark: rgba(0,0,0,0.5) !default;
+$color__3d--light: rgba(255,255,255,0.5) !default;
+$unit__border-radius: 2px !default;
+$unit__header--opacity: 1 !default;
+$unit__shadow-size: 1px !default;
+$unit__shadow-blur: 1px !default;
+$unit__shadow-opacity: 0.25 !default;
+$height-form-input: 1.5rem !default;
+$style__animation-ease: ease-in-out !default;

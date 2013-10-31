@@ -4,10 +4,8 @@ code{
 	background-color: $color-drawer;
 	padding: 0 0.2rem;
 	line-height: 1rem;
-	@include box-shadow-inset($color-background);
-}
+	@include box-shadow-inset($color-background);}
 p>code{
 	font-size: 85%;
 	margin: 0 0.2rem;
-	padding: 0.1rem 0.3rem;
-}
+	padding: 0.1rem 0.3rem;}

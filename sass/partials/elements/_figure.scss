@@ -1,38 +1,21 @@
-//////////////////////////////
-// FIGURE
-//
-// Use cases:
-//
-// Article image : article > figure
-//
-//////////////////////////////
 figure{	
 	img{
 		width: 100%;
 		border-radius: $unit__border-radius;
 		& + figcaption{
 			color: mix($color-text, $color-background);
-			font-size: typography(small,font-size) * 1rem;
-			line-height: typography(small,line-height) * 1rem;
-			padding-top: typography(small,padding-top) * 1rem;
-			padding-bottom: typography(small,padding-bottom) * 1rem;
+			@include font-properties-for(small);
 			font-family: '#{$heading-font}';
 			position: relative;
 			bottom: typography(small,padding-top) * 1rem;
-			text-align: center;
-		}
-	}
-	
+			text-align: center;}}	
 	video{}
 	audio{}
 	pre{}
 	figure{
 		img{}
-		figcaption{}
-	}
-	.slider{}
-}
-
+		figcaption{}}
+	.slider{}}
 
 .post{
 	img{}
@@ -41,13 +24,9 @@ figure{
 		p{}
 		img{}
 		video{}
-		audio{}
-	}
+		audio{}}
 	time{}
 	a{}
 	section.comments{
 		figure{
-			margin-left: 1rem;
-		}
-	}
-}
+			margin-left: 1rem;}}}
