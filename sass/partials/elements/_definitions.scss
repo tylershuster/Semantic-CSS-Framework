@@ -4,15 +4,9 @@ dl{
 	font-family: '#{$body-font}';
 	margin: 0;
 	dt{
-		font-size: typography(p,font-size) * 1rem;
-		line-height: typography(p,line-height) * 1rem;
-		padding-top: typography(p,padding-top) * 1rem;
-		padding-bottom: typography(p,padding-bottom) * 1rem;}
+		@include font-properties-for(p);}
 	dd{
-		font-size: typography(small,font-size) * 1rem;
-		line-height: typography(small,line-height) * 1rem;
-		padding-top: typography(small,padding-top) * 1rem;
-		padding-bottom: typography(small,padding-bottom) * 1rem;}
+		@include font-properties-for(small);}
 	ol{
 		//dictionary definitions
 		counter-reset: li;
@@ -25,12 +19,7 @@ dl{
 			line-height: typography(h4,font-size) * 1rem;
 			margin-left: -2rem;}
 		dd{
-			font-size: typography(p,font-size) * 1rem;
-			line-height: typography(p,font-size) * 1rem;
-			padding-top: typography(p,padding-top) * 1rem;
-			padding-bottom: typography(p,padding-bottom) * 1rem;
-			font-weight: typography(p,font-weight);
-			font-style: typography(p,font-style);}
+			@include font-properties-for(p);}
 		li{
 			padding: 0 0 1rem 0;
 			display: inline;

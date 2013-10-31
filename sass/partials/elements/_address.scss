@@ -15,8 +15,7 @@ address{
 			float: left;
 			font-style: normal;
 			&:after{
-				content: "\00a0";}
-		}
+				content: "\00a0";}}
 		span.streetAddress{}
 		span.addressLocality{}
 		span.addressRegion{}
@@ -39,41 +38,32 @@ address{
 			font-family: "Entypo";
 			text-decoration: none;
 			font-style: normal;
-			float: left;}
-	}
+			float: left;}}
 	a[href*="twitter.com/"]{
 		@include social;
 		&:before{
-			content: "\f309";}
-	}
+			content: "\f309";}}
 	a[href*="plus.google.com/"]{
 		@include social;
 		&:before{
-			content: "\f30f";}
-	}
+			content: "\f30f";}}
 	a[href*="facebook.com/"]{
 		@include social;
 		&:before{
-			content: "\f30c";}
-	}
+			content: "\f30c";}}
 	a[href*="linkedin.com/"]{
 		@include social;
 		&:before{
-			content: "\f318";}
-	}
+			content: "\f318";}}
 	a[href*="tumblr"]{
 		@include social;
 		&:before{
-			content: "\f315";}
-	}
+			content: "\f315";}}
 	a.instagram{
 		@include social;
 		&:before{
-			content: "\f32d";}
-	}
+			content: "\f32d";}}
 	a.dribbble{
 		@include social;
 		&:before{
-			content: "\f31b";}
-	}
-}
+			content: "\f31b";}}}

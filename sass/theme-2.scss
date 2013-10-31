@@ -8,23 +8,56 @@ $sans: Open Sans;
 $serif: Gentium Basic;
 $body-font: $serif;
 $heading-font: $sans;
-//human-font, machine-font, copy-font
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
-@import url("http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic");
-@import url("http://fonts.googleapis.com/css?family=Source+Code+Pro:500");
 //////////////////
 //COLOR
 //////////////////
-$color: #511051;
-$scheme: triad;//mono, complement, triad, tetrad, analogic, accented-analogic
+$color: #23225F;
+$scheme: mono;//mono, complement, triad, tetrad, analogic, accented-analogic
 $tone: dark;//white, light, dark, black
 //////////////////
 //OTHER
 //////////////////
 $icons: no;
 $skeu: faux-flat;
-$glass: no;
+$material: none;
 $grid: off;
+//////////////////
+//VARIABLES
+//////////////////
+//COLORS
+$color-primary: #FFED5B;
+$color-secondary: #F6CD51;
+$color-tertiary: #F6CD51;
+//$color-text: #17163E;
+$color-accent: #FFED5B;
+//$color-background: #383792;
+//$color-drawer: #383792;
+//
+//$em: 16;
+//$unit__base-x-one: $em * 8;
+//$unit__base-x-two: $unit__base-x-one * 2;
+//$unit__base-x-three: $unit__base-x-one * 3;
+//$unit__base-x-five: $unit__base-x-one * 5;
+//$unit__base-x-eight: $unit__base-x-one * 8;
+//$unit__base-x-thirteen: $unit__base-x-one * 13;
+//$font-base: null;
+//$max-width: 60em;
+//$unit__header--height: 2rem;
+//$unit__nav--height: 3rem;
+//$length__transition: 0.4s;
+//$color__3d--dark: rgba(0,0,0,0.5);
+//$color__3d--light: rgba(255,255,255,0.5);
+//$unit__border-radius: 2px;
+//$unit__header--opacity: 1;
+//$unit__shadow-size: 1px;
+//$unit__shadow-blur: 5px;
+//$unit__shadow-opacity: 0.25;
+//$height-form-input: 1.5rem;
+//$style__animation-ease: ease-in-out;
+//human-font, machine-font, copy-font
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic");
+@import url("http://fonts.googleapis.com/css?family=Source+Code+Pro:500");
 /*Set in the key of #{$key} #{$quality}. #{$scheme} color scheme based on #{$color} with a #{$tone} background.*/
 @import "style";
 /* { / picnicc } */

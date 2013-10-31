@@ -23,9 +23,6 @@
 	@else if $skeu == flat{
 		border: none;
 	}
-	@if $glass == yes {
-		/*write code to make transparent gradient from on-background color*/
-	}
 }
 
 @mixin box-shadow-inset($on-background){	
@@ -44,9 +41,6 @@
 		border: $unit__shadow-size solid;
 		border-color: shade($on-background,15%) tint($on-background,15%) tint($on-background,15%) shade($on-background,15%);
 		box-shadow: $unit__shadow-size $unit__shadow-size 0px rgba(red(set-lightness($color-primary, 10%)), blue(set-lightness($color-primary, 10%)), green(set-lightness($color-primary, 10%)), 0.85) inset;
-	}
-	@if $glass == yes {
-		/*write code to make transparent gradient from on-background color*/
 	}
 }
 @mixin text-shadow{
@@ -786,8 +780,9 @@ $note13: 3.375, 4, 0.7, 0.3, bold, normal;
 
 @mixin small-search-box{
 	top: 0;
+	bottom: 0;
+	margin: auto;
 	height: #{$unit__header--height};
-	//margin-right: 1rem;
 	form {
 		width:100%;
 		height: #{$unit__header--height};
@@ -797,7 +792,7 @@ $note13: 3.375, 4, 0.7, 0.3, bold, normal;
 			width:0;
 			height:1rem;
 			border: 0.2rem solid $color-primary;
-			top: 1.52rem;
+			top: #{$unit__header--height / 2};
 			right:-0.52rem;
 			-webkit-border-radius:3px;
 			-webkit-transform: rotate(-45deg);
@@ -838,4 +833,10 @@ $note13: 3.375, 4, 0.7, 0.3, bold, normal;
 	-o-#{$property}: $value;
 	-ms-#{$property}: $value;
 	#{$property}: $value;
+}
+
+@mixin betwixt($min-width,$max-width){
+	@media only screen and (min-width: #{$min-width * 1px}) and (max-width: #{$max-width * 1px}){
+		@content;
+	}
 }

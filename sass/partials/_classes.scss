@@ -1,53 +1,39 @@
 .academic{
-	/*the academy should ideally be concerned only with the representation of truth and not bound by temporal, spatial, or personal relevancy.*/
+	//the academy should ideally be concerned only with the representation of truth and not bound by temporal, spatial, or personal relevancy.
 }
-/*the twelve disciples*/
-.fictional{
-	/*any content that does not literally represent canonical reality*/
-	.news{
-		/*fox news, alternate reality updates, etc*/
+//the twelve disciples
+.fictional{//any content that does not literally represent canonical reality
+	.news{//fox news, alternate reality updates, etc
 	}
-	.archive{
-		/*wookiepedia, etc*/
+	.archive{//wookiepedia, etc
 	}
-	.opinion{
-		/*satire*/
+	.opinion{//satire
 	}
 }
 .personal{
-	/*content relating to the author of the article. Should have span.author or <a rel="author">*/
-	.news{
-		/*blog*/
+	//content relating to the author of the article. Should have span.author or <a rel="author">
+	.news{//blog
 	}
-	.archive{
-		/*structured blog*/
+	.archive{//structured blog
 	}
-	.opinion{
-		/*personal opinion*/
+	.opinion{//personal opinion
 	}
 }
-.professional{
-	/*content pertinent to a profession; of little use outside context*/
-	.news{
-		/*medical discoveries, golf tournament coverage, etc*/
+.professional{//content pertinent to a profession; of little use outside context
+	.news{//medical discoveries, golf tournament coverage, etc
 	}
-	.archive{
-		/*technical writing*/
+	.archive{//technical writing
 	}
-	.opinion{
-		/*opinion for those in the field*/
+	.opinion{//opinion for those in the field
 	}
 }
 .promotional{
-	/*content intended to further a cause related to, but not directly about, the author*/
-	.news{
-		/*press releases, etc*/
+	//content intended to further a cause related to, but not directly about, the author
+	.news{//press releases, etc
 	}
-	.archive{
-		/*product information, specifications, etc*/
+	.archive{//product information, specifications, etc
 	}
-	.opinion{
-		/*reviews, etc*/
+	.opinion{//reviews, etc
 	}
 }
 
@@ -64,40 +50,26 @@ section{
 		&>*{
 			width: 100%;
 			flex-grow: 1;
-			padding: 0 0.5rem;
-		}
-	}
-}
+			padding: 0 0.5rem;}}}
 
 header{
 	&.collapsed{
 	@media all and (min-width:#{$unit__base-x-eight * 1px}){
-		//height: auto;
-		//top: -3rem;
 		background-color: $color-background;
 		section.search{
-			display: none;
-		}
-		.logo{
-			height: #{$unit__nav--height * 0.75};
-			margin: #{$unit__nav--height / 8} 0;
+			display: none;}
+		.logo{}
+		section.masthead{
 			position: absolute;
-			left: 1rem;
-			top: $unit__header--height;
-		}
+			margin: auto;
+			left: 50%;
+			margin-left: -50%;}
+		section.masthead h1,
 		h1{
-			display: none;
-		}
+			font-size: 0;
+			opacity: 0;}
 		nav{
 			li ul{
-				background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);	
-			}
+				background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);}
 			ul{
-				background-color: $color-background;
-
-			}
-			//top: 0;
-		}
-	}
-	}
-}
+				background-color: $color-background;}}}}}
