@@ -64,14 +64,7 @@ small{
 	padding-bottom: typography(small,padding-bottom) * 1rem;	
 	font-weight: typography(small,font-weight);
 	font-style: typography(small,font-style);}
-@mixin font-properties-for($element, $multiplier: 1){
-	font-size: #{typography($element,font-size) * (1rem * $multiplier)};
-	line-height: #{typography($element,line-height) * (1rem * $multiplier)};
-	padding-top: #{typography($element,padding-top) * (1rem * $multiplier)};
-	padding-bottom: #{typography($element,padding-bottom) * (1rem * $multiplier)};
-	font-weight: #{typography($element,font-weight)};
-	font-style: #{typography($element,font-style)};
-	margin: 0;}
+
 	
 h1{
 	@include font-properties-for(h1);
@@ -151,7 +144,7 @@ h5{
 
 p, time{
 	@include font-properties-for(p);
-	line-height: 2;
+	line-height: #{typography(p,line-height) * ($unit__line-height)};
 	font-family: '#{$body-font}';
 	&.uber,
 	.uber &{

@@ -2,7 +2,7 @@ article{
 	max-width: $max-width;
 	padding: 0;
 	margin: 0 auto;
-	background-color: $color-background;
+	//background-color: $color-background;
 	>time{/*articles must include the time on which they were published*/}
 	>figure{
 		&:nth-of-type(odd){
@@ -14,7 +14,9 @@ article{
 			width: 100%;}}
 	>aside{		
 		width: 100%;
-		padding: 0 1rem;}
+		padding: 0 1rem;
+		margin-top: -0.25rem;
+		margin-bottom: -0.25rem;}
 	>blockquote{
 		width: 100%;}
 	&>p:first-of-type:first-letter,

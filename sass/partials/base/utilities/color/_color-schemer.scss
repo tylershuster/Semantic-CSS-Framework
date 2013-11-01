@@ -112,4 +112,7 @@ $color-drawer: color-drawerer($tone) !default;
 
 * body{
 	color: $color-text;
-	background-color: $color-background;}
+	//background-color: $color-background;
+	background: -webkit-linear-gradient($color-background, tint($color-background, 5%));
+	background-attachment: fixed;
+	background-repeat: no-repeat;}

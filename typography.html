@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0, user-scalable=no" />
 	<title>Semantic CSS Framework Typography</title>
-	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/themes/piano-classy.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
 	
 </head>
 <body>
@@ -40,9 +42,42 @@
 		</nav>
 	</header>
 	<main>
-		<section class="hero">
-			<h1>Typography</h1>
-			<h2>Webpage as Composition</h2>
+	<section id="swatches">
+	<!--background for background of whole swatch, drawer for each figure - vice versa-->
+		<p id="color-description"></p>
+		<div class="colors">
+			<figure id="primary-swatch">
+				<div class="swatch"></div>
+				<figcaption>primary color</figcaption>
+			</figure>
+			<figure id="secondary-swatch">
+				<div class="swatch"></div>
+				<figcaption>secondary color</figcaption>
+			</figure>
+			<figure id="tertiary-swatch">
+				<div class="swatch"></div>
+				<figcaption>tertiary color</figcaption>
+			</figure>
+			<figure id="accent-swatch">
+				<div class="swatch"></div>
+				<figcaption>accent color</figcaption>
+			</figure>
+		</div>
+		<p id="musical-typography"></p>
+		<div class="headers">
+			<h1>Primary Header</h1>
+			<h2>Secondary Header</h2>
+			<h3>Tertiary Header</h3>
+			<h4>Quaternary Header</h4>
+			<h5>Quinary Header</h5>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laudantium, ullam, natus fugit aspernatur aliquam voluptatem earum nesciunt necessitatibus magni et fuga nostrum quae exercitationem veritatis nisi minima sed impedit.</p>
+	</section>
+		<section class="uber hero">
+			<span>
+				<h1>Typography</h1>
+				<h2>Webpage as Composition</h2>
+			</span>
 		</section>
 		<article>			
 			<h3>Musical Typography</h3>
@@ -80,5 +115,7 @@
 	</main>
 	
 </body>
+		<script src="javascripts/scripts.js"></script>
+
 </html>
 

@@ -56,6 +56,7 @@ header{
 	&.collapsed{
 	@media all and (min-width:#{$unit__base-x-eight * 1px}){
 		background-color: $color-background;
+		@include box-shadow($color-background);
 		section.search{
 			display: none;}
 		.logo{}
