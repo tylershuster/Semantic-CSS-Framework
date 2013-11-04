@@ -1,0 +1,6 @@
+body{
+	margin: 0;
+	height: calc(100% - #{$unit__header--height + $unit__nav--height});
+	overflow-x: hidden;
+	@include media-to($unit__base-x-eight){
+		height: calc(100% - #{$unit__header--height});}}

@@ -1,0 +1,15 @@
+select{
+	border: none;
+	font-family: inherit;
+	font-size: 100%;
+	text-transform: none;
+	margin: 0;
+	background-color: $color-input-background;
+	@include box-shadow-inset($color-input-background);	
+	&:focus{
+		outline: none;
+		box-shadow: none;}
+	&:disabled{
+		@include input-disabled;}
+	&::-webkit-scrollbar-track{
+		margin-top: -1px;}}

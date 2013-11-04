@@ -32,7 +32,7 @@ article{
 		>blockquote,
 		>figure,
 		>aside{
-			width: calc(100% + #{2 * $article-margin-length-one})}
+			width: calc(100% + #{2 * $article-margin-length-one});}
 		>figure:nth-of-type(odd),
 		>figure:nth-of-type(even){
 			padding: 0;}

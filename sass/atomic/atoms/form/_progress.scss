@@ -1,0 +1,9 @@
+progress{
+	-webkit-appearance: none;
+	display:block;
+	height: 1rem;
+	width: 100%;
+	vertical-align: 0;
+	&::-webkit-progress-bar{
+		background-color: $color-input-background;
+		@include box-shadow-inset($color-background);}}

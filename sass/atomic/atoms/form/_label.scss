@@ -1,0 +1,24 @@
+label{
+	flex-grow: 0;
+	height: 1.5rem;
+	padding: 0 0.5rem;
+	position: relative;
+	line-height: 1.5rem;
+	float: left;
+	margin: 0.25rem 0;
+	@include font-properties-for(p);
+	&.required{
+		&:after{
+			content: "*";}}
+	@media all and (min-width:#{$unit__base-x-one * 1px}) and (max-width:#{$unit__base-x-two * 1px}){
+		display: block;}
+	@media all and (min-width:#{$unit__base-x-two * 1px}) and (max-width:#{$unit__base-x-three * 1px}){
+		display: block;}
+	@media all and (min-width:#{$unit__base-x-three * 1px}) and (max-width:#{$unit__base-x-five * 1px}){
+		min-width: 33%;}
+	@media all and (min-width:#{$unit__base-x-five * 1px}) and (max-width:#{$unit__base-x-eight * 1px}){
+		min-width: 25%;}
+	@media all and (min-width:#{$unit__base-x-eight * 1px}) and (max-width:#{$unit__base-x-thirteen * 1px}){
+		min-width: 10%;}
+	@media all and (min-width:#{$unit__base-x-thirteen * 1px}){
+		min-width: 10%;}}

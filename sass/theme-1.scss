@@ -26,5 +26,6 @@ $skeu: flat;
 $glass: no;
 $grid: on;
 /*Set in the key of #{$key} #{$quality}. #{$scheme} color scheme based on #{$color} with a #{$tone} background.*/
-@import "style";
+//@import "style";
+@import "atomic/atomic";
 /* { / picnicc } */

@@ -1,0 +1,100 @@
+::-webkit-scrollbar {
+	width: 1rem;}
+
+::-webkit-scrollbar-track {
+	background-color: $color-input-background;
+	@include box-shadow-inset($color-drawer);
+	margin-top: -1px;}
+
+::-webkit-scrollbar-thumb {
+	width: calc(100% - 2px);
+	width: 50%;
+	background-color: $color-background;
+	@include box-shadow($color-background);}
+		
+::-webkit-scrollbar-corner{}
+::-webkit-resizer{}
+
+::-webkit-textfield-decoration-container{
+	position: relative;}
+
+::-webkit-inner-spin-button{
+	-webkit-appearance: none;
+	margin: 0;
+	width: 1rem;
+	height: 100%;
+	position: relative;
+	&:before{
+		width: 0;
+		height: 0;
+		border-left: 0.25rem solid transparent;
+		border-right: 0.25rem solid transparent;
+		border-bottom: 0.5rem solid $color-primary;
+		content: "";
+		position: absolute;
+		bottom: 0.75rem;
+		left: 25%;}
+	&:after{
+		width: 0;
+		height: 0;
+		border-left: 0.25rem solid transparent;
+		border-right: 0.25rem solid transparent;
+		border-top: 0.5rem solid $color-primary;
+		content: "";
+		position: absolute;
+		top: 0.75rem;
+		left: 25%;}}
+
+::-webkit-slider-thumb{
+	-webkit-appearance: none;	
+	background-color: $color-text;
+	@include box-shadow($color-text);
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;}
+
+::-webkit-media-controls-play-button{
+	-webkit-appearance: none;
+	height: 0;
+	width: 0;
+	border-top: 0.5rem solid transparent;
+	border-left: 1rem solid $color-text;
+	border-bottom: 0.5rem solid transparent;}
+
+::-webkit-media-controls-panel{
+	background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), 0.8);}
+
+::-webkit-media-slider-container{
+	border: none;
+	background-color: $color-input-background;}
+
+::-webkit-media-controls-current-time-display{
+	color: $color-text;}
+
+::-webkit-meter-bar{
+	background: $color-drawer;
+	@include box-shadow-inset($color-input-background);
+	overflow: hidden;}
+
+::-webkit-input-speech-button{}
+
+::-webkit-file-upload-button{
+	-webkit-appearance: none;
+	border: none;
+	color: $color-background;
+	background-color: $color-primary;
+	@include box-shadow($color-accent);
+	height: 1.5rem;}
+
+::-webkit-file-upload-button:disabled{
+	color: $color-background;
+	background-color: $color-input-background;
+	@include box-shadow($color-drawer);}
+
+::-webkit-clear-button{
+	-webkit-appearance: none;
+	content: "x";
+	display: block;
+	color: red;
+	width: 1rem;
+	height: 100%;}

@@ -1,0 +1,11 @@
+header .logo{
+	display: inline-block;
+	float: left;
+	height: #{$unit__nav--height};
+	margin-top: #{($unit__header--height - $unit__nav--height) / 3};
+	margin-left: 1rem;
+	transition: all $length__transition $style__animation-ease;
+	-webkit-transition: all $length__transition $style__animation-ease;
+	z-index: 110;
+	& + h1{
+		margin-left: 1rem;}}

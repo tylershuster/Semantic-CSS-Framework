@@ -9,7 +9,7 @@ header{
 	box-sizing: content-box;
 	min-height: $unit__nav--height;
 	transition: all $length__transition $style__animation-ease;
-			-webkit-transition: all $length__transition $style__animation-ease;
+	-webkit-transition: all $length__transition $style__animation-ease;
 	/*multiple headers get styled into tabs. See foxnews for example*/
 	.logo{/*site logo*/
 		display: inline-block;		
@@ -18,16 +18,13 @@ header{
     	margin-top: #{($unit__header--height - $unit__nav--height) / 3};
     	margin-left: 1rem;
     	transition: all $length__transition $style__animation-ease;
-			-webkit-transition: all $length__transition $style__animation-ease;
-	}
+		-webkit-transition: all $length__transition $style__animation-ease;}
 	#Layer_1{
 		height: 100%;
-		min-width: 48px;
-	}
+		min-width: 48px;}
 	#logo-svg,
 	#Layer_1 path{
-		fill: $color-primary;
-	}
+		fill: $color-primary;}
 	h1{/*site tite*/
 		display: inline-block;
 		float: left;
@@ -39,18 +36,14 @@ header{
 		@include font-properties-for(h2);
 		color: $color__header--h1;
 		transition: all $length__transition $style__animation-ease;
-			-webkit-transition: all $length__transition $style__animation-ease;
-	}
+		-webkit-transition: all $length__transition $style__animation-ease;}
 	.logo + h1{
-		margin-left: 1rem;
-	}
+		margin-left: 1rem;}
 	address{
 		//height: #{$unit__nav--height};
 		a, a:before{
 			color: $color-background;
-			text-decoration: none;
-		}
-	}
+			text-decoration: none;}}
 
 	section{
 		&.masthead{
@@ -71,14 +64,11 @@ header{
 				height: 100%;
 				float: none;/*site logo*/}
 			h1{
-				float: none;				
-			}
+				float: none;}
 			.logo + h1{
 				position: relative;
-				top: -1rem;
-			}
-			address{/*address info*/}
-		}		
+				top: -1rem;}
+			address{/*address info*/}}		
 		&.search{
 			position: absolute;
 			top: 0;
@@ -96,29 +86,23 @@ header{
 				input[type="search"]{
 					height: 1.5rem;
 					margin-top: 0.25rem;	
-					text-align: right;							
-				}
+					text-align: right;}
 				input[type="submit"]{
 					height: 1.5rem;
 					margin-top: 0.25rem;
 					border: 0;
-					padding: 0 0.5rem;					
-				}
-			}
+					padding: 0 0.5rem;}}
 			.compact{/*expanding box*/}
 			@include small-search-box;
 			margin: #{$unit__header--height / 8};
-			margin-right: 1rem;
-		}
-	}
+			margin-right: 1rem;}}
 	nav{
 		position: relative;
 		top: #{$unit__header--height};	
 		transition: all $length__transition $style__animation-ease;
 			-webkit-transition: all $length__transition $style__animation-ease;
 		a{
-			font-family: "#{$body-font}";
-		}
+			font-family: "#{$body-font}";}
 		>ul{
 			position: relative;
 			max-width: $max-width;			
@@ -135,11 +119,8 @@ header{
 			table-layout: fixed;
 			box-sizing: border-box;
 			>div{
-				display:none;
-			}
-			>div + li{
-				
-			}
+				display:none;}
+			>div + li{}
 			li{		
 				box-sizing: border-box;										
 				table-layout: fixed;	
@@ -151,22 +132,16 @@ header{
 				&:hover{
 					background-color: $color-primary;
 					border: none;
-					//outline: 1px solid $color-primary;
 					>ul{
 						@include box-shadow($color-drawer);
 						li{
-							margin-bottom: 0;
-						}
-					}
+							margin-bottom: 0;}}
 					>a, >a:hover{
-						color: $color-background;
-					}					
-				}
+						color: $color-background;}}
 				> a{									
 					text-decoration: none;
 					width: 100%;
-					display: block;												
-				}
+					display: block;}
 				ul{
 					background-color: $color-drawer;
 					display: table;
@@ -178,20 +153,16 @@ header{
 					@include box-shadow($color-drawer);
 					@include transition;
 					&:hover{
-						border: 1px none none none;
-					}
+						border: 1px none none none;}
 					li{
 						margin-bottom: -100%;
 						@include transition;
 						border-radius: 0;
 						&:last-of-type{
 							border-bottom-right-radius: $unit__border-radius;
-							border-bottom-left-radius: $unit__border-radius;
-						}
-					}
+							border-bottom-left-radius: $unit__border-radius;}}
 					& + a{
-						position: relative;
-					}
+						position: relative;}
 					& + a:after{
 						content: ' ';
 						display: block;
@@ -201,31 +172,20 @@ header{
 						border-top: #{$unit__nav--height / 4} solid $color-primary; 
 						border-left: #{$unit__nav--height / 8} solid transparent; 
 						border-right: #{$unit__nav--height / 8} solid transparent;
-						@include transition;				
-					}								
+						@include transition;}								
 					li{
 						display: table;					
 						height: $unit__nav--height;
 						a{
 							display: table-cell;
-							vertical-align: middle;
-						}
-					}
-				}
+							vertical-align: middle;}}}
 				ul{
 					overflow: hidden;
 					width: 100%;
 					border: 0;
 					li{
 						float:left;
-						width: 100%;
-
-					}
-				}		
-			}
-		}		
-	}
-}
+						width: 100%;}}}}}}
 
 
 

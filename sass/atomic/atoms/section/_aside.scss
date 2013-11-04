@@ -1,0 +1,26 @@
+aside{
+	padding-top: 2px;
+	margin: 0.5rem 0;
+	box-sizing: border-box;
+	position: relative;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: block;
+	color: mix($color-text, $color-background);
+	@include font-properties-for(small);
+	font-family: '#{$heading-font}';
+	h1,h2,h3,h4,h5{		
+		@include font-properties-for(h4);
+		color: $color-text;
+		font-family: '#{$body-font}';}
+	p{
+		color: mix($color-text, $color-background);
+		@include font-properties-for(small);
+		font-family: '#{$heading-font}';}
+	ul{
+		text-align: left;
+		list-style-position:inside;
+		&:nth-of-type(even){
+			padding-right: 1rem;}
+		&:nth-of-type(odd){
+			padding-left: 1rem;}}}

@@ -1,0 +1,14 @@
+meter{
+	display: block;
+	height: 1rem;
+	width: 100%;
+	vertical-align: 0;
+	&::-webkit-meter-optimum-value{
+		background: green;
+		@include box-shadow(green);}
+	&::-webkit-meter-suboptimum-value{
+		background: yellow;
+		@include box-shadow(yellow);}
+	&::-webkit-meter-even-less-good-value{
+		background: red;
+		@include box-shadow(red);}}

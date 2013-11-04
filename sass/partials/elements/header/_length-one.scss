@@ -1,13 +1,10 @@
-/*Styles for devices from 128-256px wide*/
 header{
 	height: $unit__header--height;
 	@include column(1,1);
 	@include box-shadow($color-drawer);
 	address{
 		a, a:before{
-			color: $color-primary;}
-	}
-	section.masthead{}
+			color: $color-primary;}}
 	section.user{
 		box-sizing: content-box;
 		right: -2px;}

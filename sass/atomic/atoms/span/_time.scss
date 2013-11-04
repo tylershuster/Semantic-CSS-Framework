@@ -1,0 +1,7 @@
+time{
+	@include font-properties-for(p);
+	line-height: #{typography(p,line-height) * ($unit__line-height)};
+	font-family: '#{$body-font}';
+	&.uber,
+	.uber &{
+		@include font-properties-for(p,2);}}

@@ -1,0 +1,51 @@
+.slide-toggle {
+	float: left;
+	cursor: pointer;	
+	z-index: 1;
+	display: none;
+	color: $color-primary;
+	margin: 0;
+	position: absolute;
+	height: $unit__nav--height;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: 1rem;
+	right: auto;
+	padding: 0;
+	@include media-to($length-mobile-cutoff){
+		display: block;}}
+
+.slide-toggle,
+.slide-toggle:active,
+.slide-toggle:focus {
+	border: none !important;
+	outline: none !important;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+.slide-toggle:after {
+	content: "\f0c9";	
+	display: block;
+	font: #{$unit__nav--height} 'fontawesome';
+	text-align: center;	
+	@include text-shadow;
+	height: #{$unit__nav--height * 0.85};
+	-webkit-transition: -webkit-transform #{$length__transition / 2} $style__animation-ease;
+			-moz-transition: -moz-transform #{$length__transition / 2} $style__animation-ease;
+			-o-transition: -o-transform #{$length__transition / 2} $style__animation-ease;
+			transition: transform #{$length__transition / 2} $style__animation-ease;}
+
+.slide-checkbox {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	@include media-to($length-mobile-cutoff){		
+		&:checked ~ nav{
+			@include prefixer("transform", "translateY(0) scale3d(1, 1, 1)");}}}
+
+.slide-checkbox:checked ~ .slide-toggle:after {
+	content: '\f0c9';
+	@include media-to($length-mobile-cutoff){
+		@include text-shadow-inset;
+		@include prefixer("transform", "rotateZ(90deg)");}}
+

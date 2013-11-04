@@ -1,0 +1,100 @@
+@if $key == 'a' {		
+	html {font-size: 75%;}
+	@include betwixt($unit__base-x-two, $unit__base-x-three){
+		html {font-size: 62.5%;}}	
+	@include betwixt($unit__base-x-one, $unit__base-x-two){
+		html {font-size: 50%;}}
+	$font-base: 12;}
+
+@else if $key == 'b' {	
+	html {font-size: 87.5%;}
+	@include betwixt($unit__base-x-two, $unit__base-x-three){
+		html {font-size: 75%;}}	
+	@include betwixt($unit__base-x-one, $unit__base-x-two){
+		html {font-size: 62.5%;}}	
+	$font-base: 14;}
+
+@else if $key == 'c' {	
+	html {font-size: 100%;}
+	@include betwixt($unit__base-x-two, $unit__base-x-three){
+		html {font-size: 87.5%;}}	
+	@include betwixt($unit__base-x-one, $unit__base-x-two){
+		html {font-size: 75%;}}	
+	$font-base: 16;}
+
+@else if $key == 'd' {	
+	html {font-size: 112.5%;}
+	@include betwixt($unit__base-x-two, $unit__base-x-three){
+		html {font-size: 100%;}}	
+	@include betwixt($unit__base-x-one, $unit__base-x-two){
+		html {font-size: 87.5%;}}
+	$font-base: 18;}
+
+@else if $key == 'e' {	
+	html {font-size: 125%;/*find me*/}
+	@include betwixt($unit__base-x-two, $unit__base-x-three){
+		html {font-size: 112.5%;}}	
+	@include betwixt($unit__base-x-one, $unit__base-x-two){
+		html {font-size: 100%;}}	
+	$font-base: 20;}
+
+@else if $key == 'f' {	
+	html {font-size: 137.5%;}
+	@include betwixt($unit__base-x-two, $unit__base-x-three){
+		html {font-size: 125%;}}	
+	@include betwixt($unit__base-x-one, $unit__base-x-two){
+		html {font-size: 112.5%;}}	
+	$font-base: 22;}
+
+@else if $key == 'g' {	
+	html {font-size: 150%;}
+	@include betwixt($unit__base-x-two, $unit__base-x-three){
+		html {font-size: 137.5%;}}	
+	@include betwixt($unit__base-x-one, $unit__base-x-two){
+		html {font-size: 125%;}}
+	$font-base: 24;}
+
+@media all and (min-width:#{$unit__base-x-eight * 1px}){
+	.row{
+		display: flex;		
+		>*{
+			display: flex;
+			flex-grow: 1;}
+		>.row{
+			max-width: 50%;
+			flex-basis: 49%;}
+		>.two{
+			flex-grow: 2;}
+		>.three{
+			flex-grow: 3;}
+		>.four{
+			flex-grow: 4;}}}
+
+@media all and (min-width:#{$unit__base-x-five * 1px}) and (max-width:#{$unit__base-x-eight * 1px}){
+	.row{
+		display: flex;
+		>*{
+			display: flex;
+			flex-grow: 1;
+			flex-basis: 49%;}
+		>.row{
+			display: block;
+			width: 100%;
+			flex-basis: 100%;
+			>*{
+				flex-basis: 49%;
+				float: left;
+				width: 50%;}}}}
+
+@media all and (min-width: 0px) and (max-width:#{$unit__base-x-five * 1px}){
+	.row{
+		display: block;
+		>*{
+			display: block;}}}
+.row{
+	width: 100%;
+	flex-wrap: wrap;
+	@include clearfix;}
+.column{
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;}

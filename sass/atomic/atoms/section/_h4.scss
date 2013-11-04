@@ -1,0 +1,14 @@
+h4{
+	@include font-properties-for(h4);
+	color: $color-text;
+	font-family: '#{$heading-font}';
+	&>small{
+		@include font-properties-for(h5);
+		color: mix($color-text, $color-background);
+		line-height: 1em;
+		display: inline;}
+	&.uber,
+	.uber &{
+		@include font-properties-for(h4,2);
+		small{
+			@include font-properties-for(h5,2);}}}

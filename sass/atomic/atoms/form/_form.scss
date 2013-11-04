@@ -1,0 +1,68 @@
+form{
+	display: block;
+	float: left;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	&:focus{
+		outline: none;}
+	@media all and (min-width:#{$unit__base-x-three * 1px}){
+		display: flex;		
+		input{
+			display: flex;}}
+	label,span{
+		font-size: typography(p,font-size) * 1rem;
+		line-height: typography(p,line-height) * 1rem;		
+		white-space: nowrap;}
+
+		
+	input{
+		display: block;			
+		flex-grow: 1;	
+		float: left;
+		padding: 0 0.5rem;
+		@if $skeu == 'faux-flat' {
+			border-radius: $unit__border-radius;}
+		@media all and (max-width:#{$unit__base-x-three * 1px}){
+			width: 100%;}
+		//hacks follow
+		&[maxlength="1"]{
+			width: 1em;}
+		&[maxlength="2"]{
+			width: 2em;}
+		&[maxlength="3"]{
+			width: 3em;}
+		&[maxlength="4"]{
+			width: 4em;}
+		&[maxlength="5"]{
+			width: 5em;}
+		&[maxlength="6"]{
+			width: 6em;}
+		&[maxlength="7"]{
+			width: 7em;}
+		&[maxlength="8"]{
+			width: 8em;}
+		&[maxlength="9"]{
+			width: 9em;}
+		&[maxlength="10"]{
+			width: 10em;}
+		&[maxlength="11"]{
+			width: 11em;}
+		&[maxlength="12"]{
+			width: 12em;}
+		&[maxlength="13"]{
+			width: 13em;}
+		&[maxlength="14"]{
+			width: 14em;}
+		&[maxlength="15"]{
+			width: 15em;}
+		&[maxlength="16"]{
+			width: 16em;}
+		&[maxlength="17"]{
+			width: 17em;}
+		&[maxlength="18"]{
+			width: 18em;}
+		&[maxlength="19"]{
+			width: 19em;}
+		&[maxlength="20"]{
+			width: 20em;}}}

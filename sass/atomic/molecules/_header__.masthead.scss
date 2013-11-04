@@ -1,0 +1,32 @@
+header .masthead{
+	position: absolute;
+	margin: 0 auto;
+	white-space: nowrap;
+	text-align: center;
+	width: 100%;
+	padding: 0 1rem;
+	height: #{$unit__header--height};	
+	transition: all $length__transition $style__animation-ease;
+	-webkit-transition: all $length__transition $style__animation-ease;	
+	@include media-to($length-mobile-cutoff){
+		height: $unit__header--height;
+		.logo + h1{
+			top: -1rem;}
+	}
+	/*masthead should be centered on page*/
+	@include media-from($unit__base-x-two){}
+	@include media-from($unit__base-x-three){}
+	@include media-from($unit__base-x-five){}
+	@include media-from($unit__base-x-eight){}
+	@include media-from($unit__base-x-thirteen){}
+	.logo{
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		float: none;}
+	h1{
+		float: none;}
+	.logo + h1{
+		position: relative;
+		top: -1rem;}}

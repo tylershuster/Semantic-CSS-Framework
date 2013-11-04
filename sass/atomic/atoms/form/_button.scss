@@ -1,0 +1,16 @@
+button{
+	font-family: inherit;
+	font-size: 100%;
+	line-height: normal;
+	text-transform: none;
+	margin: 0;
+	background-color: $color-primary;
+	@include box-shadow($color-primary);
+	height: #{ceil($height-form-input)};
+	color: $color-background;
+	form{
+		label{}
+		input{
+			&[type="radio"]{}}}}
+
+	

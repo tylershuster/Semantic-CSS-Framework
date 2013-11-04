@@ -1,0 +1,22 @@
+header{
+	&.collapsed{
+	@media all and (min-width:#{$unit__base-x-eight * 1px}){
+		background-color: $color-background;
+		@include box-shadow($color-background);
+		section.search{
+			display: none;}
+		.logo{}
+		section.masthead{
+			position: absolute;
+			margin: auto;
+			left: 50%;
+			margin-left: -50%;}
+		section.masthead h1,
+		h1{
+			font-size: 0;
+			opacity: 0;}
+		nav{
+			li ul{
+				background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);}
+			ul{
+				background-color: $color-background;}}}}}

@@ -1,0 +1,14 @@
+h3{
+	@include font-properties-for(h3);
+	color: $color-tertiary;
+	font-family: '#{$heading-font}';
+	&>small{
+		@include font-properties-for(h4);
+		color: mix($color-tertiary, $color-background);
+		line-height: 1em;
+		display: inline;}
+	&.uber,
+	.uber &{
+		@include font-properties-for(h3,2);
+		small{
+			@include font-properties-for(h4,2);}}}

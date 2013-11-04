@@ -1,0 +1,118 @@
+@import "color-schemer/blend-modes";
+
+/* Defaults*/
+$cs-primary           : $color;
+$cs-scheme            : $scheme;   /* mono, complement, triad, tetrad, analogic, accented-analogic*/
+$cs-hue-offset        : 30 !default;
+$cs-brightness-offset : false !default;
+$cs-color-model       : rgb !default;    /* rgb, ryb*/
+$cs-colorblind        : normal !default;
+
+/* Partials*/
+@import "color-schemer/interpolation";
+@import "color-schemer/cmyk";
+@import "color-schemer/ryb";
+@import "color-schemer/colorblind";
+@import "color-schemer/equalize";
+@import "color-schemer/mix";
+@import "color-schemer/tint-shade";
+@import "color-schemer/color-adjustments";
+@import "color-schemer/color-schemer";
+
+@import "color-schemer/mixins";
+
+/* Tell other files that this is loaded.*/
+$color-schemer-loaded : true;
+
+$color-primary: null !default;
+$color-secondary: null !default;
+$color-tertiary: null !default;
+$color-background: null !default;
+$color-accent: null !default;
+$color-drawer: null !default; /*light if tone is dark, dark if tone is light, light if tone is white, dark if tone is black*/
+
+$white-text-lightness: 15%;
+$light-text-lightness: 25%;
+
+
+$dark-text-lightness: 100% - $light-text-lightness;
+$black-text-lightness: 100% - $white-text-lightness;
+@function color-primaryer($tone){
+	@if $tone == white{
+		@return cs-primary($color);}
+	@else if $tone == light{
+		@return set-lightness(cs-primary($color), $light-text-lightness);}
+	@else if $tone == dark{
+		@return set-lightness(cs-primary($color), $dark-text-lightness);}
+	@else if $tone == black{
+		@return cs-primary($color);}}
+
+
+@function color-secondaryer($tone){
+	@if $scheme == mono{
+		@return color-texter($tone);}
+	@else{
+		@if $tone == white{
+			@return cs-secondary($color);}
+		@else if $tone == light{
+			@return set-lightness(cs-secondary($color), $light-text-lightness);}
+		@else if $tone == dark{
+			@return set-lightness(cs-secondary($color), $dark-text-lightness);}
+		@else if $tone == black{
+			@return cs-secondary($color);}}}
+
+
+@function color-texter($tone){
+	@if $tone == white{
+		@return set-lightness($color, $white-text-lightness);}
+	@else if $tone == light{
+		@return set-lightness($color, $light-text-lightness);}
+	@else if $tone == dark{
+		@return set-lightness($color, $dark-text-lightness);}
+	@else if $tone == black{
+		@return set-lightness($color, $black-text-lightness);}}
+
+@function color-accenter($tone){
+	@if $tone == white{
+		@return adjust-hue($color, 30deg);}
+	@else if $tone == light{
+		@return shade($color, $light-text-lightness);}
+	@else if $tone == dark{
+		@return tint($color, $light-text-lightness);}
+	@else if $tone == black{
+		@return adjust-hue($color, -30deg);}}
+
+@function color-backgrounder($tone){
+	@if $tone == white{
+		@return set-lightness($color, 98%);}
+	@else if $tone == light{
+		@return set-lightness($color, $black-text-lightness);}
+	@else if $tone == dark{
+		@return set-lightness($color, $white-text-lightness);}
+	@else if $tone == black{
+		@return set-lightness($color, 02%);}}
+
+@function color-drawerer($tone){
+	@if $tone == white{
+		@return set-lightness(color-backgrounder($tone), $black-text-lightness);}
+	@else if $tone == light{
+		@return set-lightness(color-backgrounder($tone), $dark-text-lightness);}
+	@else if $tone == dark{
+		@return set-lightness(color-backgrounder($tone), $light-text-lightness);}
+	@else if $tone == black{
+		@return set-lightness(color-backgrounder($tone), $white-text-lightness);}}
+
+$color-primary: color-primaryer($tone) !default;
+$color-secondary: color-secondaryer($tone) !default;
+$color-tertiary: cs-tertiary($color) !default;
+$color-text: color-texter($tone) !default;
+$color-accent: color-accenter($tone) !default;
+$color-background: color-backgrounder($tone) !default;
+$color-drawer: color-drawerer($tone) !default;
+
+* body{
+	color: $color-text;
+	//background-color: $color-background;
+	background: -webkit-linear-gradient($color-background, tint($color-background, 5%));
+	background-attachment: fixed;
+	background-repeat: no-repeat;}
