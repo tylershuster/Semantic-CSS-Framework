@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0, user-scalable=no" />
 	<title>Document</title>
-	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/theme-1.css">
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body>
-	<header>
+	<!--<header>
 		<section class="masthead">
 			<a href="" class="logo">
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -44,10 +44,36 @@
 					<a href="http://facebook.com/herrshuster"></a>
 					<a href="http://twitter.com/tylershuster"></a>
 					<a href="https://plus.google.com/104346126731383465661"></a>
+			</address>			
+			<ul>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="semantics.php">Semantics</a></li>
+					<li><a href="typography.php">Typography</a></li>
+					<li><a href="header.php">Header</a></li>
+					<li>
+						<a href="elements.php">Elements</a>
+						<ul>
+							<li><a href="elements.php#article">Article</a></li>
+							<li><a href="elements.php#forms">Forms</a></li>
+							<li><a href="elements.php#patterns">Design Patterns</a></li>
+						</ul>
+					</li>
+					<div></div>
+					<li><a href="reference.php">Reference</a></li>
+			</ul>
+		</nav>		
+	</header>-->
+	<header>	
+		<img src="../logo.png" alt="" class="logo">
+		<h1>Semantic CSS Framework</h1>
+		<input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
+		<label for="slide-checkbox" class="slide-toggle" onclick></label>
+		<nav>
+			<address>
+				<a href="http://facebook.com/herrshuster"></a>
+				<a href="http://twitter.com/tylershuster"></a>
+				<a href="https://plus.google.com/104346126731383465661"></a>
 			</address>
-			<!--<section class="user">
-		     <a href="#">Login</a><a href="#">Register</a>
-		   </section>-->
 			<ul>
 					<li><a href="index.php">Home</a></li>
 					<li><a href="semantics.php">Semantics</a></li>
@@ -65,9 +91,4 @@
 					<li><a href="reference.php">Reference</a></li>
 			</ul>
 		</nav>
-		<section class="search">
-	     <form>
-	       <input type="search" placeholder="Search" />
-	     </form>
-	   </section>
 	</header>

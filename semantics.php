@@ -1,4 +1,4 @@
-<?php inc("phpartials/header.php") ?>
+<?php include "phpartials/header.php"; ?>
 	<main>
 		<section class="hero">
 			<h1>Semantics</h1>
@@ -20,4 +20,6 @@
 			
 		</article>
 	</main>
+			<script src="javascripts/scripts.js"></script>
+
 </body>

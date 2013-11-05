@@ -1,36 +1,5 @@
-<?php inc("phpartials/header.php") ?>
+<?php include "phpartials/header.php"; ?>
 	<main>
-	<section id="swatches">
-	<!--background for background of whole swatch, drawer for each figure - vice versa-->
-		<p id="color-description"></p>
-		<div class="colors">
-			<figure id="primary-swatch">
-				<div class="swatch"></div>
-				<figcaption>primary color</figcaption>
-			</figure>
-			<figure id="secondary-swatch">
-				<div class="swatch"></div>
-				<figcaption>secondary color</figcaption>
-			</figure>
-			<figure id="tertiary-swatch">
-				<div class="swatch"></div>
-				<figcaption>tertiary color</figcaption>
-			</figure>
-			<figure id="accent-swatch">
-				<div class="swatch"></div>
-				<figcaption>accent color</figcaption>
-			</figure>
-		</div>
-		<p id="musical-typography"></p>
-		<div class="headers">
-			<h1>Primary Header</h1>
-			<h2>Secondary Header</h2>
-			<h3>Tertiary Header</h3>
-			<h4>Quaternary Header</h4>
-			<h5>Quinary Header</h5>
-		</div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laudantium, ullam, natus fugit aspernatur aliquam voluptatem earum nesciunt necessitatibus magni et fuga nostrum quae exercitationem veritatis nisi minima sed impedit.</p>
-	</section>
 		<section class="uber hero">
 			<span>
 				<h1>Typography</h1>
@@ -54,22 +23,46 @@
 			</ul>
 		</article>
 		<article>
-
-		</article>
-		<section class="hero">
-			<figure><h1>Level 1 Header</h1></figure>
-			<figure><h2>Level 2 Header</h2></figure>
-			<figure><h3>Level 3 Header</h3></figure>
-			<figure><h4>Level 4 Header</h4></figure>
-			<figure><h5>Level 5 Header</h5></figure>
-		</section>
-		<section class="uber hero">
-			<figure><h1>Level 1 Uber-Header</h1></figure>
-			<figure><h2>Level 2 Uber-Header</h2></figure>
-			<figure><h3>Level 3 Uber-Header</h3></figure>
-			<figure><h4>Level 4 Uber-Header</h4></figure>
-			<figure><h5>Level 5 Uber-Header</h5></figure>
-		</section>		
+			<section id="swatches">
+			<!--background for background of whole swatch, drawer for each figure - vice versa-->
+				<p id="color-description"></p>
+				<div class="colors row">
+					<figure id="primary-swatch">
+						<div class="swatch"></div>
+						<figcaption>primary color</figcaption>
+					</figure>
+					<figure id="secondary-swatch">
+						<div class="swatch"></div>
+						<figcaption>secondary color</figcaption>
+					</figure>
+					<figure id="tertiary-swatch">
+						<div class="swatch"></div>
+						<figcaption>tertiary color</figcaption>
+					</figure>
+					<figure id="accent-swatch">
+						<div class="swatch"></div>
+						<figcaption>accent color</figcaption>
+					</figure>
+				</div>
+				<p id="musical-typography"></p>
+				<div class="headers row">
+					<figure><h1><small><em>the</em></small>Primary Header</h1></figure>
+					<figure><h2><small><em>the</em></small>Secondary Header</h2></figure>
+					<figure><h3><small><em>the</em></small>Tertiary Header</h3></figure>
+					<figure><h4><small><em>the</em></small>Quaternary Header</h4></figure>
+					<figure><h5><small><em>the</em></small>Quinary Header</h5></figure>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laudantium, ullam, natus fugit aspernatur aliquam voluptatem earum nesciunt necessitatibus magni et fuga nostrum quae exercitationem veritatis nisi minima sed impedit.</p>
+				<div class="uber row">
+					<figure><h1><small><em>the</em></small>Primary Header</h1></figure>
+					<figure><h2><small><em>the</em></small>Secondary Header</h2></figure>
+					<figure><h3><small><em>the</em></small>Tertiary Header</h3></figure>
+					<figure><h4><small><em>the</em></small>Quaternary Header</h4></figure>
+					<figure><h5><small><em>the</em></small>Quinary Header</h5></figure>
+				</div>
+				<p class="uber">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, laudantium, ullam, natus fugit aspernatur aliquam voluptatem earum nesciunt necessitatibus magni et fuga nostrum quae exercitationem veritatis nisi minima sed impedit.</p>
+			</section>
+		</article>		
 	</main>
 	
 </body>

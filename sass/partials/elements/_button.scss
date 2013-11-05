@@ -1,5 +1,0 @@
-button{
-	background-color: $color-primary;
-	@include box-shadow($color-primary);
-	height: #{ceil($height-form-input)};
-	color: $color-background;}

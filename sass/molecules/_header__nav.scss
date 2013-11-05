@@ -1,0 +1,51 @@
+header>nav{
+	float: right;
+	@include media-to($length-mobile-cutoff){
+		
+	}
+	address{
+		float: right;
+		height: $unit__header--height;
+		align-items: center;
+		display: flex;
+		a{
+			height: #{$unit__header--height};
+			&, &:before{
+				color: $color-primary;
+				text-decoration: none;}}}
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		li{
+			display: flex;
+			padding: 0 0.5rem;
+			height: $unit__header--height;
+			align-items: center;
+			&:hover{
+				background-color: $color-primary;
+				color: $color-background;
+				>ul{
+					max-width: 4000px;
+					margin-left: 0.5rem;
+					margin-right: -0.5rem;
+					border-color: $color-background;
+					border-width: 1px;
+					>li{
+						&:hover{
+							background-color: $color-drawer;
+							color: $color-text;
+							@include box-shadow($color-drawer);
+							>a{
+								color: $color-text;}}}}}
+			a{
+				text-decoration: none;
+				&:hover{
+					color: $color-background;}}
+			>ul{
+				max-width: 0;
+				overflow: hidden;
+				border-left: 0px solid transparent;
+				border-right: 0px solid transparent;
+				@include prefixer(transition, all $length__transition $style__animation-ease);}}}}

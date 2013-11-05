@@ -1,4 +1,4 @@
-<?php inc("phpartials/header.php") ?>
+<?php include "phpartials/header.php"; ?>
   <main>
 	<form name="my-form" action="https://picni.cc/api/v1/build/" method="post">
   <input type="hidden" name="username" value="herrshuster">
@@ -42,4 +42,6 @@
 </form>
 </main>
 </body>
+    <script src="javascripts/scripts.js"></script>
+
 </html>

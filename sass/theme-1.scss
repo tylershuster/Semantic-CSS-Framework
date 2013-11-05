@@ -1,4 +1,5 @@
 /* { picnicc: style } */
+@import "laws/variables";
 //////////////////
 //TYPOGRAPHY
 //////////////////
@@ -6,12 +7,8 @@ $key: c;
 $quality: maj;
 $sans: Open Sans;
 $serif: Gentium Basic;
-$body-font: $serif;
-$heading-font: $sans;
-//human-font, machine-font, copy-font
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
-@import url("http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic");
-@import url("http://fonts.googleapis.com/css?family=Source+Code+Pro:500");
+$body-font: $sans;
+$heading-font: $serif;
 //////////////////
 //COLOR
 //////////////////
@@ -22,10 +19,50 @@ $tone: white;//white, light, dark, black
 //OTHER
 //////////////////
 $icons: no;
-$skeu: flat;
-$glass: no;
-$grid: on;
+$skeu: faux-flat;
+$material: none;
+$grid: off;
+//////////////////
+//VARIABLES
+//////////////////
+//COLORS
+//http://www.creativecolorschemes.com/resources/free-color-schemes/images/earth-tone-color-combinations.png
+//$color-primary: $color__earth-tone--m;
+//$color-secondary: $color__earth-tone--k;
+//$color-tertiary: $color__earth-tone--n;
+//$color-text: $color__earth-tone--j;
+//$color-accent: $color__earth-tone--sky;
+//$color-background: white;
+//$color-drawer:  $color__earth-tone--l;
+
+//$unit__line-height: 1.5rem;
+//BF7960
+//
+//$em: 16;
+//$unit__base-x-one: $em * 8;
+//$unit__base-x-two: $unit__base-x-one * 2;
+//$unit__base-x-three: $unit__base-x-one * 3;
+//$unit__base-x-five: $unit__base-x-one * 5;
+//$unit__base-x-eight: $unit__base-x-one * 8;
+//$unit__base-x-thirteen: $unit__base-x-one * 13;
+//$font-base: null;
+//$max-width: 40em;
+//$unit__header--height: 3rem;
+//$unit__nav--height: 3rem;
+//$length__transition: 0.2s;
+//$color__3d--dark: rgba(0,0,0,0.5);
+//$color__3d--light: rgba(255,255,255,0.5);
+//$unit__border-radius: 2px;
+//$unit__header--opacity: 1;
+//$unit__shadow-size: 1px;
+//$unit__shadow-blur: 5px;
+//$unit__shadow-opacity: 0.5;
+//$height-form-input: 1.5rem;
+//$style__animation-ease: ease-in-out;
+//human-font, machine-font, copy-font
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
+@import url("http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic");
+@import url("http://fonts.googleapis.com/css?family=Source+Code+Pro:500");
 /*Set in the key of #{$key} #{$quality}. #{$scheme} color scheme based on #{$color} with a #{$tone} background.*/
-//@import "style";
-@import "atomic/atomic";
+@import "style";
 /* { / picnicc } */

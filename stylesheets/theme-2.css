@@ -5,15 +5,13 @@
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 /* { picnicc: style } */
 /*Set in the key of d aug. mono color scheme based on #23225f with a dark background.*/
-/*--------------------------main.scss-------------------------------*/
-/*human-font, machine-font, copy-font*/
 /* Defaults*/
 /* mono, complement, triad, tetrad, analogic, accented-analogic*/
 /* rgb, ryb*/
 /* Partials*/
 /* Tell other files that this is loaded.*/
 /*light if tone is dark, dark if tone is light, light if tone is white, dark if tone is black*/
-/* line 113, ../sass/partials/base/utilities/color/_color-schemer.scss */
+/* line 113, ../sass/laws/color/_color-schemer.scss */
 * body {
   color: #a2a1dd;
   background: -webkit-linear-gradient(#151438, #201f41);
@@ -21,500 +19,6 @@
   background-repeat: no-repeat;
 }
 
-/* line 41, ../sass/partials/base/utilities/_layout.scss */
-body {
-  width: 100%;
-  *zoom: 1;
-}
-/* line 27, ../sass/partials/base/utilities/_layout.scss */
-body:before, body:after {
-  content: "";
-  display: table;
-}
-/* line 31, ../sass/partials/base/utilities/_layout.scss */
-body:after {
-  clear: both;
-}
-/* line 45, ../sass/partials/base/utilities/_layout.scss */
-body:after {
-  display: block;
-}
-
-/*
-@if $quality ==  maj{}
-@else if $quality ==  dim{}
-@else if $quality ==  aug{}
-@else if $quality ==  augmin7{}
-@else if $quality ==  sus{}
-@else if $quality ==  sus2{}
-@else if $quality ==  eleventh{}
-@else if $quality ==  min7{}
-@else if $quality ==  maj7{}
-@else if $quality ==  dom7{}
-@else if $quality ==  dim7{}
-@else if $quality ==  min6{}
-@else if $quality ==  maj6{}
-@else if $quality ==  domflat9{}
-@else if $quality ==  domsharp9{}
-@else if $quality ==  min9{}
-@else if $quality ==  maj9{}
-@else if $quality ==  perfect5{}
-*/
-/* line 1, ../sass/partials/_base.scss */
-html {
-  height: 100%;
-}
-
-/* line 4, ../sass/partials/_base.scss */
-body {
-  height: calc(100% - 5rem);
-  overflow-x: hidden;
-}
-@media all and (min-width: 0px) and (max-width: 1024px) {
-  /* line 4, ../sass/partials/_base.scss */
-  body {
-    height: calc(100% - 3rem);
-  }
-}
-
-/* line 10, ../sass/partials/_base.scss */
-main {
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: visible;
-}
-
-/* line 16, ../sass/partials/_base.scss */
-[data-background-image*="http"] {
-  background-image: attr(data-background-image url);
-}
-
-/* line 22, ../sass/partials/_base.scss */
-#swatches {
-  width: 100%;
-  display: block;
-  background-color: #151438;
-  max-width: 800px;
-  margin: 0 auto;
-}
-/* line 28, ../sass/partials/_base.scss */
-#swatches > * {
-  width: 100%;
-}
-
-/* line 36, ../sass/partials/_base.scss */
-.colors,
-.headers {
-  display: table;
-  table-layout: fixed;
-  height: 128px;
-}
-/* line 40, ../sass/partials/_base.scss */
-.colors > *,
-.headers > * {
-  display: table-cell;
-  height: 100%;
-  vertical-align: middle;
-  text-align: center;
-}
-
-/* line 47, ../sass/partials/_base.scss */
-.colors {
-  background-color: #23225e;
-  margin-top: 1rem;
-  border: 1px solid;
-  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
-  border-radius: 1px;
-}
-/* line 51, ../sass/partials/_base.scss */
-.colors > * {
-  padding: 1rem;
-}
-
-/* line 55, ../sass/partials/_base.scss */
-p#color-description {
-  width: 100%;
-  content: "Color scheme based on #ffed5b";
-}
-
-/* line 59, ../sass/partials/_base.scss */
-p#musical-typography {
-  width: 100%;
-  content: "set in d aug";
-}
-
-/* line 64, ../sass/partials/_base.scss */
-.swatch {
-  height: 128px;
-}
-
-/* line 68, ../sass/partials/_base.scss */
-#primary-swatch .swatch {
-  background-color: #ffed5b;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
-}
-/* line 72, ../sass/partials/_base.scss */
-#primary-swatch figcaption {
-  color: #ffed5b;
-  background-color: #151438;
-  border: 1px solid;
-  border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
-  border-radius: 1px;
-}
-
-/* line 79, ../sass/partials/_base.scss */
-#secondary-swatch .swatch {
-  background-color: #f6cd51;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #f6cf59 #e9c24c #e9c24c #f6cf59;
-}
-/* line 83, ../sass/partials/_base.scss */
-#secondary-swatch figcaption {
-  color: #f6cd51;
-  background-color: #151438;
-  border: 1px solid;
-  border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
-  border-radius: 1px;
-}
-
-/* line 90, ../sass/partials/_base.scss */
-#tertiary-swatch .swatch {
-  background-color: #f6cd51;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #f6cf59 #e9c24c #e9c24c #f6cf59;
-}
-/* line 94, ../sass/partials/_base.scss */
-#tertiary-swatch figcaption {
-  color: #f6cd51;
-  background-color: #151438;
-  border: 1px solid;
-  border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
-  border-radius: 1px;
-}
-
-/* line 101, ../sass/partials/_base.scss */
-#accent-swatch .swatch {
-  background-color: #ffed5b;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
-}
-/* line 105, ../sass/partials/_base.scss */
-#accent-swatch figcaption {
-  color: #ffed5b;
-  background-color: #151438;
-  border: 1px solid;
-  border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
-  border-radius: 1px;
-}
-
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-/* line 22, ../sass/partials/base/_normalize.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-/* line 32, ../sass/partials/base/_normalize.scss */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-/* line 41, ../sass/partials/base/_normalize.scss */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 50, ../sass/partials/base/_normalize.scss */
-[hidden] {
-  display: none;
-}
-
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-/* line 64, ../sass/partials/base/_normalize.scss */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/**
- * Remove default margin.
- */
-/* line 74, ../sass/partials/base/_normalize.scss */
-body {
-  margin: 0;
-}
-
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-/* line 86, ../sass/partials/base/_normalize.scss */
-a:focus {
-  outline: thin dotted;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-/* line 95, ../sass/partials/base/_normalize.scss */
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-/* line 113, ../sass/partials/base/_normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 122, ../sass/partials/base/_normalize.scss */
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-/* line 130, ../sass/partials/base/_normalize.scss */
-dfn {
-  font-style: italic;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-/* line 138, ../sass/partials/base/_normalize.scss */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 148, ../sass/partials/base/_normalize.scss */
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-/* line 160, ../sass/partials/base/_normalize.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-/* line 169, ../sass/partials/base/_normalize.scss */
-pre {
-  white-space: pre-wrap;
-}
-
-/**
- * Set consistent quote types.
- */
-/* line 177, ../sass/partials/base/_normalize.scss */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-/* line 192, ../sass/partials/base/_normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 199, ../sass/partials/base/_normalize.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 203, ../sass/partials/base/_normalize.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-/* line 215, ../sass/partials/base/_normalize.scss */
-img {
-  border: 0;
-}
-
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-/* line 223, ../sass/partials/base/_normalize.scss */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-/* line 235, ../sass/partials/base/_normalize.scss */
-figure {
-  margin: 0;
-}
-
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-/**
- * Define consistent border, margin, and padding.
- */
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-/* line 256, ../sass/partials/base/_normalize.scss */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 270, ../sass/partials/base/_normalize.scss */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 2 */
-  margin: 0;
-  /* 3 */
-}
-
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-/* line 282, ../sass/partials/base/_normalize.scss */
-button,
-input {
-  line-height: normal;
-}
-
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
-/* line 294, ../sass/partials/base/_normalize.scss */
-button,
-select {
-  text-transform: none;
-}
-
-/*______________________________________________________________________________________________*/
-/*______________________________________________________________________________________________*/
-/*______________________________________________________________________________________________*/
-/*______________________________________________________________________________________________*/
-/*_____________________________________GOT TO HERE______________________________________________*/
-/*______________________________________________________________________________________________*/
-/*______________________________________________________________________________________________*/
-/*______________________________________________________________________________________________*/
-/*______________________________________________________________________________________________*/
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
  *    and `video` controls.
@@ -522,7 +26,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 317, ../sass/partials/base/_normalize.scss */
+/* line 12, ../sass/laws/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -536,7 +40,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 327, ../sass/partials/base/_normalize.scss */
+/* line 22, ../sass/laws/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -546,7 +50,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 337, ../sass/partials/base/_normalize.scss */
+/* line 32, ../sass/laws/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -560,7 +64,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 348, ../sass/partials/base/_normalize.scss */
+/* line 43, ../sass/laws/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -574,7 +78,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 361, ../sass/partials/base/_normalize.scss */
+/* line 56, ../sass/laws/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -583,7 +87,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 370, ../sass/partials/base/_normalize.scss */
+/* line 65, ../sass/laws/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -594,7 +98,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 380, ../sass/partials/base/_normalize.scss */
+/* line 75, ../sass/laws/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -608,7 +112,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 393, ../sass/partials/base/_normalize.scss */
+/* line 88, ../sass/laws/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -617,12 +121,12 @@ table {
 /*------------------------------------*\
     Reset adapted from Formalize
 \*------------------------------------*/
-/* line 405, ../sass/partials/base/_normalize.scss */
+/* line 100, ../sass/laws/_normalize.scss */
 input[type="search"]::-webkit-search-decoration {
   display: none;
 }
 
-/* line 413, ../sass/partials/base/_normalize.scss */
+/* line 108, ../sass/laws/_normalize.scss */
 input:invalid,
 button:invalid,
 a.button:invalid,
@@ -633,7 +137,7 @@ textarea:invalid {
   box-shadow: none;
 }
 
-/* line 422, ../sass/partials/base/_normalize.scss */
+/* line 117, ../sass/laws/_normalize.scss */
 input:focus,
 button:focus,
 a.button:focus,
@@ -643,7 +147,7 @@ textarea:focus {
   outline: none;
 }
 
-/* line 431, ../sass/partials/base/_normalize.scss */
+/* line 126, ../sass/laws/_normalize.scss */
 input[type="file"]:focus, input[type="file"]:active,
 input[type="radio"]:focus,
 input[type="radio"]:active,
@@ -655,7 +159,7 @@ input[type="checkbox"]:active {
   outline: none;
 }
 
-/* line 442, ../sass/partials/base/_normalize.scss */
+/* line 137, ../sass/laws/_normalize.scss */
 button,
 a.button,
 input[type="reset"],
@@ -673,7 +177,7 @@ input[type="button"] {
   *padding-bottom: 0;
 }
 
-/* line 465, ../sass/partials/base/_normalize.scss */
+/* line 160, ../sass/laws/_normalize.scss */
 button:hover,
 a.button:hover,
 input[type="reset"]:hover,
@@ -682,7 +186,7 @@ input[type="button"]:hover {
   text-decoration: none;
 }
 
-/* line 480, ../sass/partials/base/_normalize.scss */
+/* line 175, ../sass/laws/_normalize.scss */
 button::-moz-focus-inner,
 a.button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
@@ -692,7 +196,7 @@ input[type="button"]::-moz-focus-inner {
   padding: 0;
 }
 
-/* line 501, ../sass/partials/base/_normalize.scss */
+/* line 196, ../sass/laws/_normalize.scss */
 textarea,
 select,
 input[type="date"],
@@ -721,7 +225,7 @@ input[type="week"] {
   *height: auto;
 }
 
-/* line 533, ../sass/partials/base/_normalize.scss */
+/* line 228, ../sass/laws/_normalize.scss */
 textarea[disabled],
 select[disabled],
 input[type="date"][disabled],
@@ -740,7 +244,7 @@ input[type="week"][disabled] {
   background-color: #eeeeee;
 }
 
-/* line 543, ../sass/partials/base/_normalize.scss */
+/* line 238, ../sass/laws/_normalize.scss */
 button[disabled],
 input[disabled],
 select[disabled],
@@ -759,46 +263,46 @@ a.button_disabled {
   cursor: default;
 }
 
-/* line 556, ../sass/partials/base/_normalize.scss */
+/* line 251, ../sass/laws/_normalize.scss */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #888888;
 }
 
-/* line 561, ../sass/partials/base/_normalize.scss */
+/* line 256, ../sass/laws/_normalize.scss */
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #888888;
 }
 
-/* line 566, ../sass/partials/base/_normalize.scss */
+/* line 261, ../sass/laws/_normalize.scss */
 input.placeholder_text,
 textarea.placeholder_text {
   color: #888888;
 }
 
-/* line 572, ../sass/partials/base/_normalize.scss */
+/* line 267, ../sass/laws/_normalize.scss */
 textarea,
 select[size],
 select[multiple] {
   height: auto;
 }
 
-/* line 577, ../sass/partials/base/_normalize.scss */
+/* line 272, ../sass/laws/_normalize.scss */
 select[size="0"],
 select[size="1"] {
   *height: auto;
 }
 
 @media (-webkit-min-device-pixel-ratio: 0) {
-  /* line 584, ../sass/partials/base/_normalize.scss */
+  /* line 279, ../sass/laws/_normalize.scss */
   select[size],
   select[multiple],
   select[multiple][size] {
     background-image: none;
   }
 
-  /* line 594, ../sass/partials/base/_normalize.scss */
+  /* line 289, ../sass/laws/_normalize.scss */
   ::-webkit-validation-bubble-message {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -811,7 +315,7 @@ select[size="1"] {
     min-height: 16px;
   }
 
-  /* line 608, ../sass/partials/base/_normalize.scss */
+  /* line 303, ../sass/laws/_normalize.scss */
   ::-webkit-validation-bubble-arrow,
   ::-webkit-validation-bubble-top-outer-arrow,
   ::-webkit-validation-bubble-top-inner-arrow {
@@ -821,7 +325,7 @@ select[size="1"] {
     border-color: #666666;
   }
 }
-/* line 615, ../sass/partials/base/_normalize.scss */
+/* line 310, ../sass/laws/_normalize.scss */
 textarea {
   min-height: 40px;
   overflow: auto;
@@ -829,20 +333,20 @@ textarea {
   width: 100%;
 }
 
-/* line 622, ../sass/partials/base/_normalize.scss */
+/* line 317, ../sass/laws/_normalize.scss */
 optgroup {
   color: black;
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 627, ../sass/partials/base/_normalize.scss */
+/* line 322, ../sass/laws/_normalize.scss */
 optgroup::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 634, ../sass/partials/base/_normalize.scss */
+/* line 329, ../sass/laws/_normalize.scss */
 .ie6_button,
 * html button,
 * html a.button {
@@ -858,20 +362,20 @@ optgroup::-moz-focus-inner {
   width: auto;
 }
 
-/* line 647, ../sass/partials/base/_normalize.scss */
+/* line 342, ../sass/laws/_normalize.scss */
 * html a.button {
   position: relative;
   top: 3px;
   padding-bottom: 2px;
 }
 
-/* line 653, ../sass/partials/base/_normalize.scss */
+/* line 348, ../sass/laws/_normalize.scss */
 * html button {
   padding-top: 1px;
   padding-bottom: 1px;
 }
 
-/* line 660, ../sass/partials/base/_normalize.scss */
+/* line 355, ../sass/laws/_normalize.scss */
 .ie6_input,
 * html textarea,
 * html select {
@@ -880,858 +384,249 @@ optgroup::-moz-focus-inner {
   vertical-align: top;
 }
 
-/* line 667, ../sass/partials/base/_normalize.scss */
+/* line 362, ../sass/laws/_normalize.scss */
 * html select {
   margin-top: 1px;
 }
 
-/* line 673, ../sass/partials/base/_normalize.scss */
+/* line 368, ../sass/laws/_normalize.scss */
 .placeholder_text,
 .ie6_input_disabled,
 .ie6_button_disabled {
   color: #888888;
 }
 
-/* line 677, ../sass/partials/base/_normalize.scss */
+/* line 372, ../sass/laws/_normalize.scss */
 .ie6_input_disabled {
   background: #eeeeee;
 }
 
-/* line 681, ../sass/partials/base/_normalize.scss */
+/* line 376, ../sass/laws/_normalize.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 26, ../sass/partials/base/_typography.scss */
+/* line 41, ../sass/laws/_mixins.scss */
+body {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 27, ../sass/laws/_mixins.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../sass/laws/_mixins.scss */
+body:after {
+  clear: both;
+}
+/* line 44, ../sass/laws/_mixins.scss */
+body:after {
+  display: block;
+}
+
+/* line 26, ../sass/laws/_phi.scss */
 html {
   font-size: 112.5%;
 }
 
 @media only screen and (min-width: 256px) and (max-width: 384px) {
-  /* line 28, ../sass/partials/base/_typography.scss */
+  /* line 28, ../sass/laws/_phi.scss */
   html {
     font-size: 100%;
   }
 }
 @media only screen and (min-width: 128px) and (max-width: 256px) {
-  /* line 30, ../sass/partials/base/_typography.scss */
+  /* line 30, ../sass/laws/_phi.scss */
   html {
     font-size: 87.5%;
   }
 }
-/* line 57, ../sass/partials/base/_typography.scss */
-small {
-  color: #5b5a8a;
-  font-size: 0.85rem;
-  line-height: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* line 67, ../sass/partials/base/_typography.scss */
-h1 {
-  font-size: 1.62rem;
-  line-height: 2rem;
-  padding-top: 0.38rem;
-  padding-bottom: 0.6rem;
-  font-weight: bold;
-  font-style: italic;
-  margin: 0;
-  color: #ffed5b;
-  font-family: "Open Sans";
-}
-/* line 71, ../sass/partials/base/_typography.scss */
-h1 > small {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  color: #8a8049;
-  line-height: 1em;
-  display: inline;
-}
-/* line 77, ../sass/partials/base/_typography.scss */
-h1.uber, .uber h1 {
-  font-size: 3.24rem;
-  line-height: 4rem;
-  padding-top: 0.76rem;
-  padding-bottom: 1.2rem;
-  font-weight: bold;
-  font-style: italic;
-  margin: 0;
-}
-/* line 79, ../sass/partials/base/_typography.scss */
-h1.uber small, .uber h1 small {
-  font-size: 2.5rem;
-  line-height: 4rem;
-  padding-top: 1.1rem;
-  padding-bottom: 0.9rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-}
-
-/* line 82, ../sass/partials/base/_typography.scss */
-h2 {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  color: #f6cd51;
-  font-family: "Open Sans";
-}
-/* line 86, ../sass/partials/base/_typography.scss */
-h2 > small {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  color: #857044;
-  line-height: 1em;
-  display: inline;
-}
-/* line 92, ../sass/partials/base/_typography.scss */
-h2.uber, .uber h2 {
-  font-size: 2.5rem;
-  line-height: 4rem;
-  padding-top: 1.1rem;
-  padding-bottom: 0.9rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-}
-/* line 94, ../sass/partials/base/_typography.scss */
-h2.uber small, .uber h2 small {
-  font-size: 2.5rem;
-  line-height: 4rem;
-  padding-top: 1.1rem;
-  padding-bottom: 0.9rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-}
-
-/* line 97, ../sass/partials/base/_typography.scss */
-h3 {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  color: #f6cd51;
-  font-family: "Open Sans";
-}
-/* line 101, ../sass/partials/base/_typography.scss */
-h3 > small {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  color: #857044;
-  line-height: 1em;
-  display: inline;
-}
-/* line 107, ../sass/partials/base/_typography.scss */
-h3.uber, .uber h3 {
-  font-size: 2.5rem;
-  line-height: 4rem;
-  padding-top: 1.1rem;
-  padding-bottom: 0.9rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-}
-/* line 109, ../sass/partials/base/_typography.scss */
-h3.uber small, .uber h3 small {
-  font-size: 2.5rem;
-  line-height: 4rem;
-  padding-top: 1.1rem;
-  padding-bottom: 0.9rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-}
-
-/* line 112, ../sass/partials/base/_typography.scss */
-h4 {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  color: #a2a1dd;
-  font-family: "Open Sans";
-}
-/* line 116, ../sass/partials/base/_typography.scss */
-h4 > small {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  color: #5b5a8a;
-  line-height: 1em;
-  display: inline;
-}
-/* line 122, ../sass/partials/base/_typography.scss */
-h4.uber, .uber h4 {
-  font-size: 2.5rem;
-  line-height: 4rem;
-  padding-top: 1.1rem;
-  padding-bottom: 0.9rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-}
-/* line 124, ../sass/partials/base/_typography.scss */
-h4.uber small, .uber h4 small {
-  font-size: 2.5rem;
-  line-height: 4rem;
-  padding-top: 1.1rem;
-  padding-bottom: 0.9rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-}
-
-/* line 127, ../sass/partials/base/_typography.scss */
-h5 {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  margin: 0;
-  color: #a2a1dd;
-  font-family: "Open Sans";
-}
-/* line 132, ../sass/partials/base/_typography.scss */
-h5 > small {
-  font-size: 1rem;
-  line-height: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-  color: #5b5a8a;
-  line-height: 1em;
-  display: inline;
-}
-/* line 138, ../sass/partials/base/_typography.scss */
-h5.uber, .uber h5 {
-  font-size: 2.5rem;
-  line-height: 4rem;
-  padding-top: 1.1rem;
-  padding-bottom: 0.9rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-}
-/* line 140, ../sass/partials/base/_typography.scss */
-h5.uber small, .uber h5 small {
-  font-size: 2rem;
-  line-height: 4rem;
-  padding-top: 1.5rem;
-  padding-bottom: 0.5rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-}
-
-/* line 143, ../sass/partials/base/_typography.scss */
-p, time {
-  font-size: 1rem;
-  line-height: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-  line-height: 2rem;
-  font-family: "Gentium Basic";
-}
-/* line 148, ../sass/partials/base/_typography.scss */
-p.uber, .uber p, time.uber, .uber time {
-  font-size: 2rem;
-  line-height: 4rem;
-  padding-top: 1.5rem;
-  padding-bottom: 0.5rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-}
-
-/* line 151, ../sass/partials/base/_typography.scss */
-a, a:visited {
-  color: inherit;
-  text-decoration: underline;
-}
-/* line 154, ../sass/partials/base/_typography.scss */
-a:hover, a:visited:hover {
-  color: #ffed5b;
-}
-
-/* line 157, ../sass/partials/base/_typography.scss */
-small:before {
-  content: " ";
-}
-
-/*needs to be less intrusive
-p.drop-cap:first-letter, article>p:first-of-type:first-letter, article>h1 + p:first-letter{
-	float: left;
-	margin-right: 1rem;
-	font-size: 7em;
-	line-height: 0.9;
-	margin-bottom: -0.1em;
-
-}
-
-article>h2 + p:first-letter, article>h3 + p:first-letter, article>h4 + p:first-letter, article>h5 + p:first-letter{
-	float: left;
-	margin-right: 0.5rem;
-	font-size: 4em;
-	line-height: 1;	
-}
-
-
-article>p:first-of-type::first-line{font-variant:small-caps;text-transform:lowercase;}*/
-/* line 2, ../sass/partials/elements/_address.scss */
-address span {
-  display: block;
-}
-/* line 4, ../sass/partials/elements/_address.scss */
-address a.tel {
-  font-style: normal;
-  display: block;
-}
-/* line 7, ../sass/partials/elements/_address.scss */
-address a.html {
-  font-style: normal;
-  display: block;
-}
-/* line 10, ../sass/partials/elements/_address.scss */
-address a.mail {
-  display: block;
-  height: 1rem;
-}
-/* line 13, ../sass/partials/elements/_address.scss */
-address a.mail span {
-  display: block;
-  float: left;
-  font-style: normal;
-}
-/* line 17, ../sass/partials/elements/_address.scss */
-address a.mail span:after {
-  content: "\00a0";
-}
-/* line 25, ../sass/partials/elements/_address.scss */
-address a.email {
-  font-style: normal;
-  display: block;
-}
-/* line 28, ../sass/partials/elements/_address.scss */
-address a.gps {
-  font-style: normal;
-  display: block;
-}
-/* line 42, ../sass/partials/elements/_address.scss */
-address a[href*="twitter.com/"] {
-  display: block;
-  height: 1rem;
-  float: left;
-  padding: 0 0.5rem;
-}
-/* line 36, ../sass/partials/elements/_address.scss */
-address a[href*="twitter.com/"]:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  font-style: normal;
-  float: left;
-}
-/* line 44, ../sass/partials/elements/_address.scss */
-address a[href*="twitter.com/"]:before {
-  content: "\f309";
-}
-/* line 46, ../sass/partials/elements/_address.scss */
-address a[href*="plus.google.com/"] {
-  display: block;
-  height: 1rem;
-  float: left;
-  padding: 0 0.5rem;
-}
-/* line 36, ../sass/partials/elements/_address.scss */
-address a[href*="plus.google.com/"]:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  font-style: normal;
-  float: left;
-}
-/* line 48, ../sass/partials/elements/_address.scss */
-address a[href*="plus.google.com/"]:before {
-  content: "\f30f";
-}
-/* line 50, ../sass/partials/elements/_address.scss */
-address a[href*="facebook.com/"] {
-  display: block;
-  height: 1rem;
-  float: left;
-  padding: 0 0.5rem;
-}
-/* line 36, ../sass/partials/elements/_address.scss */
-address a[href*="facebook.com/"]:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  font-style: normal;
-  float: left;
-}
-/* line 52, ../sass/partials/elements/_address.scss */
-address a[href*="facebook.com/"]:before {
-  content: "\f30c";
-}
-/* line 54, ../sass/partials/elements/_address.scss */
-address a[href*="linkedin.com/"] {
-  display: block;
-  height: 1rem;
-  float: left;
-  padding: 0 0.5rem;
-}
-/* line 36, ../sass/partials/elements/_address.scss */
-address a[href*="linkedin.com/"]:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  font-style: normal;
-  float: left;
-}
-/* line 56, ../sass/partials/elements/_address.scss */
-address a[href*="linkedin.com/"]:before {
-  content: "\f318";
-}
-/* line 58, ../sass/partials/elements/_address.scss */
-address a[href*="tumblr"] {
-  display: block;
-  height: 1rem;
-  float: left;
-  padding: 0 0.5rem;
-}
-/* line 36, ../sass/partials/elements/_address.scss */
-address a[href*="tumblr"]:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  font-style: normal;
-  float: left;
-}
-/* line 60, ../sass/partials/elements/_address.scss */
-address a[href*="tumblr"]:before {
-  content: "\f315";
-}
-/* line 62, ../sass/partials/elements/_address.scss */
-address a.instagram {
-  display: block;
-  height: 1rem;
-  float: left;
-  padding: 0 0.5rem;
-}
-/* line 36, ../sass/partials/elements/_address.scss */
-address a.instagram:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  font-style: normal;
-  float: left;
-}
-/* line 64, ../sass/partials/elements/_address.scss */
-address a.instagram:before {
-  content: "\f32d";
-}
-/* line 66, ../sass/partials/elements/_address.scss */
-address a.dribbble {
-  display: block;
-  height: 1rem;
-  float: left;
-  padding: 0 0.5rem;
-}
-/* line 36, ../sass/partials/elements/_address.scss */
-address a.dribbble:before {
-  display: block;
-  font-family: "Entypo";
-  text-decoration: none;
-  font-style: normal;
-  float: left;
-}
-/* line 68, ../sass/partials/elements/_address.scss */
-address a.dribbble:before {
-  content: "\f31b";
-}
-
-/* line 1, ../sass/partials/elements/_article.scss */
-article {
-  max-width: 60em;
-  padding: 0;
-  margin: 0 auto;
-}
-/* line 6, ../sass/partials/elements/_article.scss */
-article > time {
-  /*articles must include the time on which they were published*/
-}
-/* line 8, ../sass/partials/elements/_article.scss */
-article > figure:nth-of-type(odd) {
-  float: right;
-  padding-left: 1rem;
-}
-/* line 11, ../sass/partials/elements/_article.scss */
-article > figure:nth-of-type(even) {
-  padding-right: 1rem;
-}
-/* line 13, ../sass/partials/elements/_article.scss */
-article > figure img {
-  width: 100%;
-}
-/* line 15, ../sass/partials/elements/_article.scss */
-article > aside {
-  width: 100%;
-  padding: 0 1rem;
-  margin-top: -0.25rem;
-  margin-bottom: -0.25rem;
-}
-/* line 20, ../sass/partials/elements/_article.scss */
-article > blockquote {
-  width: 100%;
-}
-/* line 23, ../sass/partials/elements/_article.scss */
-article > p:first-of-type:first-letter,
-article h1 + p:first-letter {
-  color: #ffed5b;
-}
-/* line 25, ../sass/partials/elements/_article.scss */
-article ul {
-  font-family: "Gentium Basic";
-  margin: 0;
-  padding: 0;
-}
-@media all and (min-width: 128px) and (max-width: 256px) {
-  /* line 1, ../sass/partials/elements/_article.scss */
-  article {
-    padding: 0 0.5rem;
-  }
-  /* line 34, ../sass/partials/elements/_article.scss */
-  article > blockquote,
-  article > figure,
-  article > aside {
-    width: calc(100% + 1rem);
-  }
-  /* line 37, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(odd),
-  article > figure:nth-of-type(even) {
-    padding: 0;
-  }
-  /* line 40, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(odd),
-  article > aside:nth-of-type(odd) {
-    right: 0.5rem;
-    margin-right: -0.5rem;
-  }
-  /* line 43, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -0.5rem;
-  }
-  /* line 46, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(even),
-  article > aside:nth-of-type(even) {
-    left: 0.5rem;
-    margin-left: -0.5rem;
-  }
-  /* line 49, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -0.5rem;
+@media only screen and (min-width: 256px) {
+  /* line 58, ../sass/laws/_phi.scss */
+  .row > * {
+    flex-basis: 256px;
   }
 }
-@media all and (min-width: 256px) and (max-width: 384px) {
-  /* line 1, ../sass/partials/elements/_article.scss */
-  article {
-    padding: 0 2rem;
+@media all and (min-width: 1024px) {
+  /* line 64, ../sass/laws/_phi.scss */
+  .row {
+    display: flex;
   }
-  /* line 57, ../sass/partials/elements/_article.scss */
-  article > blockquote,
-  article > figure,
-  article > aside {
-    width: calc(100% + 2rem);
+  /* line 66, ../sass/laws/_phi.scss */
+  .row > * {
+    display: flex;
+    flex-grow: 1;
   }
-  /* line 60, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(odd),
-  article > figure:nth-of-type(even) {
-    padding: 0;
+  /* line 69, ../sass/laws/_phi.scss */
+  .row > .row {
+    max-width: 50%;
+    flex-basis: 49%;
   }
-  /* line 63, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(odd),
-  article > aside:nth-of-type(odd) {
-    right: 1rem;
-    margin-right: -1rem;
+  /* line 72, ../sass/laws/_phi.scss */
+  .row > .two {
+    flex-grow: 2;
   }
-  /* line 66, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -1rem;
+  /* line 74, ../sass/laws/_phi.scss */
+  .row > .three {
+    flex-grow: 3;
   }
-  /* line 69, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(even),
-  article > aside:nth-of-type(even) {
-    left: 1rem;
-    margin-left: -1rem;
-  }
-  /* line 72, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -1rem;
-  }
-}
-@media all and (min-width: 384px) and (max-width: 640px) {
-  /* line 1, ../sass/partials/elements/_article.scss */
-  article {
-    padding: 0 3rem;
-  }
-  /* line 79, ../sass/partials/elements/_article.scss */
-  article > blockquote,
-  article > figure {
-    width: calc(100% + 4rem);
-  }
-  /* line 81, ../sass/partials/elements/_article.scss */
-  article > aside {
-    width: 50%;
-  }
-  /* line 84, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(odd),
-  article > figure:nth-of-type(even) {
-    padding: 0;
-  }
-  /* line 87, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(odd),
-  article > aside:nth-of-type(odd) {
-    right: 2rem;
-    margin-right: -2rem;
-  }
-  /* line 90, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -2rem;
-  }
-  /* line 93, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(even),
-  article > aside:nth-of-type(even) {
-    left: 2rem;
-    margin-left: -2rem;
-  }
-  /* line 96, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -2rem;
+  /* line 76, ../sass/laws/_phi.scss */
+  .row > .four {
+    flex-grow: 4;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 1, ../sass/partials/elements/_article.scss */
-  article {
-    padding: 0 4rem;
+  /* line 80, ../sass/laws/_phi.scss */
+  .row {
+    display: flex;
   }
-  /* line 103, ../sass/partials/elements/_article.scss */
-  article > blockquote,
-  article > figure {
+  /* line 82, ../sass/laws/_phi.scss */
+  .row > * {
+    display: flex;
+    flex-grow: 1;
+  }
+  /* line 85, ../sass/laws/_phi.scss */
+  .row > .row {
+    display: block;
+    width: 100%;
+    flex-basis: 100%;
+  }
+  /* line 89, ../sass/laws/_phi.scss */
+  .row > .row > * {
+    flex-basis: 49%;
+    float: left;
     width: 50%;
-  }
-  /* line 105, ../sass/partials/elements/_article.scss */
-  article > aside {
-    width: 50%;
-  }
-  /* line 108, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(odd),
-  article > aside:nth-of-type(odd) {
-    right: 3rem;
-    margin-right: -3rem;
-  }
-  /* line 111, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -3rem;
-  }
-  /* line 114, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(even),
-  article > aside:nth-of-type(even) {
-    left: 3rem;
-    margin-left: -3rem;
-  }
-  /* line 117, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -3rem;
   }
 }
-@media all and (min-width: 1024px) and (max-width: 1664px) {
-  /* line 1, ../sass/partials/elements/_article.scss */
-  article {
-    padding: 0 5rem;
+@media all and (min-width: 0px) and (max-width: 640px) {
+  /* line 95, ../sass/laws/_phi.scss */
+  .row {
+    display: block;
   }
-  /* line 124, ../sass/partials/elements/_article.scss */
-  article > blockquote,
-  article > figure {
-    width: 50%;
-  }
-  /* line 126, ../sass/partials/elements/_article.scss */
-  article > aside {
-    width: 33%;
-  }
-  /* line 129, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(odd),
-  article > aside:nth-of-type(odd) {
-    right: 4rem;
-    margin-right: -4rem;
-  }
-  /* line 132, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -4rem;
-  }
-  /* line 135, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(even),
-  article > aside:nth-of-type(even) {
-    left: 4rem;
-    margin-left: -4rem;
-  }
-  /* line 138, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -4rem;
+  /* line 97, ../sass/laws/_phi.scss */
+  .row > * {
+    display: block;
   }
 }
-@media all and (min-width: 1664px) {
-  /* line 1, ../sass/partials/elements/_article.scss */
-  article {
-    padding: 0 6rem;
-  }
-  /* line 145, ../sass/partials/elements/_article.scss */
-  article > blockquote,
-  article > figure {
-    width: 50%;
-  }
-  /* line 147, ../sass/partials/elements/_article.scss */
-  article > aside {
-    width: 25%;
-  }
-  /* line 150, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(odd),
-  article > aside:nth-of-type(odd) {
-    right: 5rem;
-    margin-right: -5rem;
-  }
-  /* line 153, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -5rem;
-  }
-  /* line 156, ../sass/partials/elements/_article.scss */
-  article > blockquote:nth-of-type(even),
-  article > aside:nth-of-type(even) {
-    left: 5rem;
-    margin-left: -5rem;
-  }
-  /* line 159, ../sass/partials/elements/_article.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -5rem;
-  }
+/* line 99, ../sass/laws/_phi.scss */
+.row {
+  width: 100%;
+  flex-wrap: wrap;
+  *zoom: 1;
+}
+/* line 27, ../sass/laws/_mixins.scss */
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../sass/laws/_mixins.scss */
+.row:after {
+  clear: both;
 }
 
-/* line 1, ../sass/partials/elements/_aside.scss */
-aside {
-  padding-top: 2px;
-  margin: 0.5rem 0;
-  box-sizing: border-box;
-  position: relative;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: #5b5a8a;
-  font-size: 0.85rem;
-  line-height: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-  font-family: "Open Sans";
+/* line 103, ../sass/laws/_phi.scss */
+.column {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-/* line 11, ../sass/partials/elements/_aside.scss */
-aside h1, aside h2, aside h3, aside h4, aside h5 {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  color: #a2a1dd;
-  font-family: "Gentium Basic";
-}
-/* line 15, ../sass/partials/elements/_aside.scss */
-aside p {
-  color: #5b5a8a;
-  font-size: 0.85rem;
-  line-height: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-  font-family: "Open Sans";
-}
-/* line 19, ../sass/partials/elements/_aside.scss */
-aside ul {
-  text-align: left;
-  list-style-position: inside;
-}
-/* line 22, ../sass/partials/elements/_aside.scss */
-aside ul:nth-of-type(even) {
-  padding-right: 1rem;
-}
-/* line 24, ../sass/partials/elements/_aside.scss */
-aside ul:nth-of-type(odd) {
-  padding-left: 1rem;
-}
-/* line 26, ../sass/partials/elements/_aside.scss */
-aside:nth-of-type(odd) {
-  float: left;
-  text-align: left;
-}
-/* line 29, ../sass/partials/elements/_aside.scss */
-aside:nth-of-type(even) {
-  float: right;
-  text-align: right;
+/* line 106, ../sass/laws/_phi.scss */
+.column > * {
+  margin: 0 auto;
 }
 
-/* line 1, ../sass/partials/elements/_blockquote.scss */
+/**
+* SETUP
+----------------------------------------------------------------------
+*/
+/* line 6, ../sass/laws/_icons.scss */
+a:before, a:after {
+  font-family: 'auticons';
+  font-weight: normal !important;
+  font-style: normal !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 13, ../sass/laws/_icons.scss */
+a:before {
+  padding-right: 0.125em;
+}
+
+/**
+* NEW TAB / WINDOW
+* Appears in conjunction with any of the other rules if applicable
+----------------------------------------------------------------------
+*/
+/**
+* LINKS TO SECURE PAGES
+----------------------------------------------------------------------
+*/
+/**
+* LINK RELATIONS (http://blog.whatwg.org/the-road-to-html-5-link-relations)
+----------------------------------------------------------------------
+*/
+/* author pages */
+/* help pages */
+/* tag archives */
+/* permalinks */
+/* previous and next pages/fragments */
+/**
+* PROTOCOLS
+----------------------------------------------------------------------
+*/
+/* email */
+/* telephone */
+/* source code */
+/**
+* DOCUMENTS
+----------------------------------------------------------------------
+*/
+/* .pdf */
+/* .doc */
+/* text */
+/**
+* RSS & XML
+----------------------------------------------------------------------
+*/
+/**
+* JAVASCRIPT & JSON
+----------------------------------------------------------------------
+*/
+/**
+* IMAGES
+----------------------------------------------------------------------
+*/
+/**
+* DOWNLOADS
+----------------------------------------------------------------------
+*/
+/* executables and generic */
+/* packages */
+/**
+* COMMON SOCIAL PROFILES
+----------------------------------------------------------------------
+*/
+/* twitter */
+/* facebook */
+/* linkedin */
+/* google+ */
+/* youtube */
+/* github */
+/* tumblr */
+/**
+* ARIA PRESSED
+----------------------------------------------------------------------
+*/
+/* line 1, ../sass/atoms/div/_blockquote.scss */
 blockquote {
   padding-top: 2px;
   margin: 1rem 0 0 0;
   box-sizing: border-box;
   text-align: center;
 }
-/* line 6, ../sass/partials/elements/_blockquote.scss */
+/* line 6, ../sass/atoms/div/_blockquote.scss */
 blockquote p {
   font-size: 1.25rem;
   line-height: 2rem;
@@ -1742,68 +637,33 @@ blockquote p {
   margin: 0;
   color: #f6cd51;
 }
-/* line 9, ../sass/partials/elements/_blockquote.scss */
+/* line 9, ../sass/atoms/div/_blockquote.scss */
 blockquote > img {
   width: 100%;
   border-radius: 2px;
 }
-/* line 12, ../sass/partials/elements/_blockquote.scss */
-article blockquote:nth-of-type(odd) {
-  float: left;
-  text-align: right;
-  position: relative;
-  padding-right: 1rem;
-}
-/* line 17, ../sass/partials/elements/_blockquote.scss */
-article blockquote:nth-of-type(odd) > cite {
-  float: right;
-  text-align: right;
-}
-/* line 20, ../sass/partials/elements/_blockquote.scss */
-article blockquote:nth-of-type(even) {
-  float: right;
-  text-align: left;
-  position: relative;
-  padding-left: 1rem;
-}
-/* line 25, ../sass/partials/elements/_blockquote.scss */
-article blockquote:nth-of-type(even) > cite {
-  float: left;
-  text-align: left;
-}
-/* line 28, ../sass/partials/elements/_blockquote.scss */
-blockquote > cite {
-  font-family: Open Sans;
-  color: #f6cd51;
+
+/* line 1, ../sass/atoms/div/_dd.scss */
+dd {
   font-size: 0.85rem;
   line-height: 1rem;
-  margin-bottom: 1rem;
-}
-/* line 34, ../sass/partials/elements/_blockquote.scss */
-blockquote > cite:before {
-  content: "- ";
-}
-
-/* line 1, ../sass/partials/elements/_button.scss */
-button {
-  background-color: #ffed5b;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
-  height: 2rem;
-  color: #151438;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
 }
 
-/* line 1, ../sass/partials/elements/_definitions.scss */
+/* line 1, ../sass/atoms/div/_dl.scss */
 dl {
   float: left;
   clear: both;
   font-family: "Gentium Basic";
   margin: 0;
 }
-/* line 6, ../sass/partials/elements/_definitions.scss */
-dl dt {
+
+/* line 1, ../sass/atoms/div/_dt.scss */
+dt {
   font-size: 1rem;
   line-height: 2rem;
   padding-top: 0.75rem;
@@ -1812,1857 +672,111 @@ dl dt {
   font-style: normal;
   margin: 0;
 }
-/* line 8, ../sass/partials/elements/_definitions.scss */
-dl dd {
-  font-size: 0.85rem;
-  line-height: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-}
-/* line 10, ../sass/partials/elements/_definitions.scss */
-dl ol {
-  counter-reset: li;
-  padding: 0;
-}
-/* line 14, ../sass/partials/elements/_definitions.scss */
-dl ol dt {
-  font-size: 1.25rem;
-  font-weight: bold;
-  display: inline;
-  padding: 0;
-  line-height: 1.25rem;
-  margin-left: -2rem;
-}
-/* line 21, ../sass/partials/elements/_definitions.scss */
-dl ol dd {
-  font-size: 1rem;
-  line-height: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-}
-/* line 23, ../sass/partials/elements/_definitions.scss */
-dl ol li {
-  padding: 0 0 1rem 0;
-  display: inline;
-  float: left;
-  width: 100%;
-}
-/* line 28, ../sass/partials/elements/_definitions.scss */
-dl ol li ol {
-  padding: 0;
-  display: inline;
-}
-/* line 31, ../sass/partials/elements/_definitions.scss */
-dl ol li ol li {
-  float: none;
-}
-/* line 33, ../sass/partials/elements/_definitions.scss */
-dl ol li ol li:before {
-  content: counter(li) ".";
-  counter-increment: li;
-  margin-right: 0.2rem;
-  font-weight: bold;
-}
-/* line 38, ../sass/partials/elements/_definitions.scss */
-dl ol li ol dd {
-  margin: 0;
-  display: inline;
-}
 
-/* line 2, ../sass/partials/elements/_figure.scss */
-figure img {
-  width: 100%;
-  border-radius: 2px;
-}
-/* line 5, ../sass/partials/elements/_figure.scss */
-figure img + figcaption {
-  color: #5b5a8a;
-  font-size: 0.85rem;
-  line-height: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-  font-family: "Open Sans";
-  position: relative;
-  bottom: 0.75rem;
-  text-align: center;
-}
-
-/* line 31, ../sass/partials/elements/_figure.scss */
-.post section.comments figure {
-  margin-left: 1rem;
-}
-
-/* line 1, ../sass/partials/elements/_footer.scss */
-footer {
-  min-height: 3rem;
-}
-
-/* line 3, ../sass/partials/elements/_footer.scss */
-section.colophon {
+/* line 1, ../sass/atoms/div/_figcaption.scss */
+figcaption {
   display: block;
-  text-align: center;
 }
 
-/* line 1, ../sass/partials/elements/header/_address.scss */
-header address {
-  position: absolute;
-  bottom: 2rem;
-  height: 3rem;
-  left: 0;
-  padding-left: 0.5rem;
-}
-/* line 7, ../sass/partials/elements/header/_address.scss */
-header address a {
-  line-height: 3rem;
-  height: 3rem;
-}
-
-/* line 3, ../sass/partials/elements/header/_common.scss */
-header {
-  background-color: #23225e;
-  height: 5rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-sizing: content-box;
-  min-height: 2rem;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  /*multiple headers get styled into tabs. See foxnews for example*/
-}
-/* line 14, ../sass/partials/elements/header/_common.scss */
-header .logo {
-  /*site logo*/
-  display: inline-block;
-  float: left;
-  height: 2rem;
-  margin-top: 0.33333rem;
-  margin-left: 1rem;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-}
-/* line 22, ../sass/partials/elements/header/_common.scss */
-header #Layer_1 {
-  height: 100%;
-  min-width: 48px;
-}
-/* line 26, ../sass/partials/elements/header/_common.scss */
-header #logo-svg,
-header #Layer_1 path {
-  fill: #ffed5b;
-}
-/* line 28, ../sass/partials/elements/header/_common.scss */
-header h1 {
-  /*site tite*/
-  display: inline-block;
-  float: left;
-  line-height: 3rem;
-  margin-top: 0;
-  padding: 0;
-  white-space: nowrap;
-  width: auto;
-  font-size: 1.25rem;
-  line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0;
-  color: #151438;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-}
-/* line 40, ../sass/partials/elements/header/_common.scss */
-header .logo + h1 {
-  margin-left: 1rem;
-}
-/* line 44, ../sass/partials/elements/header/_common.scss */
-header address a, header address a:before {
-  color: #151438;
-  text-decoration: none;
-}
-/* line 49, ../sass/partials/elements/header/_common.scss */
-header section.masthead {
-  position: absolute;
-  margin: 0 auto;
-  white-space: nowrap;
-  text-align: center;
-  width: 100%;
-  padding: 0 1rem;
-  height: 3rem;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  /*masthead should be centered on page*/
-}
-/* line 60, ../sass/partials/elements/header/_common.scss */
-header section.masthead .logo {
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  float: none;
-  /*site logo*/
-}
-/* line 66, ../sass/partials/elements/header/_common.scss */
-header section.masthead h1 {
-  float: none;
-}
-/* line 68, ../sass/partials/elements/header/_common.scss */
-header section.masthead .logo + h1 {
-  position: relative;
-  top: -1rem;
-}
-/* line 71, ../sass/partials/elements/header/_common.scss */
-header section.masthead address {
-  /*address info*/
-}
-/* line 72, ../sass/partials/elements/header/_common.scss */
-header section.search {
-  position: absolute;
-  top: 0;
-  right: 1rem;
-  height: 3rem;
-  display: table;
-  text-align: right;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 3rem;
-  margin: 0.375rem;
-  margin-right: 1rem;
-}
-/* line 81, ../sass/partials/elements/header/_common.scss */
-header section.search form {
-  display: table-cell;
-  vertical-align: middle;
-  height: 2rem;
-  float: none;
-}
-/* line 86, ../sass/partials/elements/header/_common.scss */
-header section.search form input[type="search"] {
-  height: 1.5rem;
-  margin-top: 0.25rem;
-  text-align: right;
-}
-/* line 90, ../sass/partials/elements/header/_common.scss */
-header section.search form input[type="submit"] {
-  height: 1.5rem;
-  margin-top: 0.25rem;
-  border: 0;
-  padding: 0 0.5rem;
-}
-/* line 95, ../sass/partials/elements/header/_common.scss */
-header section.search .compact {
-  /*expanding box*/
-}
-/* line 786, ../sass/partials/base/utilities/_mixins.scss */
-header section.search form {
-  width: 100%;
-  height: 3rem;
-}
-/* line 789, ../sass/partials/base/utilities/_mixins.scss */
-header section.search form:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1rem;
-  border: 0.2rem solid #ffed5b;
-  top: 1.5rem;
-  right: -0.52rem;
-  -webkit-border-radius: 3px;
-  -webkit-transform: rotate(-45deg);
-}
-/* line 800, ../sass/partials/base/utilities/_mixins.scss */
-header section.search form input[type="search"] {
-  -webkit-appearance: none;
-  float: right;
-  transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
+/* line 1, ../sass/atoms/div/_figure.scss */
+figure {
   display: block;
-  position: relative;
-  bottom: 0.3rem;
-  right: -0.3rem;
-  outline: none;
-  line-height: 24px;
-  width: 1.5rem;
-  -webkit-border-radius: 50px;
-  outline: none;
-  background-color: #151438;
-  border-color: #ffed5b;
+  margin: 0;
 }
-/* line 815, ../sass/partials/base/utilities/_mixins.scss */
-header section.search form input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-/* line 818, ../sass/partials/base/utilities/_mixins.scss */
-header section.search form input[type="search"]:hover, header section.search form input[type="search"]:focus {
-  width: 200px;
-}
-/* line 821, ../sass/partials/base/utilities/_mixins.scss */
-header section.search form input[type="search"]:hover::-webkit-input-placeholder {
-  color: #cae0ef;
-  font-style: italic;
-  font-size: 13px;
-}
-/* line 828, ../sass/partials/base/utilities/_mixins.scss */
-header section.search ::-webkit-input-placeholder {
-  color: transparent;
-}
-/* line 99, ../sass/partials/elements/header/_common.scss */
-header nav {
-  position: relative;
-  top: 3rem;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-}
-/* line 104, ../sass/partials/elements/header/_common.scss */
-header nav a {
-  font-family: "Gentium Basic";
-}
-/* line 106, ../sass/partials/elements/header/_common.scss */
-header nav > ul {
-  position: relative;
-  max-width: 60em;
-  min-height: 2rem;
-  background-color: #23225e;
-  float: none;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
+
+/* line 1, ../sass/atoms/div/_hr.scss */
+hr {
+  height: 2px;
+  margin: calc(0.5rem - 1px) 0;
   padding: 0;
-  list-style: none;
-  display: table;
-  table-layout: fixed;
-  box-sizing: border-box;
-}
-/* line 121, ../sass/partials/elements/header/_common.scss */
-header nav > ul > div {
-  display: none;
-}
-/* line 124, ../sass/partials/elements/header/_common.scss */
-header nav > ul li {
-  box-sizing: border-box;
-  table-layout: fixed;
-  vertical-align: middle;
-  position: relative;
-  border-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-/* line 132, ../sass/partials/elements/header/_common.scss */
-header nav > ul li:hover {
-  background-color: #ffed5b;
   border: none;
-}
-/* line 135, ../sass/partials/elements/header/_common.scss */
-header nav > ul li:hover > ul {
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
-}
-/* line 137, ../sass/partials/elements/header/_common.scss */
-header nav > ul li:hover > ul li {
-  margin-bottom: 0;
-}
-/* line 139, ../sass/partials/elements/header/_common.scss */
-header nav > ul li:hover > a, header nav > ul li:hover > a:hover {
-  color: #151438;
-}
-/* line 141, ../sass/partials/elements/header/_common.scss */
-header nav > ul li > a {
-  text-decoration: none;
-  width: 100%;
-  display: block;
-}
-/* line 145, ../sass/partials/elements/header/_common.scss */
-header nav > ul li ul {
-  background-color: #23225e;
-  display: table;
-  position: absolute;
-  padding: 0;
-  border-radius: 2px;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
-  transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-}
-/* line 155, ../sass/partials/elements/header/_common.scss */
-header nav > ul li ul:hover {
-  border: 1px none none none;
-}
-/* line 157, ../sass/partials/elements/header/_common.scss */
-header nav > ul li ul li {
-  margin-bottom: -100%;
-  transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  border-radius: 0;
-}
-/* line 161, ../sass/partials/elements/header/_common.scss */
-header nav > ul li ul li:last-of-type {
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-}
-/* line 164, ../sass/partials/elements/header/_common.scss */
-header nav > ul li ul + a {
-  position: relative;
-}
-/* line 166, ../sass/partials/elements/header/_common.scss */
-header nav > ul li ul + a:after {
-  content: ' ';
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  border-top: 0.5rem solid #ffed5b;
-  border-left: 0.25rem solid transparent;
-  border-right: 0.25rem solid transparent;
-  transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-}
-/* line 176, ../sass/partials/elements/header/_common.scss */
-header nav > ul li ul li {
-  display: table;
-  height: 2rem;
-}
-/* line 179, ../sass/partials/elements/header/_common.scss */
-header nav > ul li ul li a {
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 182, ../sass/partials/elements/header/_common.scss */
-header nav > ul li ul {
-  overflow: hidden;
-  width: 100%;
-  border: 0;
-}
-/* line 186, ../sass/partials/elements/header/_common.scss */
-header nav > ul li ul li {
-  float: left;
-  width: 100%;
-}
-
-/* This is the clickable label */
-/* line 195, ../sass/partials/elements/header/_common.scss */
-.slide-toggle {
-  float: left;
-  cursor: pointer;
-  z-index: 1;
-  display: none;
-  color: #ffed5b;
-  margin: 0;
-  position: absolute;
-  height: 2rem;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  left: 1rem;
-  right: auto;
-  padding: 0;
-}
-
-/* Kill the nasty outlines everywhere */
-/* line 216, ../sass/partials/elements/header/_common.scss */
-.slide-toggle,
-.slide-toggle:active,
-.slide-toggle:focus {
-  border: none !important;
-  outline: none !important;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-/* The :after pseudo element has an icon that covers the checkbox */
-/* line 223, ../sass/partials/elements/header/_common.scss */
-.slide-toggle:after {
-  content: "\f0c9";
-  display: block;
-  font: 2rem "fontawesome";
-  text-align: center;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.42);
-  height: 1.7rem;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -moz-transition: -moz-transform 0.2s ease-in-out;
-  -o-transition: -o-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-}
-
-/* This is the checkbox */
-/* line 237, ../sass/partials/elements/header/_common.scss */
-.slide-checkbox {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
-/* When it's checked replace the menu icon with a close icon */
-/* line 244, ../sass/partials/elements/header/_common.scss */
-.slide-checkbox:checked ~ .slide-toggle:after {
-  content: '\f0c9';
-}
-
-/*only show mobile nav on @media handheld*/
-@media all and (max-width: 1024px) {
-  /* line 253, ../sass/partials/elements/header/_common.scss */
-  header section.search {
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 3rem;
-    right: 1rem;
-    left: auto;
-    margin-right: 1rem;
-  }
-  /* line 786, ../sass/partials/base/utilities/_mixins.scss */
-  header section.search form {
-    width: 100%;
-    height: 3rem;
-  }
-  /* line 789, ../sass/partials/base/utilities/_mixins.scss */
-  header section.search form:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1rem;
-    border: 0.2rem solid #ffed5b;
-    top: 1.5rem;
-    right: -0.52rem;
-    -webkit-border-radius: 3px;
-    -webkit-transform: rotate(-45deg);
-  }
-  /* line 800, ../sass/partials/base/utilities/_mixins.scss */
-  header section.search form input[type="search"] {
-    -webkit-appearance: none;
-    float: right;
-    transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    display: block;
-    position: relative;
-    bottom: 0.3rem;
-    right: -0.3rem;
-    outline: none;
-    line-height: 24px;
-    width: 1.5rem;
-    -webkit-border-radius: 50px;
-    outline: none;
-    background-color: #151438;
-    border-color: #ffed5b;
-  }
-  /* line 815, ../sass/partials/base/utilities/_mixins.scss */
-  header section.search form input[type="search"]::-webkit-search-cancel-button {
-    display: none;
-  }
-  /* line 818, ../sass/partials/base/utilities/_mixins.scss */
-  header section.search form input[type="search"]:hover, header section.search form input[type="search"]:focus {
-    width: 200px;
-  }
-  /* line 821, ../sass/partials/base/utilities/_mixins.scss */
-  header section.search form input[type="search"]:hover::-webkit-input-placeholder {
-    color: #cae0ef;
-    font-style: italic;
-    font-size: 13px;
-  }
-  /* line 828, ../sass/partials/base/utilities/_mixins.scss */
-  header section.search ::-webkit-input-placeholder {
-    color: transparent;
-  }
-  /* line 259, ../sass/partials/elements/header/_common.scss */
-  header section.masthead {
-    height: 3rem;
-  }
-  /* line 261, ../sass/partials/elements/header/_common.scss */
-  header section.masthead .logo + h1 {
-    top: -1rem;
-  }
-  /* line 265, ../sass/partials/elements/header/_common.scss */
-  header nav {
-    position: fixed;
-    top: 3rem;
-    left: -1px;
-    height: 100%;
-    height: 100%;
-    z-index: 999;
-    padding-bottom: 100%;
-    -webkit-transition: -webkit-transform 0.2s ease-in-out;
-    -moz-transition: -moz-transform 0.2s ease-in-out;
-    -o-transition: -o-transform 0.2s ease-in-out;
-    transition: transform 0.2s ease-in-out;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translateY(100%) scale3d(1, 0, 1);
-    -moz-transform: translateY(100%) scale3d(1, 0, 1);
-    -ms-transform: translateY(100%) scale3d(1, 0, 1);
-    -o-transform: translateY(100%) scale3d(1, 0, 1);
-    transform: translateY(100%) scale3d(1, 0, 1);
-    -webkit-transform-origin: 50% -100%;
-    -moz-transform-origin: 50% -100%;
-    -o-transform-origin: 50% -100%;
-    -ms-transform-origin: 50% -100%;
-    transform-origin: 50% -100%;
-  }
-  /* line 273, ../sass/partials/elements/header/_common.scss */
-  header nav section.user {
-    width: 100%;
-  }
-  /* line 275, ../sass/partials/elements/header/_common.scss */
-  header nav section.user + ul {
-    top: 2rem;
-  }
-  /* line 279, ../sass/partials/elements/header/_common.scss */
-  header nav ul {
-    display: block;
-    float: left;
-    top: 0;
-    background-color: #23225e;
-  }
-  /* line 285, ../sass/partials/elements/header/_common.scss */
-  header nav address {
-    margin-top: 0;
-    width: auto;
-    height: 2rem;
-    background-color: #23225e;
-    top: 0;
-    left: 0;
-    padding-left: 0.5rem;
-    text-align: center;
-    border-bottom: 1px solid #23225e;
-  }
-  /* line 296, ../sass/partials/elements/header/_common.scss */
-  header nav address a {
-    line-height: 2rem;
-    height: 2rem;
-  }
-  /* line 301, ../sass/partials/elements/header/_common.scss */
-  header nav address + ul {
-    top: 2rem;
-  }
-  /* line 304, ../sass/partials/elements/header/_common.scss */
-  header nav li {
-    padding-left: 1rem;
-    display: block;
-    text-align: left;
-  }
-  /* line 308, ../sass/partials/elements/header/_common.scss */
-  header nav li > a {
-    padding: 1rem 0;
-    height: 3rem;
-  }
-
-  /* line 335, ../sass/partials/elements/header/_common.scss */
-  .slide-checkbox:checked ~ nav {
-    -webkit-transform: translateY(0) scale3d(1, 1, 1);
-    -moz-transform: translateY(0) scale3d(1, 1, 1);
-    -ms-transform: translateY(0) scale3d(1, 1, 1);
-    -o-transform: translateY(0) scale3d(1, 1, 1);
-    transform: translateY(0) scale3d(1, 1, 1);
-  }
-
-  /* line 344, ../sass/partials/elements/header/_common.scss */
-  .slide-toggle {
-    display: block;
-  }
-
-  /* line 348, ../sass/partials/elements/header/_common.scss */
-  .slide-checkbox:checked ~ .slide-toggle:after {
-    text-shadow: 0px 0px rgba(0, 0, 0, 0.42);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-transform: rotateZ(90deg);
-    -moz-transform: rotateZ(90deg);
-    -o-transform: rotateZ(90deg);
-    -ms-transform: rotateZ(90deg);
-    transform: rotateZ(90deg);
-  }
-}
-@media all and (min-width: 1664px) {
-  /* line 5, ../sass/partials/elements/_header.scss */
-  main {
-    padding-top: 5rem;
-  }
-
-  /*styles for devices from 1664px up*/
-  /* line 2, ../sass/partials/elements/header/_length-thirteen.scss */
-  header {
-    width: 100%;
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
-    /*multiple headers get styled into tabs. See foxnews for example*/
-  }
-  /* line 6, ../sass/partials/elements/header/_length-thirteen.scss */
-  header nav {
-    width: 100%;
-  }
-  /* line 8, ../sass/partials/elements/header/_length-thirteen.scss */
-  header nav > ul {
-    border-top: 0;
-  }
-  /* line 10, ../sass/partials/elements/header/_length-thirteen.scss */
-  header nav > ul > div + li {
-    border-left: 1px solid #1c1b4b;
-  }
-  /* line 12, ../sass/partials/elements/header/_length-thirteen.scss */
-  header nav li {
-    float: none;
-    text-align: center;
-    display: table-cell;
-  }
-  /* line 16, ../sass/partials/elements/header/_length-thirteen.scss */
-  header nav li > ul {
-    top: 50%;
-  }
-  /* line 18, ../sass/partials/elements/header/_length-thirteen.scss */
-  header nav li > ul div + li {
-    border-top: 1px solid #1c1b4b;
-  }
-  /* line 20, ../sass/partials/elements/header/_length-thirteen.scss */
-  header nav li > ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 26, ../sass/partials/elements/header/_length-thirteen.scss */
-  header nav li:hover ul {
-    top: 100%;
-  }
-  /* line 28, ../sass/partials/elements/header/_length-thirteen.scss */
-  header nav li:hover a:after {
-    border-top: 0.75rem solid #23225e;
-  }
-  /* line 30, ../sass/partials/elements/header/_length-thirteen.scss */
-  header #show-mobile-nav {
-    display: none;
-  }
-}
-@media all and (min-width: 1024px) and (max-width: 1664px) {
-  /* line 10, ../sass/partials/elements/_header.scss */
-  main {
-    padding-top: 5rem;
-  }
-
-  /*header styles on devices from 1024px-1664px*/
-  /* line 2, ../sass/partials/elements/header/_length-eight.scss */
-  header {
-    width: 100%;
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
-  }
-  /* line 6, ../sass/partials/elements/header/_length-eight.scss */
-  header nav {
-    width: 100%;
-  }
-  /* line 8, ../sass/partials/elements/header/_length-eight.scss */
-  header nav > ul {
-    border-top: 0;
-  }
-  /* line 10, ../sass/partials/elements/header/_length-eight.scss */
-  header nav > ul > div + li {
-    border-left: 1px solid #1c1b4b;
-  }
-  /* line 12, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li {
-    float: none;
-    text-align: center;
-    display: table-cell;
-  }
-  /* line 17, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li > ul {
-    top: 50%;
-  }
-  /* line 19, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li > ul div + li {
-    border-top: 1px solid #1c1b4b;
-  }
-  /* line 21, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li > ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 27, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li:hover ul {
-    top: 100%;
-  }
-  /* line 29, ../sass/partials/elements/header/_length-eight.scss */
-  header nav li:hover a:after {
-    border-top: 0.75rem solid #23225e;
-  }
-  /* line 31, ../sass/partials/elements/header/_length-eight.scss */
-  header #show-mobile-nav {
-    display: none;
-  }
-}
-@media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 15, ../sass/partials/elements/_header.scss */
-  main {
-    padding-top: 3rem;
-  }
-
-  /*styles for devices from 640-1024px wide*/
-  /* line 2, ../sass/partials/elements/header/_length-five.scss */
-  header {
-    height: 3rem;
-    width: 100%;
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
-  }
-  /* line 7, ../sass/partials/elements/header/_length-five.scss */
-  header address a, header address a:before {
-    color: #ffed5b;
-  }
-  /* line 11, ../sass/partials/elements/header/_length-five.scss */
-  header section.user {
-    box-sizing: content-box;
-    right: -2px;
-  }
-  /* line 15, ../sass/partials/elements/header/_length-five.scss */
-  header nav {
-    height: 100%;
-    width: 38%;
-  }
-  /* line 18, ../sass/partials/elements/header/_length-five.scss */
-  header nav > ul {
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
-  }
-  /* line 20, ../sass/partials/elements/header/_length-five.scss */
-  header nav > ul div + li {
-    border-top: 1px solid #1c1b4b;
-  }
-  /* line 22, ../sass/partials/elements/header/_length-five.scss */
-  header nav li {
-    text-align: left;
-    float: left;
-    width: 100%;
-    display: block;
-  }
-  /* line 27, ../sass/partials/elements/header/_length-five.scss */
-  header nav li ul {
-    left: -100%;
-  }
-  /* line 29, ../sass/partials/elements/header/_length-five.scss */
-  header nav li ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 35, ../sass/partials/elements/header/_length-five.scss */
-  header nav li:hover ul {
-    left: 100%;
-  }
-  /* line 37, ../sass/partials/elements/header/_length-five.scss */
-  header nav li:hover a:after {
-    left: calc(100% + 1.2rem);
-    border-top: 0.75rem solid #23225e;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-}
-@media all and (min-width: 384px) and (max-width: 640px) {
-  /* line 20, ../sass/partials/elements/_header.scss */
-  main {
-    padding-top: 3rem;
-  }
-
-  /*styles for devices from 384-640 px wide*/
-  /* line 2, ../sass/partials/elements/header/_length-three.scss */
-  header {
-    height: 3rem;
-    width: 100%;
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
-  }
-  /* line 7, ../sass/partials/elements/header/_length-three.scss */
-  header address a, header address a:before {
-    color: #ffed5b;
-  }
-  /* line 11, ../sass/partials/elements/header/_length-three.scss */
-  header section.user {
-    box-sizing: content-box;
-    right: -2px;
-    width: 33.33333%;
-  }
-  /* line 16, ../sass/partials/elements/header/_length-three.scss */
-  header nav {
-    width: 50%;
-  }
-  /* line 18, ../sass/partials/elements/header/_length-three.scss */
-  header nav > ul {
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
-  }
-  /* line 20, ../sass/partials/elements/header/_length-three.scss */
-  header nav > ul div + li {
-    border-top: 1px solid #1c1b4b;
-  }
-  /* line 22, ../sass/partials/elements/header/_length-three.scss */
-  header nav li {
-    text-align: left;
-    float: left;
-    width: 100%;
-    display: block;
-  }
-  /* line 27, ../sass/partials/elements/header/_length-three.scss */
-  header nav li ul {
-    left: -100%;
-  }
-  /* line 29, ../sass/partials/elements/header/_length-three.scss */
-  header nav li ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 35, ../sass/partials/elements/header/_length-three.scss */
-  header nav li:hover a:after {
-    left: calc(100% + 1.2rem);
-    border-top: 0.75rem solid #23225e;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-  /* line 39, ../sass/partials/elements/header/_length-three.scss */
-  header nav li:hover ul {
-    left: 100%;
-  }
-}
-@media all and (min-width: 256px) and (max-width: 384px) {
-  /* line 25, ../sass/partials/elements/_header.scss */
-  main {
-    padding-top: 3rem;
-  }
-
-  /*styles for screens 256-384px*/
-  /* line 2, ../sass/partials/elements/header/_length-two.scss */
-  header {
-    height: 3rem;
-    width: 100%;
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
-  }
-  /* line 7, ../sass/partials/elements/header/_length-two.scss */
-  header address a, header address a:before {
-    color: #ffed5b;
-  }
-  /* line 11, ../sass/partials/elements/header/_length-two.scss */
-  header section.user {
-    width: 50%;
-    box-sizing: content-box;
-    right: -2px;
-  }
-  /* line 16, ../sass/partials/elements/header/_length-two.scss */
-  header nav {
-    width: 62%;
-  }
-  /* line 18, ../sass/partials/elements/header/_length-two.scss */
-  header nav > ul {
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
-  }
-  /* line 20, ../sass/partials/elements/header/_length-two.scss */
-  header nav > ul div + li {
-    border-top: 1px solid #1c1b4b;
-  }
-  /* line 22, ../sass/partials/elements/header/_length-two.scss */
-  header nav li {
-    text-align: left;
-    float: left;
-    width: 100%;
-    display: block;
-  }
-  /* line 27, ../sass/partials/elements/header/_length-two.scss */
-  header nav li ul {
-    left: -100%;
-  }
-  /* line 29, ../sass/partials/elements/header/_length-two.scss */
-  header nav li ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 35, ../sass/partials/elements/header/_length-two.scss */
-  header nav li:hover a:after {
-    left: calc(100% + 1.2rem);
-    border-top: 0.75rem solid #23225e;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-  /* line 39, ../sass/partials/elements/header/_length-two.scss */
-  header nav li:hover ul {
-    left: 100%;
-    z-index: 999;
-    width: 110%;
-  }
-}
-@media all and (min-width: 128px) and (max-width: 256px) {
-  /* line 30, ../sass/partials/elements/_header.scss */
-  main {
-    padding-top: 3rem;
-  }
-
-  /* line 1, ../sass/partials/elements/header/_length-one.scss */
-  header {
-    height: 3rem;
-    width: 100%;
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
-  }
-  /* line 6, ../sass/partials/elements/header/_length-one.scss */
-  header address a, header address a:before {
-    color: #ffed5b;
-  }
-  /* line 8, ../sass/partials/elements/header/_length-one.scss */
-  header section.user {
-    box-sizing: content-box;
-    right: -2px;
-  }
-  /* line 12, ../sass/partials/elements/header/_length-one.scss */
-  header nav > ul {
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
-  }
-  /* line 14, ../sass/partials/elements/header/_length-one.scss */
-  header nav > ul div + li {
-    border-top: 1px solid #1c1b4b;
-  }
-  /* line 16, ../sass/partials/elements/header/_length-one.scss */
-  header nav > ul li {
-    text-align: left;
-    float: left;
-    width: 100%;
-    display: block;
-  }
-  /* line 21, ../sass/partials/elements/header/_length-one.scss */
-  header nav > ul li ul {
-    left: -100%;
-  }
-  /* line 23, ../sass/partials/elements/header/_length-one.scss */
-  header nav > ul li ul + a:after {
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    left: calc(100% + 0.2rem);
-  }
-  /* line 29, ../sass/partials/elements/header/_length-one.scss */
-  header nav > ul li:hover a:after {
-    left: calc(100% + 1.2rem);
-    border-top: 0.75rem solid #23225e;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-  /* line 33, ../sass/partials/elements/header/_length-one.scss */
-  header nav > ul li:hover ul {
-    left: 0;
-    z-index: 999;
-    width: 110%;
-  }
-}
-/* line 1, ../sass/partials/elements/_meter.scss */
-meter {
-  display: block;
-  height: 1rem;
-  width: 100%;
-  vertical-align: 0;
-}
-
-/* line 1, ../sass/partials/elements/_progress.scss */
-progress {
-  display: block;
-  height: 1rem;
-  width: 100%;
-  vertical-align: 0;
-}
-
-/* line 1, ../sass/partials/elements/_table.scss */
-table th {
-  font-weight: bold;
-}
-
-/* line 2, ../sass/partials/elements/_table.scss */
-table td, table th {
-  padding: 9px 10px;
-  text-align: left;
-}
-
-/* Mobile */
-@media only screen and (max-width: 1024px) {
-  /* line 7, ../sass/partials/elements/_table.scss */
-  table {
-    margin-bottom: 0;
-  }
-
-  /* line 9, ../sass/partials/elements/_table.scss */
-  .pinned {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #fff;
-    width: 35%;
-    overflow: hidden;
-    overflow-x: scroll;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-  }
-
-  /* line 10, ../sass/partials/elements/_table.scss */
-  .pinned table {
-    border-right: none;
-    border-left: none;
-    width: 100%;
-  }
-
-  /* line 11, ../sass/partials/elements/_table.scss */
-  .pinned table th, .pinned table td {
-    white-space: nowrap;
-  }
-
-  /* line 12, ../sass/partials/elements/_table.scss */
-  .pinned td:last-child {
-    border-bottom: 0;
-  }
-
-  /* line 14, ../sass/partials/elements/_table.scss */
-  div.table-wrapper {
-    position: relative;
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-right: 1px solid #ccc;
-  }
-
-  /* line 15, ../sass/partials/elements/_table.scss */
-  div.table-wrapper div.scrollable {
-    margin-left: 35%;
-  }
-
-  /* line 16, ../sass/partials/elements/_table.scss */
-  div.table-wrapper div.scrollable {
-    overflow: scroll;
-    overflow-y: hidden;
-  }
-
-  /* line 18, ../sass/partials/elements/_table.scss */
-  table td, table th {
-    position: relative;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  /* line 19, ../sass/partials/elements/_table.scss */
-  table th:first-child, table td:first-child, table td:first-child, table.pinned td {
-    display: none;
-  }
-}
-/* line 1, ../sass/partials/elements/_ul.scss */
-ul {
-  list-style-position: inside;
-  padding: 0;
-}
-/* line 4, ../sass/partials/elements/_ul.scss */
-article ul {
-  list-style-position: outside;
-}
-/* line 6, ../sass/partials/elements/_ul.scss */
-ul .blog {
-  list-style: none;
-  padding: 0;
-}
-/* line 9, ../sass/partials/elements/_ul.scss */
-ul .blog h1 a {
-  text-decoration: none;
-}
-/* line 10, ../sass/partials/elements/_ul.scss */
-ul .blog li {
-  margin-bottom: 1rem;
-}
-
-/* line 1, ../sass/partials/elements/_code.scss */
-code {
-  font-family: 'Source Code Pro', monospace;
-  color: #a2a1dd;
-  background-color: #23225e;
-  padding: 0 0.2rem;
-  line-height: 1rem;
+  background-color: #151438;
   border: 1px solid;
   border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
   border-radius: 1px;
+  box-sizing: border-box;
 }
 
-/* line 8, ../sass/partials/elements/_code.scss */
-p > code {
-  font-size: 85%;
-  margin: 0 0.2rem;
-  padding: 0.1rem 0.3rem;
+/* line 1, ../sass/atoms/div/_p.scss */
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  line-height: 2rem;
+  font-family: "Gentium Basic";
+}
+/* line 6, ../sass/atoms/div/_p.scss */
+p.uber, .uber p {
+  font-size: 2rem;
+  line-height: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
 }
 
-/* line 1, ../sass/partials/elements/_pre.scss */
+/* line 1, ../sass/atoms/div/_pre.scss */
 pre {
+  font-family: monospace, serif;
+  font-size: 1em;
+  white-space: pre-wrap;
   color: #151438;
   background-color: #a2a1dd;
   padding: 1rem;
 }
 
-/* line 7, ../sass/partials/elements/forms/_input.scss */
-input {
-  height: 1.5rem;
-  background-color: #23225e;
-  color: #a2a1dd;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  border: 0;
-  margin-right: 1px;
-  border-radius: 2px;
-  transition: box-shadow 0.13333s ease-in-out;
-  -webkit-transition: box-shadow 0.13333s ease-in-out;
-  -moz-transition: box-shadow 0.13333s ease-in-out;
-  -o-transition: box-shadow 0.13333s ease-in-out;
-  border: 1px solid;
-  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
-  border-radius: 1px;
+/* line 1, ../sass/atoms/embed/_audio.scss */
+audio {
+  display: inline-block;
 }
-/* line 21, ../sass/partials/elements/forms/_input.scss */
-input:focus {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
-}
-/* line 27, ../sass/partials/elements/forms/_input.scss */
-input[type="text"]:disabled {
-  background-color: #151438;
-  color: #23225e;
-}
-/* line 42, ../sass/partials/elements/forms/_input.scss */
-input[type="number"]:disabled {
-  background-color: #151438;
-  color: #23225e;
-}
-/* line 44, ../sass/partials/elements/forms/_input.scss */
-input:not([type]) {
-  padding: 0;
-}
-/* line 47, ../sass/partials/elements/forms/_input.scss */
-input[type="color"] {
-  padding: 0;
-  box-shadow: none;
-  border: none;
-  max-width: 3rem;
-  height: 1.5rem;
-  margin: calc((2rem - 1.5rem) / 2) 0;
-}
-/* line 54, ../sass/partials/elements/forms/_input.scss */
-input[type="color"]::-webkit-color-swatch-wrapper {
-  padding: 0.3rem;
-  background: #23225e;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
-}
-/* line 59, ../sass/partials/elements/forms/_input.scss */
-input[type="color"]:disabled::-webkit-color-swatch-wrapper {
-  background-color: #151438;
-  border: 1px solid;
-  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
-  border-radius: 1px;
-}
-/* line 62, ../sass/partials/elements/forms/_input.scss */
-input[type="color"][readonly] {
-  padding: 0;
-}
-/* line 64, ../sass/partials/elements/forms/_input.scss */
-input[type="color"][readonly]::-webkit-color-swatch-wrapper {
-  background-color: #151438;
-  border: none;
-}
-/* line 67, ../sass/partials/elements/forms/_input.scss */
-input[type="color"]::-webkit-color-swatch {
-  border: none;
-  border: 1px solid;
-  border-color: rgba(127, 127, 127, 0.625) rgba(255, 255, 255, 0.925) rgba(255, 255, 255, 0.925) rgba(127, 127, 127, 0.625);
-  border-radius: 1px;
-}
-/* line 70, ../sass/partials/elements/forms/_input.scss */
-input[type="radio"] {
-  height: 1rem;
-  box-shadow: none;
-  border: none;
-  width: auto;
-  -webkit-appearance: none;
-  display: flex;
-  align-items: center;
-  margin: 0.5rem 0.2rem 0.5rem 0;
-  background-color: transparent;
-}
-/* line 80, ../sass/partials/elements/forms/_input.scss */
-input[type="radio"]:before {
-  width: 1rem;
-  height: 1rem;
-  background-color: #23225e;
-  display: block;
-  content: "";
-  padding: 0.5rem 0 0rem 0.15rem;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
-  border-radius: 50%;
-}
-/* line 89, ../sass/partials/elements/forms/_input.scss */
-input[type="radio"]:checked:before {
-  border: 1px solid;
-  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
-  border-radius: 1px;
-  border-radius: 50%;
-  background-color: #ffed5b;
-}
-/* line 93, ../sass/partials/elements/forms/_input.scss */
-input[type="radio"]:after {
-  content: attr(name);
-  color: #a2a1dd;
-  display: block;
-  position: relative;
-  left: 0.2rem;
-  margin-right: 0.2rem;
-  flex-grow: 1;
-}
-/* line 101, ../sass/partials/elements/forms/_input.scss */
-input[type="checkbox"] {
-  height: 1rem;
-  -webkit-appearance: none;
-  box-shadow: none;
-  border: none;
-  flex-grow: 0;
-}
-/* line 107, ../sass/partials/elements/forms/_input.scss */
-input[type="checkbox"]:before {
-  width: 1rem;
-  height: 1rem;
-  background-color: #23225e;
-  display: block;
-  content: "";
-  border: 1px solid;
-  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
-  border-radius: 1px;
-  font-size: 1.5rem;
-  padding-left: 0.1rem;
-}
-/* line 116, ../sass/partials/elements/forms/_input.scss */
-input[type="checkbox"]:checked:before {
-  content: "\2713";
-  color: #ffed5b;
-  line-height: 0;
-  padding-top: 0.2rem;
-}
-/* line 121, ../sass/partials/elements/forms/_input.scss */
-input[type="submit"] {
-  background-color: #ffed5b;
-  color: #23225e;
-  margin-top: calc((2rem - 1.5rem) / 2);
-  margin-bottom: calc((2rem - 1.5rem) / 2);
-  border: 0;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
-}
-/* line 128, ../sass/partials/elements/forms/_input.scss */
-input[type="file"] {
-  margin: calc((2rem - 1.5rem) / 2) 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
-
-/* line 134, ../sass/partials/elements/forms/_input.scss */
-select {
-  border: none;
-  background-color: #23225e;
-  border: 1px solid;
-  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
-  border-radius: 1px;
-}
-/* line 138, ../sass/partials/elements/forms/_input.scss */
-select:focus {
-  outline: none;
-  box-shadow: none;
-}
-/* line 141, ../sass/partials/elements/forms/_input.scss */
-select:disabled {
-  background-color: #151438;
-  color: #23225e;
-}
-/* line 143, ../sass/partials/elements/forms/_input.scss */
-select::-webkit-scrollbar-track {
-  margin-top: -1px;
-}
-
-/* line 146, ../sass/partials/elements/forms/_input.scss */
-output {
-  font-size: 1rem;
-  line-height: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-}
-
-/* line 149, ../sass/partials/elements/forms/_input.scss */
-label {
-  font-size: 1rem;
-  line-height: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0;
-}
-/* line 152, ../sass/partials/elements/forms/_input.scss */
-label.required:after {
-  content: "*";
-}
-
-/* line 155, ../sass/partials/elements/forms/_input.scss */
-textarea {
-  padding: 1rem 0 0 0.62rem;
-  border: 0;
-  color: #a2a1dd;
-  background-color: #23225e;
-  border-radius: 2px;
-  border: 1px solid;
-  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
-  border-radius: 1px;
-}
-/* line 163, ../sass/partials/elements/forms/_input.scss */
-textarea:disabled {
-  background-color: #151438;
-  color: #23225e;
-}
-
-/* line 183, ../sass/partials/elements/forms/_input.scss */
-::-webkit-scrollbar {
-  width: 1rem;
-}
-
-/* line 187, ../sass/partials/elements/forms/_input.scss */
-::-webkit-scrollbar-track {
-  background-color: #23225e;
-  border: 1px solid;
-  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
-  border-radius: 1px;
-  margin-top: -1px;
-}
-
-/* line 193, ../sass/partials/elements/forms/_input.scss */
-::-webkit-scrollbar-thumb {
-  width: calc(100% - 2px);
-  width: 50%;
-  background-color: #151438;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #201f41 #131335 #131335 #201f41;
-}
-
-/* line 201, ../sass/partials/elements/forms/_input.scss */
-::-webkit-scrollbar-corner {
-  /* 6 */
-}
-
-/* line 202, ../sass/partials/elements/forms/_input.scss */
-::-webkit-resizer {
-  /* 7 */
-}
-
-/* line 203, ../sass/partials/elements/forms/_input.scss */
-::-webkit-textfield-decoration-container {
-  position: relative;
-}
-
-/* line 206, ../sass/partials/elements/forms/_input.scss */
-::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-  width: 1rem;
-  height: 100%;
-  position: relative;
-}
-/* line 212, ../sass/partials/elements/forms/_input.scss */
-::-webkit-inner-spin-button:before {
-  width: 0;
+/* line 3, ../sass/atoms/embed/_audio.scss */
+audio:not([controls]) {
+  display: none;
   height: 0;
-  border-left: 0.25rem solid transparent;
-  border-right: 0.25rem solid transparent;
-  border-bottom: 0.5rem solid #ffed5b;
-  content: "";
-  position: absolute;
-  bottom: 0.75rem;
-  left: 25%;
-}
-/* line 223, ../sass/partials/elements/forms/_input.scss */
-::-webkit-inner-spin-button:after {
-  width: 0;
-  height: 0;
-  border-left: 0.25rem solid transparent;
-  border-right: 0.25rem solid transparent;
-  border-top: 0.5rem solid #ffed5b;
-  content: "";
-  position: absolute;
-  top: 0.75rem;
-  left: 25%;
 }
 
-/* line 236, ../sass/partials/elements/forms/_input.scss */
-::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: #a2a1dd;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #a6a5de #9998d1 #9998d1 #a6a5de;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
+/* line 1, ../sass/atoms/embed/_canvas.scss */
+canvas {
+  display: inline-block;
 }
 
-/* line 245, ../sass/partials/elements/forms/_input.scss */
-::-webkit-media-controls-play-button {
-  -webkit-appearance: none;
-  height: 0;
-  width: 0;
-  border-top: 0.5rem solid transparent;
-  border-left: 1rem solid #a2a1dd;
-  border-bottom: 0.5rem solid transparent;
+/* line 1, ../sass/atoms/embed/_img.scss */
+img {
+  border: 0;
 }
 
-/* line 254, ../sass/partials/elements/forms/_input.scss */
-::-webkit-media-controls-panel {
-  background-color: rgba(35, 34, 94, 0.8);
+/* line 1, ../sass/atoms/embed/_video.scss */
+video {
+  display: inline-block;
 }
 
-/* line 258, ../sass/partials/elements/forms/_input.scss */
-::-webkit-media-slider-container {
-  border: none;
-  background-color: #23225e;
-}
-
-/* line 263, ../sass/partials/elements/forms/_input.scss */
-::-webkit-media-controls-current-time-display {
-  color: #a2a1dd;
-}
-
-/* line 267, ../sass/partials/elements/forms/_input.scss */
-::-webkit-meter-bar {
-  background: #23225e;
-  border: 1px solid;
-  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
-  border-radius: 1px;
-  overflow: hidden;
-}
-
-/* line 278, ../sass/partials/elements/forms/_input.scss */
-::-webkit-file-upload-button {
-  -webkit-appearance: none;
-  border: none;
-  color: #151438;
+/* line 1, ../sass/atoms/form/_button.scss */
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: normal;
+  text-transform: none;
+  margin: 0;
   background-color: #ffed5b;
   border: 1px solid;
   border-radius: 2px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   border-color: #ffed63 #f2e156 #f2e156 #ffed63;
-  height: 1.5rem;
-}
-
-/* line 286, ../sass/partials/elements/forms/_input.scss */
-::-webkit-file-upload-button:disabled {
+  height: 2rem;
   color: #151438;
-  background-color: #23225e;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
+}
+/* line 11, ../sass/atoms/form/_button.scss */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
 
-/* line 292, ../sass/partials/elements/forms/_input.scss */
-input::-webkit-calendar-picker-indicator:hover {
-  background-color: transparent;
-}
-
-/* line 296, ../sass/partials/elements/forms/_input.scss */
-::-webkit-clear-button {
-  -webkit-appearance: none;
-  content: "x";
-  display: block;
-  color: red;
-  width: 1rem;
-  height: 100%;
-}
-
-/* line 304, ../sass/partials/elements/forms/_input.scss */
-progress {
-  -webkit-appearance: none;
-}
-/* line 306, ../sass/partials/elements/forms/_input.scss */
-progress::-webkit-progress-bar {
-  background-color: #23225e;
-  border: 1px solid;
-  border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
-  border-radius: 1px;
-}
-
-/* line 312, ../sass/partials/elements/forms/_input.scss */
-meter::-webkit-meter-optimum-value {
-  background: green;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #0c860c #007900 #007900 #0c860c;
-}
-/* line 316, ../sass/partials/elements/forms/_input.scss */
-meter::-webkit-meter-suboptimum-value {
-  background: yellow;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #ffff0c #f2f200 #f2f200 #ffff0c;
-}
-/* line 321, ../sass/partials/elements/forms/_input.scss */
-meter::-webkit-meter-even-less-good-value {
-  background: red;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-color: #ff0c0c #f20000 #f20000 #ff0c0c;
-}
-
-/* line 1, ../sass/partials/elements/forms/_index.scss */
-form {
-  display: block;
-  float: left;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-}
-/* line 7, ../sass/partials/elements/forms/_index.scss */
-form:focus {
-  outline: none;
-}
-@media all and (min-width: 384px) {
-  /* line 1, ../sass/partials/elements/forms/_index.scss */
-  form {
-    display: flex;
-  }
-  /* line 11, ../sass/partials/elements/forms/_index.scss */
-  form input {
-    display: flex;
-  }
-}
-/* line 13, ../sass/partials/elements/forms/_index.scss */
-form label, form span {
-  font-size: 1rem;
-  line-height: 2rem;
-  white-space: nowrap;
-}
-/* line 17, ../sass/partials/elements/forms/_index.scss */
-form label {
-  flex-grow: 0;
-}
-@media all and (min-width: 128px) and (max-width: 256px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
-  form label {
-    display: block;
-  }
-}
-@media all and (min-width: 256px) and (max-width: 384px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
-  form label {
-    display: block;
-  }
-}
-@media all and (min-width: 384px) and (max-width: 640px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
-  form label {
-    min-width: 33%;
-  }
-}
-@media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
-  form label {
-    min-width: 25%;
-  }
-}
-@media all and (min-width: 1024px) and (max-width: 1664px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
-  form label {
-    min-width: 10%;
-  }
-}
-@media all and (min-width: 1664px) {
-  /* line 17, ../sass/partials/elements/forms/_index.scss */
-  form label {
-    min-width: 10%;
-  }
-}
-/* line 31, ../sass/partials/elements/forms/_index.scss */
-form label {
-  height: 1.5rem;
-  padding: 0 0.5rem;
-  position: relative;
-  line-height: 1.5rem;
-  float: left;
-  margin: 0.25rem 0;
-}
-/* line 38, ../sass/partials/elements/forms/_index.scss */
-form input {
-  display: block;
-  flex-grow: 1;
-  float: left;
-  padding: 0 0.5rem;
-  border-radius: 2px;
-}
-@media all and (max-width: 384px) {
-  /* line 38, ../sass/partials/elements/forms/_index.scss */
-  form input {
-    width: 100%;
-  }
-}
-/* line 48, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="1"] {
-  width: 1em;
-}
-/* line 50, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="2"] {
-  width: 2em;
-}
-/* line 52, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="3"] {
-  width: 3em;
-}
-/* line 54, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="4"] {
-  width: 4em;
-}
-/* line 56, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="5"] {
-  width: 5em;
-}
-/* line 58, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="6"] {
-  width: 6em;
-}
-/* line 60, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="7"] {
-  width: 7em;
-}
-/* line 62, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="8"] {
-  width: 8em;
-}
-/* line 64, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="9"] {
-  width: 9em;
-}
-/* line 66, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="10"] {
-  width: 10em;
-}
-/* line 68, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="11"] {
-  width: 11em;
-}
-/* line 70, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="12"] {
-  width: 12em;
-}
-/* line 72, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="13"] {
-  width: 13em;
-}
-/* line 74, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="14"] {
-  width: 14em;
-}
-/* line 76, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="15"] {
-  width: 15em;
-}
-/* line 78, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="16"] {
-  width: 16em;
-}
-/* line 80, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="17"] {
-  width: 17em;
-}
-/* line 82, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="18"] {
-  width: 18em;
-}
-/* line 84, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="19"] {
-  width: 19em;
-}
-/* line 86, ../sass/partials/elements/forms/_index.scss */
-form input[maxlength="20"] {
-  width: 20em;
-}
-
-/* line 1, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 1, ../sass/atoms/form/_fieldset.scss */
 fieldset {
   box-sizing: border-box;
   /*(border: 1px solid $color-accent;*/
@@ -3676,26 +790,26 @@ fieldset {
   border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
   border-radius: 1px;
 }
-/* line 11, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 11, ../sass/atoms/form/_fieldset.scss */
 fieldset > .row {
   width: 100%;
   display: block;
 }
-/* line 14, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 14, ../sass/atoms/form/_fieldset.scss */
 fieldset > .row > div {
   width: 50%;
   float: left;
 }
-/* line 17, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 17, ../sass/atoms/form/_fieldset.scss */
 fieldset > .row > div.column {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-/* line 20, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 20, ../sass/atoms/form/_fieldset.scss */
 fieldset > .row > form {
   width: 100%;
 }
-/* line 22, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 22, ../sass/atoms/form/_fieldset.scss */
 fieldset > fieldset {
   padding: 0;
   margin-bottom: 1rem;
@@ -3703,11 +817,11 @@ fieldset > fieldset {
   border: none;
   border-radius: 2px;
 }
-/* line 28, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 28, ../sass/atoms/form/_fieldset.scss */
 fieldset form {
   width: 100%;
 }
-/* line 30, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 30, ../sass/atoms/form/_fieldset.scss */
 fieldset form label {
   text-align: center;
   border: 1px solid;
@@ -3715,10 +829,9 @@ fieldset form label {
   border-radius: 1px;
   background-color: #ffed5b;
   color: #151438;
-  padding-top: 0.2rem;
   border-radius: 0;
 }
-/* line 37, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 36, ../sass/atoms/form/_fieldset.scss */
 fieldset form input {
   box-shadow: none;
   border-color: none;
@@ -3731,27 +844,27 @@ fieldset form input {
   box-shadow: none;
   border-radius: 0;
 }
-/* line 49, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 48, ../sass/atoms/form/_fieldset.scss */
 fieldset form:first-of-type input {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
-/* line 52, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 51, ../sass/atoms/form/_fieldset.scss */
 fieldset form:last-of-type input {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 54, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 53, ../sass/atoms/form/_fieldset.scss */
 fieldset form label {
   box-shadow: none;
   border: none;
   margin: 0;
   height: 2rem;
 }
-/* line 59, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 58, ../sass/atoms/form/_fieldset.scss */
 fieldset textarea {
   border-top: none;
   box-shadow: none;
 }
-/* line 62, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 61, ../sass/atoms/form/_fieldset.scss */
 fieldset div {
   display: flex;
   flex-wrap: wrap;
@@ -3760,15 +873,15 @@ fieldset div {
   border: 1px inset #151438;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
 }
-/* line 71, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 70, ../sass/atoms/form/_fieldset.scss */
 fieldset div form:first-of-type label {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
-/* line 74, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 73, ../sass/atoms/form/_fieldset.scss */
 fieldset div form:last-of-type label {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 76, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 75, ../sass/atoms/form/_fieldset.scss */
 fieldset hr {
   display: flex;
   height: 0px;
@@ -3776,15 +889,15 @@ fieldset hr {
   margin: 0;
   border: none;
 }
-/* line 83, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 82, ../sass/atoms/form/_fieldset.scss */
 fieldset hr + form label {
   border-top: 1px solid #151438;
 }
-/* line 85, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 84, ../sass/atoms/form/_fieldset.scss */
 fieldset hr + form input {
   border-top: 1px solid #151438;
 }
-/* line 87, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 86, ../sass/atoms/form/_fieldset.scss */
 fieldset legend {
   font-size: 1.25rem;
   line-height: 2rem;
@@ -3793,7 +906,7 @@ fieldset legend {
   left: 1rem;
 }
 
-/* line 97, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 96, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental {
   display: table;
   table-layout: fixed;
@@ -3803,11 +916,11 @@ fieldset.experimental {
   box-shadow: none;
   border: none;
 }
-/* line 106, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 105, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental + fieldset.experimental form {
   border-top: none;
 }
-/* line 108, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 107, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form {
   display: table-cell;
   width: 2%;
@@ -3818,7 +931,7 @@ fieldset.experimental form {
   padding: 0;
   background: transparent;
 }
-/* line 118, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 117, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form:hover {
   background-color: #23225e;
   border: 1px solid;
@@ -3828,11 +941,11 @@ fieldset.experimental form:hover {
   border-style: solid;
   border-color: #a2a1dd;
 }
-/* line 124, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 123, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form:last-of-type {
   border-right: 0;
 }
-/* line 126, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 125, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form label {
   width: 100%;
   background-color: transparent;
@@ -3841,7 +954,7 @@ fieldset.experimental form label {
   text-transform: uppercase;
   font-size: 85%;
 }
-/* line 133, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 132, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form input {
   width: 100%;
   background: transparent;
@@ -3849,97 +962,2533 @@ fieldset.experimental form input {
   padding: 0 0.5rem;
   box-shadow: none;
 }
-/* line 141, ../sass/partials/elements/forms/_fieldset.scss */
+/* line 140, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form input:hover, fieldset.experimental form input:active, fieldset.experimental form input:focus {
   border-top: 1px dashed rgba(162, 161, 221, 0.3);
 }
 
-/*@import "utilities/grids/foundation.scss";*/
-@media all and (min-width: 1024px) {
-  /* line 2, ../sass/partials/_panels.scss */
-  .row {
+/* line 1, ../sass/atoms/form/_form.scss */
+form {
+  display: block;
+  float: left;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+/* line 7, ../sass/atoms/form/_form.scss */
+form:focus {
+  outline: none;
+}
+@media all and (min-width: 384px) {
+  /* line 1, ../sass/atoms/form/_form.scss */
+  form {
     display: flex;
   }
-  /* line 4, ../sass/partials/_panels.scss */
-  .row > * {
+  /* line 11, ../sass/atoms/form/_form.scss */
+  form input {
     display: flex;
-    flex-grow: 1;
   }
-  /* line 7, ../sass/partials/_panels.scss */
-  .row > .row {
-    max-width: 50%;
-    flex-basis: 49%;
+}
+/* line 13, ../sass/atoms/form/_form.scss */
+form label, form span {
+  font-size: 1rem;
+  line-height: 2rem;
+  white-space: nowrap;
+}
+/* line 18, ../sass/atoms/form/_form.scss */
+form label {
+  padding: 0 0.5rem;
+}
+/* line 20, ../sass/atoms/form/_form.scss */
+form input {
+  display: block;
+  flex-grow: 1;
+  float: left;
+  padding: 0 0.5rem;
+  border-radius: 2px;
+}
+@media all and (max-width: 384px) {
+  /* line 20, ../sass/atoms/form/_form.scss */
+  form input {
+    width: 100%;
   }
-  /* line 10, ../sass/partials/_panels.scss */
-  .row > .two {
-    flex-grow: 2;
+}
+/* line 30, ../sass/atoms/form/_form.scss */
+form input[maxlength="1"] {
+  width: 1em;
+}
+/* line 32, ../sass/atoms/form/_form.scss */
+form input[maxlength="2"] {
+  width: 2em;
+}
+/* line 34, ../sass/atoms/form/_form.scss */
+form input[maxlength="3"] {
+  width: 3em;
+}
+/* line 36, ../sass/atoms/form/_form.scss */
+form input[maxlength="4"] {
+  width: 4em;
+}
+/* line 38, ../sass/atoms/form/_form.scss */
+form input[maxlength="5"] {
+  width: 5em;
+}
+/* line 40, ../sass/atoms/form/_form.scss */
+form input[maxlength="6"] {
+  width: 6em;
+}
+/* line 42, ../sass/atoms/form/_form.scss */
+form input[maxlength="7"] {
+  width: 7em;
+}
+/* line 44, ../sass/atoms/form/_form.scss */
+form input[maxlength="8"] {
+  width: 8em;
+}
+/* line 46, ../sass/atoms/form/_form.scss */
+form input[maxlength="9"] {
+  width: 9em;
+}
+/* line 48, ../sass/atoms/form/_form.scss */
+form input[maxlength="10"] {
+  width: 10em;
+}
+/* line 50, ../sass/atoms/form/_form.scss */
+form input[maxlength="11"] {
+  width: 11em;
+}
+/* line 52, ../sass/atoms/form/_form.scss */
+form input[maxlength="12"] {
+  width: 12em;
+}
+/* line 54, ../sass/atoms/form/_form.scss */
+form input[maxlength="13"] {
+  width: 13em;
+}
+/* line 56, ../sass/atoms/form/_form.scss */
+form input[maxlength="14"] {
+  width: 14em;
+}
+/* line 58, ../sass/atoms/form/_form.scss */
+form input[maxlength="15"] {
+  width: 15em;
+}
+/* line 60, ../sass/atoms/form/_form.scss */
+form input[maxlength="16"] {
+  width: 16em;
+}
+/* line 62, ../sass/atoms/form/_form.scss */
+form input[maxlength="17"] {
+  width: 17em;
+}
+/* line 64, ../sass/atoms/form/_form.scss */
+form input[maxlength="18"] {
+  width: 18em;
+}
+/* line 66, ../sass/atoms/form/_form.scss */
+form input[maxlength="19"] {
+  width: 19em;
+}
+/* line 68, ../sass/atoms/form/_form.scss */
+form input[maxlength="20"] {
+  width: 20em;
+}
+
+/* line 1, ../sass/atoms/form/_input.scss */
+input {
+  height: 1.5rem;
+  background-color: #23225e;
+  color: #a2a1dd;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: normal;
+  border: 0;
+  margin-right: 1px;
+  border-radius: 2px;
+  transition: box-shadow 0.13333s ease-in-out;
+  -webkit-transition: box-shadow 0.13333s ease-in-out;
+  -moz-transition: box-shadow 0.13333s ease-in-out;
+  -o-transition: box-shadow 0.13333s ease-in-out;
+  border: 1px solid;
+  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
+  border-radius: 1px;
+}
+/* line 18, ../sass/atoms/form/_input.scss */
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* line 21, ../sass/atoms/form/_input.scss */
+input:focus {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25) inset;
+}
+/* line 27, ../sass/atoms/form/_input.scss */
+input[type="text"]:disabled {
+  background-color: #151438;
+  color: #23225e;
+}
+/* line 31, ../sass/atoms/form/_input.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 37, ../sass/atoms/form/_input.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/* line 49, ../sass/atoms/form/_input.scss */
+input[type="number"]:disabled {
+  background-color: #151438;
+  color: #23225e;
+}
+/* line 51, ../sass/atoms/form/_input.scss */
+input:not([type]) {
+  padding: 0;
+}
+/* line 54, ../sass/atoms/form/_input.scss */
+input[type="color"] {
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  max-width: 3rem;
+  height: 1.5rem;
+  margin: calc((2rem - 1.5rem) / 2) 0;
+}
+/* line 61, ../sass/atoms/form/_input.scss */
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0.3rem;
+  background: #23225e;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #2e2d66 #212059 #212059 #2e2d66;
+}
+/* line 66, ../sass/atoms/form/_input.scss */
+input[type="color"]:disabled::-webkit-color-swatch-wrapper {
+  background-color: #151438;
+  border: 1px solid;
+  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
+  border-radius: 1px;
+}
+/* line 69, ../sass/atoms/form/_input.scss */
+input[type="color"][readonly] {
+  padding: 0;
+}
+/* line 71, ../sass/atoms/form/_input.scss */
+input[type="color"][readonly]::-webkit-color-swatch-wrapper {
+  background-color: #151438;
+  border: none;
+}
+/* line 74, ../sass/atoms/form/_input.scss */
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border: 1px solid;
+  border-color: rgba(127, 127, 127, 0.625) rgba(255, 255, 255, 0.925) rgba(255, 255, 255, 0.925) rgba(127, 127, 127, 0.625);
+  border-radius: 1px;
+}
+/* line 77, ../sass/atoms/form/_input.scss */
+input[type="radio"] {
+  height: 1rem;
+  box-shadow: none;
+  border: none;
+  width: auto;
+  -webkit-appearance: none;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0.2rem 0.5rem 0;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 89, ../sass/atoms/form/_input.scss */
+input[type="radio"]:before {
+  width: 1rem;
+  height: 1rem;
+  background-color: #23225e;
+  display: block;
+  content: "";
+  padding: 0.5rem 0 0rem 0.15rem;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #2e2d66 #212059 #212059 #2e2d66;
+  border-radius: 50%;
+}
+/* line 98, ../sass/atoms/form/_input.scss */
+input[type="radio"]:checked:before {
+  border: 1px solid;
+  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
+  border-radius: 1px;
+  border-radius: 50%;
+  background-color: #ffed5b;
+}
+/* line 102, ../sass/atoms/form/_input.scss */
+input[type="radio"]:after {
+  content: attr(name);
+  color: #a2a1dd;
+  display: block;
+  position: relative;
+  left: 0.2rem;
+  margin-right: 0.2rem;
+  flex-grow: 1;
+}
+/* line 110, ../sass/atoms/form/_input.scss */
+input[type="checkbox"] {
+  height: 1rem;
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  flex-grow: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 118, ../sass/atoms/form/_input.scss */
+input[type="checkbox"]:before {
+  width: 1rem;
+  height: 1rem;
+  background-color: #23225e;
+  display: block;
+  content: "";
+  border: 1px solid;
+  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
+  border-radius: 1px;
+  font-size: 1.5rem;
+  padding-left: 0.1rem;
+}
+/* line 127, ../sass/atoms/form/_input.scss */
+input[type="checkbox"]:checked:before {
+  content: "\2713";
+  color: #ffed5b;
+  line-height: 0;
+  padding-top: 0.2rem;
+}
+/* line 132, ../sass/atoms/form/_input.scss */
+input[type="submit"] {
+  background-color: #ffed5b;
+  color: #23225e;
+  margin-top: calc((2rem - 1.5rem) / 2);
+  margin-bottom: calc((2rem - 1.5rem) / 2);
+  border: 0;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
+}
+/* line 139, ../sass/atoms/form/_input.scss */
+input[type="file"] {
+  margin: calc((2rem - 1.5rem) / 2) 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+/* line 144, ../sass/atoms/form/_input.scss */
+input::-webkit-calendar-picker-indicator:hover {
+  background-color: transparent;
+}
+
+/* line 1, ../sass/atoms/form/_label.scss */
+label {
+  flex-grow: 0;
+  height: 1.5rem;
+  padding: 0 0.5rem;
+  position: relative;
+  line-height: 1.5rem;
+  float: left;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+}
+/* line 11, ../sass/atoms/form/_label.scss */
+label.required:after {
+  content: "*";
+}
+@media all and (min-width: 128px) and (max-width: 256px) {
+  /* line 1, ../sass/atoms/form/_label.scss */
+  label {
+    display: block;
   }
-  /* line 12, ../sass/partials/_panels.scss */
-  .row > .three {
-    flex-grow: 3;
+}
+@media all and (min-width: 256px) and (max-width: 384px) {
+  /* line 1, ../sass/atoms/form/_label.scss */
+  label {
+    display: block;
   }
-  /* line 14, ../sass/partials/_panels.scss */
-  .row > .four {
-    flex-grow: 4;
+}
+@media all and (min-width: 384px) and (max-width: 640px) {
+  /* line 1, ../sass/atoms/form/_label.scss */
+  label {
+    min-width: 33%;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 18, ../sass/partials/_panels.scss */
-  .row {
-    display: flex;
+  /* line 1, ../sass/atoms/form/_label.scss */
+  label {
+    min-width: 25%;
   }
-  /* line 20, ../sass/partials/_panels.scss */
-  .row > * {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 49%;
+}
+@media all and (min-width: 1024px) and (max-width: 1664px) {
+  /* line 1, ../sass/atoms/form/_label.scss */
+  label {
+    min-width: 10%;
   }
-  /* line 24, ../sass/partials/_panels.scss */
-  .row > .row {
-    display: block;
+}
+@media all and (min-width: 1664px) {
+  /* line 1, ../sass/atoms/form/_label.scss */
+  label {
+    min-width: 10%;
+  }
+}
+
+/* line 1, ../sass/atoms/form/_legend.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/atoms/form/_meter.scss */
+meter {
+  display: block;
+  height: 1rem;
+  width: 100%;
+  vertical-align: 0;
+}
+/* line 6, ../sass/atoms/form/_meter.scss */
+meter::-webkit-meter-optimum-value {
+  background: green;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #0c860c #007900 #007900 #0c860c;
+}
+/* line 9, ../sass/atoms/form/_meter.scss */
+meter::-webkit-meter-suboptimum-value {
+  background: yellow;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #ffff0c #f2f200 #f2f200 #ffff0c;
+}
+/* line 12, ../sass/atoms/form/_meter.scss */
+meter::-webkit-meter-even-less-good-value {
+  background: red;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #ff0c0c #f20000 #f20000 #ff0c0c;
+}
+
+/* line 1, ../sass/atoms/form/_output.scss */
+output {
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+}
+
+/* line 1, ../sass/atoms/form/_progress.scss */
+progress {
+  -webkit-appearance: none;
+  display: block;
+  height: 1rem;
+  width: 100%;
+  vertical-align: 0;
+}
+/* line 7, ../sass/atoms/form/_progress.scss */
+progress::-webkit-progress-bar {
+  background-color: #23225e;
+  border: 1px solid;
+  border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
+  border-radius: 1px;
+}
+
+/* line 1, ../sass/atoms/form/_select.scss */
+select {
+  border: none;
+  font-family: inherit;
+  font-size: 100%;
+  text-transform: none;
+  margin: 0;
+  background-color: #23225e;
+  border: 1px solid;
+  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
+  border-radius: 1px;
+}
+/* line 9, ../sass/atoms/form/_select.scss */
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* line 12, ../sass/atoms/form/_select.scss */
+select:disabled {
+  background-color: #151438;
+  color: #23225e;
+}
+/* line 14, ../sass/atoms/form/_select.scss */
+select::-webkit-scrollbar-track {
+  margin-top: -1px;
+}
+
+/* line 1, ../sass/atoms/form/_textarea.scss */
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 1rem 0 0 0.62rem;
+  border: 0;
+  color: #a2a1dd;
+  overflow: auto;
+  vertical-align: top;
+  background-color: #23225e;
+  border-radius: 2px;
+  border: 1px solid;
+  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
+  border-radius: 1px;
+}
+/* line 14, ../sass/atoms/form/_textarea.scss */
+textarea:disabled {
+  background-color: #151438;
+  color: #23225e;
+}
+
+/* line 1, ../sass/atoms/form/_webkits.scss */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* line 4, ../sass/atoms/form/_webkits.scss */
+::-webkit-scrollbar-track {
+  background-color: #23225e;
+  border: 1px solid;
+  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
+  border-radius: 1px;
+  margin-top: -1px;
+}
+
+/* line 9, ../sass/atoms/form/_webkits.scss */
+::-webkit-scrollbar-thumb {
+  width: calc(100% - 2px);
+  width: 50%;
+  background-color: #151438;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #201f41 #131335 #131335 #201f41;
+}
+
+/* line 18, ../sass/atoms/form/_webkits.scss */
+::-webkit-textfield-decoration-container {
+  position: relative;
+}
+
+/* line 21, ../sass/atoms/form/_webkits.scss */
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  width: 1rem;
+  height: 100%;
+  position: relative;
+}
+/* line 27, ../sass/atoms/form/_webkits.scss */
+::-webkit-inner-spin-button:before {
+  width: 0;
+  height: 0;
+  border-left: 0.25rem solid transparent;
+  border-right: 0.25rem solid transparent;
+  border-bottom: 0.5rem solid #ffed5b;
+  content: "";
+  position: absolute;
+  bottom: 0.75rem;
+  left: 25%;
+}
+/* line 37, ../sass/atoms/form/_webkits.scss */
+::-webkit-inner-spin-button:after {
+  width: 0;
+  height: 0;
+  border-left: 0.25rem solid transparent;
+  border-right: 0.25rem solid transparent;
+  border-top: 0.5rem solid #ffed5b;
+  content: "";
+  position: absolute;
+  top: 0.75rem;
+  left: 25%;
+}
+
+/* line 48, ../sass/atoms/form/_webkits.scss */
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #a2a1dd;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #a6a5de #9998d1 #9998d1 #a6a5de;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+/* line 56, ../sass/atoms/form/_webkits.scss */
+::-webkit-media-controls-play-button {
+  -webkit-appearance: none;
+  height: 0;
+  width: 0;
+  border-top: 0.5rem solid transparent;
+  border-left: 1rem solid #a2a1dd;
+  border-bottom: 0.5rem solid transparent;
+}
+
+/* line 64, ../sass/atoms/form/_webkits.scss */
+::-webkit-media-controls-panel {
+  background-color: rgba(35, 34, 94, 0.8);
+}
+
+/* line 67, ../sass/atoms/form/_webkits.scss */
+::-webkit-media-slider-container {
+  border: none;
+  background-color: #23225e;
+}
+
+/* line 71, ../sass/atoms/form/_webkits.scss */
+::-webkit-media-controls-current-time-display {
+  color: #a2a1dd;
+}
+
+/* line 74, ../sass/atoms/form/_webkits.scss */
+::-webkit-meter-bar {
+  background: #23225e;
+  border: 1px solid;
+  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+/* line 81, ../sass/atoms/form/_webkits.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: none;
+  border: none;
+  color: #151438;
+  background-color: #ffed5b;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
+  height: 1.5rem;
+}
+
+/* line 89, ../sass/atoms/form/_webkits.scss */
+::-webkit-file-upload-button:disabled {
+  color: #151438;
+  background-color: #23225e;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #2e2d66 #212059 #212059 #2e2d66;
+}
+
+/* line 94, ../sass/atoms/form/_webkits.scss */
+::-webkit-clear-button {
+  -webkit-appearance: none;
+  content: "x";
+  display: block;
+  color: red;
+  width: 1rem;
+  height: 100%;
+}
+
+/* line 1, ../sass/atoms/interactive/_summary.scss */
+summary {
+  display: block;
+}
+
+/* line 1, ../sass/atoms/root/_html.scss */
+html {
+  font-family: sans-serif;
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 2, ../sass/atoms/section/_address.scss */
+address span {
+  display: block;
+}
+/* line 4, ../sass/atoms/section/_address.scss */
+address a.tel {
+  font-style: normal;
+  display: block;
+}
+/* line 7, ../sass/atoms/section/_address.scss */
+address a.html {
+  font-style: normal;
+  display: block;
+}
+/* line 10, ../sass/atoms/section/_address.scss */
+address a.mail {
+  display: block;
+  height: 1rem;
+}
+/* line 13, ../sass/atoms/section/_address.scss */
+address a.mail span {
+  display: block;
+  float: left;
+  font-style: normal;
+}
+/* line 17, ../sass/atoms/section/_address.scss */
+address a.mail span:after {
+  content: "\00a0";
+}
+/* line 25, ../sass/atoms/section/_address.scss */
+address a.email {
+  font-style: normal;
+  display: block;
+}
+/* line 28, ../sass/atoms/section/_address.scss */
+address a.gps {
+  font-style: normal;
+  display: block;
+}
+/* line 42, ../sass/atoms/section/_address.scss */
+address a[href*="twitter.com/"] {
+  display: block;
+  height: 1rem;
+  float: left;
+  padding: 0 0.5rem;
+}
+/* line 36, ../sass/atoms/section/_address.scss */
+address a[href*="twitter.com/"]:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  font-style: normal;
+  float: left;
+}
+/* line 44, ../sass/atoms/section/_address.scss */
+address a[href*="twitter.com/"]:before {
+  content: "\f309";
+}
+/* line 46, ../sass/atoms/section/_address.scss */
+address a[href*="plus.google.com/"] {
+  display: block;
+  height: 1rem;
+  float: left;
+  padding: 0 0.5rem;
+}
+/* line 36, ../sass/atoms/section/_address.scss */
+address a[href*="plus.google.com/"]:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  font-style: normal;
+  float: left;
+}
+/* line 48, ../sass/atoms/section/_address.scss */
+address a[href*="plus.google.com/"]:before {
+  content: "\f30f";
+}
+/* line 50, ../sass/atoms/section/_address.scss */
+address a[href*="facebook.com/"] {
+  display: block;
+  height: 1rem;
+  float: left;
+  padding: 0 0.5rem;
+}
+/* line 36, ../sass/atoms/section/_address.scss */
+address a[href*="facebook.com/"]:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  font-style: normal;
+  float: left;
+}
+/* line 52, ../sass/atoms/section/_address.scss */
+address a[href*="facebook.com/"]:before {
+  content: "\f30c";
+}
+/* line 54, ../sass/atoms/section/_address.scss */
+address a[href*="linkedin.com/"] {
+  display: block;
+  height: 1rem;
+  float: left;
+  padding: 0 0.5rem;
+}
+/* line 36, ../sass/atoms/section/_address.scss */
+address a[href*="linkedin.com/"]:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  font-style: normal;
+  float: left;
+}
+/* line 56, ../sass/atoms/section/_address.scss */
+address a[href*="linkedin.com/"]:before {
+  content: "\f318";
+}
+/* line 58, ../sass/atoms/section/_address.scss */
+address a[href*="tumblr"] {
+  display: block;
+  height: 1rem;
+  float: left;
+  padding: 0 0.5rem;
+}
+/* line 36, ../sass/atoms/section/_address.scss */
+address a[href*="tumblr"]:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  font-style: normal;
+  float: left;
+}
+/* line 60, ../sass/atoms/section/_address.scss */
+address a[href*="tumblr"]:before {
+  content: "\f315";
+}
+/* line 62, ../sass/atoms/section/_address.scss */
+address a.instagram {
+  display: block;
+  height: 1rem;
+  float: left;
+  padding: 0 0.5rem;
+}
+/* line 36, ../sass/atoms/section/_address.scss */
+address a.instagram:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  font-style: normal;
+  float: left;
+}
+/* line 64, ../sass/atoms/section/_address.scss */
+address a.instagram:before {
+  content: "\f32d";
+}
+/* line 66, ../sass/atoms/section/_address.scss */
+address a.dribbble {
+  display: block;
+  height: 1rem;
+  float: left;
+  padding: 0 0.5rem;
+}
+/* line 36, ../sass/atoms/section/_address.scss */
+address a.dribbble:before {
+  display: block;
+  font-family: "Entypo";
+  text-decoration: none;
+  font-style: normal;
+  float: left;
+}
+/* line 68, ../sass/atoms/section/_address.scss */
+address a.dribbble:before {
+  content: "\f31b";
+}
+
+/* line 1, ../sass/atoms/section/_article.scss */
+article {
+  display: block;
+  max-width: 60em;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 256px) {
+  /* line 1, ../sass/atoms/section/_article.scss */
+  article {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 384px) {
+  /* line 1, ../sass/atoms/section/_article.scss */
+  article {
+    padding: 0 3rem;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 1, ../sass/atoms/section/_article.scss */
+  article {
+    padding: 0 4rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/atoms/section/_article.scss */
+  article {
+    padding: 0 5rem;
+  }
+}
+@media only screen and (min-width: 1664px) {
+  /* line 1, ../sass/atoms/section/_article.scss */
+  article {
+    padding: 0 6rem;
+  }
+}
+
+/* line 1, ../sass/atoms/section/_aside.scss */
+aside {
+  padding-top: 2px;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+  color: #5b5a8a;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  font-family: "Open Sans";
+}
+/* line 12, ../sass/atoms/section/_aside.scss */
+aside h1, aside h2, aside h3, aside h4, aside h5 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  color: #a2a1dd;
+  font-family: "Gentium Basic";
+}
+/* line 16, ../sass/atoms/section/_aside.scss */
+aside p {
+  color: #5b5a8a;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  font-family: "Open Sans";
+}
+/* line 20, ../sass/atoms/section/_aside.scss */
+aside ul {
+  text-align: left;
+  list-style-position: inside;
+}
+/* line 23, ../sass/atoms/section/_aside.scss */
+aside ul:nth-of-type(even) {
+  padding-right: 1rem;
+}
+/* line 25, ../sass/atoms/section/_aside.scss */
+aside ul:nth-of-type(odd) {
+  padding-left: 1rem;
+}
+
+/* line 1, ../sass/atoms/section/_body.scss */
+body {
+  margin: 0;
+  height: calc(100% - 5rem);
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 1, ../sass/atoms/section/_body.scss */
+  body {
+    height: calc(100% - 3rem);
+  }
+}
+
+/* line 1, ../sass/atoms/section/_footer.scss */
+footer {
+  display: block;
+  z-index: -100;
+  min-height: 3rem;
+}
+
+/* line 1, ../sass/atoms/section/_h1.scss */
+h1 {
+  font-size: 1.62rem;
+  line-height: 2rem;
+  padding-top: 0.38rem;
+  padding-bottom: 0.6rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+  color: #ffed5b;
+  font-family: "Open Sans";
+}
+/* line 5, ../sass/atoms/section/_h1.scss */
+h1 > small {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  color: #8a8049;
+  line-height: 1em;
+  display: inline;
+}
+/* line 11, ../sass/atoms/section/_h1.scss */
+h1.uber, .uber h1 {
+  font-size: 3.24rem;
+  line-height: 4rem;
+  padding-top: 0.76rem;
+  padding-bottom: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+/* line 13, ../sass/atoms/section/_h1.scss */
+h1.uber small, .uber h1 small {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  position: relative;
+  bottom: 0.765rem;
+}
+
+/* line 1, ../sass/atoms/section/_h2.scss */
+h2 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  color: #f6cd51;
+  font-family: "Open Sans";
+}
+/* line 5, ../sass/atoms/section/_h2.scss */
+h2 > small {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  color: #857044;
+  line-height: 1em;
+  display: inline;
+}
+/* line 11, ../sass/atoms/section/_h2.scss */
+h2.uber, .uber h2 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  padding-top: 1.1rem;
+  padding-bottom: 0.9rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+}
+/* line 13, ../sass/atoms/section/_h2.scss */
+h2.uber small, .uber h2 small {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  position: relative;
+  bottom: 0.54rem;
+}
+
+/* line 1, ../sass/atoms/section/_h3.scss */
+h3 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  color: #f6cd51;
+  font-family: "Open Sans";
+}
+/* line 5, ../sass/atoms/section/_h3.scss */
+h3 > small {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  color: #857044;
+  line-height: 1em;
+  display: inline;
+}
+/* line 11, ../sass/atoms/section/_h3.scss */
+h3.uber, .uber h3 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  padding-top: 1.1rem;
+  padding-bottom: 0.9rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+}
+/* line 13, ../sass/atoms/section/_h3.scss */
+h3.uber small, .uber h3 small {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  position: relative;
+  bottom: 0.54rem;
+}
+
+/* line 1, ../sass/atoms/section/_h4.scss */
+h4 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  color: #a2a1dd;
+  font-family: "Open Sans";
+}
+/* line 5, ../sass/atoms/section/_h4.scss */
+h4 > small {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  color: #5b5a8a;
+  line-height: 1em;
+  display: inline;
+}
+/* line 11, ../sass/atoms/section/_h4.scss */
+h4.uber, .uber h4 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  padding-top: 1.1rem;
+  padding-bottom: 0.9rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+}
+/* line 13, ../sass/atoms/section/_h4.scss */
+h4.uber small, .uber h4 small {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  position: relative;
+  bottom: 0.585rem;
+}
+
+/* line 1, ../sass/atoms/section/_h5.scss */
+h5 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  margin: 0;
+  color: #a2a1dd;
+  font-family: "Open Sans";
+}
+/* line 6, ../sass/atoms/section/_h5.scss */
+h5 > small {
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  color: #5b5a8a;
+  line-height: 1em;
+  display: inline;
+}
+/* line 12, ../sass/atoms/section/_h5.scss */
+h5.uber, .uber h5 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  padding-top: 1.1rem;
+  padding-bottom: 0.9rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+}
+/* line 14, ../sass/atoms/section/_h5.scss */
+h5.uber small, .uber h5 small {
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+/* line 1, ../sass/atoms/section/_main.scss */
+main {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: visible;
+  z-index: 0;
+  display: block;
+}
+
+/* line 1, ../sass/atoms/section/_nav.scss */
+nav {
+  display: block;
+}
+
+/* line 1, ../sass/atoms/section/_section.scss */
+section {
+  display: block;
+}
+
+/* line 1, ../sass/atoms/span/_a.scss */
+a, a:visited {
+  color: inherit;
+  text-decoration: underline;
+}
+/* line 4, ../sass/atoms/span/_a.scss */
+a:active, a:visited:active {
+  outline: 0;
+}
+/* line 6, ../sass/atoms/span/_a.scss */
+a:focus, a:visited:focus {
+  outline: thin dotted;
+}
+/* line 8, ../sass/atoms/span/_a.scss */
+a:hover, a:visited:hover {
+  outline: 0;
+  color: #ffed5b;
+}
+
+/* line 1, ../sass/atoms/span/_abbr.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 1, ../sass/atoms/span/_b.scss */
+b {
+  font-weight: bold;
+}
+
+/* line 1, ../sass/atoms/span/_code.scss */
+code {
+  font-family: 'Source Code Pro', monospace;
+  color: #a2a1dd;
+  background-color: #23225e;
+  padding: 0 0.2rem;
+  line-height: 1rem;
+  border: 1px solid;
+  border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
+  border-radius: 1px;
+  font-size: 1em;
+}
+
+/* line 1, ../sass/atoms/span/_dfn.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 1, ../sass/atoms/span/_kbd.scss */
+kbd {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 1, ../sass/atoms/span/_mark.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 1, ../sass/atoms/span/_q.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 1, ../sass/atoms/span/_samp.scss */
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 1, ../sass/atoms/span/_small.scss */
+small {
+  color: #5b5a8a;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 9, ../sass/atoms/span/_small.scss */
+small:before {
+  content: " ";
+}
+
+/* line 1, ../sass/atoms/span/_strong.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 1, ../sass/atoms/span/_sub.scss */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  bottom: -0.25em;
+  vertical-align: baseline;
+}
+
+/* line 1, ../sass/atoms/span/_sup.scss */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  top: 0.5em;
+  vertical-align: baseline;
+}
+
+/* line 1, ../sass/atoms/span/_time.scss */
+time {
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  line-height: 2rem;
+  font-family: "Gentium Basic";
+}
+/* line 6, ../sass/atoms/span/_time.scss */
+time.uber, .uber time {
+  font-size: 2rem;
+  line-height: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+}
+
+/* line 1, ../sass/atoms/table/_table.scss */
+table th {
+  font-weight: bold;
+}
+
+/* line 2, ../sass/atoms/table/_table.scss */
+table td, table th {
+  padding: 9px 10px;
+  text-align: left;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1024px) {
+  /* line 7, ../sass/atoms/table/_table.scss */
+  table {
+    margin-bottom: 0;
+  }
+
+  /* line 9, ../sass/atoms/table/_table.scss */
+  .pinned {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    width: 35%;
+    overflow: hidden;
+    overflow-x: scroll;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+
+  /* line 10, ../sass/atoms/table/_table.scss */
+  .pinned table {
+    border-right: none;
+    border-left: none;
     width: 100%;
-    flex-basis: 100%;
   }
-  /* line 28, ../sass/partials/_panels.scss */
-  .row > .row > * {
-    flex-basis: 49%;
+
+  /* line 11, ../sass/atoms/table/_table.scss */
+  .pinned table th, .pinned table td {
+    white-space: nowrap;
+  }
+
+  /* line 12, ../sass/atoms/table/_table.scss */
+  .pinned td:last-child {
+    border-bottom: 0;
+  }
+
+  /* line 14, ../sass/atoms/table/_table.scss */
+  div.table-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+  }
+
+  /* line 15, ../sass/atoms/table/_table.scss */
+  div.table-wrapper div.scrollable {
+    margin-left: 35%;
+  }
+
+  /* line 16, ../sass/atoms/table/_table.scss */
+  div.table-wrapper div.scrollable {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+
+  /* line 18, ../sass/atoms/table/_table.scss */
+  table td, table th {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  /* line 19, ../sass/atoms/table/_table.scss */
+  table th:first-child, table td:first-child, table td:first-child, table.pinned td {
+    display: none;
+  }
+}
+/* line 23, ../sass/atoms/table/_table.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/molecules/_article__aside.scss */
+article > aside {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: -0.25rem;
+  margin-bottom: -0.25rem;
+  width: calc(100% + 1rem);
+}
+/* line 7, ../sass/molecules/_article__aside.scss */
+article > aside:nth-of-type(odd) {
+  float: left;
+  right: 0.5rem;
+  margin-right: -0.5rem;
+}
+/* line 10, ../sass/molecules/_article__aside.scss */
+article > aside:nth-of-type(even) {
+  float: right;
+  left: 0.5rem;
+  margin-left: -0.5rem;
+}
+@media only screen and (min-width: 256px) {
+  /* line 1, ../sass/molecules/_article__aside.scss */
+  article > aside {
+    width: calc(100% + 2rem);
+  }
+  /* line 15, ../sass/molecules/_article__aside.scss */
+  article > aside:nth-of-type(odd) {
+    right: 1rem;
+    margin-right: -1rem;
+  }
+  /* line 17, ../sass/molecules/_article__aside.scss */
+  article > aside:nth-of-type(even) {
+    left: 1rem;
+    margin-left: -1rem;
+  }
+}
+@media only screen and (min-width: 384px) {
+  /* line 1, ../sass/molecules/_article__aside.scss */
+  article > aside {
+    width: 50%;
+  }
+  /* line 21, ../sass/molecules/_article__aside.scss */
+  article > aside:nth-of-type(odd) {
+    right: 2rem;
+    margin-right: -2rem;
+  }
+  /* line 23, ../sass/molecules/_article__aside.scss */
+  article > aside:nth-of-type(even) {
+    left: 2rem;
+    margin-left: -2rem;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 26, ../sass/molecules/_article__aside.scss */
+  article > aside:nth-of-type(odd) {
+    right: 3rem;
+    margin-right: -3rem;
+  }
+  /* line 28, ../sass/molecules/_article__aside.scss */
+  article > aside:nth-of-type(even) {
+    left: 3rem;
+    margin-left: -3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/molecules/_article__aside.scss */
+  article > aside {
+    width: 33%;
+  }
+  /* line 32, ../sass/molecules/_article__aside.scss */
+  article > aside:nth-of-type(odd) {
+    right: 4rem;
+    margin-right: -4rem;
+  }
+  /* line 34, ../sass/molecules/_article__aside.scss */
+  article > aside:nth-of-type(even) {
+    left: 4rem;
+    margin-left: -4rem;
+  }
+}
+@media only screen and (min-width: 1664px) {
+  /* line 1, ../sass/molecules/_article__aside.scss */
+  article > aside {
+    width: 25%;
+  }
+  /* line 38, ../sass/molecules/_article__aside.scss */
+  article > aside:nth-of-type(odd) {
+    right: 5rem;
+    margin-right: -5rem;
+  }
+  /* line 40, ../sass/molecules/_article__aside.scss */
+  article > aside:nth-of-type(even) {
+    left: 5rem;
+    margin-left: -5rem;
+  }
+}
+
+/* line 2, ../sass/molecules/_article__blockquote.scss */
+article > blockquote:nth-of-type(odd) {
+  float: left;
+  text-align: right;
+  position: relative;
+  padding-right: 1rem;
+  right: 0.5rem;
+  margin-right: -0.5rem;
+}
+/* line 8, ../sass/molecules/_article__blockquote.scss */
+article > blockquote:nth-of-type(odd) > cite {
+  float: right;
+  text-align: right;
+}
+/* line 11, ../sass/molecules/_article__blockquote.scss */
+article > blockquote:nth-of-type(even) {
+  float: right;
+  text-align: left;
+  position: relative;
+  padding-left: 1rem;
+  left: 0.5rem;
+  margin-left: -0.5rem;
+}
+/* line 17, ../sass/molecules/_article__blockquote.scss */
+article > blockquote:nth-of-type(even) > cite {
+  float: left;
+  text-align: left;
+}
+/* line 20, ../sass/molecules/_article__blockquote.scss */
+article > blockquote > cite {
+  font-family: Open Sans;
+  color: #f6cd51;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+/* line 26, ../sass/molecules/_article__blockquote.scss */
+article > blockquote > cite:before {
+  content: "- ";
+}
+@media only screen and (min-width: 256px) {
+  /* line 1, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote {
+    width: calc(100% + 2rem);
+  }
+  /* line 30, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote:nth-of-type(odd) {
+    right: 1rem;
+    margin-right: -1rem;
+  }
+  /* line 32, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote:nth-of-type(even) {
+    left: 1rem;
+    margin-left: -1rem;
+  }
+}
+@media only screen and (min-width: 384px) {
+  /* line 1, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote {
+    width: calc(100% + 4rem);
+  }
+  /* line 36, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote:nth-of-type(odd) {
+    right: 2rem;
+    margin-right: -2rem;
+  }
+  /* line 38, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote:nth-of-type(even) {
+    left: 2rem;
+    margin-left: -2rem;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 1, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote {
+    width: 50%;
+  }
+  /* line 42, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote:nth-of-type(odd) {
+    right: 3rem;
+    margin-right: -3rem;
+  }
+  /* line 44, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote:nth-of-type(even) {
+    left: 3rem;
+    margin-left: -3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 47, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote:nth-of-type(odd) {
+    right: 4rem;
+    margin-right: -4rem;
+  }
+  /* line 49, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote:nth-of-type(even) {
+    left: 4rem;
+    margin-left: -4rem;
+  }
+}
+@media only screen and (min-width: 1664px) {
+  /* line 52, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote:nth-of-type(odd) {
+    right: 5rem;
+    margin-right: -5rem;
+  }
+  /* line 54, ../sass/molecules/_article__blockquote.scss */
+  article > blockquote:nth-of-type(even) {
+    left: 5rem;
+    margin-left: -5rem;
+  }
+}
+
+/* line 2, ../sass/molecules/_article__figure.scss */
+article > figure:nth-of-type(odd) {
+  float: right;
+  padding-left: 1rem;
+  margin-right: -0.5rem;
+}
+/* line 6, ../sass/molecules/_article__figure.scss */
+article > figure:nth-of-type(even) {
+  float: left;
+  margin-left: -0.5rem;
+}
+@media only screen and (min-width: 256px) {
+  /* line 1, ../sass/molecules/_article__figure.scss */
+  article > figure {
+    width: calc(100% + 2rem);
+  }
+  /* line 11, ../sass/molecules/_article__figure.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -1rem;
+  }
+  /* line 13, ../sass/molecules/_article__figure.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -1rem;
+  }
+}
+@media only screen and (min-width: 384px) {
+  /* line 1, ../sass/molecules/_article__figure.scss */
+  article > figure {
+    width: calc(100% + 4rem);
+  }
+  /* line 17, ../sass/molecules/_article__figure.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -2rem;
+  }
+  /* line 19, ../sass/molecules/_article__figure.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -2rem;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 1, ../sass/molecules/_article__figure.scss */
+  article > figure {
+    width: 50%;
+  }
+  /* line 23, ../sass/molecules/_article__figure.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -3rem;
+  }
+  /* line 25, ../sass/molecules/_article__figure.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 28, ../sass/molecules/_article__figure.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -4rem;
+  }
+  /* line 30, ../sass/molecules/_article__figure.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -4rem;
+  }
+}
+@media only screen and (min-width: 1664px) {
+  /* line 33, ../sass/molecules/_article__figure.scss */
+  article > figure:nth-of-type(odd) {
+    margin-right: -5rem;
+  }
+  /* line 35, ../sass/molecules/_article__figure.scss */
+  article > figure:nth-of-type(even) {
+    margin-left: -5rem;
+  }
+}
+
+/* line 1, ../sass/molecules/_body__header.scss */
+body > header {
+  background-color: #23225e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: content-box;
+  min-height: 2rem;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  display: block;
+  height: 3rem;
+  z-index: 100;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #2e2d66 #212059 #212059 #2e2d66;
+  border-top: none;
+}
+@media only screen and (min-width: 256px) {
+  /* line 1, ../sass/molecules/_body__header.scss */
+  body > header {
+    width: 100%;
+  }
+  /* line 18, ../sass/molecules/_body__header.scss */
+  body > header + main {
+    padding-top: 3rem;
+  }
+}
+@media only screen and (min-width: 384px) {
+  /* line 1, ../sass/molecules/_body__header.scss */
+  body > header {
+    width: 100%;
+  }
+  /* line 22, ../sass/molecules/_body__header.scss */
+  body > header + main {
+    padding-top: 3rem;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 1, ../sass/molecules/_body__header.scss */
+  body > header {
+    width: 100%;
+  }
+  /* line 26, ../sass/molecules/_body__header.scss */
+  body > header + main {
+    padding-top: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/molecules/_body__header.scss */
+  body > header {
+    width: 100%;
+  }
+  /* line 31, ../sass/molecules/_body__header.scss */
+  body > header + main {
+    padding-top: 5rem;
+  }
+}
+@media only screen and (min-width: 1664px) {
+  /* line 1, ../sass/molecules/_body__header.scss */
+  body > header {
+    width: 100%;
+  }
+  /* line 35, ../sass/molecules/_body__header.scss */
+  body > header + main {
+    padding-top: 5rem;
+  }
+}
+
+/* line 1, ../sass/molecules/_dl__ol.scss */
+dl > ol {
+  counter-reset: li;
+  padding: 0;
+}
+/* line 5, ../sass/molecules/_dl__ol.scss */
+dl > ol dt {
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: inline;
+  padding: 0;
+  line-height: 1.25rem;
+  margin-left: -2rem;
+}
+/* line 12, ../sass/molecules/_dl__ol.scss */
+dl > ol dd {
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+}
+/* line 14, ../sass/molecules/_dl__ol.scss */
+dl > ol li {
+  padding: 0 0 1rem 0;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+/* line 19, ../sass/molecules/_dl__ol.scss */
+dl > ol li ol {
+  padding: 0;
+  display: inline;
+}
+/* line 22, ../sass/molecules/_dl__ol.scss */
+dl > ol li ol li {
+  float: none;
+}
+/* line 24, ../sass/molecules/_dl__ol.scss */
+dl > ol li ol li:before {
+  content: counter(li) ".";
+  counter-increment: li;
+  margin-right: 0.2rem;
+  font-weight: bold;
+}
+/* line 29, ../sass/molecules/_dl__ol.scss */
+dl > ol li ol dd {
+  margin: 0;
+  display: inline;
+}
+
+/* line 1, ../sass/molecules/_figure__img.scss */
+figure > img {
+  width: 100%;
+  border-radius: 2px;
+}
+/* line 4, ../sass/molecules/_figure__img.scss */
+figure > img + figcaption {
+  color: #5b5a8a;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  font-family: "Open Sans";
+  position: relative;
+  bottom: 0.75rem;
+  text-align: center;
+}
+
+/* line 1, ../sass/molecules/_footer__.colophon.scss */
+footer .colophon {
+  display: block;
+  text-align: center;
+}
+
+/* line 1, ../sass/molecules/_header__.logo.scss */
+header .logo {
+  display: inline-block;
+  float: left;
+  height: 2rem;
+  margin-top: 0.33333rem;
+  margin-left: 1rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  z-index: 110;
+}
+/* line 9, ../sass/molecules/_header__.logo.scss */
+header .logo + h1 {
+  margin-left: 1rem;
+}
+
+/* line 1, ../sass/molecules/_header__.masthead.scss */
+header .masthead {
+  position: absolute;
+  margin: 0 auto;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+  height: 3rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  /*masthead should be centered on page*/
+}
+@media only screen and (max-width: 1024px) {
+  /* line 1, ../sass/molecules/_header__.masthead.scss */
+  header .masthead {
+    height: 3rem;
+  }
+  /* line 12, ../sass/molecules/_header__.masthead.scss */
+  header .masthead .logo + h1 {
+    top: -1rem;
+  }
+}
+/* line 21, ../sass/molecules/_header__.masthead.scss */
+header .masthead .logo {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  float: none;
+}
+/* line 27, ../sass/molecules/_header__.masthead.scss */
+header .masthead h1 {
+  float: none;
+}
+/* line 29, ../sass/molecules/_header__.masthead.scss */
+header .masthead .logo + h1 {
+  position: relative;
+  top: -1rem;
+}
+
+@media all and (min-width: 1024px) {
+  /* line 2, ../sass/molecules/_header--.collapsed.scss */
+  header.collapsed {
+    background-color: #151438;
+    border: 1px solid;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    border-color: #201f41 #131335 #131335 #201f41;
+    border-top: none;
+  }
+  /* line 7, ../sass/molecules/_header--.collapsed.scss */
+  header.collapsed section.search {
+    display: none;
+  }
+  /* line 10, ../sass/molecules/_header--.collapsed.scss */
+  header.collapsed section.masthead {
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    margin-left: -50%;
+  }
+  /* line 16, ../sass/molecules/_header--.collapsed.scss */
+  header.collapsed section.masthead h1,
+  header.collapsed h1 {
+    font-size: 0;
+    opacity: 0;
+  }
+  /* line 20, ../sass/molecules/_header--.collapsed.scss */
+  header.collapsed nav li ul {
+    background-color: #23225e;
+  }
+  /* line 22, ../sass/molecules/_header--.collapsed.scss */
+  header.collapsed nav ul {
+    background-color: #151438;
+  }
+}
+
+/* line 1, ../sass/molecules/_header__h1.scss */
+header h1 {
+  display: inline-block;
+  float: left;
+  line-height: 3rem;
+  margin-top: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: auto;
+  z-index: 110;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.45rem;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  color: #151438;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 1, ../sass/molecules/_header__nav.scss */
+header > nav {
+  float: right;
+}
+/* line 6, ../sass/molecules/_header__nav.scss */
+header > nav address {
+  float: right;
+  height: 3rem;
+  align-items: center;
+  display: flex;
+}
+/* line 11, ../sass/molecules/_header__nav.scss */
+header > nav address a {
+  height: 3rem;
+}
+/* line 13, ../sass/molecules/_header__nav.scss */
+header > nav address a, header > nav address a:before {
+  color: #ffed5b;
+  text-decoration: none;
+}
+/* line 16, ../sass/molecules/_header__nav.scss */
+header > nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+/* line 21, ../sass/molecules/_header__nav.scss */
+header > nav ul li {
+  display: flex;
+  padding: 0 0.5rem;
+  height: 3rem;
+  align-items: center;
+}
+/* line 26, ../sass/molecules/_header__nav.scss */
+header > nav ul li:hover {
+  background-color: #ffed5b;
+  color: #151438;
+}
+/* line 29, ../sass/molecules/_header__nav.scss */
+header > nav ul li:hover > ul {
+  max-width: 4000px;
+  margin-left: 0.5rem;
+  margin-right: -0.5rem;
+  border-color: #151438;
+  border-width: 1px;
+}
+/* line 36, ../sass/molecules/_header__nav.scss */
+header > nav ul li:hover > ul > li:hover {
+  background-color: #23225e;
+  color: #a2a1dd;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #2e2d66 #212059 #212059 #2e2d66;
+}
+/* line 40, ../sass/molecules/_header__nav.scss */
+header > nav ul li:hover > ul > li:hover > a {
+  color: #a2a1dd;
+}
+/* line 42, ../sass/molecules/_header__nav.scss */
+header > nav ul li a {
+  text-decoration: none;
+}
+/* line 44, ../sass/molecules/_header__nav.scss */
+header > nav ul li a:hover {
+  color: #151438;
+}
+/* line 46, ../sass/molecules/_header__nav.scss */
+header > nav ul li > ul {
+  max-width: 0;
+  overflow: hidden;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 1, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav {
+  position: relative;
+  top: 3rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  z-index: 110;
+}
+/* line 6, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav address {
+  position: absolute;
+  bottom: 2rem;
+  height: 3rem;
+  left: 0;
+  padding-left: 0.5rem;
+  z-index: 110;
+}
+/* line 13, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav address a {
+  line-height: 3rem;
+  height: 3rem;
+}
+/* line 16, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav address a, header > section.masthead ~ nav address a:before {
+  color: #ffed5b;
+  text-decoration: none;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 23, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav address a {
+    color: #151438;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 1, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav {
+    position: fixed;
+    top: 3rem;
+    left: -1px;
+    height: 100%;
+    height: 100%;
+    z-index: 999;
+    padding-bottom: 100%;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateY(100%) translateZ(0) scale3d(1, 0, 1);
+    -moz-transform: translateY(100%) translateZ(0) scale3d(1, 0, 1);
+    -o-transform: translateY(100%) translateZ(0) scale3d(1, 0, 1);
+    -ms-transform: translateY(100%) translateZ(0) scale3d(1, 0, 1);
+    transform: translateY(100%) translateZ(0) scale3d(1, 0, 1);
+    -webkit-transform-origin: 50% -100%;
+    -moz-transform-origin: 50% -100%;
+    -o-transform-origin: 50% -100%;
+    -ms-transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
+  }
+  /* line 39, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav ul {
+    display: block;
     float: left;
+    top: 0;
+    background-color: #23225e;
+  }
+  /* line 45, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav address {
+    margin-top: 0;
+    width: auto;
+    height: 2rem;
+    background-color: #23225e;
+    top: 0;
+    left: 0;
+    padding-left: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #23225e;
+  }
+  /* line 55, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav address a {
+    line-height: 2rem;
+    height: 2rem;
+  }
+  /* line 58, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav address + ul {
+    top: 2rem;
+  }
+  /* line 60, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav li {
+    padding-left: 1rem;
+    display: block;
+    text-align: left;
+  }
+  /* line 64, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav li > a {
+    padding: 1rem 0;
+    height: 1rem;
+  }
+}
+/* line 67, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav a {
+  font-family: "Gentium Basic";
+}
+/* line 69, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul {
+  position: relative;
+  max-width: 60em;
+  min-height: 2rem;
+  background-color: #23225e;
+  float: none;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: table;
+  table-layout: fixed;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #2e2d66 #212059 #212059 #2e2d66;
+}
+/* line 84, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul > div {
+  display: none;
+}
+/* line 86, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul div + li {
+  border-top: 1px solid #1c1b4b;
+}
+/* line 88, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul li {
+  box-sizing: border-box;
+  table-layout: fixed;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  text-align: left;
+  float: left;
+  width: 100%;
+  display: table-cell;
+}
+/* line 100, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul li:hover {
+  background-color: #ffed5b;
+  border: none;
+}
+/* line 103, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul li:hover ul {
+  z-index: 999;
+  width: 110%;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #2e2d66 #212059 #212059 #2e2d66;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 103, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav > ul li:hover ul {
+    left: 100%;
+  }
+}
+/* line 109, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul li:hover ul li {
+  margin-bottom: 0;
+}
+/* line 112, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul li:hover > a, header > section.masthead ~ nav > ul li:hover > a:hover {
+  color: #151438;
+}
+/* line 114, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul li:hover > a:after {
+  left: calc(100% + 1.2rem);
+  border-top: 0.75rem solid #23225e;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+@media only screen and (max-width: 1024px) {
+  /* line 118, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav > ul li ul {
+    left: -100%;
+  }
+}
+/* line 121, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul li ul + a:after {
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  left: calc(100% + 0.2rem);
+}
+/* line 126, ../sass/molecules/_header__section__.masthead__nav.scss */
+header > section.masthead ~ nav > ul li > a {
+  text-decoration: none;
+  width: 100%;
+  display: table-cell;
+}
+@media only screen and (min-width: 256px) {
+  /* line 1, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav {
+    width: 62%;
+  }
+}
+@media only screen and (min-width: 384px) {
+  /* line 1, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav {
     width: 50%;
   }
 }
-@media all and (min-width: 0px) and (max-width: 640px) {
-  /* line 34, ../sass/partials/_panels.scss */
-  .row {
-    display: block;
-  }
-  /* line 36, ../sass/partials/_panels.scss */
-  .row > * {
-    display: block;
+@media only screen and (min-width: 640px) {
+  /* line 1, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav {
+    width: 38%;
   }
 }
-/* line 38, ../sass/partials/_panels.scss */
-.row {
-  width: 100%;
-  flex-wrap: wrap;
-  *zoom: 1;
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav {
+    width: 100%;
+  }
+  /* line 138, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav > ul {
+    border: 0;
+    box-shadow: none;
+  }
+  /* line 141, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav > ul li {
+    width: auto;
+    text-align: center;
+    float: none;
+  }
+  /* line 146, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav > ul li:hover ul {
+    width: 100%;
+  }
+  /* line 148, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav > ul li a {
+    display: block;
+  }
+  /* line 150, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav > ul > div + li {
+    border-top: none;
+    border-left: 1px solid #1c1b4b;
+  }
+  /* line 153, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav li {
+    float: none;
+    text-align: center;
+    display: table-cell;
+  }
+  /* line 158, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav li:hover ul {
+    top: 100%;
+  }
+  /* line 160, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav li:hover a:after {
+    border-top: 0.75rem solid #23225e;
+  }
 }
-/* line 27, ../sass/partials/base/utilities/_layout.scss */
-.row:before, .row:after {
-  content: "";
+@media only screen and (min-width: 1664px) {
+  /* line 1, ../sass/molecules/_header__section__.masthead__nav.scss */
+  header > section.masthead ~ nav {
+    width: 100%;
+  }
+}
+
+/* line 1, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
+header > section.masthead ~ nav li > ul {
+  background-color: #23225e;
   display: table;
+  position: absolute;
+  left: -100%;
+  padding: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #2e2d66 #212059 #212059 #2e2d66;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+  border: 0;
 }
-/* line 31, ../sass/partials/base/utilities/_layout.scss */
-.row:after {
-  clear: both;
+/* line 15, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
+header > section.masthead ~ nav li > ul:hover {
+  border: 1px none none none;
+}
+/* line 17, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
+header > section.masthead ~ nav li > ul li {
+  margin-bottom: -100%;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  border-radius: 0;
+  float: left;
+  width: 100%;
+  display: table;
+  height: 2rem;
+}
+/* line 25, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
+header > section.masthead ~ nav li > ul li:last-of-type {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+/* line 28, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
+header > section.masthead ~ nav li > ul li a {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 31, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
+header > section.masthead ~ nav li > ul + a {
+  position: relative;
+}
+/* line 33, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
+header > section.masthead ~ nav li > ul + a:after {
+  content: ' ';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 0.5rem solid #ffed5b;
+  border-left: 0.25rem solid transparent;
+  border-right: 0.25rem solid transparent;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  left: calc(100% + 0.2rem);
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
+  header > section.masthead ~ nav li > ul {
+    left: 0;
+    top: 50%;
+  }
+  /* line 53, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
+  header > section.masthead ~ nav li > ul div + li {
+    border-top: 1px solid #1c1b4b;
+  }
+  /* line 55, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
+  header > section.masthead ~ nav li > ul + a:after {
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: calc(100% + 0.2rem);
+  }
 }
 
-/* line 42, ../sass/partials/_panels.scss */
-.column {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+/* line 1, ../sass/molecules/_header__.slide-toggle.scss */
+.slide-toggle {
+  float: left;
+  height: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+  color: #ffed5b;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1rem;
+  right: auto;
+  padding: 0;
+  min-width: 0;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 1, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-toggle {
+    display: block;
+  }
 }
 
-/* line 41, ../sass/partials/_classes.scss */
+/* line 21, ../sass/molecules/_header__.slide-toggle.scss */
+.slide-toggle,
+.slide-toggle:active,
+.slide-toggle:focus {
+  border: none !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 26, ../sass/molecules/_header__.slide-toggle.scss */
+.slide-toggle:after {
+  content: "\f0c9";
+  display: block;
+  font: 2rem "fontawesome";
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.42);
+  height: 1.7rem;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* line 35, ../sass/molecules/_header__.slide-toggle.scss */
+.slide-checkbox {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 40, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ nav {
+    -webkit-transform: translateY(0) scale3d(1, 1, 1);
+    -moz-transform: translateY(0) scale3d(1, 1, 1);
+    -o-transform: translateY(0) scale3d(1, 1, 1);
+    -ms-transform: translateY(0) scale3d(1, 1, 1);
+    transform: translateY(0) scale3d(1, 1, 1);
+  }
+}
+
+/* line 43, ../sass/molecules/_header__.slide-toggle.scss */
+.slide-checkbox:checked ~ .slide-toggle:after {
+  content: '\f0c9';
+}
+@media only screen and (max-width: 1024px) {
+  /* line 43, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ .slide-toggle:after {
+    text-shadow: 0px 0px rgba(0, 0, 0, 0.42);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -o-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+}
+
+/* line 1, ../sass/molecules/_p__code.scss */
+p > code {
+  font-size: 85%;
+  margin: 0 0.2rem;
+  padding: 0.1rem 0.3rem;
+}
+
+/* line 2, ../sass/molecules/_section--.hero.scss */
 section.hero {
   height: 100%;
   display: flex;
@@ -3949,109 +3498,147 @@ section.hero {
   text-align: center;
   padding: 0 calc((100% - 60em) / 2);
 }
-/* line 50, ../sass/partials/_classes.scss */
+/* line 10, ../sass/molecules/_section--.hero.scss */
 section.hero > * {
   width: 100%;
   flex-grow: 1;
   padding: 0 0.5rem;
 }
 
-@media all and (min-width: 1024px) {
-  /* line 56, ../sass/partials/_classes.scss */
-  header.collapsed {
-    background-color: #151438;
-    border: 1px solid;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    border-color: #201f41 #131335 #131335 #201f41;
-  }
-  /* line 60, ../sass/partials/_classes.scss */
-  header.collapsed section.search {
-    display: none;
-  }
-  /* line 63, ../sass/partials/_classes.scss */
-  header.collapsed section.masthead {
-    position: absolute;
-    margin: auto;
-    left: 50%;
-    margin-left: -50%;
-  }
-  /* line 69, ../sass/partials/_classes.scss */
-  header.collapsed section.masthead h1,
-  header.collapsed h1 {
-    font-size: 0;
-    opacity: 0;
-  }
-  /* line 73, ../sass/partials/_classes.scss */
-  header.collapsed nav li ul {
-    background-color: #23225e;
-  }
-  /* line 75, ../sass/partials/_classes.scss */
-  header.collapsed nav ul {
-    background-color: #151438;
-  }
+/* line 4, ../sass/molecules/_styleguide.scss */
+#swatches {
+  width: 100%;
+  display: block;
+  background-color: #151438;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* line 10, ../sass/molecules/_styleguide.scss */
+#swatches > * {
+  width: 100%;
+}
+/* line 16, ../sass/molecules/_styleguide.scss */
+#swatches .row > figure > * {
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* line 1, ../sass/partials/_z-index.scss */
-header {
-  z-index: 100;
-}
-/* line 3, ../sass/partials/_z-index.scss */
-header img.logo {
-  z-index: 110;
-}
-/* line 5, ../sass/partials/_z-index.scss */
-header h1 {
-  z-index: 110;
-}
-/* line 7, ../sass/partials/_z-index.scss */
-header address {
-  z-index: 110;
-}
-/* line 9, ../sass/partials/_z-index.scss */
-header section {
-  z-index: 110;
-}
-/* line 13, ../sass/partials/_z-index.scss */
-header .slide-toggle {
-  z-index: 120;
-}
-/* line 14, ../sass/partials/_z-index.scss */
-header nav {
-  z-index: 110;
-}
-/* line 18, ../sass/partials/_z-index.scss */
-header nav ul li ul {
-  z-index: -999;
+/* line 20, ../sass/molecules/_styleguide.scss */
+.colors > *,
+.headers > * {
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
 }
 
-/* line 21, ../sass/partials/_z-index.scss */
-main {
-  z-index: 0;
+/* line 26, ../sass/molecules/_styleguide.scss */
+.colors {
+  background-color: #23225e;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid;
+  border-color: rgba(17, 17, 47, 0.625) rgba(47, 46, 102, 0.925) rgba(47, 46, 102, 0.925) rgba(17, 17, 47, 0.625);
+  border-radius: 1px;
+}
+/* line 31, ../sass/molecules/_styleguide.scss */
+.colors > * {
+  padding: 1rem;
+  display: block;
 }
 
-/* line 23, ../sass/partials/_z-index.scss */
-footer {
-  z-index: -100;
+/* line 36, ../sass/molecules/_styleguide.scss */
+p#color-description {
+  width: 100%;
+  content: "Color scheme based on #ffed5b";
 }
 
-/* line 55, ../sass/_style.scss */
-hr {
-  height: 2px;
-  margin: calc(0.5rem - 1px) 0;
-  padding: 0;
-  border: none;
+/* line 40, ../sass/molecules/_styleguide.scss */
+p#musical-typography {
+  width: 100%;
+  content: "set in d aug";
+}
+/* line 43, ../sass/molecules/_styleguide.scss */
+p#musical-typography + div.row {
+  text-align: center;
+}
+
+/* line 48, ../sass/molecules/_styleguide.scss */
+.swatch {
+  min-height: 3rem;
+}
+/* line 51, ../sass/molecules/_styleguide.scss */
+.swatch, .swatch + figcaption {
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+/* line 58, ../sass/molecules/_styleguide.scss */
+#primary-swatch .swatch {
+  background-color: #ffed5b;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
+}
+/* line 62, ../sass/molecules/_styleguide.scss */
+#primary-swatch figcaption {
+  color: #ffed5b;
   background-color: #151438;
   border: 1px solid;
   border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
   border-radius: 1px;
-  box-sizing: border-box;
 }
 
-@media print {
-  /* line 87, ../sass/_style.scss */
-  a[href]:after {
-    content: " (" attr(href) ") ";
-  }
+/* line 69, ../sass/molecules/_styleguide.scss */
+#secondary-swatch .swatch {
+  background-color: #f6cd51;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #f6cf59 #e9c24c #e9c24c #f6cf59;
 }
+/* line 73, ../sass/molecules/_styleguide.scss */
+#secondary-swatch figcaption {
+  color: #f6cd51;
+  background-color: #151438;
+  border: 1px solid;
+  border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
+  border-radius: 1px;
+}
+
+/* line 80, ../sass/molecules/_styleguide.scss */
+#tertiary-swatch .swatch {
+  background-color: #f6cd51;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #f6cf59 #e9c24c #e9c24c #f6cf59;
+}
+/* line 84, ../sass/molecules/_styleguide.scss */
+#tertiary-swatch figcaption {
+  color: #f6cd51;
+  background-color: #151438;
+  border: 1px solid;
+  border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
+  border-radius: 1px;
+}
+
+/* line 91, ../sass/molecules/_styleguide.scss */
+#accent-swatch .swatch {
+  background-color: #ffed5b;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
+}
+/* line 95, ../sass/molecules/_styleguide.scss */
+#accent-swatch figcaption {
+  color: #ffed5b;
+  background-color: #151438;
+  border: 1px solid;
+  border-color: rgba(10, 10, 28, 0.625) rgba(34, 33, 67, 0.925) rgba(34, 33, 67, 0.925) rgba(10, 10, 28, 0.625);
+  border-radius: 1px;
+}
+
 /* { / picnicc } */

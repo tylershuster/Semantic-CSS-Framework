@@ -1,0 +1,16 @@
+h2{
+	@include font-properties-for(h2);
+	color: $color-secondary;
+	font-family: '#{$heading-font}';
+	&>small{
+		@include font-properties-for(h3);
+		color: mix($color-secondary, $color-background);
+		line-height: 1em;
+		display: inline;}
+	&.uber,
+	.uber &{
+		@include font-properties-for(h2,2);
+		small{
+			@include font-properties-for(h3,1);
+			position: relative;
+			bottom: #{typography(h3,padding-bottom) * 1.2rem};}}}

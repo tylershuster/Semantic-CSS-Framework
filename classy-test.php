@@ -1,4 +1,4 @@
-<?php inc("phpartials/header.php") ?>
+<?php include "phpartials/header.php"; ?>
 	<div class="a">	
 		<div class="maj row">
 			<div><h1>A Major H1</h1></div>
@@ -1796,8 +1796,9 @@
 		</div>
 	</div>
 </body>
-=======
+
+			<script src="javascripts/scripts.js"></script>
+
 	
-	
-</body>
->>>>>>> Update classy-test.html
+</html>
+

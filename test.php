@@ -1,4 +1,4 @@
-<?php inc("phpartials/header.php") ?>
+<?php include "phpartials/header.php"; ?>
 	<main>
 	<section class="hero">
 		<span>

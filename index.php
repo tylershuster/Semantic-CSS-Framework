@@ -1,4 +1,4 @@
-<?php inc("phpartials/header.php") ?>
+<?php include "phpartials/header.php"; ?>
 	<main>
 		<section class="hero">
 			<a href="#overview">
@@ -46,4 +46,6 @@
 		</article>		
 	</main>
 </body>
+		<script src="javascripts/scripts.js"></script>
+
 </html>
