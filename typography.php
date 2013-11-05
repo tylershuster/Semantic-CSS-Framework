@@ -1,46 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0, user-scalable=no" />
-	<title>Semantic CSS Framework Typography</title>
-	<link rel="stylesheet" href="stylesheets/themes/piano-classy.css">
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-
-	
-</head>
-<body>
-	<header>
-		<section class="masthead">
-			<img src="logo.png" alt="" class="logo">
-			<h1>Semantic CSS Framework</h1>
-		</section>
-		<input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
-		<label for="slide-checkbox" class="slide-toggle" onclick></label>
-		<nav>
-			<address>
-					<a href="http://facebook.com/herrshuster"></a>
-					<a href="http://twitter.com/tylershuster"></a>
-					<a href="https://plus.google.com/104346126731383465661"></a>
-			</address>
-			<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="semantics.html">Semantics</a></li>
-					<li><a href="typography.html">Typography</a></li>
-					<li><a href="header.html">Header</a></li>
-					<li>
-						<a href="elements.html">Elements</a>
-						<ul>
-							<li><a href="elements.html#article">Article</a></li>
-							<li><a href="elements.html#forms">Forms</a></li>
-							<li><a href="elements.html#patterns">Design Patterns</a></li>
-						</ul>
-					</li>
-					<div></div>
-					<li><a href="reference.html">Reference</a></li>
-			</ul>
-		</nav>
-	</header>
+<?php inc("phpartials/header.php") ?>
 	<main>
 	<section id="swatches">
 	<!--background for background of whole swatch, drawer for each figure - vice versa-->

@@ -10,6 +10,7 @@
 @import "laws/color/color-schemer/mixins";
 @import "laws/color/color-schemer/ryb";
 @import "laws/color/color-schemer/tint-shade";
+@import "laws/normalize";
 @import "laws/variables";
 @import "laws/mixins";
 @import "laws/phi";
@@ -45,6 +46,7 @@
 
 @import "atoms/form/button";
 @import "atoms/form/datalist";
+@import "atoms/form/fieldset";
 @import "atoms/form/form";
 @import "atoms/form/input";
 @import "atoms/form/keygen";

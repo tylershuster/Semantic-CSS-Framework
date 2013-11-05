@@ -5,6 +5,8 @@ textarea{
 	padding: 1rem 0 0 0.62rem;
 	border: 0;
 	color: $color-text;
+	overflow: auto;
+	vertical-align: top;
 	background-color: $color-input-background;
 	@if $skeu == 'faux-flat' {
 		border-radius: $unit__border-radius;}

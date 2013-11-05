@@ -15,7 +15,8 @@ form{
 		line-height: typography(p,line-height) * 1rem;		
 		white-space: nowrap;}
 
-		
+	label{
+		padding: 0 0.5rem;}
 	input{
 		display: block;			
 		flex-grow: 1;	

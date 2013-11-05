@@ -1,34 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF eighths">
-  <meta name="viewport" content="width=device-width" />
-  <meta name="viewport" content="height=device-height" />
-  <title>Document</title>
-  <link rel="stylesheet" href="stylesheets/style.css">
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
- 
-    <!--<script src="../style.css/javascripts/jquery.baseline.js"></script>-->
-
-</head>
-<body>
-  <header>
-    <section class="masthead">
-      <img src="logo.png" alt="" class="logo">
-      <h1>Style.css</h1>
-    </section>
-    <input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
-    <label for="slide-checkbox" class="slide-toggle" onclick></label>
-    <nav>   
-      <ul>
-        <li><a href="#semantics">Semantics</a></li>
-        <li><a href="#">Typography</a></li>
-        <li><a href="#">Header</a></li>
-        <li><a href="#">Elements</a></li>
-        <li><a href="#">Reference</a></li>   
-      </ul>      
-    </nav>     
-  </header>
+<?php inc("phpartials/header.php") ?>
   <main>
 	<form name="my-form" action="https://picni.cc/api/v1/build/" method="post">
   <input type="hidden" name="username" value="herrshuster">

@@ -1,13 +1,4 @@
-<!doctype html>
-<html lang="en" style="height: auto;">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0, user-scalable=no" />
-	<title>Document</title>
-	<link rel="stylesheet" href="stylesheets/style.css">
-	<link rel="stylesheet" href="stylesheets/classy.css">
-</head>
-<body>
+<?php inc("phpartials/header.php") ?>
 	<div class="a">	
 		<div class="maj row">
 			<div><h1>A Major H1</h1></div>

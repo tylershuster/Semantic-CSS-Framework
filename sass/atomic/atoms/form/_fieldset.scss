@@ -32,7 +32,6 @@ fieldset{
 			@include box-shadow-inset($color-background);
 			background-color: $color-primary;
 			color: $color-background;
-			padding-top: 0.2rem;	
 			border-radius: 0;}
 		input{			
 			box-shadow: none;

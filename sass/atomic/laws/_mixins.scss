@@ -744,13 +744,15 @@ body {
 	color: $color-drawer;}
 
 @mixin media-from($width){
-	@media only screen and (min-width: #{$width}){
+	@media only screen and (min-width: #{$width * 1px}){
 		@content;
 	}
 }
 
 @mixin media-to($width){
-	@media only screen and (max-width: #{$width}){
+	@media only screen and (max-width: #{$width * 1px}){
 		@content;
 	}
 }
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);

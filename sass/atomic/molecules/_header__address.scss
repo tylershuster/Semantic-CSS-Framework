@@ -5,6 +5,12 @@ header address{
 	left: 0;
 	padding-left: 0.5rem;
 	z-index: 110;
+	a{
+		line-height: #{$unit__header--height};
+		height: #{$unit__header--height};
+		&, &:before{
+			color: $color-primary;
+			text-decoration: none;}}
 	@include media-from($unit__base-x-two){
 
 	}
@@ -21,9 +27,4 @@ header address{
 	@include media-from($unit__base-x-thirteen){
 
 	}
-	a{
-		line-height: #{$unit__header--height};
-		height: #{$unit__header--height};
-		&, &:before{
-			color: $color-primary;
-			text-decoration: none;}}}
+}

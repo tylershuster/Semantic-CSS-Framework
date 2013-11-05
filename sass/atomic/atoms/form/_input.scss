@@ -15,6 +15,9 @@ input{
 	-moz-transition: box-shadow #{$length__transition / 3} $style__animation-ease;
 	-o-transition: box-shadow #{$length__transition / 3} $style__animation-ease;
 	@include box-shadow-inset($color-input-background);
+	&::-moz-focus-inner{
+		border: 0;
+		padding: 0;}
 	&:focus{
 		@if $skeu == faux-flat{
 			box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;}
@@ -25,7 +28,14 @@ input{
 			@include input-disabled;}}
 	&[type="range"]{}
 	&[type="email"]{}
-	&[type="search"]{}
+	&[type="search"]{
+		-webkit-appearance: textfield;
+		-moz-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+		&::-webkit-search-cancel-button,
+		&::-webkit-search-decoration {
+			-webkit-appearance: none;}}
 	&[type="url"]{}
 	&[type="password"]{}
 	&[type="tel"]{}
@@ -74,6 +84,8 @@ input{
 		align-items: center;
 		margin: 0.5rem 0.2rem 0.5rem 0;
 		background-color: transparent;
+		box-sizing: border-box;
+		padding: 0;
 		&:before{
 			width: 1rem;
 			height: 1rem;
@@ -101,6 +113,8 @@ input{
 		box-shadow: none;
 		border: none;
 		flex-grow: 0;
+		box-sizing: border-box;
+		padding: 0;
 		&:before{
 			width: 1rem;
 			height: 1rem;

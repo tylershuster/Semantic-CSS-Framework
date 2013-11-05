@@ -40,7 +40,7 @@ header>nav{
 			text-align: left;
 			> a{
 				padding: 1rem 0;
-				height: 3rem;}}
+				height: 1rem;}}
 		-webkit-transition: -webkit-transform #{$length__transition / 2} $style__animation-ease;
 		-moz-transition: -moz-transform #{$length__transition / 2} $style__animation-ease;
 		-o-transition: -o-transform #{$length__transition / 2} $style__animation-ease;
@@ -51,35 +51,8 @@ header>nav{
 		-moz-perspective: 1000;
 		-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;
-		@include prefixer("transform", "translateY(100%) scale3d(1, 0, 1)");
-		@include prefixer("transform-origin", "50% -100%");}
-	@include media-from($unit__base-x-two){
-		width: 62%;}
-	@include media-from($unit__base-x-three){
-		width: 50%;}
-	@include media-from($unit__base-x-five){
-		height: 100%;
-		width: 38%;}
-	@include media-from($unit__base-x-eight){
-		@include column(8,8);
-		>ul{
-			border: 0;
-			box-shadow: none;
-			>div + li{
-				border-top: none;
-				border-left: 1px solid mix($color-background,$color-drawer);}}
-		li{
-			float: none;
-			text-align: center;
-			display: table-cell;
-			&:hover{
-				ul{
-					top: 100%;}
-				a:after{
-					border-top: 0.75rem solid $color-drawer;}}}}
-
-	@include media-from($unit__base-x-thirteen){
-		@include column(13,13);}
+		@include prefixer(transform, translateY(100%) scale3d(1, 0, 1));
+		@include prefixer(transform-origin, 50% -100%);}
 	a{
 		font-family: "#{$body-font}";}
 	>ul{
@@ -112,12 +85,12 @@ header>nav{
 			text-align: left;
 			float: left;
 			width: 100%;
-			display: block;	
+			display: table-cell;	
 			&:hover{
 				background-color: $color-primary;
 				border: none;
 				ul{
-					left: 0;
+					left: 100%;
 					z-index: 999;
 					width: 110%;
 					@include box-shadow($color-drawer);
@@ -140,4 +113,40 @@ header>nav{
 			>a{									
 				text-decoration: none;
 				width: 100%;
-				display: block;}}}}
+				display: table-cell;}}}
+	@include media-from($unit__base-x-two){
+		width: 62%;}
+	@include media-from($unit__base-x-three){
+		width: 50%;}
+	@include media-from($unit__base-x-five){		
+		width: 38%;}
+	@include media-from($unit__base-x-eight){
+		@include column(8,8);
+		>ul{
+			border: 0;
+			box-shadow: none;
+			li{
+				width: auto;
+				text-align: center;
+				float: none;
+				&:hover{
+					ul{
+						width: 100%;}}
+				a{
+					display: block;}}
+			>div + li{
+				border-top: none;
+				border-left: 1px solid mix($color-background,$color-drawer);}}
+		li{
+			float: none;
+			text-align: center;
+			display: table-cell;
+			&:hover{
+				ul{
+					top: 100%;}
+				a:after{
+					border-top: 0.75rem solid $color-drawer;}}}}
+
+	@include media-from($unit__base-x-thirteen){
+		@include column(13,13);}
+}

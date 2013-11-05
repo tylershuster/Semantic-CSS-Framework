@@ -54,6 +54,12 @@
 		html {font-size: 125%;}}
 	$font-base: 24;}
 
+@include media-from($unit__base-x-two){
+	.row>*{
+		flex-basis: #{$unit__base-x-two * 1px}}}
+
+
+
 @media all and (min-width:#{$unit__base-x-eight * 1px}){
 	.row{
 		display: flex;		
@@ -75,8 +81,7 @@
 		display: flex;
 		>*{
 			display: flex;
-			flex-grow: 1;
-			flex-basis: 49%;}
+			flex-grow: 1;}
 		>.row{
 			display: block;
 			width: 100%;
@@ -97,4 +102,6 @@
 	@include clearfix;}
 .column{
 	padding-left: 0.5rem;
-	padding-right: 0.5rem;}
+	padding-right: 0.5rem;
+	&>*{
+		margin: 0 auto;}}

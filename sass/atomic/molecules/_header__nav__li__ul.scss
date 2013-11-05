@@ -14,20 +14,6 @@ header>nav li>ul{
 	border: 0;
 	&:hover{
 		border: 1px none none none;}
-	@include media-from($unit__base-x-two){}
-	@include media-from($unit__base-x-three){}
-	@include media-from($unit__base-x-five){}
-	@include media-from($unit__base-x-eight){
-		left: 0;
-		top: 50%;
-		div + li{
-			border-top: 1px solid mix($color-background, $color-drawer);}
-		& + a:after{
-			bottom: 0;
-			top: 0;
-			margin: auto;
-			left: calc(100% + 0.2rem);}}
-	@include media-from($unit__base-x-thirteen){}
 	li{
 		margin-bottom: -100%;
 		@include transition;
@@ -57,4 +43,19 @@ header>nav li>ul{
 		top: 0;
 		margin: auto;
 		left: calc(100% + 0.2rem);
-		@include transition;}}
+		@include transition;}
+	@include media-from($unit__base-x-two){}
+	@include media-from($unit__base-x-three){}
+	@include media-from($unit__base-x-five){}
+	@include media-from($unit__base-x-eight){
+		left: 0;
+		top: 50%;
+		div + li{
+			border-top: 1px solid mix($color-background, $color-drawer);}
+		& + a:after{
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			left: calc(100% + 0.2rem);}}
+	@include media-from($unit__base-x-thirteen){}
+}

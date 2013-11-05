@@ -13,6 +13,7 @@
 	left: 1rem;
 	right: auto;
 	padding: 0;
+	min-width: 0;
 	@include media-to($length-mobile-cutoff){
 		display: block;}}
 
@@ -41,11 +42,11 @@
 	left: -9999px;
 	@include media-to($length-mobile-cutoff){		
 		&:checked ~ nav{
-			@include prefixer("transform", "translateY(0) scale3d(1, 1, 1)");}}}
+			@include prefixer(transform, translateY(0) scale3d(1, 1, 1));}}}
 
 .slide-checkbox:checked ~ .slide-toggle:after {
 	content: '\f0c9';
 	@include media-to($length-mobile-cutoff){
 		@include text-shadow-inset;
-		@include prefixer("transform", "rotateZ(90deg)");}}
+		@include prefixer(transform, rotateZ(90deg));}}
 
