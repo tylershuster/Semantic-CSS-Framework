@@ -1,15 +1,14 @@
 .slide-toggle {
 	float: left;
+	height: $unit__nav--height;
 	cursor: pointer;	
 	z-index: 1;
 	display: none;
 	color: $color-primary;
-	margin: 0;
+	margin: auto;
 	position: absolute;
-	height: $unit__nav--height;
 	top: 0;
 	bottom: 0;
-	margin: auto;
 	left: 1rem;
 	right: auto;
 	padding: 0;
@@ -31,10 +30,7 @@
 	text-align: center;	
 	@include text-shadow;
 	height: #{$unit__nav--height * 0.85};
-	-webkit-transition: -webkit-transform #{$length__transition / 2} $style__animation-ease;
-			-moz-transition: -moz-transform #{$length__transition / 2} $style__animation-ease;
-			-o-transition: -o-transform #{$length__transition / 2} $style__animation-ease;
-			transition: transform #{$length__transition / 2} $style__animation-ease;}
+	@include prefixer(transition, transform #{$length__transition / 2} $style__animation-ease);}
 
 .slide-checkbox {
 	position: absolute;

@@ -5,47 +5,35 @@ article>aside{
 	margin-bottom: -0.25rem;
 	width: calc(100% + #{2 * $article-margin-length-one});
 	&:nth-of-type(odd){
-		right: $article-margin-length-one ;
-		margin-right: $article-margin-length-one  * -1;}
+		@include re-base(right, $article-margin-length-one);}
 	&:nth-of-type(even){
-		left: $article-margin-length-one ;
-		margin-left: $article-margin-length-one  * -1;}
+		@include re-base(left, $article-margin-length-one);}
 	@include media-from($unit__base-x-two){
 		width: calc(100% + #{2 * $article-margin-length-two});
 		&:nth-of-type(odd){
-			right: $article-margin-length-two ;
-			margin-right: $article-margin-length-two  * -1;}
+			@include re-base(right, $article-margin-length-two);}
 		&:nth-of-type(even){
-			left: $article-margin-length-two;
-			margin-left: $article-margin-length-two * -1;}}
+			@include re-base(left, $article-margin-length-two);}}
 	@include media-from($unit__base-x-three){
 		width: 50%;
 		&:nth-of-type(odd){
-			right: $article-margin-length-three ;
-			margin-right: $article-margin-length-three  * -1;}
+			@include re-base(right, $article-margin-length-three);}
 		&:nth-of-type(even){
-			left: $article-margin-length-three;
-			margin-left: $article-margin-length-three * -1;}}
+			@include re-base(left, $article-margin-length-three);}}
 	@include media-from($unit__base-x-five){
 		&:nth-of-type(odd){
-			right: $article-margin-length-five ;
-			margin-right: $article-margin-length-five  * -1;}
+			@include re-base(right, $article-margin-length-five);}
 		&:nth-of-type(even){
-			left: $article-margin-length-five;
-			margin-left: $article-margin-length-five * -1;}}
+			@include re-base(left, $article-margin-length-five);}}
 	@include media-from($unit__base-x-eight){
 		width: 33%;
 		&:nth-of-type(odd){
-			right: $article-margin-length-eight ;
-			margin-right: $article-margin-length-eight  * -1;}
+			@include re-base(right, $article-margin-length-eight);}
 		&:nth-of-type(even){
-			left: $article-margin-length-eight;
-			margin-left: $article-margin-length-eight * -1;}}
+			@include re-base(left, $article-margin-length-eight);}}
 	@include media-from($unit__base-x-thirteen){
 		width: 25%;
 		&:nth-of-type(odd){
-			right: $article-margin-length-thirteen ;
-			margin-right: $article-margin-length-thirteen  * -1;}
+			@include re-base(right, $article-margin-length-thirteen);}
 		&:nth-of-type(even){
-			left: $article-margin-length-thirteen;
-			margin-left: $article-margin-length-thirteen * -1;}}}
+			@include re-base(left, $article-margin-length-thirteen);}}}

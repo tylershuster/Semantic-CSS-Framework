@@ -6,8 +6,7 @@ header .masthead{
 	width: 100%;
 	padding: 0 1rem;
 	height: #{$unit__header--height};	
-	transition: all $length__transition $style__animation-ease;
-	-webkit-transition: all $length__transition $style__animation-ease;	
+	@include prefixer(transition, all $length__transition $style__animation-ease);	
 	@include media-to($length-mobile-cutoff){
 		height: $unit__header--height;
 		.logo + h1{

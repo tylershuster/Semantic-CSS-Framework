@@ -1,8 +1,7 @@
 header>nav{
 	position: relative;
 	top: #{$unit__header--height};	
-	transition: all $length__transition $style__animation-ease;
-	-webkit-transition: all $length__transition $style__animation-ease;
+	@include prefixer(transition, all $length__transition $style__animation-ease);
 	z-index: 110;
 	@include media-to($length-mobile-cutoff){
 		position: fixed;
@@ -12,6 +11,11 @@ header>nav{
 		height: 100%;
 		z-index: 999;
 		padding-bottom: 100%;
+		@include prefixer(transition, transform #{$length__transition / 2} $style__animation-ease);
+		@include prefixer(perspective, 1000);
+		@include prefixer(backface-visibility, hidden);
+		@include prefixer(transform, translateY(100%) translateZ(0) scale3d(1, 0, 1));
+		@include prefixer(transform-origin, 50% -100%);
 		ul{
 			display: block;
 			float: left;				
@@ -22,7 +26,6 @@ header>nav{
 			margin-top: 0;
 			width: auto;
 			height: #{$unit__nav--height};
-			//height: #{$unit__nav--height - $unit__nav--height / 3};
 			background-color: $color-drawer;				
 			top: 0;
 			left: 0;
@@ -40,19 +43,7 @@ header>nav{
 			text-align: left;
 			> a{
 				padding: 1rem 0;
-				height: 1rem;}}
-		-webkit-transition: -webkit-transform #{$length__transition / 2} $style__animation-ease;
-		-moz-transition: -moz-transform #{$length__transition / 2} $style__animation-ease;
-		-o-transition: -o-transform #{$length__transition / 2} $style__animation-ease;
-		transition: transform #{$length__transition / 2} $style__animation-ease;
-		-webkit-transform: translateZ(0);
-		-moz-transform: translateZ(0);
-		-webkit-perspective: 1000;
-		-moz-perspective: 1000;
-		-webkit-backface-visibility: hidden;
-		-moz-backface-visibility: hidden;
-		@include prefixer(transform, translateY(100%) scale3d(1, 0, 1));
-		@include prefixer(transform-origin, 50% -100%);}
+				height: 1rem;}}}
 	a{
 		font-family: "#{$body-font}";}
 	>ul{

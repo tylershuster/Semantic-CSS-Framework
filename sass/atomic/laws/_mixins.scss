@@ -756,3 +756,7 @@ body {
 }
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+@mixin re-base($side,$amount){
+	#{$side}: #{$amount};
+	margin-#{$side}: #{$amount * -1};}

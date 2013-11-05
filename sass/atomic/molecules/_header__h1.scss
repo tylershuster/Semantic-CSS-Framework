@@ -9,5 +9,4 @@ header h1{
 	z-index: 110;
 	@include font-properties-for(h2);
 	color: $color__header--h1;
-	transition: all $length__transition $style__animation-ease;
-	-webkit-transition: all $length__transition $style__animation-ease;}
+	@include prefixer(transition, all $length__transition $style__animation-ease);}

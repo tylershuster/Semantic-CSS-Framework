@@ -4,8 +4,7 @@ article>blockquote{
 		text-align: right;
 		position: relative;		
 		padding-right: 1rem;
-		right: $article-margin-length-one ;
-		margin-right: $article-margin-length-one  * -1;
+		@include re-base(right, $article-margin-length-one);
 		> cite{
 			float: right;
 			text-align: right;}}
@@ -14,11 +13,10 @@ article>blockquote{
 		text-align: left;
 		position: relative;
 		padding-left: 1rem;	
-		left: $article-margin-length-one ;
-		margin-left: $article-margin-length-one  * -1;
+		@include re-base(left, $article-margin-length-one);
 		> cite{
-				float: left;
-				text-align: left;}}
+			float: left;
+			text-align: left;}}
 	> cite{
 		font-family: $sans;
 		color: $color-secondary;		
@@ -30,38 +28,28 @@ article>blockquote{
 	@include media-from($unit__base-x-two){
 		width: calc(100% + #{2 * $article-margin-length-two});
 		&:nth-of-type(odd){
-			right: $article-margin-length-two ;
-			margin-right: $article-margin-length-two  * -1;}
+			@include re-base(right, $article-margin-length-two);}
 		&:nth-of-type(even){
-			left: $article-margin-length-two;
-			margin-left: $article-margin-length-two * -1;}}
+			@include re-base(left, $article-margin-length-two);}}
 	@include media-from($unit__base-x-three){
 		width: calc(100% + #{2 * $article-margin-length-three});
 		&:nth-of-type(odd){
-			right: $article-margin-length-three ;
-			margin-right: $article-margin-length-three  * -1;}
+			@include re-base(right, $article-margin-length-three);}
 		&:nth-of-type(even){
-			left: $article-margin-length-three;
-			margin-left: $article-margin-length-three * -1;}}
+			@include re-base(left, $article-margin-length-three);}}
 	@include media-from($unit__base-x-five){
 		width: 50%;
 		&:nth-of-type(odd){
-			right: $article-margin-length-five ;
-			margin-right: $article-margin-length-five  * -1;}
+			@include re-base(right, $article-margin-length-five);}
 		&:nth-of-type(even){
-			left: $article-margin-length-five;
-			margin-left: $article-margin-length-five * -1;}}
+			@include re-base(left, $article-margin-length-five);}}
 	@include media-from($unit__base-x-eight){
 		&:nth-of-type(odd){
-			right: $article-margin-length-eight ;
-			margin-right: $article-margin-length-eight  * -1;}
+			@include re-base(right, $article-margin-length-eight);}
 		&:nth-of-type(even){
-			left: $article-margin-length-eight;
-			margin-left: $article-margin-length-eight * -1;}}
+			@include re-base(left, $article-margin-length-eight);}}
 	@include media-from($unit__base-x-thirteen){
 		&:nth-of-type(odd){
-			right: $article-margin-length-thirteen ;
-			margin-right: $article-margin-length-thirteen  * -1;}
+			@include re-base(right, $article-margin-length-thirteen);}
 		&:nth-of-type(even){
-			left: $article-margin-length-thirteen;
-			margin-left: $article-margin-length-thirteen * -1;}}}
+			@include re-base(left, $article-margin-length-thirteen);}}}

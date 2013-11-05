@@ -2372,7 +2372,7 @@ article > aside:nth-of-type(odd) {
   right: 0.5rem;
   margin-right: -0.5rem;
 }
-/* line 10, ../sass/atomic/molecules/_article__aside.scss */
+/* line 9, ../sass/atomic/molecules/_article__aside.scss */
 article > aside:nth-of-type(even) {
   left: 0.5rem;
   margin-left: -0.5rem;
@@ -2382,12 +2382,12 @@ article > aside:nth-of-type(even) {
   article > aside {
     width: calc(100% + 2rem);
   }
-  /* line 15, ../sass/atomic/molecules/_article__aside.scss */
+  /* line 13, ../sass/atomic/molecules/_article__aside.scss */
   article > aside:nth-of-type(odd) {
     right: 1rem;
     margin-right: -1rem;
   }
-  /* line 18, ../sass/atomic/molecules/_article__aside.scss */
+  /* line 15, ../sass/atomic/molecules/_article__aside.scss */
   article > aside:nth-of-type(even) {
     left: 1rem;
     margin-left: -1rem;
@@ -2398,24 +2398,24 @@ article > aside:nth-of-type(even) {
   article > aside {
     width: 50%;
   }
-  /* line 23, ../sass/atomic/molecules/_article__aside.scss */
+  /* line 19, ../sass/atomic/molecules/_article__aside.scss */
   article > aside:nth-of-type(odd) {
     right: 2rem;
     margin-right: -2rem;
   }
-  /* line 26, ../sass/atomic/molecules/_article__aside.scss */
+  /* line 21, ../sass/atomic/molecules/_article__aside.scss */
   article > aside:nth-of-type(even) {
     left: 2rem;
     margin-left: -2rem;
   }
 }
 @media only screen and (min-width: 640px) {
-  /* line 30, ../sass/atomic/molecules/_article__aside.scss */
+  /* line 24, ../sass/atomic/molecules/_article__aside.scss */
   article > aside:nth-of-type(odd) {
     right: 3rem;
     margin-right: -3rem;
   }
-  /* line 33, ../sass/atomic/molecules/_article__aside.scss */
+  /* line 26, ../sass/atomic/molecules/_article__aside.scss */
   article > aside:nth-of-type(even) {
     left: 3rem;
     margin-left: -3rem;
@@ -2426,12 +2426,12 @@ article > aside:nth-of-type(even) {
   article > aside {
     width: 33%;
   }
-  /* line 38, ../sass/atomic/molecules/_article__aside.scss */
+  /* line 30, ../sass/atomic/molecules/_article__aside.scss */
   article > aside:nth-of-type(odd) {
     right: 4rem;
     margin-right: -4rem;
   }
-  /* line 41, ../sass/atomic/molecules/_article__aside.scss */
+  /* line 32, ../sass/atomic/molecules/_article__aside.scss */
   article > aside:nth-of-type(even) {
     left: 4rem;
     margin-left: -4rem;
@@ -2442,12 +2442,12 @@ article > aside:nth-of-type(even) {
   article > aside {
     width: 25%;
   }
-  /* line 46, ../sass/atomic/molecules/_article__aside.scss */
+  /* line 36, ../sass/atomic/molecules/_article__aside.scss */
   article > aside:nth-of-type(odd) {
     right: 5rem;
     margin-right: -5rem;
   }
-  /* line 49, ../sass/atomic/molecules/_article__aside.scss */
+  /* line 38, ../sass/atomic/molecules/_article__aside.scss */
   article > aside:nth-of-type(even) {
     left: 5rem;
     margin-left: -5rem;
@@ -2463,12 +2463,12 @@ article > blockquote:nth-of-type(odd) {
   right: 0.5rem;
   margin-right: -0.5rem;
 }
-/* line 9, ../sass/atomic/molecules/_article__blockquote.scss */
+/* line 8, ../sass/atomic/molecules/_article__blockquote.scss */
 article > blockquote:nth-of-type(odd) > cite {
   float: right;
   text-align: right;
 }
-/* line 12, ../sass/atomic/molecules/_article__blockquote.scss */
+/* line 11, ../sass/atomic/molecules/_article__blockquote.scss */
 article > blockquote:nth-of-type(even) {
   float: right;
   text-align: left;
@@ -2477,12 +2477,12 @@ article > blockquote:nth-of-type(even) {
   left: 0.5rem;
   margin-left: -0.5rem;
 }
-/* line 19, ../sass/atomic/molecules/_article__blockquote.scss */
+/* line 17, ../sass/atomic/molecules/_article__blockquote.scss */
 article > blockquote:nth-of-type(even) > cite {
   float: left;
   text-align: left;
 }
-/* line 22, ../sass/atomic/molecules/_article__blockquote.scss */
+/* line 20, ../sass/atomic/molecules/_article__blockquote.scss */
 article > blockquote > cite {
   font-family: Open Sans;
   color: #062046;
@@ -2490,7 +2490,7 @@ article > blockquote > cite {
   line-height: 1rem;
   margin-bottom: 1rem;
 }
-/* line 28, ../sass/atomic/molecules/_article__blockquote.scss */
+/* line 26, ../sass/atomic/molecules/_article__blockquote.scss */
 article > blockquote > cite:before {
   content: "- ";
 }
@@ -2499,12 +2499,12 @@ article > blockquote > cite:before {
   article > blockquote {
     width: calc(100% + 2rem);
   }
-  /* line 32, ../sass/atomic/molecules/_article__blockquote.scss */
+  /* line 30, ../sass/atomic/molecules/_article__blockquote.scss */
   article > blockquote:nth-of-type(odd) {
     right: 1rem;
     margin-right: -1rem;
   }
-  /* line 35, ../sass/atomic/molecules/_article__blockquote.scss */
+  /* line 32, ../sass/atomic/molecules/_article__blockquote.scss */
   article > blockquote:nth-of-type(even) {
     left: 1rem;
     margin-left: -1rem;
@@ -2515,12 +2515,12 @@ article > blockquote > cite:before {
   article > blockquote {
     width: calc(100% + 4rem);
   }
-  /* line 40, ../sass/atomic/molecules/_article__blockquote.scss */
+  /* line 36, ../sass/atomic/molecules/_article__blockquote.scss */
   article > blockquote:nth-of-type(odd) {
     right: 2rem;
     margin-right: -2rem;
   }
-  /* line 43, ../sass/atomic/molecules/_article__blockquote.scss */
+  /* line 38, ../sass/atomic/molecules/_article__blockquote.scss */
   article > blockquote:nth-of-type(even) {
     left: 2rem;
     margin-left: -2rem;
@@ -2531,36 +2531,36 @@ article > blockquote > cite:before {
   article > blockquote {
     width: 50%;
   }
-  /* line 48, ../sass/atomic/molecules/_article__blockquote.scss */
+  /* line 42, ../sass/atomic/molecules/_article__blockquote.scss */
   article > blockquote:nth-of-type(odd) {
     right: 3rem;
     margin-right: -3rem;
   }
-  /* line 51, ../sass/atomic/molecules/_article__blockquote.scss */
+  /* line 44, ../sass/atomic/molecules/_article__blockquote.scss */
   article > blockquote:nth-of-type(even) {
     left: 3rem;
     margin-left: -3rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 55, ../sass/atomic/molecules/_article__blockquote.scss */
+  /* line 47, ../sass/atomic/molecules/_article__blockquote.scss */
   article > blockquote:nth-of-type(odd) {
     right: 4rem;
     margin-right: -4rem;
   }
-  /* line 58, ../sass/atomic/molecules/_article__blockquote.scss */
+  /* line 49, ../sass/atomic/molecules/_article__blockquote.scss */
   article > blockquote:nth-of-type(even) {
     left: 4rem;
     margin-left: -4rem;
   }
 }
 @media only screen and (min-width: 1664px) {
-  /* line 62, ../sass/atomic/molecules/_article__blockquote.scss */
+  /* line 52, ../sass/atomic/molecules/_article__blockquote.scss */
   article > blockquote:nth-of-type(odd) {
     right: 5rem;
     margin-right: -5rem;
   }
-  /* line 65, ../sass/atomic/molecules/_article__blockquote.scss */
+  /* line 54, ../sass/atomic/molecules/_article__blockquote.scss */
   article > blockquote:nth-of-type(even) {
     left: 5rem;
     margin-left: -5rem;
@@ -2647,11 +2647,14 @@ header .logo {
   height: 2rem;
   margin-top: 0.33333rem;
   margin-left: 1rem;
-  transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   z-index: 110;
 }
-/* line 10, ../sass/atomic/molecules/_header__.logo.scss */
+/* line 9, ../sass/atomic/molecules/_header__.logo.scss */
 header .logo + h1 {
   margin-left: 1rem;
 }
@@ -2665,8 +2668,11 @@ header .masthead {
   width: 100%;
   padding: 0 1rem;
   height: 3rem;
-  transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   /*masthead should be centered on page*/
 }
 @media only screen and (max-width: 1024px) {
@@ -2674,12 +2680,12 @@ header .masthead {
   header .masthead {
     height: 3rem;
   }
-  /* line 13, ../sass/atomic/molecules/_header__.masthead.scss */
+  /* line 12, ../sass/atomic/molecules/_header__.masthead.scss */
   header .masthead .logo + h1 {
     top: -1rem;
   }
 }
-/* line 22, ../sass/atomic/molecules/_header__.masthead.scss */
+/* line 21, ../sass/atomic/molecules/_header__.masthead.scss */
 header .masthead .logo {
   margin: auto;
   top: 0;
@@ -2687,11 +2693,11 @@ header .masthead .logo {
   height: 100%;
   float: none;
 }
-/* line 28, ../sass/atomic/molecules/_header__.masthead.scss */
+/* line 27, ../sass/atomic/molecules/_header__.masthead.scss */
 header .masthead h1 {
   float: none;
 }
-/* line 30, ../sass/atomic/molecules/_header__.masthead.scss */
+/* line 29, ../sass/atomic/molecules/_header__.masthead.scss */
 header .masthead .logo + h1 {
   position: relative;
   top: -1rem;
@@ -2774,16 +2780,22 @@ header h1 {
   font-style: normal;
   margin: 0;
   color: #f6f9fe;
-  transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 /* line 1, ../sass/atomic/molecules/_header__nav.scss */
 header > nav {
   position: relative;
   top: 3rem;
-  transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   z-index: 110;
 }
 @media only screen and (max-width: 1024px) {
@@ -2796,35 +2808,40 @@ header > nav {
     height: 100%;
     z-index: 999;
     padding-bottom: 100%;
-    -webkit-transition: -webkit-transform 0.2s ease-in-out;
-    -moz-transition: -moz-transform 0.2s ease-in-out;
-    -o-transition: -o-transform 0.2s ease-in-out;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
     -webkit-perspective: 1000;
     -moz-perspective: 1000;
+    -o-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-    -webkit-transform: translateY(100%) scale3d(1, 0, 1);
-    -moz-transform: translateY(100%) scale3d(1, 0, 1);
-    -o-transform: translateY(100%) scale3d(1, 0, 1);
-    -ms-transform: translateY(100%) scale3d(1, 0, 1);
-    transform: translateY(100%) scale3d(1, 0, 1);
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateY(100%) translateZ(0) scale3d(1, 0, 1);
+    -moz-transform: translateY(100%) translateZ(0) scale3d(1, 0, 1);
+    -o-transform: translateY(100%) translateZ(0) scale3d(1, 0, 1);
+    -ms-transform: translateY(100%) translateZ(0) scale3d(1, 0, 1);
+    transform: translateY(100%) translateZ(0) scale3d(1, 0, 1);
     -webkit-transform-origin: 50% -100%;
     -moz-transform-origin: 50% -100%;
     -o-transform-origin: 50% -100%;
     -ms-transform-origin: 50% -100%;
     transform-origin: 50% -100%;
   }
-  /* line 15, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 19, ../sass/atomic/molecules/_header__nav.scss */
   header > nav ul {
     display: block;
     float: left;
     top: 0;
     background-color: #b9d3f9;
   }
-  /* line 21, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 25, ../sass/atomic/molecules/_header__nav.scss */
   header > nav address {
     margin-top: 0;
     width: auto;
@@ -2836,32 +2853,32 @@ header > nav {
     text-align: center;
     border-bottom: 1px solid #b9d3f9;
   }
-  /* line 32, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 35, ../sass/atomic/molecules/_header__nav.scss */
   header > nav address a {
     line-height: 2rem;
     height: 2rem;
   }
-  /* line 35, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 38, ../sass/atomic/molecules/_header__nav.scss */
   header > nav address + ul {
     top: 2rem;
   }
-  /* line 37, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 40, ../sass/atomic/molecules/_header__nav.scss */
   header > nav li {
     padding-left: 1rem;
     display: block;
     text-align: left;
   }
-  /* line 41, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 44, ../sass/atomic/molecules/_header__nav.scss */
   header > nav li > a {
     padding: 1rem 0;
     height: 1rem;
   }
 }
-/* line 56, ../sass/atomic/molecules/_header__nav.scss */
+/* line 47, ../sass/atomic/molecules/_header__nav.scss */
 header > nav a {
   font-family: "Gentium Basic";
 }
-/* line 58, ../sass/atomic/molecules/_header__nav.scss */
+/* line 49, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul {
   position: relative;
   max-width: 60em;
@@ -2878,15 +2895,15 @@ header > nav > ul {
   box-sizing: border-box;
   border: none;
 }
-/* line 73, ../sass/atomic/molecules/_header__nav.scss */
+/* line 64, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul > div {
   display: none;
 }
-/* line 75, ../sass/atomic/molecules/_header__nav.scss */
+/* line 66, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul div + li {
   border-top: 1px solid #d7e6fb;
 }
-/* line 77, ../sass/atomic/molecules/_header__nav.scss */
+/* line 68, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul li {
   box-sizing: border-box;
   table-layout: fixed;
@@ -2900,27 +2917,27 @@ header > nav > ul li {
   width: 100%;
   display: table-cell;
 }
-/* line 89, ../sass/atomic/molecules/_header__nav.scss */
+/* line 80, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul li:hover {
   background-color: #0f4da8;
   border: none;
 }
-/* line 92, ../sass/atomic/molecules/_header__nav.scss */
+/* line 83, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul li:hover ul {
   left: 100%;
   z-index: 999;
   width: 110%;
   border: none;
 }
-/* line 97, ../sass/atomic/molecules/_header__nav.scss */
+/* line 88, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul li:hover ul li {
   margin-bottom: 0;
 }
-/* line 100, ../sass/atomic/molecules/_header__nav.scss */
+/* line 91, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul li:hover > a, header > nav > ul li:hover > a:hover {
   color: #f6f9fe;
 }
-/* line 102, ../sass/atomic/molecules/_header__nav.scss */
+/* line 93, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul li:hover > a:after {
   left: calc(100% + 1.2rem);
   border-top: 0.75rem solid #b9d3f9;
@@ -2930,18 +2947,18 @@ header > nav > ul li:hover > a:after {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 106, ../sass/atomic/molecules/_header__nav.scss */
+/* line 97, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul li ul {
   left: -100%;
 }
-/* line 108, ../sass/atomic/molecules/_header__nav.scss */
+/* line 99, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul li ul + a:after {
   bottom: 0;
   top: 0;
   margin: auto;
   left: calc(100% + 0.2rem);
 }
-/* line 113, ../sass/atomic/molecules/_header__nav.scss */
+/* line 104, ../sass/atomic/molecules/_header__nav.scss */
 header > nav > ul li > a {
   text-decoration: none;
   width: 100%;
@@ -2970,41 +2987,41 @@ header > nav > ul li > a {
   header > nav {
     width: 100%;
   }
-  /* line 125, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 116, ../sass/atomic/molecules/_header__nav.scss */
   header > nav > ul {
     border: 0;
     box-shadow: none;
   }
-  /* line 128, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 119, ../sass/atomic/molecules/_header__nav.scss */
   header > nav > ul li {
     width: auto;
     text-align: center;
     float: none;
   }
-  /* line 133, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 124, ../sass/atomic/molecules/_header__nav.scss */
   header > nav > ul li:hover ul {
     width: 100%;
   }
-  /* line 135, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 126, ../sass/atomic/molecules/_header__nav.scss */
   header > nav > ul li a {
     display: block;
   }
-  /* line 137, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 128, ../sass/atomic/molecules/_header__nav.scss */
   header > nav > ul > div + li {
     border-top: none;
     border-left: 1px solid #d7e6fb;
   }
-  /* line 140, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 131, ../sass/atomic/molecules/_header__nav.scss */
   header > nav li {
     float: none;
     text-align: center;
     display: table-cell;
   }
-  /* line 145, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 136, ../sass/atomic/molecules/_header__nav.scss */
   header > nav li:hover ul {
     top: 100%;
   }
-  /* line 147, ../sass/atomic/molecules/_header__nav.scss */
+  /* line 138, ../sass/atomic/molecules/_header__nav.scss */
   header > nav li:hover a:after {
     border-top: 0.75rem solid #b9d3f9;
   }
@@ -3104,16 +3121,15 @@ header > nav li > ul + a:after {
 /* line 1, ../sass/atomic/molecules/_header__.slide-toggle.scss */
 .slide-toggle {
   float: left;
+  height: 2rem;
   cursor: pointer;
   z-index: 1;
   display: none;
   color: #0f4da8;
-  margin: 0;
+  margin: auto;
   position: absolute;
-  height: 2rem;
   top: 0;
   bottom: 0;
-  margin: auto;
   left: 1rem;
   right: auto;
   padding: 0;
@@ -3126,7 +3142,7 @@ header > nav li > ul + a:after {
   }
 }
 
-/* line 22, ../sass/atomic/molecules/_header__.slide-toggle.scss */
+/* line 21, ../sass/atomic/molecules/_header__.slide-toggle.scss */
 .slide-toggle,
 .slide-toggle:active,
 .slide-toggle:focus {
@@ -3135,27 +3151,28 @@ header > nav li > ul + a:after {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 27, ../sass/atomic/molecules/_header__.slide-toggle.scss */
+/* line 26, ../sass/atomic/molecules/_header__.slide-toggle.scss */
 .slide-toggle:after {
   content: "\f0c9";
   display: block;
   font: 2rem "fontawesome";
   text-align: center;
   height: 1.7rem;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -moz-transition: -moz-transform 0.2s ease-in-out;
-  -o-transition: -o-transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
 }
 
-/* line 39, ../sass/atomic/molecules/_header__.slide-toggle.scss */
+/* line 35, ../sass/atomic/molecules/_header__.slide-toggle.scss */
 .slide-checkbox {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 44, ../sass/atomic/molecules/_header__.slide-toggle.scss */
+  /* line 40, ../sass/atomic/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ nav {
     -webkit-transform: translateY(0) scale3d(1, 1, 1);
     -moz-transform: translateY(0) scale3d(1, 1, 1);
@@ -3165,12 +3182,12 @@ header > nav li > ul + a:after {
   }
 }
 
-/* line 47, ../sass/atomic/molecules/_header__.slide-toggle.scss */
+/* line 43, ../sass/atomic/molecules/_header__.slide-toggle.scss */
 .slide-checkbox:checked ~ .slide-toggle:after {
   content: '\f0c9';
 }
 @media only screen and (max-width: 1024px) {
-  /* line 47, ../sass/atomic/molecules/_header__.slide-toggle.scss */
+  /* line 43, ../sass/atomic/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ .slide-toggle:after {
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -3200,7 +3217,7 @@ section.hero {
   text-align: center;
   padding: 0 calc((100% - 60em) / 2);
 }
-/* line 11, ../sass/atomic/molecules/_section--.hero.scss */
+/* line 10, ../sass/atomic/molecules/_section--.hero.scss */
 section.hero > * {
   width: 100%;
   flex-grow: 1;
