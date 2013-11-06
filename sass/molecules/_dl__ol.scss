@@ -1,30 +1,42 @@
 dl>ol{
 	//dictionary definitions
-	counter-reset: li;
+	
 	padding: 0;
 	dt{
-		font-size: typography(h4,font-size) * 1rem;
+		font-size: typography(p,font-size) * 1rem;
 		font-weight: bold;
 		display: inline;
 		padding: 0;
-		line-height: typography(h4,font-size) * 1rem;
-		margin-left: -2rem;}
+		line-height: typography(p,font-size) * 1rem;
+		font-family: $sans;
+		position: relative;
+		margin-right: -1.25rem;}
 	dd{
-		@include font-properties-for(p);}
-	li{
-		padding: 0 0 1rem 0;
+		font-family: $serif;
+		@include font-properties-for(p);
+		line-height: 1rem;}
+	>li{
+		padding: 0 2rem 1rem 0;
 		display: inline;
 		float: left;
-		width: 100%;			
+		@include media-from($length-mobile-cutoff){
+			width: 50%;
+		}
+		width: 100%;
+		text-align: justify;		
 		ol{
 			padding: 0;
 			display: inline;
-			li{
-				float: none;
+			position: relative;
+			left: 1rem;
+			counter-reset: li;
+			li{				
+				display: inline;
 				&:before{
 					content: counter(li) ".";
 					counter-increment: li;
 					margin-right: 0.2rem;
+					font-family: $serif;
 					font-weight: bold;}}				
 			dd{
 				margin: 0;

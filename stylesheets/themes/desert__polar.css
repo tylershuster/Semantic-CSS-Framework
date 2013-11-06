@@ -2659,20 +2659,22 @@ body > header {
 
 /* line 1, ../../sass/molecules/_dl__ol.scss */
 dl > ol {
-  counter-reset: li;
   padding: 0;
 }
 /* line 5, ../../sass/molecules/_dl__ol.scss */
 dl > ol dt {
-  font-size: 1.33rem;
+  font-size: 1rem;
   font-weight: bold;
   display: inline;
   padding: 0;
-  line-height: 1.33rem;
-  margin-left: -2rem;
+  line-height: 1rem;
+  font-family: Oxygen;
+  position: relative;
+  margin-right: -1.25rem;
 }
-/* line 12, ../../sass/molecules/_dl__ol.scss */
+/* line 14, ../../sass/molecules/_dl__ol.scss */
 dl > ol dd {
+  font-family: Old Standard TT;
   font-size: 1rem;
   line-height: 2rem;
   padding-top: 0.75rem;
@@ -2680,32 +2682,44 @@ dl > ol dd {
   font-weight: normal;
   font-style: normal;
   margin: 0;
+  line-height: 1rem;
 }
-/* line 14, ../../sass/molecules/_dl__ol.scss */
-dl > ol li {
-  padding: 0 0 1rem 0;
+/* line 18, ../../sass/molecules/_dl__ol.scss */
+dl > ol > li {
+  padding: 0 2rem 1rem 0;
   display: inline;
   float: left;
   width: 100%;
+  text-align: justify;
 }
-/* line 19, ../../sass/molecules/_dl__ol.scss */
-dl > ol li ol {
+@media only screen and (min-width: 1024px) {
+  /* line 18, ../../sass/molecules/_dl__ol.scss */
+  dl > ol > li {
+    width: 50%;
+  }
+}
+/* line 27, ../../sass/molecules/_dl__ol.scss */
+dl > ol > li ol {
   padding: 0;
   display: inline;
+  position: relative;
+  left: 1rem;
+  counter-reset: li;
 }
-/* line 22, ../../sass/molecules/_dl__ol.scss */
-dl > ol li ol li {
-  float: none;
+/* line 33, ../../sass/molecules/_dl__ol.scss */
+dl > ol > li ol li {
+  display: inline;
 }
-/* line 24, ../../sass/molecules/_dl__ol.scss */
-dl > ol li ol li:before {
+/* line 35, ../../sass/molecules/_dl__ol.scss */
+dl > ol > li ol li:before {
   content: counter(li) ".";
   counter-increment: li;
   margin-right: 0.2rem;
+  font-family: Old Standard TT;
   font-weight: bold;
 }
-/* line 29, ../../sass/molecules/_dl__ol.scss */
-dl > ol li ol dd {
+/* line 41, ../../sass/molecules/_dl__ol.scss */
+dl > ol > li ol dd {
   margin: 0;
   display: inline;
 }
@@ -3403,6 +3417,7 @@ header > section.masthead ~ nav li > ul + a:after {
   .slide-toggle ~ nav {
     position: fixed;
     right: -100%;
+    height: 100%;
     top: 3rem;
     background-color: #6b9be3;
     border: none;
@@ -3412,42 +3427,42 @@ header > section.masthead ~ nav li > ul + a:after {
     -ms-transition: right 0.4s ease-in-out;
     transition: right 0.4s ease-in-out;
   }
-  /* line 56, ../../sass/molecules/_header__.slide-toggle.scss */
+  /* line 57, ../../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ nav ul {
     float: right;
     display: block;
     width: auto;
   }
-  /* line 60, ../../sass/molecules/_header__.slide-toggle.scss */
+  /* line 61, ../../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ nav ul li {
     float: right;
     width: 100%;
     display: table;
   }
-  /* line 64, ../../sass/molecules/_header__.slide-toggle.scss */
+  /* line 65, ../../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ nav ul li ul {
     width: 100%;
     left: -100%;
     top: 0;
   }
-  /* line 69, ../../sass/molecules/_header__.slide-toggle.scss */
+  /* line 70, ../../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ nav ul li a {
     display: table-cell;
     vertical-align: middle;
     /*placeholder*/
   }
-  /* line 77, ../../sass/molecules/_header__.slide-toggle.scss */
+  /* line 78, ../../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ nav address {
     float: left;
   }
 }
 
-/* line 79, ../../sass/molecules/_header__.slide-toggle.scss */
+/* line 80, ../../sass/molecules/_header__.slide-toggle.scss */
 .slide-checkbox:checked ~ .slide-toggle:after {
   content: '\f0c9';
 }
 @media only screen and (max-width: 1024px) {
-  /* line 79, ../../sass/molecules/_header__.slide-toggle.scss */
+  /* line 80, ../../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ .slide-toggle:after {
     -webkit-background-clip: text;
     -moz-background-clip: text;
