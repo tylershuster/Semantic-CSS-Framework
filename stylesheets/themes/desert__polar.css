@@ -2864,77 +2864,93 @@ header > nav {
   float: right;
 }
 /* line 6, ../../sass/molecules/_header__nav.scss */
-header > nav address {
+header > nav > address {
   float: right;
   height: 3rem;
   align-items: center;
   display: flex;
 }
 /* line 11, ../../sass/molecules/_header__nav.scss */
-header > nav address a {
+header > nav > address a {
   height: 3rem;
 }
 /* line 13, ../../sass/molecules/_header__nav.scss */
-header > nav address a, header > nav address a:before {
+header > nav > address a, header > nav > address a:before {
   color: #45525d;
   text-decoration: none;
 }
 /* line 16, ../../sass/molecules/_header__nav.scss */
-header > nav ul {
+header > nav > ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
 }
 /* line 21, ../../sass/molecules/_header__nav.scss */
-header > nav ul li {
+header > nav > ul li {
   display: flex;
   padding: 0 0.5rem;
   height: 3rem;
   align-items: center;
+  position: relative;
 }
-/* line 26, ../../sass/molecules/_header__nav.scss */
-header > nav ul li:hover {
+/* line 27, ../../sass/molecules/_header__nav.scss */
+header > nav > ul li:hover {
   background-color: #45525d;
   color: white;
 }
-/* line 29, ../../sass/molecules/_header__nav.scss */
-header > nav ul li:hover > ul {
-  max-width: 4000px;
-  margin-left: 0.5rem;
-  margin-right: -0.5rem;
-  border-color: white;
-  border-width: 1px;
+/* line 30, ../../sass/molecules/_header__nav.scss */
+header > nav > ul li:hover > ul {
+  -webkit-transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
 }
-/* line 36, ../../sass/molecules/_header__nav.scss */
-header > nav ul li:hover > ul > li:hover {
-  background-color: #6b9be3;
-  color: #695b4e;
-  border: none;
-}
-/* line 40, ../../sass/molecules/_header__nav.scss */
-header > nav ul li:hover > ul > li:hover > a {
-  color: #695b4e;
-}
-/* line 42, ../../sass/molecules/_header__nav.scss */
-header > nav ul li a {
+/* line 37, ../../sass/molecules/_header__nav.scss */
+header > nav > ul li a {
   text-decoration: none;
 }
-/* line 44, ../../sass/molecules/_header__nav.scss */
-header > nav ul li a:hover {
+/* line 39, ../../sass/molecules/_header__nav.scss */
+header > nav > ul li a:hover {
   color: white;
 }
-/* line 46, ../../sass/molecules/_header__nav.scss */
-header > nav ul li > ul {
-  max-width: 0;
-  overflow: hidden;
-  border-left: 0px solid transparent;
-  border-right: 0px solid transparent;
+/* line 41, ../../sass/molecules/_header__nav.scss */
+header > nav > ul li > ul {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+  left: 0;
+  top: 3rem;
+  background: #6b9be3;
+  -webkit-transform: scale3d(1, 0, 1);
+  -moz-transform: scale3d(1, 0, 1);
+  -o-transform: scale3d(1, 0, 1);
+  -ms-transform: scale3d(1, 0, 1);
+  transform: scale3d(1, 0, 1);
+  -webkit-transform-origin: 100% 0%;
+  -moz-transform-origin: 100% 0%;
+  -o-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+/* line 52, ../../sass/molecules/_header__nav.scss */
+header > nav > ul li > ul > li {
+  width: 100%;
+  display: table;
+  float: left;
+}
+/* line 56, ../../sass/molecules/_header__nav.scss */
+header > nav > ul li > ul > li > a {
+  display: table-cell;
+  color: #695b4e;
+  vertical-align: middle;
 }
 
 /* line 1, ../../sass/molecules/_header__section__.masthead__nav.scss */
@@ -3310,10 +3326,9 @@ header > section.masthead ~ nav li > ul + a:after {
   color: #45525d;
   margin: auto;
   position: absolute;
-  top: 0;
+  right: 1rem;
   bottom: 0;
-  left: 1rem;
-  right: auto;
+  top: 0;
   padding: 0;
   min-width: 0;
 }
@@ -3324,7 +3339,7 @@ header > section.masthead ~ nav li > ul + a:after {
   }
 }
 
-/* line 21, ../../sass/molecules/_header__.slide-toggle.scss */
+/* line 20, ../../sass/molecules/_header__.slide-toggle.scss */
 .slide-toggle,
 .slide-toggle:active,
 .slide-toggle:focus {
@@ -3333,7 +3348,7 @@ header > section.masthead ~ nav li > ul + a:after {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 26, ../../sass/molecules/_header__.slide-toggle.scss */
+/* line 25, ../../sass/molecules/_header__.slide-toggle.scss */
 .slide-toggle:after {
   content: "\f0c9";
   display: block;
@@ -3347,15 +3362,16 @@ header > section.masthead ~ nav li > ul + a:after {
   transition: transform 0.2s ease-in-out;
 }
 
-/* line 35, ../../sass/molecules/_header__.slide-toggle.scss */
+/* line 34, ../../sass/molecules/_header__.slide-toggle.scss */
 .slide-checkbox {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 40, ../../sass/molecules/_header__.slide-toggle.scss */
+  /* line 39, ../../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ nav {
+    right: 0;
     -webkit-transform: translateY(0) scale3d(1, 1, 1);
     -moz-transform: translateY(0) scale3d(1, 1, 1);
     -o-transform: translateY(0) scale3d(1, 1, 1);
@@ -3364,12 +3380,74 @@ header > section.masthead ~ nav li > ul + a:after {
   }
 }
 
-/* line 43, ../../sass/molecules/_header__.slide-toggle.scss */
+@media only screen and (min-width: 128px) {
+  /* line 42, ../../sass/molecules/_header__.slide-toggle.scss */
+  .slide-toggle ~ nav {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 384px) {
+  /* line 42, ../../sass/molecules/_header__.slide-toggle.scss */
+  .slide-toggle ~ nav {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 42, ../../sass/molecules/_header__.slide-toggle.scss */
+  .slide-toggle ~ nav {
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 42, ../../sass/molecules/_header__.slide-toggle.scss */
+  .slide-toggle ~ nav {
+    position: fixed;
+    right: -100%;
+    top: 3rem;
+    background-color: #6b9be3;
+    border: none;
+    -webkit-transition: right 0.4s ease-in-out;
+    -moz-transition: right 0.4s ease-in-out;
+    -o-transition: right 0.4s ease-in-out;
+    -ms-transition: right 0.4s ease-in-out;
+    transition: right 0.4s ease-in-out;
+  }
+  /* line 56, ../../sass/molecules/_header__.slide-toggle.scss */
+  .slide-toggle ~ nav ul {
+    float: right;
+    display: block;
+    width: auto;
+  }
+  /* line 60, ../../sass/molecules/_header__.slide-toggle.scss */
+  .slide-toggle ~ nav ul li {
+    float: right;
+    width: 100%;
+    display: table;
+  }
+  /* line 64, ../../sass/molecules/_header__.slide-toggle.scss */
+  .slide-toggle ~ nav ul li ul {
+    width: 100%;
+    left: -100%;
+    top: 0;
+  }
+  /* line 69, ../../sass/molecules/_header__.slide-toggle.scss */
+  .slide-toggle ~ nav ul li a {
+    display: table-cell;
+    vertical-align: middle;
+    /*placeholder*/
+  }
+  /* line 77, ../../sass/molecules/_header__.slide-toggle.scss */
+  .slide-toggle ~ nav address {
+    float: left;
+  }
+}
+
+/* line 79, ../../sass/molecules/_header__.slide-toggle.scss */
 .slide-checkbox:checked ~ .slide-toggle:after {
   content: '\f0c9';
 }
 @media only screen and (max-width: 1024px) {
-  /* line 43, ../../sass/molecules/_header__.slide-toggle.scss */
+  /* line 79, ../../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ .slide-toggle:after {
     -webkit-background-clip: text;
     -moz-background-clip: text;

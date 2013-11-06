@@ -3,7 +3,7 @@ header>nav{
 	@include media-to($length-mobile-cutoff){
 		
 	}
-	address{
+	>address{
 		float: right;
 		height: $unit__header--height;
 		align-items: center;
@@ -13,7 +13,7 @@ header>nav{
 			&, &:before{
 				color: $color-primary;
 				text-decoration: none;}}}
-	ul{
+	>ul{
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -23,29 +23,37 @@ header>nav{
 			padding: 0 0.5rem;
 			height: $unit__header--height;
 			align-items: center;
+			position: relative;
 			&:hover{
 				background-color: $color-primary;
 				color: $color-background;
 				>ul{
-					max-width: 4000px;
-					margin-left: 0.5rem;
-					margin-right: -0.5rem;
-					border-color: $color-background;
-					border-width: 1px;
+					@include prefixer(transform, scale3d(1,1,1));
+					//border-width: 1px;
 					>li{
 						&:hover{
-							background-color: $color-drawer;
-							color: $color-text;
-							@include box-shadow($color-drawer);
-							>a{
-								color: $color-text;}}}}}
+							
+							>a{}}}}}
 			a{
 				text-decoration: none;
 				&:hover{
 					color: $color-background;}}
 			>ul{
-				max-width: 0;
-				overflow: hidden;
-				border-left: 0px solid transparent;
-				border-right: 0px solid transparent;
-				@include prefixer(transition, all $length__transition $style__animation-ease);}}}}
+				padding: 0;
+				position: absolute;
+				width: 100%;
+				display: block;
+				left: 0;
+				top: 3rem;
+				background: $color-drawer;
+				@include prefixer(transform, scale3d(1,0,1));
+				@include prefixer(transform-origin, 100% 0%);
+				@include prefixer(transition, all $length__transition $style__animation-ease);
+				>li{
+					width: 100%;
+					display: table;
+					float: left;
+					>a{
+						display: table-cell;
+						color: $color-text;
+						vertical-align: middle;}}}}}}

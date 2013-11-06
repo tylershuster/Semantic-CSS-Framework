@@ -7,10 +7,9 @@
 	color: $color-primary;
 	margin: auto;
 	position: absolute;
-	top: 0;
+	right: 1rem;
 	bottom: 0;
-	left: 1rem;
-	right: auto;
+	top: 0;
 	padding: 0;
 	min-width: 0;
 	@include media-to($length-mobile-cutoff){
@@ -38,8 +37,45 @@
 	left: -9999px;
 	@include media-to($length-mobile-cutoff){		
 		&:checked ~ nav{
+			right: 0;
 			@include prefixer(transform, translateY(0) scale3d(1, 1, 1));}}}
+.slide-toggle ~ nav {
+	@include media-from($unit__base-x-one){
+		width: 100%;}
+	@include media-from($unit__base-x-three){
+		width: 50%;}
+	@include media-from($unit__base-x-five){
+		width: 33%;}
+	@include media-to($length-mobile-cutoff){
+		position: fixed;
+		right: -100%;
+		top: $unit__header--height;
+		background-color: $color-drawer;
+		@include box-shadow($color-drawer);
+		@include prefixer(transition, right $length__transition $style__animation-ease);
+		ul{
+			float: right;
+			display: block;
+			width: auto;			
+			li{
+				float: right;
+				width: 100%;
+				display: table;
+				ul{
+					width: 100%;
+					left: -100%;
+					top: 0;
+				}
+				a{
+					display: table-cell;
+					vertical-align: middle;
+					/*placeholder*/
 
+				}
+			}
+		}
+		address{
+			float: left;}}}
 .slide-checkbox:checked ~ .slide-toggle:after {
 	content: '\f0c9';
 	@include media-to($length-mobile-cutoff){
