@@ -1066,7 +1066,15 @@
 			<li class="active">Data</li>
 		</ul>		
 
-
+	<button>button</button>
+	<button>button</button>
+	<button>button</button>
+	<button>button</button>
+	<fieldset>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+	</fieldset>
 	
 	</main>
 		<script src="javascripts/scripts.js"></script>

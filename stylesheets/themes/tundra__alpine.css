@@ -693,8 +693,8 @@ hr {
   background-color: white;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
 }
 
@@ -789,8 +789,8 @@ fieldset {
   background-color: white;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 11, ../../sass/atoms/form/_fieldset.scss */
 fieldset > .row {
@@ -828,8 +828,8 @@ fieldset form label {
   text-align: center;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   background-color: #45525d;
   color: white;
   border-radius: 0;
@@ -939,8 +939,8 @@ fieldset.experimental form:hover {
   background-color: #afca90;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   border-width: 1px 1px 1px 0;
   border-style: solid;
   border-color: #333c1a;
@@ -1117,8 +1117,8 @@ input {
   -o-transition: box-shadow 0.06667s ease-in-out;
   border: 2px solid;
   border-color: rgba(87, 101, 72, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(87, 101, 72, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 18, ../../sass/atoms/form/_input.scss */
 input::-moz-focus-inner {
@@ -1177,8 +1177,8 @@ input[type="color"]:disabled::-webkit-color-swatch-wrapper {
   background-color: white;
   border: 2px solid;
   border-color: rgba(87, 101, 72, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(87, 101, 72, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 69, ../../sass/atoms/form/_input.scss */
 input[type="color"][readonly] {
@@ -1194,8 +1194,8 @@ input[type="color"]::-webkit-color-swatch {
   border: none;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 77, ../../sass/atoms/form/_input.scss */
 input[type="radio"] {
@@ -1229,8 +1229,8 @@ input[type="radio"]:before {
 input[type="radio"]:checked:before {
   border: 2px solid;
   border-color: rgba(87, 101, 72, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(87, 101, 72, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   background-color: #6b9be3;
 }
@@ -1263,8 +1263,8 @@ input[type="checkbox"]:before {
   content: "";
   border: 2px solid;
   border-color: rgba(87, 101, 72, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(87, 101, 72, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   font-size: 1.5rem;
   padding-left: 0.1rem;
 }
@@ -1419,8 +1419,8 @@ progress::-webkit-progress-bar {
   background-color: #afca90;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* line 1, ../../sass/atoms/form/_select.scss */
@@ -1433,8 +1433,8 @@ select {
   background-color: #afca90;
   border: 2px solid;
   border-color: rgba(87, 101, 72, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(87, 101, 72, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 9, ../../sass/atoms/form/_select.scss */
 select:focus {
@@ -1465,8 +1465,8 @@ textarea {
   border-radius: 2px;
   border: 2px solid;
   border-color: rgba(87, 101, 72, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(87, 101, 72, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 14, ../../sass/atoms/form/_textarea.scss */
 textarea:disabled {
@@ -1484,8 +1484,8 @@ textarea:disabled {
   background-color: #afca90;
   border: 2px solid;
   border-color: rgba(87, 101, 72, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(87, 101, 72, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   margin-top: -1px;
 }
 
@@ -1582,8 +1582,8 @@ textarea:disabled {
   background: #afca90;
   border: 2px solid;
   border-color: rgba(87, 101, 72, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(87, 101, 72, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 
@@ -2220,8 +2220,8 @@ code {
   line-height: 1rem;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   font-size: 1em;
 }
 
@@ -3646,8 +3646,8 @@ section.hero > * {
   padding: 1rem;
   border: 2px solid;
   border-color: rgba(87, 101, 72, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(87, 101, 72, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 31, ../../sass/molecules/_styleguide.scss */
 .colors > * {
@@ -3696,8 +3696,8 @@ p#musical-typography + div.row {
   background-color: white;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* line 69, ../../sass/molecules/_styleguide.scss */
@@ -3714,8 +3714,8 @@ p#musical-typography + div.row {
   background-color: white;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* line 80, ../../sass/molecules/_styleguide.scss */
@@ -3732,8 +3732,8 @@ p#musical-typography + div.row {
   background-color: white;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* line 91, ../../sass/molecules/_styleguide.scss */
@@ -3750,8 +3750,8 @@ p#musical-typography + div.row {
   background-color: white;
   border: 2px solid;
   border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 2px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(127, 127, 127, 0.625);
+  border-radius: 1px 0 0 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* { / picnicc } */
