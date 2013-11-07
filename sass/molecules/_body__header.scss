@@ -12,6 +12,8 @@ body>header{
 	z-index: 100;
 	@include column(1,1);
 	@include box-shadow($color-drawer);
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
 	border-top: none;
 	@include media-from($unit__base-x-two){
 		@include column(2,2);

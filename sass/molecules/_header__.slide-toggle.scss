@@ -1,10 +1,11 @@
 .slide-toggle {
 	float: left;
-	height: $unit__nav--height;
+	height: #{$unit__nav--height / 5};
+	width: $unit__nav--height;
 	cursor: pointer;	
 	z-index: 1;
 	display: none;
-	color: $color-primary;
+	background-color: $color-primary;
 	margin: auto;
 	position: absolute;
 	right: 1rem;
@@ -12,24 +13,43 @@
 	top: 0;
 	padding: 0;
 	min-width: 0;
+	content: "";
+	@include transition;
+	@include prefixer(transition, transform #{$length__transition / 2} $style__animation-ease);
+	@include box-shadow($color-primary);
 	@include media-to($length-mobile-cutoff){
-		display: block;}}
+		display: block;}
+	&:before {
+		@include transition;
+		content: "";	
+		display: block;	
+		height: #{$unit__nav--height / 5};	
+		width: $unit__nav--height;
+		background-color: $color-primary;		
+		position: absolute;
+		bottom: calc(#{$unit__nav--height / 2.5} - #{$unit__shadow-size});
+		@include prefixer(transform-origin, 100% 0%);
+		@include box-shadow($color-primary);}
+	&:after {
+		@include transition;
+		content: "";	
+		display: block;	
+		height: #{$unit__nav--height / 5};	
+		width: $unit__nav--height;
+		background-color: $color-primary;		
+		position: absolute;
+		top: #{$unit__nav--height / 2.5};
+		@include prefixer(transform-origin, 100% 0%);
+		@include box-shadow($color-primary);}
+	}
 
 .slide-toggle,
 .slide-toggle:active,
 .slide-toggle:focus {
-	border: none !important;
 	outline: none !important;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);}
 
-.slide-toggle:after {
-	content: "\f0c9";	
-	display: block;
-	font: #{$unit__nav--height} 'fontawesome';
-	text-align: center;	
-	@include text-shadow;
-	height: #{$unit__nav--height * 0.85};
-	@include prefixer(transition, transform #{$length__transition / 2} $style__animation-ease);}
+
 
 .slide-checkbox {
 	position: absolute;
@@ -77,9 +97,21 @@
 		}
 		address{
 			float: left;}}}
-.slide-checkbox:checked ~ .slide-toggle:after {
-	content: '\f0c9';
+.slide-checkbox:checked ~ .slide-toggle {	
 	@include media-to($length-mobile-cutoff){
-		@include text-shadow-inset;
-		@include prefixer(transform, rotateZ(90deg));}}
+		background: transparent;
+		box-shadow: none;
+		border: none;
+		&:before{
+			//width: $unit__nav--height * 1.414;
+			border: none;
+			@include prefixer(transform, rotateZ(-45deg) translate(-#{$unit__nav--height / 5.71428571}, -#{$unit__nav--height / 8}));
+		}	
+		&:after{
+			//width: $unit__nav--height * 1.414;
+			border: none;
+			@include prefixer(transform, rotateZ(45deg) translate(-#{$unit__nav--height / 20}, #{$unit__nav--height / 20}));
+		}	
+		
+	}}
 

@@ -24,19 +24,23 @@
 			
 			<div class="row">
 				<div>
-					<h2>Blockquote</h2>
-					<blockquote>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nostrum nemo ut repudiandae? Et, itaque, voluptates mollitia assumenda ea ad accusamus deleniti ratione sit velit laborum illo alias dignissimos doloremque.</p>
-						<cite>Lorem Ipsum</cite>
-					</blockquote>
+					<figure>
+						<figcaption>Blockquote</figcaption>
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nostrum nemo ut repudiandae? Et, itaque, voluptates mollitia assumenda ea ad accusamus deleniti ratione sit velit laborum illo alias dignissimos doloremque.</p>
+							<cite>Lorem Ipsum</cite>
+						</blockquote>						
+					</figure>					
 				</div>
 				<div>
-				<h2>Blockquote with Image</h2>
-					<blockquote>
-						<img src="http://lorempixel.com/400/300" alt="">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ullam, repudiandae, sunt, labore nihil ipsam quibusdam et voluptatem ipsa maxime eligendi voluptatibus laboriosam facere itaque minima numquam officia! Earum, ipsa?</p>
-						<cite>Lorem Ipsum</cite>
-					</blockquote>
+					<figure>
+						<figcaption>Blockquote with Image</figcaption>
+						<blockquote>
+							<img src="http://lorempixel.com/400/300" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ullam, repudiandae, sunt, labore nihil ipsam quibusdam et voluptatem ipsa maxime eligendi voluptatibus laboriosam facere itaque minima numquam officia! Earum, ipsa?</p>
+							<cite>Lorem Ipsum</cite>
+						</blockquote>
+					</figure>
 				</div>
 			</div>
 			<figure>
