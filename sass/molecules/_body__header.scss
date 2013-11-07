@@ -1,5 +1,4 @@
 body>header{
-	background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);	
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -9,9 +8,9 @@ body>header{
 	-webkit-transition: all $length__transition $style__animation-ease;
 	display: block;
 	height: $unit__header--height;
-	z-index: 100;
+	z-index: 9999;
 	@include column(1,1);
-	@include box-shadow($color-drawer);
+	@include object($color-drawer, $unit__header--opacity);
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
 	border-top: none;

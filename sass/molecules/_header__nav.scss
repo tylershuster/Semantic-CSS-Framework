@@ -20,7 +20,10 @@ header>nav{
 		display: flex;
 		li{
 			display: flex;
-			padding: 0 0.5rem;
+			padding: 0 1rem;
+			@include media-from($length-mobile-cutoff){
+				padding: 0 0.5rem;
+			}
 			height: $unit__header--height;
 			align-items: center;
 			position: relative;
@@ -28,6 +31,7 @@ header>nav{
 				background-color: $color-primary;
 				color: $color-background;
 				>ul{
+					@include box-shadow($color-drawer);
 					@include prefixer(transform, scale3d(1,1,1));
 					//border-width: 1px;
 					>li{

@@ -9,16 +9,17 @@ label{
 	@include font-properties-for(p);
 	&.required{
 		&:after{
+			color: $color-red;
 			content: "*";}}
 	@media all and (min-width:#{$unit__base-x-one * 1px}) and (max-width:#{$unit__base-x-two * 1px}){
 		display: block;}
 	@media all and (min-width:#{$unit__base-x-two * 1px}) and (max-width:#{$unit__base-x-three * 1px}){
 		display: block;}
 	@media all and (min-width:#{$unit__base-x-three * 1px}) and (max-width:#{$unit__base-x-five * 1px}){
-		min-width: 33%;}
+		/*min-width: 33%;*/}
 	@media all and (min-width:#{$unit__base-x-five * 1px}) and (max-width:#{$unit__base-x-eight * 1px}){
-		min-width: 25%;}
+		/*min-width: 25%;*/}
 	@media all and (min-width:#{$unit__base-x-eight * 1px}) and (max-width:#{$unit__base-x-thirteen * 1px}){
-		min-width: 10%;}
+		/*min-width: 10%;*/}
 	@media all and (min-width:#{$unit__base-x-thirteen * 1px}){
-		min-width: 10%;}}
+		/*min-width: 10%;*/}}

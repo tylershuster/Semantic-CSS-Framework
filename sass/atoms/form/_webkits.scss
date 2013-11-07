@@ -47,8 +47,7 @@
 
 ::-webkit-slider-thumb{
 	-webkit-appearance: none;	
-	background-color: $color-text;
-	@include box-shadow($color-text);
+	@include object($color-text);
 	width: 1rem;
 	height: 1rem;
 	border-radius: 50%;}
@@ -79,14 +78,12 @@
 	-webkit-appearance: none;
 	border: none;
 	color: $color-background;
-	background-color: $color-primary;
-	@include box-shadow($color-accent);
+	@include object($color-text);
 	height: 1.5rem;}
 
 ::-webkit-file-upload-button:disabled{
 	color: $color-background;
-	background-color: $color-input-background;
-	@include box-shadow($color-drawer);}
+	@include object($color-input-background);}
 
 ::-webkit-clear-button{
 	-webkit-appearance: none;

@@ -20,7 +20,7 @@
 				<h5>This is an example of a level 5 header<small>Small version</small></h5>	
 			</div>	
 			<h2>Paragraph text:</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, deserunt quibusdam veritatis! Voluptates, dolor ipsum nemo inventore. Corporis, saepe, ex, quisquam alias sunt itaque similique repudiandae a eius rem doloremque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, cumque, adipisci, alias explicabo vel delectus eius ad ut excepturi nulla eos soluta itaque porro magnam accusamus nemo commodi optio deleniti?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum, iusto, eaque eos magni omnis praesentium dolor voluptatem facere error voluptate molestiae iste possimus architecto ipsam harum totam doloremque. Quis.</p>
+			<p>Lorem ipsum dolor sit amet, <a href="">Linky testing</a>consectetur adipisicing elit. Temporibus, deserunt quibusdam veritatis! Voluptates, dolor ipsum nemo inventore. Corporis, saepe, ex, quisquam alias sunt itaque similique repudiandae a eius rem doloremque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, cumque, adipisci, alias explicabo vel delectus eius ad ut excepturi nulla eos soluta itaque porro magnam accusamus nemo commodi optio deleniti?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum, iusto, eaque eos magni omnis praesentium dolor voluptatem facere error voluptate molestiae iste possimus architecto ipsam harum totam doloremque. Quis.</p>
 			
 			<div class="row">
 				<div>
@@ -113,6 +113,34 @@
 				<li><p><strong>Line Item</strong> Nulla facilisi. Duis adipiscing nulla libero, nec hendrerit quam mattis ac. Proin posuere id lectus consectetur molestie. Vivamus consequat risus laoreet ligula auctor, ac accumsan risus eleifend.</p></li>
 				<li><p><strong>Line Item</strong> Nulla facilisi. Duis adipiscing nulla libero, nec hendrerit quam mattis ac. Proin posuere id lectus consectetur molestie. Vivamus consequat risus laoreet ligula auctor, ac accumsan risus eleifend.</p></li>
 			</ul>
+			<p>The <a href="#">a element</a> example</p>
+			<p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
+			<p>The <b>b element</b> example</p>
+			<p>The <cite>cite element</cite> example</p>
+			<p>The <code>code element</code> example</p>
+			<p>The <em>em element</em> example</p>
+			<p>The <del>del element</del> example</p>
+			<p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
+			<p>The <i>i element</i> example</p>
+			<p>The <ins>ins element</ins> example</p>
+			<p>The <kbd>kbd element</kbd> example</p>
+			<p>The <mark>mark element</mark> example</p>
+			<p>The <q>q element</q> example</p>
+			<p>The <q>q element <q>inside</q> a q element</q> example</p>
+			<p>The <s>s element</s> example</p>
+			<p>The <samp>samp element</samp> example</p>
+			<p>The <small>small element</small> example</p>
+			<p>The <span>span element</span> example</p>
+			<p>The <strong>strong element</strong> example</p>
+			<p>The <sub>sub element</sub> example</p>
+			<p>The <sup>sup element</sup> example</p>
+			<p>The <u>u element</u> example</p>
+			<p>The <var>var element</var> example</p>
+			</article>
+			<article>
+			<h1>Article Title</h1>
+			<h2>Article Subtitle</h2>
+			<time>article time</time>
 			<p>
 			Praesent id vulputate turpis. Aliquam mauris dolor, varius in convallis non, bibendum eu nulla. Etiam nisl ante, fringilla et nisl in, interdum tincidunt purus. Suspendisse tortor purus, sodales vel risus id, feugiat consectetur nisi. Duis adipiscing sem posuere, pretium leo vel, gravida tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum condimentum arcu non lorem egestas, vel condimentum odio malesuada. Maecenas lobortis luctus diam, ac sollicitudin tellus volutpat a. Morbi lacinia dolor sit amet feugiat vulputate. Mauris suscipit tempor metus, ac venenatis libero molestie sit amet. Suspendisse at purus ac dui volutpat blandit eget ac lorem. Praesent eget adipiscing elit.
 			</p>
@@ -645,23 +673,30 @@
 				<legend>left</legend>
 				<fieldset>
 					<form>
-						<label>First Name</label><input type="text">
+						<label>Business Name</label><input type="text">
 					</form>
 					<hr />
 					<form>
-						<label>First Name</label><input type="text">
+						<label>Your Name</label><input type="text">
 					</form>
 					<div>
 						<form>
-							<label>First Name</label><input type="text">
+							<label>Website Name</label><input type="text">
 						</form>
 						<form>
-							<label>First Name</label><input type="text">
+							<label>Website Address:</label><label>www.</label><input type="text"><label>.com</label>
 						</form>
 						<form>
-							<label>First Name</label><input type="text">
+							<label>Website Type</label><select><option>Option</option><option>Option</option><option>Option</option></select>
 						</form>
 					</div>
+					<form>
+						<label>First Name</label><input type="text">
+					</form>
+					<form>
+						<label>First Name</label><input type="text">
+					</form>
+					<hr class="uber">
 					<form>
 						<label>First Name</label><input type="text">
 					</form>
@@ -696,24 +731,25 @@
 						</form>
 					</div>
 					<form>
-						<label>First Name</label><input type="text">
+						<label class="required">First Name</label><input type="text">
 					</form>
 					<form>
-						<label>First Name</label><input type="text">
+						<label>Middle Name</label><input type="text">
 					</form>
 					<form>
-						<label>First Name</label><input type="text">
-					</form>
-					<hr>
-					<form>
-						<label>First Name</label><input type="text">
-					</form>
-					<form>
-						<label>First Name</label><input type="text">
+						<label class="required">Last Name</label><input type="text">
 					</form>
 					<hr>
 					<form>
-						<label>First Name</label><input type="text">
+						<label>Father's Name</label><input type="text">
+					</form>
+					<hr class="uber">
+					<form>
+						<label>Mother's Name</label><input type="text">
+					</form>
+					<hr>
+					<form>
+						<label class="required">First Name</label><input type="text">
 					</form>
 				</fieldset>
 			</fieldset>
@@ -1028,29 +1064,7 @@
 				</tr>
 			</tfoot>
 		</table>
-		<p>The <a href="#">a element</a> example</p>
-		<p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
-		<p>The <b>b element</b> example</p>
-		<p>The <cite>cite element</cite> example</p>
-		<p>The <code>code element</code> example</p>
-		<p>The <em>em element</em> example</p>
-		<p>The <del>del element</del> example</p>
-		<p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
-		<p>The <i>i element</i> example</p>
-		<p>The <ins>ins element</ins> example</p>
-		<p>The <kbd>kbd element</kbd> example</p>
-		<p>The <mark>mark element</mark> example</p>
-		<p>The <q>q element</q> example</p>
-		<p>The <q>q element <q>inside</q> a q element</q> example</p>
-		<p>The <s>s element</s> example</p>
-		<p>The <samp>samp element</samp> example</p>
-		<p>The <small>small element</small> example</p>
-		<p>The <span>span element</span> example</p>
-		<p>The <strong>strong element</strong> example</p>
-		<p>The <sub>sub element</sub> example</p>
-		<p>The <sup>sup element</sup> example</p>
-		<p>The <u>u element</u> example</p>
-		<p>The <var>var element</var> example</p>
+	
 		<!-- Sample pattern, your site's patterns will be different -->
 		<div class="alert alert-warning">
 			<strong>Warning Message!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -1070,10 +1084,23 @@
 			<li class="active">Data</li>
 		</ul>		
 
-	<button>button</button>
-	<button>button</button>
-	<button>button</button>
-	<button>button</button>
+	<div class="row">
+		<div><button class="infrared">Color</button></div>
+		<div><button class="red">Color</button></div>
+		<div><button class="orange">Color</button></div>
+		<div><button class="yellow">Color</button></div>
+		<div><button class="green">Color</button></div>
+		<div><button class="blue">Color</button></div>
+		<div><button class="indigo">Color</button></div>
+		<div><button class="violet">Color</button></div>
+		<div><button class="ultraviolet">Color</button>	</div>
+	</div>
+	<div class="row">
+		<div><button>button</button></div>
+		<div><button>button</button></div>
+		<div><button>button</button></div>
+		<div><button>button</button></div>
+	</div>
 	<fieldset>
 		<button>button</button>
 		<button>button</button>

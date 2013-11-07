@@ -60,6 +60,15 @@ body {
 	position: absolute;
 	left: $total-width*(((($column-width)*$offset)) / gridsystem-width($contextcolumns));}
 
+@mixin object($color, $opacity: 1){
+	@if $opacity == 1{
+	background-color: $color;
+	}
+	@else{
+		background-color: rgba(red($color), green($color), blue($color), $opacity);
+	}
+	@include box-shadow($color);
+}
 @mixin box-shadow($on-background){
 	@if $skeu == faux-flat{
 		border: none;
@@ -89,8 +98,8 @@ body {
 		border: none;
 		border-radius: $unit__border-radius;
 		border-top: $unit__border-radius solid $color__3d--dark;
-		box-shadow: inset 0 0 $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
-		//box-shadow: inset 0 #{$unit__shadow-size / 2} 0 rgba(0, 0, 0, $unit__shadow-opacity);
+		//box-shadow: inset 0 0 $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
+		
 		@if $tone == black{
 			box-shadow: none;}
 		@else{
@@ -767,3 +776,4 @@ body {
 @mixin re-base($side,$amount){
 	#{$side}: #{$amount};
 	margin-#{$side}: #{$amount * -1};}
+

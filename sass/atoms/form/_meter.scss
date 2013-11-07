@@ -3,6 +3,7 @@ meter{
 	height: 1rem;
 	width: 100%;
 	vertical-align: 0;
+
 	&::-webkit-meter-inner-element{
 		background: $color-input-background;
 		@include box-shadow-inset($color-input-background);}
@@ -10,11 +11,18 @@ meter{
 		background: transparent;
 		height: calc(100% + #{$unit__shadow-size});
 		bottom: #{$unit__shadow-size};
-		position: relative;		
-		overflow: hidden;}
+		position: relative;
+		box-shadow: inset 0 1px 0px $color__3d--dark;		
+		overflow: visible;}
 	&::-webkit-meter-optimum-value{
-		background: green;}
+		border-right: 1px solid mix($color__3d--light, $color-green);
+		box-shadow: 0 0 $unit__shadow-blur $color-green;
+		background: $color-green;}
 	&::-webkit-meter-suboptimum-value{
-		background: yellow;}
+		border-right: 1px solid mix($color__3d--light, $color-yellow);
+		box-shadow: 0 0 $unit__shadow-blur $color-yellow;
+		background: $color-yellow;}
 	&::-webkit-meter-even-less-good-value{
-		background: red;}}
+		border-right: 1px solid mix($color__3d--light, $color-red);
+		box-shadow: 0 0 $unit__shadow-blur $color-red;
+		background: $color-red;}}

@@ -4,8 +4,10 @@ select{
 	font-size: 100%;
 	text-transform: none;
 	margin: 0;
-	background-color: $color-input-background;
-	@include box-shadow-inset($color-input-background);	
+	@include object($color-input-background);
+	&:after{
+		
+	}	
 	&:focus{
 		outline: none;
 		box-shadow: none;}

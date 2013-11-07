@@ -1,5 +1,10 @@
 @mixin fieldset-border-top($opacity: 1){
-	border-top: 1px solid rgba(red($color-background),green($color-background),blue($color-background),$opacity);
+	@if $tone == light or $tone == white{
+		border-top: 1px solid rgba(red($color-background),green($color-background),blue($color-background),$opacity);
+	}
+	@else{
+		border-top: 1px solid rgba(red($color-tertiary),green($color-tertiary),blue($color-tertiary),$opacity);
+	}
 }
 
 fieldset{
@@ -28,6 +33,10 @@ fieldset{
 		&>div{
 			&>form{
 				&:first-of-type{
+					label{
+						border-top: none;
+						box-shadow: none;
+					}
 					input{
 						@include box-shadow-inset($color-drawer);
 						border-bottom-right-radius: 0;
@@ -50,12 +59,15 @@ fieldset{
 		border-radius: $unit__border-radius;}
 	form{
 		width: 100%;
+		flex-wrap: nowrap;
 		label{
 			text-align: center;
 			@include box-shadow-inset($color-background);
 			background-color: $color-primary;
 			color: $color-background;
-			border-radius: 0;}
+			border-radius: 0;
+			& + label{
+				border-left: 1px solid $color-drawer;}}
 		input{			
 			box-shadow: none;
 			border-color: none;
@@ -65,7 +77,21 @@ fieldset{
 			@include fieldset-border-top;			
 			border-left: none;
 			box-shadow: none;	
-			border-radius: 0;}
+			border-radius: 0;
+			&:first-child{
+				
+			}
+		}
+		&>select{
+			@include fieldset-border-top;
+			display: flex;
+			flex-grow: 1;
+			color: $color-text;
+			height: #{ceil($height-form-input)};
+			&>option{
+
+			}
+		}
 		& + form>textarea{
 			@include fieldset-border-top;
 		}
@@ -98,12 +124,12 @@ fieldset{
 		float: left;
 		width: 100%;
 		z-index: 999;
-		padding-left: #{$unit__shadow-size * 0.5};
+		padding-left: #{$unit__shadow-size * 0.5};		
 		form{
 			z-index: 999;	
 			input{
 				z-index: 999;
-			}	
+			}
 			&:first-of-type{
 				input{
 					box-shadow: 0 #{$unit__shadow-size * -0.5} 0px rgba(0, 0, 0, $unit__shadow-opacity);
@@ -128,6 +154,9 @@ fieldset{
 		width: 100%;
 		margin: 0;
 		border: none;
+		&.uber{
+			height: #{ceil($height-form-input)};
+		}
 		& + form{
 			label{
 				@include fieldset-border-top($unit__shadow-opacity);}

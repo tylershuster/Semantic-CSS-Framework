@@ -1,10 +1,8 @@
 article>aside{
 	width: 100%;
 	padding: 0 1rem 0.5rem 1rem;
-	margin-bottom: 0.5rem;
-	
-	width: calc(100% + #{2 * $article-margin-length-one});
-	box-shadow: 0 $unit__shadow-size 0 $color__3d--dark;
+	margin-bottom: 0.5rem;	
+	width: calc(100% + #{2 * $article-margin-length-one});	
 	h1,
 	h2,
 	h3,
@@ -35,12 +33,10 @@ article>aside{
 		width: 50%;
 		
 
-		&:nth-of-type(odd){
-			box-shadow: $unit__shadow-size 0 0 $color__3d--dark;
+		&:nth-of-type(odd){			
 			right: $article-margin-length-three;
 			margin-right: #{$article-margin-length-three * -0.5};}
-		&:nth-of-type(even){
-			box-shadow: #{$unit__shadow-size * -1} 0 0 $color__3d--dark;
+		&:nth-of-type(even){			
 			left: $article-margin-length-three;
 			margin-left: #{$article-margin-length-three * -0.5};}}
 	@include media-from($unit__base-x-five){

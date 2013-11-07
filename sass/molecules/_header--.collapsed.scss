@@ -1,9 +1,10 @@
 header{
 	&.collapsed{
 	@media all and (min-width:#{$unit__base-x-eight * 1px}){
-		background-color: $color-background;
+		//background-color: $color-background;
 		@include box-shadow($color-background);
 		border-top: none;
+		margin-top: #{($unit__header--height - 1rem) * -1};
 		section.search{
 			display: none;}
 		.logo{}
@@ -16,7 +17,8 @@ header{
 				font-size: 0;
 				opacity: 0;}}
 		nav{
+
 			li ul{
-				background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);}
-			ul{
-				background-color: $color-background;}}}}}
+				//background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);
+			}
+			ul{}}}}}

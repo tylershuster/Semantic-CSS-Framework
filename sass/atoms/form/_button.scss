@@ -5,12 +5,38 @@ input[type="button"]{
 	line-height: normal;
 	text-transform: none;
 	margin: 0;
-	background-color: $color-primary;
-	@include box-shadow($color-primary);
+	padding-top: 0;
+	@include object($color-primary);
 	height: #{ceil($height-form-input)};
 	color: $color-background;
 	@include prefixer(transition, box-shadow $length__transition);
+	&:nth-last-of-type(n+2){
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		margin-right: #{($unit__border-radius + 1px) * -1};
+	}
+	& + button{
+		border-radius: 0;
+		&:last-of-type{
+			border-top-right-radius: $unit__border-radius;
+			border-bottom-right-radius: $unit__border-radius;
+		}
+	}
+	&>form{
+		height: 2rem;
+		label{
+			height: 2rem;
+
+		}
+		input{
+			&[type="radio"]:after{
+				color: $color-background;
+			}
+
+		}
+	}
 	&:active{
+		box-shadow: inset 0 0 $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
 		@include box-shadow-inset($color-primary);
 	}
 	&::-moz-focus-inner{

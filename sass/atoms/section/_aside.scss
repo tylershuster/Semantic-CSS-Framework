@@ -18,9 +18,8 @@ aside{
 		@include font-properties-for(small);
 		font-family: '#{$heading-font}';}
 	ul{
-		text-align: left;
-		list-style-position:inside;
+		text-align: left;		
 		&:nth-of-type(even){
-			padding-right: 1rem;}
+			padding-right: 0.5rem;}
 		&:nth-of-type(odd){
-			padding-left: 1rem;}}}
+			padding-left: 0.5rem;}}}

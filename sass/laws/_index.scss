@@ -1,3 +1,5 @@
+@import "variables";
+@import "mixins";
 @import "color/color-schemer";
 @import "color/color-schemer/blend-modes";
 @import "color/color-schemer/cmyk";
@@ -10,8 +12,6 @@
 @import "color/color-schemer/mixins";
 @import "color/color-schemer/ryb";
 @import "color/color-schemer/tint-shade";
-@import "variables";
 @import "normalize";
-@import "mixins";
 @import "phi";
 @import "icons";

@@ -117,4 +117,33 @@ $color-drawer: color-drawerer($tone) !default;
 	background-attachment: fixed;
 	background-repeat: no-repeat;}
 $color-input-background: $color-drawer !default;
-$color__header--h1: $color-background !default;
+$color__header--h1: $color-primary !default;
+
+$color-infrared: set-lightness(set-hue($color-primary, 352.5), 50%);
+$color-red: set-lightness(set-hue($color-primary, 0), 50%);
+$color-orange: set-lightness(set-hue($color-primary, 30), 50%);
+$color-yellow: set-lightness(set-hue($color-primary, 60), 50%);
+$color-green: set-lightness(set-hue($color-primary, 120), 50%);
+$color-blue: set-lightness(set-hue($color-primary, 240), 50%);
+$color-indigo: set-lightness(set-hue($color-primary, 255), 50%);
+$color-violet: set-lightness(set-hue($color-primary, 270), 50%);
+$color-ultraviolet: set-lightness(set-hue($color-primary, 337.5), 50%);
+
+.infrared{
+	@include object($color-infrared);}
+.red{
+	@include object($color-red);}
+.orange{
+	@include object($color-orange);}
+.yellow{
+	@include object($color-yellow);}
+.green{
+	@include object($color-green);}
+.blue{
+	@include object($color-blue);}
+.indigo{
+	@include object($color-indigo);}
+.violet{
+	@include object($color-violet);}
+.ultraviolet{
+	@include object($color-ultraviolet);}

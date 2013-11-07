@@ -20,7 +20,10 @@ input{
 		padding: 0;}
 	&:focus{
 		@if $skeu == faux-flat{
-			box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;}
+			//box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;
+			border-top-color: $color-drawer;
+			box-shadow: 0 0 $unit__shadow-blur $color-accent;
+		}
 		@else if $skeu == flat{
 			box-shadow: 0 0 $unit__border-radius $color-accent;}}
 	&[type="text"]{		
@@ -60,12 +63,10 @@ input{
 		margin: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2) 0;
 		&::-webkit-color-swatch-wrapper{
 			padding: 0.3rem;
-			background: $color-input-background;
-			@include box-shadow($color-input-background);}
+			@include object($color-input-background);}
 		&:disabled{
 			&::-webkit-color-swatch-wrapper{
-				background-color: $color-background;
-				@include box-shadow-inset($color-input-background);}}
+				@include object($color-input-background);}}
 		&[readonly]{
 			padding: 0;
 			&::-webkit-color-swatch-wrapper{
@@ -89,16 +90,16 @@ input{
 		&:before{
 			width: 1rem;
 			height: 1rem;
-			background-color: $color-input-background;
 			display: block;
 			content:"";			
 			padding: 0.5rem 0 0rem 0.15rem;
-			@include box-shadow($color-input-background);
+			@include object($color-accent);
 			border-radius: 50%;}
 		&:checked:before{
-			@include box-shadow-inset($color-input-background);
-			border-radius: 50%;
-			background-color: $color-accent;}
+			box-shadow: none;
+			border: none;
+			@include box-shadow-inset($color-accent);
+			border-radius: 50%;}
 		&:after{
 			content: attr(name);
 			color: $color-text;
@@ -130,12 +131,11 @@ input{
 			line-height: 0;
 			padding-top: 0.2rem;}}
 	&[type="submit"]{		
-		background-color: $color-accent;
 		color: $color-drawer;
 		margin-top: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		margin-bottom: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2);
 		border: 0;
-		@include box-shadow($color-accent);}
+		@include object($color-input-background);}
 	&[type="file"]{
 		margin: calc((#{ceil($height-form-input)} - #{$height-form-input}) / 2) 0;
 		padding: 0;

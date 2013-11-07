@@ -63,11 +63,11 @@
 			</ul>
 		</nav>		
 	</header>-->
+	<input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
+	<label for="slide-checkbox" class="slide-toggle" onclick></label>
 	<header>	
 		<img src="../logo.png" alt="" class="logo">
 		<h1>Semantic CSS Framework</h1>
-		<input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
-		<label for="slide-checkbox" class="slide-toggle" onclick></label>
 		<nav>
 			<address>
 				<a href="http://facebook.com/herrshuster"></a>
