@@ -1,3 +1,7 @@
+@mixin fieldset-border-top($opacity: 1){
+	border-top: 1px solid rgba(red($color-background),green($color-background),blue($color-background),$opacity);
+}
+
 fieldset{
 	box-sizing: border-box;
 	/*(border: 1px solid $color-accent;*/
@@ -14,11 +18,30 @@ fieldset{
 		>div{
 			width:50%;
 			float: left;
+			margin-bottom: #{ceil($height-form-input)};
 			&.column{
 				padding-left: 0.5rem;
 				padding-right: 0.5rem;}}
 		>form{
 			width: 100%;}}
+	&.row{
+		&>div{
+			&>form{
+				&:first-of-type{
+					input{
+						@include box-shadow-inset($color-drawer);
+						border-bottom-right-radius: 0;
+					}
+				}
+				&:last-of-type{
+					input,
+					label{
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
 	>fieldset{
 		padding:0;
 		margin-bottom: 1rem;
@@ -39,17 +62,28 @@ fieldset{
 			margin: 0;
 			height: #{ceil($height-form-input)};	
 			border-top: none;
-			border-right: 1px solid rgba(255,255,255,0.5);
-			border-bottom: 1px dotted $color-primary;
+			@include fieldset-border-top;			
 			border-left: none;
 			box-shadow: none;	
-			border-radius: 0;}	
+			border-radius: 0;}
+		& + form>textarea{
+			@include fieldset-border-top;
+		}
 		&:first-of-type{
+			label{
+				border-top-left-radius: $unit__border-radius;}
 			input{
-				border-top: 1px solid rgba(0,0,0,0.5);}}
+				@include box-shadow-inset($color-drawer);				
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;}}
 		&:last-of-type{
+			label{
+				border-bottom-left-radius: $unit__border-radius;}
 			input{
-				border-bottom: 1px solid rgba(255,255,255,0.5);}}
+				border-bottom: 0;
+				border-bottom-right-radius: $unit__border-radius;
+				border-bottom-left-radius: $unit__border-radius;
+				}}
 		label{
 			box-shadow: none;
 			border: none;
@@ -63,15 +97,31 @@ fieldset{
 		flex-wrap: wrap;
 		float: left;
 		width: 100%;
-		border: 1px inset $color-background;
-		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
-		form{			
+		z-index: 999;
+		padding-left: #{$unit__shadow-size * 0.5};
+		form{
+			z-index: 999;	
+			input{
+				z-index: 999;
+			}	
 			&:first-of-type{
+				input{
+					box-shadow: 0 #{$unit__shadow-size * -0.5} 0px rgba(0, 0, 0, $unit__shadow-opacity);
+					border-top-right-radius: $unit__border-radius;
+					@include fieldset-border-top;}
 				label{
-					border-top: 1px solid $color__3d--dark;}}
+					box-shadow: 0 #{$unit__shadow-size * -0.5} 0px rgba(0, 0, 0, $unit__shadow-opacity);				
+					@include fieldset-border-top($unit__shadow-opacity);
+					}}
 			&:last-of-type{
-				label{
-					border-bottom: 1px solid $color__3d--light;}}}}
+				input{
+					border-bottom-right-radius: $unit__border-radius;}
+				label,
+				input{
+					z-index: 999;
+					box-shadow: 0 #{$unit__shadow-size} 0 rgba(0, 0, 0, $unit__shadow-opacity);
+					//border-bottom: 1px solid $color__3d--light;
+					}}}}
 	hr{
 		display: flex;
 		height: 0px;
@@ -80,9 +130,9 @@ fieldset{
 		border: none;
 		& + form{
 			label{
-				border-top: 1px solid $color-background;}
+				@include fieldset-border-top($unit__shadow-opacity);}
 			input{
-				border-top: 1px solid $color-background;}}}
+				@include fieldset-border-top;}}}
 	legend{
 		font-size: typography(h5,font-size) * 1rem;
 		line-height: typography(h5,line-height) * 1rem;

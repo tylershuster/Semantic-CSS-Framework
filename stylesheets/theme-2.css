@@ -691,10 +691,10 @@ hr {
   padding: 0;
   border: none;
   background-color: #151438;
-  border: 2px solid;
-  border-color: rgba(10, 10, 28, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
 }
 
@@ -756,28 +756,52 @@ video {
   display: inline-block;
 }
 
-/* line 1, ../sass/atoms/form/_button.scss */
-button {
+/* line 2, ../sass/atoms/form/_button.scss */
+button,
+input[type="button"] {
   font-family: inherit;
   font-size: 100%;
   line-height: normal;
   text-transform: none;
   margin: 0;
   background-color: #ffed5b;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
   height: 2rem;
   color: #151438;
+  -webkit-transition: box-shadow 0.4s;
+  -moz-transition: box-shadow 0.4s;
+  -o-transition: box-shadow 0.4s;
+  -ms-transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s;
 }
-/* line 11, ../sass/atoms/form/_button.scss */
-button::-moz-focus-inner {
+/* line 13, ../sass/atoms/form/_button.scss */
+button:active,
+input[type="button"]:active {
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
+}
+/* line 16, ../sass/atoms/form/_button.scss */
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 1, ../sass/atoms/form/_fieldset.scss */
+/* line 5, ../sass/atoms/form/_fieldset.scss */
 fieldset {
   box-sizing: border-box;
   /*(border: 1px solid $color-accent;*/
@@ -787,31 +811,45 @@ fieldset {
   position: relative;
   padding-top: 3rem;
   background-color: #151438;
-  border: 2px solid;
-  border-color: rgba(10, 10, 28, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
-/* line 11, ../sass/atoms/form/_fieldset.scss */
+/* line 15, ../sass/atoms/form/_fieldset.scss */
 fieldset > .row {
   width: 100%;
   display: block;
 }
-/* line 14, ../sass/atoms/form/_fieldset.scss */
+/* line 18, ../sass/atoms/form/_fieldset.scss */
 fieldset > .row > div {
   width: 50%;
   float: left;
+  margin-bottom: 2rem;
 }
-/* line 17, ../sass/atoms/form/_fieldset.scss */
+/* line 22, ../sass/atoms/form/_fieldset.scss */
 fieldset > .row > div.column {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-/* line 20, ../sass/atoms/form/_fieldset.scss */
+/* line 25, ../sass/atoms/form/_fieldset.scss */
 fieldset > .row > form {
   width: 100%;
 }
-/* line 22, ../sass/atoms/form/_fieldset.scss */
+/* line 31, ../sass/atoms/form/_fieldset.scss */
+fieldset.row > div > form:first-of-type input {
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
+  border-bottom-right-radius: 0;
+}
+/* line 38, ../sass/atoms/form/_fieldset.scss */
+fieldset.row > div > form:last-of-type input,
+fieldset.row > div > form:last-of-type label {
+  box-shadow: none;
+}
+/* line 45, ../sass/atoms/form/_fieldset.scss */
 fieldset > fieldset {
   padding: 0;
   margin-bottom: 1rem;
@@ -819,72 +857,111 @@ fieldset > fieldset {
   border: none;
   border-radius: 2px;
 }
-/* line 28, ../sass/atoms/form/_fieldset.scss */
+/* line 51, ../sass/atoms/form/_fieldset.scss */
 fieldset form {
   width: 100%;
 }
-/* line 30, ../sass/atoms/form/_fieldset.scss */
+/* line 53, ../sass/atoms/form/_fieldset.scss */
 fieldset form label {
   text-align: center;
-  border: 2px solid;
-  border-color: rgba(10, 10, 28, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
   background-color: #ffed5b;
   color: #151438;
   border-radius: 0;
 }
-/* line 36, ../sass/atoms/form/_fieldset.scss */
+/* line 59, ../sass/atoms/form/_fieldset.scss */
 fieldset form input {
   box-shadow: none;
   border-color: none;
   margin: 0;
   height: 2rem;
   border-top: none;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px dotted #ffed5b;
+  border-top: 1px solid #151438;
   border-left: none;
   box-shadow: none;
   border-radius: 0;
 }
-/* line 48, ../sass/atoms/form/_fieldset.scss */
+/* line 69, ../sass/atoms/form/_fieldset.scss */
+fieldset form + form > textarea {
+  border-top: 1px solid #151438;
+}
+/* line 73, ../sass/atoms/form/_fieldset.scss */
+fieldset form:first-of-type label {
+  border-top-left-radius: 2px;
+}
+/* line 75, ../sass/atoms/form/_fieldset.scss */
 fieldset form:first-of-type input {
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
-/* line 51, ../sass/atoms/form/_fieldset.scss */
+/* line 80, ../sass/atoms/form/_fieldset.scss */
+fieldset form:last-of-type label {
+  border-bottom-left-radius: 2px;
+}
+/* line 82, ../sass/atoms/form/_fieldset.scss */
 fieldset form:last-of-type input {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
-/* line 53, ../sass/atoms/form/_fieldset.scss */
+/* line 87, ../sass/atoms/form/_fieldset.scss */
 fieldset form label {
   box-shadow: none;
   border: none;
   margin: 0;
   height: 2rem;
 }
-/* line 58, ../sass/atoms/form/_fieldset.scss */
+/* line 92, ../sass/atoms/form/_fieldset.scss */
 fieldset textarea {
   border-top: none;
   box-shadow: none;
 }
-/* line 61, ../sass/atoms/form/_fieldset.scss */
+/* line 95, ../sass/atoms/form/_fieldset.scss */
 fieldset div {
   display: flex;
   flex-wrap: wrap;
   float: left;
   width: 100%;
-  border: 1px inset #151438;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
+  z-index: 999;
+  padding-left: 1px;
 }
-/* line 70, ../sass/atoms/form/_fieldset.scss */
+/* line 102, ../sass/atoms/form/_fieldset.scss */
+fieldset div form {
+  z-index: 999;
+}
+/* line 104, ../sass/atoms/form/_fieldset.scss */
+fieldset div form input {
+  z-index: 999;
+}
+/* line 108, ../sass/atoms/form/_fieldset.scss */
+fieldset div form:first-of-type input {
+  box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.15);
+  border-top-right-radius: 2px;
+  border-top: 1px solid #151438;
+}
+/* line 112, ../sass/atoms/form/_fieldset.scss */
 fieldset div form:first-of-type label {
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(21, 20, 56, 0.15);
 }
-/* line 73, ../sass/atoms/form/_fieldset.scss */
-fieldset div form:last-of-type label {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+/* line 117, ../sass/atoms/form/_fieldset.scss */
+fieldset div form:last-of-type input {
+  border-bottom-right-radius: 2px;
 }
-/* line 75, ../sass/atoms/form/_fieldset.scss */
+/* line 120, ../sass/atoms/form/_fieldset.scss */
+fieldset div form:last-of-type label,
+fieldset div form:last-of-type input {
+  z-index: 999;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+/* line 125, ../sass/atoms/form/_fieldset.scss */
 fieldset hr {
   display: flex;
   height: 0px;
@@ -892,15 +969,15 @@ fieldset hr {
   margin: 0;
   border: none;
 }
-/* line 82, ../sass/atoms/form/_fieldset.scss */
+/* line 132, ../sass/atoms/form/_fieldset.scss */
 fieldset hr + form label {
-  border-top: 1px solid #151438;
+  border-top: 1px solid rgba(21, 20, 56, 0.15);
 }
-/* line 84, ../sass/atoms/form/_fieldset.scss */
+/* line 134, ../sass/atoms/form/_fieldset.scss */
 fieldset hr + form input {
   border-top: 1px solid #151438;
 }
-/* line 86, ../sass/atoms/form/_fieldset.scss */
+/* line 136, ../sass/atoms/form/_fieldset.scss */
 fieldset legend {
   font-size: 1.25rem;
   line-height: 2rem;
@@ -909,7 +986,7 @@ fieldset legend {
   left: 1rem;
 }
 
-/* line 96, ../sass/atoms/form/_fieldset.scss */
+/* line 146, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental {
   display: table;
   table-layout: fixed;
@@ -919,11 +996,11 @@ fieldset.experimental {
   box-shadow: none;
   border: none;
 }
-/* line 105, ../sass/atoms/form/_fieldset.scss */
+/* line 155, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental + fieldset.experimental form {
   border-top: none;
 }
-/* line 107, ../sass/atoms/form/_fieldset.scss */
+/* line 157, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form {
   display: table-cell;
   width: 2%;
@@ -934,22 +1011,22 @@ fieldset.experimental form {
   padding: 0;
   background: transparent;
 }
-/* line 117, ../sass/atoms/form/_fieldset.scss */
+/* line 167, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form:hover {
   background-color: #23225e;
-  border: 2px solid;
-  border-color: rgba(10, 10, 28, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
   border-width: 1px 1px 1px 0;
   border-style: solid;
   border-color: #a2a1dd;
 }
-/* line 123, ../sass/atoms/form/_fieldset.scss */
+/* line 173, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form:last-of-type {
   border-right: 0;
 }
-/* line 125, ../sass/atoms/form/_fieldset.scss */
+/* line 175, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form label {
   width: 100%;
   background-color: transparent;
@@ -958,7 +1035,7 @@ fieldset.experimental form label {
   text-transform: uppercase;
   font-size: 85%;
 }
-/* line 132, ../sass/atoms/form/_fieldset.scss */
+/* line 182, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form input {
   width: 100%;
   background: transparent;
@@ -966,7 +1043,7 @@ fieldset.experimental form input {
   padding: 0 0.5rem;
   box-shadow: none;
 }
-/* line 140, ../sass/atoms/form/_fieldset.scss */
+/* line 190, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form input:hover, fieldset.experimental form input:active, fieldset.experimental form input:focus {
   border-top: 1px dashed rgba(162, 161, 221, 0.3);
 }
@@ -1115,10 +1192,10 @@ input {
   -webkit-transition: box-shadow 0.13333s ease-in-out;
   -moz-transition: box-shadow 0.13333s ease-in-out;
   -o-transition: box-shadow 0.13333s ease-in-out;
-  border: 2px solid;
-  border-color: rgba(17, 17, 47, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 /* line 18, ../sass/atoms/form/_input.scss */
 input::-moz-focus-inner {
@@ -1127,7 +1204,7 @@ input::-moz-focus-inner {
 }
 /* line 21, ../sass/atoms/form/_input.scss */
 input:focus {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15) inset;
 }
 /* line 27, ../sass/atoms/form/_input.scss */
 input[type="text"]:disabled {
@@ -1167,18 +1244,27 @@ input[type="color"] {
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0.3rem;
   background: #23225e;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
 }
 /* line 66, ../sass/atoms/form/_input.scss */
 input[type="color"]:disabled::-webkit-color-swatch-wrapper {
   background-color: #151438;
-  border: 2px solid;
-  border-color: rgba(17, 17, 47, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 /* line 69, ../sass/atoms/form/_input.scss */
 input[type="color"][readonly] {
@@ -1192,10 +1278,10 @@ input[type="color"][readonly]::-webkit-color-swatch-wrapper {
 /* line 74, ../sass/atoms/form/_input.scss */
 input[type="color"]::-webkit-color-swatch {
   border: none;
-  border: 2px solid;
-  border-color: rgba(127, 127, 127, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 /* line 77, ../sass/atoms/form/_input.scss */
 input[type="radio"] {
@@ -1219,18 +1305,27 @@ input[type="radio"]:before {
   display: block;
   content: "";
   padding: 0.5rem 0 0rem 0.15rem;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
   border-radius: 50%;
 }
 /* line 98, ../sass/atoms/form/_input.scss */
 input[type="radio"]:checked:before {
-  border: 2px solid;
-  border-color: rgba(17, 17, 47, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   background-color: #ffed5b;
 }
@@ -1261,10 +1356,10 @@ input[type="checkbox"]:before {
   background-color: #23225e;
   display: block;
   content: "";
-  border: 2px solid;
-  border-color: rgba(17, 17, 47, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
   font-size: 1.5rem;
   padding-left: 0.1rem;
 }
@@ -1282,10 +1377,19 @@ input[type="submit"] {
   margin-top: calc((2rem - 1.5rem) / 2);
   margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
 }
 /* line 139, ../sass/atoms/form/_input.scss */
 input[type="file"] {
@@ -1371,28 +1475,32 @@ meter {
   vertical-align: 0;
 }
 /* line 6, ../sass/atoms/form/_meter.scss */
-meter::-webkit-meter-optimum-value {
-  background: green;
-  border: 1px solid;
+meter::-webkit-meter-inner-element {
+  background: #23225e;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #0c860c #007900 #007900 #0c860c;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 /* line 9, ../sass/atoms/form/_meter.scss */
+meter::-webkit-meter-bar {
+  background: transparent;
+  height: calc(100% + 2px);
+  bottom: 2px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 15, ../sass/atoms/form/_meter.scss */
+meter::-webkit-meter-optimum-value {
+  background: green;
+}
+/* line 17, ../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-suboptimum-value {
   background: yellow;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #ffff0c #f2f200 #f2f200 #ffff0c;
 }
-/* line 12, ../sass/atoms/form/_meter.scss */
+/* line 19, ../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-even-less-good-value {
   background: red;
-  border: 1px solid;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #ff0c0c #f20000 #f20000 #ff0c0c;
 }
 
 /* line 1, ../sass/atoms/form/_output.scss */
@@ -1415,12 +1523,20 @@ progress {
   vertical-align: 0;
 }
 /* line 7, ../sass/atoms/form/_progress.scss */
+progress::-webkit-progress-inner-element {
+  background: #23225e;
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
+}
+/* line 10, ../sass/atoms/form/_progress.scss */
 progress::-webkit-progress-bar {
-  background-color: #23225e;
-  border: 2px solid;
-  border-color: rgba(10, 10, 28, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  background: transparent;
+  height: calc(100% + 2px);
+  bottom: 2px;
+  position: relative;
+  overflow: hidden;
 }
 
 /* line 1, ../sass/atoms/form/_select.scss */
@@ -1431,10 +1547,10 @@ select {
   text-transform: none;
   margin: 0;
   background-color: #23225e;
-  border: 2px solid;
-  border-color: rgba(17, 17, 47, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 /* line 9, ../sass/atoms/form/_select.scss */
 select:focus {
@@ -1463,10 +1579,10 @@ textarea {
   vertical-align: top;
   background-color: #23225e;
   border-radius: 2px;
-  border: 2px solid;
-  border-color: rgba(17, 17, 47, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 /* line 14, ../sass/atoms/form/_textarea.scss */
 textarea:disabled {
@@ -1482,10 +1598,10 @@ textarea:disabled {
 /* line 4, ../sass/atoms/form/_webkits.scss */
 ::-webkit-scrollbar-track {
   background-color: #23225e;
-  border: 2px solid;
-  border-color: rgba(17, 17, 47, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
   margin-top: -1px;
 }
 
@@ -1494,10 +1610,19 @@ textarea:disabled {
   width: calc(100% - 2px);
   width: 50%;
   background-color: #151438;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #201f41 #131335 #131335 #201f41;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
 }
 
 /* line 18, ../sass/atoms/form/_webkits.scss */
@@ -1542,10 +1667,19 @@ textarea:disabled {
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: #a2a1dd;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #a6a5de #9998d1 #9998d1 #a6a5de;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
@@ -1577,40 +1711,48 @@ textarea:disabled {
   color: #a2a1dd;
 }
 
-/* line 74, ../sass/atoms/form/_webkits.scss */
-::-webkit-meter-bar {
-  background: #23225e;
-  border: 2px solid;
-  border-color: rgba(17, 17, 47, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-
-/* line 81, ../sass/atoms/form/_webkits.scss */
+/* line 78, ../sass/atoms/form/_webkits.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: none;
   border: none;
   color: #151438;
   background-color: #ffed5b;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
   height: 1.5rem;
 }
 
-/* line 89, ../sass/atoms/form/_webkits.scss */
+/* line 86, ../sass/atoms/form/_webkits.scss */
 ::-webkit-file-upload-button:disabled {
   color: #151438;
   background-color: #23225e;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
 }
 
-/* line 94, ../sass/atoms/form/_webkits.scss */
+/* line 91, ../sass/atoms/form/_webkits.scss */
 ::-webkit-clear-button {
   -webkit-appearance: none;
   content: "x";
@@ -2218,10 +2360,10 @@ code {
   background-color: #23225e;
   padding: 0 0.2rem;
   line-height: 1rem;
-  border: 2px solid;
-  border-color: rgba(10, 10, 28, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
   font-size: 1em;
 }
 
@@ -2697,10 +2839,19 @@ body > header {
   height: 3rem;
   z-index: 100;
   width: 100%;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
   border-top: none;
 }
 @media only screen and (min-width: 256px) {
@@ -2915,10 +3066,19 @@ header .masthead .logo + h1 {
   /* line 2, ../sass/molecules/_header--.collapsed.scss */
   header.collapsed {
     background-color: #151438;
-    border: 1px solid;
+    border: none;
     border-radius: 2px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    border-color: #201f41 #131335 #131335 #201f41;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    /*@if $tone == black{
+    	box-shadow: none;}
+    @else{
+    	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+    @if $tone == white{
+    	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+    @else{
+    	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+    	*/
     border-top: none;
   }
   /* line 7, ../sass/molecules/_header--.collapsed.scss */
@@ -2932,17 +3092,16 @@ header .masthead .logo + h1 {
     left: 50%;
     margin-left: -50%;
   }
-  /* line 16, ../sass/molecules/_header--.collapsed.scss */
-  header.collapsed section.masthead h1,
-  header.collapsed h1 {
+  /* line 15, ../sass/molecules/_header--.collapsed.scss */
+  header.collapsed section.masthead h1 {
     font-size: 0;
     opacity: 0;
   }
-  /* line 20, ../sass/molecules/_header--.collapsed.scss */
+  /* line 19, ../sass/molecules/_header--.collapsed.scss */
   header.collapsed nav li ul {
     background-color: #23225e;
   }
-  /* line 22, ../sass/molecules/_header--.collapsed.scss */
+  /* line 21, ../sass/molecules/_header--.collapsed.scss */
   header.collapsed nav ul {
     background-color: #151438;
   }
@@ -3198,10 +3357,19 @@ header > section.masthead ~ nav > ul {
   display: table;
   table-layout: fixed;
   box-sizing: border-box;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
 }
 /* line 84, ../sass/molecules/_header__section__.masthead__nav.scss */
 header > section.masthead ~ nav > ul > div {
@@ -3234,10 +3402,19 @@ header > section.masthead ~ nav > ul li:hover {
 header > section.masthead ~ nav > ul li:hover ul {
   z-index: 999;
   width: 110%;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
 }
 @media only screen and (max-width: 1024px) {
   /* line 103, ../sass/molecules/_header__section__.masthead__nav.scss */
@@ -3361,10 +3538,19 @@ header > section.masthead ~ nav li > ul {
   border-radius: 2px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #2e2d66 #212059 #212059 #2e2d66;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -3530,10 +3716,19 @@ header > section.masthead ~ nav li > ul + a:after {
     height: 100%;
     top: 3rem;
     background-color: #23225e;
-    border: 1px solid;
+    border: none;
     border-radius: 2px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    border-color: #2e2d66 #212059 #212059 #2e2d66;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    /*@if $tone == black{
+    	box-shadow: none;}
+    @else{
+    	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+    @if $tone == white{
+    	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+    @else{
+    	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+    	*/
     -webkit-transition: right 0.4s ease-in-out;
     -moz-transition: right 0.4s ease-in-out;
     -o-transition: right 0.4s ease-in-out;
@@ -3644,10 +3839,10 @@ section.hero > * {
   background-color: #23225e;
   margin-top: 1rem;
   padding: 1rem;
-  border: 2px solid;
-  border-color: rgba(17, 17, 47, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 /* line 31, ../sass/molecules/_styleguide.scss */
 .colors > * {
@@ -3685,73 +3880,109 @@ p#musical-typography + div.row {
 /* line 58, ../sass/molecules/_styleguide.scss */
 #primary-swatch .swatch {
   background-color: #ffed5b;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
 }
 /* line 62, ../sass/molecules/_styleguide.scss */
 #primary-swatch figcaption {
   color: #ffed5b;
   background-color: #151438;
-  border: 2px solid;
-  border-color: rgba(10, 10, 28, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
 /* line 69, ../sass/molecules/_styleguide.scss */
 #secondary-swatch .swatch {
   background-color: #f6cd51;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #f6cf59 #e9c24c #e9c24c #f6cf59;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
 }
 /* line 73, ../sass/molecules/_styleguide.scss */
 #secondary-swatch figcaption {
   color: #f6cd51;
   background-color: #151438;
-  border: 2px solid;
-  border-color: rgba(10, 10, 28, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
 /* line 80, ../sass/molecules/_styleguide.scss */
 #tertiary-swatch .swatch {
   background-color: #f6cd51;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #f6cf59 #e9c24c #e9c24c #f6cf59;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
 }
 /* line 84, ../sass/molecules/_styleguide.scss */
 #tertiary-swatch figcaption {
   color: #f6cd51;
   background-color: #151438;
-  border: 2px solid;
-  border-color: rgba(10, 10, 28, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
 /* line 91, ../sass/molecules/_styleguide.scss */
 #accent-swatch .swatch {
   background-color: #ffed5b;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  border-color: #ffed63 #f2e156 #f2e156 #ffed63;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
 }
 /* line 95, ../sass/molecules/_styleguide.scss */
 #accent-swatch figcaption {
   color: #ffed5b;
   background-color: #151438;
-  border: 2px solid;
-  border-color: rgba(10, 10, 28, 0.625) transparent transparent transparent;
-  border-radius: 1px 0 0 0;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
 /* { / picnicc } */

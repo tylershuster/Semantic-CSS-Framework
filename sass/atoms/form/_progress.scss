@@ -4,6 +4,12 @@ progress{
 	height: 1rem;
 	width: 100%;
 	vertical-align: 0;
+	&::-webkit-progress-inner-element{
+		background: $color-input-background;
+		@include box-shadow-inset($color-input-background);}
 	&::-webkit-progress-bar{
-		background-color: $color-input-background;
-		@include box-shadow-inset($color-background);}}
+		background: transparent;
+		height: calc(100% + #{$unit__shadow-size});
+		bottom: #{$unit__shadow-size};
+		position: relative;		
+		overflow: hidden;}}

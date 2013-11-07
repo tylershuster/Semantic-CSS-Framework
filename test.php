@@ -669,7 +669,7 @@
 			<fieldset class="column">
 				<legend>left</legend>
 				<fieldset class="row">
-					<div class="column">
+					<div>
 						<form>
 							<label>First Name</label><input type="text">
 						</form>
@@ -680,7 +680,7 @@
 							<label>First Name</label><input type="text">
 						</form>
 					</div>
-					<div>
+					<div class="column">
 						<form>
 							<label>First Name</label><input type="text">
 						</form>

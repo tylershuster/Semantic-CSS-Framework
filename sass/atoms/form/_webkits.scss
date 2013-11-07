@@ -71,10 +71,7 @@
 ::-webkit-media-controls-current-time-display{
 	color: $color-text;}
 
-::-webkit-meter-bar{
-	background: $color-drawer;
-	@include box-shadow-inset($color-input-background);
-	overflow: hidden;}
+
 
 ::-webkit-input-speech-button{}
 

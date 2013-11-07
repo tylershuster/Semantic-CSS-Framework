@@ -11,11 +11,10 @@ header{
 			position: absolute;
 			margin: auto;
 			left: 50%;
-			margin-left: -50%;}
-		section.masthead h1,
-		h1{
-			font-size: 0;
-			opacity: 0;}
+			margin-left: -50%;
+			h1{
+				font-size: 0;
+				opacity: 0;}}
 		nav{
 			li ul{
 				background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);}

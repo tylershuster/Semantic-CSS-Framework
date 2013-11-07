@@ -752,8 +752,9 @@ video {
   display: inline-block;
 }
 
-/* line 1, ../../sass/atoms/form/_button.scss */
-button {
+/* line 2, ../../sass/atoms/form/_button.scss */
+button,
+input[type="button"] {
   font-family: inherit;
   font-size: 100%;
   line-height: normal;
@@ -763,14 +764,20 @@ button {
   border: none;
   height: 2rem;
   color: #fcf9ec;
+  -webkit-transition: box-shadow 0.4s;
+  -moz-transition: box-shadow 0.4s;
+  -o-transition: box-shadow 0.4s;
+  -ms-transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s;
 }
-/* line 11, ../../sass/atoms/form/_button.scss */
-button::-moz-focus-inner {
+/* line 16, ../../sass/atoms/form/_button.scss */
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 1, ../../sass/atoms/form/_fieldset.scss */
+/* line 5, ../../sass/atoms/form/_fieldset.scss */
 fieldset {
   box-sizing: border-box;
   /*(border: 1px solid $color-accent;*/
@@ -781,26 +788,36 @@ fieldset {
   padding-top: 3rem;
   background-color: #fcf9ec;
 }
-/* line 11, ../../sass/atoms/form/_fieldset.scss */
+/* line 15, ../../sass/atoms/form/_fieldset.scss */
 fieldset > .row {
   width: 100%;
   display: block;
 }
-/* line 14, ../../sass/atoms/form/_fieldset.scss */
+/* line 18, ../../sass/atoms/form/_fieldset.scss */
 fieldset > .row > div {
   width: 50%;
   float: left;
+  margin-bottom: 2rem;
 }
-/* line 17, ../../sass/atoms/form/_fieldset.scss */
+/* line 22, ../../sass/atoms/form/_fieldset.scss */
 fieldset > .row > div.column {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-/* line 20, ../../sass/atoms/form/_fieldset.scss */
+/* line 25, ../../sass/atoms/form/_fieldset.scss */
 fieldset > .row > form {
   width: 100%;
 }
-/* line 22, ../../sass/atoms/form/_fieldset.scss */
+/* line 31, ../../sass/atoms/form/_fieldset.scss */
+fieldset.row > div > form:first-of-type input {
+  border-bottom-right-radius: 0;
+}
+/* line 38, ../../sass/atoms/form/_fieldset.scss */
+fieldset.row > div > form:last-of-type input,
+fieldset.row > div > form:last-of-type label {
+  box-shadow: none;
+}
+/* line 45, ../../sass/atoms/form/_fieldset.scss */
 fieldset > fieldset {
   padding: 0;
   margin-bottom: 1rem;
@@ -808,68 +825,103 @@ fieldset > fieldset {
   border: none;
   border-radius: 2px;
 }
-/* line 28, ../../sass/atoms/form/_fieldset.scss */
+/* line 51, ../../sass/atoms/form/_fieldset.scss */
 fieldset form {
   width: 100%;
 }
-/* line 30, ../../sass/atoms/form/_fieldset.scss */
+/* line 53, ../../sass/atoms/form/_fieldset.scss */
 fieldset form label {
   text-align: center;
   background-color: #1b2326;
   color: #fcf9ec;
   border-radius: 0;
 }
-/* line 36, ../../sass/atoms/form/_fieldset.scss */
+/* line 59, ../../sass/atoms/form/_fieldset.scss */
 fieldset form input {
   box-shadow: none;
   border-color: none;
   margin: 0;
   height: 2rem;
   border-top: none;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px dotted #1b2326;
+  border-top: 1px solid #fcf9ec;
   border-left: none;
   box-shadow: none;
   border-radius: 0;
 }
-/* line 48, ../../sass/atoms/form/_fieldset.scss */
+/* line 69, ../../sass/atoms/form/_fieldset.scss */
+fieldset form + form > textarea {
+  border-top: 1px solid #fcf9ec;
+}
+/* line 73, ../../sass/atoms/form/_fieldset.scss */
+fieldset form:first-of-type label {
+  border-top-left-radius: 2px;
+}
+/* line 75, ../../sass/atoms/form/_fieldset.scss */
 fieldset form:first-of-type input {
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
-/* line 51, ../../sass/atoms/form/_fieldset.scss */
+/* line 80, ../../sass/atoms/form/_fieldset.scss */
+fieldset form:last-of-type label {
+  border-bottom-left-radius: 2px;
+}
+/* line 82, ../../sass/atoms/form/_fieldset.scss */
 fieldset form:last-of-type input {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
-/* line 53, ../../sass/atoms/form/_fieldset.scss */
+/* line 87, ../../sass/atoms/form/_fieldset.scss */
 fieldset form label {
   box-shadow: none;
   border: none;
   margin: 0;
   height: 2rem;
 }
-/* line 58, ../../sass/atoms/form/_fieldset.scss */
+/* line 92, ../../sass/atoms/form/_fieldset.scss */
 fieldset textarea {
   border-top: none;
   box-shadow: none;
 }
-/* line 61, ../../sass/atoms/form/_fieldset.scss */
+/* line 95, ../../sass/atoms/form/_fieldset.scss */
 fieldset div {
   display: flex;
   flex-wrap: wrap;
   float: left;
   width: 100%;
-  border: 1px inset #fcf9ec;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.62) inset;
+  z-index: 999;
+  padding-left: 1px;
 }
-/* line 70, ../../sass/atoms/form/_fieldset.scss */
+/* line 102, ../../sass/atoms/form/_fieldset.scss */
+fieldset div form {
+  z-index: 999;
+}
+/* line 104, ../../sass/atoms/form/_fieldset.scss */
+fieldset div form input {
+  z-index: 999;
+}
+/* line 108, ../../sass/atoms/form/_fieldset.scss */
+fieldset div form:first-of-type input {
+  box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.15);
+  border-top-right-radius: 2px;
+  border-top: 1px solid #fcf9ec;
+}
+/* line 112, ../../sass/atoms/form/_fieldset.scss */
 fieldset div form:first-of-type label {
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(252, 249, 236, 0.15);
 }
-/* line 73, ../../sass/atoms/form/_fieldset.scss */
-fieldset div form:last-of-type label {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+/* line 117, ../../sass/atoms/form/_fieldset.scss */
+fieldset div form:last-of-type input {
+  border-bottom-right-radius: 2px;
 }
-/* line 75, ../../sass/atoms/form/_fieldset.scss */
+/* line 120, ../../sass/atoms/form/_fieldset.scss */
+fieldset div form:last-of-type label,
+fieldset div form:last-of-type input {
+  z-index: 999;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+/* line 125, ../../sass/atoms/form/_fieldset.scss */
 fieldset hr {
   display: flex;
   height: 0px;
@@ -877,15 +929,15 @@ fieldset hr {
   margin: 0;
   border: none;
 }
-/* line 82, ../../sass/atoms/form/_fieldset.scss */
+/* line 132, ../../sass/atoms/form/_fieldset.scss */
 fieldset hr + form label {
-  border-top: 1px solid #fcf9ec;
+  border-top: 1px solid rgba(252, 249, 236, 0.15);
 }
-/* line 84, ../../sass/atoms/form/_fieldset.scss */
+/* line 134, ../../sass/atoms/form/_fieldset.scss */
 fieldset hr + form input {
   border-top: 1px solid #fcf9ec;
 }
-/* line 86, ../../sass/atoms/form/_fieldset.scss */
+/* line 136, ../../sass/atoms/form/_fieldset.scss */
 fieldset legend {
   font-size: 1.2rem;
   line-height: 2rem;
@@ -894,7 +946,7 @@ fieldset legend {
   left: 1rem;
 }
 
-/* line 96, ../../sass/atoms/form/_fieldset.scss */
+/* line 146, ../../sass/atoms/form/_fieldset.scss */
 fieldset.experimental {
   display: table;
   table-layout: fixed;
@@ -904,11 +956,11 @@ fieldset.experimental {
   box-shadow: none;
   border: none;
 }
-/* line 105, ../../sass/atoms/form/_fieldset.scss */
+/* line 155, ../../sass/atoms/form/_fieldset.scss */
 fieldset.experimental + fieldset.experimental form {
   border-top: none;
 }
-/* line 107, ../../sass/atoms/form/_fieldset.scss */
+/* line 157, ../../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form {
   display: table-cell;
   width: 2%;
@@ -919,18 +971,18 @@ fieldset.experimental form {
   padding: 0;
   background: transparent;
 }
-/* line 117, ../../sass/atoms/form/_fieldset.scss */
+/* line 167, ../../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form:hover {
   background-color: #fcf9ec;
   border-width: 1px 1px 1px 0;
   border-style: solid;
   border-color: #1b2326;
 }
-/* line 123, ../../sass/atoms/form/_fieldset.scss */
+/* line 173, ../../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form:last-of-type {
   border-right: 0;
 }
-/* line 125, ../../sass/atoms/form/_fieldset.scss */
+/* line 175, ../../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form label {
   width: 100%;
   background-color: transparent;
@@ -939,7 +991,7 @@ fieldset.experimental form label {
   text-transform: uppercase;
   font-size: 85%;
 }
-/* line 132, ../../sass/atoms/form/_fieldset.scss */
+/* line 182, ../../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form input {
   width: 100%;
   background: transparent;
@@ -947,7 +999,7 @@ fieldset.experimental form input {
   padding: 0 0.5rem;
   box-shadow: none;
 }
-/* line 140, ../../sass/atoms/form/_fieldset.scss */
+/* line 190, ../../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form input:hover, fieldset.experimental form input:active, fieldset.experimental form input:focus {
   border-top: 1px dashed rgba(27, 35, 38, 0.3);
 }
@@ -1322,19 +1374,28 @@ meter {
   vertical-align: 0;
 }
 /* line 6, ../../sass/atoms/form/_meter.scss */
-meter::-webkit-meter-optimum-value {
-  background: green;
-  border: none;
+meter::-webkit-meter-inner-element {
+  background: #fcf9ec;
 }
 /* line 9, ../../sass/atoms/form/_meter.scss */
+meter::-webkit-meter-bar {
+  background: transparent;
+  height: calc(100% + 2px);
+  bottom: 2px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 15, ../../sass/atoms/form/_meter.scss */
+meter::-webkit-meter-optimum-value {
+  background: green;
+}
+/* line 17, ../../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-suboptimum-value {
   background: yellow;
-  border: none;
 }
-/* line 12, ../../sass/atoms/form/_meter.scss */
+/* line 19, ../../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-even-less-good-value {
   background: red;
-  border: none;
 }
 
 /* line 1, ../../sass/atoms/form/_output.scss */
@@ -1357,8 +1418,16 @@ progress {
   vertical-align: 0;
 }
 /* line 7, ../../sass/atoms/form/_progress.scss */
+progress::-webkit-progress-inner-element {
+  background: #fcf9ec;
+}
+/* line 10, ../../sass/atoms/form/_progress.scss */
 progress::-webkit-progress-bar {
-  background-color: #fcf9ec;
+  background: transparent;
+  height: calc(100% + 2px);
+  bottom: 2px;
+  position: relative;
+  overflow: hidden;
 }
 
 /* line 1, ../../sass/atoms/form/_select.scss */
@@ -1496,13 +1565,7 @@ textarea:disabled {
   color: #1b2326;
 }
 
-/* line 74, ../../sass/atoms/form/_webkits.scss */
-::-webkit-meter-bar {
-  background: #fcf9ec;
-  overflow: hidden;
-}
-
-/* line 81, ../../sass/atoms/form/_webkits.scss */
+/* line 78, ../../sass/atoms/form/_webkits.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: none;
   border: none;
@@ -1512,14 +1575,14 @@ textarea:disabled {
   height: 1.5rem;
 }
 
-/* line 89, ../../sass/atoms/form/_webkits.scss */
+/* line 86, ../../sass/atoms/form/_webkits.scss */
 ::-webkit-file-upload-button:disabled {
   color: #fcf9ec;
   background-color: #fcf9ec;
   border: none;
 }
 
-/* line 94, ../../sass/atoms/form/_webkits.scss */
+/* line 91, ../../sass/atoms/form/_webkits.scss */
 ::-webkit-clear-button {
   -webkit-appearance: none;
   content: "x";
@@ -2831,17 +2894,16 @@ header .masthead .logo + h1 {
     left: 50%;
     margin-left: -50%;
   }
-  /* line 16, ../../sass/molecules/_header--.collapsed.scss */
-  header.collapsed section.masthead h1,
-  header.collapsed h1 {
+  /* line 15, ../../sass/molecules/_header--.collapsed.scss */
+  header.collapsed section.masthead h1 {
     font-size: 0;
     opacity: 0;
   }
-  /* line 20, ../../sass/molecules/_header--.collapsed.scss */
+  /* line 19, ../../sass/molecules/_header--.collapsed.scss */
   header.collapsed nav li ul {
     background-color: #fcf9ec;
   }
-  /* line 22, ../../sass/molecules/_header--.collapsed.scss */
+  /* line 21, ../../sass/molecules/_header--.collapsed.scss */
   header.collapsed nav ul {
     background-color: #fcf9ec;
   }

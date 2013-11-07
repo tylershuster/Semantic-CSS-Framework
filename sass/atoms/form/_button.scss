@@ -1,4 +1,5 @@
-button{
+button,
+input[type="button"]{
 	font-family: inherit;
 	font-size: 100%;
 	line-height: normal;
@@ -8,6 +9,10 @@ button{
 	@include box-shadow($color-primary);
 	height: #{ceil($height-form-input)};
 	color: $color-background;
+	@include prefixer(transition, box-shadow $length__transition);
+	&:active{
+		@include box-shadow-inset($color-primary);
+	}
 	&::-moz-focus-inner{
 		border: 0;
 		padding: 0;}

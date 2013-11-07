@@ -3,12 +3,18 @@ meter{
 	height: 1rem;
 	width: 100%;
 	vertical-align: 0;
+	&::-webkit-meter-inner-element{
+		background: $color-input-background;
+		@include box-shadow-inset($color-input-background);}
+	&::-webkit-meter-bar{
+		background: transparent;
+		height: calc(100% + #{$unit__shadow-size});
+		bottom: #{$unit__shadow-size};
+		position: relative;		
+		overflow: hidden;}
 	&::-webkit-meter-optimum-value{
-		background: green;
-		@include box-shadow(green);}
+		background: green;}
 	&::-webkit-meter-suboptimum-value{
-		background: yellow;
-		@include box-shadow(yellow);}
+		background: yellow;}
 	&::-webkit-meter-even-less-good-value{
-		background: red;
-		@include box-shadow(red);}}
+		background: red;}}

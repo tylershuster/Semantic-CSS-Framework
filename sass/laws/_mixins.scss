@@ -62,9 +62,12 @@ body {
 
 @mixin box-shadow($on-background){
 	@if $skeu == faux-flat{
-		border: 1px solid;
+		border: none;
 		border-radius: $unit__border-radius;
-		@if $tone == black{
+		border-bottom: $unit__border-radius solid $color__3d--dark;		
+		box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
+		
+		/*@if $tone == black{
 			box-shadow: none;}
 		@else{
 			box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
@@ -72,6 +75,8 @@ body {
 			border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
 		@else{
 			border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+			*/
+		}
 	@else if $skeu == cartoon{
 		border: 2px solid;
 		border-color: tint($on-background,15%) shade($on-background,15%) shade($on-background,15%) tint($on-background,15%);
@@ -81,10 +86,11 @@ body {
 
 @mixin box-shadow-inset($on-background){	
 	@if $skeu == faux-flat{
-		border: $unit__shadow-size solid;
-		border-color: mix($color__3d--dark, $on-background, 75%) transparent transparent transparent;
-		border-radius: #{$unit__shadow-size / 2} 0 0 0;
-		box-shadow: inset 0 #{$unit__shadow-size / 2} 0 rgba(0, 0, 0, $unit__shadow-opacity);
+		border: none;
+		border-radius: $unit__border-radius;
+		border-top: $unit__border-radius solid $color__3d--dark;
+		box-shadow: inset 0 0 $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
+		//box-shadow: inset 0 #{$unit__shadow-size / 2} 0 rgba(0, 0, 0, $unit__shadow-opacity);
 		@if $tone == black{
 			box-shadow: none;}
 		@else{
