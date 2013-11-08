@@ -1,0 +1,8 @@
+hr{
+	height: 2px;
+	margin: calc(0.5rem - 1px) 0;
+	padding: 0;
+	border: none;
+	background-color: $color-background;
+	@include box-shadow-inset($color-background);
+	box-sizing: border-box;}

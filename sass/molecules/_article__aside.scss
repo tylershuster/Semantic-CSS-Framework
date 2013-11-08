@@ -1,0 +1,63 @@
+article>aside{
+	width: 100%;
+	padding: 0 $unit__gutter--width #{$unit__gutter--width / 2} $unit__gutter--width;
+	margin-bottom: #{$unit__gutter--width / 2};	
+	width: calc(100% + #{2 * $article-margin-length-one});	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	p{
+		margin-bottom: #{$unit__gutter--width / -2};}	
+	&:nth-of-type(odd){
+		float: left;		
+		right: $article-margin-length-one;
+		margin-right: #{$article-margin-length-one * -0.5};}
+	&:nth-of-type(even){
+		float: right;		
+		left: $article-margin-length-one;
+		margin-left: #{$article-margin-length-one * -0.5};}
+	@include media-from($unit__base-x-two){
+		width: calc(100% + #{2 * $article-margin-length-two});
+		&:nth-of-type(odd){
+			right: $article-margin-length-two;
+			margin-right: #{$article-margin-length-two * -0.5};}
+		&:nth-of-type(even){
+			left: $article-margin-length-two;
+			margin-left: #{$article-margin-length-two * -0.5};}}
+	@include media-from($unit__base-x-three){
+		margin-top: -0.25rem;
+		margin-bottom: -0.25rem;
+		width: 50%;
+		
+
+		&:nth-of-type(odd){			
+			right: $article-margin-length-three;
+			margin-right: #{$article-margin-length-three * -0.5};}
+		&:nth-of-type(even){			
+			left: $article-margin-length-three;
+			margin-left: #{$article-margin-length-three * -0.5};}}
+	@include media-from($unit__base-x-five){
+		&:nth-of-type(odd){
+			right: $article-margin-length-five;
+			margin-right: #{$article-margin-length-five * -0.5};}
+		&:nth-of-type(even){
+			left: $article-margin-length-five;
+			margin-left: #{$article-margin-length-five * -0.5};}}
+	@include media-from($unit__base-x-eight){
+		width: 33%;
+		&:nth-of-type(odd){
+			right: $article-margin-length-eight;
+			margin-right: #{$article-margin-length-eight * -0.5};}
+		&:nth-of-type(even){
+			left: $article-margin-length-eight;
+			margin-left: #{$article-margin-length-eight * -0.5};}}
+	@include media-from($unit__base-x-thirteen){
+		width: 25%;
+		&:nth-of-type(odd){
+			right: $article-margin-length-thirteen;
+			margin-right: #{$article-margin-length-thirteen * -0.5};}
+		&:nth-of-type(even){
+			left: $article-margin-length-thirteen;
+			margin-left: #{$article-margin-length-thirteen * -0.5};}}}

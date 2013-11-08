@@ -1,0 +1,36 @@
+article>figure{
+	&:nth-of-type(odd){
+		float: right;
+		padding-left: $unit__gutter--width;
+		margin-right: $article-margin-length-one  * -1;}
+	&:nth-of-type(even){
+		float: left;
+		margin-left: $article-margin-length-one  * -1;}
+	@include media-from($unit__base-x-two){
+		width: calc(100% + #{2 * $article-margin-length-two});
+		&:nth-of-type(odd){
+			margin-right: $article-margin-length-two  * -1;}
+		&:nth-of-type(even){
+			margin-left: $article-margin-length-two * -1;}}
+	@include media-from($unit__base-x-three){
+		width: calc(100% + #{2 * $article-margin-length-three});
+		&:nth-of-type(odd){
+			margin-right: $article-margin-length-three  * -1;}
+		&:nth-of-type(even){
+			margin-left: $article-margin-length-three * -1;}}
+	@include media-from($unit__base-x-five){
+		width: 50%;
+		&:nth-of-type(odd){
+			margin-right: $article-margin-length-five  * -1;}
+		&:nth-of-type(even){
+			margin-left: $article-margin-length-five * -1;}}
+	@include media-from($unit__base-x-eight){
+		&:nth-of-type(odd){
+			margin-right: $article-margin-length-eight  * -1;}
+		&:nth-of-type(even){
+			margin-left: $article-margin-length-eight * -1;}}
+	@include media-from($unit__base-x-thirteen){
+		&:nth-of-type(odd){
+			margin-right: $article-margin-length-thirteen  * -1;}
+		&:nth-of-type(even){
+			margin-left: $article-margin-length-thirteen * -1;}}}

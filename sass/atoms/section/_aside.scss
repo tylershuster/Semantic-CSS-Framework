@@ -1,0 +1,25 @@
+aside{
+	padding-top: 2px;
+	margin: 0.5rem 0;
+	box-sizing: border-box;
+	position: relative;
+	padding-left: $unit__gutter--width;
+	padding-right: $unit__gutter--width;
+	display: block;
+	color: mix($color-text, $color-background);
+	@include font-properties-for(small);
+	font-family: '#{$heading-font}';
+	h1,h2,h3,h4,h5{		
+		@include font-properties-for(h4);
+		color: $color-text;
+		font-family: '#{$body-font}';}
+	p{
+		color: mix($color-text, $color-background);
+		@include font-properties-for(small);
+		font-family: '#{$heading-font}';}
+	ul{
+		text-align: left;		
+		&:nth-of-type(even){
+			padding-right: #{$unit__gutter--width / 2};}
+		&:nth-of-type(odd){
+			padding-left: #{$unit__gutter--width / 2};}}}

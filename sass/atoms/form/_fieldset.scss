@@ -1,0 +1,221 @@
+@mixin fieldset-border-top($opacity: 1){
+	@if $tone == light or $tone == white{
+		border-top: 1px solid rgba(red($color-background),green($color-background),blue($color-background),$opacity);
+	}
+	@else{
+		border-top: 1px solid rgba(red($color-tertiary),green($color-tertiary),blue($color-tertiary),$opacity);
+	}
+}
+
+fieldset{
+	box-sizing: border-box;
+	/*(border: 1px solid $color-accent;*/
+	border: none;
+	margin: 0;
+	padding: $unit__gutter--width;
+	position: relative;
+	padding-top: #{(typography(h5,line-height) * 1rem) + $unit__gutter--width};
+	background-color: $color-background;
+	@include box-shadow-inset($color-background);
+	>.row{
+		width: 100%;
+		display: block;
+		>div{
+			width:50%;
+			float: left;
+			margin-bottom: #{ceil($height-form-input)};
+			&.column{
+				padding-left: #{$unit__gutter--width / 2};
+				padding-right: #{$unit__gutter--width / 2};}}
+		>form{
+			width: 100%;}}
+	&.row{
+		&>div{
+			&>form{
+				&:first-of-type{
+					label{
+						border-top: none;
+						box-shadow: none;
+					}
+					input{
+						@include box-shadow-inset($color-drawer);
+						border-bottom-right-radius: 0;
+					}
+				}
+				&:last-of-type{
+					input,
+					label{
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+	>fieldset{
+		padding:0;
+		margin-bottom: $unit__gutter--width;
+		box-shadow: none;
+		border: none;
+		border-radius: $unit__border-radius;}
+	form{
+		width: 100%;
+		flex-wrap: nowrap;
+		label{
+			text-align: center;
+			@include box-shadow-inset($color-background);
+			background-color: $color-primary;
+			color: $color-background;
+			border-radius: 0;
+			& + label{
+				border-left: 1px solid $color-drawer;}}
+		input{			
+			box-shadow: none;
+			border-color: none;
+			margin: 0;
+			height: #{ceil($height-form-input)};	
+			border-top: none;
+			@include fieldset-border-top;			
+			border-left: none;
+			box-shadow: none;	
+			border-radius: 0;
+			&:first-child{
+				
+			}
+		}
+		&>select{
+			@include fieldset-border-top;
+			display: flex;
+			flex-grow: 1;
+			color: $color-text;
+			height: #{ceil($height-form-input)};
+			&>option{
+
+			}
+		}
+		& + form>textarea{
+			@include fieldset-border-top;
+		}
+		&:first-of-type{
+			label{
+				border-top-left-radius: $unit__border-radius;}
+			input{
+				@include box-shadow-inset($color-drawer);				
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;}}
+		&:last-of-type{
+			label{
+				border-bottom-left-radius: $unit__border-radius;}
+			input{
+				border-bottom: 0;
+				border-bottom-right-radius: $unit__border-radius;
+				border-bottom-left-radius: $unit__border-radius;
+				}}
+		label{
+			box-shadow: none;
+			border: none;
+			margin: 0;
+			height: #{ceil($height-form-input)};}}
+	textarea{
+		border-top: none;
+		box-shadow: none;}
+	div{
+		display: flex;
+		flex-wrap: wrap;
+		float: left;
+		width: 100%;
+		z-index: 999;
+		padding-left: #{$unit__shadow-size * 0.5};		
+		form{
+			z-index: 999;	
+			input{
+				z-index: 999;
+			}
+			&:first-of-type{
+				input{
+					box-shadow: 0 #{$unit__shadow-size * -0.5} 0px rgba(0, 0, 0, $unit__shadow-opacity);
+					border-top-right-radius: $unit__border-radius;
+					@include fieldset-border-top;}
+				label{
+					box-shadow: 0 #{$unit__shadow-size * -0.5} 0px rgba(0, 0, 0, $unit__shadow-opacity);				
+					@include fieldset-border-top($unit__shadow-opacity);
+					}}
+			&:last-of-type{
+				input{
+					border-bottom-right-radius: $unit__border-radius;}
+				label,
+				input{
+					z-index: 999;
+					box-shadow: 0 #{$unit__shadow-size} 0 rgba(0, 0, 0, $unit__shadow-opacity);
+					//border-bottom: 1px solid $color__3d--light;
+					}}}}
+	hr{
+		display: flex;
+		height: 0px;
+		width: 100%;
+		margin: 0;
+		border: none;
+		&.uber{
+			height: #{ceil($height-form-input)};
+		}
+		& + form{
+			label{
+				@include fieldset-border-top($unit__shadow-opacity);}
+			input{
+				@include fieldset-border-top;}}}
+	legend{
+		font-size: typography(h5,font-size) * 1rem;
+		line-height: typography(h5,line-height) * 1rem;
+		position: absolute;
+		top: 0.5rem;
+		left: 1rem;}
+	&.login{
+		input[type="text"]{}
+		input[type="password"]{}}}
+
+fieldset.experimental{
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	float: left;
+	padding: 0;
+	box-shadow: none;
+	border: none;
+	& + fieldset.experimental{
+		form{
+			border-top: none;}}
+	form{
+		display: table-cell;
+		width: 2%;
+		float: none;
+		border-width: 1px 1px 1px 0;
+		border-style: solid;
+		border-color: $color-text;
+		padding: 0;
+		background: transparent;
+		//make this respond to row> nesting
+		&:hover{
+			background-color: $color-drawer;
+			@include box-shadow-inset($color-background);
+			border-width: 1px 1px 1px 0;
+			border-style: solid;
+			border-color: $color-text;}
+		&:last-of-type{
+			border-right: 0;}		
+		label{
+			width: 100%;
+			background-color: transparent;
+			text-align: left;
+			color: $color-text;
+			text-transform: uppercase;
+			font-size: 85%;}
+		input{
+			width: 100%;
+			background: transparent;
+			border: none;
+			padding: 0 0.5rem;
+			box-shadow: none;
+			&:hover,
+			&:active,
+			&:focus{
+				border-top: 1px dashed rgba(red($color-text),green($color-text),blue($color-text),0.3);}}}
+}

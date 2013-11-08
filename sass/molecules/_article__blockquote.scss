@@ -1,0 +1,55 @@
+article>blockquote{
+	&:nth-of-type(odd){
+		float: left;
+		text-align: right;
+		position: relative;
+		padding-right: $unit__gutter--width;
+		@include re-base(right, $article-margin-length-one);
+		> cite{
+			float: right;
+			text-align: right;}}
+	&:nth-of-type(even){
+		float: right;
+		text-align: left;
+		position: relative;
+		padding-left: $unit__gutter--width;	
+		@include re-base(left, $article-margin-length-one);
+		> cite{
+			float: left;
+			text-align: left;}}
+	> cite{
+		font-family: $sans;
+		color: $color-secondary;		
+		font-size: 0.85rem;
+		line-height: $unit__gutter--width;
+		margin-bottom: $unit__gutter--width;
+		&:before{
+			content: "- ";}}
+	@include media-from($unit__base-x-two){
+		width: calc(100% + #{2 * $article-margin-length-two});
+		&:nth-of-type(odd){
+			@include re-base(right, $article-margin-length-two);}
+		&:nth-of-type(even){
+			@include re-base(left, $article-margin-length-two);}}
+	@include media-from($unit__base-x-three){
+		width: calc(100% + #{2 * $article-margin-length-three});
+		&:nth-of-type(odd){
+			@include re-base(right, $article-margin-length-three);}
+		&:nth-of-type(even){
+			@include re-base(left, $article-margin-length-three);}}
+	@include media-from($unit__base-x-five){
+		width: 50%;
+		&:nth-of-type(odd){
+			@include re-base(right, $article-margin-length-five);}
+		&:nth-of-type(even){
+			@include re-base(left, $article-margin-length-five);}}
+	@include media-from($unit__base-x-eight){
+		&:nth-of-type(odd){
+			@include re-base(right, $article-margin-length-eight);}
+		&:nth-of-type(even){
+			@include re-base(left, $article-margin-length-eight);}}
+	@include media-from($unit__base-x-thirteen){
+		&:nth-of-type(odd){
+			@include re-base(right, $article-margin-length-thirteen);}
+		&:nth-of-type(even){
+			@include re-base(left, $article-margin-length-thirteen);}}}

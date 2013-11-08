@@ -1,0 +1,100 @@
+//////////////////////////////
+// Swatches
+//////////////////////////////
+#swatches{
+	width: 100%;
+	display: block;
+	background-color: $color-background;
+	max-width: 800px;
+	margin: 0 auto;
+	>*{
+		width: 100%;
+	}
+	p{
+		
+	}
+	.row>figure>*{margin: 0 auto;text-align:center;}
+}
+.colors,
+.headers{
+	>*{
+		height: 100%;
+		vertical-align: middle;
+		text-align: center;
+	}	
+}
+.colors{
+	background-color: $color-drawer;
+	margin-top: $unit__gutter--width;
+	padding: $unit__gutter--width;
+	@include box-shadow-inset($color-drawer);
+	>*{
+		padding: $unit__gutter--width;
+		display: block;
+	}
+}
+p#color-description{
+	width: 100%;
+	content: "Color scheme based on #{$color-primary}";
+}
+p#musical-typography{
+	width: 100%;
+	content: "set in #{$key} #{$quality}";
+	& + div.row{
+		text-align: center;		
+	}
+}
+
+.swatch{
+	min-height: 3rem;
+	&,
+	& + figcaption{
+		width: 100%;
+		display: block;
+		float: left;
+	}
+}
+#primary-swatch{
+	.swatch{
+		background-color: $color-primary;
+		@include box-shadow($color-primary);
+	}
+	figcaption{
+		color: $color-primary;
+		background-color: $color-background;
+		@include box-shadow-inset($color-background);
+	}
+}
+#secondary-swatch{
+	.swatch{
+		background-color: $color-secondary;
+		@include box-shadow($color-secondary);
+	}
+	figcaption{
+		color: $color-secondary;
+		background-color: $color-background;
+		@include box-shadow-inset($color-background);
+	}
+}
+#tertiary-swatch{
+	.swatch{
+		background-color: $color-tertiary;
+		@include box-shadow($color-tertiary);
+	}
+	figcaption{
+		color: $color-tertiary;
+		background-color: $color-background;
+		@include box-shadow-inset($color-background);
+	}
+}
+#accent-swatch{
+	.swatch{
+		background-color: $color-accent;
+		@include box-shadow($color-accent);
+	}
+	figcaption{
+		color: $color-accent;
+		background-color: $color-background;
+		@include box-shadow-inset($color-background);
+	}
+}

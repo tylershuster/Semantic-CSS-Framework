@@ -1,0 +1,11 @@
+blockquote{
+	padding-top: 2px;
+	margin: $unit__gutter--width 0;
+	box-sizing: border-box;
+	text-align: center;
+	p{
+		@include font-properties-for(h3);
+		color: $color-secondary;}
+	>img{
+		width: 100%;
+		border-radius: $unit__border-radius;}}

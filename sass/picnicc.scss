@@ -1294,7 +1294,7 @@ $color__3d--dark: rgba(0,0,0,0.5);
 
 $color__3d--light: rgba(255,255,255,0.5);
 
-$unit__form--input--border-radius: 2px;
+$unit__border-radius: 2px;
 
 $unit__header--opacity: 1;
 
@@ -4859,7 +4859,7 @@ textarea{
     color: $color-text;
     background-color: $color-input-background;
     @if $skeu == 'faux-flat' {
-        border-radius: $unit__form--input--border-radius;
+        border-radius: $unit__border-radius;
     }
     @include box-shadow-inset($color-input-background);
     &:before{
@@ -5099,7 +5099,7 @@ form{
         float: left;
         padding: 0 0.5rem;
         @if $skeu == 'faux-flat' {
-            border-radius: $unit__form--input--border-radius;
+            border-radius: $unit__border-radius;
         }
         @media all and (max-width:#{$unit__base-x-three * 1px}){
             width: 100%;
