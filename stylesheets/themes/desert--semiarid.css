@@ -41,6 +41,7 @@ body:after {
 /* line 132, ../../sass/laws/color/_color-schemer.scss */
 .infrared {
   background-color: #ff0020;
+  background: linear-gradient(#ff1936, #ff0020);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -59,6 +60,7 @@ body:after {
 /* line 134, ../../sass/laws/color/_color-schemer.scss */
 .red {
   background-color: red;
+  background: linear-gradient(#ff1919, #ff0000);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -77,6 +79,7 @@ body:after {
 /* line 136, ../../sass/laws/color/_color-schemer.scss */
 .orange {
   background-color: #ff8000;
+  background: linear-gradient(#ff8c19, #ff8000);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -95,6 +98,7 @@ body:after {
 /* line 138, ../../sass/laws/color/_color-schemer.scss */
 .yellow {
   background-color: yellow;
+  background: linear-gradient(#ffff19, #ffff00);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -113,6 +117,7 @@ body:after {
 /* line 140, ../../sass/laws/color/_color-schemer.scss */
 .green {
   background-color: lime;
+  background: linear-gradient(#19ff19, #00ff00);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -131,6 +136,7 @@ body:after {
 /* line 142, ../../sass/laws/color/_color-schemer.scss */
 .blue {
   background-color: blue;
+  background: linear-gradient(#1919ff, #0000ff);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -149,6 +155,7 @@ body:after {
 /* line 144, ../../sass/laws/color/_color-schemer.scss */
 .indigo {
   background-color: #4000ff;
+  background: linear-gradient(#5319ff, #4000ff);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -167,6 +174,7 @@ body:after {
 /* line 146, ../../sass/laws/color/_color-schemer.scss */
 .violet {
   background-color: #7f00ff;
+  background: linear-gradient(#8b19ff, #7f00ff);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -185,6 +193,7 @@ body:after {
 /* line 148, ../../sass/laws/color/_color-schemer.scss */
 .ultraviolet {
   background-color: #ff0060;
+  background: linear-gradient(#ff196f, #ff0060);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -203,6 +212,7 @@ body:after {
 /* line 150, ../../sass/laws/color/_color-schemer.scss */
 .color-primary {
   background-color: #c57200;
+  background: linear-gradient(#ca8019, #c57200);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -228,6 +238,7 @@ body:after {
 /* line 155, ../../sass/laws/color/_color-schemer.scss */
 .color-secondary {
   background-color: #482714;
+  background: linear-gradient(#5a3c2b, #482714);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -253,6 +264,7 @@ body:after {
 /* line 160, ../../sass/laws/color/_color-schemer.scss */
 .color-tertiary {
   background-color: #45525d;
+  background: linear-gradient(#57636d, #45525d);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -278,6 +290,7 @@ body:after {
 /* line 165, ../../sass/laws/color/_color-schemer.scss */
 .color-accent {
   background-color: #333c1a;
+  background: linear-gradient(#474f30, #333c1a);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -303,6 +316,7 @@ body:after {
 /* line 170, ../../sass/laws/color/_color-schemer.scss */
 .color-text {
   background-color: #35291f;
+  background: linear-gradient(#493e35, #35291f);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -328,6 +342,7 @@ body:after {
 /* line 175, ../../sass/laws/color/_color-schemer.scss */
 .color-drawer {
   background-color: #b69a71;
+  background: linear-gradient(#bda47f, #b69a71);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -353,6 +368,7 @@ body:after {
 /* line 180, ../../sass/laws/color/_color-schemer.scss */
 .color-background {
   background-color: #eedb74;
+  background: linear-gradient(#efde81, #eedb74);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1107,6 +1123,7 @@ input[type="button"] {
   margin: 0;
   padding-top: 0;
   background-color: #c57200;
+  background: linear-gradient(#ca8019, #c57200);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1636,6 +1653,7 @@ input[type="color"] {
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0.3rem;
   background-color: #b69a71;
+  background: linear-gradient(#bda47f, #b69a71);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1653,6 +1671,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 /* line 68, ../../sass/atoms/form/_input.scss */
 input[type="color"]:disabled::-webkit-color-swatch-wrapper {
   background-color: #b69a71;
+  background: linear-gradient(#bda47f, #b69a71);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1705,6 +1724,7 @@ input[type="radio"]:before {
   content: "";
   padding: 0.5rem 0 0rem 0.15rem;
   background-color: #333c1a;
+  background: linear-gradient(#474f30, #333c1a);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1776,6 +1796,7 @@ input[type="submit"] {
   margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   background-color: #b69a71;
+  background: linear-gradient(#bda47f, #b69a71);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1958,6 +1979,7 @@ select {
   text-transform: none;
   margin: 0;
   background-color: #b69a71;
+  background: linear-gradient(#bda47f, #b69a71);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -2085,6 +2107,7 @@ textarea:disabled {
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: #35291f;
+  background: linear-gradient(#493e35, #35291f);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -2135,6 +2158,7 @@ textarea:disabled {
   border: none;
   color: #eedb74;
   background-color: #35291f;
+  background: linear-gradient(#493e35, #35291f);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -2155,6 +2179,7 @@ textarea:disabled {
 ::-webkit-file-upload-button:disabled {
   color: #eedb74;
   background-color: #b69a71;
+  background: linear-gradient(#bda47f, #b69a71);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -3264,6 +3289,7 @@ body > header {
   z-index: 9999;
   width: 100%;
   background-color: #b69a71;
+  background: linear-gradient(#bda47f, #b69a71);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -4415,6 +4441,7 @@ main > nav ol li {
 @media only screen and (min-width: 256px) {
   /* line 19, ../../sass/molecules/_main__nav.scss */
   main > nav ~ article, main > nav ~ section {
+    /*these are all broken*/
     margin-left: 17rem;
     margin-right: 1rem;
   }

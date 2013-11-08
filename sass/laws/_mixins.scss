@@ -62,10 +62,13 @@ body {
 
 @mixin object($color, $opacity: 1){
 	@if $opacity == 1{
-	background-color: $color;
+		background-color: $color;
 	}
 	@else{
 		background-color: rgba(red($color), green($color), blue($color), $opacity);
+	}
+	@if $gradient == very-yes{
+		background: linear-gradient(tint($color, $gradient-separation), $color);
 	}
 	@include box-shadow($color);
 }
@@ -75,6 +78,7 @@ body {
 		border-radius: $unit__border-radius;
 		border-bottom: $unit__border-radius solid $color__3d--dark;		
 		box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
+
 		
 		/*@if $tone == black{
 			box-shadow: none;}

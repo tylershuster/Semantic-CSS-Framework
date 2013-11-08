@@ -41,60 +41,70 @@ body:after {
 /* line 132, ../../sass/laws/color/_color-schemer.scss */
 .infrared {
   background-color: #956a6f;
+  background: linear-gradient(#9f787d, #956a6f);
   border: none;
 }
 
 /* line 134, ../../sass/laws/color/_color-schemer.scss */
 .red {
   background-color: #956a6a;
+  background: linear-gradient(#9f7878, #956a6a);
   border: none;
 }
 
 /* line 136, ../../sass/laws/color/_color-schemer.scss */
 .orange {
   background-color: #95806a;
+  background: linear-gradient(#9f8c78, #95806a);
   border: none;
 }
 
 /* line 138, ../../sass/laws/color/_color-schemer.scss */
 .yellow {
   background-color: #95956a;
+  background: linear-gradient(#9f9f78, #95956a);
   border: none;
 }
 
 /* line 140, ../../sass/laws/color/_color-schemer.scss */
 .green {
   background-color: #6a956a;
+  background: linear-gradient(#789f78, #6a956a);
   border: none;
 }
 
 /* line 142, ../../sass/laws/color/_color-schemer.scss */
 .blue {
   background-color: #6a6a95;
+  background: linear-gradient(#78789f, #6a6a95);
   border: none;
 }
 
 /* line 144, ../../sass/laws/color/_color-schemer.scss */
 .indigo {
   background-color: #756a95;
+  background: linear-gradient(#82789f, #756a95);
   border: none;
 }
 
 /* line 146, ../../sass/laws/color/_color-schemer.scss */
 .violet {
   background-color: #7f6a95;
+  background: linear-gradient(#8b789f, #7f6a95);
   border: none;
 }
 
 /* line 148, ../../sass/laws/color/_color-schemer.scss */
 .ultraviolet {
   background-color: #956a7a;
+  background: linear-gradient(#9f7887, #956a7a);
   border: none;
 }
 
 /* line 150, ../../sass/laws/color/_color-schemer.scss */
 .color-primary {
   background-color: #1b2326;
+  background: linear-gradient(#31383b, #1b2326);
   border: none;
 }
 /* line 152, ../../sass/laws/color/_color-schemer.scss */
@@ -105,6 +115,7 @@ body:after {
 /* line 155, ../../sass/laws/color/_color-schemer.scss */
 .color-secondary {
   background-color: #1b2326;
+  background: linear-gradient(#31383b, #1b2326);
   border: none;
 }
 /* line 157, ../../sass/laws/color/_color-schemer.scss */
@@ -115,6 +126,7 @@ body:after {
 /* line 160, ../../sass/laws/color/_color-schemer.scss */
 .color-tertiary {
   background-color: #1b2326;
+  background: linear-gradient(#31383b, #1b2326);
   border: none;
 }
 /* line 162, ../../sass/laws/color/_color-schemer.scss */
@@ -125,6 +137,7 @@ body:after {
 /* line 165, ../../sass/laws/color/_color-schemer.scss */
 .color-accent {
   background-color: red;
+  background: linear-gradient(#ff1919, #ff0000);
   border: none;
 }
 /* line 167, ../../sass/laws/color/_color-schemer.scss */
@@ -135,6 +148,7 @@ body:after {
 /* line 170, ../../sass/laws/color/_color-schemer.scss */
 .color-text {
   background-color: #1b2326;
+  background: linear-gradient(#31383b, #1b2326);
   border: none;
 }
 /* line 172, ../../sass/laws/color/_color-schemer.scss */
@@ -145,6 +159,7 @@ body:after {
 /* line 175, ../../sass/laws/color/_color-schemer.scss */
 .color-drawer {
   background-color: #fcf9ec;
+  background: linear-gradient(#fcf9ed, #fcf9ec);
   border: none;
 }
 /* line 177, ../../sass/laws/color/_color-schemer.scss */
@@ -155,6 +170,7 @@ body:after {
 /* line 180, ../../sass/laws/color/_color-schemer.scss */
 .color-background {
   background-color: #fcf9ec;
+  background: linear-gradient(#fcf9ed, #fcf9ec);
   border: none;
 }
 /* line 182, ../../sass/laws/color/_color-schemer.scss */
@@ -890,6 +906,7 @@ input[type="button"] {
   margin: 0;
   padding-top: 0;
   background-color: #1b2326;
+  background: linear-gradient(#31383b, #1b2326);
   border: none;
   height: 2rem;
   color: #fcf9ec;
@@ -1384,11 +1401,13 @@ input[type="color"] {
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0.3rem;
   background-color: #fcf9ec;
+  background: linear-gradient(#fcf9ed, #fcf9ec);
   border: none;
 }
 /* line 68, ../../sass/atoms/form/_input.scss */
 input[type="color"]:disabled::-webkit-color-swatch-wrapper {
   background-color: #fcf9ec;
+  background: linear-gradient(#fcf9ed, #fcf9ec);
   border: none;
 }
 /* line 70, ../../sass/atoms/form/_input.scss */
@@ -1426,6 +1445,7 @@ input[type="radio"]:before {
   content: "";
   padding: 0.5rem 0 0rem 0.15rem;
   background-color: red;
+  background: linear-gradient(#ff1919, #ff0000);
   border: none;
   border-radius: 50%;
 }
@@ -1479,6 +1499,7 @@ input[type="submit"] {
   margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
   background-color: #fcf9ec;
+  background: linear-gradient(#fcf9ed, #fcf9ec);
   border: none;
 }
 /* line 139, ../../sass/atoms/form/_input.scss */
@@ -1643,6 +1664,7 @@ select {
   text-transform: none;
   margin: 0;
   background-color: #fcf9ec;
+  background: linear-gradient(#fcf9ed, #fcf9ec);
   border: none;
 }
 /* line 11, ../../sass/atoms/form/_select.scss */
@@ -1739,6 +1761,7 @@ textarea:disabled {
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: #1b2326;
+  background: linear-gradient(#31383b, #1b2326);
   border: none;
   width: 1rem;
   height: 1rem;
@@ -1777,6 +1800,7 @@ textarea:disabled {
   border: none;
   color: #fcf9ec;
   background-color: #1b2326;
+  background: linear-gradient(#31383b, #1b2326);
   border: none;
   height: 1.5rem;
 }
@@ -1785,6 +1809,7 @@ textarea:disabled {
 ::-webkit-file-upload-button:disabled {
   color: #fcf9ec;
   background-color: #fcf9ec;
+  background: linear-gradient(#fcf9ed, #fcf9ec);
   border: none;
 }
 
@@ -2876,6 +2901,7 @@ body > header {
   z-index: 9999;
   width: 100%;
   background-color: #fcf9ec;
+  background: linear-gradient(#fcf9ed, #fcf9ec);
   border: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -3913,6 +3939,7 @@ main > nav ol li {
 @media only screen and (min-width: 256px) {
   /* line 19, ../../sass/molecules/_main__nav.scss */
   main > nav ~ article, main > nav ~ section {
+    /*these are all broken*/
     margin-left: 17rem;
     margin-right: 1rem;
   }
