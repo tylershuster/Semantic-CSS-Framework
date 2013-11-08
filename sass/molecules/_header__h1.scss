@@ -1,4 +1,4 @@
-header h1{
+body>header h1{
 	display: inline-block;
 	float: left;
 	line-height: #{$unit__header--height};
@@ -8,5 +8,6 @@ header h1{
 	width: auto;
 	z-index: 110;
 	@include font-properties-for(h2);
+	margin-left: $unit__gutter--width;
 	color: $color__header--h1;
 	@include prefixer(transition, all $length__transition $style__animation-ease);}

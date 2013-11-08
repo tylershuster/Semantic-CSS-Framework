@@ -25,11 +25,11 @@
 }
 .colors{
 	background-color: $color-drawer;
-	margin-top: 1rem;
-	padding: 1rem;
+	margin-top: $unit__gutter--width;
+	padding: $unit__gutter--width;
 	@include box-shadow-inset($color-drawer);
 	>*{
-		padding: 1rem;
+		padding: $unit__gutter--width;
 		display: block;
 	}
 }

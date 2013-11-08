@@ -8,7 +8,7 @@
 	background-color: $color-primary;
 	margin: auto;
 	position: fixed;
-	right: 1rem;
+	right: #{$unit__gutter--width};
 	bottom: auto;
 	top: #{$unit__nav--height / 1.5};
 	padding: 0;
@@ -65,6 +65,7 @@
 	}
 	& ~ main{
 		position: relative;
+
 	}
 	@include media-to($length-mobile-cutoff){
 	& ~ header>nav{
@@ -85,11 +86,18 @@
 			}
 			& ~ main{				
 				@include media-from($unit__base-x-one){
-					right: 100%;}
+					right: 100%;
+					&>nav{
+						margin-left: -100%;}}
 				@include media-from($unit__base-x-three){
-					right: 50%;}
+					right: 50%;
+					&>nav{
+						margin-left: -50%;}}
 				@include media-from($unit__base-x-five){
-					right: 33%;}
+					right: 33%;
+					&>nav{
+						margin-left: -33%;}}
+
 			}			
 		}
 	}
@@ -144,10 +152,10 @@
 			}
 		@include media-from($unit__base-x-three){
 			left: auto;
-			right: calc(50% + 1rem);}
+			right: calc(50% + #{$unit__gutter--width});}
 		@include media-from($unit__base-x-five){
 			left: auto;
-			right: calc(33% + 1rem);}
+			right: calc(33% + #{$unit__gutter--width});}
 		&:before{
 			//width: $unit__nav--height * 1.414;
 			border: none;

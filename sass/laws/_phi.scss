@@ -79,6 +79,7 @@
 @media all and (min-width:#{$unit__base-x-five * 1px}) and (max-width:#{$unit__base-x-eight * 1px}){
 	.row{
 		display: flex;
+
 		>*{
 			display: flex;
 			flex-grow: 1;}
@@ -99,7 +100,12 @@
 .row{
 	width: 100%;
 	flex-wrap: wrap;
-	@include clearfix;}
+	@include clearfix;
+	>div{
+		>*{
+			width: 100%;
+		}
+		}}
 .column{
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;

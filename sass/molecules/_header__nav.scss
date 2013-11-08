@@ -1,4 +1,4 @@
-header>nav{
+body>header>nav{
 	float: right;
 	@include media-to($length-mobile-cutoff){
 		
@@ -20,7 +20,7 @@ header>nav{
 		display: flex;
 		li{
 			display: flex;
-			padding: 0 1rem;
+			padding: 0 $unit__gutter--width;
 			@include media-from($length-mobile-cutoff){
 				padding: 0 0.5rem;
 			}

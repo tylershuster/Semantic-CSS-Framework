@@ -16,7 +16,7 @@ dl>ol{
 		@include font-properties-for(p);
 		line-height: 1rem;}
 	>li{
-		padding: 0 2rem 1rem 0;
+		padding: 0 #{$unit__gutter--width * 2} $unit__gutter--width 0;
 		display: inline;
 		float: left;
 		@include media-from($length-mobile-cutoff){
@@ -28,7 +28,7 @@ dl>ol{
 			padding: 0;
 			display: inline;
 			position: relative;
-			left: 1rem;
+			left: $unit__gutter--width;
 			counter-reset: li;
 			li{				
 				display: inline;

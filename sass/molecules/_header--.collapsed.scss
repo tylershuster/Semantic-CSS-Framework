@@ -1,10 +1,14 @@
-header{
+body>header{
 	&.collapsed{
 	@media all and (min-width:#{$unit__base-x-eight * 1px}){
 		//background-color: $color-background;
 		@include box-shadow($color-background);
 		border-top: none;
 		margin-top: #{($unit__header--height - 1rem) * -1};
+		& + main>nav{
+			opacity: 0.5;
+			margin-top: #{($unit__header--height - 1rem + $unit__nav--height) * -1};		
+		}
 		section.search{
 			display: none;}
 		.logo{}

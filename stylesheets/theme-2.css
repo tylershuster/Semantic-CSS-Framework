@@ -44,7 +44,7 @@ body:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -62,7 +62,7 @@ body:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -80,7 +80,7 @@ body:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -98,7 +98,7 @@ body:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -116,7 +116,7 @@ body:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -134,7 +134,7 @@ body:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -152,7 +152,7 @@ body:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -170,7 +170,7 @@ body:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -188,7 +188,7 @@ body:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -198,6 +198,181 @@ body:after {
   @else{
   	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
   	*/
+}
+
+/* line 150, ../sass/laws/color/_color-schemer.scss */
+.color-primary {
+  background-color: #ffed5b;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
+}
+/* line 152, ../sass/laws/color/_color-schemer.scss */
+.color-primary.inset {
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.45);
+}
+
+/* line 155, ../sass/laws/color/_color-schemer.scss */
+.color-secondary {
+  background-color: #f6cd51;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
+}
+/* line 157, ../sass/laws/color/_color-schemer.scss */
+.color-secondary.inset {
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.45);
+}
+
+/* line 160, ../sass/laws/color/_color-schemer.scss */
+.color-tertiary {
+  background-color: #f6cd51;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
+}
+/* line 162, ../sass/laws/color/_color-schemer.scss */
+.color-tertiary.inset {
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.45);
+}
+
+/* line 165, ../sass/laws/color/_color-schemer.scss */
+.color-accent {
+  background-color: #ffed5b;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
+}
+/* line 167, ../sass/laws/color/_color-schemer.scss */
+.color-accent.inset {
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.45);
+}
+
+/* line 170, ../sass/laws/color/_color-schemer.scss */
+.color-text {
+  background-color: #a2a1dd;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
+}
+/* line 172, ../sass/laws/color/_color-schemer.scss */
+.color-text.inset {
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.45);
+}
+
+/* line 175, ../sass/laws/color/_color-schemer.scss */
+.color-drawer {
+  background-color: #23225e;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
+}
+/* line 177, ../sass/laws/color/_color-schemer.scss */
+.color-drawer.inset {
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.45);
+}
+
+/* line 180, ../sass/laws/color/_color-schemer.scss */
+.color-background {
+  background-color: #151438;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
+  /*@if $tone == black{
+  	box-shadow: none;}
+  @else{
+  	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);}
+  @if $tone == white{
+  	border-color: set-lightness($on-background,85%) shade($on-background,15%) shade($on-background,15%) set-lightness($on-background,85%);}
+  @else{
+  	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
+  	*/
+}
+/* line 182, ../sass/laws/color/_color-schemer.scss */
+.color-background.inset {
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.45);
 }
 
 /**
@@ -645,18 +820,18 @@ html {
   .row {
     display: flex;
   }
-  /* line 82, ../sass/laws/_phi.scss */
+  /* line 83, ../sass/laws/_phi.scss */
   .row > * {
     display: flex;
     flex-grow: 1;
   }
-  /* line 85, ../sass/laws/_phi.scss */
+  /* line 86, ../sass/laws/_phi.scss */
   .row > .row {
     display: block;
     width: 100%;
     flex-basis: 100%;
   }
-  /* line 89, ../sass/laws/_phi.scss */
+  /* line 90, ../sass/laws/_phi.scss */
   .row > .row > * {
     flex-basis: 49%;
     float: left;
@@ -664,16 +839,16 @@ html {
   }
 }
 @media all and (min-width: 0px) and (max-width: 640px) {
-  /* line 95, ../sass/laws/_phi.scss */
+  /* line 96, ../sass/laws/_phi.scss */
   .row {
     display: block;
   }
-  /* line 97, ../sass/laws/_phi.scss */
+  /* line 98, ../sass/laws/_phi.scss */
   .row > * {
     display: block;
   }
 }
-/* line 99, ../sass/laws/_phi.scss */
+/* line 100, ../sass/laws/_phi.scss */
 .row {
   width: 100%;
   flex-wrap: wrap;
@@ -688,13 +863,17 @@ html {
 .row:after {
   clear: both;
 }
+/* line 105, ../sass/laws/_phi.scss */
+.row > div > * {
+  width: 100%;
+}
 
-/* line 103, ../sass/laws/_phi.scss */
+/* line 109, ../sass/laws/_phi.scss */
 .column {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-/* line 106, ../sass/laws/_phi.scss */
+/* line 112, ../sass/laws/_phi.scss */
 .column > * {
   margin: 0 auto;
 }
@@ -930,7 +1109,7 @@ input[type="button"] {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -984,7 +1163,7 @@ input[type="button"] > form input[type="radio"]:after {
 /* line 38, ../sass/atoms/form/_button.scss */
 button:active,
 input[type="button"]:active {
-  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.45);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.45);
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
@@ -1416,7 +1595,7 @@ input::-moz-focus-inner {
 /* line 21, ../sass/atoms/form/_input.scss */
 input:focus {
   border-top-color: #23225e;
-  box-shadow: 0 0 4px #ffed5b;
+  box-shadow: 0 0 3px #ffed5b;
 }
 /* line 30, ../sass/atoms/form/_input.scss */
 input[type="text"]:disabled {
@@ -1459,7 +1638,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -1476,7 +1655,7 @@ input[type="color"]:disabled::-webkit-color-swatch-wrapper {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -1528,7 +1707,7 @@ input[type="radio"]:before {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -1599,7 +1778,7 @@ input[type="submit"] {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -1713,19 +1892,19 @@ meter::-webkit-meter-bar {
 /* line 17, ../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-optimum-value {
   border-right: 1px solid rgba(57, 255, 57, 0.725);
-  box-shadow: 0 0 4px lime;
+  box-shadow: 0 0 3px lime;
   background: lime;
 }
 /* line 21, ../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-suboptimum-value {
   border-right: 1px solid rgba(255, 255, 57, 0.725);
-  box-shadow: 0 0 4px yellow;
+  box-shadow: 0 0 3px yellow;
   background: yellow;
 }
 /* line 25, ../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-even-less-good-value {
   border-right: 1px solid rgba(255, 57, 57, 0.725);
-  box-shadow: 0 0 4px red;
+  box-shadow: 0 0 3px red;
   background: red;
 }
 
@@ -1759,7 +1938,7 @@ progress::-webkit-progress-inner-element {
 progress::-webkit-progress-value {
   background-color: lime;
   border-right: 1px solid rgba(57, 255, 57, 0.725);
-  box-shadow: 0 0 4px lime;
+  box-shadow: 0 0 3px lime;
 }
 /* line 14, ../sass/atoms/form/_progress.scss */
 progress::-webkit-progress-bar {
@@ -1781,7 +1960,7 @@ select {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -1851,7 +2030,7 @@ textarea:disabled {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -1908,7 +2087,7 @@ textarea:disabled {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -1958,7 +2137,7 @@ textarea:disabled {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -1978,7 +2157,7 @@ textarea:disabled {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -2695,111 +2874,60 @@ time.uber, .uber time {
   margin: 0;
 }
 
-/* line 1, ../sass/atoms/table/_table.scss */
-table th {
-  font-weight: bold;
-}
-
 /* line 2, ../sass/atoms/table/_table.scss */
-table td, table th {
-  padding: 9px 10px;
-  text-align: left;
-}
-
-/* Mobile */
-@media only screen and (max-width: 1024px) {
-  /* line 7, ../sass/atoms/table/_table.scss */
-  table {
-    margin-bottom: 0;
-  }
-
-  /* line 9, ../sass/atoms/table/_table.scss */
-  .pinned {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #fff;
-    width: 35%;
-    overflow: hidden;
-    overflow-x: scroll;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-  }
-
-  /* line 10, ../sass/atoms/table/_table.scss */
-  .pinned table {
-    border-right: none;
-    border-left: none;
-    width: 100%;
-  }
-
-  /* line 11, ../sass/atoms/table/_table.scss */
-  .pinned table th, .pinned table td {
-    white-space: nowrap;
-  }
-
-  /* line 12, ../sass/atoms/table/_table.scss */
-  .pinned td:last-child {
-    border-bottom: 0;
-  }
-
-  /* line 14, ../sass/atoms/table/_table.scss */
-  div.table-wrapper {
-    position: relative;
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-right: 1px solid #ccc;
-  }
-
-  /* line 15, ../sass/atoms/table/_table.scss */
-  div.table-wrapper div.scrollable {
-    margin-left: 35%;
-  }
-
-  /* line 16, ../sass/atoms/table/_table.scss */
-  div.table-wrapper div.scrollable {
-    overflow: scroll;
-    overflow-y: hidden;
-  }
-
-  /* line 18, ../sass/atoms/table/_table.scss */
-  table td, table th {
-    position: relative;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  /* line 19, ../sass/atoms/table/_table.scss */
-  table th:first-child, table td:first-child, table td:first-child, table.pinned td {
-    display: none;
-  }
-}
-/* line 23, ../sass/atoms/table/_table.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 7, ../sass/atoms/table/_table.scss */
+table {
+  display: flex;
+}
+/* line 9, ../sass/atoms/table/_table.scss */
+table tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 12, ../sass/atoms/table/_table.scss */
+table tr td {
+  padding: 0.5rem;
+  margin: 0 auto;
+  flex-basis: 384px;
+}
+
 /* line 1, ../sass/atoms/classes/_.hero.scss */
 .hero {
-  height: 50%;
+  height: 256px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
   padding: 0 calc((100% - 60em) / 2);
+  background-color: #23225e;
+  flex-wrap: wrap;
+  border: none;
+  border-radius: 2px;
+  border-top: 2px solid rgba(0, 0, 0, 0.45);
 }
-/* line 9, ../sass/atoms/classes/_.hero.scss */
+/* line 13, ../sass/atoms/classes/_.hero.scss */
+.hero > a button {
+  width: calc(100% - 2rem);
+  height: 3rem;
+}
+/* line 18, ../sass/atoms/classes/_.hero.scss */
 .hero > * {
-  width: 100%;
   flex-grow: 1;
-  padding: 0 0.5rem;
+  min-width: 256px;
+  max-width: 50%;
+  width: 2%;
+  padding: 0.5rem;
 }
 
 /* line 1, ../sass/atoms/classes/_.slide.scss */
 .slide {
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2836,7 +2964,7 @@ article > aside:nth-of-type(odd) {
   right: 0.5rem;
   margin-right: -0.25rem;
 }
-/* line 18, ../sass/molecules/_article__aside.scss */
+/* line 17, ../sass/molecules/_article__aside.scss */
 article > aside:nth-of-type(even) {
   float: right;
   left: 0.5rem;
@@ -2847,12 +2975,12 @@ article > aside:nth-of-type(even) {
   article > aside {
     width: calc(100% + 2rem);
   }
-  /* line 24, ../sass/molecules/_article__aside.scss */
+  /* line 23, ../sass/molecules/_article__aside.scss */
   article > aside:nth-of-type(odd) {
     right: 1rem;
     margin-right: -0.5rem;
   }
-  /* line 27, ../sass/molecules/_article__aside.scss */
+  /* line 26, ../sass/molecules/_article__aside.scss */
   article > aside:nth-of-type(even) {
     left: 1rem;
     margin-left: -0.5rem;
@@ -2865,24 +2993,24 @@ article > aside:nth-of-type(even) {
     margin-bottom: -0.25rem;
     width: 50%;
   }
-  /* line 36, ../sass/molecules/_article__aside.scss */
+  /* line 35, ../sass/molecules/_article__aside.scss */
   article > aside:nth-of-type(odd) {
     right: 2rem;
     margin-right: -1rem;
   }
-  /* line 39, ../sass/molecules/_article__aside.scss */
+  /* line 38, ../sass/molecules/_article__aside.scss */
   article > aside:nth-of-type(even) {
     left: 2rem;
     margin-left: -1rem;
   }
 }
 @media only screen and (min-width: 640px) {
-  /* line 43, ../sass/molecules/_article__aside.scss */
+  /* line 42, ../sass/molecules/_article__aside.scss */
   article > aside:nth-of-type(odd) {
     right: 3rem;
     margin-right: -1.5rem;
   }
-  /* line 46, ../sass/molecules/_article__aside.scss */
+  /* line 45, ../sass/molecules/_article__aside.scss */
   article > aside:nth-of-type(even) {
     left: 3rem;
     margin-left: -1.5rem;
@@ -2893,12 +3021,12 @@ article > aside:nth-of-type(even) {
   article > aside {
     width: 33%;
   }
-  /* line 51, ../sass/molecules/_article__aside.scss */
+  /* line 50, ../sass/molecules/_article__aside.scss */
   article > aside:nth-of-type(odd) {
     right: 4rem;
     margin-right: -2rem;
   }
-  /* line 54, ../sass/molecules/_article__aside.scss */
+  /* line 53, ../sass/molecules/_article__aside.scss */
   article > aside:nth-of-type(even) {
     left: 4rem;
     margin-left: -2rem;
@@ -2909,12 +3037,12 @@ article > aside:nth-of-type(even) {
   article > aside {
     width: 25%;
   }
-  /* line 59, ../sass/molecules/_article__aside.scss */
+  /* line 58, ../sass/molecules/_article__aside.scss */
   article > aside:nth-of-type(odd) {
     right: 5rem;
     margin-right: -2.5rem;
   }
-  /* line 62, ../sass/molecules/_article__aside.scss */
+  /* line 61, ../sass/molecules/_article__aside.scss */
   article > aside:nth-of-type(even) {
     left: 5rem;
     margin-left: -2.5rem;
@@ -3108,6 +3236,19 @@ article > figure:nth-of-type(even) {
   }
 }
 
+/* line 1, ../sass/molecules/_article__header.scss */
+article > header {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
 /* line 1, ../sass/molecules/_body__header.scss */
 body > header {
   position: fixed;
@@ -3125,7 +3266,7 @@ body > header {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -3260,9 +3401,10 @@ dl > ol > li ol dd {
 /* line 1, ../sass/molecules/_figure__img.scss */
 figure > img {
   width: 100%;
+  max-height: 100%;
   border-radius: 2px;
 }
-/* line 4, ../sass/molecules/_figure__img.scss */
+/* line 5, ../sass/molecules/_figure__img.scss */
 figure > img + figcaption {
   color: #5b5a8a;
   font-size: 0.85rem;
@@ -3297,10 +3439,6 @@ header .logo {
   -ms-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   z-index: 110;
-}
-/* line 9, ../sass/molecules/_header__.logo.scss */
-header .logo + h1 {
-  margin-left: 1rem;
 }
 
 /* line 1, ../sass/molecules/_header__.masthead.scss */
@@ -3349,11 +3487,11 @@ header .masthead .logo + h1 {
 
 @media all and (min-width: 1024px) {
   /* line 2, ../sass/molecules/_header--.collapsed.scss */
-  header.collapsed {
+  body > header.collapsed {
     border: none;
     border-radius: 2px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
     /*@if $tone == black{
     	box-shadow: none;}
     @else{
@@ -3367,25 +3505,30 @@ header .masthead .logo + h1 {
     margin-top: -2rem;
   }
   /* line 8, ../sass/molecules/_header--.collapsed.scss */
-  header.collapsed section.search {
+  body > header.collapsed + main > nav {
+    opacity: 0.5;
+    margin-top: -4rem;
+  }
+  /* line 12, ../sass/molecules/_header--.collapsed.scss */
+  body > header.collapsed section.search {
     display: none;
   }
-  /* line 11, ../sass/molecules/_header--.collapsed.scss */
-  header.collapsed section.masthead {
+  /* line 15, ../sass/molecules/_header--.collapsed.scss */
+  body > header.collapsed section.masthead {
     position: absolute;
     margin: auto;
     left: 50%;
     margin-left: -50%;
   }
-  /* line 16, ../sass/molecules/_header--.collapsed.scss */
-  header.collapsed section.masthead h1 {
+  /* line 20, ../sass/molecules/_header--.collapsed.scss */
+  body > header.collapsed section.masthead h1 {
     font-size: 0;
     opacity: 0;
   }
 }
 
 /* line 1, ../sass/molecules/_header__h1.scss */
-header h1 {
+body > header h1 {
   display: inline-block;
   float: left;
   line-height: 3rem;
@@ -3401,6 +3544,7 @@ header h1 {
   font-weight: bold;
   font-style: normal;
   margin: 0;
+  margin-left: 1rem;
   color: #ffed5b;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -3410,34 +3554,34 @@ header h1 {
 }
 
 /* line 1, ../sass/molecules/_header__nav.scss */
-header > nav {
+body > header > nav {
   float: right;
 }
 /* line 6, ../sass/molecules/_header__nav.scss */
-header > nav > address {
+body > header > nav > address {
   float: right;
   height: 3rem;
   align-items: center;
   display: flex;
 }
 /* line 11, ../sass/molecules/_header__nav.scss */
-header > nav > address a {
+body > header > nav > address a {
   height: 3rem;
 }
 /* line 13, ../sass/molecules/_header__nav.scss */
-header > nav > address a, header > nav > address a:before {
+body > header > nav > address a, body > header > nav > address a:before {
   color: #ffed5b;
   text-decoration: none;
 }
 /* line 16, ../sass/molecules/_header__nav.scss */
-header > nav > ul {
+body > header > nav > ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
 }
 /* line 21, ../sass/molecules/_header__nav.scss */
-header > nav > ul li {
+body > header > nav > ul li {
   display: flex;
   padding: 0 1rem;
   height: 3rem;
@@ -3446,21 +3590,21 @@ header > nav > ul li {
 }
 @media only screen and (min-width: 1024px) {
   /* line 21, ../sass/molecules/_header__nav.scss */
-  header > nav > ul li {
+  body > header > nav > ul li {
     padding: 0 0.5rem;
   }
 }
 /* line 30, ../sass/molecules/_header__nav.scss */
-header > nav > ul li:hover {
+body > header > nav > ul li:hover {
   background-color: #ffed5b;
   color: #151438;
 }
 /* line 33, ../sass/molecules/_header__nav.scss */
-header > nav > ul li:hover > ul {
+body > header > nav > ul li:hover > ul {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -3477,15 +3621,15 @@ header > nav > ul li:hover > ul {
   transform: scale3d(1, 1, 1);
 }
 /* line 41, ../sass/molecules/_header__nav.scss */
-header > nav > ul li a {
+body > header > nav > ul li a {
   text-decoration: none;
 }
 /* line 43, ../sass/molecules/_header__nav.scss */
-header > nav > ul li a:hover {
+body > header > nav > ul li a:hover {
   color: #151438;
 }
 /* line 45, ../sass/molecules/_header__nav.scss */
-header > nav > ul li > ul {
+body > header > nav > ul li > ul {
   padding: 0;
   position: absolute;
   width: 100%;
@@ -3510,13 +3654,13 @@ header > nav > ul li > ul {
   transition: all 0.4s ease-in-out;
 }
 /* line 56, ../sass/molecules/_header__nav.scss */
-header > nav > ul li > ul > li {
+body > header > nav > ul li > ul > li {
   width: 100%;
   display: table;
   float: left;
 }
 /* line 60, ../sass/molecules/_header__nav.scss */
-header > nav > ul li > ul > li > a {
+body > header > nav > ul li > ul > li > a {
   display: table-cell;
   color: #a2a1dd;
   vertical-align: middle;
@@ -3656,7 +3800,7 @@ header > section.masthead ~ nav > ul {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -3701,7 +3845,7 @@ header > section.masthead ~ nav > ul li:hover ul {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -3837,7 +3981,7 @@ header > section.masthead ~ nav li > ul {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -3950,7 +4094,7 @@ header > section.masthead ~ nav li > ul + a:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -3987,7 +4131,7 @@ header > section.masthead ~ nav li > ul + a:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -4018,7 +4162,7 @@ header > section.masthead ~ nav li > ul + a:after {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -4056,11 +4200,11 @@ header > section.masthead ~ nav li > ul + a:after {
   position: relative;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 70, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 71, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox ~ header > nav {
     margin-top: -3rem;
   }
-  /* line 81, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 82, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ header > nav {
     right: 0;
     -webkit-transform: translateY(0) scale3d(1, 1, 1);
@@ -4071,68 +4215,80 @@ header > section.masthead ~ nav li > ul + a:after {
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 128px) {
-  /* line 74, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 75, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ header {
     margin-left: -100%;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 384px) {
-  /* line 74, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 75, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ header {
     margin-left: -50%;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 640px) {
-  /* line 74, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 75, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ header {
     margin-left: -33%;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 128px) {
-  /* line 86, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 87, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ main {
     right: 100%;
   }
+  /* line 90, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ main > nav {
+    margin-left: -100%;
+  }
 }
 @media only screen and (max-width: 1024px) and (min-width: 384px) {
-  /* line 86, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 87, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ main {
     right: 50%;
   }
+  /* line 94, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ main > nav {
+    margin-left: -50%;
+  }
 }
 @media only screen and (max-width: 1024px) and (min-width: 640px) {
-  /* line 86, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 87, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ main {
     right: 33%;
+  }
+  /* line 98, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ main > nav {
+    margin-left: -33%;
   }
 }
 
 @media only screen and (min-width: 128px) {
-  /* line 97, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 105, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav {
     width: 100%;
   }
 }
 @media only screen and (min-width: 384px) {
-  /* line 97, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 105, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav {
     width: 50%;
   }
 }
 @media only screen and (min-width: 640px) {
-  /* line 97, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 105, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav {
     width: 33%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 97, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 105, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav {
     width: auto;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 97, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 105, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav {
     position: fixed;
     right: -100%;
@@ -4142,51 +4298,51 @@ header > section.masthead ~ nav li > ul + a:after {
     border: none;
     border-radius: 2px;
     border-top: 2px solid rgba(0, 0, 0, 0.45);
-    box-shadow: inset 2px 0 4px rgba(0, 0, 0, 0.45);
+    box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.45);
     -webkit-transition: right 0.4s ease-in-out;
     -moz-transition: right 0.4s ease-in-out;
     -o-transition: right 0.4s ease-in-out;
     -ms-transition: right 0.4s ease-in-out;
     transition: right 0.4s ease-in-out;
   }
-  /* line 115, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 123, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav ul {
     float: right;
     display: block;
     width: auto;
   }
-  /* line 119, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 127, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav ul li {
     float: right;
     width: 100%;
     display: table;
   }
-  /* line 123, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 131, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav ul li ul {
     width: 100%;
     left: -100%;
     top: 0;
   }
-  /* line 128, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 136, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav ul li a {
     display: table-cell;
     vertical-align: middle;
     /*placeholder*/
   }
-  /* line 136, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 144, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav address {
     float: left;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 138, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 146, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ .slide-toggle {
     background: transparent;
     box-shadow: none;
     border: none;
   }
-  /* line 151, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 159, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ .slide-toggle:before {
     border: none;
     border: none;
@@ -4199,7 +4355,7 @@ header > section.masthead ~ nav li > ul + a:after {
     -ms-transform: rotateZ(-45deg) translate(-0.35rem, -0.25rem);
     transform: rotateZ(-45deg) translate(-0.35rem, -0.25rem);
   }
-  /* line 158, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 166, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ .slide-toggle:after {
     border: none;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
@@ -4211,17 +4367,76 @@ header > section.masthead ~ nav li > ul + a:after {
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 384px) {
-  /* line 138, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 146, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ .slide-toggle {
     left: auto;
     right: calc(50% + 1rem);
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 640px) {
-  /* line 138, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 146, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-checkbox:checked ~ .slide-toggle {
     left: auto;
     right: calc(33% + 1rem);
+  }
+}
+
+/* line 1, ../sass/molecules/_main__nav.scss */
+main > nav {
+  position: fixed;
+  width: 256px;
+  padding-left: 1rem;
+  overflow-y: scroll;
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  background-color: #151438;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/molecules/_main__nav.scss */
+  main > nav {
+    margin-top: -2rem;
+  }
+}
+/* line 11, ../sass/molecules/_main__nav.scss */
+main > nav:hover:nth-of-type(n) {
+  opacity: 1;
+}
+/* line 14, ../sass/molecules/_main__nav.scss */
+main > nav ol {
+  padding-left: 1.5rem;
+}
+/* line 16, ../sass/molecules/_main__nav.scss */
+main > nav ol li {
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 256px) {
+  /* line 19, ../sass/molecules/_main__nav.scss */
+  main > nav ~ article, main > nav ~ section {
+    margin-left: 17rem;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 384px) {
+  /* line 19, ../sass/molecules/_main__nav.scss */
+  main > nav ~ article, main > nav ~ section {
+    margin-left: 16rem + 2rem;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 19, ../sass/molecules/_main__nav.scss */
+  main > nav ~ article, main > nav ~ section {
+    margin-left: 16rem + 3rem;
+    margin-right: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 19, ../sass/molecules/_main__nav.scss */
+  main > nav ~ article, main > nav ~ section {
+    margin-left: 16rem + 4rem;
+    margin-right: 4rem;
   }
 }
 
@@ -4306,7 +4521,7 @@ p#musical-typography + div.row {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -4332,7 +4547,7 @@ p#musical-typography + div.row {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -4358,7 +4573,7 @@ p#musical-typography + div.row {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -4384,7 +4599,7 @@ p#musical-typography + div.row {
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
   /*@if $tone == black{
   	box-shadow: none;}
   @else{
@@ -4402,6 +4617,11 @@ p#musical-typography + div.row {
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
+}
+
+/* line 3, ../sass/molecules/_table--.feature.scss */
+table.feature tr td {
+  text-align: center;
 }
 
 /* { / picnicc } */

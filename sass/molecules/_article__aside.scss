@@ -1,7 +1,7 @@
 article>aside{
 	width: 100%;
-	padding: 0 1rem 0.5rem 1rem;
-	margin-bottom: 0.5rem;	
+	padding: 0 $unit__gutter--width #{$unit__gutter--width / 2} $unit__gutter--width;
+	margin-bottom: #{$unit__gutter--width / 2};	
 	width: calc(100% + #{2 * $article-margin-length-one});	
 	h1,
 	h2,
@@ -9,10 +9,9 @@ article>aside{
 	h4,
 	h5,
 	p{
-		margin-bottom: -0.5rem;}	
+		margin-bottom: #{$unit__gutter--width / -2};}	
 	&:nth-of-type(odd){
-		float: left;
-		
+		float: left;		
 		right: $article-margin-length-one;
 		margin-right: #{$article-margin-length-one * -0.5};}
 	&:nth-of-type(even){

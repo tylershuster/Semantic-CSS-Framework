@@ -2,8 +2,8 @@ article>blockquote{
 	&:nth-of-type(odd){
 		float: left;
 		text-align: right;
-		position: relative;		
-		padding-right: 1rem;
+		position: relative;
+		padding-right: $unit__gutter--width;
 		@include re-base(right, $article-margin-length-one);
 		> cite{
 			float: right;
@@ -12,7 +12,7 @@ article>blockquote{
 		float: right;
 		text-align: left;
 		position: relative;
-		padding-left: 1rem;	
+		padding-left: $unit__gutter--width;	
 		@include re-base(left, $article-margin-length-one);
 		> cite{
 			float: left;
@@ -21,8 +21,8 @@ article>blockquote{
 		font-family: $sans;
 		color: $color-secondary;		
 		font-size: 0.85rem;
-		line-height: 1rem;
-		margin-bottom: 1rem;
+		line-height: $unit__gutter--width;
+		margin-bottom: $unit__gutter--width;
 		&:before{
 			content: "- ";}}
 	@include media-from($unit__base-x-two){

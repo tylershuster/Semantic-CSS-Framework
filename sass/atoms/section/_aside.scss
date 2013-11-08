@@ -3,8 +3,8 @@ aside{
 	margin: 0.5rem 0;
 	box-sizing: border-box;
 	position: relative;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: $unit__gutter--width;
+	padding-right: $unit__gutter--width;
 	display: block;
 	color: mix($color-text, $color-background);
 	@include font-properties-for(small);
@@ -20,6 +20,6 @@ aside{
 	ul{
 		text-align: left;		
 		&:nth-of-type(even){
-			padding-right: 0.5rem;}
+			padding-right: #{$unit__gutter--width / 2};}
 		&:nth-of-type(odd){
-			padding-left: 0.5rem;}}}
+			padding-left: #{$unit__gutter--width / 2};}}}

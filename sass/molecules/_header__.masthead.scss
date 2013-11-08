@@ -4,13 +4,13 @@ header .masthead{
 	white-space: nowrap;
 	text-align: center;
 	width: 100%;
-	padding: 0 1rem;
+	padding: 0 $unit__gutter--width;
 	height: #{$unit__header--height};	
 	@include prefixer(transition, all $length__transition $style__animation-ease);	
 	@include media-to($length-mobile-cutoff){
 		height: $unit__header--height;
 		.logo + h1{
-			top: -1rem;}
+			top: #{$unit__gutter--width * -1};}
 	}
 	/*masthead should be centered on page*/
 	@include media-from($unit__base-x-two){}
@@ -28,4 +28,4 @@ header .masthead{
 		float: none;}
 	.logo + h1{
 		position: relative;
-		top: -1rem;}}
+		top: #{$unit__gutter--width * -1};}}

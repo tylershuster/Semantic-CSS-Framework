@@ -3,8 +3,6 @@ header .logo{
 	float: left;
 	height: #{$unit__nav--height};
 	margin-top: #{$unit__nav--height / 4};
-	margin-left: 1rem;
+	margin-left: $unit__gutter--width;
 	@include prefixer(transition, all $length__transition $style__animation-ease);	
-	z-index: 110;
-	& + h1{
-		margin-left: 1rem;}}
+	z-index: 110;}

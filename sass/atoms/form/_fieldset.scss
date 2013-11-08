@@ -12,9 +12,9 @@ fieldset{
 	/*(border: 1px solid $color-accent;*/
 	border: none;
 	margin: 0;
-	padding: 1rem;
+	padding: $unit__gutter--width;
 	position: relative;
-	padding-top: #{(typography(h5,line-height) * 1rem) + 1rem};
+	padding-top: #{(typography(h5,line-height) * 1rem) + $unit__gutter--width};
 	background-color: $color-background;
 	@include box-shadow-inset($color-background);
 	>.row{
@@ -25,8 +25,8 @@ fieldset{
 			float: left;
 			margin-bottom: #{ceil($height-form-input)};
 			&.column{
-				padding-left: 0.5rem;
-				padding-right: 0.5rem;}}
+				padding-left: #{$unit__gutter--width / 2};
+				padding-right: #{$unit__gutter--width / 2};}}
 		>form{
 			width: 100%;}}
 	&.row{
@@ -53,7 +53,7 @@ fieldset{
 	}
 	>fieldset{
 		padding:0;
-		margin-bottom: 1rem;
+		margin-bottom: $unit__gutter--width;
 		box-shadow: none;
 		border: none;
 		border-radius: $unit__border-radius;}

@@ -1,0 +1,31 @@
+main>nav{
+	position: fixed;
+	width: #{$unit__base-x-two * 1px};	
+	@include media-from($length-mobile-cutoff){
+		margin-top: #{($unit__nav--height * -1)};}
+	padding-left: $unit__gutter--width;
+	overflow-y: scroll;
+	height: 100%;
+	@include transition;
+	background-color: $color-background;
+	&:hover:nth-of-type(n){
+		opacity: 1;}
+	>header{}
+	ol{
+		padding-left: #{$unit__gutter--width * 1.5};
+		li{
+			margin-bottom: $unit__gutter--width;}}
+	& ~ article,
+	& ~ section{
+		@include media-from($unit__base-x-two){
+			margin-left: #{$unit__base-x-two * $unit__gutter--width / 16 + $unit__gutter--width};
+			margin-right: $unit__gutter--width;}
+		@include media-from($unit__base-x-three){
+			margin-left: #{$unit__base-x-two * 1rem / 16 + #{$unit__gutter--width * 2}};
+			margin-right: #{$unit__gutter--width * 2};}
+		@include media-from($unit__base-x-five){
+			margin-left: #{$unit__base-x-two * 1rem / 16 + #{$unit__gutter--width * 3}};
+			margin-right: #{$unit__gutter--width * 3};}
+		@include media-from($unit__base-x-eight){
+			margin-left: #{$unit__base-x-two * 1rem / 16 + #{$unit__gutter--width * 4}};
+			margin-right: #{$unit__gutter--width * 4};}}}

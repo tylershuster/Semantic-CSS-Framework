@@ -147,3 +147,38 @@ $color-ultraviolet: set-lightness(set-hue($color-primary, 337.5), 50%);
 	@include object($color-violet);}
 .ultraviolet{
 	@include object($color-ultraviolet);}
+.color-primary{
+	@include object($color-primary);
+	&.inset{
+		box-shadow: none;
+		@include box-shadow-inset($color-primary);}}
+.color-secondary{
+	@include object($color-secondary);
+	&.inset{
+		box-shadow: none;
+		@include box-shadow-inset($color-secondary);}}
+.color-tertiary{
+	@include object($color-tertiary);
+	&.inset{
+		box-shadow: none;
+		@include box-shadow-inset($color-tertiary);}}
+.color-accent{
+	@include object($color-accent);
+	&.inset{
+		box-shadow: none;
+		@include box-shadow-inset($color-accent);}}
+.color-text{
+	@include object($color-text);
+	&.inset{
+		box-shadow: none;
+		@include box-shadow-inset($color-text);}}
+.color-drawer{
+	@include object($color-drawer);
+	&.inset{
+		box-shadow: none;
+		@include box-shadow-inset($color-drawer);}}
+.color-background{
+	@include object($color-background);
+	&.inset{
+		box-shadow: none;
+		@include box-shadow-inset($color-background);}}

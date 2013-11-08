@@ -1,7 +1,7 @@
 article>figure{
 	&:nth-of-type(odd){
 		float: right;
-		padding-left: 1rem;
+		padding-left: $unit__gutter--width;
 		margin-right: $article-margin-length-one  * -1;}
 	&:nth-of-type(even){
 		float: left;
