@@ -1,32 +1,52 @@
 main>nav{
 	position: fixed;
 	width: #{$unit__base-x-two * 1px};	
-	@include media-from($length-mobile-cutoff){
-		margin-top: #{($unit__nav--height * -1)};}
 	padding-left: $unit__gutter--width;
 	overflow-y: scroll;
+	overflow-x: hidden;
 	height: 100%;
-	@include transition;
+	z-index: 9999;
 	background-color: $color-background;
+	@include transition;
 	&:hover:nth-of-type(n){
 		opacity: 1;}
-	>header{}
-	ol{
+	@include media-from($length-mobile-cutoff){
+		margin-top: #{($unit__nav--height * -1)};}
+	@include media-to($length-mobile-cutoff){	display: none;	}
+	
+	li>ol,
+	li>ul{
+		padding-left: $unit__gutter--width * 1.5;
+		padding-top: $unit__gutter--width;
+		border-left: 1px solid transparent;		
+		box-sizing: content-box;
+		>li>a{
+			padding-left: $unit__gutter--width;
+			margin-left: #{$unit__gutter--width * -1};
+			border-bottom: 1px solid transparent;
+			text-decoration: none;
+		}
+	}
+	li>ul{
+		list-style-type: none;
+	}
+	li>a{
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+	}
+	ol,
+	ul{
 		padding-left: #{$unit__gutter--width * 1.5};
+		>ol,
+		ul{
+			padding-left: #{$unit__gutter--width};
+		}
 		li{
-			margin-bottom: $unit__gutter--width;}}
+			margin-bottom: $unit__gutter--width;
+			margin-left: -1px;}}
 	& ~ article,
 	& ~ section{
-		@include media-from($unit__base-x-two){
-			/*these are all broken*/
-			margin-left: #{$unit__base-x-two * $unit__gutter--width / 16 + $unit__gutter--width};
-			margin-right: $unit__gutter--width;}
-		@include media-from($unit__base-x-three){
-			margin-left: #{$unit__base-x-two * 1rem / 16 + #{$unit__gutter--width * 2}};
-			margin-right: #{$unit__gutter--width * 2};}
-		@include media-from($unit__base-x-five){
-			margin-left: #{$unit__base-x-two * 1rem / 16 + #{$unit__gutter--width * 3}};
-			margin-right: #{$unit__gutter--width * 3};}
-		@include media-from($unit__base-x-eight){
-			margin-left: #{$unit__base-x-two * 1rem / 16 + #{$unit__gutter--width * 4}};
+		@include transition;	
+		@include media-from($length-mobile-cutoff){
+			margin-left: #{($unit__base-x-two / 16) + ($unit__gutter--width * 8)};
 			margin-right: #{$unit__gutter--width * 4};}}}

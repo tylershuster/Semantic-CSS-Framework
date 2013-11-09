@@ -10,7 +10,8 @@ label{
 	&.required{
 		&:after{
 			color: $color-red;
-			content: "*";}}
+			content: "*";
+			margin-left: 3px;}}
 	@media all and (min-width:#{$unit__base-x-one * 1px}) and (max-width:#{$unit__base-x-two * 1px}){
 		display: block;}
 	@media all and (min-width:#{$unit__base-x-two * 1px}) and (max-width:#{$unit__base-x-three * 1px}){

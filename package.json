@@ -1,0 +1,14 @@
+{
+  "name": "Semantic-CSS-Framework",
+  "version": "0.1.0",
+  "description": "The Semantic CSS Framework",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/herrshuster/Semantic-CSS-Framework.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

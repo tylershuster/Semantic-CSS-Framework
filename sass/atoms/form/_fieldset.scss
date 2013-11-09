@@ -87,6 +87,8 @@ fieldset{
 			display: flex;
 			flex-grow: 1;
 			color: $color-text;
+			box-shadow: none;
+			border-bottom: none;
 			height: #{ceil($height-form-input)};
 			&>option{
 
@@ -143,7 +145,8 @@ fieldset{
 				input{
 					border-bottom-right-radius: $unit__border-radius;}
 				label,
-				input{
+				input,
+				select{
 					z-index: 999;
 					box-shadow: 0 #{$unit__shadow-size} 0 rgba(0, 0, 0, $unit__shadow-opacity);
 					//border-bottom: 1px solid $color__3d--light;

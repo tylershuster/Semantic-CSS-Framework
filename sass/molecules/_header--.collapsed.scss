@@ -6,6 +6,7 @@ body>header{
 		border-top: none;
 		margin-top: #{($unit__header--height - 1rem) * -1};
 		& + main>nav{
+			@include transition(0s);
 			opacity: 0.5;
 			margin-top: #{($unit__header--height - 1rem + $unit__nav--height) * -1};		
 		}

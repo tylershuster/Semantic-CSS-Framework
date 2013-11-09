@@ -4,7 +4,7 @@
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 /* { picnicc: style } */
-/*Set in the key of c maj. mono color scheme based on #0f4da8 with a dark background.*/
+/*Set in the key of c maj. mono color scheme based on #283234 with a dark background.*/
 /* line 41, ../sass/laws/_mixins.scss */
 body {
   width: 100%;
@@ -32,16 +32,16 @@ body:after {
 /*light if tone is dark, dark if tone is light, light if tone is white, dark if tone is black*/
 /* line 113, ../sass/laws/color/_color-schemer.scss */
 * body {
-  color: #8ab5f5;
-  background: -webkit-linear-gradient(#062046, #122b4f);
+  color: #b7c5c8;
+  background: -webkit-linear-gradient(#212a2b, #2c3435);
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
 /* line 132, ../sass/laws/color/_color-schemer.scss */
 .infrared {
-  background-color: #ea1530;
-  background: linear-gradient(#ec2c44, #ea1530);
+  background-color: #906f73;
+  background: linear-gradient(#95767a, #906f73);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -59,8 +59,8 @@ body:after {
 
 /* line 134, ../sass/laws/color/_color-schemer.scss */
 .red {
-  background-color: #ea1515;
-  background: linear-gradient(#ec2c2c, #ea1515);
+  background-color: #906f6f;
+  background: linear-gradient(#957676, #906f6f);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -78,8 +78,8 @@ body:after {
 
 /* line 136, ../sass/laws/color/_color-schemer.scss */
 .orange {
-  background-color: #ea8015;
-  background: linear-gradient(#ec8c2c, #ea8015);
+  background-color: #90806f;
+  background: linear-gradient(#958676, #90806f);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -97,8 +97,8 @@ body:after {
 
 /* line 138, ../sass/laws/color/_color-schemer.scss */
 .yellow {
-  background-color: #eaea15;
-  background: linear-gradient(#ecec2c, #eaea15);
+  background-color: #90906f;
+  background: linear-gradient(#959576, #90906f);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -116,8 +116,8 @@ body:after {
 
 /* line 140, ../sass/laws/color/_color-schemer.scss */
 .green {
-  background-color: #15ea15;
-  background: linear-gradient(#2cec2c, #15ea15);
+  background-color: #6f906f;
+  background: linear-gradient(#769576, #6f906f);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -135,8 +135,8 @@ body:after {
 
 /* line 142, ../sass/laws/color/_color-schemer.scss */
 .blue {
-  background-color: #1515ea;
-  background: linear-gradient(#2c2cec, #1515ea);
+  background-color: #6f6f90;
+  background: linear-gradient(#767695, #6f6f90);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -154,8 +154,8 @@ body:after {
 
 /* line 144, ../sass/laws/color/_color-schemer.scss */
 .indigo {
-  background-color: #4a15ea;
-  background: linear-gradient(#5c2cec, #4a15ea);
+  background-color: #776f90;
+  background: linear-gradient(#7d7695, #776f90);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -173,8 +173,8 @@ body:after {
 
 /* line 146, ../sass/laws/color/_color-schemer.scss */
 .violet {
-  background-color: #7f15ea;
-  background: linear-gradient(#8b2cec, #7f15ea);
+  background-color: #7f6f90;
+  background: linear-gradient(#857695, #7f6f90);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -192,8 +192,8 @@ body:after {
 
 /* line 148, ../sass/laws/color/_color-schemer.scss */
 .ultraviolet {
-  background-color: #ea1565;
-  background: linear-gradient(#ec2c74, #ea1565);
+  background-color: #906f7b;
+  background: linear-gradient(#957681, #906f7b);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -211,8 +211,8 @@ body:after {
 
 /* line 150, ../sass/laws/color/_color-schemer.scss */
 .color-primary {
-  background-color: #8ab5f5;
-  background: linear-gradient(#95bcf6, #8ab5f5);
+  background-color: #b7c5c8;
+  background: linear-gradient(#bac7ca, #b7c5c8);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -237,8 +237,8 @@ body:after {
 
 /* line 155, ../sass/laws/color/_color-schemer.scss */
 .color-secondary {
-  background-color: #8ab5f5;
-  background: linear-gradient(#95bcf6, #8ab5f5);
+  background-color: #e6e7b3;
+  background: linear-gradient(#e7e8b6, #e6e7b3);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -263,8 +263,8 @@ body:after {
 
 /* line 160, ../sass/laws/color/_color-schemer.scss */
 .color-tertiary {
-  background-color: #3371cc;
-  background: linear-gradient(#477fd1, #3371cc);
+  background-color: #4c726d;
+  background: linear-gradient(#547974, #4c726d);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -289,8 +289,8 @@ body:after {
 
 /* line 165, ../sass/laws/color/_color-schemer.scss */
 .color-accent {
-  background-color: #4b79bd;
-  background: linear-gradient(#5d86c3, #4b79bd);
+  background-color: #d89e27;
+  background: linear-gradient(#d9a231, #d89e27);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -315,8 +315,8 @@ body:after {
 
 /* line 170, ../sass/laws/color/_color-schemer.scss */
 .color-text {
-  background-color: #8ab5f5;
-  background: linear-gradient(#95bcf6, #8ab5f5);
+  background-color: #b7c5c8;
+  background: linear-gradient(#bac7ca, #b7c5c8);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -341,8 +341,8 @@ body:after {
 
 /* line 175, ../sass/laws/color/_color-schemer.scss */
 .color-drawer {
-  background-color: #0a3675;
-  background: linear-gradient(#224a82, #0a3675);
+  background-color: #374548;
+  background: linear-gradient(#414e51, #374548);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -367,8 +367,8 @@ body:after {
 
 /* line 180, ../sass/laws/color/_color-schemer.scss */
 .color-background {
-  background-color: #062046;
-  background: linear-gradient(#1e3658, #062046);
+  background-color: #212a2b;
+  background: linear-gradient(#2c3435, #212a2b);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -992,7 +992,7 @@ blockquote p {
   font-weight: bold;
   font-style: normal;
   margin: 0;
-  color: #8ab5f5;
+  color: #e6e7b3;
 }
 /* line 9, ../sass/atoms/div/_blockquote.scss */
 blockquote > img {
@@ -1047,7 +1047,7 @@ hr {
   margin: calc(0.5rem - 1px) 0;
   padding: 0;
   border: none;
-  background-color: #062046;
+  background-color: #212a2b;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
@@ -1082,8 +1082,8 @@ pre {
   font-family: monospace, serif;
   font-size: 1em;
   white-space: pre-wrap;
-  color: #062046;
-  background-color: #8ab5f5;
+  color: #212a2b;
+  background-color: #b7c5c8;
   padding: 1rem;
 }
 
@@ -1121,8 +1121,8 @@ input[type="button"] {
   text-transform: none;
   margin: 0;
   padding-top: 0;
-  background-color: #8ab5f5;
-  background: linear-gradient(#95bcf6, #8ab5f5);
+  background-color: #b7c5c8;
+  background: linear-gradient(#bac7ca, #b7c5c8);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1137,7 +1137,7 @@ input[type="button"] {
   	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
   	*/
   height: 2rem;
-  color: #062046;
+  color: #212a2b;
   -webkit-transition: box-shadow 0.4s;
   -moz-transition: box-shadow 0.4s;
   -o-transition: box-shadow 0.4s;
@@ -1152,32 +1152,37 @@ input[type="button"]:nth-last-of-type(n+2) {
   margin-right: -3px;
 }
 /* line 18, ../sass/atoms/form/_button.scss */
+button > a,
+input[type="button"] > a {
+  text-decoration: none;
+}
+/* line 21, ../sass/atoms/form/_button.scss */
 button + button,
 input[type="button"] + button {
   border-radius: 0;
 }
-/* line 20, ../sass/atoms/form/_button.scss */
+/* line 23, ../sass/atoms/form/_button.scss */
 button + button:last-of-type,
 input[type="button"] + button:last-of-type {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-/* line 25, ../sass/atoms/form/_button.scss */
+/* line 28, ../sass/atoms/form/_button.scss */
 button > form,
 input[type="button"] > form {
   height: 2rem;
 }
-/* line 27, ../sass/atoms/form/_button.scss */
+/* line 30, ../sass/atoms/form/_button.scss */
 button > form label,
 input[type="button"] > form label {
   height: 2rem;
 }
-/* line 32, ../sass/atoms/form/_button.scss */
+/* line 35, ../sass/atoms/form/_button.scss */
 button > form input[type="radio"]:after,
 input[type="button"] > form input[type="radio"]:after {
-  color: #062046;
+  color: #212a2b;
 }
-/* line 38, ../sass/atoms/form/_button.scss */
+/* line 41, ../sass/atoms/form/_button.scss */
 button:active,
 input[type="button"]:active {
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.45);
@@ -1185,7 +1190,7 @@ input[type="button"]:active {
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
 }
-/* line 42, ../sass/atoms/form/_button.scss */
+/* line 45, ../sass/atoms/form/_button.scss */
 button::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner {
   border: 0;
@@ -1201,7 +1206,7 @@ fieldset {
   padding: 1rem;
   position: relative;
   padding-top: 3rem;
-  background-color: #062046;
+  background-color: #212a2b;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
@@ -1262,13 +1267,13 @@ fieldset form label {
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
-  background-color: #8ab5f5;
-  color: #062046;
+  background-color: #b7c5c8;
+  color: #212a2b;
   border-radius: 0;
 }
 /* line 69, ../sass/atoms/form/_fieldset.scss */
 fieldset form label + label {
-  border-left: 1px solid #0a3675;
+  border-left: 1px solid #374548;
 }
 /* line 71, ../sass/atoms/form/_fieldset.scss */
 fieldset form input {
@@ -1277,28 +1282,30 @@ fieldset form input {
   margin: 0;
   height: 2rem;
   border-top: none;
-  border-top: 1px solid #3371cc;
+  border-top: 1px solid #4c726d;
   border-left: none;
   box-shadow: none;
   border-radius: 0;
 }
 /* line 85, ../sass/atoms/form/_fieldset.scss */
 fieldset form > select {
-  border-top: 1px solid #3371cc;
+  border-top: 1px solid #4c726d;
   display: flex;
   flex-grow: 1;
-  color: #8ab5f5;
+  color: #b7c5c8;
+  box-shadow: none;
+  border-bottom: none;
   height: 2rem;
 }
-/* line 95, ../sass/atoms/form/_fieldset.scss */
+/* line 97, ../sass/atoms/form/_fieldset.scss */
 fieldset form + form > textarea {
-  border-top: 1px solid #3371cc;
+  border-top: 1px solid #4c726d;
 }
-/* line 99, ../sass/atoms/form/_fieldset.scss */
+/* line 101, ../sass/atoms/form/_fieldset.scss */
 fieldset form:first-of-type label {
   border-top-left-radius: 2px;
 }
-/* line 101, ../sass/atoms/form/_fieldset.scss */
+/* line 103, ../sass/atoms/form/_fieldset.scss */
 fieldset form:first-of-type input {
   border: none;
   border-radius: 2px;
@@ -1306,29 +1313,29 @@ fieldset form:first-of-type input {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-/* line 106, ../sass/atoms/form/_fieldset.scss */
+/* line 108, ../sass/atoms/form/_fieldset.scss */
 fieldset form:last-of-type label {
   border-bottom-left-radius: 2px;
 }
-/* line 108, ../sass/atoms/form/_fieldset.scss */
+/* line 110, ../sass/atoms/form/_fieldset.scss */
 fieldset form:last-of-type input {
   border-bottom: 0;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
 }
-/* line 113, ../sass/atoms/form/_fieldset.scss */
+/* line 115, ../sass/atoms/form/_fieldset.scss */
 fieldset form label {
   box-shadow: none;
   border: none;
   margin: 0;
   height: 2rem;
 }
-/* line 118, ../sass/atoms/form/_fieldset.scss */
+/* line 120, ../sass/atoms/form/_fieldset.scss */
 fieldset textarea {
   border-top: none;
   box-shadow: none;
 }
-/* line 121, ../sass/atoms/form/_fieldset.scss */
+/* line 123, ../sass/atoms/form/_fieldset.scss */
 fieldset div {
   display: flex;
   flex-wrap: wrap;
@@ -1337,36 +1344,37 @@ fieldset div {
   z-index: 999;
   padding-left: 1px;
 }
-/* line 128, ../sass/atoms/form/_fieldset.scss */
+/* line 130, ../sass/atoms/form/_fieldset.scss */
 fieldset div form {
   z-index: 999;
 }
-/* line 130, ../sass/atoms/form/_fieldset.scss */
+/* line 132, ../sass/atoms/form/_fieldset.scss */
 fieldset div form input {
   z-index: 999;
 }
-/* line 134, ../sass/atoms/form/_fieldset.scss */
+/* line 136, ../sass/atoms/form/_fieldset.scss */
 fieldset div form:first-of-type input {
   box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.45);
   border-top-right-radius: 2px;
-  border-top: 1px solid #3371cc;
+  border-top: 1px solid #4c726d;
 }
-/* line 138, ../sass/atoms/form/_fieldset.scss */
+/* line 140, ../sass/atoms/form/_fieldset.scss */
 fieldset div form:first-of-type label {
   box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.45);
-  border-top: 1px solid rgba(51, 113, 204, 0.45);
+  border-top: 1px solid rgba(76, 114, 109, 0.45);
 }
-/* line 143, ../sass/atoms/form/_fieldset.scss */
+/* line 145, ../sass/atoms/form/_fieldset.scss */
 fieldset div form:last-of-type input {
   border-bottom-right-radius: 2px;
 }
-/* line 146, ../sass/atoms/form/_fieldset.scss */
+/* line 149, ../sass/atoms/form/_fieldset.scss */
 fieldset div form:last-of-type label,
-fieldset div form:last-of-type input {
+fieldset div form:last-of-type input,
+fieldset div form:last-of-type select {
   z-index: 999;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45);
 }
-/* line 151, ../sass/atoms/form/_fieldset.scss */
+/* line 154, ../sass/atoms/form/_fieldset.scss */
 fieldset hr {
   display: flex;
   height: 0px;
@@ -1374,19 +1382,19 @@ fieldset hr {
   margin: 0;
   border: none;
 }
-/* line 157, ../sass/atoms/form/_fieldset.scss */
+/* line 160, ../sass/atoms/form/_fieldset.scss */
 fieldset hr.uber {
   height: 2rem;
 }
-/* line 161, ../sass/atoms/form/_fieldset.scss */
+/* line 164, ../sass/atoms/form/_fieldset.scss */
 fieldset hr + form label {
-  border-top: 1px solid rgba(51, 113, 204, 0.45);
+  border-top: 1px solid rgba(76, 114, 109, 0.45);
 }
-/* line 163, ../sass/atoms/form/_fieldset.scss */
+/* line 166, ../sass/atoms/form/_fieldset.scss */
 fieldset hr + form input {
-  border-top: 1px solid #3371cc;
+  border-top: 1px solid #4c726d;
 }
-/* line 165, ../sass/atoms/form/_fieldset.scss */
+/* line 168, ../sass/atoms/form/_fieldset.scss */
 fieldset legend {
   font-size: 1.25rem;
   line-height: 2rem;
@@ -1395,7 +1403,7 @@ fieldset legend {
   left: 1rem;
 }
 
-/* line 175, ../sass/atoms/form/_fieldset.scss */
+/* line 178, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental {
   display: table;
   table-layout: fixed;
@@ -1405,45 +1413,45 @@ fieldset.experimental {
   box-shadow: none;
   border: none;
 }
-/* line 184, ../sass/atoms/form/_fieldset.scss */
+/* line 187, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental + fieldset.experimental form {
   border-top: none;
 }
-/* line 186, ../sass/atoms/form/_fieldset.scss */
+/* line 189, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form {
   display: table-cell;
   width: 2%;
   float: none;
   border-width: 1px 1px 1px 0;
   border-style: solid;
-  border-color: #8ab5f5;
+  border-color: #b7c5c8;
   padding: 0;
   background: transparent;
 }
-/* line 196, ../sass/atoms/form/_fieldset.scss */
+/* line 199, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form:hover {
-  background-color: #0a3675;
+  background-color: #374548;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
   border-width: 1px 1px 1px 0;
   border-style: solid;
-  border-color: #8ab5f5;
+  border-color: #b7c5c8;
 }
-/* line 202, ../sass/atoms/form/_fieldset.scss */
+/* line 205, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form:last-of-type {
   border-right: 0;
 }
-/* line 204, ../sass/atoms/form/_fieldset.scss */
+/* line 207, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form label {
   width: 100%;
   background-color: transparent;
   text-align: left;
-  color: #8ab5f5;
+  color: #b7c5c8;
   text-transform: uppercase;
   font-size: 85%;
 }
-/* line 211, ../sass/atoms/form/_fieldset.scss */
+/* line 214, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form input {
   width: 100%;
   background: transparent;
@@ -1451,9 +1459,9 @@ fieldset.experimental form input {
   padding: 0 0.5rem;
   box-shadow: none;
 }
-/* line 219, ../sass/atoms/form/_fieldset.scss */
+/* line 222, ../sass/atoms/form/_fieldset.scss */
 fieldset.experimental form input:hover, fieldset.experimental form input:active, fieldset.experimental form input:focus {
-  border-top: 1px dashed rgba(138, 181, 245, 0.3);
+  border-top: 1px dashed rgba(183, 197, 200, 0.3);
 }
 
 /* line 1, ../sass/atoms/form/_form.scss */
@@ -1586,8 +1594,8 @@ form input[maxlength="20"] {
 /* line 1, ../sass/atoms/form/_input.scss */
 input {
   height: 1.5rem;
-  background-color: #0a3675;
-  color: #8ab5f5;
+  background-color: #374548;
+  color: #b7c5c8;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   font-family: inherit;
@@ -1611,13 +1619,13 @@ input::-moz-focus-inner {
 }
 /* line 21, ../sass/atoms/form/_input.scss */
 input:focus {
-  border-top-color: #0a3675;
-  box-shadow: 0 0 3px #4b79bd;
+  border-top-color: #374548;
+  box-shadow: 0 0 3px #d89e27;
 }
 /* line 30, ../sass/atoms/form/_input.scss */
 input[type="text"]:disabled {
-  background-color: #062046;
-  color: #0a3675;
+  background-color: #212a2b;
+  color: #374548;
 }
 /* line 34, ../sass/atoms/form/_input.scss */
 input[type="search"] {
@@ -1632,8 +1640,8 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 }
 /* line 52, ../sass/atoms/form/_input.scss */
 input[type="number"]:disabled {
-  background-color: #062046;
-  color: #0a3675;
+  background-color: #212a2b;
+  color: #374548;
 }
 /* line 54, ../sass/atoms/form/_input.scss */
 input:not([type]) {
@@ -1651,8 +1659,8 @@ input[type="color"] {
 /* line 64, ../sass/atoms/form/_input.scss */
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0.3rem;
-  background-color: #0a3675;
-  background: linear-gradient(#224a82, #0a3675);
+  background-color: #374548;
+  background: linear-gradient(#414e51, #374548);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1669,8 +1677,8 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 }
 /* line 68, ../sass/atoms/form/_input.scss */
 input[type="color"]:disabled::-webkit-color-swatch-wrapper {
-  background-color: #0a3675;
-  background: linear-gradient(#224a82, #0a3675);
+  background-color: #374548;
+  background: linear-gradient(#414e51, #374548);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1691,7 +1699,7 @@ input[type="color"][readonly] {
 }
 /* line 72, ../sass/atoms/form/_input.scss */
 input[type="color"][readonly]::-webkit-color-swatch-wrapper {
-  background-color: #062046;
+  background-color: #212a2b;
   border: none;
 }
 /* line 75, ../sass/atoms/form/_input.scss */
@@ -1722,8 +1730,8 @@ input[type="radio"]:before {
   display: block;
   content: "";
   padding: 0.5rem 0 0rem 0.15rem;
-  background-color: #4b79bd;
-  background: linear-gradient(#5d86c3, #4b79bd);
+  background-color: #d89e27;
+  background: linear-gradient(#d9a231, #d89e27);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1737,28 +1745,30 @@ input[type="radio"]:before {
   @else{
   	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
   	*/
+  background: radial-gradient(#374548 55%, #d89e27 100%);
   border-radius: 50%;
 }
-/* line 98, ../sass/atoms/form/_input.scss */
+/* line 99, ../sass/atoms/form/_input.scss */
 input[type="radio"]:checked:before {
   box-shadow: none;
   border: none;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
+  background: radial-gradient(#374548 70%, #d89e27 100%);
   border-radius: 50%;
 }
-/* line 103, ../sass/atoms/form/_input.scss */
+/* line 105, ../sass/atoms/form/_input.scss */
 input[type="radio"]:after {
   content: attr(name);
-  color: #8ab5f5;
+  color: #b7c5c8;
   display: block;
   position: relative;
   left: 0.2rem;
   margin-right: 0.2rem;
   flex-grow: 1;
 }
-/* line 111, ../sass/atoms/form/_input.scss */
+/* line 113, ../sass/atoms/form/_input.scss */
 input[type="checkbox"] {
   height: 1rem;
   -webkit-appearance: none;
@@ -1768,11 +1778,11 @@ input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
-/* line 119, ../sass/atoms/form/_input.scss */
+/* line 121, ../sass/atoms/form/_input.scss */
 input[type="checkbox"]:before {
   width: 1rem;
   height: 1rem;
-  background-color: #0a3675;
+  background-color: #374548;
   display: block;
   content: "";
   border: none;
@@ -1781,21 +1791,21 @@ input[type="checkbox"]:before {
   font-size: 1.5rem;
   padding-left: 0.1rem;
 }
-/* line 128, ../sass/atoms/form/_input.scss */
+/* line 130, ../sass/atoms/form/_input.scss */
 input[type="checkbox"]:checked:before {
   content: "\2713";
-  color: #4b79bd;
+  color: #d89e27;
   line-height: 0;
   padding-top: 0.2rem;
 }
-/* line 133, ../sass/atoms/form/_input.scss */
+/* line 135, ../sass/atoms/form/_input.scss */
 input[type="submit"] {
-  color: #0a3675;
+  color: #374548;
   margin-top: calc((2rem - 1.5rem) / 2);
   margin-bottom: calc((2rem - 1.5rem) / 2);
   border: 0;
-  background-color: #0a3675;
-  background: linear-gradient(#224a82, #0a3675);
+  background-color: #374548;
+  background: linear-gradient(#414e51, #374548);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -1810,14 +1820,14 @@ input[type="submit"] {
   	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
   	*/
 }
-/* line 139, ../sass/atoms/form/_input.scss */
+/* line 141, ../sass/atoms/form/_input.scss */
 input[type="file"] {
   margin: calc((2rem - 1.5rem) / 2) 0;
   padding: 0;
   background-color: transparent;
   border: none;
 }
-/* line 144, ../sass/atoms/form/_input.scss */
+/* line 146, ../sass/atoms/form/_input.scss */
 input::-webkit-calendar-picker-indicator:hover {
   background-color: transparent;
 }
@@ -1841,8 +1851,9 @@ label {
 }
 /* line 11, ../sass/atoms/form/_label.scss */
 label.required:after {
-  color: #ea1515;
+  color: #906f6f;
   content: "*";
+  margin-left: 3px;
 }
 @media all and (min-width: 128px) and (max-width: 256px) {
   /* line 1, ../sass/atoms/form/_label.scss */
@@ -1896,7 +1907,7 @@ meter {
 }
 /* line 7, ../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-inner-element {
-  background: #0a3675;
+  background: #374548;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
@@ -1912,21 +1923,21 @@ meter::-webkit-meter-bar {
 }
 /* line 17, ../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-optimum-value {
-  border-right: 1px solid rgba(73, 238, 73, 0.725);
-  box-shadow: 0 0 3px #15ea15;
-  background: #15ea15;
+  border-right: 1px solid rgba(143, 168, 143, 0.725);
+  box-shadow: 0 0 3px #6f906f;
+  background: #6f906f;
 }
 /* line 21, ../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-suboptimum-value {
-  border-right: 1px solid rgba(238, 238, 73, 0.725);
-  box-shadow: 0 0 3px #eaea15;
-  background: #eaea15;
+  border-right: 1px solid rgba(168, 168, 143, 0.725);
+  box-shadow: 0 0 3px #90906f;
+  background: #90906f;
 }
 /* line 25, ../sass/atoms/form/_meter.scss */
 meter::-webkit-meter-even-less-good-value {
-  border-right: 1px solid rgba(238, 73, 73, 0.725);
-  box-shadow: 0 0 3px #ea1515;
-  background: #ea1515;
+  border-right: 1px solid rgba(168, 143, 143, 0.725);
+  box-shadow: 0 0 3px #906f6f;
+  background: #906f6f;
 }
 
 /* line 1, ../sass/atoms/form/_output.scss */
@@ -1950,16 +1961,16 @@ progress {
 }
 /* line 7, ../sass/atoms/form/_progress.scss */
 progress::-webkit-progress-inner-element {
-  background: #0a3675;
+  background: #374548;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
 }
 /* line 10, ../sass/atoms/form/_progress.scss */
 progress::-webkit-progress-value {
-  background-color: #15ea15;
-  border-right: 1px solid rgba(73, 238, 73, 0.725);
-  box-shadow: 0 0 3px #15ea15;
+  background-color: #6f906f;
+  border-right: 1px solid rgba(143, 168, 143, 0.725);
+  box-shadow: 0 0 3px #6f906f;
 }
 /* line 14, ../sass/atoms/form/_progress.scss */
 progress::-webkit-progress-bar {
@@ -1977,8 +1988,8 @@ select {
   font-size: 100%;
   text-transform: none;
   margin: 0;
-  background-color: #0a3675;
-  background: linear-gradient(#224a82, #0a3675);
+  background-color: #374548;
+  background: linear-gradient(#414e51, #374548);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -2000,8 +2011,8 @@ select:focus {
 }
 /* line 14, ../sass/atoms/form/_select.scss */
 select:disabled {
-  background-color: #062046;
-  color: #0a3675;
+  background-color: #212a2b;
+  color: #374548;
 }
 /* line 16, ../sass/atoms/form/_select.scss */
 select::-webkit-scrollbar-track {
@@ -2015,10 +2026,10 @@ textarea {
   margin: 0;
   padding: 1rem 0 0 0.62rem;
   border: 0;
-  color: #8ab5f5;
+  color: #b7c5c8;
   overflow: auto;
   vertical-align: top;
-  background-color: #0a3675;
+  background-color: #374548;
   border-radius: 2px;
   border: none;
   border-radius: 2px;
@@ -2026,8 +2037,8 @@ textarea {
 }
 /* line 14, ../sass/atoms/form/_textarea.scss */
 textarea:disabled {
-  background-color: #062046;
-  color: #0a3675;
+  background-color: #212a2b;
+  color: #374548;
 }
 
 /* line 1, ../sass/atoms/form/_webkits.scss */
@@ -2037,7 +2048,7 @@ textarea:disabled {
 
 /* line 4, ../sass/atoms/form/_webkits.scss */
 ::-webkit-scrollbar-track {
-  background-color: #0a3675;
+  background-color: #374548;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
@@ -2048,7 +2059,7 @@ textarea:disabled {
 ::-webkit-scrollbar-thumb {
   width: calc(100% - 2px);
   width: 50%;
-  background-color: #062046;
+  background-color: #212a2b;
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -2083,7 +2094,7 @@ textarea:disabled {
   height: 0;
   border-left: 0.25rem solid transparent;
   border-right: 0.25rem solid transparent;
-  border-bottom: 0.5rem solid #8ab5f5;
+  border-bottom: 0.5rem solid #b7c5c8;
   content: "";
   position: absolute;
   bottom: 0.75rem;
@@ -2095,7 +2106,7 @@ textarea:disabled {
   height: 0;
   border-left: 0.25rem solid transparent;
   border-right: 0.25rem solid transparent;
-  border-top: 0.5rem solid #8ab5f5;
+  border-top: 0.5rem solid #b7c5c8;
   content: "";
   position: absolute;
   top: 0.75rem;
@@ -2105,8 +2116,8 @@ textarea:disabled {
 /* line 48, ../sass/atoms/form/_webkits.scss */
 ::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background-color: #8ab5f5;
-  background: linear-gradient(#95bcf6, #8ab5f5);
+  background-color: #b7c5c8;
+  background: linear-gradient(#bac7ca, #b7c5c8);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -2131,33 +2142,33 @@ textarea:disabled {
   height: 0;
   width: 0;
   border-top: 0.5rem solid transparent;
-  border-left: 1rem solid #8ab5f5;
+  border-left: 1rem solid #b7c5c8;
   border-bottom: 0.5rem solid transparent;
 }
 
 /* line 63, ../sass/atoms/form/_webkits.scss */
 ::-webkit-media-controls-panel {
-  background-color: rgba(10, 54, 117, 0.8);
+  background-color: rgba(55, 69, 72, 0.8);
 }
 
 /* line 66, ../sass/atoms/form/_webkits.scss */
 ::-webkit-media-slider-container {
   border: none;
-  background-color: #0a3675;
+  background-color: #374548;
 }
 
 /* line 70, ../sass/atoms/form/_webkits.scss */
 ::-webkit-media-controls-current-time-display {
-  color: #8ab5f5;
+  color: #b7c5c8;
 }
 
 /* line 77, ../sass/atoms/form/_webkits.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: none;
   border: none;
-  color: #062046;
-  background-color: #8ab5f5;
-  background: linear-gradient(#95bcf6, #8ab5f5);
+  color: #212a2b;
+  background-color: #b7c5c8;
+  background: linear-gradient(#bac7ca, #b7c5c8);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -2176,9 +2187,9 @@ textarea:disabled {
 
 /* line 84, ../sass/atoms/form/_webkits.scss */
 ::-webkit-file-upload-button:disabled {
-  color: #062046;
-  background-color: #0a3675;
-  background: linear-gradient(#224a82, #0a3675);
+  color: #212a2b;
+  background-color: #374548;
+  background: linear-gradient(#414e51, #374548);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -2393,42 +2404,7 @@ address a.dribbble:before {
 /* line 1, ../sass/atoms/section/_article.scss */
 article {
   display: block;
-  padding: 0 0.5rem;
   margin: 0 auto;
-}
-@media only screen and (min-width: 256px) {
-  /* line 1, ../sass/atoms/section/_article.scss */
-  article {
-    padding: 0 2rem;
-    max-width: 20rem;
-  }
-}
-@media only screen and (min-width: 384px) {
-  /* line 1, ../sass/atoms/section/_article.scss */
-  article {
-    padding: 0 3rem;
-    max-width: 30rem;
-  }
-}
-@media only screen and (min-width: 640px) {
-  /* line 1, ../sass/atoms/section/_article.scss */
-  article {
-    padding: 0 4rem;
-    max-width: 48rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  /* line 1, ../sass/atoms/section/_article.scss */
-  article {
-    padding: 0 5rem;
-    max-width: 60em;
-  }
-}
-@media only screen and (min-width: 1664px) {
-  /* line 1, ../sass/atoms/section/_article.scss */
-  article {
-    padding: 0 6rem;
-  }
 }
 
 /* line 1, ../sass/atoms/section/_aside.scss */
@@ -2440,7 +2416,7 @@ aside {
   padding-left: 1rem;
   padding-right: 1rem;
   display: block;
-  color: #486a9d;
+  color: #6c7779;
   font-size: 0.85rem;
   line-height: 1rem;
   padding-top: 0.75rem;
@@ -2459,12 +2435,12 @@ aside h1, aside h2, aside h3, aside h4, aside h5 {
   font-weight: bold;
   font-style: normal;
   margin: 0;
-  color: #8ab5f5;
+  color: #b7c5c8;
   font-family: "Open Sans";
 }
 /* line 16, ../sass/atoms/section/_aside.scss */
 aside p {
-  color: #486a9d;
+  color: #6c7779;
   font-size: 0.85rem;
   line-height: 1rem;
   padding-top: 0.75rem;
@@ -2516,7 +2492,7 @@ h1 {
   font-weight: bold;
   font-style: normal;
   margin: 0;
-  color: #8ab5f5;
+  color: #b7c5c8;
   font-family: "Gentium Basic";
 }
 /* line 5, ../sass/atoms/section/_h1.scss */
@@ -2528,7 +2504,7 @@ h1 > small {
   font-weight: bold;
   font-style: normal;
   margin: 0;
-  color: #486a9d;
+  color: #6c7779;
   line-height: 1em;
   display: inline;
 }
@@ -2564,7 +2540,7 @@ h2 {
   font-weight: bold;
   font-style: normal;
   margin: 0;
-  color: #8ab5f5;
+  color: #e6e7b3;
   font-family: "Gentium Basic";
 }
 /* line 5, ../sass/atoms/section/_h2.scss */
@@ -2576,7 +2552,7 @@ h2 > small {
   font-weight: bold;
   font-style: normal;
   margin: 0;
-  color: #486a9d;
+  color: #83886f;
   line-height: 1em;
   display: inline;
 }
@@ -2612,7 +2588,7 @@ h3 {
   font-weight: bold;
   font-style: normal;
   margin: 0;
-  color: #3371cc;
+  color: #4c726d;
   font-family: "Gentium Basic";
 }
 /* line 5, ../sass/atoms/section/_h3.scss */
@@ -2624,7 +2600,7 @@ h3 > small {
   font-weight: bold;
   font-style: normal;
   margin: 0;
-  color: #1c4889;
+  color: #364e4c;
   line-height: 1em;
   display: inline;
 }
@@ -2660,7 +2636,7 @@ h4 {
   font-weight: bold;
   font-style: normal;
   margin: 0;
-  color: #8ab5f5;
+  color: #b7c5c8;
   font-family: "Gentium Basic";
 }
 /* line 5, ../sass/atoms/section/_h4.scss */
@@ -2672,7 +2648,7 @@ h4 > small {
   font-weight: bold;
   font-style: normal;
   margin: 0;
-  color: #486a9d;
+  color: #6c7779;
   line-height: 1em;
   display: inline;
 }
@@ -2709,7 +2685,7 @@ h5 {
   font-style: normal;
   margin: 0;
   margin: 0;
-  color: #8ab5f5;
+  color: #b7c5c8;
   font-family: "Gentium Basic";
 }
 /* line 6, ../sass/atoms/section/_h5.scss */
@@ -2721,7 +2697,7 @@ h5 > small {
   font-weight: normal;
   font-style: normal;
   margin: 0;
-  color: #486a9d;
+  color: #6c7779;
   line-height: 1em;
   display: inline;
 }
@@ -2799,8 +2775,8 @@ b {
 /* line 1, ../sass/atoms/span/_code.scss */
 code {
   font-family: 'Source Code Pro', monospace;
-  color: #8ab5f5;
-  background-color: #0a3675;
+  color: #b7c5c8;
+  background-color: #374548;
   padding: 0 0.2rem;
   line-height: 1rem;
   border: none;
@@ -2839,7 +2815,7 @@ samp {
 
 /* line 1, ../sass/atoms/span/_small.scss */
 small {
-  color: #486a9d;
+  color: #6c7779;
   font-size: 0.85rem;
   line-height: 1rem;
   padding-top: 0.75rem;
@@ -2884,7 +2860,7 @@ time {
   font-weight: normal;
   font-style: normal;
   margin: 0;
-  color: #3371cc;
+  color: #4c726d;
   line-height: 2rem;
   font-family: "Open Sans";
 }
@@ -2930,7 +2906,7 @@ table tr td {
   align-content: center;
   text-align: center;
   padding: 0 calc((100% - 60em) / 2);
-  background-color: #0a3675;
+  background-color: #374548;
   flex-wrap: wrap;
   border: none;
   border-radius: 2px;
@@ -2967,297 +2943,109 @@ table tr td {
   padding: 0 0.5rem;
 }
 
-/* line 1, ../sass/molecules/_article__aside.scss */
-article > aside {
-  width: 100%;
-  padding: 0 1rem 0.5rem 1rem;
-  margin-bottom: 0.5rem;
-  width: calc(100% + 1rem);
-}
-/* line 11, ../sass/molecules/_article__aside.scss */
-article > aside h1,
-article > aside h2,
-article > aside h3,
-article > aside h4,
-article > aside h5,
-article > aside p {
-  margin-bottom: -0.5rem;
-}
-/* line 13, ../sass/molecules/_article__aside.scss */
-article > aside:nth-of-type(odd) {
-  float: left;
-  right: 0.5rem;
-  margin-right: -0.25rem;
-}
-/* line 17, ../sass/molecules/_article__aside.scss */
-article > aside:nth-of-type(even) {
+/* line 2, ../sass/molecules/_article__.pull.scss */
+article > .pull:nth-of-type(odd) {
   float: right;
-  left: 0.5rem;
-  margin-left: -0.25rem;
+}
+/* line 5, ../sass/molecules/_article__.pull.scss */
+article > .pull:nth-of-type(even) {
+  float: left;
 }
 @media only screen and (min-width: 256px) {
-  /* line 1, ../sass/molecules/_article__aside.scss */
-  article > aside {
+  /* line 1, ../sass/molecules/_article__.pull.scss */
+  article > .pull {
     width: calc(100% + 2rem);
   }
-  /* line 23, ../sass/molecules/_article__aside.scss */
-  article > aside:nth-of-type(odd) {
+  /* line 10, ../sass/molecules/_article__.pull.scss */
+  article > .pull:nth-of-type(odd) {
     right: 1rem;
-    margin-right: -0.5rem;
+    margin-right: -1rem;
+    padding-left: 2rem;
   }
-  /* line 26, ../sass/molecules/_article__aside.scss */
-  article > aside:nth-of-type(even) {
+  /* line 12, ../sass/molecules/_article__.pull.scss */
+  article > .pull:nth-of-type(even) {
     left: 1rem;
-    margin-left: -0.5rem;
+    margin-left: -1rem;
+    padding-right: 2rem;
   }
 }
 @media only screen and (min-width: 384px) {
-  /* line 1, ../sass/molecules/_article__aside.scss */
-  article > aside {
-    margin-top: -0.25rem;
-    margin-bottom: -0.25rem;
-    width: 50%;
+  /* line 1, ../sass/molecules/_article__.pull.scss */
+  article > .pull {
+    width: calc(100% + 4rem);
   }
-  /* line 35, ../sass/molecules/_article__aside.scss */
-  article > aside:nth-of-type(odd) {
+  /* line 16, ../sass/molecules/_article__.pull.scss */
+  article > .pull:nth-of-type(odd) {
     right: 2rem;
-    margin-right: -1rem;
+    margin-right: -2rem;
+    padding-left: 3rem;
   }
-  /* line 38, ../sass/molecules/_article__aside.scss */
-  article > aside:nth-of-type(even) {
+  /* line 18, ../sass/molecules/_article__.pull.scss */
+  article > .pull:nth-of-type(even) {
     left: 2rem;
-    margin-left: -1rem;
+    margin-left: -2rem;
+    padding-right: 3rem;
   }
 }
 @media only screen and (min-width: 640px) {
-  /* line 42, ../sass/molecules/_article__aside.scss */
-  article > aside:nth-of-type(odd) {
-    right: 3rem;
-    margin-right: -1.5rem;
+  /* line 1, ../sass/molecules/_article__.pull.scss */
+  article > .pull {
+    width: 50%;
   }
-  /* line 45, ../sass/molecules/_article__aside.scss */
-  article > aside:nth-of-type(even) {
+  /* line 22, ../sass/molecules/_article__.pull.scss */
+  article > .pull:nth-of-type(odd) {
+    right: 3rem;
+    margin-right: -3rem;
+    padding-left: 4rem;
+  }
+  /* line 24, ../sass/molecules/_article__.pull.scss */
+  article > .pull:nth-of-type(even) {
     left: 3rem;
-    margin-left: -1.5rem;
+    margin-left: -3rem;
+    padding-right: 4rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 1, ../sass/molecules/_article__aside.scss */
-  article > aside {
+  /* line 1, ../sass/molecules/_article__.pull.scss */
+  article > .pull {
     width: 33%;
   }
-  /* line 50, ../sass/molecules/_article__aside.scss */
-  article > aside:nth-of-type(odd) {
+  /* line 28, ../sass/molecules/_article__.pull.scss */
+  article > .pull:nth-of-type(odd) {
     right: 4rem;
-    margin-right: -2rem;
+    margin-right: -4rem;
+    padding-left: 5rem;
   }
-  /* line 53, ../sass/molecules/_article__aside.scss */
-  article > aside:nth-of-type(even) {
+  /* line 30, ../sass/molecules/_article__.pull.scss */
+  article > .pull:nth-of-type(even) {
     left: 4rem;
-    margin-left: -2rem;
+    margin-left: -4rem;
+    padding-right: 5rem;
   }
 }
 @media only screen and (min-width: 1664px) {
-  /* line 1, ../sass/molecules/_article__aside.scss */
-  article > aside {
+  /* line 1, ../sass/molecules/_article__.pull.scss */
+  article > .pull {
     width: 25%;
   }
-  /* line 58, ../sass/molecules/_article__aside.scss */
-  article > aside:nth-of-type(odd) {
+  /* line 34, ../sass/molecules/_article__.pull.scss */
+  article > .pull:nth-of-type(odd) {
     right: 5rem;
-    margin-right: -2.5rem;
+    margin-right: -5rem;
+    padding-left: 6rem;
   }
-  /* line 61, ../sass/molecules/_article__aside.scss */
-  article > aside:nth-of-type(even) {
+  /* line 36, ../sass/molecules/_article__.pull.scss */
+  article > .pull:nth-of-type(even) {
     left: 5rem;
-    margin-left: -2.5rem;
+    margin-left: -5rem;
+    padding-right: 6rem;
   }
 }
 
-/* line 2, ../sass/molecules/_article__blockquote.scss */
-article > blockquote:nth-of-type(odd) {
-  float: left;
-  text-align: right;
-  position: relative;
-  padding-right: 1rem;
-  right: 0.5rem;
-  margin-right: -0.5rem;
-}
-/* line 8, ../sass/molecules/_article__blockquote.scss */
-article > blockquote:nth-of-type(odd) > cite {
-  float: right;
-  text-align: right;
-}
-/* line 11, ../sass/molecules/_article__blockquote.scss */
-article > blockquote:nth-of-type(even) {
-  float: right;
-  text-align: left;
-  position: relative;
-  padding-left: 1rem;
-  left: 0.5rem;
-  margin-left: -0.5rem;
-}
-/* line 17, ../sass/molecules/_article__blockquote.scss */
-article > blockquote:nth-of-type(even) > cite {
-  float: left;
-  text-align: left;
-}
-/* line 20, ../sass/molecules/_article__blockquote.scss */
-article > blockquote > cite {
-  font-family: Open Sans;
-  color: #8ab5f5;
-  font-size: 0.85rem;
-  line-height: 1rem;
-  margin-bottom: 1rem;
-}
-/* line 26, ../sass/molecules/_article__blockquote.scss */
-article > blockquote > cite:before {
-  content: "- ";
-}
-@media only screen and (min-width: 256px) {
-  /* line 1, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote {
-    width: calc(100% + 2rem);
-  }
-  /* line 30, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote:nth-of-type(odd) {
-    right: 1rem;
-    margin-right: -1rem;
-  }
-  /* line 32, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote:nth-of-type(even) {
-    left: 1rem;
-    margin-left: -1rem;
-  }
-}
-@media only screen and (min-width: 384px) {
-  /* line 1, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote {
-    width: calc(100% + 4rem);
-  }
-  /* line 36, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote:nth-of-type(odd) {
-    right: 2rem;
-    margin-right: -2rem;
-  }
-  /* line 38, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote:nth-of-type(even) {
-    left: 2rem;
-    margin-left: -2rem;
-  }
-}
-@media only screen and (min-width: 640px) {
-  /* line 1, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote {
-    width: 50%;
-  }
-  /* line 42, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote:nth-of-type(odd) {
-    right: 3rem;
-    margin-right: -3rem;
-  }
-  /* line 44, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote:nth-of-type(even) {
-    left: 3rem;
-    margin-left: -3rem;
-  }
-}
 @media only screen and (min-width: 1024px) {
-  /* line 47, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote:nth-of-type(odd) {
-    right: 4rem;
-    margin-right: -4rem;
-  }
-  /* line 49, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote:nth-of-type(even) {
-    left: 4rem;
-    margin-left: -4rem;
-  }
-}
-@media only screen and (min-width: 1664px) {
-  /* line 52, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote:nth-of-type(odd) {
-    right: 5rem;
-    margin-right: -5rem;
-  }
-  /* line 54, ../sass/molecules/_article__blockquote.scss */
-  article > blockquote:nth-of-type(even) {
-    left: 5rem;
-    margin-left: -5rem;
-  }
-}
-
-/* line 2, ../sass/molecules/_article__figure.scss */
-article > figure:nth-of-type(odd) {
-  float: right;
-  padding-left: 1rem;
-  margin-right: -0.5rem;
-}
-/* line 6, ../sass/molecules/_article__figure.scss */
-article > figure:nth-of-type(even) {
-  float: left;
-  margin-left: -0.5rem;
-}
-@media only screen and (min-width: 256px) {
-  /* line 1, ../sass/molecules/_article__figure.scss */
-  article > figure {
-    width: calc(100% + 2rem);
-  }
-  /* line 11, ../sass/molecules/_article__figure.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -1rem;
-  }
-  /* line 13, ../sass/molecules/_article__figure.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -1rem;
-  }
-}
-@media only screen and (min-width: 384px) {
-  /* line 1, ../sass/molecules/_article__figure.scss */
-  article > figure {
-    width: calc(100% + 4rem);
-  }
-  /* line 17, ../sass/molecules/_article__figure.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -2rem;
-  }
-  /* line 19, ../sass/molecules/_article__figure.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -2rem;
-  }
-}
-@media only screen and (min-width: 640px) {
-  /* line 1, ../sass/molecules/_article__figure.scss */
-  article > figure {
+  /* line 39, ../sass/molecules/_article__.pull.scss */
+  blockquote.pull {
     width: 50%;
-  }
-  /* line 23, ../sass/molecules/_article__figure.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -3rem;
-  }
-  /* line 25, ../sass/molecules/_article__figure.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -3rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  /* line 28, ../sass/molecules/_article__figure.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -4rem;
-  }
-  /* line 30, ../sass/molecules/_article__figure.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -4rem;
-  }
-}
-@media only screen and (min-width: 1664px) {
-  /* line 33, ../sass/molecules/_article__figure.scss */
-  article > figure:nth-of-type(odd) {
-    margin-right: -5rem;
-  }
-  /* line 35, ../sass/molecules/_article__figure.scss */
-  article > figure:nth-of-type(even) {
-    margin-left: -5rem;
   }
 }
 
@@ -3287,8 +3075,8 @@ body > header {
   height: 3rem;
   z-index: 9999;
   width: 100%;
-  background-color: #0a3675;
-  background: linear-gradient(#224a82, #0a3675);
+  background-color: #374548;
+  background: linear-gradient(#414e51, #374548);
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -3432,7 +3220,7 @@ figure > img {
 }
 /* line 5, ../sass/molecules/_figure__img.scss */
 figure > img + figcaption {
-  color: #486a9d;
+  color: #6c7779;
   font-size: 0.85rem;
   line-height: 1rem;
   padding-top: 0.75rem;
@@ -3532,21 +3320,24 @@ header .masthead .logo + h1 {
   }
   /* line 8, ../sass/molecules/_header--.collapsed.scss */
   body > header.collapsed + main > nav {
+    transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -webkit-transition: all 0s ease-in-out;
     opacity: 0.5;
     margin-top: -4rem;
   }
-  /* line 12, ../sass/molecules/_header--.collapsed.scss */
+  /* line 13, ../sass/molecules/_header--.collapsed.scss */
   body > header.collapsed section.search {
     display: none;
   }
-  /* line 15, ../sass/molecules/_header--.collapsed.scss */
+  /* line 16, ../sass/molecules/_header--.collapsed.scss */
   body > header.collapsed section.masthead {
     position: absolute;
     margin: auto;
     left: 50%;
     margin-left: -50%;
   }
-  /* line 20, ../sass/molecules/_header--.collapsed.scss */
+  /* line 21, ../sass/molecules/_header--.collapsed.scss */
   body > header.collapsed section.masthead h1 {
     font-size: 0;
     opacity: 0;
@@ -3571,7 +3362,7 @@ body > header h1 {
   font-style: normal;
   margin: 0;
   margin-left: 1rem;
-  color: #8ab5f5;
+  color: #b7c5c8;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -3596,7 +3387,7 @@ body > header > nav > address a {
 }
 /* line 13, ../sass/molecules/_header__nav.scss */
 body > header > nav > address a, body > header > nav > address a:before {
-  color: #8ab5f5;
+  color: #b7c5c8;
   text-decoration: none;
 }
 /* line 16, ../sass/molecules/_header__nav.scss */
@@ -3622,8 +3413,8 @@ body > header > nav > ul li {
 }
 /* line 30, ../sass/molecules/_header__nav.scss */
 body > header > nav > ul li:hover {
-  background-color: #8ab5f5;
-  color: #062046;
+  background-color: #b7c5c8;
+  color: #212a2b;
 }
 /* line 33, ../sass/molecules/_header__nav.scss */
 body > header > nav > ul li:hover > ul {
@@ -3652,17 +3443,18 @@ body > header > nav > ul li a {
 }
 /* line 43, ../sass/molecules/_header__nav.scss */
 body > header > nav > ul li a:hover {
-  color: #062046;
+  color: #212a2b;
 }
 /* line 45, ../sass/molecules/_header__nav.scss */
 body > header > nav > ul li > ul {
   padding: 0;
   position: absolute;
-  width: 100%;
+  width: auto;
+  min-width: 100%;
   display: block;
   left: 0;
   top: 3rem;
-  background: #0a3675;
+  background: #374548;
   -webkit-transform: scale3d(1, 0, 1);
   -moz-transform: scale3d(1, 0, 1);
   -o-transform: scale3d(1, 0, 1);
@@ -3679,16 +3471,24 @@ body > header > nav > ul li > ul {
   -ms-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 56, ../sass/molecules/_header__nav.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 45, ../sass/molecules/_header__nav.scss */
+  body > header > nav > ul li > ul {
+    width: 100%;
+    max-height: 256px;
+    overflow-y: scroll;
+  }
+}
+/* line 61, ../sass/molecules/_header__nav.scss */
 body > header > nav > ul li > ul > li {
   width: 100%;
   display: table;
   float: left;
 }
-/* line 60, ../sass/molecules/_header__nav.scss */
+/* line 65, ../sass/molecules/_header__nav.scss */
 body > header > nav > ul li > ul > li > a {
   display: table-cell;
-  color: #8ab5f5;
+  color: #b7c5c8;
   vertical-align: middle;
 }
 
@@ -3719,13 +3519,13 @@ header > section.masthead ~ nav address a {
 }
 /* line 16, ../sass/molecules/_header__section__.masthead__nav.scss */
 header > section.masthead ~ nav address a, header > section.masthead ~ nav address a:before {
-  color: #8ab5f5;
+  color: #b7c5c8;
   text-decoration: none;
 }
 @media only screen and (min-width: 1024px) {
   /* line 23, ../sass/molecules/_header__section__.masthead__nav.scss */
   header > section.masthead ~ nav address a {
-    color: #062046;
+    color: #212a2b;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -3769,19 +3569,19 @@ header > section.masthead ~ nav address a, header > section.masthead ~ nav addre
     display: block;
     float: left;
     top: 0;
-    background-color: #0a3675;
+    background-color: #374548;
   }
   /* line 45, ../sass/molecules/_header__section__.masthead__nav.scss */
   header > section.masthead ~ nav address {
     margin-top: 0;
     width: auto;
     height: 2rem;
-    background-color: #0a3675;
+    background-color: #374548;
     top: 0;
     left: 0;
     padding-left: 0.5rem;
     text-align: center;
-    border-bottom: 1px solid #0a3675;
+    border-bottom: 1px solid #374548;
   }
   /* line 55, ../sass/molecules/_header__section__.masthead__nav.scss */
   header > section.masthead ~ nav address a {
@@ -3813,7 +3613,7 @@ header > section.masthead ~ nav > ul {
   position: relative;
   max-width: 60em;
   min-height: 2rem;
-  background-color: #0a3675;
+  background-color: #374548;
   float: none;
   width: 100%;
   height: auto;
@@ -3843,7 +3643,7 @@ header > section.masthead ~ nav > ul > div {
 }
 /* line 86, ../sass/molecules/_header__section__.masthead__nav.scss */
 header > section.masthead ~ nav > ul div + li {
-  border-top: 1px solid #082b5d;
+  border-top: 1px solid #2c3739;
 }
 /* line 88, ../sass/molecules/_header__section__.masthead__nav.scss */
 header > section.masthead ~ nav > ul li {
@@ -3861,7 +3661,7 @@ header > section.masthead ~ nav > ul li {
 }
 /* line 100, ../sass/molecules/_header__section__.masthead__nav.scss */
 header > section.masthead ~ nav > ul li:hover {
-  background-color: #8ab5f5;
+  background-color: #b7c5c8;
   border: none;
 }
 /* line 103, ../sass/molecules/_header__section__.masthead__nav.scss */
@@ -3894,12 +3694,12 @@ header > section.masthead ~ nav > ul li:hover ul li {
 }
 /* line 112, ../sass/molecules/_header__section__.masthead__nav.scss */
 header > section.masthead ~ nav > ul li:hover > a, header > section.masthead ~ nav > ul li:hover > a:hover {
-  color: #062046;
+  color: #212a2b;
 }
 /* line 114, ../sass/molecules/_header__section__.masthead__nav.scss */
 header > section.masthead ~ nav > ul li:hover > a:after {
   left: calc(100% + 1.2rem);
-  border-top: 0.75rem solid #0a3675;
+  border-top: 0.75rem solid #374548;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
@@ -3970,7 +3770,7 @@ header > section.masthead ~ nav > ul li > a {
   /* line 150, ../sass/molecules/_header__section__.masthead__nav.scss */
   header > section.masthead ~ nav > ul > div + li {
     border-top: none;
-    border-left: 1px solid #082b5d;
+    border-left: 1px solid #2c3739;
   }
   /* line 153, ../sass/molecules/_header__section__.masthead__nav.scss */
   header > section.masthead ~ nav li {
@@ -3984,7 +3784,7 @@ header > section.masthead ~ nav > ul li > a {
   }
   /* line 160, ../sass/molecules/_header__section__.masthead__nav.scss */
   header > section.masthead ~ nav li:hover a:after {
-    border-top: 0.75rem solid #0a3675;
+    border-top: 0.75rem solid #374548;
   }
 }
 @media only screen and (min-width: 1664px) {
@@ -3996,7 +3796,7 @@ header > section.masthead ~ nav > ul li > a {
 
 /* line 1, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
 header > section.masthead ~ nav li > ul {
-  background-color: #0a3675;
+  background-color: #374548;
   display: table;
   position: absolute;
   left: -100%;
@@ -4061,7 +3861,7 @@ header > section.masthead ~ nav li > ul + a:after {
   width: 0;
   height: 0;
   position: absolute;
-  border-top: 0.5rem solid #8ab5f5;
+  border-top: 0.5rem solid #b7c5c8;
   border-left: 0.25rem solid transparent;
   border-right: 0.25rem solid transparent;
   bottom: 0;
@@ -4080,7 +3880,7 @@ header > section.masthead ~ nav li > ul + a:after {
   }
   /* line 53, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
   header > section.masthead ~ nav li > ul div + li {
-    border-top: 1px solid #082b5d;
+    border-top: 1px solid #2c3739;
   }
   /* line 55, ../sass/molecules/_header__section__.masthead__nav__li__ul.scss */
   header > section.masthead ~ nav li > ul + a:after {
@@ -4091,15 +3891,15 @@ header > section.masthead ~ nav li > ul + a:after {
   }
 }
 
-/* line 1, ../sass/molecules/_header__.slide-toggle.scss */
+/* line 2, ../sass/molecules/_header__.slide-toggle.scss */
 .slide-toggle {
   float: left;
-  height: 0.4rem;
+  height: 7px;
   width: 2rem;
   cursor: pointer;
   z-index: 1;
   display: none;
-  background-color: #8ab5f5;
+  background-color: #b7c5c8;
   margin: auto;
   position: fixed;
   right: 1rem;
@@ -4132,28 +3932,28 @@ header > section.masthead ~ nav li > ul + a:after {
   	*/
 }
 @media only screen and (max-width: 1024px) {
-  /* line 1, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 2, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle {
     display: block;
   }
 }
-/* line 23, ../sass/molecules/_header__.slide-toggle.scss */
+/* line 24, ../sass/molecules/_header__.slide-toggle.scss */
 .slide-toggle:before {
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   content: "";
   display: block;
-  height: 0.4rem;
+  height: 7px;
   width: 2rem;
-  background-color: #8ab5f5;
+  background-color: #b7c5c8;
   position: absolute;
   bottom: calc(0.8rem - 2px);
-  -webkit-transform-origin: 100% 0%;
-  -moz-transform-origin: 100% 0%;
-  -o-transform-origin: 100% 0%;
-  -ms-transform-origin: 100% 0%;
-  transform-origin: 100% 0%;
+  -webkit-transform-origin: 90% 0%;
+  -moz-transform-origin: 90% 0%;
+  -o-transform-origin: 90% 0%;
+  -ms-transform-origin: 90% 0%;
+  transform-origin: 90% 0%;
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -4168,18 +3968,18 @@ header > section.masthead ~ nav li > ul + a:after {
   	border-color: tint($on-background,5%) shade($on-background,5%) shade($on-background,5%) tint($on-background,5%);}}
   	*/
 }
-/* line 35, ../sass/molecules/_header__.slide-toggle.scss */
+/* line 36, ../sass/molecules/_header__.slide-toggle.scss */
 .slide-toggle:after {
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   content: "";
   display: block;
-  height: 0.4rem;
+  height: 7px;
   width: 2rem;
-  background-color: #8ab5f5;
+  background-color: #b7c5c8;
   position: absolute;
-  top: 0.8rem;
+  top: 0.74074rem;
   -webkit-transform-origin: 100% 0%;
   -moz-transform-origin: 100% 0%;
   -o-transform-origin: 100% 0%;
@@ -4200,7 +4000,7 @@ header > section.masthead ~ nav li > ul + a:after {
   	*/
 }
 
-/* line 51, ../sass/molecules/_header__.slide-toggle.scss */
+/* line 52, ../sass/molecules/_header__.slide-toggle.scss */
 .slide-toggle,
 .slide-toggle:active,
 .slide-toggle:focus {
@@ -4208,30 +4008,34 @@ header > section.masthead ~ nav li > ul + a:after {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 57, ../sass/molecules/_header__.slide-toggle.scss */
+/* line 58, ../sass/molecules/_header__.slide-toggle.scss */
 .slide-checkbox {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 /* line 62, ../sass/molecules/_header__.slide-toggle.scss */
-.slide-checkbox ~ main, .slide-checkbox ~ header {
+.slide-checkbox ~ main {
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   right: 0;
 }
-/* line 66, ../sass/molecules/_header__.slide-toggle.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 62, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox ~ main {
+    transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -webkit-transition: all 0s ease-in-out;
+  }
+}
+/* line 69, ../sass/molecules/_header__.slide-toggle.scss */
 .slide-checkbox ~ main {
   position: relative;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 71, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox ~ header > nav {
-    margin-top: -3rem;
-  }
-  /* line 82, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ header > nav {
+  /* line 75, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ header > nav, .slide-checkbox.activated ~ header > nav {
     right: 0;
     -webkit-transform: translateY(0) scale3d(1, 1, 1);
     -moz-transform: translateY(0) scale3d(1, 1, 1);
@@ -4241,86 +4045,68 @@ header > section.masthead ~ nav li > ul + a:after {
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 128px) {
-  /* line 75, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ header {
-    margin-left: -100%;
-  }
-}
-@media only screen and (max-width: 1024px) and (min-width: 384px) {
-  /* line 75, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ header {
-    margin-left: -50%;
-  }
-}
-@media only screen and (max-width: 1024px) and (min-width: 640px) {
-  /* line 75, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ header {
-    margin-left: -33%;
-  }
-}
-@media only screen and (max-width: 1024px) and (min-width: 128px) {
-  /* line 87, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ main {
+  /* line 80, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ main, .slide-checkbox.activated ~ main {
     right: 100%;
   }
-  /* line 90, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ main > nav {
+  /* line 83, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ main > nav, .slide-checkbox.activated ~ main > nav {
     margin-left: -100%;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 384px) {
-  /* line 87, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ main {
+  /* line 80, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ main, .slide-checkbox.activated ~ main {
     right: 50%;
   }
-  /* line 94, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ main > nav {
+  /* line 87, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ main > nav, .slide-checkbox.activated ~ main > nav {
     margin-left: -50%;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 640px) {
-  /* line 87, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ main {
+  /* line 80, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ main, .slide-checkbox.activated ~ main {
     right: 33%;
   }
-  /* line 98, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ main > nav {
+  /* line 91, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ main > nav, .slide-checkbox.activated ~ main > nav {
     margin-left: -33%;
   }
 }
 
 @media only screen and (min-width: 128px) {
-  /* line 105, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 98, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav {
     width: 100%;
   }
 }
 @media only screen and (min-width: 384px) {
-  /* line 105, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 98, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav {
     width: 50%;
   }
 }
 @media only screen and (min-width: 640px) {
-  /* line 105, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 98, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav {
     width: 33%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 105, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 98, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav {
     width: auto;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 105, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 98, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav {
     position: fixed;
     right: -100%;
     height: 100%;
     top: 3rem;
-    background-color: #0a3675;
+    background-color: #374548;
     border: none;
     border-radius: 2px;
     border-top: 2px solid rgba(0, 0, 0, 0.45);
@@ -4331,45 +4117,47 @@ header > section.masthead ~ nav li > ul + a:after {
     -ms-transition: right 0.4s ease-in-out;
     transition: right 0.4s ease-in-out;
   }
-  /* line 123, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 116, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav ul {
     float: right;
     display: block;
     width: auto;
   }
-  /* line 127, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 120, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav ul li {
     float: right;
     width: 100%;
     display: table;
   }
-  /* line 131, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 124, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav ul li ul {
     width: 100%;
     left: -100%;
     top: 0;
   }
-  /* line 136, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 129, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav ul li a {
     display: table-cell;
     vertical-align: middle;
     /*placeholder*/
   }
-  /* line 144, ../sass/molecules/_header__.slide-toggle.scss */
+  /* line 137, ../sass/molecules/_header__.slide-toggle.scss */
   .slide-toggle ~ header > nav address {
     float: left;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 146, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ .slide-toggle {
+  /* line 140, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ .slide-toggle,
+  .slide-checkbox.activated ~ .slide-toggle {
     background: transparent;
     box-shadow: none;
     border: none;
   }
-  /* line 159, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ .slide-toggle:before {
+  /* line 145, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ .slide-toggle:before,
+  .slide-checkbox.activated ~ .slide-toggle:before {
     border: none;
     border: none;
     border-radius: 2px;
@@ -4381,10 +4169,11 @@ header > section.masthead ~ nav li > ul + a:after {
     -ms-transform: rotateZ(-45deg) translate(-0.35rem, -0.25rem);
     transform: rotateZ(-45deg) translate(-0.35rem, -0.25rem);
   }
-  /* line 166, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ .slide-toggle:after {
+  /* line 152, ../sass/molecules/_header__.slide-toggle.scss */
+  .slide-checkbox:checked ~ .slide-toggle:after,
+  .slide-checkbox.activated ~ .slide-toggle:after {
     border: none;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
     -webkit-transform: rotateZ(45deg) translate(-0.1rem, 0.1rem);
     -moz-transform: rotateZ(45deg) translate(-0.1rem, 0.1rem);
     -o-transform: rotateZ(45deg) translate(-0.1rem, 0.1rem);
@@ -4392,18 +4181,43 @@ header > section.masthead ~ nav li > ul + a:after {
     transform: rotateZ(45deg) translate(-0.1rem, 0.1rem);
   }
 }
-@media only screen and (max-width: 1024px) and (min-width: 384px) {
-  /* line 146, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ .slide-toggle {
-    left: auto;
-    right: calc(50% + 1rem);
+
+/* line 1, ../sass/molecules/_main__article.scss */
+main > article {
+  padding: 0 0.5rem;
+}
+@media only screen and (min-width: 256px) {
+  /* line 1, ../sass/molecules/_main__article.scss */
+  main > article {
+    padding: 0 2rem;
+    max-width: 20rem;
   }
 }
-@media only screen and (max-width: 1024px) and (min-width: 640px) {
-  /* line 146, ../sass/molecules/_header__.slide-toggle.scss */
-  .slide-checkbox:checked ~ .slide-toggle {
-    left: auto;
-    right: calc(33% + 1rem);
+@media only screen and (min-width: 384px) {
+  /* line 1, ../sass/molecules/_main__article.scss */
+  main > article {
+    padding: 0 3rem;
+    max-width: 30rem;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 1, ../sass/molecules/_main__article.scss */
+  main > article {
+    padding: 0 4rem;
+    max-width: 48rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/molecules/_main__article.scss */
+  main > article {
+    padding: 0 5rem;
+    max-width: 60em;
+  }
+}
+@media only screen and (min-width: 1664px) {
+  /* line 1, ../sass/molecules/_main__article.scss */
+  main > article {
+    padding: 0 6rem;
   }
 }
 
@@ -4413,11 +4227,17 @@ main > nav {
   width: 256px;
   padding-left: 1rem;
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 100%;
+  z-index: 9999;
+  background-color: #212a2b;
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
-  background-color: #062046;
+}
+/* line 11, ../sass/molecules/_main__nav.scss */
+main > nav:hover:nth-of-type(n) {
+  opacity: 1;
 }
 @media only screen and (min-width: 1024px) {
   /* line 1, ../sass/molecules/_main__nav.scss */
@@ -4425,44 +4245,65 @@ main > nav {
     margin-top: -2rem;
   }
 }
-/* line 11, ../sass/molecules/_main__nav.scss */
-main > nav:hover:nth-of-type(n) {
-  opacity: 1;
+@media only screen and (max-width: 1024px) {
+  /* line 1, ../sass/molecules/_main__nav.scss */
+  main > nav {
+    display: none;
+  }
 }
-/* line 14, ../sass/molecules/_main__nav.scss */
-main > nav ol {
+/* line 18, ../sass/molecules/_main__nav.scss */
+main > nav li > ol,
+main > nav li > ul {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  border-left: 1px solid transparent;
+  box-sizing: content-box;
+}
+/* line 23, ../sass/molecules/_main__nav.scss */
+main > nav li > ol > li > a,
+main > nav li > ul > li > a {
+  padding-left: 1rem;
+  margin-left: -1rem;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+/* line 30, ../sass/molecules/_main__nav.scss */
+main > nav li > ul {
+  list-style-type: none;
+}
+/* line 33, ../sass/molecules/_main__nav.scss */
+main > nav li > a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+/* line 38, ../sass/molecules/_main__nav.scss */
+main > nav ol,
+main > nav ul {
   padding-left: 1.5rem;
 }
-/* line 16, ../sass/molecules/_main__nav.scss */
-main > nav ol li {
+/* line 41, ../sass/molecules/_main__nav.scss */
+main > nav ol > ol,
+main > nav ol ul,
+main > nav ul > ol,
+main > nav ul ul {
+  padding-left: 1rem;
+}
+/* line 44, ../sass/molecules/_main__nav.scss */
+main > nav ol li,
+main > nav ul li {
   margin-bottom: 1rem;
+  margin-left: -1px;
 }
-@media only screen and (min-width: 256px) {
-  /* line 19, ../sass/molecules/_main__nav.scss */
-  main > nav ~ article, main > nav ~ section {
-    /*these are all broken*/
-    margin-left: 17rem;
-    margin-right: 1rem;
-  }
-}
-@media only screen and (min-width: 384px) {
-  /* line 19, ../sass/molecules/_main__nav.scss */
-  main > nav ~ article, main > nav ~ section {
-    margin-left: 16rem + 2rem;
-    margin-right: 2rem;
-  }
-}
-@media only screen and (min-width: 640px) {
-  /* line 19, ../sass/molecules/_main__nav.scss */
-  main > nav ~ article, main > nav ~ section {
-    margin-left: 16rem + 3rem;
-    margin-right: 3rem;
-  }
+/* line 48, ../sass/molecules/_main__nav.scss */
+main > nav ~ article, main > nav ~ section {
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 19, ../sass/molecules/_main__nav.scss */
+  /* line 48, ../sass/molecules/_main__nav.scss */
   main > nav ~ article, main > nav ~ section {
-    margin-left: 16rem + 4rem;
+    margin-left: 24rem;
     margin-right: 4rem;
   }
 }
@@ -4478,7 +4319,7 @@ p > code {
 #swatches {
   width: 100%;
   display: block;
-  background-color: #062046;
+  background-color: #212a2b;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -4502,7 +4343,7 @@ p > code {
 
 /* line 26, ../sass/molecules/_styleguide.scss */
 .colors {
-  background-color: #0a3675;
+  background-color: #374548;
   margin-top: 1rem;
   padding: 1rem;
   border: none;
@@ -4518,7 +4359,7 @@ p > code {
 /* line 36, ../sass/molecules/_styleguide.scss */
 p#color-description {
   width: 100%;
-  content: "Color scheme based on #8ab5f5";
+  content: "Color scheme based on #b7c5c8";
 }
 
 /* line 40, ../sass/molecules/_styleguide.scss */
@@ -4544,7 +4385,7 @@ p#musical-typography + div.row {
 
 /* line 58, ../sass/molecules/_styleguide.scss */
 #primary-swatch .swatch {
-  background-color: #8ab5f5;
+  background-color: #b7c5c8;
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -4561,8 +4402,8 @@ p#musical-typography + div.row {
 }
 /* line 62, ../sass/molecules/_styleguide.scss */
 #primary-swatch figcaption {
-  color: #8ab5f5;
-  background-color: #062046;
+  color: #b7c5c8;
+  background-color: #212a2b;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
@@ -4570,7 +4411,7 @@ p#musical-typography + div.row {
 
 /* line 69, ../sass/molecules/_styleguide.scss */
 #secondary-swatch .swatch {
-  background-color: #8ab5f5;
+  background-color: #e6e7b3;
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -4587,8 +4428,8 @@ p#musical-typography + div.row {
 }
 /* line 73, ../sass/molecules/_styleguide.scss */
 #secondary-swatch figcaption {
-  color: #8ab5f5;
-  background-color: #062046;
+  color: #e6e7b3;
+  background-color: #212a2b;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
@@ -4596,7 +4437,7 @@ p#musical-typography + div.row {
 
 /* line 80, ../sass/molecules/_styleguide.scss */
 #tertiary-swatch .swatch {
-  background-color: #3371cc;
+  background-color: #4c726d;
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -4613,8 +4454,8 @@ p#musical-typography + div.row {
 }
 /* line 84, ../sass/molecules/_styleguide.scss */
 #tertiary-swatch figcaption {
-  color: #3371cc;
-  background-color: #062046;
+  color: #4c726d;
+  background-color: #212a2b;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);
@@ -4622,7 +4463,7 @@ p#musical-typography + div.row {
 
 /* line 91, ../sass/molecules/_styleguide.scss */
 #accent-swatch .swatch {
-  background-color: #4b79bd;
+  background-color: #d89e27;
   border: none;
   border-radius: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
@@ -4639,8 +4480,8 @@ p#musical-typography + div.row {
 }
 /* line 95, ../sass/molecules/_styleguide.scss */
 #accent-swatch figcaption {
-  color: #4b79bd;
-  background-color: #062046;
+  color: #d89e27;
+  background-color: #212a2b;
   border: none;
   border-radius: 2px;
   border-top: 2px solid rgba(0, 0, 0, 0.45);

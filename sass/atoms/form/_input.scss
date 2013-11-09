@@ -94,11 +94,13 @@ input{
 			content:"";			
 			padding: 0.5rem 0 0rem 0.15rem;
 			@include object($color-accent);
+			background: radial-gradient($color-drawer 55%, $color-accent 100%);
 			border-radius: 50%;}
 		&:checked:before{
 			box-shadow: none;
 			border: none;
-			@include box-shadow-inset($color-accent);
+			@include box-shadow-inset($color-drawer);
+			background: radial-gradient($color-drawer 70%, $color-accent 100%);
 			border-radius: 50%;}
 		&:after{
 			content: attr(name);

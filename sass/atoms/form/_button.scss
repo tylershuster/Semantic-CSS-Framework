@@ -15,6 +15,9 @@ input[type="button"]{
 		border-bottom-right-radius: 0;
 		margin-right: #{($unit__border-radius + 1px) * -1};
 	}
+	>a{
+		text-decoration: none;
+	}
 	& + button{
 		border-radius: 0;
 		&:last-of-type{

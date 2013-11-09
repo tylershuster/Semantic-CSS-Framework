@@ -79,16 +79,22 @@
 					<li><a href="semantics.php">Semantics</a></li>
 					<li><a href="typography.php">Typography</a></li>
 					<li><a href="header.php">Header</a></li>
+					<div></div>
 					<li>
-						<a href="elements.php">Elements</a>
+						<a href="reference.php">Reference</a>
 						<ul>
-							<li><a href="elements.php#article">Article</a></li>
-							<li><a href="elements.php#forms">Forms</a></li>
-							<li><a href="elements.php#patterns">Design Patterns</a></li>
+							<li><a href="reference.php#typography">typography</a></li>
+							<li><a href="reference.php#grid">grid</a></li>
+							<li><a href="reference.php#article">article</a></li>
+							<li><a href="reference.php#header">header</a></li>
+							<li><a href="reference.php#forms">forms</a></li>
+							<li><a href="reference.php#atoms">atoms</a></li>
+							<li><a href="reference.php#molecules">molecules</a></li>
+							<li><a href="reference.php#cells">cells</a></li>
+							<li><a href="reference.php#organs">organs</a></li>
+							<li><a href="reference.php#organisms">organisms</a></li>
 						</ul>
 					</li>
-					<div></div>
-					<li><a href="reference.php">Reference</a></li>
 			</ul>
 		</nav>
 	</header>

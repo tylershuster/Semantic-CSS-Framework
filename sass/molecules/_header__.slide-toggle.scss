@@ -1,6 +1,7 @@
+$toggle-bar-height: ($unit__nav--height/1rem) * 3.2px;
 .slide-toggle {
 	float: left;
-	height: #{$unit__nav--height / 5};
+	height: ceil($toggle-bar-height);
 	width: $unit__nav--height;
 	cursor: pointer;	
 	z-index: 1;
@@ -24,23 +25,23 @@
 		@include transition;
 		content: "";	
 		display: block;	
-		height: #{$unit__nav--height / 5};	
+		height: ceil($toggle-bar-height);	
 		width: $unit__nav--height;
 		background-color: $color-primary;		
 		position: absolute;
 		bottom: calc(#{$unit__nav--height / 2.5} - #{$unit__shadow-size});
-		@include prefixer(transform-origin, 100% 0%);
+		@include prefixer(transform-origin, 90% 0%);
 		@include box-shadow($color-primary);
 	}
 	&:after {
 		@include transition;
 		content: "";	
 		display: block;	
-		height: #{$unit__nav--height / 5};	
+		height: ceil($toggle-bar-height);	
 		width: $unit__nav--height;
 		background-color: $color-primary;		
 		position: absolute;
-		top: #{$unit__nav--height / 2.5};
+		top: #{$unit__nav--height / 2.7};
 		@include prefixer(transform-origin, 100% 0%);
 		@include box-shadow($color-primary);
 	}
@@ -58,27 +59,19 @@
 	position: absolute;
 	top: -9999px;
 	left: -9999px;
-	& ~ main,
-	& ~ header{
-		@include transition;		
+	& ~ main{
+		@include transition;
+		@include media-from($length-mobile-cutoff){
+			@include transition(0s);
+		}
 		right: 0;
 	}
 	& ~ main{
-		position: relative;
-
-	}
+		position: relative;}
 	@include media-to($length-mobile-cutoff){
-	& ~ header>nav{
-		margin-top: #{$unit__header--height * -1};
-	}		
-		&:checked {			
-			& ~ header{
-				@include media-from($unit__base-x-one){
-					margin-left: -100%;}
-				@include media-from($unit__base-x-three){
-					margin-left: -50%;}
-				@include media-from($unit__base-x-five){
-					margin-left: -33%;}
+		&:checked,
+		&.activated {			
+			& ~ header{				
 				&>nav{
 					right: 0;
 					@include prefixer(transform, translateY(0) scale3d(1, 1, 1));
@@ -143,19 +136,12 @@
 		}
 		address{
 			float: left;}}}
-.slide-checkbox:checked ~ .slide-toggle {	
+.slide-checkbox:checked ~ .slide-toggle,
+.slide-checkbox.activated ~ .slide-toggle {	
 	@include media-to($length-mobile-cutoff){
 		background: transparent;
 		box-shadow: none;
-		border: none;
-		@include media-from($unit__base-x-one){
-			}
-		@include media-from($unit__base-x-three){
-			left: auto;
-			right: calc(50% + #{$unit__gutter--width});}
-		@include media-from($unit__base-x-five){
-			left: auto;
-			right: calc(33% + #{$unit__gutter--width});}
+		border: none;		
 		&:before{
 			//width: $unit__nav--height * 1.414;
 			border: none;
@@ -166,7 +152,7 @@
 		&:after{
 			//width: $unit__nav--height * 1.414;
 			border: none;	
-			box-shadow: $unit__shadow-size $unit__shadow-size $unit__shadow-size rgba(0, 0, 0, $unit__shadow-opacity);		
+			box-shadow: 0 $unit__shadow-size $unit__shadow-size rgba(0, 0, 0, $unit__shadow-opacity);		
 			@include prefixer(transform, rotateZ(45deg) translate(-#{$unit__nav--height / 20}, #{$unit__nav--height / 20}));
 		}	
 		

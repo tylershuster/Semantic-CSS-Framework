@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   version="1.0"
+   sodipodi:docbase="/Users/maxgoldstein/Desktop/Important Files"
+   sodipodi:docname="Stylized atom.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="20.076606"
+     inkscape:cy="269.91111"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     width="100px"
+     height="100px"
+     gridempspacing="10"
+     showgrid="true"
+     inkscape:grid-points="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     gridspacingy="1px"
+     gridspacingx="1px"
+     inkscape:window-width="1440"
+     inkscape:window-height="787"
+     inkscape:window-x="0"
+     inkscape:window-y="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(7.5602055e-7,400)">
+    <g
+       id="g2220">
+      <path
+         sodipodi:nodetypes="ccsccccc"
+         id="path6143"
+         d="M 0.028259599,-152.0831 C -0.58920393,-136.14957 8.9954292,-123.73112 20.612999,-114.06656 C 33.409369,-104.56045 51.322936,-96.032551 73.471607,-89.069388 C 117.76897,-75.143054 178.64436,-66.676086 245.58757,-66.676086 L 250.01415,-66.676086 L 250.01415,-68.759184 C 115.47942,-68.759176 16.693042,-107.23818 16.693042,-152.0831 L 0.028259599,-152.0831 z "
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <use
+         height="100"
+         width="100"
+         transform="matrix(1,0,0,-1,0,-300)"
+         id="use9097"
+         xlink:href="#path6143"
+         y="0"
+         x="0"
+         style="fill:#000000" />
+      <use
+         height="100"
+         width="100"
+         transform="matrix(-1,0,0,1,500,0)"
+         id="use9099"
+         xlink:href="#path6143"
+         y="0"
+         x="0"
+         style="fill:#000000" />
+      <use
+         height="100"
+         width="100"
+         transform="matrix(-1,0,0,-1,500,-300)"
+         id="use9101"
+         xlink:href="#path6143"
+         y="0"
+         x="0"
+         style="fill:#000000" />
+    </g>
+    <g
+       transform="matrix(5.8918906,5.8918906,-5.8918906,5.8918906,250.01001,-739.17904)"
+       style="fill:#000000"
+       id="use9119">
+      <use
+         style="fill:#000000"
+         x="0"
+         y="0"
+         xlink:href="#path6143"
+         id="use2190"
+         transform="matrix(1,0,0,-1,0,100)"
+         width="100"
+         height="100" />
+      <use
+         style="fill:#000000"
+         x="0"
+         y="0"
+         xlink:href="#path6143"
+         id="use2192"
+         transform="matrix(-1,0,0,1,99.996604,0)"
+         width="100"
+         height="100" />
+      <use
+         style="fill:#000000"
+         x="0"
+         y="0"
+         xlink:href="#path6143"
+         id="use2194"
+         transform="matrix(-1,0,0,-1,99.996604,100)"
+         width="100"
+         height="100" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path9131"
+       sodipodi:cx="50"
+       sodipodi:cy="50"
+       sodipodi:rx="4"
+       sodipodi:ry="4"
+       d="M 54 50 A 4 4 0 1 1  46,50 A 4 4 0 1 1  54 50 z"
+       transform="matrix(12.498587,0,0,12.498587,-374.92935,-774.92935)" />
+    <g
+       id="g2226"
+       transform="matrix(0.7071068,-0.7071068,0.7071068,0.7071068,179.28932,132.84271)">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 0.028259599,-152.0831 C -0.58920393,-136.14957 8.9954292,-123.73112 20.612999,-114.06656 C 33.409369,-104.56045 51.322936,-96.032551 73.471607,-89.069388 C 117.76897,-75.143054 178.64436,-66.676086 245.58757,-66.676086 L 250.01415,-66.676086 L 250.01415,-68.759184 C 115.47942,-68.759176 16.693042,-107.23818 16.693042,-152.0831 L 0.028259599,-152.0831 z "
+         id="path2228"
+         sodipodi:nodetypes="ccsccccc" />
+      <use
+         style="fill:#000000"
+         x="0"
+         y="0"
+         xlink:href="#path6143"
+         id="use2230"
+         transform="matrix(1,0,0,-1,0,-300)"
+         width="100"
+         height="100" />
+      <use
+         style="fill:#000000"
+         x="0"
+         y="0"
+         xlink:href="#path6143"
+         id="use2232"
+         transform="matrix(-1,0,0,1,500,0)"
+         width="100"
+         height="100" />
+      <use
+         style="fill:#000000"
+         x="0"
+         y="0"
+         xlink:href="#path6143"
+         id="use2234"
+         transform="matrix(-1,0,0,-1,500,-300)"
+         width="100"
+         height="100" />
+    </g>
+    <g
+       id="g2236"
+       transform="matrix(0.7071068,0.7071068,-0.7071068,0.7071068,-32.842712,-220.71068)">
+      <path
+         sodipodi:nodetypes="ccsccccc"
+         id="path2238"
+         d="M 0.028259599,-152.0831 C -0.58920393,-136.14957 8.9954292,-123.73112 20.612999,-114.06656 C 33.409369,-104.56045 51.322936,-96.032551 73.471607,-89.069388 C 117.76897,-75.143054 178.64436,-66.676086 245.58757,-66.676086 L 250.01415,-66.676086 L 250.01415,-68.759184 C 115.47942,-68.759176 16.693042,-107.23818 16.693042,-152.0831 L 0.028259599,-152.0831 z "
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <use
+         height="100"
+         width="100"
+         transform="matrix(1,0,0,-1,0,-300)"
+         id="use2240"
+         xlink:href="#path6143"
+         y="0"
+         x="0"
+         style="fill:#000000" />
+      <use
+         height="100"
+         width="100"
+         transform="matrix(-1,0,0,1,500,0)"
+         id="use2242"
+         xlink:href="#path6143"
+         y="0"
+         x="0"
+         style="fill:#000000" />
+      <use
+         height="100"
+         width="100"
+         transform="matrix(-1,0,0,-1,500,-300)"
+         id="use2244"
+         xlink:href="#path6143"
+         y="0"
+         x="0"
+         style="fill:#000000" />
+    </g>
+    <g
+       id="g2246"
+       transform="matrix(0,1,-1,0,100,-400)">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 0.028259599,-152.0831 C -0.58920393,-136.14957 8.9954292,-123.73112 20.612999,-114.06656 C 33.409369,-104.56045 51.322936,-96.032551 73.471607,-89.069388 C 117.76897,-75.143054 178.64436,-66.676086 245.58757,-66.676086 L 250.01415,-66.676086 L 250.01415,-68.759184 C 115.47942,-68.759176 16.693042,-107.23818 16.693042,-152.0831 L 0.028259599,-152.0831 z "
+         id="path2248"
+         sodipodi:nodetypes="ccsccccc" />
+      <use
+         style="fill:#000000"
+         x="0"
+         y="0"
+         xlink:href="#path6143"
+         id="use2250"
+         transform="matrix(1,0,0,-1,0,-300)"
+         width="100"
+         height="100" />
+      <use
+         style="fill:#000000"
+         x="0"
+         y="0"
+         xlink:href="#path6143"
+         id="use2252"
+         transform="matrix(-1,0,0,1,500,0)"
+         width="100"
+         height="100" />
+      <use
+         style="fill:#000000"
+         x="0"
+         y="0"
+         xlink:href="#path6143"
+         id="use2254"
+         transform="matrix(-1,0,0,-1,500,-300)"
+         width="100"
+         height="100" />
+    </g>
+  </g>
+</svg>

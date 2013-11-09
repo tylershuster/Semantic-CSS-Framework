@@ -1,0 +1,17 @@
+main>article{
+	padding: 0 0.5rem;
+	@include media-from($unit__base-x-two){
+		padding: 0 2rem;
+		max-width: #{($unit__base-x-two * (1rem / 16)) + 4rem};}
+	@include media-from($unit__base-x-three){
+		padding: 0 3rem;
+		max-width: #{($unit__base-x-three * (1rem / 16)) + 6rem};}
+	@include media-from($unit__base-x-five){
+		padding: 0 4rem;
+		max-width: #{($unit__base-x-five * (1rem / 16)) + 8rem};}
+	@include media-from($unit__base-x-eight){
+		padding: 0 5rem;	
+		max-width: $max-width;}
+	@include media-from($unit__base-x-thirteen){
+		padding: 0 6rem;}
+}

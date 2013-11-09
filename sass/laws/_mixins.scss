@@ -106,9 +106,12 @@ body {
 		
 		@if $tone == black{
 			box-shadow: none;}
-		@else{
-			//box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;
-			}}
+		@else if $tone == white{
+			border-left: 1px solid rgba(0,0,0, $unit__shadow-opacity / 2);
+			border-right: 1px solid rgba(0,0,0, $unit__shadow-opacity / 2);
+			border-bottom: 1px solid rgba(0,0,0, $unit__shadow-opacity / 4);
+		}
+	}
 	@else if $skeu == cartoon{
 		border: $unit__shadow-size solid;
 		border-color: shade($on-background,15%) tint($on-background,15%) tint($on-background,15%) shade($on-background,15%);
@@ -128,10 +131,10 @@ body {
    		-moz-background-clip: text;
 		background-clip: text;}
 
-@mixin transition{
-	transition: all $length__transition ease-in-out;
-	-moz-transition: all $length__transition ease-in-out;
-	-webkit-transition: all $length__transition ease-in-out;}
+@mixin transition($length: $length__transition){
+	transition: all $length ease-in-out;
+	-moz-transition: all $length ease-in-out;
+	-webkit-transition: all $length ease-in-out;}
 
 
 @function typography($element,$attribute){
@@ -754,7 +757,6 @@ body {
 	margin: 0;}
 
 @mixin opacity($trans) {
-	filter: alpha(opactiy=($trans * 100));
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
 	-moz-opacity: $trans;
 	-khtml-opacity: $trans;
@@ -778,6 +780,12 @@ body {
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 @mixin re-base($side,$amount){
+	$otherSide: null;
+	@if $side == left {
+		$otherSide: "right";}
+	@else {
+		$otherSide: "left";}
 	#{$side}: #{$amount};
-	margin-#{$side}: #{$amount * -1};}
+	margin-#{$side}: #{$amount * -1};
+	padding-#{$otherSide}: #{$amount + $unit__gutter--width};}
 
