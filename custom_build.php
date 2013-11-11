@@ -1,4 +1,4 @@
-<?php include "phpartials/header.php"; ?>
+<?php $pageTitle = "Custom Build"; include "phpartials/header.php"; ?>
   <main>
 	<form name="my-form" action="https://picni.cc/api/v1/build/" method="post">
   <input type="hidden" name="username" value="herrshuster">

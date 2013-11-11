@@ -1,4 +1,4 @@
-<?php include "phpartials/header.php"; ?>
+<?php $pageTitle = "Header"; include "phpartials/header.php"; ?>
 	<main>
 		<section class="hero">
 			<h1>A Semantic Header</h1>			
@@ -22,6 +22,7 @@
 			<p>The Semantic CSS Framework header is also completely responsive in pure CSS. While it relies on the "<a href="http://css-tricks.com/the-checkbox-hack/">checkbox hack</a>," it is still as browser-compatible as the rest of the framework. On mobile devices, the navigation collapses and a "hamburger" style icon appears in the upper-left corner, as per convention. All functions of header are retained, including nested dropdowns and list divisions.</p>
 		</article>
 	</main>
+	<?php include "phpartials/footer.php"; ?>
 			<script src="javascripts/scripts.js"></script>
 
 </body>

@@ -1,0 +1,14 @@
+&{
+	float: right;
+	height: $unit__header--height;
+	align-items: center;
+	display: flex;
+	a{
+		height: #{$unit__header--height};
+		&,
+		&:before{
+			color: $color-primary;
+			text-decoration: none;
+		}
+	}
+}

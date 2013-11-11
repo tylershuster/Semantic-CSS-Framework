@@ -1,0 +1,26 @@
+&{
+	display: flex;
+	padding: 0 $unit__gutter--width;
+	@include media-from($length-mobile-cutoff){
+		padding: 0 0.5rem;}
+	height: $unit__header--height;
+	align-items: center;
+	position: relative;
+	&:hover{
+		background-color: $color-primary;
+		color: $color-background;	
+		>ul{
+			@include box-shadow($color-drawer);
+			@include prefixer(transform, scale3d(1,1,1));	
+		}
+	}
+	a{
+		text-decoration: none;
+		&:hover{
+			color: $color-background;
+		}
+	}
+	>ul{
+		@import "ul/index";
+	}
+}

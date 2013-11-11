@@ -1,4 +1,4 @@
-<?php include "phpartials/header.php"; ?>
+<?php $pageTitle = "Reference"; include "phpartials/header.php"; ?>
 	<main>
 	<?php include "phpartials/reference/nav.php"; ?>
 
@@ -1156,6 +1156,7 @@
 		</fieldset>
 	</section>
 	</main>
+	<?php include "phpartials/footer.php"; ?>
 		<script src="javascripts/scripts.js"></script>
 
 		<script>

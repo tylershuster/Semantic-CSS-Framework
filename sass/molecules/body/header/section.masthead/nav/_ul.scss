@@ -1,0 +1,105 @@
+&{
+	position: relative;
+	max-width: $max-width;			
+	min-height: #{$unit__nav--height};
+	background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);
+	float: none;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;			
+	padding: 0;
+	list-style: none;
+	display: table;
+	table-layout: fixed;
+	box-sizing: border-box;
+	@include box-shadow($color-drawer);
+	>div{
+		display:none;
+	}
+	div + li{
+		border-top: 1px solid mix($color-background,$color-drawer);
+	}
+	li{		
+		box-sizing: border-box;										
+		table-layout: fixed;	
+		vertical-align: middle;	
+		position: relative;
+		border-radius: $unit__border-radius;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		text-align: left;
+		float: left;
+		width: 100%;
+		display: table-cell;	
+		&:hover{
+			background-color: $color-primary;
+			border: none;
+			ul{
+				@include media-to($unit__base-x-eight){
+					left: 100%;}
+				z-index: 999;
+				width: 110%;
+				@include box-shadow($color-drawer);
+				li{
+					margin-bottom: 0;
+				}
+			}
+			>a{
+				&,
+				&:hover{
+				color: $color-background;
+				}
+				&:after{
+					left: calc(100% + 1.2rem);				
+					border-top: 0.75rem solid $color-drawer;
+					@include prefixer(transform, rotate(-90deg));
+				}
+			}
+		}
+		ul{
+			@include media-to($unit__base-x-eight){
+					left: -100%;
+			}
+			& + a:after{
+				bottom: 0;
+				top: 0;
+				margin: auto;
+				left: calc(100% + 0.2rem);
+			}
+		}
+		>a{									
+			text-decoration: none;
+			width: 100%;
+			display: table-cell;
+		}
+	}
+	@include media-to($length-mobile-cutoff){	
+		display: block;
+		float: left;				
+		top: 0;
+		background-color: $color-drawer;	
+	}
+	@include media-from($unit__base-x-eight){
+		>ul{
+			border: 0;
+			box-shadow: none;
+			li{
+				width: auto;
+				text-align: center;
+				float: none;
+				&:hover{
+					ul{
+						width: 100%;
+					}
+				}
+				a{
+					display: block;
+				}
+			}
+			>div + li{
+				border-top: none;
+				border-left: 1px solid mix($color-background,$color-drawer);
+			}
+		}
+	}
+}

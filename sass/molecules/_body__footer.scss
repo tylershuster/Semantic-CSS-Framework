@@ -1,0 +1,9 @@
+footer{
+	display: block;
+	z-index: 99999;
+	min-height: $unit__header--height;
+	position: fixed;
+	bottom: 0;
+	background-color: $color-background;
+	width: 100%;
+}

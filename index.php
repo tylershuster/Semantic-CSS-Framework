@@ -1,18 +1,16 @@
-<?php include "phpartials/header.php"; ?>
+<?php $pageTitle = "Home"; include "phpartials/header.php"; ?>
 	<main>
-		<article>
-			<header class="color-drawer inset">
-				<figure>
-					<h1 class="uber">The Semantic CSS Framework</h1>
-					<h2>A popular opinionated CSS framework for rapid style development</h2>
-					<h3>Current Version: alpha</h3>
-					<div>
-						<button><a href="custom_build.html">Custom Build</a></button>
-						<button><a href="https://github.com/herrshuster/Semantic-CSS-Framework">GitHub</a></button>
-					</div>					
-				</figure>				
-			</header>
-		</article>
+		<header class="color-drawer inset">
+			<figure>
+				<h1 class="uber">The Semantic CSS Framework</h1>
+				<h2>A popular opinionated CSS framework for rapid style development</h2>
+				<h3>Current Version: alpha</h3>
+				<div>
+					<button><a href="custom_build.html">Custom Build</a></button>
+					<button><a href="https://github.com/herrshuster/Semantic-CSS-Framework">GitHub</a></button>
+				</div>			
+			</figure>			
+		</header>
 		<table class="feature">
 		<tbody>
 			<tr>
@@ -66,6 +64,7 @@
 			<p>The idea that typographical ratios can be calculated from musical ratios is an old one. The Semantic CSS Framework makes those ratios easily accessible. You can either compile a stylesheet with a specific ratio or use the classy.css file to apply classes like "e augmin7" to elements to style the contained ratios. Examples will be below:</p>
 		</article>		
 	</main>
+	<?php include "phpartials/footer.php"; ?>
 </body>
 		<script src="javascripts/scripts.js"></script>
 

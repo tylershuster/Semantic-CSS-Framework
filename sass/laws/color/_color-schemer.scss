@@ -118,16 +118,17 @@ $color-drawer: color-drawerer($tone) !default;
 	background-repeat: no-repeat;}
 $color-input-background: $color-drawer !default;
 $color__header--h1: $color-primary !default;
-
-$color-infrared: set-lightness(set-hue($color-primary, 352.5), 50%);
-$color-red: set-lightness(set-hue($color-primary, 0), 50%);
-$color-orange: set-lightness(set-hue($color-primary, 30), 50%);
-$color-yellow: set-lightness(set-hue($color-primary, 60), 50%);
-$color-green: set-lightness(set-hue($color-primary, 120), 50%);
-$color-blue: set-lightness(set-hue($color-primary, 240), 50%);
-$color-indigo: set-lightness(set-hue($color-primary, 255), 50%);
-$color-violet: set-lightness(set-hue($color-primary, 270), 50%);
-$color-ultraviolet: set-lightness(set-hue($color-primary, 337.5), 50%);
+$colorLightness: 80%;
+$colorSaturation: 80;
+$color-infrared: set-saturation(set-lightness(set-hue($color-primary, 352.5), $colorLightness), $colorSaturation);
+$color-red: set-saturation(set-lightness(set-hue($color-primary, 0), $colorLightness), $colorSaturation);
+$color-orange: set-saturation(set-lightness(set-hue($color-primary, 30), $colorLightness), $colorSaturation);
+$color-yellow: set-saturation(set-lightness(set-hue($color-primary, 60), $colorLightness), $colorSaturation);
+$color-green: set-saturation(set-lightness(set-hue($color-primary, 120), $colorLightness), $colorSaturation);
+$color-blue: set-saturation(set-lightness(set-hue($color-primary, 240), $colorLightness), $colorSaturation);
+$color-indigo: set-saturation(set-lightness(set-hue($color-primary, 255), $colorLightness), $colorSaturation);
+$color-violet: set-saturation(set-lightness(set-hue($color-primary, 270), $colorLightness), $colorSaturation);
+$color-ultraviolet: set-saturation(set-lightness(set-hue($color-primary, 337.5), $colorLightness), $colorSaturation);
 
 .infrared{
 	@include object($color-infrared);}

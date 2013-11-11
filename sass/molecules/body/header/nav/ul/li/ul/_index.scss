@@ -1,0 +1,27 @@
+&{
+	padding: 0;
+	position: absolute;
+	width: auto;
+	min-width: 100%;
+	@include media-to($length-mobile-cutoff){
+		width: 100%;
+		max-height: #{$unit__base-x-two * 1px};
+		overflow-y: scroll;}
+	display: block;
+	right: 0;
+	top: 3rem;
+	background: $color-drawer;
+	@include prefixer(transform, scale3d(1,0,1));
+	@include prefixer(transform-origin, 100% 0%);
+	@include transition(0.1ss);
+	>li{
+		width: 100%;
+		display: table;
+		float: left;
+		>a{
+			display: table-cell;
+			color: $color-text;
+			vertical-align: middle;
+		}
+	}
+}

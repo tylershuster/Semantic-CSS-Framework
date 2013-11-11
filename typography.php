@@ -1,4 +1,4 @@
-<?php include "phpartials/header.php"; ?>
+<?php $pageTitle = "Typography"; include "phpartials/header.php"; ?>
 	<main>
 		<section class="uber hero">
 			<span>
@@ -64,6 +64,7 @@
 			</section>
 		</article>		
 	</main>
+	<?php include "phpartials/footer.php"; ?>
 	
 </body>
 		<script src="javascripts/scripts.js"></script>
