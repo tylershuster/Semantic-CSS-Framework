@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0" />
 	<title>Semantic CSS Framework <?php echo $pageTitle; ?></title>
 	<link rel="stylesheet" href="stylesheets/theme-1.css">
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -81,9 +81,8 @@
 			</address>
 			<ul>
 					<li><a href="index.php">Home</a></li>
-					<li><a href="semantics.php">Semantics</a></li>
-					<li><a href="typography.php">Typography</a></li>
-					<li><a href="header.php">Header</a></li>
+					<li><a href="quickstart.html">Getting Started</a></li>
+					<li><a href="documentation.php">Documentation</a></li>				
 					<div></div>
 					<li>
 						<a href="reference.php">Reference</a>

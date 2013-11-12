@@ -14,12 +14,12 @@ $heading-font: $sans;
 //////////////////
 $color: #283234;
 $scheme: mono;//mono, complement, triad, tetrad, analogic, accented-analogic
-$tone: dark;//white, light, dark, black
+$tone: white;//white, light, dark, black
 //////////////////
 //OTHER
 //////////////////
 $icons: no;
-$skeu: flat;
+$skeu: faux-flat;
 $material: none;
 $grid: off;
 //////////////////
@@ -28,10 +28,10 @@ $grid: off;
 //COLORS
 //http://www.colourlovers.com/palette/161323/A_wizard_did_it.
 //$color-primary: ;
-$color-secondary: #E6E7B3;
+$color-secondary: #D89E27;
 $color-tertiary: #4C726D;
 //$color-text: $color__earth-tone--j;#DBC96D
-$color-accent: #D89E27;
+$color-accent: #E6E7B3 ;
 //$color-background: white;
 //$color-drawer:  #4C726D;
 
@@ -56,7 +56,7 @@ $color-accent: #D89E27;
 //$unit__header--opacity: 1;
 //$unit__shadow-size: 1px;
 //$unit__shadow-blur: 5px;
-//$unit__shadow-opacity: 0.5;
+$unit__shadow-opacity: 0.25;
 //$height-form-input: 1.5rem;
 //$style__animation-ease: ease-in-out;
 //human-font, machine-font, copy-font

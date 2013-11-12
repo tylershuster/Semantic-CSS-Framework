@@ -10,5 +10,20 @@
     "grunt": "~0.4.1",
     "grunt-contrib-sass": "~0.3.0",
     "grunt-contrib-watch": "~0.5.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/herrshuster/Semantic-CSS-Framework/issues"
+  },
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-sass": "~0.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tyler Shuster",
+  "license": "BSD-2-Clause"
 }

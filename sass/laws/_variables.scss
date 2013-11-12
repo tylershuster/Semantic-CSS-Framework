@@ -14,10 +14,10 @@ $max-width: 60em !default;
 $unit__header--height: 3rem !default;
 $unit__nav--height: 2rem !default;
 $length__transition: 0.4s !default;
-$unit__border-radius: 2px !default;
+$unit__border-radius: 0 !default;
 $unit__header--opacity: 1 !default;
-$unit__shadow-size: 2px !default;
-$unit__shadow-blur: 3px !default;
+$unit__shadow-size: 0 !default;
+$unit__shadow-blur: 0 !default;
 $unit__shadow-opacity: 0.45 !default;
 $color__3d--dark: rgba(0,0,0,$unit__shadow-opacity) !default;
 $color__3d--light: rgba(255,255,255,$unit__shadow-opacity) !default;
@@ -84,3 +84,12 @@ $color__earth-tone--m: #45525D;
 $color__earth-tone--n: #7A8491;
 $color__earth-tone--o: #ADB6BB;
 $color__earth-tone--sky: #6B9BE3;
+
+
+$color-primary: null !default;
+$color-secondary: null !default;
+$color-tertiary: null !default;
+$color-text: null !default;
+$color-accent: null !default;
+$color-background: null !default;
+$color-drawer: null !default;

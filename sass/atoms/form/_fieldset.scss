@@ -16,7 +16,7 @@ fieldset{
 	position: relative;
 	padding-top: #{(typography(h5,line-height) * 1rem) + $unit__gutter--width};
 	background-color: $color-background;
-	@include box-shadow-inset($color-background);
+	//@include box-shadow-inset($color-background);
 	>.row{
 		width: 100%;
 		display: block;

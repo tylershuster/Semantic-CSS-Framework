@@ -9,34 +9,37 @@
   <input type="hidden" name="picnicc" value="https://raw.github.com/herrshuster/Semantic-CSS-Framework/gh-pages/picnicc.json">
 
   <!-- And now let's turn our "bits" into field values -->
-  <fieldset class="experimental">
-  <form><label style="background-color: transparent;">
-    Do you need Module 1?
+  <fieldset>
+  <form>
+    <label style="background-color: transparent;">Do you need Module 1?
     <input type="checkbox" name="bits[]" value="style">
-  </label></form>
-  <form><label style="background-color: transparent;">
-    Key
+    </label>
+  </form>
+  <form>
+    <label style="background-color: transparent;">Key
     <input type="text" name="sass[$key]" value="d">
-  </label></form>
-  <form><label style="background-color: transparent;">
-    Quality
+    </label>
+  </form>
+  <form>
+    <label style="background-color: transparent;">Quality
     <input type="text" name="sass[$quality]" value="min6">
-  </label></form>
-  <form><label style="background-color: transparent;">
-    Color
+    </label>
+  </form>
+  <form>
+    <label style="background-color: transparent;">Color
     <input type="text" name="sass[$color]" value="#ff0000">
-  </label></form>
-  <form><label style="background-color: transparent;">
-    Scheme
+    </label>
+  </form>
+  <form>
+    <label style="background-color: transparent;">Scheme
     <input type="text" name="sass[$scheme]" value="mono">
-  </label></form>
-  <form><label style="background-color: transparent;">
-    Tone
+    </label>
+  </form>
+  <form>
+    <label style="background-color: transparent;">Tone
     <input type="text" name="sass[$tone]" value="white">
-  </label></form>
-
- 
-
+    </label>
+  </form>
   <button>Get your custom build</button>
   </fieldset>
 </form>

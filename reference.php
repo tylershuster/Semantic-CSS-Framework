@@ -719,6 +719,14 @@
 			<div class="row">
 				<fieldset class="column">
 					<legend>left</legend>
+					<form>
+						<label>Business Name</label><input type="text">
+					</form>
+					<hr />
+					<form>
+						<label>Your Name</label><input type="text">
+					</form>
+					<hr class="uber">
 					<fieldset>
 						<form>
 							<label>Business Name</label><input type="text">

@@ -1,0 +1,187 @@
+$columns: 18;
+
+@function widther($width){
+	@return $width * 5.75vw;
+}
+
+$one: widther(1);
+$two: widther(2);
+$three: widther(3);
+$four: widther(4);
+$five: widther(5);
+$six: widther(6);
+$seven: widther(7);
+$eight: widther(8);
+$nine: widther(9);
+$ten: widther(10);
+$eleven: widther(11);
+$twelve: widther(12);
+$thirteen: widther(13);
+$fourteen: widther(14);
+$fifteen: widther(15);
+$sixteen: widther(16);
+$seventeen: widther(17);
+$eighteen: widther(18);
+$nineteen: widther(19);
+$twenty: widther(20);
+body{
+	margin: 0.25vw;
+	position: relative;
+}
+table{
+	width: 100%;
+	height: 100%;
+}
+tr{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+td{
+	width: 5vw;
+	height: 5vw;		
+	display: block;
+	background: red;
+	content: attr(id) ":";
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.div{
+	background: orange;
+}
+.embed{
+	background: violet;
+}
+.form{
+	background: green;
+}
+.interactive{
+	background: purple;
+}
+.meta{
+	background: cadetblue;
+}
+.root{
+	background: yellow;
+}
+.section{
+	background: red;
+}
+.span{
+	background: yellow;
+}
+.table{
+	background: brown;
+}
+#html{
+	top: 0;
+	left: 0;
+}
+#blockquote{top:$three;left:$nine;}
+#br{top:$three;left:$seven;}
+#dd{top:$six;left:$nine;}
+#div{top:$one;left:$nine;}
+#dl{top:$four;left:$nine;}
+#dt{top:$five;left:$nine;}
+#figcaption{top:$five;left:$seven;}
+#figure{top:$six;left:$seven;}
+#hr{top:$four;left:$seven;}
+#li{top:$six;left:$eight;}
+#ol{top:$four;left:$eight;}
+#p{top:$three;left:$eight;}
+#pre{top:$two;left:$nine;}
+#ul{top:$five;left:$eight;}
+#img{top:$eight;left:$five;}
+#area{top:$eight;left:$six;}
+#map{top:$eight;left:$seven;}
+#embed{top:$eight;left:$eight;}
+#object{top:$eight;left:$nine;}
+#param{top:$eight;left:$ten;}
+#source{top:$eight;left:$eleven;}
+#iframe{top:$eight;left:$twelve;}
+#canvas{top:$eight;left:$thirteen;}
+#track{top:$eight;left:$fourteen;}
+#audio{top:$eight;left:$fifteen;}
+#video{top:$eight;left:$sixteen;}
+#button{top:$six;left:$eleven;}
+#datalist{top:$four;left:$twelve;}
+#fieldset{top:$one;left:$ten;}
+#form{top:$one;left:$eleven;}
+#input{top:$five;left:$ten;}
+#keygen{top:$five;left:$twelve;}
+#label{top:$four;left:$ten;}
+#legend{top:$three;left:$ten;}
+#meter{top:$two;left:$ten;}
+#optgroup{top:$three;left:$eleven;}
+#option{top:$four;left:$eleven;}
+#output{top:$five;left:$eleven;}
+#progress{top:$six;left:$twelve;}
+#select{top:$two;left:$eleven;}
+#textarea{top:$six;left:$ten;}
+#command{top:$four;left:$fifteen;}
+#details{top:$six;left:$fifteen;}
+#menu{top:$three;left:$fifteen;}
+#summary{top:$five;left:$fifteen;}
+#base{top:$four;left:0;}
+#head{top:$one;left:0;}
+#link{top:$five;left:0;}
+#meta{top:$three;left:0;}
+#noscript{top:$five;left:$one;}
+#script{top:$six;left:$one;}
+#style{top:$six;left:0;}
+#title{top:$two;left:0;}
+#address{top:$three;left:$twelve;}
+#article{top:$five;left:$fourteen;}
+#aside{top:$two;left:$twelve;}
+#body{top:$one;left:$twelve;}
+#footer{top:$six;left:$fourteen;}
+#h1{top:$one;left:$thirteen;}
+#h2{top:$two;left:$thirteen;}
+#h3{top:$three;left:$thirteen;}
+#h4{top:$four;left:$thirteen;}
+#h5{top:$five;left:$thirteen;}
+#h6{top:$six;left:$thirteen;}
+#header{top:$four;left:$fourteen;}
+#main{top:$two;left:$fourteen;}
+#nav{top:$one;left:$fourteen;}
+#section{top:$three;left:$fourteen;}
+#a{top:$two;left:$one;}
+#abbr{top:$four;left:$two;}
+#b{top:$four;left:$three;}
+#bdi{top:$five;left:$five;}
+#bdo{top:$six;left:$five;}
+#cite{top:$six;left:$two;}
+#code{top:$six;left:$six;}
+#del{top:$four;left:$five;}
+#dfn{top:$three;left:$two;}
+#em{top:$three;left:$three;}
+#i{top:$three;left:$three;}
+#ins{top:$three;left:$five;}
+#kbd{top:$four;left:$six;}
+#mark{top:$five;left:$four;}
+#q{top:$five;left:$two;}
+#rp{top:$four;left:$one;}
+#rt{top:$three;left:$one;}
+#ruby{top:$six;left:$four;}
+#s{top:$three;left:$six;}
+#samp{top:$six;left:$three;}
+#small{top:$three;left:$four;}
+#span{top:$one;left:$one;}
+#strong{top:$four;left:$four;}
+#sub{top:$five;left:$three;}
+#sup{top:$six;left:$three;}
+#time{top:$four;left:$three;}
+#var{top:$five;left:$three;}
+#wbr{top:$five;left:$six;}
+#caption{top:$two;left:$fifteen;}
+#col{top:0;left:$fifteen;}
+#colgroup{top:$one;left:$fifteen;}
+#table{top:0;left:$sixteen}
+#tbody{top:$four;left:$sixteen}
+#td{top:$two;left:$sixteen}
+#tfoot{top:$six;left:$sixteen}
+#th{top:$three;left:$sixteen}
+#thead-element{top:$five;left:$sixteen}
+#tr{top:$one;left:$sixteen}

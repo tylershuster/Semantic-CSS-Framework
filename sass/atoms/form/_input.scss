@@ -17,15 +17,7 @@ input{
 	@include box-shadow-inset($color-input-background);
 	&::-moz-focus-inner{
 		border: 0;
-		padding: 0;}
-	&:focus{
-		@if $skeu == faux-flat{
-			//box-shadow: 0 $unit__shadow-size $unit__shadow-blur 0 rgba(0, 0, 0, $unit__shadow-opacity) inset;
-			border-top-color: $color-drawer;
-			box-shadow: 0 0 $unit__shadow-blur $color-accent;
-		}
-		@else if $skeu == flat{
-			box-shadow: 0 0 $unit__border-radius $color-accent;}}
+		padding: 0;}	
 	&[type="text"]{		
 		&:disabled{
 			@include input-disabled;}}

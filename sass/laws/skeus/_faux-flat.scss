@@ -1,0 +1,12 @@
+@if $skeu == faux-flat{
+	$unit__border-radius: 2px;
+	$unit__shadow-size: 2px;
+	$unit__shadow-blur: 3px;
+	.slide-toggle:nth-of-type(n):before{
+		bottom: calc(#{$unit__nav--height / 2.5} - #{$unit__shadow-size});
+	}
+	input:focus{
+		border-top-color: $color-drawer;
+		box-shadow: 0 0 $unit__shadow-blur $color-accent;
+	}
+}

@@ -1,0 +1,24 @@
+&.hero{
+	height: #{$unit__base-x-two * 1px};
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	padding: 0 calc((100% - #{$max-width}) / 2);
+	background-color: $color-drawer;
+	flex-wrap: wrap;
+	@include box-shadow-inset($color-drawer);
+	>a{
+		button{
+			width: calc(100% - #{$unit__gutter--width * 2});
+			height: #{$height-form-input * 2};
+		}
+	}
+	&>*{
+		//width: 100%;
+		flex-grow: 1;
+		min-width: #{$unit__base-x-two * 1px};
+		max-width: 50%;
+		width: 2%;
+		padding:  #{$unit__gutter--width / 2};}}

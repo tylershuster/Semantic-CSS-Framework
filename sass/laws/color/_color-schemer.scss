@@ -24,13 +24,6 @@ $cs-colorblind        : normal !default;
 /* Tell other files that this is loaded.*/
 $color-schemer-loaded : true;
 
-$color-primary: null !default;
-$color-secondary: null !default;
-$color-tertiary: null !default;
-$color-background: null !default;
-$color-accent: null !default;
-$color-drawer: null !default; /*light if tone is dark, dark if tone is light, light if tone is white, dark if tone is black*/
-
 $white-text-lightness: 15%;
 $light-text-lightness: 25%;
 
