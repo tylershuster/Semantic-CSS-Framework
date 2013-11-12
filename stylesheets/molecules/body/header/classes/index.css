@@ -1,0 +1,76 @@
+/*
+Syntax error: File to import not found or unreadable: collapsed.
+              Load paths:
+                c:/xampp/htdocs/Semantic-CSS-Framework/sass
+                D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 1 of c:/xampp/htdocs/Semantic-CSS-Framework/sass/molecules/body/header/classes/index.scss
+
+1: c:/xampp/htdocs/Semantic-CSS-Framework/sass/molecules/body/header/classes/index.scss
+
+Backtrace:
+c:/xampp/htdocs/Semantic-CSS-Framework/sass/molecules/body/header/classes/index.scss:1
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/import_node.rb:67:in `rescue in import'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/import_node.rb:45:in `import'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `call'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+D:/Ruby200-x64/bin/compass:23:in `load'
+D:/Ruby200-x64/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: collapsed.\A               Load paths:\A                 c:/xampp/htdocs/Semantic-CSS-Framework/sass\A                 D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 1 of c:/xampp/htdocs/Semantic-CSS-Framework/sass/molecules/body/header/classes/index.scss\A \A 1: c:/xampp/htdocs/Semantic-CSS-Framework/sass/molecules/body/header/classes/index.scss"; }

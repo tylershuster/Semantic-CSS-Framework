@@ -1,1 +1,5 @@
-@import "footer";
+body{
+	@import "header/index";
+	@import "footer";
+	
+}
