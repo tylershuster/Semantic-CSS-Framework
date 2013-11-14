@@ -1,0 +1,53 @@
+button,
+input[type="button"] {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    text-transform: none;
+    margin: 0;
+    padding-top: 0;
+    @include object($color-primary);
+    height: #{ceil($height-form-input)};
+    color: $color-background;
+    @include prefixer(transition, box-shadow $length__transition);
+    &:nth-last-of-type(n+2) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-right: #{($unit__border-radius + 1px) * -1};
+    }
+    >a {
+        text-decoration: none;
+    }
+    & + button {
+        border-radius: 0;
+        &:last-of-type {
+            border-top-right-radius: $unit__border-radius;
+            border-bottom-right-radius: $unit__border-radius;
+        }
+    }
+    & > form {
+        height: 2rem;
+        label {
+            height: 2rem;
+        }
+        input {
+            &[type="radio"]:after {
+                color: $color-background;
+            }
+        }
+    }
+    &:active {
+        box-shadow: inset 0 0 $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
+        @include box-shadow-inset($color-primary);
+    }
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+    form {
+        label {}
+        input {
+            &[type="radio"] {}
+        }
+    }
+}

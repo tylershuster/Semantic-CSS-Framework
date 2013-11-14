@@ -115,558 +115,123 @@ body {
 
 
 @function typography($element,$attribute){
-	@if $element == p{
-		@if $attribute == font-size{ @return nth($root,1)}
-		@else if $attribute == line-height{ @return nth($root,2)}
-		@else if $attribute == padding-top{ @return nth($root,3)}
-		@else if $attribute == padding-bottom{ @return nth($root,4)}
-		@else if $attribute == font-weight{ @return nth($root,5)}
-		@else if $attribute == font-style{ @return nth($root,6)}}
-	@else if $element == small{
-		@if $attribute == font-size{ @return nth($small-text,1)}
-		@else if $attribute == line-height{ @return nth($small-text,2)}
-		@else if $attribute == padding-top{ @return nth($small-text,3)}
-		@else if $attribute == padding-bottom{ @return nth($small-text,4)}
-		@else if $attribute == font-weight{ @return nth($small-text,5)}
-		@else if $attribute == font-style{ @return nth($small-text,6)}}
-	@else{
+	@if $element == p{@return map-get($root, $attribute);}
+	@else if $element == small{	@return map-get($small-text, $attribute);}
+	@else {
 		@if $quality ==  min {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else {
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}}
+			@if $element == h1{@return map-get($note5, $attribute);}
+			@else {@return map-get($noteb3, $attribute);}
+		}
 		@else if $quality ==  maj {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else {
-				@if $attribute == font-size { @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}}
+			@if $element == h1{@return map-get($note5, $attribute);}
+			@else {@return map-get($note3, $attribute)}
+		}
 		@else if $quality ==  dim {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($noteb5,1)}
-				@else if $attribute == line-height{ @return nth($noteb5,2)}
-				@else if $attribute == padding-top{ @return nth($noteb5,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb5,4)}
-				@else if $attribute == font-weight{ @return nth($noteb5,5)}
-				@else if $attribute == font-style{ @return nth($noteb5,6)}}
-			@else {
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}}
+			@if $element == h1{@return map-get($noteb5, $attribute);}
+			@else {@return map-get($noteb3, $attribute);}
+		}
 		@else if $quality ==  aug {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($notes5,1)}
-				@else if $attribute == line-height{ @return nth($notes5,2)}
-				@else if $attribute == padding-top{ @return nth($notes5,3)}
-				@else if $attribute == padding-bottom{ @return nth($notes5,4)}
-				@else if $attribute == font-weight{ @return nth($notes5,5)}
-				@else if $attribute == font-style{ @return nth($notes5,6)}}
-			@else {
-				@if $attribute == font-size { @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}}
+			@if $element == h1{@return map-get($notes5, $attribute);}
+			@else {@return map-get($note3, $attribute)}
+		}
 		@else if $quality ==  augmin7 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($noteb7,1)}
-				@else if $attribute == line-height{ @return nth($noteb7,2)}
-				@else if $attribute == padding-top{ @return nth($noteb7,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb7,4)}
-				@else if $attribute == font-weight{ @return nth($noteb7,5)}
-				@else if $attribute == font-style{ @return nth($noteb7,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($notes5,1)}
-				@else if $attribute == line-height{ @return nth($notes5,2)}
-				@else if $attribute == padding-top{ @return nth($notes5,3)}
-				@else if $attribute == padding-bottom{ @return nth($notes5,4)}
-				@else if $attribute == font-weight{ @return nth($notes5,5)}
-				@else if $attribute == font-style{ @return nth($notes5,6)}}
-			@else {
-				@if $attribute == font-size { @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}}
+			@if $element == h1{@return map-get($noteb7, $attribute);}
+			@else if $element == h2{@return map-get($notes5, $attribute);}
+			@else {	@return map-get($note3, $attribute);}
+		}
 		@else if $quality ==  sus {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($note4,1)}
-				@else if $attribute == line-height{ @return nth($note4,2)}
-				@else if $attribute == padding-top{ @return nth($note4,3)}
-				@else if $attribute == padding-bottom{ @return nth($note4,4)}
-				@else if $attribute == font-weight{ @return nth($note4,5)}
-				@else if $attribute == font-style{ @return nth($note4,6)}}
-			@else {
-				@if $attribute == font-size{ @return nth($note4,1)}
-				@else if $attribute == line-height{ @return nth($note4,2)}
-				@else if $attribute == padding-top{ @return nth($note4,3)}
-				@else if $attribute == padding-bottom{ @return nth($note4,4)}
-				@else if $attribute == font-weight{ @return nth($note4,5)}
-				@else if $attribute == font-style{ @return nth($note4,6)}}}
+			@if $element == h1{@return map-get($note5, $attribute);}
+			@else if $element == h2{@return map-get($note4, $attribute);}
+			@else {	@return map-get($note4, $attribute);}
+		}
 		@else if $quality ==  sus2 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($note2,1)}
-				@else if $attribute == line-height{ @return nth($note2,2)}
-				@else if $attribute == padding-top{ @return nth($note2,3)}
-				@else if $attribute == padding-bottom{ @return nth($note2,4)}
-				@else if $attribute == font-weight{ @return nth($note2,5)}
-				@else if $attribute == font-style{ @return nth($note2,6)}}
-			@else {
-				@if $attribute == font-size{ @return nth($note2,1)}
-				@else if $attribute == line-height{ @return nth($note2,2)}
-				@else if $attribute == padding-top{ @return nth($note2,3)}
-				@else if $attribute == padding-bottom{ @return nth($note2,4)}
-				@else if $attribute == font-weight{ @return nth($note2,5)}
-				@else if $attribute == font-style{ @return nth($note2,6)}}}
+			@if $element == h1{@return map-get($note5, $attribute);}
+			@else if $element == h2{@return map-get($note2, $attribute);}
+			@else {	@return map-get($note2, $attribute);}
+		}
 		@else if $quality ==  eleventh {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note11,1)}
-				@else if $attribute == line-height{ @return nth($note11,2)}
-				@else if $attribute == padding-top{ @return nth($note11,3)}
-				@else if $attribute == padding-bottom{ @return nth($note11,4)}
-				@else if $attribute == font-weight{ @return nth($note11,5)}
-				@else if $attribute == font-style{ @return nth($note11,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($note9,1)}
-				@else if $attribute == line-height{ @return nth($note9,2)}
-				@else if $attribute == padding-top{ @return nth($note9,3)}
-				@else if $attribute == padding-bottom{ @return nth($note9,4)}
-				@else if $attribute == font-weight{ @return nth($note9,5)}
-				@else if $attribute == font-style{ @return nth($note9,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($noteb7,1)}
-				@else if $attribute == line-height{ @return nth($noteb7,2)}
-				@else if $attribute == padding-top{ @return nth($noteb7,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb7,4)}
-				@else if $attribute == font-weight{ @return nth($noteb7,5)}
-				@else if $attribute == font-style{ @return nth($noteb7,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else {
-				@if $attribute == font-size { @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}}
+			@if $element == h1{@return map-get($note11, $attribute);}
+			@else if $element == h2{@return map-get($note9, $attribute);}
+			@else if $element == h3{@return map-get($noteb7, $attribute);}
+			@else if $element == h4{@return map-get($note5, $attribute);}
+			@else {	@return map-get($note3, $attribute);}
+		}
 		@else if $quality ==  min7 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($noteb7,1)}
-				@else if $attribute == line-height{ @return nth($noteb7,2)}
-				@else if $attribute == padding-top{ @return nth($noteb7,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb7,4)}
-				@else if $attribute == font-weight{ @return nth($noteb7,5)}
-				@else if $attribute == font-style{ @return nth($noteb7,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}
-			@else {
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}}
+			@if $element == h1{@return map-get($noteb7, $attribute);}
+			@else if $element == h2{@return map-get($note5, $attribute);}
+			@else if $element == h3{@return map-get($note3, $attribute);}
+			@else if $element == h4{@return map-get($noteb3, $attribute);}
+			@else {	@return map-get($noteb3, $attribute);}
+		}
 		@else if $quality ==  maj7 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note7,1)}
-				@else if $attribute == line-height{ @return nth($note7,2)}
-				@else if $attribute == padding-top{ @return nth($note7,3)}
-				@else if $attribute == padding-bottom{ @return nth($note7,4)}
-				@else if $attribute == font-weight{ @return nth($note7,5)}
-				@else if $attribute == font-style{ @return nth($note7,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}
-			@else {
-				@if $attribute == font-size { @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}}
+			@if $element == h1{@return map-get($note7, $attribute);}
+			@else if $element == h2{@return map-get($note5, $attribute);}
+			@else if $element == h3{@return map-get($note3, $attribute);}
+			@else if $element == h4{@return map-get($note3, $attribute);}
+			@else {	@return map-get($note3, $attribute);}
+		}
 		@else if $quality ==  dom7 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($noteb7,1)}
-				@else if $attribute == line-height{ @return nth($noteb7,2)}
-				@else if $attribute == padding-top{ @return nth($noteb7,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb7,4)}
-				@else if $attribute == font-weight{ @return nth($noteb7,5)}
-				@else if $attribute == font-style{ @return nth($noteb7,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}
-			@else {
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}}
+			@if $element == h1{@return map-get($noteb7, $attribute);}
+			@else if $element == h2{@return map-get($note5, $attribute);}
+			@else if $element == h3{@return map-get($noteb3, $attribute);}
+			@else if $element == h4{@return map-get($noteb3, $attribute);}
+			@else {	@return map-get($noteb3, $attribute);}
+		}
 		@else if $quality ==  dim7 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($noteb7,1)}
-				@else if $attribute == line-height{ @return nth($noteb7,2)}
-				@else if $attribute == padding-top{ @return nth($noteb7,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb7,4)}
-				@else if $attribute == font-weight{ @return nth($noteb7,5)}
-				@else if $attribute == font-style{ @return nth($noteb7,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($noteb5,1)}
-				@else if $attribute == line-height{ @return nth($noteb5,2)}
-				@else if $attribute == padding-top{ @return nth($noteb5,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb5,4)}
-				@else if $attribute == font-weight{ @return nth($noteb5,5)}
-				@else if $attribute == font-style{ @return nth($noteb5,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}
-			@else {
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}}
+			@if $element == h1{@return map-get($noteb7, $attribute);}
+			@else if $element == h2{@return map-get($noteb5, $attribute);}
+			@else if $element == h3{@return map-get($noteb3, $attribute);}
+			@else if $element == h4{@return map-get($noteb3, $attribute);}
+			@else {	@return map-get($noteb3, $attribute);}
+		}
 		@else if $quality ==  min6 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note6,1)}
-				@else if $attribute == line-height{ @return nth($note6,2)}
-				@else if $attribute == padding-top{ @return nth($note6,3)}
-				@else if $attribute == padding-bottom{ @return nth($note6,4)}
-				@else if $attribute == font-weight{ @return nth($note6,5)}
-				@else if $attribute == font-style{ @return nth($note6,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}
-			@else {
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}}
+			@if $element == h1{@return map-get($note6, $attribute);}
+			@else if $element == h2{@return map-get($note5, $attribute);}
+			@else if $element == h3{@return map-get($noteb3, $attribute);}
+			@else if $element == h4{@return map-get($noteb3, $attribute);}
+			@else {	@return map-get($noteb3, $attribute);}
+		}
 		@else if $quality ==  maj6 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note6,1)}
-				@else if $attribute == line-height{ @return nth($note6,2)}
-				@else if $attribute == padding-top{ @return nth($note6,3)}
-				@else if $attribute == padding-bottom{ @return nth($note6,4)}
-				@else if $attribute == font-weight{ @return nth($note6,5)}
-				@else if $attribute == font-style{ @return nth($note6,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}
-			@else {
-				@if $attribute == font-size { @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}}
+			@if $element == h1{@return map-get($note6, $attribute);}
+			@else if $element == h2{@return map-get($note5, $attribute);}
+			@else if $element == h3{@return map-get($note3, $attribute);}
+			@else if $element == h4{@return map-get($note3, $attribute);}
+			@else {	@return map-get($note3, $attribute);}
+		}
 		@else if $quality ==  domflat9 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($noteb9,1)}
-				@else if $attribute == line-height{ @return nth($noteb9,2)}
-				@else if $attribute == padding-top{ @return nth($noteb9,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb9,4)}
-				@else if $attribute == font-weight{ @return nth($noteb9,5)}
-				@else if $attribute == font-style{ @return nth($noteb9,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($noteb7,1)}
-				@else if $attribute == line-height{ @return nth($noteb7,2)}
-				@else if $attribute == padding-top{ @return nth($noteb7,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb7,4)}
-				@else if $attribute == font-weight{ @return nth($noteb7,5)}
-				@else if $attribute == font-style{ @return nth($noteb7,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}
-			@else {
-				@if $attribute == font-size { @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}}
+			@if $element == h1{@return map-get($noteb9, $attribute);}
+			@else if $element == h2{@return map-get($noteb7, $attribute);}
+			@else if $element == h3{@return map-get($note5, $attribute);}
+			@else if $element == h4{@return map-get($note3, $attribute);}
+			@else {	@return map-get($note3, $attribute);}
+		}
 		@else if $quality ==  domsharp9 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($notes9,1)}
-				@else if $attribute == line-height{ @return nth($notes9,2)}
-				@else if $attribute == padding-top{ @return nth($notes9,3)}
-				@else if $attribute == padding-bottom{ @return nth($notes9,4)}
-				@else if $attribute == font-weight{ @return nth($notes9,5)}
-				@else if $attribute == font-style{ @return nth($notes9,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($noteb7,1)}
-				@else if $attribute == line-height{ @return nth($noteb7,2)}
-				@else if $attribute == padding-top{ @return nth($noteb7,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb7,4)}
-				@else if $attribute == font-weight{ @return nth($noteb7,5)}
-				@else if $attribute == font-style{ @return nth($noteb7,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}
-			@else {
-				@if $attribute == font-size { @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}}
+			@if $element == h1{@return map-get($notes9, $attribute);}
+			@else if $element == h2{@return map-get($noteb7, $attribute);}
+			@else if $element == h3{@return map-get($note5, $attribute);}
+			@else if $element == h4{@return map-get($note3, $attribute);}
+			@else {	@return map-get($note3, $attribute);}
+		}
 		@else if $quality ==  min9 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note9,1)}
-				@else if $attribute == line-height{ @return nth($note9,2)}
-				@else if $attribute == padding-top{ @return nth($note9,3)}
-				@else if $attribute == padding-bottom{ @return nth($note9,4)}
-				@else if $attribute == font-weight{ @return nth($note9,5)}
-				@else if $attribute == font-style{ @return nth($note9,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($noteb7,1)}
-				@else if $attribute == line-height{ @return nth($noteb7,2)}
-				@else if $attribute == padding-top{ @return nth($noteb7,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb7,4)}
-				@else if $attribute == font-weight{ @return nth($noteb7,5)}
-				@else if $attribute == font-style{ @return nth($noteb7,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}
-			@else {
-				@if $attribute == font-size{ @return nth($noteb3,1)}
-				@else if $attribute == line-height{ @return nth($noteb3,2)}
-				@else if $attribute == padding-top{ @return nth($noteb3,3)}
-				@else if $attribute == padding-bottom{ @return nth($noteb3,4)}
-				@else if $attribute == font-weight{ @return nth($noteb3,5)}
-				@else if $attribute == font-style{ @return nth($noteb3,6)}}}
+			@if $element == h1{@return map-get($note9, $attribute);}
+			@else if $element == h2{@return map-get($noteb7, $attribute);}
+			@else if $element == h3{@return map-get($note5, $attribute);}
+			@else if $element == h4{@return map-get($noteb3, $attribute);}
+			@else {	@return map-get($noteb3, $attribute);}
+		}
 		@else if $quality ==  maj9 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note9,1)}
-				@else if $attribute == line-height{ @return nth($note9,2)}
-				@else if $attribute == padding-top{ @return nth($note9,3)}
-				@else if $attribute == padding-bottom{ @return nth($note9,4)}
-				@else if $attribute == font-weight{ @return nth($note9,5)}
-				@else if $attribute == font-style{ @return nth($note9,6)}}
-			@else if $element == h2{
-				@if $attribute == font-size{ @return nth($note7,1)}
-				@else if $attribute == line-height{ @return nth($note7,2)}
-				@else if $attribute == padding-top{ @return nth($note7,3)}
-				@else if $attribute == padding-bottom{ @return nth($note7,4)}
-				@else if $attribute == font-weight{ @return nth($note7,5)}
-				@else if $attribute == font-style{ @return nth($note7,6)}}
-			@else if $element == h3{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else if $element == h4{
-				@if $attribute == font-size{ @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}
-			@else {
-				@if $attribute == font-size { @return nth($note3,1)}
-				@else if $attribute == line-height{ @return nth($note3,2)}
-				@else if $attribute == padding-top{ @return nth($note3,3)}
-				@else if $attribute == padding-bottom{ @return nth($note3,4)}
-				@else if $attribute == font-weight{ @return nth($note3,5)}
-				@else if $attribute == font-style{ @return nth($note3,6)}}}
+			@if $element == h1{@return map-get($note9, $attribute);}
+			@else if $element == h2{@return map-get($note7, $attribute);}
+			@else if $element == h3{@return map-get($note5, $attribute);}
+			@else if $element == h4{@return map-get($note3, $attribute);}
+			@else {	@return map-get($note3, $attribute);}
+		}
 		@else if $quality ==  perfect5 {
-			@if $element == h1{
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}
-			@else {
-				@if $attribute == font-size{ @return nth($note5,1)}
-				@else if $attribute == line-height{ @return nth($note5,2)}
-				@else if $attribute == padding-top{ @return nth($note5,3)}
-				@else if $attribute == padding-bottom{ @return nth($note5,4)}
-				@else if $attribute == font-weight{ @return nth($note5,5)}
-				@else if $attribute == font-style{ @return nth($note5,6)}}}}}
+			@if $element == h1{@return map-get($note5, $attribute);}
+			@else {@return map-get($note5, $attribute);}
+		}
+	}
+}
 
 
 @mixin small-search-box{

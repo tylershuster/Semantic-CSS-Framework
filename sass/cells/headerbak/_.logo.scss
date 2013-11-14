@@ -1,8 +1,0 @@
-header .logo{
-	display: inline-block;
-	float: left;
-	height: #{$unit__nav--height};
-	margin-top: #{$unit__nav--height / 4};
-	margin-left: $unit__gutter--width;
-	@include prefixer(transition, all $length__transition $style__animation-ease);	
-	z-index: 110;}

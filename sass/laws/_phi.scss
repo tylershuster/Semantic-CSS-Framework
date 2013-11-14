@@ -4,7 +4,7 @@
 		html {font-size: 62.5%;}}	
 	@include betwixt($unit__base-x-one, $unit__base-x-two){
 		html {font-size: 50%;}}
-	$font-base: 12;}
+	$font-base: 12 !global;}
 
 @else if $key == 'b' {	
 	html {font-size: 87.5%;}
@@ -12,7 +12,7 @@
 		html {font-size: 75%;}}	
 	@include betwixt($unit__base-x-one, $unit__base-x-two){
 		html {font-size: 62.5%;}}	
-	$font-base: 14;}
+	$font-base: 14 !global;}
 
 @else if $key == 'c' {	
 	html {font-size: 100%;}
@@ -20,7 +20,7 @@
 		html {font-size: 87.5%;}}	
 	@include betwixt($unit__base-x-one, $unit__base-x-two){
 		html {font-size: 75%;}}	
-	$font-base: 16;}
+	$font-base: 16 !global;}
 
 @else if $key == 'd' {	
 	html {font-size: 112.5%;}
@@ -28,7 +28,7 @@
 		html {font-size: 100%;}}	
 	@include betwixt($unit__base-x-one, $unit__base-x-two){
 		html {font-size: 87.5%;}}
-	$font-base: 18;}
+	$font-base: 18 !global;}
 
 @else if $key == 'e' {	
 	html {font-size: 125%;/*find me*/}
@@ -36,7 +36,7 @@
 		html {font-size: 112.5%;}}	
 	@include betwixt($unit__base-x-one, $unit__base-x-two){
 		html {font-size: 100%;}}	
-	$font-base: 20;}
+	$font-base: 20 !global;}
 
 @else if $key == 'f' {	
 	html {font-size: 137.5%;}
@@ -44,7 +44,7 @@
 		html {font-size: 125%;}}	
 	@include betwixt($unit__base-x-one, $unit__base-x-two){
 		html {font-size: 112.5%;}}	
-	$font-base: 22;}
+	$font-base: 22 !global;}
 
 @else if $key == 'g' {	
 	html {font-size: 150%;}
@@ -52,7 +52,7 @@
 		html {font-size: 137.5%;}}	
 	@include betwixt($unit__base-x-one, $unit__base-x-two){
 		html {font-size: 125%;}}
-	$font-base: 24;}
+	$font-base: 24 !global;}
 
 @include media-from($unit__base-x-two){
 	.row>*{
