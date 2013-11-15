@@ -1,0 +1,13 @@
+html{
+	height: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: #{map-get($keyRatios, $key) - 25%};
+	@include media-from($unit__base-x-two){
+		font-size:  #{map-get($keyRatios, $key) - 12.5%};
+	}
+	@include media-from($unit__base-x-three){
+		font-size: map-get($keyRatios, $key);
+	}
+	@import "classes/index";
+}

@@ -1,0 +1,81 @@
+// ##The Classy Stylesheet
+// 
+// The Classy Stylesheet is related to the Typography Stylesheet, but differs crucially.
+// Where the Typography Stylesheet can be used to theme a single page to a single ratio,
+// the Classy Stylesheet can be used to apply musical classes to elements on a single
+// page to create more complex ratios.
+//
+// Use the Classy Stylesheet to play around with typographic ratios: children of classy
+// elements will reflect their parents. Use the ".uber" class to double the size of the
+// element. There is no need to apply a root element size, as the multiplier has been
+// calculated into the font size
+
+
+$quality: null !global;
+$key: null !global;
+$color: null !global;
+$scheme: null !global;
+$tone: null !global;
+$classy-number: null !global;
+
+@import "laws/variables";
+@import "laws/normalize";
+@import "laws/mixins/typography";
+@import "laws/mixins/font-properties-for";
+@import "laws/mixins/queries";
+
+$keys: a 0.75, b 0.875, c 1.00, d 1.125, e 1.25, f 1.375, g 1.50;
+$qualities: maj, dim, aug, augmin7, sus, sus2, eleventh, min7, maj7, dom7, dim7, min6, maj6, domflat9, domsharp9, min9, maj9, perfect5; 
+
+@each $classy-quality in $qualities {
+	$quality: $classy-quality !global;
+	@each $classy-key in $keys{
+		.#{nth($classy-key,1)}{
+			&.#{$classy-quality}, & .#{$classy-quality}{
+				$classy-number: nth($classy-key, 2) !global;
+				& h1{
+					@include font-properties-for(h1,$classy-number);
+					&.uber,
+					.uber &{
+						@include font-properties-for(h1,$classy-number * 2);
+					}
+				}
+				& h2{
+					@include font-properties-for(h2,$classy-number);
+					&.uber,
+					.uber &{
+						@include font-properties-for(h2,$classy-number * 2);
+					}
+				}				
+				& h3{
+					@include font-properties-for(h3,$classy-number);
+					&.uber,
+					.uber &{
+						@include font-properties-for(h3,$classy-number * 2);
+					}
+				}
+				& h4{
+					@include font-properties-for(h4,$classy-number);
+					&.uber,
+					.uber &{
+						@include font-properties-for(h4,$classy-number * 2);
+					}
+				}
+				& h5{
+					@include font-properties-for(h5,$classy-number);
+					&.uber,
+					.uber &{
+						@include font-properties-for(h5,$classy-number * 2);
+					}
+				}
+				& p{
+					@include font-properties-for(p,$classy-number);
+					&.uber,
+					.uber &{
+						@include font-properties-for(p,$classy-number * 2);
+					}
+				}
+			}
+		}
+	}
+}

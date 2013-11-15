@@ -1,0 +1,10 @@
+@mixin re-base($side,$amount){
+	$otherSide: null;
+	@if $side == left {
+		$otherSide: "right";}
+	@else {
+		$otherSide: "left";}
+	#{$side}: #{$amount};
+	margin-#{$side}: #{$amount * -1};
+	padding-#{$otherSide}: #{$amount + $unit__gutter--width};
+}

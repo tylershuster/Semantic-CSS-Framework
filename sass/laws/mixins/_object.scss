@@ -1,0 +1,12 @@
+@mixin object($color, $opacity: 1){
+	@if $opacity == 1{
+		background-color: $color;
+	}
+	@else{
+		background-color: rgba(red($color), green($color), blue($color), $opacity);
+	}
+	@if $gradient == very-yes{
+		background: linear-gradient(tint($color, $gradient-separation), $color);
+	}
+	@include box-shadow($color);
+}

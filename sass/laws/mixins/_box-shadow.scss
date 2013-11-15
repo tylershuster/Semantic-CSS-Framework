@@ -1,0 +1,20 @@
+@mixin box-shadow($on-background){	
+	border: 0px solid;
+	border-radius: $unit__border-radius;
+	border-bottom: $unit__border-radius solid $color__3d--dark;		
+	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
+}
+@mixin box-shadow-inset($on-background){	
+	border: none;
+	border-radius: $unit__border-radius;
+	border-top: $unit__border-radius solid $color__3d--dark;
+		
+	
+	@if $tone == black{
+		box-shadow: none;}
+	@else if $tone == white{
+		border-left: 1px solid rgba(0,0,0, $unit__shadow-opacity / 2);
+		border-right: 1px solid rgba(0,0,0, $unit__shadow-opacity / 2);
+		border-bottom: 1px solid rgba(0,0,0, $unit__shadow-opacity / 4);
+	}
+}

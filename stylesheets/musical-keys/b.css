@@ -1,0 +1,11 @@
+html {
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%; }
+  @media only screen and (min-width: 256px) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (min-width: 384px) {
+    html {
+      font-size: 87.5%; } }

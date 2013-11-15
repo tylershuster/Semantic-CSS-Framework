@@ -1,0 +1,477 @@
+body {
+  margin: 0.25vw;
+  position: relative; }
+
+table {
+  width: 100%;
+  height: 100%; }
+
+tr {
+  display: flex;
+  flex-wrap: wrap; }
+
+td {
+  width: 5vw;
+  height: 5vw;
+  display: block;
+  background: red;
+  content: attr(id) ":";
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.div {
+  background: orange; }
+
+.embed {
+  background: violet; }
+
+.form {
+  background: green; }
+
+.interactive {
+  background: purple; }
+
+.meta {
+  background: cadetblue; }
+
+.root {
+  background: yellow; }
+
+.section {
+  background: red; }
+
+.span {
+  background: yellow; }
+
+.table {
+  background: brown; }
+
+#html {
+  top: 0;
+  left: 0; }
+
+#blockquote {
+  top: 17.25vw;
+  left: 51.75vw; }
+
+#br {
+  top: 17.25vw;
+  left: 40.25vw; }
+
+#dd {
+  top: 34.5vw;
+  left: 51.75vw; }
+
+#div {
+  top: 5.75vw;
+  left: 51.75vw; }
+
+#dl {
+  top: 23vw;
+  left: 51.75vw; }
+
+#dt {
+  top: 28.75vw;
+  left: 51.75vw; }
+
+#figcaption {
+  top: 28.75vw;
+  left: 40.25vw; }
+
+#figure {
+  top: 34.5vw;
+  left: 40.25vw; }
+
+#hr {
+  top: 23vw;
+  left: 40.25vw; }
+
+#li {
+  top: 34.5vw;
+  left: 46vw; }
+
+#ol {
+  top: 23vw;
+  left: 46vw; }
+
+#p {
+  top: 17.25vw;
+  left: 46vw; }
+
+#pre {
+  top: 11.5vw;
+  left: 51.75vw; }
+
+#ul {
+  top: 28.75vw;
+  left: 46vw; }
+
+#img {
+  top: 46vw;
+  left: 28.75vw; }
+
+#area {
+  top: 46vw;
+  left: 34.5vw; }
+
+#map {
+  top: 46vw;
+  left: 40.25vw; }
+
+#embed {
+  top: 46vw;
+  left: 46vw; }
+
+#object {
+  top: 46vw;
+  left: 51.75vw; }
+
+#param {
+  top: 46vw;
+  left: 57.5vw; }
+
+#source {
+  top: 46vw;
+  left: 63.25vw; }
+
+#iframe {
+  top: 46vw;
+  left: 69vw; }
+
+#canvas {
+  top: 46vw;
+  left: 74.75vw; }
+
+#track {
+  top: 46vw;
+  left: 80.5vw; }
+
+#audio {
+  top: 46vw;
+  left: 86.25vw; }
+
+#video {
+  top: 46vw;
+  left: 92vw; }
+
+#button {
+  top: 34.5vw;
+  left: 63.25vw; }
+
+#datalist {
+  top: 23vw;
+  left: 69vw; }
+
+#fieldset {
+  top: 5.75vw;
+  left: 57.5vw; }
+
+#form {
+  top: 5.75vw;
+  left: 63.25vw; }
+
+#input {
+  top: 28.75vw;
+  left: 57.5vw; }
+
+#keygen {
+  top: 28.75vw;
+  left: 69vw; }
+
+#label {
+  top: 23vw;
+  left: 57.5vw; }
+
+#legend {
+  top: 17.25vw;
+  left: 57.5vw; }
+
+#meter {
+  top: 11.5vw;
+  left: 57.5vw; }
+
+#optgroup {
+  top: 17.25vw;
+  left: 63.25vw; }
+
+#option {
+  top: 23vw;
+  left: 63.25vw; }
+
+#output {
+  top: 28.75vw;
+  left: 63.25vw; }
+
+#progress {
+  top: 34.5vw;
+  left: 69vw; }
+
+#select {
+  top: 11.5vw;
+  left: 63.25vw; }
+
+#textarea {
+  top: 34.5vw;
+  left: 57.5vw; }
+
+#command {
+  top: 23vw;
+  left: 86.25vw; }
+
+#details {
+  top: 34.5vw;
+  left: 86.25vw; }
+
+#menu {
+  top: 17.25vw;
+  left: 86.25vw; }
+
+#summary {
+  top: 28.75vw;
+  left: 86.25vw; }
+
+#base {
+  top: 23vw;
+  left: 0; }
+
+#head {
+  top: 5.75vw;
+  left: 0; }
+
+#link {
+  top: 28.75vw;
+  left: 0; }
+
+#meta {
+  top: 17.25vw;
+  left: 0; }
+
+#noscript {
+  top: 28.75vw;
+  left: 5.75vw; }
+
+#script {
+  top: 34.5vw;
+  left: 5.75vw; }
+
+#style {
+  top: 34.5vw;
+  left: 0; }
+
+#title {
+  top: 11.5vw;
+  left: 0; }
+
+#address {
+  top: 17.25vw;
+  left: 69vw; }
+
+#article {
+  top: 28.75vw;
+  left: 80.5vw; }
+
+#aside {
+  top: 11.5vw;
+  left: 69vw; }
+
+#body {
+  top: 5.75vw;
+  left: 69vw; }
+
+#footer {
+  top: 34.5vw;
+  left: 80.5vw; }
+
+#h1 {
+  top: 5.75vw;
+  left: 74.75vw; }
+
+#h2 {
+  top: 11.5vw;
+  left: 74.75vw; }
+
+#h3 {
+  top: 17.25vw;
+  left: 74.75vw; }
+
+#h4 {
+  top: 23vw;
+  left: 74.75vw; }
+
+#h5 {
+  top: 28.75vw;
+  left: 74.75vw; }
+
+#h6 {
+  top: 34.5vw;
+  left: 74.75vw; }
+
+#header {
+  top: 23vw;
+  left: 80.5vw; }
+
+#main {
+  top: 11.5vw;
+  left: 80.5vw; }
+
+#nav {
+  top: 5.75vw;
+  left: 80.5vw; }
+
+#section {
+  top: 17.25vw;
+  left: 80.5vw; }
+
+#a {
+  top: 11.5vw;
+  left: 5.75vw; }
+
+#abbr {
+  top: 23vw;
+  left: 11.5vw; }
+
+#b {
+  top: 23vw;
+  left: 17.25vw; }
+
+#bdi {
+  top: 28.75vw;
+  left: 28.75vw; }
+
+#bdo {
+  top: 34.5vw;
+  left: 28.75vw; }
+
+#cite {
+  top: 34.5vw;
+  left: 11.5vw; }
+
+#code {
+  top: 34.5vw;
+  left: 34.5vw; }
+
+#del {
+  top: 23vw;
+  left: 28.75vw; }
+
+#dfn {
+  top: 17.25vw;
+  left: 11.5vw; }
+
+#em {
+  top: 17.25vw;
+  left: 17.25vw; }
+
+#i {
+  top: 17.25vw;
+  left: 17.25vw; }
+
+#ins {
+  top: 17.25vw;
+  left: 28.75vw; }
+
+#kbd {
+  top: 23vw;
+  left: 34.5vw; }
+
+#mark {
+  top: 28.75vw;
+  left: 23vw; }
+
+#q {
+  top: 28.75vw;
+  left: 11.5vw; }
+
+#rp {
+  top: 23vw;
+  left: 5.75vw; }
+
+#rt {
+  top: 17.25vw;
+  left: 5.75vw; }
+
+#ruby {
+  top: 34.5vw;
+  left: 23vw; }
+
+#s {
+  top: 17.25vw;
+  left: 34.5vw; }
+
+#samp {
+  top: 34.5vw;
+  left: 17.25vw; }
+
+#small {
+  top: 17.25vw;
+  left: 23vw; }
+
+#span {
+  top: 5.75vw;
+  left: 5.75vw; }
+
+#strong {
+  top: 23vw;
+  left: 23vw; }
+
+#sub {
+  top: 28.75vw;
+  left: 17.25vw; }
+
+#sup {
+  top: 34.5vw;
+  left: 17.25vw; }
+
+#time {
+  top: 23vw;
+  left: 17.25vw; }
+
+#var {
+  top: 28.75vw;
+  left: 17.25vw; }
+
+#wbr {
+  top: 28.75vw;
+  left: 34.5vw; }
+
+#caption {
+  top: 11.5vw;
+  left: 86.25vw; }
+
+#col {
+  top: 0;
+  left: 86.25vw; }
+
+#colgroup {
+  top: 5.75vw;
+  left: 86.25vw; }
+
+#table {
+  top: 0;
+  left: 92vw; }
+
+#tbody {
+  top: 23vw;
+  left: 92vw; }
+
+#td {
+  top: 11.5vw;
+  left: 92vw; }
+
+#tfoot {
+  top: 34.5vw;
+  left: 92vw; }
+
+#th {
+  top: 17.25vw;
+  left: 92vw; }
+
+#thead-element {
+  top: 28.75vw;
+  left: 92vw; }
+
+#tr {
+  top: 5.75vw;
+  left: 92vw; }

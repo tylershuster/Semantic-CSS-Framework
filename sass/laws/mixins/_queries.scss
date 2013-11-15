@@ -1,0 +1,11 @@
+@mixin media-from($width){
+	@media only screen and (min-width: #{$width * 1px}){
+		@content;
+	}
+}
+
+@mixin media-to($width){
+	@media only screen and (max-width: #{$width * 1px}){
+		@content;
+	}
+}

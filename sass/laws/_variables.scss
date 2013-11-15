@@ -1,38 +1,41 @@
-$color: #ff0000 !default;
-$em: 16 !default;
-$unit__base-x-one: $em * 8 !default;
-$unit__base-x-two: $unit__base-x-one * 2 !default;
-$unit__base-x-three: $unit__base-x-one * 3 !default;
-$unit__base-x-four: $unit__base-x-one * 4 !default;
-$unit__base-x-five: $unit__base-x-one * 5 !default;
-$unit__base-x-eight: $unit__base-x-one * 8 !default;
-$unit__base-x-thirteen: $unit__base-x-one * 13 !default;
+$color: #ff0000 !global !default;
+$em: 16 !global !default;
+$unit__base-x-one: $em * 8 !global !default;
+$unit__base-x-two: $unit__base-x-one * 2 !global !default;
+$unit__base-x-three: $unit__base-x-one * 3 !global !default;
+$unit__base-x-four: $unit__base-x-one * 4 !global !default;
+$unit__base-x-five: $unit__base-x-one * 5 !global !default;
+$unit__base-x-eight: $unit__base-x-one * 8 !global !default;
+$unit__base-x-thirteen: $unit__base-x-one * 13 !global !default;
 $unit__gutter--width: 1rem;
-$length-mobile-cutoff: $unit__base-x-eight !default;
-$font-base: null !default;
-$max-width: 60em !default;
-$unit__header--height: 3rem !default;
-$unit__nav--height: 2rem !default;
-$length__transition: 0.4s !default;
-$unit__border-radius: 0 !default;
-$unit__header--opacity: 1 !default;
-$unit__shadow-size: 0 !default;
-$unit__shadow-blur: 0 !default;
-$unit__shadow-opacity: 0.45 !default;
-$color__3d--dark: rgba(0,0,0,$unit__shadow-opacity) !default;
-$color__3d--light: rgba(255,255,255,$unit__shadow-opacity) !default;
-$height-form-input: 1.5rem !default;
-$style__animation-ease: ease-in-out !default;
-$unit__line-height: 1rem !default;
+$length-mobile-cutoff: $unit__base-x-eight !global !default;
+$font-base: null !global !default;
+$max-width: 60em !global !default;
+$unit__header--height: 3rem !global !default;
+$unit__nav--height: 2rem !global !default;
+$length__transition: 0.4s !global !default;
+$unit__border-radius: 0 !global !default;
+$unit__header--opacity: 1 !global !default;
+$unit__shadow-size: 0 !global !default;
+$unit__shadow-blur: 0 !global !default;
+$unit__shadow-opacity: 0.45 !global !default;
+$color__3d--dark: rgba(0,0,0,$unit__shadow-opacity) !global !default;
+$color__3d--light: rgba(255,255,255,$unit__shadow-opacity) !global !default;
+$height-form-input: 1.5rem !global !default;
+$style__animation-ease: ease-in-out !global !default;
+$unit__line-height: 1rem !global !default;
 $gradient: very-yes;
 $gradient-separation: 3%;
 
-$article-margin-length-one: 0.5rem !default;
-$article-margin-length-two: 1rem !default;
-$article-margin-length-three: 2rem !default;
-$article-margin-length-five: 3rem !default;
-$article-margin-length-eight: 4rem !default;
-$article-margin-length-thirteen: 5rem !default;
+$keyRatios: (a: 75%, b: 87.5%, c: 100%, d: 112.5%, e: 125%, f: 137.5%, g: 150%);
+
+
+$article-margin-length-one: 0.5rem !global !default;
+$article-margin-length-two: 1rem !global !default;
+$article-margin-length-three: 2rem !global !default;
+$article-margin-length-five: 3rem !global !default;
+$article-margin-length-eight: 4rem !global !default;
+$article-margin-length-thirteen: 5rem !global !default;
 
 $small-text: (
 	font-size: 0.850,
@@ -319,10 +322,10 @@ $color__earth-tone--o: #ADB6BB;
 $color__earth-tone--sky: #6B9BE3;
 
 
-$color-primary: null !default;
-$color-secondary: null !default;
-$color-tertiary: null !default;
-$color-text: null !default;
-$color-accent: null !default;
-$color-background: null !default;
-$color-drawer: null !default;
+$color-primary: null !global !default;
+$color-secondary: null !global !default;
+$color-tertiary: null !global !default;
+$color-text: null !global !default;
+$color-accent: null !global !default;
+$color-background: null !global !default;
+$color-drawer: null !global !default;

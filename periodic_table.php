@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="stylesheets/periodic.css">
+<link rel="stylesheet" href="stylesheets/utilities/periodic.css">
 <table>
 	<tbody>
 		<tr>

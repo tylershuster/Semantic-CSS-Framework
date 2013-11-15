@@ -1,0 +1,91 @@
+$quality: aug;
+
+@import "laws/variables";
+@import "laws/mixins/typography";
+@import "laws/mixins/font-properties-for";
+@import "laws/mixins/queries";
+
+h1{
+	@include font-properties-for(h1);
+	>small{
+		@include font-properties-for(h2);
+		line-height: 1em;
+		display: inline;
+	}
+	&.uber,
+	.uber &{
+		@include font-properties-for(h1,2);
+	}
+}
+h2{
+	@include font-properties-for(h2);
+	>small{
+		@include font-properties-for(h3);
+		line-height: 1em;
+		display: inline;
+	}
+	&.uber,
+	.uber &{
+		@include font-properties-for(h2,2);
+	}
+}
+h3{
+	@include font-properties-for(h3);
+	>small{
+		@include font-properties-for(h4);
+		line-height: 1em;
+		display: inline;
+	}
+	&.uber,
+	.uber &{
+		@include font-properties-for(h3,2);
+	}
+}
+h4{
+	@include font-properties-for(h4);
+	>small{
+		@include font-properties-for(h5);
+		line-height: 1em;
+		display: inline;
+	}
+	&.uber,
+	.uber &{
+		@include font-properties-for(h4,2);
+	}
+}
+h5{
+	@include font-properties-for(h5);
+	>small{
+		@include font-properties-for(h6);
+		line-height: 1em;
+		display: inline;
+	}
+	&.uber,
+	.uber &{
+		@include font-properties-for(h5,2);
+	}
+}
+h6{
+	@include font-properties-for(h6);
+	>small{
+		@include font-properties-for(p);
+		line-height: 1em;
+		display: inline;
+	}
+	&.uber,
+	.uber &{
+		@include font-properties-for(h6,2);
+	}
+}
+p{
+	@include font-properties-for(p);
+	>small{
+		@include font-properties-for(small);
+		line-height: 1em;
+		display: inline;
+	}
+	&.uber,
+	.uber &{
+		@include font-properties-for(p,2);
+	}
+}
