@@ -1,0 +1,165 @@
+Navigating around
+· Accordion
+- http://www.welie.com/patterns/showPattern.php?patternID=accordion
+- nav.accordion>section+(o,u)l>li>header+article, figure.accordion
+
+· Breadcrumbs
+- http://www.welie.com/patterns/showPattern.php?patternID=crumbs
+- ol.breadcrumbs>li
+
+· Directory Navigation
+- http://www.welie.com/patterns/showPattern.php?patternID=directory
+- ul.directory>li>a+ul>li>a*3
+
+· Doormat Navigation
+· Double Tab Navigation
+· Faceted Navigation
+· Fly-out Menu
+· Home Link
+· Icon Menu
+· Main Navigation
+· Map Navigator
+· Meta Navigation
+· Minesweeping
+· Panning Navigator
+· Overlay Menu
+· Repeated Menu
+· Retractable Menu
+· Scrolling Menu
+· Shortcut Box
+· Split Navigation
+· Teaser Menu
+· To-the-top Link
+· Trail Menu
+· Navigation Tree
+
+Basic interactions
+· Action Button
+· Guided Tour
+· Paging
+· Pulldown Button
+· Slideshow
+· Stepping
+· Wizard
+Searching
+· Advanced Search
+· Autocomplete
+· Frequently Asked Questions (FAQ)
+· Help Wizard
+· Search Box
+· Search Area
+· Search Results
+· Search Tips
+· Site Index
+· Site Map
+· Footer Sitemap
+· Tag Cloud
+· Topic Pages
+
+Dealing with data
+· Carrousel
+· Table Filter
+· Collapsible Panels
+· Details On Demand
+· Collector
+· Inplace replacement
+· List Builder
+· List Entry View
+· Overview by Detail
+· Parts Selector
+· Tabs
+· Table Sorter
+· Thumbnail
+· View
+
+Personalizing
+· Customizable Window
+· Login
+· Registration
+Shopping
+· Booking
+· Product Comparison
+· Product Advisor
+· Product Configurator
+· Purchase Process
+· Shopping Cart
+· Store Locator
+· Testimonials
+· Virtual Product Display
+
+Making choices
+· Country Selector
+· Date Selector
+· Language Selector
+· Poll
+· Rating
+
+Giving input
+· Comment Box
+· Constraint Input
+· Form
+
+Miscelleaneous
+· Footer Bar
+· Hotlist
+· News Box
+· News Ticker
+· Send-a-Friend Link
+
+Drawing Attentio
+· Captcha
+· Center Stage
+· Color Coded Section
+· Premium Content Lock
+· Grid-based Layout
+· Liquid Layout
+· Outgoing Links
+· Alternating Row Colors
+Feedback
+· Input Error Message
+· Processing Page
+Simplifying interaction
+· Enlarged Clickarea
+· Font Enlarger
+
+
+
+
+Site types
+· Web-based Application
+· Artist Site
+· Automotive Site
+· Branded Promotion Site
+· Campaign Site
+· E-commerce Site
+· Community Site
+· Corporate Site
+· Multinational Site
+· Museum Site
+· Personalized 'My' Site
+· News Site
+· Portal Site
+· Travel Site
+Experiences
+· Community Building
+· Information Management
+· Fun
+· Information Seeking
+· Learning
+· Assistence
+· Shopping
+· Story Telling
+Page types
+· Article Page
+· Blog Page
+· Case Study
+· Contact Page
+· Event Calendar
+· Forum
+· Guest Book
+· Help Page
+· Homepage
+· Newsletter
+· Printer-friendly Page
+· Product Page
+· Tutorial

@@ -8,7 +8,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0" />
 	<title>Semantic CSS Framework <?php echo $pageTitle; ?></title>
-	<link rel="stylesheet" href="stylesheets/theme-1.css">
+	<link rel="stylesheet" href="stylesheets/themes/theme-1.css">
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>

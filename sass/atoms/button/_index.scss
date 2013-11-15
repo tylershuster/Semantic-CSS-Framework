@@ -17,6 +17,7 @@ input[type="button"] {
     }
     >a {
         text-decoration: none;
+        font-family: #{$body-font};
     }
     & + button {
         border-radius: 0;

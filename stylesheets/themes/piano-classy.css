@@ -1184,7 +1184,8 @@ input[type="button"] {
     margin-right: -1px; }
   button > a,
   input[type="button"] > a {
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: Gentium Basic; }
   button + button,
   input[type="button"] + button {
     border-radius: 0; }
@@ -1962,6 +1963,15 @@ pre {
   background-color: #1b2326;
   padding: 1rem; }
 
+ul.flyout.top ul:hover {
+  /*fart*/ }
+ul.flyout.bottom ul:hover {
+  /*fart*/ }
+ul.flyout.right ul:hover {
+  /*fart*/ }
+ul.flyout.left ul:hover {
+  /*fart*/ }
+
 body .slide-toggle {
   float: left;
   height: 7px;
@@ -2192,6 +2202,7 @@ body > header {
       body > header > nav > ul li {
         display: flex;
         padding: 0 1rem;
+        font-family: Gentium Basic;
         height: 3rem;
         align-items: center;
         position: relative; }

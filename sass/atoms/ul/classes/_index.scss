@@ -1,0 +1,14 @@
+&.flyout{
+	&.top{
+		@import "flyout--top";
+	}
+	&.bottom{
+		@import "flyout--bottom";
+	}
+	&.right{
+		@import "flyout--right";
+	}
+	&.left{
+		@import "flyout--left";
+	}
+}
