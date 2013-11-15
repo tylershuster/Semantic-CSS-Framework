@@ -1,4 +1,10 @@
-article{
+// An article 
+// Articles are sectioning blocks.
+// This means that there can be multiple 
+// and can all contain h1 tags and other similarly unique elements
+// 
+
+>article{
 	padding: 0 0.5rem;
 	@include media-from($unit__base-x-two){
 		padding: 0 2rem;

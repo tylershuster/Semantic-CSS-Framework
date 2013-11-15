@@ -1,4 +1,6 @@
-a,a:visited {
+// A basic link
+a,
+a:visited {
     color: inherit;
     text-decoration: underline;
     &:active {

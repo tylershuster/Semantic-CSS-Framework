@@ -1,3 +1,7 @@
+// The article pull classes
+//
+// The "pull" class on a blockquote, aside, or figure
+// pulls the item off to one side and alternates sides by odd/even
 &{
 	&:nth-of-type(odd){
 		float: right;

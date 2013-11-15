@@ -1,7 +1,17 @@
-&.feature{
+// .feature 	| table>td>img+h3+p | Contains blocks of "features" - brief highlights of deeper content
+&{
 	tr{
 		td{
 			text-align: center;
+			img{
+
+			}
+			h3{
+
+			}
+			p{
+				
+			}
 		}
 	}
 }

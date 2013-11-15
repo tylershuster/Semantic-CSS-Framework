@@ -1,3 +1,6 @@
+// The body molecule
+//
+// The body molecule is the biggest molecule in the project. It's probably more of a cell, but I'll doc that later. It contains all the main....mind shift...put the body into the organ folder, import header, main, footer, from the cell folder, import further down from the molecule folder
 body{
 	@import "header/index";
 	@import "main/index";

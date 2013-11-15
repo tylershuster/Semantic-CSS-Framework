@@ -1,6 +1,17 @@
->nav{
+// The main navigation sidebar. Useful for navigating large documents.
+//nav 				- Fixed, two columns wide, #{$color-background} background
+//	ol, ul 			- Lists inside the main navigation
+//		li, 		- List items one level down
+//			a 		- Links
+//		ol, ul 		- Second-level lists
+//			li 		- items
+//				a 	- links
+//	& ~ article,	- articles
+//	& ~ section: 	- or sections adjacent to the nav and requiring shifting
+
+>nav {
 	position: fixed;
-	width: #{$unit__base-x-two * 1px};	
+	width: #{$unit__base-x-two * 1px};
 	padding-left: $unit__gutter--width;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -8,45 +19,55 @@
 	z-index: 9999;
 	background-color: $color-background;
 	@include transition;
-	&:hover:nth-of-type(n){
-		opacity: 1;}
-	@include media-from($length-mobile-cutoff){
-		margin-top: #{($unit__nav--height * -1)};}
-	@include media-to($length-mobile-cutoff){	display: none;	}
-	
-	li>ol,
-	li>ul{
+	&:hover:nth-of-type(n) {
+		opacity: 1;
+	}
+	@include media-from($length-mobile-cutoff) {
+		margin-top: #{$unit__nav--height * -1};
+	}
+
+	@include media-to($length-mobile-cutoff) {
+		display: none;
+	}
+
+	ol,
+	ul {
+		padding-left: #{$unit__gutter--width * 1.5};
+		li {
+			margin-bottom: $unit__gutter--width;
+			margin-left: -1px;
+		}
+		> ol,
+		ul {
+			padding-left: #{$unit__gutter--width};
+		}
+	}
+	li > ol,
+	li > ul {
 		padding-left: $unit__gutter--width * 1.5;
 		padding-top: $unit__gutter--width;
-		border-left: 1px solid transparent;		
+		border-left: 1px solid transparent;
 		box-sizing: content-box;
-		>li>a{
+		>li>a {
 			padding-left: $unit__gutter--width;
 			margin-left: #{$unit__gutter--width * -1};
 			border-bottom: 1px solid transparent;
 			text-decoration: none;
 		}
 	}
-	li>ul{
+	li>ul {
 		list-style-type: none;
 	}
-	li>a{
+	li>a {
 		text-decoration: none;
 		border-bottom: 1px solid transparent;
 	}
-	ol,
-	ul{
-		padding-left: #{$unit__gutter--width * 1.5};
-		>ol,
-		ul{
-			padding-left: #{$unit__gutter--width};
-		}
-		li{
-			margin-bottom: $unit__gutter--width;
-			margin-left: -1px;}}
 	& ~ article,
-	& ~ section{
-		@include transition;	
-		@include media-from($length-mobile-cutoff){
-			margin-left: #{($unit__base-x-two / 16) + ($unit__gutter--width * 8)};
-			margin-right: #{$unit__gutter--width * 4};}}}
+	& ~ section {
+		@include transition;
+		@include media-from($length-mobile-cutoff) {
+			margin-left: #{$unit__base-x-two / 16 + $unit__gutter--width * 8};
+			margin-right: #{$unit__gutter--width * 4};
+		}
+	}
+}
