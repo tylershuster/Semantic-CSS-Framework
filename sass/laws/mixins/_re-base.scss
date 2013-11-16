@@ -1,3 +1,8 @@
+// The Re-Base Mixin
+//
+// The re-base mixin pulls an object towards the $side and then pushes its content back
+// by the $amount. Used in article>.pull s
+
 @mixin re-base($side,$amount){
 	$otherSide: null;
 	@if $side == left {

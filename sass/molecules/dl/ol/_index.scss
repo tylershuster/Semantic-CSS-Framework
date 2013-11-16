@@ -1,4 +1,7 @@
->ol {
+// Dictionary Definitions
+//
+// An ordered list within a definition list is formatted as a dictionary definition. A nested ordered list contains definitions
+&{
 	padding: 0;
 	dt {
 		font-size: typography(p, font-size) * 1rem;

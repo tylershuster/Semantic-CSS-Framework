@@ -1,6 +1,13 @@
+// The Masthead
+// 
+// If the .logo and h1 are wrapped in section.masthead, they are centered on the page,
+// the header height should change, and the navigation will be centered below the masthead.
+//
+// header>section.masthead>h1+img
+
 @import "nav";
 @import "nav__li__ul";
-.masthead{
+&{
 	position: absolute;
 	margin: 0 auto;
 	white-space: nowrap;

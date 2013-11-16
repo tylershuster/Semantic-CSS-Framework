@@ -1,10 +1,22 @@
+// #The Box-Shadow Mixins
+//
+// The box-shadow mixins provide an essential part of the SCF's style.
+// They are used in the object mixin to provide a visual metaphor for the
+// metaphorical levels of content. They can also be used on their own.
+//
+// The box-shadow mixins use the border radius to create rounded edges,
+// the dark 3d color to provide a bottom border that looks lifted.
+
 @mixin box-shadow($on-background){	
+	// Remove existing borders
 	border: 0px solid;
+	// Set border-radius
 	border-radius: $unit__border-radius;
 	border-bottom: $unit__border-radius solid $color__3d--dark;		
 	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
 }
 @mixin box-shadow-inset($on-background){	
+	// DEPRECATED: box-shadow-inset does not use the $onbackground variable
 	border: none;
 	border-radius: $unit__border-radius;
 	border-top: $unit__border-radius solid $color__3d--dark;

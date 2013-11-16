@@ -1,3 +1,7 @@
+// The Prefixer Mixin
+// 
+// Provides prefixes
+
 @mixin prefixer($property, $value){
 	-webkit-#{$property}: $value;
 	-moz-#{$property}: $value;

@@ -1,3 +1,7 @@
+// Query Mixins
+//
+// min- and max- width queries
+
 @mixin media-from($width){
 	@media only screen and (min-width: #{$width * 1px}){
 		@content;

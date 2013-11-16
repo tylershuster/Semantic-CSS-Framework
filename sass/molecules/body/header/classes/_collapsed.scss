@@ -1,3 +1,9 @@
+// The Collapsed Header
+//
+// A jQuery function adds the collapsed class onto the header when the user scrolls
+// The collapsed header shifts upward as if it remained sticky for a second while
+// the user scrolled. It becomes visible on a hover or a scroll up
+
 @include transition(0s);
 
 &.collapsed {

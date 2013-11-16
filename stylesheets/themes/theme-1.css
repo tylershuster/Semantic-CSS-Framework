@@ -22,11 +22,6 @@ body {
   body:after {
     display: block; }
 
-/* Defaults*/
-/* mono, complement, triad, tetrad, analogic, accented-analogic*/
-/* rgb, ryb*/
-/* Partials*/
-/* Tell other files that this is loaded.*/
 * body {
   color: #212a2b;
   background: -webkit-linear-gradient(#f9fafb, #f9fafb);
@@ -2382,7 +2377,7 @@ body > header {
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     z-index: 110; }
-  body > header ~ nav {
+  body > header section.masthead ~ nav {
     position: relative;
     top: 3rem;
     -webkit-transition: all 0.4s ease-in-out;
@@ -2391,24 +2386,24 @@ body > header {
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     z-index: 110; }
-    body > header ~ nav address {
+    body > header section.masthead ~ nav address {
       position: absolute;
       bottom: 2rem;
       height: 3rem;
       left: 0;
       padding-left: 0.5rem;
       z-index: 110; }
-      body > header ~ nav address a {
+      body > header section.masthead ~ nav address a {
         line-height: 3rem;
         height: 3rem; }
-        body > header ~ nav address a, body > header ~ nav address a:before {
+        body > header section.masthead ~ nav address a, body > header section.masthead ~ nav address a:before {
           color: #283234;
           text-decoration: none; }
       @media only screen and (min-width: 1024px) {
-        body > header ~ nav address a {
+        body > header section.masthead ~ nav address a {
           color: #f9fafb; } }
       @media only screen and (max-width: 1024px) {
-        body > header ~ nav address {
+        body > header section.masthead ~ nav address {
           margin-top: 0;
           width: auto;
           height: 2rem;
@@ -2418,12 +2413,12 @@ body > header {
           padding-left: 0.5rem;
           text-align: center;
           border-bottom: 1px solid #d4dcde; }
-          body > header ~ nav address a {
+          body > header section.masthead ~ nav address a {
             line-height: 2rem;
             height: 2rem; }
-          body > header ~ nav address + ul {
+          body > header section.masthead ~ nav address + ul {
             top: 2rem; } }
-    body > header ~ nav > ul {
+    body > header section.masthead ~ nav > ul {
       position: relative;
       max-width: 60em;
       min-height: 2rem;
@@ -2441,11 +2436,11 @@ body > header {
       border-radius: 2px;
       border-bottom: 2px solid rgba(0, 0, 0, 0.45);
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25); }
-      body > header ~ nav > ul > div {
+      body > header section.masthead ~ nav > ul > div {
         display: none; }
-      body > header ~ nav > ul div + li {
+      body > header section.masthead ~ nav > ul div + li {
         border-top: 1px solid #e6ebec; }
-      body > header ~ nav > ul li {
+      body > header section.masthead ~ nav > ul li {
         box-sizing: border-box;
         table-layout: fixed;
         vertical-align: middle;
@@ -2457,10 +2452,10 @@ body > header {
         float: left;
         width: 100%;
         display: table-cell; }
-        body > header ~ nav > ul li:hover {
+        body > header section.masthead ~ nav > ul li:hover {
           background-color: #283234;
           border: none; }
-          body > header ~ nav > ul li:hover ul {
+          body > header section.masthead ~ nav > ul li:hover ul {
             z-index: 999;
             width: 110%;
             border: 0px solid;
@@ -2468,13 +2463,13 @@ body > header {
             border-bottom: 2px solid rgba(0, 0, 0, 0.45);
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25); }
             @media only screen and (max-width: 1024px) {
-              body > header ~ nav > ul li:hover ul {
+              body > header section.masthead ~ nav > ul li:hover ul {
                 left: 100%; } }
-            body > header ~ nav > ul li:hover ul li {
+            body > header section.masthead ~ nav > ul li:hover ul li {
               margin-bottom: 0; }
-          body > header ~ nav > ul li:hover > a, body > header ~ nav > ul li:hover > a:hover {
+          body > header section.masthead ~ nav > ul li:hover > a, body > header section.masthead ~ nav > ul li:hover > a:hover {
             color: #f9fafb; }
-          body > header ~ nav > ul li:hover > a:after {
+          body > header section.masthead ~ nav > ul li:hover > a:after {
             left: calc(100% + 1.2rem);
             border-top: 0.75rem solid #d4dcde;
             -webkit-transform: rotate(-90deg);
@@ -2483,40 +2478,40 @@ body > header {
             -ms-transform: rotate(-90deg);
             transform: rotate(-90deg); }
         @media only screen and (max-width: 1024px) {
-          body > header ~ nav > ul li ul {
+          body > header section.masthead ~ nav > ul li ul {
             left: -100%; } }
-        body > header ~ nav > ul li ul + a:after {
+        body > header section.masthead ~ nav > ul li ul + a:after {
           bottom: 0;
           top: 0;
           margin: auto;
           left: calc(100% + 0.2rem); }
-        body > header ~ nav > ul li > a {
+        body > header section.masthead ~ nav > ul li > a {
           text-decoration: none;
           width: 100%;
           display: table-cell; }
       @media only screen and (max-width: 1024px) {
-        body > header ~ nav > ul {
+        body > header section.masthead ~ nav > ul {
           display: block;
           float: left;
           top: 0;
           background-color: #d4dcde; } }
       @media only screen and (min-width: 1024px) {
-        body > header ~ nav > ul > ul {
+        body > header section.masthead ~ nav > ul > ul {
           border: 0;
           box-shadow: none; }
-          body > header ~ nav > ul > ul li {
+          body > header section.masthead ~ nav > ul > ul li {
             width: auto;
             text-align: center;
             float: none; }
-            body > header ~ nav > ul > ul li:hover ul {
+            body > header section.masthead ~ nav > ul > ul li:hover ul {
               width: 100%; }
-            body > header ~ nav > ul > ul li a {
+            body > header section.masthead ~ nav > ul > ul li a {
               display: block; }
-          body > header ~ nav > ul > ul > div + li {
+          body > header section.masthead ~ nav > ul > ul > div + li {
             border-top: none;
             border-left: 1px solid #e6ebec; } }
     @media only screen and (max-width: 1024px) {
-      body > header ~ nav {
+      body > header section.masthead ~ nav {
         position: fixed;
         top: 3rem;
         left: -1px;
@@ -2549,39 +2544,39 @@ body > header {
         -o-transform-origin: 50% -100%;
         -ms-transform-origin: 50% -100%;
         transform-origin: 50% -100%; }
-        body > header ~ nav li {
+        body > header section.masthead ~ nav li {
           padding-left: 1rem;
           display: block;
           text-align: left; }
-          body > header ~ nav li > a {
+          body > header section.masthead ~ nav li > a {
             padding: 1rem 0;
             height: 1rem; } }
-    body > header ~ nav a {
+    body > header section.masthead ~ nav a {
       font-family: "Open Sans"; }
     @media only screen and (min-width: 256px) {
-      body > header ~ nav {
+      body > header section.masthead ~ nav {
         width: 62%; } }
     @media only screen and (min-width: 384px) {
-      body > header ~ nav {
+      body > header section.masthead ~ nav {
         width: 50%; } }
     @media only screen and (min-width: 640px) {
-      body > header ~ nav {
+      body > header section.masthead ~ nav {
         width: 38%; } }
     @media only screen and (min-width: 1024px) {
-      body > header ~ nav {
+      body > header section.masthead ~ nav {
         width: 100%; }
-        body > header ~ nav li {
+        body > header section.masthead ~ nav li {
           float: none;
           text-align: center;
           display: table-cell; }
-          body > header ~ nav li:hover ul {
+          body > header section.masthead ~ nav li:hover ul {
             top: 100%; }
-          body > header ~ nav li:hover a:after {
+          body > header section.masthead ~ nav li:hover a:after {
             border-top: 0.75rem solid #d4dcde; } }
     @media only screen and (min-width: 1664px) {
-      body > header ~ nav {
+      body > header section.masthead ~ nav {
         width: 100%; } }
-  body > header ~ nav li > ul {
+  body > header section.masthead ~ nav li > ul {
     background-color: #d4dcde;
     display: table;
     position: absolute;
@@ -2600,9 +2595,9 @@ body > header {
     overflow: hidden;
     width: 100%;
     border: 0; }
-    body > header ~ nav li > ul:hover {
+    body > header section.masthead ~ nav li > ul:hover {
       border: 1px none none none; }
-    body > header ~ nav li > ul li {
+    body > header section.masthead ~ nav li > ul li {
       margin-bottom: -100%;
       transition: all 0.4s ease-in-out;
       -moz-transition: all 0.4s ease-in-out;
@@ -2612,15 +2607,15 @@ body > header {
       width: 100%;
       display: table;
       height: 2rem; }
-      body > header ~ nav li > ul li:last-of-type {
+      body > header section.masthead ~ nav li > ul li:last-of-type {
         border-bottom-right-radius: 2px;
         border-bottom-left-radius: 2px; }
-      body > header ~ nav li > ul li a {
+      body > header section.masthead ~ nav li > ul li a {
         display: table-cell;
         vertical-align: middle; }
-    body > header ~ nav li > ul + a {
+    body > header section.masthead ~ nav li > ul + a {
       position: relative; }
-    body > header ~ nav li > ul + a:after {
+    body > header section.masthead ~ nav li > ul + a:after {
       content: ' ';
       display: block;
       width: 0;
@@ -2637,17 +2632,17 @@ body > header {
       -moz-transition: all 0.4s ease-in-out;
       -webkit-transition: all 0.4s ease-in-out; }
     @media only screen and (min-width: 1024px) {
-      body > header ~ nav li > ul {
+      body > header section.masthead ~ nav li > ul {
         left: 0;
         top: 50%; }
-        body > header ~ nav li > ul div + li {
+        body > header section.masthead ~ nav li > ul div + li {
           border-top: 1px solid #e6ebec; }
-        body > header ~ nav li > ul + a:after {
+        body > header section.masthead ~ nav li > ul + a:after {
           bottom: 0;
           top: 0;
           margin: auto;
           left: calc(100% + 0.2rem); } }
-  body > header .masthead {
+  body > header section.masthead {
     position: absolute;
     margin: 0 auto;
     white-space: nowrap;
@@ -2662,19 +2657,19 @@ body > header {
     transition: all 0.4s ease-in-out;
     /*masthead should be centered on page*/ }
     @media only screen and (max-width: 1024px) {
-      body > header .masthead {
+      body > header section.masthead {
         height: 3rem; }
-        body > header .masthead .logo + h1 {
+        body > header section.masthead .logo + h1 {
           top: -1rem; } }
-    body > header .masthead .logo {
+    body > header section.masthead .logo {
       margin: auto;
       top: 0;
       bottom: 0;
       height: 100%;
       float: none; }
-    body > header .masthead h1 {
+    body > header section.masthead h1 {
       float: none; }
-    body > header .masthead .logo + h1 {
+    body > header section.masthead .logo + h1 {
       position: relative;
       top: -1rem; }
   @media all and (min-width: 1024px) {
@@ -2789,7 +2784,7 @@ body > main > nav {
     -webkit-transition: all 0.4s ease-in-out; }
     @media only screen and (min-width: 1024px) {
       body > main > nav ~ article, body > main > nav ~ section {
-        margin-left: 24rem;
+        margin-left: 20rem;
         margin-right: 4rem; } }
 body > main > article {
   padding: 0 0.5rem; }

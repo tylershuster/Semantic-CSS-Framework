@@ -1,9 +1,22 @@
+// The Typography Function
+//
+// You found it. The beast that needs killing.
+// Currently the typography mixin takes two arguments, the element to be styled
+// and its attribute. It needs to be rewritten so that all the font variables
+// for the theme can be cached in an array and retreived later without re-calling
+// the function
+
 @function typography($element,$attribute){
+	// If it's the <p> element,
 	@if $element == p{@return map-get($root, $attribute);}
+	// Else if it's the <small> element,
 	@else if $element == small{	@return map-get($small-text, $attribute);}
+	// Else check the quality,
 	@else {
 		@if $quality ==  min {
+			// Then check the element and return from its array
 			@if $element == h1{@return map-get($note5, $attribute);}
+			// If not a defined element, call the root note of the chord
 			@else {@return map-get($noteb3, $attribute);}
 		}
 		@else if $quality ==  maj {

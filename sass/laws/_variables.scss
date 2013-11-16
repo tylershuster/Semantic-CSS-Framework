@@ -1,3 +1,7 @@
+// Global Variables
+// 
+// WARNING: here be a sloppy mess
+
 $color: #ff0000 !global !default;
 $em: 16 !global !default;
 $unit__base-x-one: $em * 8 !global !default;
@@ -37,270 +41,39 @@ $article-margin-length-five: 3rem !global !default;
 $article-margin-length-eight: 4rem !global !default;
 $article-margin-length-thirteen: 5rem !global !default;
 
-$small-text: (
-	font-size: 0.850,
-	line-height: 1,
-	padding-top: 0.75,
-	padding-bottom: 0.25,
-	font-weight: normal,
-	font-style: normal
-);
-$root-flat: (
-	font-size: 1.000,
-	line-height: 1,
-	padding-top: 0.75,
-	padding-bottom: 0.25,
-	font-weight: normal,
-	font-style: normal
-);
-$root: (
-	font-size: 1.000,
-	line-height: 2,
-	padding-top: 0.75,
-	padding-bottom: 0.25,
-	font-weight: normal,
-	font-style: normal
-);
-$root-sharp: (
-	font-size: 1.000,
-	line-height: 2,
-	padding-top: 0.75,
-	padding-bottom: 0.25,
-	font-weight: normal,
-	font-style: italic
-);
-$noteb2: (
-	font-size: 1.067,
-	line-height: 2,
-	padding-top: 0.60,
-	padding-bottom: 0.40,
-	font-weight: normal,
-	font-style: normal
-);
-$note2: (
-	font-size: 1.125,
-	line-height: 2,
-	padding-top: 0.60,
-	padding-bottom: 0.40,
-	font-weight: bold,
-	font-style: normal
-);
-$notes2: (
-	font-size: 1.200,
-	line-height: 2,
-	padding-top: 0.60,
-	padding-bottom: 0.40,
-	font-weight: bold,
-	font-style: italic
-);
-$noteb3: (
-	font-size: 1.200,
-	line-height: 2,
-	padding-top: 0.60,
-	padding-bottom: 0.40,
-	font-weight: normal,
-	font-style: normal
-);
-$note3: (
-	font-size: 1.250,
-	line-height: 2,
-	padding-top: 0.55,
-	padding-bottom: 0.45,
-	font-weight: bold,
-	font-style: normal
-);
-$note4: (
-	font-size: 1.330,
-	line-height: 2,
-	padding-top: 0.50,
-	padding-bottom: 0.5,
-	font-weight: bold,
-	font-style: normal
-);
-$notes4: (
-	font-size: 1.414,
-	line-height: 2,
-	padding-top: 0.55,
-	padding-bottom: 0.45,
-	font-weight: bold,
-	font-style: italic
-);
-$noteb5: (
-	font-size: 1.414,
-	line-height: 2,
-	padding-top: 0.55,
-	padding-bottom: 0.45,
-	font-weight: bold,
-	font-style: normal
-);
-$note5: (
-	font-size: 1.500,
-	line-height: 2,
-	padding-top: 0.47,
-	padding-bottom: 0.54,
-	font-weight: bold,
-	font-style: normal
-);
-$notes5: (
-	font-size: 1.620,
-	line-height: 2,
-	padding-top: 0.38,
-	padding-bottom: 0.60,
-	font-weight: bold,
-	font-style: italic
-);
-$noteb6: (
-	font-size: 1.620,
-	line-height: 2,
-	padding-top: 0.38,
-	padding-bottom: 0.6,
-	font-weight: normal,
-	font-style: normal
-);
-$note6: (
-	font-size: 1.667,
-	line-height: 2,
-	padding-top: 0.35,
-	padding-bottom: 0.65,
-	font-weight: bold,
-	font-style: normal
-);
-$notes6: (
-	font-size: 1.778,
-	line-height: 2,
-	padding-top: 0.41,
-	padding-bottom: 0.59,
-	font-weight: bold,
-	font-style: italic
-);
-$noteb7: (
-	font-size: 1.778,
-	line-height: 2,
-	padding-top: 0.41,
-	padding-bottom: 0.59,
-	font-weight: normal,
-	font-style: normal
-);
-$note7: (
-	font-size: 1.875,
-	line-height: 2,
-	padding-top: 0.25,
-	padding-bottom: 0.75,
-	font-weight: bold,
-	font-style: normal
-);
-$note8: (
-	font-size: 2.000,
-	line-height: 2,
-	padding-top: 0.22,
-	padding-bottom: 0.75,
-	font-weight: bold,
-	font-style: normal
-);
-$notes8: (
-	font-size: 2.134,
-	line-height: 3,
-	padding-top: 0.68,
-	padding-bottom: 0.30,
-	font-weight: bold,
-	font-style: italic
-);
-$noteb9: (
-	font-size: 2.134,
-	line-height: 3,
-	padding-top: 0.68,
-	padding-bottom: 0.30,
-	font-weight: normal,
-	font-style: normal
-);
-$note9: (
-	font-size: 2.250,
-	line-height: 3,
-	padding-top: 0.72,
-	padding-bottom: 0.26,
-	font-weight: bold,
-	font-style: normal
-);
-$notes9: (
-	font-size: 2.400,
-	line-height: 3,
-	padding-top: 0.54,
-	padding-bottom: 0.45,
-	font-weight: bold,
-	font-style: italic
-);
-$noteb10: (
-	font-size: 2.500,
-	line-height: 3,
-	padding-top: 0.55,
-	padding-bottom: 0.45,
-	font-weight: normal,
-	font-style: normal
-);
-$note10: (
-	font-size: 2.500,
-	line-height: 3,
-	padding-top: 0.55,
-	padding-bottom: 0.45,
-	font-weight: bold,
-	font-style: normal
-);
-$note11: (
-	font-size: 2.660,
-	line-height: 3,
-	padding-top: 0.67,
-	padding-bottom: 0.34,
-	font-weight: bold,
-	font-style: normal
-);
-$notes11: (
-	font-size: 2.818,
-	line-height: 3,
-	padding-top: 0.43,
-	padding-bottom: 0.54,
-	font-weight: bold,
-	font-style: italic
-);
-$noteb12: (
-	font-size: 2.818,
-	line-height: 3,
-	padding-top: 0.43,
-	padding-bottom: 0.54,
-	font-weight: normal,
-	font-style: normal
-);
-$note12: (
-	font-size: 3.000,
-	line-height: 3,
-	padding-top: 0.39,
-	padding-bottom: 0.60,
-	font-weight: bold,
-	font-style: normal
-);
-$notes12: (
-	font-size: 3.201,
-	line-height: 4,
-	padding-top: 0.75,
-	padding-bottom: 0.25,
-	font-weight: bold,
-	font-style: italic
-);
-$noteb13: (
-	font-size: 3.201,
-	line-height: 4,
-	padding-top: 0.75,
-	padding-bottom: 0.25,
-	font-weight: normal,
-	font-style: normal
-);
-$note13: (
-	font-size: 3.375,
-	line-height: 4,
-	padding-top: 0.70,
-	padding-bottom: 0.30,
-	font-weight: bold,
-	font-style: normal
-);
+$small-text: (font-size: 0.850,line-height: 1,padding-top: 0.75,padding-bottom: 0.25,font-weight: normal,font-style: normal);
+$root-flat: (font-size: 1.000,line-height: 1,padding-top: 0.75,padding-bottom: 0.25,font-weight: normal,font-style: normal);
+$root: (font-size: 1.000,line-height: 2,padding-top: 0.75,padding-bottom: 0.25,font-weight: normal,font-style: normal);
+$root-sharp: (font-size: 1.000,line-height: 2,padding-top: 0.75,padding-bottom: 0.25,font-weight: normal,font-style: italic);
+$noteb2: (font-size: 1.067,line-height: 2,padding-top: 0.60,padding-bottom: 0.40,font-weight: normal,font-style: normal);
+$note2: (font-size: 1.125,line-height: 2,padding-top: 0.60,padding-bottom: 0.40,font-weight: bold,font-style: normal);
+$notes2: (font-size: 1.200,line-height: 2,padding-top: 0.60,padding-bottom: 0.40,font-weight: bold,font-style: italic);
+$noteb3: (font-size: 1.200,line-height: 2,padding-top: 0.60,padding-bottom: 0.40,font-weight: normal,font-style: normal);
+$note3: (font-size: 1.250,line-height: 2,padding-top: 0.55,padding-bottom: 0.45,font-weight: bold,font-style: normal);
+$note4: (font-size: 1.330,line-height: 2,padding-top: 0.50,padding-bottom: 0.5,font-weight: bold,font-style: normal);
+$notes4: (font-size: 1.414,line-height: 2,padding-top: 0.55,padding-bottom: 0.45,font-weight: bold,font-style: italic);
+$noteb5: (font-size: 1.414,line-height: 2,padding-top: 0.55,padding-bottom: 0.45,font-weight: bold,font-style: normal);
+$note5: (font-size: 1.500,line-height: 2,padding-top: 0.47,padding-bottom: 0.54,font-weight: bold,font-style: normal);
+$notes5: (font-size: 1.620,line-height: 2,padding-top: 0.38,padding-bottom: 0.60,font-weight: bold,font-style: italic);
+$noteb6: (font-size: 1.620,line-height: 2,padding-top: 0.38,padding-bottom: 0.6,font-weight: normal,font-style: normal);
+$note6: (font-size: 1.667,line-height: 2,padding-top: 0.35,padding-bottom: 0.65,font-weight: bold,font-style: normal);
+$notes6: (font-size: 1.778,line-height: 2,padding-top: 0.41,padding-bottom: 0.59,font-weight: bold,font-style: italic);
+$noteb7: (font-size: 1.778,line-height: 2,padding-top: 0.41,padding-bottom: 0.59,font-weight: normal,font-style: normal);
+$note7: (font-size: 1.875,line-height: 2,padding-top: 0.25,padding-bottom: 0.75,font-weight: bold,font-style: normal);
+$note8: (font-size: 2.000,line-height: 2,padding-top: 0.22,padding-bottom: 0.75,font-weight: bold,font-style: normal);
+$notes8: (font-size: 2.134,line-height: 3,padding-top: 0.68,padding-bottom: 0.30,font-weight: bold,font-style: italic);
+$noteb9: (font-size: 2.134,line-height: 3,padding-top: 0.68,padding-bottom: 0.30,font-weight: normal,font-style: normal);
+$note9: (font-size: 2.250,line-height: 3,padding-top: 0.72,padding-bottom: 0.26,font-weight: bold,font-style: normal);
+$notes9: (font-size: 2.400,line-height: 3,padding-top: 0.54,padding-bottom: 0.45,font-weight: bold,font-style: italic);
+$noteb10: (font-size: 2.500,line-height: 3,padding-top: 0.55,padding-bottom: 0.45,font-weight: normal,font-style: normal);
+$note10: (font-size: 2.500,line-height: 3,padding-top: 0.55,padding-bottom: 0.45,font-weight: bold,font-style: normal);
+$note11: (font-size: 2.660,line-height: 3,padding-top: 0.67,padding-bottom: 0.34,font-weight: bold,font-style: normal);
+$notes11: (font-size: 2.818,line-height: 3,padding-top: 0.43,padding-bottom: 0.54,font-weight: bold,font-style: italic);
+$noteb12: (font-size: 2.818,line-height: 3,padding-top: 0.43,padding-bottom: 0.54,font-weight: normal,font-style: normal);
+$note12: (font-size: 3.000,line-height: 3,padding-top: 0.39,padding-bottom: 0.60,font-weight: bold,font-style: normal);
+$notes12: (font-size: 3.201,line-height: 4,padding-top: 0.75,padding-bottom: 0.25,font-weight: bold,font-style: italic);
+$noteb13: (font-size: 3.201,line-height: 4,padding-top: 0.75,padding-bottom: 0.25,font-weight: normal,font-style: normal);
+$note13: (font-size: 3.375,line-height: 4,padding-top: 0.70,padding-bottom: 0.30,font-weight: bold,font-style: normal);
 
 
 

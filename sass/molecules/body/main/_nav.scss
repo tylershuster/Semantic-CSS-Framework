@@ -20,6 +20,7 @@
 	background-color: $color-background;
 	@include transition;
 	&:hover:nth-of-type(n) {
+		//keeps it focused when the header is collapsed
 		opacity: 1;
 	}
 	@include media-from($length-mobile-cutoff) {
@@ -64,9 +65,10 @@
 	}
 	& ~ article,
 	& ~ section {
+		//adjacent articles and sections should be shifted over
 		@include transition;
 		@include media-from($length-mobile-cutoff) {
-			margin-left: #{$unit__base-x-two / 16 + $unit__gutter--width * 8};
+			margin-left: #{$unit__base-x-two / 16 + $unit__gutter--width * 4};
 			margin-right: #{$unit__gutter--width * 4};
 		}
 	}

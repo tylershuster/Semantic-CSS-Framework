@@ -1,3 +1,11 @@
+// The Font Properties Mixin
+//
+// The font-properties-for mixin combines all font styles into a single mixin.
+// It requires the typography mixin to be loaded, as it calls it for each property.
+// By specifying an optional second variable(0-1), you can scale the output. 
+//
+// Later versions will initialize the typographic variables into a mapped array
+
 @mixin font-properties-for($element, $multiplier: 1){
 	font-size: #{typography($element,font-size) * (1rem * $multiplier)};
 	line-height: #{typography($element,line-height) * ($unit__line-height * $multiplier)};

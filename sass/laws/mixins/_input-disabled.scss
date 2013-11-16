@@ -1,3 +1,7 @@
+// The input-disabled Mixin
+//
+// Styles an input to look disabled.
+
 @mixin input-disabled{
 	background-color: $color-background;
 	color: $color-drawer;

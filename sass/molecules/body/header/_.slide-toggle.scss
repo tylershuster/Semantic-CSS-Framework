@@ -1,3 +1,10 @@
+// The Toggle
+//
+// The toggle is inserted inside the body, immediately before the <main> element.
+// Further implementation will make a generic toggle element that can be used
+// for tab panels and other uses.
+//
+// input:c#slide-checkbox.slide-checkbox+label[for="slide-checkbox"].slide-toggle
 $toggle-bar-height: ($unit__nav--height/1rem) * 3.2px;
 .slide-toggle {
 	float: left;

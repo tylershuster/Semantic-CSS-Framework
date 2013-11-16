@@ -68,7 +68,7 @@
 			</ul>
 		</nav>		
 	</header>-->
-	<input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
+	<input type="checkbox" id="slide-checkbox" class="slide-checkbox">
 	<label for="slide-checkbox" class="slide-toggle" onclick></label>
 	<header>	
 		<!--<img src="../logo.png" alt="" class="logo">-->

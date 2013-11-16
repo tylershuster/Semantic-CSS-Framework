@@ -1,3 +1,8 @@
+// Main Navigation
+// 
+// The body>header>nav always contains links to other areas of the site.
+// As such, it provides the navigation backbone. Lists can be nested two levels deep.
+
 >nav{
 	float: right;
 	>address{

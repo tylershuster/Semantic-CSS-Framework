@@ -1,3 +1,7 @@
+// The Opacity Mixin
+//
+// Cross-browser opacity
+
 @mixin opacity($trans) {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
 	-moz-opacity: $trans;

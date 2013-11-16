@@ -1,3 +1,12 @@
+// The Object Mixin
+//
+// The object mixin takes a color and optional opacity level. It requires the box-shadow mixin.
+// It applies an optional gradient, the background-color, and the box-shadow, making the
+// styled element have the skeumorphic metaphor of the theme.
+//
+// Later versions should be able to specify whether the object is simply an extrusion or 
+// "floating" on top of the element z-under it
+
 @mixin object($color, $opacity: 1){
 	@if $opacity == 1{
 		background-color: $color;

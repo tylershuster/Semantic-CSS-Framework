@@ -1,6 +1,8 @@
-//////////////////////////////
-// Swatches
-//////////////////////////////
+// Styleguide Styles
+//
+// The styleguide can be inserted with Emmet by using the abbrevation below. It previews colors and type sizes.
+//
+// section#swatches>p#color-description+div.colors.row>figure#primary-swatch>div.swatch+figcaption{Primary Color}^+figure#secondary-swatch>div.swatch+figcaption{Secondary Color}^+figure#tertiary-swatch>div.swatch+figcaption{Tertiary Color}^+figure#accent-swatch>div.swatch+figcaption{Accent Color}^^+p#musical-typography+div.headers.row>figure>h1{Primary Header}+h2{Secondary Header}+h3{Tertiary Header}+h4{Quaternary Header}+h5{Quinary Header}+p{Lorem}
 #swatches{
 	width: 100%;
 	display: block;
