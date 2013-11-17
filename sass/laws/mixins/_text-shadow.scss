@@ -1,14 +1,14 @@
 @mixin text-shadow{
 	@if $skeu == faux-flat{
-		text-shadow: $unit__shadow-size $unit__shadow-size 0px rgba(0, 0, 0, 0.42);}
+		text-shadow: $unit-scalar-shadow-x $unit-scalar-shadow-y 0px rgba(0, 0, 0, 0.42);}
 	@else if $skeu == cartoon{
-		text-shadow: $unit__shadow-size $unit__shadow-size 0px rgba(0, 0, 0, 0.85);}
+		text-shadow: $unit-scalar-shadow-x $unit-scalar-shadow-y 0px rgba(0, 0, 0, 0.85);}
 }
 @mixin text-shadow-inset{
 	@if $skeu == faux-flat{
-		text-shadow: $unit__shadow-size -$unit__shadow-size 0px rgba(0, 0, 0, 0.42);}
+		text-shadow: $unit-scalar-shadow-x -$unit-scalar-shadow-y 0px rgba(0, 0, 0, 0.42);}
     @else if $skeu == cartoon{
-    	text-shadow: $unit__shadow-size $unit__shadow-size 0px rgba(0, 0, 0, 0.85);}
+    	text-shadow: $unit-scalar-shadow-x $unit-scalar-shadow-y 0px rgba(0, 0, 0, 0.85);}
    		-webkit-background-clip: text;
    		-moz-background-clip: text;
 		background-clip: text;

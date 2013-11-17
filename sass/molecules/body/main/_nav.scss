@@ -1,3 +1,4 @@
+
 // The main navigation sidebar. Useful for navigating large documents.
 //nav 				- Fixed, two columns wide, #{$color-background} background
 //	ol, ul 			- Lists inside the main navigation
@@ -9,10 +10,10 @@
 //	& ~ article,	- articles
 //	& ~ section: 	- or sections adjacent to the nav and requiring shifting
 
->nav {
+& {
 	position: fixed;
-	width: #{$unit__base-x-two * 1px};
-	padding-left: $unit__gutter--width;
+	width: #{nth($units-scalar, 2) * 1px};
+	padding-left: $unit-scalar-gutter;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	height: 100%;
@@ -23,35 +24,35 @@
 		//keeps it focused when the header is collapsed
 		opacity: 1;
 	}
-	@include media-from($length-mobile-cutoff) {
-		margin-top: #{$unit__nav--height * -1};
+	@include media-from($unit-scalar-mobile-cutoff) {
+		margin-top: #{$unit-scalar-height-nav * -1};
 	}
 
-	@include media-to($length-mobile-cutoff) {
+	@include media-to($unit-scalar-mobile-cutoff) {
 		display: none;
 	}
 
 	ol,
 	ul {
-		padding-left: #{$unit__gutter--width * 1.5};
+		padding-left: #{$unit-scalar-gutter * 1.5};
 		li {
-			margin-bottom: $unit__gutter--width;
+			margin-bottom: $unit-scalar-gutter;
 			margin-left: -1px;
 		}
 		> ol,
 		ul {
-			padding-left: #{$unit__gutter--width};
+			padding-left: #{$unit-scalar-gutter};
 		}
 	}
 	li > ol,
 	li > ul {
-		padding-left: $unit__gutter--width * 1.5;
-		padding-top: $unit__gutter--width;
+		padding-left: $unit-scalar-gutter * 1.5;
+		padding-top: $unit-scalar-gutter;
 		border-left: 1px solid transparent;
 		box-sizing: content-box;
 		>li>a {
-			padding-left: $unit__gutter--width;
-			margin-left: #{$unit__gutter--width * -1};
+			padding-left: $unit-scalar-gutter;
+			margin-left: #{$unit-scalar-gutter * -1};
 			border-bottom: 1px solid transparent;
 			text-decoration: none;
 		}
@@ -67,9 +68,9 @@
 	& ~ section {
 		//adjacent articles and sections should be shifted over
 		@include transition;
-		@include media-from($length-mobile-cutoff) {
-			margin-left: #{$unit__base-x-two / 16 + $unit__gutter--width * 4};
-			margin-right: #{$unit__gutter--width * 4};
+		@include media-from($unit-scalar-mobile-cutoff) {
+			margin-left: #{nth($units-scalar, 2) / 16 + $unit-scalar-gutter * 4};
+			margin-right: #{$unit-scalar-gutter * 4};
 		}
 	}
 }

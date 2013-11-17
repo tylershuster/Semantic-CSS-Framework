@@ -4,7 +4,7 @@
 	position: absolute;
 	left: -100%;
 	padding: 0;
-	border-radius: $unit__border-radius;
+	border-radius: $unit-scalar-border-radius;
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
 	@include box-shadow($color-drawer);
@@ -21,10 +21,10 @@
 		float: left;
 		width: 100%;
 		display: table;					
-		height: $unit__nav--height;
+		height: $unit-scalar-height-nav;
 		&:last-of-type{
-			border-bottom-right-radius: $unit__border-radius;
-			border-bottom-left-radius: $unit__border-radius;}
+			border-bottom-right-radius: $unit-scalar-border-radius;
+			border-bottom-left-radius: $unit-scalar-border-radius;}
 		a{
 			display: table-cell;
 			vertical-align: middle;}}
@@ -36,18 +36,18 @@
 		width: 0; 
 		height: 0; 
 		position: absolute;
-		border-top: #{$unit__nav--height / 4} solid $color-primary; 
-		border-left: #{$unit__nav--height / 8} solid transparent; 
-		border-right: #{$unit__nav--height / 8} solid transparent;
+		border-top: #{$unit-scalar-height-nav / 4} solid $color-primary; 
+		border-left: #{$unit-scalar-height-nav / 8} solid transparent; 
+		border-right: #{$unit-scalar-height-nav / 8} solid transparent;
 		bottom: 0;
 		top: 0;
 		margin: auto;
 		left: calc(100% + 0.2rem);
 		@include transition;}
-	@include media-from($unit__base-x-two){}
-	@include media-from($unit__base-x-three){}
-	@include media-from($unit__base-x-five){}
-	@include media-from($unit__base-x-eight){
+	@include media-from(nth($units-scalar, 2)){}
+	@include media-from(nth($units-scalar, 3)){}
+	@include media-from(nth($units-scalar, 5)){}
+	@include media-from(nth($units-scalar, 8)){
 		left: 0;
 		top: 50%;
 		div + li{
@@ -57,5 +57,5 @@
 			top: 0;
 			margin: auto;
 			left: calc(100% + 0.2rem);}}
-	@include media-from($unit__base-x-thirteen){}
+	@include media-from(nth($units-scalar, 13)){}
 }

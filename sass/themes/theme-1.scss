@@ -30,35 +30,35 @@ $grid: off;
 //$color-primary: ;
 $color-secondary: #D89E27;
 $color-tertiary: #4C726D;
-//$color-text: $color__earth-tone--j;#DBC96D
+//$color-text: $color-earth-j;#DBC96D
 $color-accent: #E6E7B3 ;
 //$color-background: white;
 //$color-drawer:  #4C726D;
 
-//$unit__line-height: 1.5rem;
+//$unit-scalar-height-line: 1.5rem;
 //BF7960
 //
-//$em: 16;
-//$unit__base-x-one: $em * 8;
-//$unit__base-x-two: $unit__base-x-one * 2;
-//$unit__base-x-three: $unit__base-x-one * 3;
-//$unit__base-x-five: $unit__base-x-one * 5;
-//$unit__base-x-eight: $unit__base-x-one * 8;
-//$unit__base-x-thirteen: $unit__base-x-one * 13;
+//$unit-value-em: 16;
+//nth($units-scalar, 1): $unit-value-em * 8;
+//nth($units-scalar, 2): nth($units-scalar, 1) * 2;
+//nth($units-scalar, 3): nth($units-scalar, 1) * 3;
+//nth($units-scalar, 5): nth($units-scalar, 1) * 5;
+//nth($units-scalar, 8): nth($units-scalar, 1) * 8;
+//nth($units-scalar, 13): nth($units-scalar, 1) * 13;
 //$font-base: null;
-//$max-width: 40em;
-//$unit__header--height: 3rem;
-//$unit__nav--height: 3rem;
-//$length__transition: 0.2s;
-//$color__3d--dark: rgba(0,0,0,0.5);
-//$color__3d--light: rgba(255,255,255,0.5);
-//$unit__border-radius: 2px;
-//$unit__header--opacity: 1;
-//$unit__shadow-size: 1px;
-//$unit__shadow-blur: 5px;
-$unit__shadow-opacity: 0.25;
-//$height-form-input: 1.5rem;
-//$style__animation-ease: ease-in-out;
+//$unit-scalar-width-max: 40em;
+//$unit-scalar-height-header: 3rem;
+//$unit-scalar-height-nav: 3rem;
+//$unit-time-transition: 0.2s;
+//$color-shade: rgba(0,0,0,0.5);
+//$color-tint: rgba(255,255,255,0.5);
+//$unit-scalar-border-radius: 2px;
+//$unit-value-opacity-header: 1;
+//$unit-scalar-shadow-y: 1px;
+//$unit-scalar-shadow-blur: 5px;
+$unit-value-opacity-shadow: 0.25;
+//$unit-scalar-height-form: 1.5rem;
+//$style-animation-ease: ease-in-out;
 //human-font, machine-font, copy-font
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
 @import url("http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic");

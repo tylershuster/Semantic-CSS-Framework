@@ -11,6 +11,29 @@
 				</div>			
 			</figure>			
 		</header>
+		<div class="nav inheader inbody">
+			<address>
+					<a href="http://facebook.com/herrshuster"></a>
+					<a href="http://twitter.com/tylershuster"></a>
+					<a href="https://plus.google.com/104346126731383465661"></a>
+			</address>			
+			<ul>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="semantics.php">Semantics</a></li>
+					<li><a href="typography.php">Typography</a></li>
+					<li><a href="header.php">Header</a></li>
+					<li>
+						<a href="elements.php">Elements</a>
+						<ul>
+							<li><a href="elements.php#article">Article</a></li>
+							<li><a href="elements.php#forms">Forms</a></li>
+							<li><a href="elements.php#patterns">Design Patterns</a></li>
+						</ul>
+					</li>
+					<div></div>
+					<li><a href="reference.php">Reference</a></li>
+			</ul>
+		</div>
 		<table class="feature">
 		<tbody>
 			<tr>

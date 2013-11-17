@@ -1,27 +1,27 @@
 address{
 	position: absolute;
-	bottom: #{$unit__nav--height};
-	height: #{$unit__header--height};
+	bottom: #{$unit-scalar-height-nav};
+	height: #{$unit-scalar-height-header};
 	left: 0;
 	padding-left: 0.5rem;
 	z-index: 110;
 	a{
-		line-height: #{$unit__header--height};
-		height: #{$unit__header--height};
+		line-height: #{$unit-scalar-height-header};
+		height: #{$unit-scalar-height-header};
 		&, &:before{
 			color: $color-primary;
 			text-decoration: none;}}
-	@include media-from($unit__base-x-two){}
-	@include media-from($unit__base-x-three){}
-	@include media-from($unit__base-x-five){}
-	@include media-from($unit__base-x-eight){
+	@include media-from(nth($units-scalar, 2)){}
+	@include media-from(nth($units-scalar, 3)){}
+	@include media-from(nth($units-scalar, 5)){}
+	@include media-from(nth($units-scalar, 8)){
 		a{
 			color: $color-background;}}
-	@include media-from($unit__base-x-thirteen){}
-	@include media-to($length-mobile-cutoff){
+	@include media-from(nth($units-scalar, 13)){}
+	@include media-to($unit-scalar-mobile-cutoff){
 		margin-top: 0;
 		width: auto;
-		height: #{$unit__nav--height};
+		height: #{$unit-scalar-height-nav};
 		background-color: $color-drawer;				
 		top: 0;
 		left: 0;
@@ -29,11 +29,11 @@ address{
 		text-align: center;
 		border-bottom: 1px solid $color-drawer;
 		a{
-			line-height: #{$unit__nav--height};
-			height: #{$unit__nav--height};
+			line-height: #{$unit-scalar-height-nav};
+			height: #{$unit-scalar-height-nav};
 		}
 		& + ul{
-			top: #{$unit__nav--height};
+			top: #{$unit-scalar-height-nav};
 		}
 	}
 }

@@ -1,8 +1,8 @@
 @if $skeu == flat{
-	$unit__border-radius: 0px;
-	$unit__shadow-size: 0px;
-	$unit__shadow-blur: 0px;
+	$unit-scalar-border-radius: 0px !global;
+	$unit-scalar-shadow-y: 0px !global;
+	$unit-scalar-shadow-blur: 0px !global;
 	input:focus{
-		box-shadow: 0 0 $unit__border-radius $color-accent;
+		box-shadow: 0 0 $unit-scalar-border-radius $color-accent;
 	}
 }

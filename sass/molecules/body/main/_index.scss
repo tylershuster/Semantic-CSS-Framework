@@ -1,8 +1,14 @@
 // The Main event
 // The main (cell/molecule) is where the "point" of the webpage is, neither the header nor footer.
 // Contains content header, navigation, or articles
->main{
-	@import "header";
-	@import "nav";	
-	@import "article/index";
+&{
+	>header{
+		@import "header";		
+	}
+	>nav{
+		@import "nav";			
+	}
+	>article{
+		@import "article/index";		
+	}
 }

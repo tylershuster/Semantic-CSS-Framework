@@ -1,18 +1,19 @@
+
 & ~ nav{
 	position: relative;
-	top: #{$unit__header--height};	
-	@include prefixer(transition, all $length__transition $style__animation-ease);
+	top: #{$unit-scalar-height-header};	
+	@include prefixer(transition, all $unit-time-transition $style-animation-ease);
 	z-index: 110;
 	@import "nav/index";	
-	@include media-to($length-mobile-cutoff){
+	@include media-to($unit-scalar-mobile-cutoff){
 		position: fixed;
-		top: #{$unit__header--height};
+		top: #{$unit-scalar-height-header};
 		left: -1px;
 		height: 100%;			
 		height: 100%;
 		z-index: 999;
 		padding-bottom: 100%;
-		@include prefixer(transition, transform #{$length__transition / 2} $style__animation-ease);
+		@include prefixer(transition, transform #{$unit-time-transition / 2} $style-animation-ease);
 		@include prefixer(perspective, 1000);
 		@include prefixer(backface-visibility, hidden);
 		@include prefixer(transform, translateY(100%) translateZ(0) scale3d(1, 0, 1));
@@ -30,10 +31,10 @@
 	a{
 		font-family: "#{$body-font}";
 	}	
-	@include media-from($unit__base-x-two){width: 62%;}
-	@include media-from($unit__base-x-three){width: 50%;}
-	@include media-from($unit__base-x-five){width: 38%;}
-	@include media-from($unit__base-x-eight){
+	@include media-from(nth($units-scalar, 2)){width: 62%;}
+	@include media-from(nth($units-scalar, 3)){width: 50%;}
+	@include media-from(nth($units-scalar, 5)){width: 38%;}
+	@include media-from(nth($units-scalar, 8)){
 		@include column(8,8);
 		li{
 			float: none;
@@ -49,5 +50,5 @@
 			}
 		}
 	}
-	@include media-from($unit__base-x-thirteen){@include column(13,13);}
+	@include media-from(nth($units-scalar, 13)){@include column(13,13);}
 }

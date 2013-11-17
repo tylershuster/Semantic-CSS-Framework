@@ -1,12 +1,12 @@
 @if $skeu == faux-flat{
-	$unit__border-radius: 2px;
-	$unit__shadow-size: 2px;
-	$unit__shadow-blur: 3px;
+	$unit-scalar-border-radius: 2px !global;
+	$unit-scalar-shadow-y: 2px !global;
+	$unit-scalar-shadow-blur: 3px !global;
 	.slide-toggle:nth-of-type(n):before{
-		bottom: calc(#{$unit__nav--height / 2.5} - #{$unit__shadow-size});
+		bottom: calc(#{$unit-scalar-height-nav / 2.5} - #{$unit-scalar-shadow-y});
 	}
 	input:focus{
 		border-top-color: $color-drawer;
-		box-shadow: 0 0 $unit__shadow-blur $color-accent;
+		box-shadow: 0 0 $unit-scalar-shadow-blur $color-accent;
 	}
 }

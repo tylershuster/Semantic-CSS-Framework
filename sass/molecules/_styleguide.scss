@@ -27,11 +27,11 @@
 }
 .colors{
 	background-color: $color-drawer;
-	margin-top: $unit__gutter--width;
-	padding: $unit__gutter--width;
+	margin-top: $unit-scalar-gutter;
+	padding: $unit-scalar-gutter;
 	@include box-shadow-inset($color-drawer);
 	>*{
-		padding: $unit__gutter--width;
+		padding: $unit-scalar-gutter;
 		display: block;
 	}
 }

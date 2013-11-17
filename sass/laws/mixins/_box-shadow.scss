@@ -11,22 +11,22 @@
 	// Remove existing borders
 	border: 0px solid;
 	// Set border-radius
-	border-radius: $unit__border-radius;
-	border-bottom: $unit__border-radius solid $color__3d--dark;		
-	box-shadow: 0 $unit__shadow-size $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
+	border-radius: $unit-scalar-border-radius;
+	border-bottom: $unit-scalar-border-radius solid $color-shade;		
+	box-shadow: 0 $unit-scalar-shadow-y $unit-scalar-shadow-blur rgba(0, 0, 0, $unit-value-opacity-shadow);
 }
 @mixin box-shadow-inset($on-background){	
 	// DEPRECATED: box-shadow-inset does not use the $onbackground variable
 	border: none;
-	border-radius: $unit__border-radius;
-	border-top: $unit__border-radius solid $color__3d--dark;
+	border-radius: $unit-scalar-border-radius;
+	border-top: $unit-scalar-border-radius solid $color-shade;
 		
 	
 	@if $tone == black{
 		box-shadow: none;}
 	@else if $tone == white{
-		border-left: 1px solid rgba(0,0,0, $unit__shadow-opacity / 2);
-		border-right: 1px solid rgba(0,0,0, $unit__shadow-opacity / 2);
-		border-bottom: 1px solid rgba(0,0,0, $unit__shadow-opacity / 4);
+		border-left: 1px solid rgba(0,0,0, $unit-value-opacity-shadow / 2);
+		border-right: 1px solid rgba(0,0,0, $unit-value-opacity-shadow / 2);
+		border-bottom: 1px solid rgba(0,0,0, $unit-value-opacity-shadow / 4);
 	}
 }

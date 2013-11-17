@@ -3,17 +3,17 @@
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	height: #{$unit__header--height};
+	height: #{$unit-scalar-height-header};
 	form {
 		width:100%;
-		height: #{$unit__header--height};
+		height: #{$unit-scalar-height-header};
 		&:after{
 			content:"";
 			position:absolute;
 			width:0;
 			height:1rem;
 			border: 0.2rem solid $color-primary;
-			top: #{$unit__header--height / 2};
+			top: #{$unit-scalar-height-header / 2};
 			right:-0.52rem;
 			-webkit-border-radius:3px;
 			-webkit-transform: rotate(-45deg);}

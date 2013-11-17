@@ -1,9 +1,9 @@
 .logo{
 	display: inline-block;
 	float: left;
-	height: #{$unit__nav--height};
-	margin-top: #{$unit__nav--height / 4};
-	margin-left: $unit__gutter--width;
-	@include prefixer(transition, all $length__transition $style__animation-ease);	
+	height: #{$unit-scalar-height-nav};
+	margin-top: #{$unit-scalar-height-nav / 4};
+	margin-left: $unit-scalar-gutter;
+	@include prefixer(transition, all $unit-time-transition $style-animation-ease);	
 	z-index: 110;
 }

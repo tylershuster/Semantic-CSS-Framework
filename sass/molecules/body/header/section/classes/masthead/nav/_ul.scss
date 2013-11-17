@@ -1,8 +1,8 @@
 >ul{
 	position: relative;
-	max-width: $max-width;			
-	min-height: #{$unit__nav--height};
-	background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);
+	max-width: $unit-scalar-width-max;			
+	min-height: #{$unit-scalar-height-nav};
+	background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit-value-opacity-header);
 	float: none;
 	width: 100%;
 	height: auto;
@@ -24,7 +24,7 @@
 		table-layout: fixed;	
 		vertical-align: middle;	
 		position: relative;
-		border-radius: $unit__border-radius;
+		border-radius: $unit-scalar-border-radius;
 		border-bottom-right-radius: 0;
 		border-bottom-left-radius: 0;
 		text-align: left;
@@ -35,7 +35,7 @@
 			background-color: $color-primary;
 			border: none;
 			ul{
-				@include media-to($unit__base-x-eight){
+				@include media-to(nth($units-scalar, 8)){
 					left: 100%;}
 				z-index: 999;
 				width: 110%;
@@ -57,7 +57,7 @@
 			}
 		}
 		ul{
-			@include media-to($unit__base-x-eight){
+			@include media-to(nth($units-scalar, 8)){
 					left: -100%;
 			}
 			& + a:after{
@@ -73,13 +73,13 @@
 			display: table-cell;
 		}
 	}
-	@include media-to($length-mobile-cutoff){	
+	@include media-to($unit-scalar-mobile-cutoff){	
 		display: block;
 		float: left;				
 		top: 0;
 		background-color: $color-drawer;	
 	}
-	@include media-from($unit__base-x-eight){
+	@include media-from(nth($units-scalar, 8)){
 		>ul{
 			border: 0;
 			box-shadow: none;

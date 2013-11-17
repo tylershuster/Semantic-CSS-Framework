@@ -9,11 +9,13 @@ progress{
 		@include box-shadow-inset($color-input-background);}
 	&::-webkit-progress-value{
 		background-color: $color-green;
-		border-right: 1px solid mix($color__3d--light, $color-green);
-		box-shadow: 0 0 $unit__shadow-blur $color-green;}
+		border-right: 1px solid mix($color-tint, $color-green);
+		box-shadow: 0 0 $unit-scalar-shadow-blur $color-green;}
 	&::-webkit-progress-bar{
 		background: transparent;
-		height: calc(100% + #{$unit__shadow-size});
-		bottom: #{$unit__shadow-size};
+		height: calc(100% + #{$unit-scalar-shadow-y});
+		bottom: #{$unit-scalar-shadow-y};
 		position: relative;		
-		overflow: visible;}}
+		overflow: visible;
+	}
+}

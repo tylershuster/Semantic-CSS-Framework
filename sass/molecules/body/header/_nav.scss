@@ -3,15 +3,15 @@
 // The body>header>nav always contains links to other areas of the site.
 // As such, it provides the navigation backbone. Lists can be nested two levels deep.
 
->nav{
+&{
 	float: right;
 	>address{
-		height: $unit__header--height;
+		height: $unit-scalar-height-header;
 		align-items: center;
 		display: flex;
 		float: right;
 		a{
-			height: #{$unit__header--height};
+			height: #{$unit-scalar-height-header};
 			&,
 			&:before{
 				color: $color-primary;
@@ -27,11 +27,11 @@
 		float: right;
 		li{
 			display: flex;
-			padding: 0 $unit__gutter--width;
+			padding: 0 $unit-scalar-gutter;
 			font-family: #{$body-font};
-			@include media-from($length-mobile-cutoff){
+			@include media-from($unit-scalar-mobile-cutoff){
 				padding: 0 0.5rem;}
-			height: $unit__header--height;
+			height: $unit-scalar-height-header;
 			align-items: center;
 			position: relative;
 			&:hover{
@@ -53,9 +53,9 @@
 				position: absolute;
 				width: auto;
 				min-width: 100%;
-				@include media-to($length-mobile-cutoff){
+				@include media-to($unit-scalar-mobile-cutoff){
 					width: 100%;
-					max-height: #{$unit__base-x-two * 1px};
+					max-height: #{nth($units-scalar, 2) * 1px};
 					overflow-y: scroll;
 				}
 				display: block;
@@ -79,7 +79,7 @@
 		}
 		>div + li{		
 			border-top: 1px solid $color-text;
-			@include media-from($length-mobile-cutoff){
+			@include media-from($unit-scalar-mobile-cutoff){
 				border-left: 1px solid $color-text;
 				border-top: none;
 			}

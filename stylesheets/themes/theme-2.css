@@ -638,6 +638,7 @@ a:before {
 * ARIA PRESSED
 ----------------------------------------------------------------------
 */
+/* http://24ways.org/2011/composing-the-new-canon/ !*/
 summary {
   display: block; }
 
@@ -790,11 +791,11 @@ aside {
   margin: 0;
   font-family: Open Sans; }
   aside h1, aside h2, aside h3, aside h4, aside h5 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
-    padding-top: 0.55rem;
-    padding-bottom: 0.45rem;
-    font-weight: bold;
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0;
     color: #a2a1dd;
@@ -833,17 +834,17 @@ h1 {
   line-height: 2rem;
   padding-top: 0.38rem;
   padding-bottom: 0.6rem;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: normal;
+  font-style: normal;
   margin: 0;
   color: #ffed5b;
   font-family: "Open Sans"; }
   h1 > small {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
-    padding-top: 0.55rem;
-    padding-bottom: 0.45rem;
-    font-weight: bold;
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0;
     color: #8a8049;
@@ -854,146 +855,146 @@ h1 {
     line-height: 4rem;
     padding-top: 0.76rem;
     padding-bottom: 1.2rem;
-    font-weight: bold;
-    font-style: italic;
+    font-weight: normal;
+    font-style: normal;
     margin: 0; }
     h1.uber small, .uber h1 small {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       line-height: 2rem;
-      padding-top: 0.55rem;
-      padding-bottom: 0.45rem;
-      font-weight: bold;
+      padding-top: 0.6rem;
+      padding-bottom: 0.4rem;
+      font-weight: normal;
       font-style: normal;
       margin: 0;
       position: relative;
-      bottom: 0.765rem; }
+      bottom: 0.68rem; }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
+  font-weight: normal;
   font-style: normal;
   margin: 0;
   color: #f6cd51;
   font-family: "Open Sans"; }
   h2 > small {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
-    padding-top: 0.55rem;
-    padding-bottom: 0.45rem;
-    font-weight: bold;
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0;
     color: #857044;
     line-height: 1em;
     display: inline; }
   h2.uber, .uber h2 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     line-height: 4rem;
-    padding-top: 1.1rem;
-    padding-bottom: 0.9rem;
-    font-weight: bold;
+    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0; }
     h2.uber small, .uber h2 small {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       line-height: 2rem;
-      padding-top: 0.55rem;
-      padding-bottom: 0.45rem;
-      font-weight: bold;
+      padding-top: 0.6rem;
+      padding-bottom: 0.4rem;
+      font-weight: normal;
       font-style: normal;
       margin: 0;
       position: relative;
-      bottom: 0.54rem; }
+      bottom: 0.48rem; }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
+  font-weight: normal;
   font-style: normal;
   margin: 0;
   color: #f6cd51;
   font-family: "Open Sans"; }
   h3 > small {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
-    padding-top: 0.55rem;
-    padding-bottom: 0.45rem;
-    font-weight: bold;
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0;
     color: #857044;
     line-height: 1em;
     display: inline; }
   h3.uber, .uber h3 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     line-height: 4rem;
-    padding-top: 1.1rem;
-    padding-bottom: 0.9rem;
-    font-weight: bold;
+    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0; }
     h3.uber small, .uber h3 small {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       line-height: 2rem;
-      padding-top: 0.55rem;
-      padding-bottom: 0.45rem;
-      font-weight: bold;
+      padding-top: 0.6rem;
+      padding-bottom: 0.4rem;
+      font-weight: normal;
       font-style: normal;
       margin: 0;
       position: relative;
-      bottom: 0.54rem; }
+      bottom: 0.48rem; }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
+  font-weight: normal;
   font-style: normal;
   margin: 0;
   color: #a2a1dd;
   font-family: "Open Sans"; }
   h4 > small {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
-    padding-top: 0.55rem;
-    padding-bottom: 0.45rem;
-    font-weight: bold;
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0;
     color: #5b5a8a;
     line-height: 1em;
     display: inline; }
   h4.uber, .uber h4 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     line-height: 4rem;
-    padding-top: 1.1rem;
-    padding-bottom: 0.9rem;
-    font-weight: bold;
+    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0; }
     h4.uber small, .uber h4 small {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       line-height: 2rem;
-      padding-top: 0.55rem;
-      padding-bottom: 0.45rem;
-      font-weight: bold;
+      padding-top: 0.6rem;
+      padding-bottom: 0.4rem;
+      font-weight: normal;
       font-style: normal;
       margin: 0;
       position: relative;
-      bottom: 0.585rem; }
+      bottom: 0.52rem; }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 2rem;
-  padding-top: 0.55rem;
-  padding-bottom: 0.45rem;
-  font-weight: bold;
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
+  font-weight: normal;
   font-style: normal;
   margin: 0;
   margin: 0;
@@ -1011,11 +1012,11 @@ h5 {
     line-height: 1em;
     display: inline; }
   h5.uber, .uber h5 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     line-height: 4rem;
-    padding-top: 1.1rem;
-    padding-bottom: 0.9rem;
-    font-weight: bold;
+    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0; }
     h5.uber small, .uber h5 small {
@@ -1310,7 +1311,7 @@ fieldset {
     float: left;
     width: 100%;
     z-index: 999;
-    padding-left: 1px; }
+    padding-left: 0; }
     fieldset div form {
       z-index: 999; }
       fieldset div form input {
@@ -1342,7 +1343,7 @@ fieldset {
     fieldset hr + form input {
       border-top: 1px solid #f6cd51; }
   fieldset legend {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     position: absolute;
     top: 0.5rem;
@@ -1848,11 +1849,11 @@ blockquote {
   box-sizing: border-box;
   text-align: center; }
   blockquote p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
-    padding-top: 0.55rem;
-    padding-bottom: 0.45rem;
-    font-weight: bold;
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0;
     color: #f6cd51; }
@@ -1973,7 +1974,7 @@ ul.flyout.right ul:hover {
 ul.flyout.left ul:hover {
   /*fart*/ }
 
-body .slide-toggle {
+body > header .slide-toggle {
   float: left;
   height: 7px;
   width: 2rem;
@@ -2003,9 +2004,9 @@ body .slide-toggle {
   border-bottom: 2px solid rgba(0, 0, 0, 0.45);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45); }
   @media only screen and (max-width: 1024px) {
-    body .slide-toggle {
+    body > header .slide-toggle {
       display: block; } }
-  body .slide-toggle:before {
+  body > header .slide-toggle:before {
     transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -2025,7 +2026,7 @@ body .slide-toggle {
     border-radius: 2px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.45);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45); }
-  body .slide-toggle:after {
+  body > header .slide-toggle:after {
     transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -2045,29 +2046,29 @@ body .slide-toggle {
     border-radius: 2px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.45);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45); }
-body .slide-toggle,
-body .slide-toggle:active,
-body .slide-toggle:focus {
+body > header .slide-toggle,
+body > header .slide-toggle:active,
+body > header .slide-toggle:focus {
   outline: none !important;
   -webkit-tap-highlight-color: transparent; }
-body .slide-checkbox {
+body > header .slide-checkbox {
   position: absolute;
   top: -9999px;
   left: -9999px; }
-  body .slide-checkbox ~ main {
+  body > header .slide-checkbox ~ main {
     transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     right: 0; }
     @media only screen and (min-width: 1024px) {
-      body .slide-checkbox ~ main {
+      body > header .slide-checkbox ~ main {
         transition: all 0s ease-in-out;
         -moz-transition: all 0s ease-in-out;
         -webkit-transition: all 0s ease-in-out; } }
-  body .slide-checkbox ~ main {
+  body > header .slide-checkbox ~ main {
     position: relative; }
   @media only screen and (max-width: 1024px) {
-    body .slide-checkbox:checked ~ header > nav, body .slide-checkbox.activated ~ header > nav {
+    body > header .slide-checkbox:checked ~ header > nav, body > header .slide-checkbox.activated ~ header > nav {
       right: 0;
       -webkit-transform: translateY(0) scale3d(1, 1, 1);
       -moz-transform: translateY(0) scale3d(1, 1, 1);
@@ -2075,34 +2076,34 @@ body .slide-checkbox {
       -ms-transform: translateY(0) scale3d(1, 1, 1);
       transform: translateY(0) scale3d(1, 1, 1); } }
   @media only screen and (max-width: 1024px) and (min-width: 128px) {
-    body .slide-checkbox:checked ~ main, body .slide-checkbox.activated ~ main {
+    body > header .slide-checkbox:checked ~ main, body > header .slide-checkbox.activated ~ main {
       right: 100%; }
-      body .slide-checkbox:checked ~ main > nav, body .slide-checkbox.activated ~ main > nav {
+      body > header .slide-checkbox:checked ~ main > nav, body > header .slide-checkbox.activated ~ main > nav {
         margin-left: -100%; } }
   @media only screen and (max-width: 1024px) and (min-width: 384px) {
-    body .slide-checkbox:checked ~ main, body .slide-checkbox.activated ~ main {
+    body > header .slide-checkbox:checked ~ main, body > header .slide-checkbox.activated ~ main {
       right: 50%; }
-      body .slide-checkbox:checked ~ main > nav, body .slide-checkbox.activated ~ main > nav {
+      body > header .slide-checkbox:checked ~ main > nav, body > header .slide-checkbox.activated ~ main > nav {
         margin-left: -50%; } }
   @media only screen and (max-width: 1024px) and (min-width: 640px) {
-    body .slide-checkbox:checked ~ main, body .slide-checkbox.activated ~ main {
+    body > header .slide-checkbox:checked ~ main, body > header .slide-checkbox.activated ~ main {
       right: 33%; }
-      body .slide-checkbox:checked ~ main > nav, body .slide-checkbox.activated ~ main > nav {
+      body > header .slide-checkbox:checked ~ main > nav, body > header .slide-checkbox.activated ~ main > nav {
         margin-left: -33%; } }
 @media only screen and (min-width: 128px) {
-  body .slide-toggle ~ header > nav {
+  body > header .slide-toggle ~ header > nav {
     width: 100%; } }
 @media only screen and (min-width: 384px) {
-  body .slide-toggle ~ header > nav {
+  body > header .slide-toggle ~ header > nav {
     width: 50%; } }
 @media only screen and (min-width: 640px) {
-  body .slide-toggle ~ header > nav {
+  body > header .slide-toggle ~ header > nav {
     width: 33%; } }
 @media only screen and (min-width: 1024px) {
-  body .slide-toggle ~ header > nav {
+  body > header .slide-toggle ~ header > nav {
     width: auto; } }
 @media only screen and (max-width: 1024px) {
-  body .slide-toggle ~ header > nav {
+  body > header .slide-toggle ~ header > nav {
     position: fixed;
     right: -100%;
     height: 100%;
@@ -2111,38 +2112,38 @@ body .slide-checkbox {
     border: none;
     border-radius: 2px;
     border-top: 2px solid rgba(0, 0, 0, 0.45);
-    box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.45);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.45);
     -webkit-transition: right 0.4s ease-in-out;
     -moz-transition: right 0.4s ease-in-out;
     -o-transition: right 0.4s ease-in-out;
     -ms-transition: right 0.4s ease-in-out;
     transition: right 0.4s ease-in-out; }
-    body .slide-toggle ~ header > nav ul {
+    body > header .slide-toggle ~ header > nav ul {
       float: right;
       display: block;
       width: auto; }
-      body .slide-toggle ~ header > nav ul li {
+      body > header .slide-toggle ~ header > nav ul li {
         float: right;
         width: 100%;
         display: table; }
-        body .slide-toggle ~ header > nav ul li ul {
+        body > header .slide-toggle ~ header > nav ul li ul {
           width: 100%;
           left: -100%;
           top: 0; }
-        body .slide-toggle ~ header > nav ul li a {
+        body > header .slide-toggle ~ header > nav ul li a {
           display: table-cell;
           vertical-align: middle;
           /*placeholder*/ }
-    body .slide-toggle ~ header > nav address {
+    body > header .slide-toggle ~ header > nav address {
       float: left; } }
 @media only screen and (max-width: 1024px) {
-  body .slide-checkbox:checked ~ .slide-toggle,
-  body .slide-checkbox.activated ~ .slide-toggle {
+  body > header .slide-checkbox:checked ~ .slide-toggle,
+  body > header .slide-checkbox.activated ~ .slide-toggle {
     background: transparent;
     box-shadow: none;
     border: none; }
-    body .slide-checkbox:checked ~ .slide-toggle:before,
-    body .slide-checkbox.activated ~ .slide-toggle:before {
+    body > header .slide-checkbox:checked ~ .slide-toggle:before,
+    body > header .slide-checkbox.activated ~ .slide-toggle:before {
       border: none;
       border: none;
       border-radius: 2px;
@@ -2153,10 +2154,10 @@ body .slide-checkbox {
       -o-transform: rotateZ(-45deg) translate(-0.35rem, -0.25rem);
       -ms-transform: rotateZ(-45deg) translate(-0.35rem, -0.25rem);
       transform: rotateZ(-45deg) translate(-0.35rem, -0.25rem); }
-    body .slide-checkbox:checked ~ .slide-toggle:after,
-    body .slide-checkbox.activated ~ .slide-toggle:after {
+    body > header .slide-checkbox:checked ~ .slide-toggle:after,
+    body > header .slide-checkbox.activated ~ .slide-toggle:after {
       border: none;
-      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45);
       -webkit-transform: rotateZ(45deg) translate(-0.1rem, 0.1rem);
       -moz-transform: rotateZ(45deg) translate(-0.1rem, 0.1rem);
       -o-transform: rotateZ(45deg) translate(-0.1rem, 0.1rem);
@@ -2270,7 +2271,7 @@ body > header {
           body > header > nav > ul > div + li {
             border-left: 1px solid #a2a1dd;
             border-top: none; } }
-  body > header h1 {
+  body > header > h1 {
     display: inline-block;
     float: left;
     line-height: 3rem;
@@ -2279,11 +2280,11 @@ body > header {
     white-space: nowrap;
     width: auto;
     z-index: 110;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
-    padding-top: 0.55rem;
-    padding-bottom: 0.45rem;
-    font-weight: bold;
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+    font-weight: normal;
     font-style: normal;
     margin: 0;
     margin-left: 1rem;
@@ -2751,60 +2752,60 @@ body > main > article {
     float: left; }
   @media only screen and (min-width: 256px) {
     body > main > article > .pull {
-      width: calc(100% + 2rem); }
+      width: calc(100% + 2); }
       body > main > article > .pull:nth-of-type(odd) {
-        right: 1rem;
-        margin-right: -1rem;
+        right: 1;
+        margin-right: -1;
         padding-left: 2rem; }
       body > main > article > .pull:nth-of-type(even) {
-        left: 1rem;
-        margin-left: -1rem;
+        left: 1;
+        margin-left: -1;
         padding-right: 2rem; } }
   @media only screen and (min-width: 384px) {
     body > main > article > .pull {
-      width: calc(100% + 4rem); }
+      width: calc(100% + 4); }
       body > main > article > .pull:nth-of-type(odd) {
-        right: 2rem;
-        margin-right: -2rem;
+        right: 2;
+        margin-right: -2;
         padding-left: 3rem; }
       body > main > article > .pull:nth-of-type(even) {
-        left: 2rem;
-        margin-left: -2rem;
+        left: 2;
+        margin-left: -2;
         padding-right: 3rem; } }
   @media only screen and (min-width: 640px) {
     body > main > article > .pull {
       width: 50%; }
       body > main > article > .pull:nth-of-type(odd) {
-        right: 3rem;
-        margin-right: -3rem;
+        right: 3;
+        margin-right: -3;
         padding-left: 4rem; }
       body > main > article > .pull:nth-of-type(even) {
-        left: 3rem;
-        margin-left: -3rem;
+        left: 3;
+        margin-left: -3;
         padding-right: 4rem; } }
   @media only screen and (min-width: 1024px) {
     body > main > article > .pull {
       width: 33%; }
       body > main > article > .pull:nth-of-type(odd) {
-        right: 4rem;
-        margin-right: -4rem;
+        right: 4;
+        margin-right: -4;
         padding-left: 5rem; }
       body > main > article > .pull:nth-of-type(even) {
-        left: 4rem;
-        margin-left: -4rem;
+        left: 4;
+        margin-left: -4;
         padding-right: 5rem; } }
   @media only screen and (min-width: 1664px) {
     body > main > article > .pull {
       width: 25%; }
       body > main > article > .pull:nth-of-type(odd) {
-        right: 5rem;
-        margin-right: -5rem;
+        right: 5;
+        margin-right: -5;
         padding-left: 6rem; }
       body > main > article > .pull:nth-of-type(even) {
-        left: 5rem;
-        margin-left: -5rem;
+        left: 5;
+        margin-left: -5;
         padding-right: 6rem; } }
-body > footer {
+body > footer > footer {
   display: block;
   z-index: 99999;
   min-height: 3rem;
@@ -2984,5 +2985,92 @@ p#musical-typography {
 
 table .feature tr td {
   text-align: center; }
+
+.nav.inheader.inbody {
+  float: right; }
+  .nav.inheader.inbody > address {
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    float: right; }
+    .nav.inheader.inbody > address a {
+      height: 3rem; }
+      .nav.inheader.inbody > address a, .nav.inheader.inbody > address a:before {
+        color: #ffed5b;
+        text-decoration: none; }
+  .nav.inheader.inbody > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    float: right; }
+    .nav.inheader.inbody > ul li {
+      display: flex;
+      padding: 0 1rem;
+      font-family: Gentium Basic;
+      height: 3rem;
+      align-items: center;
+      position: relative; }
+      @media only screen and (min-width: 1024px) {
+        .nav.inheader.inbody > ul li {
+          padding: 0 0.5rem; } }
+      .nav.inheader.inbody > ul li:hover {
+        background-color: #ffed5b;
+        color: #151438; }
+        .nav.inheader.inbody > ul li:hover > ul {
+          border: 0px solid;
+          border-radius: 2px;
+          border-bottom: 2px solid rgba(0, 0, 0, 0.45);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
+          -webkit-transform: scale3d(1, 1, 1);
+          -moz-transform: scale3d(1, 1, 1);
+          -o-transform: scale3d(1, 1, 1);
+          -ms-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1); }
+      .nav.inheader.inbody > ul li a {
+        text-decoration: none; }
+        .nav.inheader.inbody > ul li a:hover {
+          color: #151438; }
+      .nav.inheader.inbody > ul li > ul {
+        padding: 0;
+        position: absolute;
+        width: auto;
+        min-width: 100%;
+        display: block;
+        right: 0;
+        top: 3rem;
+        background: #23225e;
+        -webkit-transform: scale3d(1, 0, 1);
+        -moz-transform: scale3d(1, 0, 1);
+        -o-transform: scale3d(1, 0, 1);
+        -ms-transform: scale3d(1, 0, 1);
+        transform: scale3d(1, 0, 1);
+        -webkit-transform-origin: 100% 0%;
+        -moz-transform-origin: 100% 0%;
+        -o-transform-origin: 100% 0%;
+        -ms-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        transition: all 0.1ss ease-in-out;
+        -moz-transition: all 0.1ss ease-in-out;
+        -webkit-transition: all 0.1ss ease-in-out; }
+        @media only screen and (max-width: 1024px) {
+          .nav.inheader.inbody > ul li > ul {
+            width: 100%;
+            max-height: 256px;
+            overflow-y: scroll; } }
+        .nav.inheader.inbody > ul li > ul > li {
+          width: 100%;
+          display: table;
+          float: left; }
+          .nav.inheader.inbody > ul li > ul > li > a {
+            display: table-cell;
+            color: #a2a1dd;
+            vertical-align: middle; }
+    .nav.inheader.inbody > ul > div + li {
+      border-top: 1px solid #a2a1dd; }
+      @media only screen and (min-width: 1024px) {
+        .nav.inheader.inbody > ul > div + li {
+          border-left: 1px solid #a2a1dd;
+          border-top: none; } }
 
 /* { / picnicc } */

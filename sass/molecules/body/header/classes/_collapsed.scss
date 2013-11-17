@@ -7,15 +7,15 @@
 @include transition(0s);
 
 &.collapsed {
-    @media all and (min-width: #{$unit__base-x-eight * 1px}) {
+    @media all and (min-width: #{nth($units-scalar, 8) * 1px}) {
         //background-color: $color-background;
         @include box-shadow($color-background);
         border-top: none;
-        margin-top: #{($unit__header--height - 1rem) * -1};
+        margin-top: #{($unit-scalar-height-header - 1rem) * -1};
         & + main > nav {
             @include transition(0s);
             opacity: 0.5;
-            margin-top: #{($unit__header--height - 1rem + $unit__nav--height) * -1};
+            margin-top: #{($unit-scalar-height-header - 1rem + $unit-scalar-height-nav) * -1};
         }
         section.search {
             display: none;
@@ -33,7 +33,7 @@
         }
         nav {
             li ul {
-                //background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit__header--opacity);
+                //background-color: rgba(red($color-drawer), green($color-drawer), blue($color-drawer), $unit-value-opacity-header);
            
             }
             ul {}

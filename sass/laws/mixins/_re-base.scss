@@ -11,5 +11,5 @@
 		$otherSide: "left";}
 	#{$side}: #{$amount};
 	margin-#{$side}: #{$amount * -1};
-	padding-#{$otherSide}: #{$amount + $unit__gutter--width};
+	padding-#{$otherSide}: #{$amount + $unit-scalar-gutter};
 }

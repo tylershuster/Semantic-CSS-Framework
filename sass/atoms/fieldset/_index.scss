@@ -12,9 +12,9 @@ fieldset{
 	/*(border: 1px solid $color-accent;*/
 	border: none;
 	margin: 0;
-	padding: $unit__gutter--width;
+	padding: $unit-scalar-gutter;
 	position: relative;
-	padding-top: #{(typography(h5,line-height) * 1rem) + $unit__gutter--width};
+	padding-top: #{(typography(h5,line-height) * 1rem) + $unit-scalar-gutter};
 	background-color: $color-background;
 	//@include box-shadow-inset($color-background);
 	>.row{
@@ -23,10 +23,10 @@ fieldset{
 		>div{
 			width:50%;
 			float: left;
-			margin-bottom: #{ceil($height-form-input)};
+			margin-bottom: #{ceil($unit-scalar-height-form)};
 			&.column{
-				padding-left: #{$unit__gutter--width / 2};
-				padding-right: #{$unit__gutter--width / 2};}}
+				padding-left: #{$unit-scalar-gutter / 2};
+				padding-right: #{$unit-scalar-gutter / 2};}}
 		>form{
 			width: 100%;}}
 	&.row{
@@ -53,10 +53,10 @@ fieldset{
 	}
 	>fieldset{
 		padding:0;
-		margin-bottom: $unit__gutter--width;
+		margin-bottom: $unit-scalar-gutter;
 		box-shadow: none;
 		border: none;
-		border-radius: $unit__border-radius;}
+		border-radius: $unit-scalar-border-radius;}
 	form{
 		width: 100%;
 		flex-wrap: nowrap;
@@ -72,7 +72,7 @@ fieldset{
 			box-shadow: none;
 			border-color: none;
 			margin: 0;
-			height: #{ceil($height-form-input)};	
+			height: #{ceil($unit-scalar-height-form)};	
 			border-top: none;
 			@include fieldset-border-top;			
 			border-left: none;
@@ -89,7 +89,7 @@ fieldset{
 			color: $color-text;
 			box-shadow: none;
 			border-bottom: none;
-			height: #{ceil($height-form-input)};
+			height: #{ceil($unit-scalar-height-form)};
 			&>option{
 
 			}
@@ -99,24 +99,24 @@ fieldset{
 		}
 		&:first-of-type{
 			label{
-				border-top-left-radius: $unit__border-radius;}
+				border-top-left-radius: $unit-scalar-border-radius;}
 			input{
 				@include box-shadow-inset($color-drawer);				
 				border-bottom-right-radius: 0;
 				border-bottom-left-radius: 0;}}
 		&:last-of-type{
 			label{
-				border-bottom-left-radius: $unit__border-radius;}
+				border-bottom-left-radius: $unit-scalar-border-radius;}
 			input{
 				border-bottom: 0;
-				border-bottom-right-radius: $unit__border-radius;
-				border-bottom-left-radius: $unit__border-radius;
+				border-bottom-right-radius: $unit-scalar-border-radius;
+				border-bottom-left-radius: $unit-scalar-border-radius;
 				}}
 		label{
 			box-shadow: none;
 			border: none;
 			margin: 0;
-			height: #{ceil($height-form-input)};}}
+			height: #{ceil($unit-scalar-height-form)};}}
 	textarea{
 		border-top: none;
 		box-shadow: none;}
@@ -126,7 +126,7 @@ fieldset{
 		float: left;
 		width: 100%;
 		z-index: 999;
-		padding-left: #{$unit__shadow-size * 0.5};		
+		padding-left: #{$unit-scalar-shadow-x * 0.5};		
 		form{
 			z-index: 999;	
 			input{
@@ -134,22 +134,22 @@ fieldset{
 			}
 			&:first-of-type{
 				input{
-					box-shadow: 0 #{$unit__shadow-size * -0.5} 0px rgba(0, 0, 0, $unit__shadow-opacity);
-					border-top-right-radius: $unit__border-radius;
+					box-shadow: 0 #{$unit-scalar-shadow-y * -0.5} 0px rgba(0, 0, 0, $unit-value-opacity-shadow);
+					border-top-right-radius: $unit-scalar-border-radius;
 					@include fieldset-border-top;}
 				label{
-					box-shadow: 0 #{$unit__shadow-size * -0.5} 0px rgba(0, 0, 0, $unit__shadow-opacity);				
-					@include fieldset-border-top($unit__shadow-opacity);
+					box-shadow: 0 #{$unit-scalar-shadow-y * -0.5} 0px rgba(0, 0, 0, $unit-value-opacity-shadow);				
+					@include fieldset-border-top($unit-value-opacity-shadow);
 					}}
 			&:last-of-type{
 				input{
-					border-bottom-right-radius: $unit__border-radius;}
+					border-bottom-right-radius: $unit-scalar-border-radius;}
 				label,
 				input,
 				select{
 					z-index: 999;
-					box-shadow: 0 #{$unit__shadow-size} 0 rgba(0, 0, 0, $unit__shadow-opacity);
-					//border-bottom: 1px solid $color__3d--light;
+					box-shadow: 0 #{$unit-scalar-shadow-y} 0 rgba(0, 0, 0, $unit-value-opacity-shadow);
+					//border-bottom: 1px solid $color-tint;
 					}}}}
 	hr{
 		display: flex;
@@ -158,11 +158,11 @@ fieldset{
 		margin: 0;
 		border: none;
 		&.uber{
-			height: #{ceil($height-form-input)};
+			height: #{ceil($unit-scalar-height-form)};
 		}
 		& + form{
 			label{
-				@include fieldset-border-top($unit__shadow-opacity);}
+				@include fieldset-border-top($unit-value-opacity-shadow);}
 			input{
 				@include fieldset-border-top;}}}
 	legend{

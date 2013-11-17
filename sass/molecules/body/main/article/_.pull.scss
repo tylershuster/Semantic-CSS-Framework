@@ -9,34 +9,34 @@
 	&:nth-of-type(even){
 		float: left;
 	}
-	@include media-from($unit__base-x-two){
-		width: calc(100% + #{2 * $article-margin-length-two});
+	@include media-from(nth($units-scalar, 2)){
+		width: calc(100% + #{2 * nth($units-scalar-margin-article, 2)});
 		&:nth-of-type(odd){
-			@include re-base(right, $article-margin-length-two);}
+			@include re-base(right, nth($units-scalar-margin-article, 2));}
 		&:nth-of-type(even){
-			@include re-base(left, $article-margin-length-two);}}
-	@include media-from($unit__base-x-three){
-		width: calc(100% + #{2 * $article-margin-length-three});
+			@include re-base(left, nth($units-scalar-margin-article, 2));}}
+	@include media-from(nth($units-scalar, 3)){
+		width: calc(100% + #{2 * nth($units-scalar-margin-article, 3)});
 		&:nth-of-type(odd){
-			@include re-base(right, $article-margin-length-three);}
+			@include re-base(right, nth($units-scalar-margin-article, 3));}
 		&:nth-of-type(even){
-			@include re-base(left, $article-margin-length-three);}}
-	@include media-from($unit__base-x-five){
+			@include re-base(left, nth($units-scalar-margin-article, 3));}}
+	@include media-from(nth($units-scalar, 5)){
 		width: 50%;
 		&:nth-of-type(odd){
-			@include re-base(right, $article-margin-length-five);}
+			@include re-base(right, nth($units-scalar-margin-article, 5));}
 		&:nth-of-type(even){
-			@include re-base(left, $article-margin-length-five);}}
-	@include media-from($unit__base-x-eight){
+			@include re-base(left, nth($units-scalar-margin-article, 5));}}
+	@include media-from(nth($units-scalar, 8)){
 		width: 33%;
 		&:nth-of-type(odd){
-			@include re-base(right, $article-margin-length-eight);}
+			@include re-base(right, nth($units-scalar-margin-article, 8));}
 		&:nth-of-type(even){
-			@include re-base(left, $article-margin-length-eight);}}
-	@include media-from($unit__base-x-thirteen){
+			@include re-base(left, nth($units-scalar-margin-article, 8));}}
+	@include media-from(nth($units-scalar, 13)){
 		width: 25%;
 		&:nth-of-type(odd){
-			@include re-base(right, $article-margin-length-thirteen);}
+			@include re-base(right, nth($units-scalar-margin-article, 13));}
 		&:nth-of-type(even){
-			@include re-base(left, $article-margin-length-thirteen);}}}
+			@include re-base(left, nth($units-scalar-margin-article, 13));}}}
 

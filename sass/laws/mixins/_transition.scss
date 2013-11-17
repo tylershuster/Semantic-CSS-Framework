@@ -1,4 +1,4 @@
-@mixin transition($length: $length__transition){
+@mixin transition($length: $unit-time-transition){
 	transition: all $length ease-in-out;
 	-moz-transition: all $length ease-in-out;
 	-webkit-transition: all $length ease-in-out;

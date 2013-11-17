@@ -15,7 +15,7 @@
 		background-color: rgba(red($color), green($color), blue($color), $opacity);
 	}
 	@if $gradient == very-yes{
-		background: linear-gradient(tint($color, $gradient-separation), $color);
+		background: linear-gradient(tint($color, $unit-value-tint-gradient), $color);
 	}
 	@include box-shadow($color);
 }

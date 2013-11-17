@@ -1,99 +1,93 @@
 // Global Variables
 // 
-// WARNING: here be a sloppy mess
+// you should be abel to read variable names backwards, like "the transition time unit" and it makes sense.
 
-$color: #ff0000 !global !default;
-$em: 16 !global !default;
-$unit__base-x-one: $em * 8 !global !default;
-$unit__base-x-two: $unit__base-x-one * 2 !global !default;
-$unit__base-x-three: $unit__base-x-one * 3 !global !default;
-$unit__base-x-four: $unit__base-x-one * 4 !global !default;
-$unit__base-x-five: $unit__base-x-one * 5 !global !default;
-$unit__base-x-eight: $unit__base-x-one * 8 !global !default;
-$unit__base-x-thirteen: $unit__base-x-one * 13 !global !default;
-$unit__gutter--width: 1rem;
-$length-mobile-cutoff: $unit__base-x-eight !global !default;
-$font-base: null !global !default;
-$max-width: 60em !global !default;
-$unit__header--height: 3rem !global !default;
-$unit__nav--height: 2rem !global !default;
-$length__transition: 0.4s !global !default;
-$unit__border-radius: 0 !global !default;
-$unit__header--opacity: 1 !global !default;
-$unit__shadow-size: 0 !global !default;
-$unit__shadow-blur: 0 !global !default;
-$unit__shadow-opacity: 0.45 !global !default;
-$color__3d--dark: rgba(0,0,0,$unit__shadow-opacity) !global !default;
-$color__3d--light: rgba(255,255,255,$unit__shadow-opacity) !global !default;
-$height-form-input: 1.5rem !global !default;
-$style__animation-ease: ease-in-out !global !default;
-$unit__line-height: 1rem !global !default;
+// add more variables related to the tree that emerges
+// unit
+// -value
+// --em
+// --tint-gradient
+// --opacity
+// ---shadow
+// -scalar
+// color
+// -base
+// -shade
+// -tint
+
+//$qualities: (min,maj,dim,aug,augmin7,sus,sus2,eleventh,min7,maj7,dom7,dim7,min6,maj6,domflat9,domsharp9,min9,maj9,perfect5);
+
+// Em declaration. Useless now, should be used to scale type without rem?
+$unit-value-em: 16 !global !default;//$unit-value-em
+
+$unit-value-opacity-shadow: 0.45 !global !default;
+$unit-value-opacity-header: 1 !global !default;// Opacity of the header. Can make opaque, preserves color
+$unit-value-tint-gradient: 3%;
+
+$font-base: null !global !default;// Who knows?
+
+// Color Variables
+
+$unit-scalar-border-radius: 0 !global !default;// The border radius of objects
+// Base widths, useful for breaking down screen sizes into approximate sizes.
+// I used Fibonacci (1,2,3,5,8,13) as my go-tos, but included others
+$unit-scalar-one: $unit-value-em * 8 !global !default;
+$unit-scalar-two: $unit-scalar-one * 2 !global !default;
+$unit-scalar-three: $unit-scalar-one * 3 !global !default;
+$unit-scalar-four: $unit-scalar-one * 4 !global !default;
+$unit-scalar-five: $unit-scalar-one * 5 !global !default;
+$unit-scalar-six: $unit-scalar-one * 6 !global !default;
+$unit-scalar-seven: $unit-scalar-one * 7 !global !default;
+$unit-scalar-eight: $unit-scalar-one * 8 !global !default;
+$unit-scalar-nine: $unit-scalar-one * 9 !global !default;
+$unit-scalar-ten: $unit-scalar-one * 10 !global !default;
+$unit-scalar-eleven: $unit-scalar-one * 11 !global !default;
+$unit-scalar-twelve: $unit-scalar-one * 12 !global !default;
+$unit-scalar-thirteen: $unit-scalar-one * 13 !global !default;
+
+$unit-scalar-gutter: 1rem;// Used to calculate space between objects
+$unit-scalar-mobile-cutoff: $unit-scalar-eight !global !default;// The definition of "mobile" for elements that require it
+$unit-scalar-width-max: 60em !global !default;// Maximum width of the site's content. Set to 100% for fully fluid
+$unit-scalar-height-form: 1.5rem !global !default;// Height of form elements, like those with label+input
+$unit-scalar-height-header: 3rem !global !default;// Height of the header, not including nav if using section.masthead
+$unit-scalar-height-line: 1rem !global !default;// The base line-height. Usually gets doubled for paragraphs
+$unit-scalar-height-nav: 2rem !global !default;// Height of the nav. Used for the height of navigation links on mobile
+$unit-scalar-shadow-blur: 0px !global !default;// Amount of shadow blur
+$unit-scalar-shadow-x: 0 !global !default;
+$unit-scalar-shadow-y: 0 !global !default;
+
+// The $units variables provide lists
+$units-scalar: ($unit-scalar-one,$unit-scalar-two,$unit-scalar-three,$unit-scalar-four,$unit-scalar-five,$unit-scalar-six,$unit-scalar-seven,$unit-scalar-eight,$unit-scalar-nine,$unit-scalar-ten,$unit-scalar-eleven,$unit-scalar-twelve,$unit-scalar-thirteen);// The array that makes it usable elsewhere. Not sure why I have it anymore. hm.
+$units-scalar-margin-article: (0.5, 1, 2, 0, 3, 0, 0, 4, 0, 0, 0, 0, 5);
+
+$unit-time-transition: 0.4s !global !default;// Default transition length
+
+$style-animation-ease: ease-in-out !global !default;
+
 $gradient: very-yes;
-$gradient-separation: 3%;
 
 $keyRatios: (a: 75%, b: 87.5%, c: 100%, d: 112.5%, e: 125%, f: 137.5%, g: 150%);
 
+$color: #ff0000 !global !default;//$color-base
+$color-shade: rgba(0,0,0,$unit-value-opacity-shadow) !global !default;
+$color-tint: rgba(255,255,255,$unit-value-opacity-shadow) !global !default;
 
-$article-margin-length-one: 0.5rem !global !default;
-$article-margin-length-two: 1rem !global !default;
-$article-margin-length-three: 2rem !global !default;
-$article-margin-length-five: 3rem !global !default;
-$article-margin-length-eight: 4rem !global !default;
-$article-margin-length-thirteen: 5rem !global !default;
-
-$small-text: (font-size: 0.850,line-height: 1,padding-top: 0.75,padding-bottom: 0.25,font-weight: normal,font-style: normal);
-$root-flat: (font-size: 1.000,line-height: 1,padding-top: 0.75,padding-bottom: 0.25,font-weight: normal,font-style: normal);
-$root: (font-size: 1.000,line-height: 2,padding-top: 0.75,padding-bottom: 0.25,font-weight: normal,font-style: normal);
-$root-sharp: (font-size: 1.000,line-height: 2,padding-top: 0.75,padding-bottom: 0.25,font-weight: normal,font-style: italic);
-$noteb2: (font-size: 1.067,line-height: 2,padding-top: 0.60,padding-bottom: 0.40,font-weight: normal,font-style: normal);
-$note2: (font-size: 1.125,line-height: 2,padding-top: 0.60,padding-bottom: 0.40,font-weight: bold,font-style: normal);
-$notes2: (font-size: 1.200,line-height: 2,padding-top: 0.60,padding-bottom: 0.40,font-weight: bold,font-style: italic);
-$noteb3: (font-size: 1.200,line-height: 2,padding-top: 0.60,padding-bottom: 0.40,font-weight: normal,font-style: normal);
-$note3: (font-size: 1.250,line-height: 2,padding-top: 0.55,padding-bottom: 0.45,font-weight: bold,font-style: normal);
-$note4: (font-size: 1.330,line-height: 2,padding-top: 0.50,padding-bottom: 0.5,font-weight: bold,font-style: normal);
-$notes4: (font-size: 1.414,line-height: 2,padding-top: 0.55,padding-bottom: 0.45,font-weight: bold,font-style: italic);
-$noteb5: (font-size: 1.414,line-height: 2,padding-top: 0.55,padding-bottom: 0.45,font-weight: bold,font-style: normal);
-$note5: (font-size: 1.500,line-height: 2,padding-top: 0.47,padding-bottom: 0.54,font-weight: bold,font-style: normal);
-$notes5: (font-size: 1.620,line-height: 2,padding-top: 0.38,padding-bottom: 0.60,font-weight: bold,font-style: italic);
-$noteb6: (font-size: 1.620,line-height: 2,padding-top: 0.38,padding-bottom: 0.6,font-weight: normal,font-style: normal);
-$note6: (font-size: 1.667,line-height: 2,padding-top: 0.35,padding-bottom: 0.65,font-weight: bold,font-style: normal);
-$notes6: (font-size: 1.778,line-height: 2,padding-top: 0.41,padding-bottom: 0.59,font-weight: bold,font-style: italic);
-$noteb7: (font-size: 1.778,line-height: 2,padding-top: 0.41,padding-bottom: 0.59,font-weight: normal,font-style: normal);
-$note7: (font-size: 1.875,line-height: 2,padding-top: 0.25,padding-bottom: 0.75,font-weight: bold,font-style: normal);
-$note8: (font-size: 2.000,line-height: 2,padding-top: 0.22,padding-bottom: 0.75,font-weight: bold,font-style: normal);
-$notes8: (font-size: 2.134,line-height: 3,padding-top: 0.68,padding-bottom: 0.30,font-weight: bold,font-style: italic);
-$noteb9: (font-size: 2.134,line-height: 3,padding-top: 0.68,padding-bottom: 0.30,font-weight: normal,font-style: normal);
-$note9: (font-size: 2.250,line-height: 3,padding-top: 0.72,padding-bottom: 0.26,font-weight: bold,font-style: normal);
-$notes9: (font-size: 2.400,line-height: 3,padding-top: 0.54,padding-bottom: 0.45,font-weight: bold,font-style: italic);
-$noteb10: (font-size: 2.500,line-height: 3,padding-top: 0.55,padding-bottom: 0.45,font-weight: normal,font-style: normal);
-$note10: (font-size: 2.500,line-height: 3,padding-top: 0.55,padding-bottom: 0.45,font-weight: bold,font-style: normal);
-$note11: (font-size: 2.660,line-height: 3,padding-top: 0.67,padding-bottom: 0.34,font-weight: bold,font-style: normal);
-$notes11: (font-size: 2.818,line-height: 3,padding-top: 0.43,padding-bottom: 0.54,font-weight: bold,font-style: italic);
-$noteb12: (font-size: 2.818,line-height: 3,padding-top: 0.43,padding-bottom: 0.54,font-weight: normal,font-style: normal);
-$note12: (font-size: 3.000,line-height: 3,padding-top: 0.39,padding-bottom: 0.60,font-weight: bold,font-style: normal);
-$notes12: (font-size: 3.201,line-height: 4,padding-top: 0.75,padding-bottom: 0.25,font-weight: bold,font-style: italic);
-$noteb13: (font-size: 3.201,line-height: 4,padding-top: 0.75,padding-bottom: 0.25,font-weight: normal,font-style: normal);
-$note13: (font-size: 3.375,line-height: 4,padding-top: 0.70,padding-bottom: 0.30,font-weight: bold,font-style: normal);
-
-
-
-$color__earth-tone--a: #35291F;
-$color__earth-tone--b: #695B4E;
-$color__earth-tone--c: #988F76;
-$color__earth-tone--d: #482714;
-$color__earth-tone--e: #6C4B1A;
-$color__earth-tone--f: #B69A71;
-$color__earth-tone--g: #6C3108;
-$color__earth-tone--h: #C57200;
-$color__earth-tone--i: #EEDB74;
-$color__earth-tone--j: #333C1A;
-$color__earth-tone--k: #66883F;
-$color__earth-tone--l: #AFCA90;
-$color__earth-tone--m: #45525D;
-$color__earth-tone--n: #7A8491;
-$color__earth-tone--o: #ADB6BB;
-$color__earth-tone--sky: #6B9BE3;
-
+$color-earth-a: #35291F;
+$color-earth-b: #695B4E;
+$color-earth-c: #988F76;
+$color-earth-d: #482714;
+$color-earth-e: #6C4B1A;
+$color-earth-f: #B69A71;
+$color-earth-g: #6C3108;
+$color-earth-h: #C57200;
+$color-earth-i: #EEDB74;
+$color-earth-j: #333C1A;
+$color-earth-k: #66883F;
+$color-earth-l: #AFCA90;
+$color-earth-m: #45525D;
+$color-earth-n: #7A8491;
+$color-earth-o: #ADB6BB;
+$color-earth-sky: #6B9BE3;
 
 $color-primary: null !global !default;
 $color-secondary: null !global !default;
@@ -102,3 +96,9 @@ $color-text: null !global !default;
 $color-accent: null !global !default;
 $color-background: null !global !default;
 $color-drawer: null !global !default;
+
+$humanity: (one: 1,two: 2,three: 3,four: 4,five: 5,six: 6,seven: 7,eight: 8,nine: 9,ten: 10,eleven: 11,twelve: 12,thirteen: 13);
+
+@function humanity($numeral){
+	@return nth($humanity, $numeral);
+}

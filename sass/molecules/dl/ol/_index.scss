@@ -19,10 +19,10 @@
 		line-height: 1rem;
 	}
 	>li {
-		padding: 0 #{$unit__gutter--width * 2} $unit__gutter--width 0;
+		padding: 0 #{$unit-scalar-gutter * 2} $unit-scalar-gutter 0;
 		display: inline;
 		float: left;
-		@include media-from($length-mobile-cutoff) {
+		@include media-from($unit-scalar-mobile-cutoff) {
 			width: 50%;
 		}
 
@@ -32,7 +32,7 @@
 			padding: 0;
 			display: inline;
 			position: relative;
-			left: $unit__gutter--width;
+			left: $unit-scalar-gutter;
 			counter-reset: li;
 			li {
 				display: inline;

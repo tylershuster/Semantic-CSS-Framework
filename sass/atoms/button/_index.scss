@@ -7,13 +7,13 @@ input[type="button"] {
     margin: 0;
     padding-top: 0;
     @include object($color-primary);
-    height: #{ceil($height-form-input)};
+    height: #{ceil($unit-scalar-height-form)};
     color: $color-background;
-    @include prefixer(transition, box-shadow $length__transition);
+    @include prefixer(transition, box-shadow $unit-time-transition);
     &:nth-last-of-type(n+2) {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        margin-right: #{($unit__border-radius + 1px) * -1};
+        margin-right: #{($unit-scalar-border-radius + 1px) * -1};
     }
     >a {
         text-decoration: none;
@@ -22,8 +22,8 @@ input[type="button"] {
     & + button {
         border-radius: 0;
         &:last-of-type {
-            border-top-right-radius: $unit__border-radius;
-            border-bottom-right-radius: $unit__border-radius;
+            border-top-right-radius: $unit-scalar-border-radius;
+            border-bottom-right-radius: $unit-scalar-border-radius;
         }
     }
     & > form {
@@ -38,7 +38,7 @@ input[type="button"] {
         }
     }
     &:active {
-        box-shadow: inset 0 0 $unit__shadow-blur rgba(0, 0, 0, $unit__shadow-opacity);
+        box-shadow: inset 0 0 $unit-scalar-shadow-blur rgba(0, 0, 0, $unit-value-opacity-shadow);
         @include box-shadow-inset($color-primary);
     }
     &::-moz-focus-inner {

@@ -2,46 +2,54 @@
 // 
 // | body>input.slide-toggle+header.X>img+h1+address+input[type="search"]+section.X+nav>ul>li*$
 @import ".slide-toggle";
->header{
+&{
 	position: fixed;
 	top: 0;
 	left: 0;
 	box-sizing: content-box;
-	min-height: $unit__nav--height;
+	min-height: $unit-scalar-height-nav;
 	display: block;
-	height: $unit__header--height;
+	height: $unit-scalar-height-header;
 	z-index: 9999;
 	@include column(1,1);
-	@include object($color-drawer, $unit__header--opacity);
+	@include object($color-drawer, $unit-value-opacity-header);
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
 	border-top: none;
-	@import "address";
-	@import "nav";
-	@import "h1";
-	@import "img/index";
+	>address{
+		@import "address";		
+	}
+	>nav{
+		@import "nav";		
+	}
+	>h1{
+		@import "h1";		
+	}
+
+	@import "img/index";	
 	@import "input--search";
-	@import "section/index";
-	@import "classes/index";
-	@include media-from($unit__base-x-two){
+	@import "section/index";		
+	@import "classes/index";		
+	
+	@include media-from(nth($units-scalar, 2)){
 		@include column(2,2);
 		& + main{
-			padding-top: #{$unit__header--height};}}
-	@include media-from($unit__base-x-three){
+			padding-top: #{$unit-scalar-height-header};}}
+	@include media-from(nth($units-scalar, 3)){
 		@include column(3,3);
 		& + main{
-			padding-top: #{$unit__header--height};}}
-	@include media-from($unit__base-x-five){
+			padding-top: #{$unit-scalar-height-header};}}
+	@include media-from(nth($units-scalar, 5)){
 		@include column(5,5);
 		& + main{
-			padding-top: #{$unit__header--height};}}
-	@include media-from($unit__base-x-eight){
+			padding-top: #{$unit-scalar-height-header};}}
+	@include media-from(nth($units-scalar, 8)){
 		@include column(8,8);
-		//height: #{$unit__header--height + $unit__nav--height};
+		//height: #{$unit-scalar-height-header + $unit-scalar-height-nav};
 		& + main{
-			padding-top: #{$unit__header--height + $unit__nav--height};}}
-	@include media-from($unit__base-x-thirteen){
+			padding-top: #{$unit-scalar-height-header + $unit-scalar-height-nav};}}
+	@include media-from(nth($units-scalar, 13)){
 		@include column(13,13);
 		& + main{
-			padding-top: #{$unit__header--height + $unit__nav--height};}}
+			padding-top: #{$unit-scalar-height-header + $unit-scalar-height-nav};}}
 }

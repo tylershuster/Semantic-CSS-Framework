@@ -12,15 +12,15 @@ label{
 			color: $color-red;
 			content: "*";
 			margin-left: 3px;}}
-	@media all and (min-width:#{$unit__base-x-one * 1px}) and (max-width:#{$unit__base-x-two * 1px}){
+	@media all and (min-width:#{nth($units-scalar, 1) * 1px}) and (max-width:#{nth($units-scalar, 2) * 1px}){
 		display: block;}
-	@media all and (min-width:#{$unit__base-x-two * 1px}) and (max-width:#{$unit__base-x-three * 1px}){
+	@media all and (min-width:#{nth($units-scalar, 2) * 1px}) and (max-width:#{nth($units-scalar, 3) * 1px}){
 		display: block;}
-	@media all and (min-width:#{$unit__base-x-three * 1px}) and (max-width:#{$unit__base-x-five * 1px}){
+	@media all and (min-width:#{nth($units-scalar, 3) * 1px}) and (max-width:#{nth($units-scalar, 5) * 1px}){
 		/*min-width: 33%;*/}
-	@media all and (min-width:#{$unit__base-x-five * 1px}) and (max-width:#{$unit__base-x-eight * 1px}){
+	@media all and (min-width:#{nth($units-scalar, 5) * 1px}) and (max-width:#{nth($units-scalar, 8) * 1px}){
 		/*min-width: 25%;*/}
-	@media all and (min-width:#{$unit__base-x-eight * 1px}) and (max-width:#{$unit__base-x-thirteen * 1px}){
+	@media all and (min-width:#{nth($units-scalar, 8) * 1px}) and (max-width:#{nth($units-scalar, 13) * 1px}){
 		/*min-width: 10%;*/}
-	@media all and (min-width:#{$unit__base-x-thirteen * 1px}){
+	@media all and (min-width:#{nth($units-scalar, 13) * 1px}){
 		/*min-width: 10%;*/}}

@@ -1,36 +1,37 @@
+
 &{
 	&:nth-of-type(odd){
 		float: right;
-		padding-left: $unit__gutter--width;
-		margin-right: $article-margin-length-one  * -1;}
+		padding-left: $unit-scalar-gutter;
+		margin-right: nth($units-scalar-margin-article, 1)  * -1;}
 	&:nth-of-type(even){
 		float: left;
-		margin-left: $article-margin-length-one  * -1;}
-	@include media-from($unit__base-x-two){
-		width: calc(100% + #{2 * $article-margin-length-two});
+		margin-left: nth($units-scalar-margin-article, 1)  * -1;}
+	@include media-from(nth($units-scalar, 2)){
+		width: calc(100% + #{2 * nth($units-scalar-margin-article, 2)});
 		&:nth-of-type(odd){
-			margin-right: $article-margin-length-two  * -1;}
+			margin-right: nth($units-scalar-margin-article, 2)  * -1;}
 		&:nth-of-type(even){
-			margin-left: $article-margin-length-two * -1;}}
-	@include media-from($unit__base-x-three){
-		width: calc(100% + #{2 * $article-margin-length-three});
+			margin-left: nth($units-scalar-margin-article, 2) * -1;}}
+	@include media-from(nth($units-scalar, 3)){
+		width: calc(100% + #{2 * nth($units-scalar-margin-article, 3)});
 		&:nth-of-type(odd){
-			margin-right: $article-margin-length-three  * -1;}
+			margin-right: nth($units-scalar-margin-article, 3)  * -1;}
 		&:nth-of-type(even){
-			margin-left: $article-margin-length-three * -1;}}
-	@include media-from($unit__base-x-five){
+			margin-left: nth($units-scalar-margin-article, 3) * -1;}}
+	@include media-from(nth($units-scalar, 5)){
 		width: 50%;
 		&:nth-of-type(odd){
-			margin-right: $article-margin-length-five  * -1;}
+			margin-right: nth($units-scalar-margin-article, 5)  * -1;}
 		&:nth-of-type(even){
-			margin-left: $article-margin-length-five * -1;}}
-	@include media-from($unit__base-x-eight){
+			margin-left: nth($units-scalar-margin-article, 5) * -1;}}
+	@include media-from(nth($units-scalar, 8)){
 		&:nth-of-type(odd){
-			margin-right: $article-margin-length-eight  * -1;}
+			margin-right: nth($units-scalar-margin-article, 8)  * -1;}
 		&:nth-of-type(even){
-			margin-left: $article-margin-length-eight * -1;}}
-	@include media-from($unit__base-x-thirteen){
+			margin-left: nth($units-scalar-margin-article, 8) * -1;}}
+	@include media-from(nth($units-scalar, 13)){
 		&:nth-of-type(odd){
-			margin-right: $article-margin-length-thirteen  * -1;}
+			margin-right: nth($units-scalar-margin-article, 13)  * -1;}
 		&:nth-of-type(even){
-			margin-left: $article-margin-length-thirteen * -1;}}}
+			margin-left: nth($units-scalar-margin-article, 13) * -1;}}}

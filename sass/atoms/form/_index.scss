@@ -6,7 +6,7 @@ form{
 	width: 100%;
 	&:focus{
 		outline: none;}
-	@media all and (min-width:#{$unit__base-x-three * 1px}){
+	@media all and (min-width:#{nth($units-scalar, 3) * 1px}){
 		display: flex;		
 		input{
 			display: flex;}}
@@ -23,8 +23,8 @@ form{
 		float: left;
 		padding: 0 0.5rem;
 		@if $skeu == 'faux-flat' {
-			border-radius: $unit__border-radius;}
-		@media all and (max-width:#{$unit__base-x-three * 1px}){
+			border-radius: $unit-scalar-border-radius;}
+		@media all and (max-width:#{nth($units-scalar, 3) * 1px}){
 			width: 100%;}
 		//hacks follow
 		&[maxlength="1"]{

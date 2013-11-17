@@ -5,38 +5,38 @@
 // for tab panels and other uses.
 //
 // input:c#slide-checkbox.slide-checkbox+label[for="slide-checkbox"].slide-toggle
-$toggle-bar-height: ($unit__nav--height/1rem) * 3.2px;
+$toggle-bar-height: ($unit-scalar-height-nav/1rem) * 3.2px;
 .slide-toggle {
 	float: left;
 	height: ceil($toggle-bar-height);
-	width: $unit__nav--height;
+	width: $unit-scalar-height-nav;
 	cursor: pointer;	
 	z-index: 1;
 	display: none;
 	background-color: $color-primary;
 	margin: auto;
 	position: fixed;
-	right: #{$unit__gutter--width};
+	right: #{$unit-scalar-gutter};
 	bottom: auto;
-	top: #{$unit__nav--height / 1.5};
+	top: #{$unit-scalar-height-nav / 1.5};
 	padding: 0;
 	min-width: 0;
 	content: "";
 	z-index: 10000;
 	@include transition;
-	@include prefixer(transition, transform #{$length__transition / 2} $style__animation-ease);
+	@include prefixer(transition, transform #{$unit-time-transition / 2} $style-animation-ease);
 	@include box-shadow($color-primary);
-	@include media-to($length-mobile-cutoff){
+	@include media-to($unit-scalar-mobile-cutoff){
 		display: block;}
 	&:before {
 		@include transition;
 		content: "";	
 		display: block;	
 		height: ceil($toggle-bar-height);	
-		width: $unit__nav--height;
+		width: $unit-scalar-height-nav;
 		background-color: $color-primary;		
 		position: absolute;
-		bottom: #{$unit__nav--height / 2.5};		
+		bottom: #{$unit-scalar-height-nav / 2.5};		
 		@include prefixer(transform-origin, 90% 0%);
 		@include box-shadow($color-primary);
 	}
@@ -45,10 +45,10 @@ $toggle-bar-height: ($unit__nav--height/1rem) * 3.2px;
 		content: "";	
 		display: block;	
 		height: ceil($toggle-bar-height);	
-		width: $unit__nav--height;
+		width: $unit-scalar-height-nav;
 		background-color: $color-primary;		
 		position: absolute;
-		top: #{$unit__nav--height / 2.7};
+		top: #{$unit-scalar-height-nav / 2.7};
 		@include prefixer(transform-origin, 100% 0%);
 		@include box-shadow($color-primary);
 	}
@@ -68,14 +68,14 @@ $toggle-bar-height: ($unit__nav--height/1rem) * 3.2px;
 	left: -9999px;
 	& ~ main{
 		@include transition;
-		@include media-from($length-mobile-cutoff){
+		@include media-from($unit-scalar-mobile-cutoff){
 			@include transition(0s);
 		}
 		right: 0;
 	}
 	& ~ main{
 		position: relative;}
-	@include media-to($length-mobile-cutoff){
+	@include media-to($unit-scalar-mobile-cutoff){
 		&:checked,
 		&.activated {			
 			& ~ header{				
@@ -85,15 +85,15 @@ $toggle-bar-height: ($unit__nav--height/1rem) * 3.2px;
 				}				
 			}
 			& ~ main{				
-				@include media-from($unit__base-x-one){
+				@include media-from(nth($units-scalar, 1)){
 					right: 100%;
 					&>nav{
 						margin-left: -100%;}}
-				@include media-from($unit__base-x-three){
+				@include media-from(nth($units-scalar, 3)){
 					right: 50%;
 					&>nav{
 						margin-left: -50%;}}
-				@include media-from($unit__base-x-five){
+				@include media-from(nth($units-scalar, 5)){
 					right: 33%;
 					&>nav{
 						margin-left: -33%;}}
@@ -103,29 +103,29 @@ $toggle-bar-height: ($unit__nav--height/1rem) * 3.2px;
 	}
 }
 .slide-toggle ~ header>nav {
-	@include media-from($unit__base-x-one){
+	@include media-from(nth($units-scalar, 1)){
 		width: 100%;}
-	@include media-from($unit__base-x-three){
+	@include media-from(nth($units-scalar, 3)){
 		width: 50%;}
-	@include media-from($unit__base-x-five){
+	@include media-from(nth($units-scalar, 5)){
 		width: 33%;}
-	@include media-from($length-mobile-cutoff){
+	@include media-from($unit-scalar-mobile-cutoff){
 		width: auto;}
-	@include media-to($length-mobile-cutoff){
+	@include media-to($unit-scalar-mobile-cutoff){
 		position: fixed;
 		right: -100%;
 		height: 100%;
-		top: $unit__header--height;
+		top: $unit-scalar-height-header;
 		background-color: $color-drawer;
 		@if $skeu == faux-flat{
 			@include box-shadow-inset($color-drawer);			
-			box-shadow: inset $unit__shadow-size 0 $unit__shadow-blur $color__3d--dark;
+			box-shadow: inset $unit-scalar-shadow-x 0 $unit-scalar-shadow-blur $color-shade;
 		}
 		@else if $skeu == flat{
-			border-left: 1px solid $color__3d--dark;
-			border-top: 1px solid $color__3d--dark;
+			border-left: 1px solid $color-shade;
+			border-top: 1px solid $color-shade;
 		}
-		@include prefixer(transition, right $length__transition $style__animation-ease);
+		@include prefixer(transition, right $unit-time-transition $style-animation-ease);
 		ul{
 			float: right;
 			display: block;
@@ -151,22 +151,22 @@ $toggle-bar-height: ($unit__nav--height/1rem) * 3.2px;
 			float: left;}}}
 .slide-checkbox:checked ~ .slide-toggle,
 .slide-checkbox.activated ~ .slide-toggle {	
-	@include media-to($length-mobile-cutoff){
+	@include media-to($unit-scalar-mobile-cutoff){
 		background: transparent;
 		box-shadow: none;
 		border: none;		
 		&:before{
-			//width: $unit__nav--height * 1.414;
+			//width: $unit-scalar-height-nav * 1.414;
 			border: none;
 			@include box-shadow-inset($color-primary);
 			box-shadow: none;
-			@include prefixer(transform, rotateZ(-45deg) translate(-#{$unit__nav--height / 5.71428571}, -#{$unit__nav--height / 8}));
+			@include prefixer(transform, rotateZ(-45deg) translate(-#{$unit-scalar-height-nav / 5.71428571}, -#{$unit-scalar-height-nav / 8}));
 		}	
 		&:after{
-			//width: $unit__nav--height * 1.414;
+			//width: $unit-scalar-height-nav * 1.414;
 			border: none;	
-			box-shadow: 0 $unit__shadow-size $unit__shadow-size rgba(0, 0, 0, $unit__shadow-opacity);		
-			@include prefixer(transform, rotateZ(45deg) translate(-#{$unit__nav--height / 20}, #{$unit__nav--height / 20}));
+			box-shadow: 0 $unit-scalar-shadow-y $unit-scalar-shadow-x rgba(0, 0, 0, $unit-value-opacity-shadow);		
+			@include prefixer(transform, rotateZ(45deg) translate(-#{$unit-scalar-height-nav / 20}, #{$unit-scalar-height-nav / 20}));
 		}	
 		
 	}}

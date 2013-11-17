@@ -1,23 +1,24 @@
+
 // An article 
 // Articles are sectioning blocks.
 // This means that there can be multiple 
 // and can all contain h1 tags and other similarly unique elements
 
->article{
+&{
 	padding: 0 0.5rem;
-	@include media-from($unit__base-x-two){
+	@include media-from(nth($units-scalar, 2)){
 		padding: 0 2rem;
-		max-width: #{($unit__base-x-two * (1rem / 16)) + 4rem};}
-	@include media-from($unit__base-x-three){
+		max-width: #{(nth($units-scalar, 2) * (1rem / 16)) + 4rem};}
+	@include media-from(nth($units-scalar, 3)){
 		padding: 0 3rem;
-		max-width: #{($unit__base-x-three * (1rem / 16)) + 6rem};}
-	@include media-from($unit__base-x-five){
+		max-width: #{(nth($units-scalar, 3) * (1rem / 16)) + 6rem};}
+	@include media-from(nth($units-scalar, 5)){
 		padding: 0 4rem;
-		max-width: #{($unit__base-x-five * (1rem / 16)) + 8rem};}
-	@include media-from($unit__base-x-eight){
+		max-width: #{(nth($units-scalar, 5) * (1rem / 16)) + 8rem};}
+	@include media-from(nth($units-scalar, 8)){
 		padding: 0 5rem;	
-		max-width: $max-width;}
-	@include media-from($unit__base-x-thirteen){
+		max-width: $unit-scalar-width-max;}
+	@include media-from(nth($units-scalar, 13)){
 		padding: 0 6rem;}
 	>header{
 		@import "header";

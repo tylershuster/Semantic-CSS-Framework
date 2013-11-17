@@ -5,64 +5,64 @@
 
 &{
 	width: 100%;
-	padding: 0 $unit__gutter--width #{$unit__gutter--width / 2} $unit__gutter--width;
-	margin-bottom: #{$unit__gutter--width / 2};	
-	width: calc(100% + #{2 * $article-margin-length-one});	
+	padding: 0 $unit-scalar-gutter #{$unit-scalar-gutter / 2} $unit-scalar-gutter;
+	margin-bottom: #{$unit-scalar-gutter / 2};	
+	width: calc(100% + #{2 * nth($units-scalar-margin-article, 1)});	
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	p{
-		margin-bottom: #{$unit__gutter--width / -2};}	
+		margin-bottom: #{$unit-scalar-gutter / -2};}	
 	&.pull:nth-of-type(odd){
 		float: left;		
-		right: $article-margin-length-one;
-		margin-right: #{$article-margin-length-one * -0.5};}
+		right: nth($units-scalar-margin-article, 1);
+		margin-right: #{nth($units-scalar-margin-article, 1) * -0.5};}
 	&.pull:nth-of-type(even){
 		float: right;		
-		left: $article-margin-length-one;
-		margin-left: #{$article-margin-length-one * -0.5};}
-	@include media-from($unit__base-x-two){
-		width: calc(100% + #{2 * $article-margin-length-two});
+		left: nth($units-scalar-margin-article, 1);
+		margin-left: #{nth($units-scalar-margin-article, 1) * -0.5};}
+	@include media-from(nth($units-scalar, 2)){
+		width: calc(100% + #{2 * nth($units-scalar-margin-article, 2)});
 		&.pull:nth-of-type(odd){
-			right: $article-margin-length-two;
-			margin-right: #{$article-margin-length-two * -0.5};}
+			right: nth($units-scalar-margin-article, 2);
+			margin-right: #{nth($units-scalar-margin-article, 2) * -0.5};}
 		&.pull:nth-of-type(even){
-			left: $article-margin-length-two;
-			margin-left: #{$article-margin-length-two * -0.5};}}
-	@include media-from($unit__base-x-three){
+			left: nth($units-scalar-margin-article, 2);
+			margin-left: #{nth($units-scalar-margin-article, 2) * -0.5};}}
+	@include media-from(nth($units-scalar, 3)){
 		margin-top: -0.25rem;
 		margin-bottom: -0.25rem;
 		width: 50%;
 		
 
 		&.pull:nth-of-type(odd){			
-			right: $article-margin-length-three;
-			margin-right: #{$article-margin-length-three * -0.5};}
+			right: nth($units-scalar-margin-article, 3);
+			margin-right: #{nth($units-scalar-margin-article, 3) * -0.5};}
 		&.pull:nth-of-type(even){			
-			left: $article-margin-length-three;
-			margin-left: #{$article-margin-length-three * -0.5};}}
-	@include media-from($unit__base-x-five){
+			left: nth($units-scalar-margin-article, 3);
+			margin-left: #{nth($units-scalar-margin-article, 3) * -0.5};}}
+	@include media-from(nth($units-scalar, 5)){
 		&.pull:nth-of-type(odd){
-			right: $article-margin-length-five;
-			margin-right: #{$article-margin-length-five * -0.5};}
+			right: nth($units-scalar-margin-article, 5);
+			margin-right: #{nth($units-scalar-margin-article, 5) * -0.5};}
 		&.pull:nth-of-type(even){
-			left: $article-margin-length-five;
-			margin-left: #{$article-margin-length-five * -0.5};}}
-	@include media-from($unit__base-x-eight){
+			left: nth($units-scalar-margin-article, 5);
+			margin-left: #{nth($units-scalar-margin-article, 5) * -0.5};}}
+	@include media-from(nth($units-scalar, 8)){
 		width: 33%;
 		&.pull:nth-of-type(odd){
-			right: $article-margin-length-eight;
-			margin-right: #{$article-margin-length-eight * -0.5};}
+			right: nth($units-scalar-margin-article, 8);
+			margin-right: #{nth($units-scalar-margin-article, 8) * -0.5};}
 		&.pull:nth-of-type(even){
-			left: $article-margin-length-eight;
-			margin-left: #{$article-margin-length-eight * -0.5};}}
-	@include media-from($unit__base-x-thirteen){
+			left: nth($units-scalar-margin-article, 8);
+			margin-left: #{nth($units-scalar-margin-article, 8) * -0.5};}}
+	@include media-from(nth($units-scalar, 13)){
 		width: 25%;
 		&.pull:nth-of-type(odd){
-			right: $article-margin-length-thirteen;
-			margin-right: #{$article-margin-length-thirteen * -0.5};}
+			right: nth($units-scalar-margin-article, 13);
+			margin-right: #{nth($units-scalar-margin-article, 13) * -0.5};}
 		&.pull:nth-of-type(even){
-			left: $article-margin-length-thirteen;
-			margin-left: #{$article-margin-length-thirteen * -0.5};}}}
+			left: nth($units-scalar-margin-article, 13);
+			margin-left: #{nth($units-scalar-margin-article, 13) * -0.5};}}}

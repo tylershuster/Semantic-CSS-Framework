@@ -1,6 +1,6 @@
 p{
 	@include font-properties-for(p);
-	line-height: #{typography(p,line-height) * ($unit__line-height)};
+	line-height: #{typography(p,line-height) * ($unit-scalar-height-line)};
 	font-family: '#{$body-font}';
 	&.uber,
 	.uber &{

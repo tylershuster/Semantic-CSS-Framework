@@ -1,10 +1,11 @@
-@include media-from($unit__base-x-two){
+@import "variables"; 
+@include media-from(nth($units-scalar, 2)){
 	.row>*{
-		flex-basis: #{$unit__base-x-two * 1px}}}
+		flex-basis: #{nth($units-scalar, 2) * 1px}}}
 
 
 
-@media all and (min-width:#{$unit__base-x-eight * 1px}){
+@media all and (min-width:#{nth($units-scalar, 8) * 1px}){
 	.row{
 		display: flex;		
 		>*{
@@ -20,7 +21,7 @@
 		>.four{
 			flex-grow: 4;}}}
 
-@media all and (min-width:#{$unit__base-x-five * 1px}) and (max-width:#{$unit__base-x-eight * 1px}){
+@media all and (min-width:#{nth($units-scalar, 5) * 1px}) and (max-width:#{nth($units-scalar, 8) * 1px}){
 	.row{
 		display: flex;
 
@@ -36,7 +37,7 @@
 				float: left;
 				width: 50%;}}}}
 
-@media all and (min-width: 0px) and (max-width:#{$unit__base-x-five * 1px}){
+@media all and (min-width: 0px) and (max-width:#{nth($units-scalar, 5) * 1px}){
 	.row{
 		display: block;
 		>*{

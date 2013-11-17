@@ -1,0 +1,79 @@
+/* http://24ways.org/2011/composing-the-new-canon/ !*/
+// Need to write cent calculator so that the font-size for the notes can all be based on cents
+$note-small: (				font-size: 0.850,	line-height: 1,	padding-top: 0.75,	padding-bottom: 0.25,	font-weight: normal,	font-style: normal);
+$note-unison: (				font-size: 1.000,	line-height: 2,	padding-top: 0.75,	padding-bottom: 0.25,	font-weight: normal,	font-style: normal);
+$note-second-minor: (		font-size: 1.067,	line-height: 2,	padding-top: 0.60,	padding-bottom: 0.40,	font-weight: normal,	font-style: normal);
+$note-second: (				font-size: 1.125,	line-height: 2,	padding-top: 0.60,	padding-bottom: 0.40,	font-weight: bold,		font-style: normal);
+$note-third-minor: (		font-size: 1.200,	line-height: 2,	padding-top: 0.60,	padding-bottom: 0.40,	font-weight: normal,	font-style: normal);
+$note-third-major: (		font-size: 1.250,	line-height: 2,	padding-top: 0.55,	padding-bottom: 0.45,	font-weight: bold,		font-style: normal);
+$note-fourth-perfect: (		font-size: 1.330,	line-height: 2,	padding-top: 0.50,	padding-bottom: 0.5,	font-weight: bold,		font-style: normal);
+$note-fourth-augmented: (	font-size: 1.414,	line-height: 2,	padding-top: 0.55,	padding-bottom: 0.45,	font-weight: bold,		font-style: italic);
+$note-fifth-diminished: (	font-size: 1.414,	line-height: 2,	padding-top: 0.55,	padding-bottom: 0.45,	font-weight: bold,		font-style: normal);
+$note-fifth-perfect: (		font-size: 1.500,	line-height: 2,	padding-top: 0.47,	padding-bottom: 0.54,	font-weight: bold,		font-style: normal);
+$note-sixth-minor: (		font-size: 1.620,	line-height: 2,	padding-top: 0.38,	padding-bottom: 0.6,	font-weight: normal,	font-style: normal);// 6th min is off?
+$note-sixth-major: (		font-size: 1.667,	line-height: 2,	padding-top: 0.35,	padding-bottom: 0.65,	font-weight: bold,		font-style: normal);
+$note-seventh-minor: (		font-size: 1.778,	line-height: 2,	padding-top: 0.41,	padding-bottom: 0.59,	font-weight: normal,	font-style: normal);
+$note-seventh-major: (		font-size: 1.875,	line-height: 2,	padding-top: 0.25,	padding-bottom: 0.75,	font-weight: bold,		font-style: normal);
+$note-octave: (				font-size: 2.000,	line-height: 2,	padding-top: 0.22,	padding-bottom: 0.75,	font-weight: bold,		font-style: normal);
+$note-ninth-minor: (		font-size: 2.134,	line-height: 3,	padding-top: 0.68,	padding-bottom: 0.30,	font-weight: normal,	font-style: normal);
+$note-ninth: (				font-size: 2.250,	line-height: 3,	padding-top: 0.72,	padding-bottom: 0.26,	font-weight: bold,		font-style: normal);
+$note-ninth-augmented: (	font-size: 2.400,	line-height: 3,	padding-top: 0.54,	padding-bottom: 0.45,	font-weight: bold,		font-style: italic);
+$note-tenth-major: (		font-size: 2.500,	line-height: 3,	padding-top: 0.55,	padding-bottom: 0.45,	font-weight: bold,		font-style: normal);
+$note-eleventh-major: (		font-size: 2.660,	line-height: 3,	padding-top: 0.67,	padding-bottom: 0.34,	font-weight: bold,		font-style: normal);
+$note-twelfth: (			font-size: 3.000,	line-height: 3,	padding-top: 0.39,	padding-bottom: 0.60,	font-weight: bold,		font-style: normal);
+
+$chord-min: (		h1: $note-fifth-perfect,	h2: $note-third-minor,		h3: $note-third-minor,		h4: $note-third-minor,		else: $note-third-minor);
+$chord-maj: (		h1: $note-fifth-perfect,	h2: $note-third-major,		h3: $note-third-major,		h4: $note-third-major,		else: $note-third-major);
+$chord-dim: (		h1: $note-fifth-diminished,	h2: $note-third-minor,		h3: $note-third-minor,		h4: $note-third-minor,		else: $note-third-minor);
+$chord-aug: (		h1: $note-sixth-minor,		h2: $note-third-major,		h3: $note-third-major,		h4: $note-third-major,		else: $note-third-major);
+$chord-augmin7: (	h1: $note-seventh-minor,	h2: $note-sixth-minor,		h3: $note-third-major,		h4: $note-third-major,		else: $note-third-major);
+$chord-sus: (		h1: $note-fifth-perfect,	h2: $note-fourth-perfect,	h3: $note-fourth-perfect,	h4: $note-fourth-perfect,	else: $note-fourth-perfect);
+$chord-sus2: (		h1: $note-fifth-perfect,	h2: $note-second,			h3: $note-second,			h4: $note-second,			else: $note-second);
+$chord-eleventh: (	h1: $note-eleventh-major,	h2: $note-ninth,			h3: $note-seventh-minor,	h4: $note-fifth-perfect,	else: $note-third-major);
+$chord-min7: (		h1: $note-seventh-minor,	h2: $note-fifth-perfect,	h3: $note-third-major,		h4: $note-third-minor,		else: $note-third-minor);
+$chord-maj7: (		h1: $note-seventh-major,	h2: $note-fifth-perfect,	h3: $note-third-major,		h4: $note-third-major,		else: $note-third-major);
+$chord-dom7: (		h1: $note-seventh-minor,	h2: $note-fifth-perfect,	h3: $note-third-minor,		h4: $note-third-minor,		else: $note-third-minor);
+$chord-dim7: (		h1: $note-seventh-minor,	h2: $note-fifth-diminished,	h3: $note-third-minor,		h4: $note-third-minor,		else: $note-third-minor);
+$chord-min6: (		h1: $note-sixth-major,		h2: $note-fifth-perfect,	h3: $note-third-minor,		h4: $note-third-minor,		else: $note-third-minor);
+$chord-maj6: (		h1: $note-sixth-major,		h2: $note-fifth-perfect,	h3: $note-third-major,		h4: $note-third-major,		else: $note-third-major);
+$chord-domflat9: (	h1: $note-ninth-minor,		h2: $note-seventh-minor,	h3: $note-fifth-perfect,	h4: $note-third-major,		else: $note-third-major);
+$chord-domsharp9: (	h1: $note-ninth-augmented,	h2: $note-seventh-minor,	h3: $note-fifth-perfect,	h4: $note-third-major,		else: $note-third-major);
+$chord-min9: (		h1: $note-ninth,			h2: $note-seventh-minor,	h3: $note-fifth-perfect,	h4: $note-third-minor,		else: $note-third-minor);
+$chord-maj9: (		h1: $note-ninth,			h2: $note-seventh-major,	h3: $note-fifth-perfect,	h4: $note-third-major,		else: $note-third-major);
+$chord-perfect5: (	h1: $note-fifth-perfect,	h2: $note-fifth-perfect,	h3: $note-fifth-perfect,	h4: $note-fifth-perfect,	else: $note-fifth-perfect);
+
+@function typography($element,$attribute){
+	@if $element == p{@return map-get($note-unison, $attribute);}
+	@else if $element == small{@return map-get($note-small, $attribute);}
+	@else {
+		$deezQualities: (min,maj,dim,aug,sus,sus2,eleventh,min7,maj7,augmin7,dom7,dim7,min6,maj6,domflat9,domsharp9,min9,maj9,perfect5);
+		@each $this-quality in $deezQualities{
+			@if $quality == $this-quality{
+				$this-chord: null;
+				@if $quality == min {$this-chord: $chord-min;}
+				@else if $quality == maj {$this-chord: $chord-maj;}
+				@else if $quality == dim {$this-chord: $chord-dim;}
+				@else if $quality == aug {$this-chord: $chord-aug;}
+				@else if $quality == sus {$this-chord: $chord-sus;}
+				@else if $quality == sus2 {$this-chord: $chord-sus2;}
+				@else if $quality == eleventh {$this-chord: $chord-eleventh;}
+				@else if $quality == min7 {$this-chord: $chord-min7;}
+				@else if $quality == maj7 {$this-chord: $chord-maj7;}
+				@else if $quality == augmin7 {$this-chord: $chord-augmin7;}
+				@else if $quality == dom7 {$this-chord: $chord-dom7;}
+				@else if $quality == dim7 {$this-chord: $chord-dim7;}
+				@else if $quality == min6 {$this-chord: $chord-min6;}
+				@else if $quality == maj6 {$this-chord: $chord-min6;}
+				@else if $quality == domflat9 {$this-chord: $chord-domflat9;}
+				@else if $quality == domsharp9 {$this-chord: $chord-domsharp9;}
+				@else if $quality == min9 {$this-chord: $chord-min9;}
+				@else if $quality == maj9 {$this-chord: $chord-maj9;}
+				@else if $quality == perfect5 {$this-chord: $chord-perfect5;}
+				$the-elements: (h1, h2, h3, h4);
+				@each $this-element in $the-elements{
+					@if $element == $this-element {
+						$properties: map-get($this-chord, $this-element);
+						@return map-get($properties, $attribute);}
+					@else {
+						$properties: map-get($chord-min, else);
+						@return map-get($properties, $attribute);}}}}}}

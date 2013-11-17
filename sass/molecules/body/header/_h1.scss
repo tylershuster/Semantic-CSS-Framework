@@ -4,17 +4,17 @@
 // so the h1 element should be used
 //
 // header>h1
-h1{
+&{
 	display: inline-block;
 	float: left;
-	line-height: #{$unit__header--height};
+	line-height: #{$unit-scalar-height-header};
 	margin-top: 0;
 	padding: 0;
 	white-space: nowrap;
 	width: auto;
 	z-index: 110;
 	@include font-properties-for(h2);
-	margin-left: $unit__gutter--width;
+	margin-left: $unit-scalar-gutter;
 	color: $color__header--h1;
-	@include prefixer(transition, all $length__transition $style__animation-ease);
+	@include prefixer(transition, all $unit-time-transition $style-animation-ease);
 }

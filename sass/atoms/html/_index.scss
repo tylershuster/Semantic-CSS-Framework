@@ -3,10 +3,10 @@ html{
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	font-size: #{map-get($keyRatios, $key) - 25%};
-	@include media-from($unit__base-x-two){
+	@include media-from(nth($units-scalar, 2)){
 		font-size:  #{map-get($keyRatios, $key) - 12.5%};
 	}
-	@include media-from($unit__base-x-three){
+	@include media-from(nth($units-scalar, 3)){
 		font-size: map-get($keyRatios, $key);
 	}
 	@import "classes/index";
