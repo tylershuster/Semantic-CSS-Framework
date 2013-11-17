@@ -20,8 +20,7 @@ $classy-number: null !global;
 
 @import "laws/variables";
 @import "laws/normalize";
-@import "laws/musical-typography";
-@import "laws/mixins/font-properties-for";
+@import "laws/Musical-Typography/Musical-Typography";
 @import "laws/mixins/queries";
 
 $keys: a 0.75, b 0.875, c 1.00, d 1.125, e 1.25, f 1.375, g 1.50;

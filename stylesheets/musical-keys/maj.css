@@ -1,189 +1,63 @@
-/* http://24ways.org/2011/composing-the-new-canon/ !*/
-h1 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  padding-top: 0.47rem;
-  padding-bottom: 0.54rem;
-  font-weight: bold;
-  font-style: normal;
-  margin: 0; }
-  h1 > small {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.4rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0;
-    line-height: 1em;
-    display: inline; }
-  h1.uber, .uber h1 {
-    font-size: 3rem;
-    line-height: 4rem;
-    padding-top: 0.94rem;
-    padding-bottom: 1.08rem;
-    font-weight: bold;
-    font-style: normal;
-    margin: 0; }
+/*
+Syntax error: File to import not found or unreadable: laws/mixins/font-properties-for.
+              Load paths:
+                c:/xampp/htdocs/Semantic-CSS-Framework (DEPRECATED)
+                c:/xampp/htdocs/Semantic-CSS-Framework/sass
+                D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.13.alpha.10/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+                c:/xampp/htdocs/Semantic-CSS-Framework/sass
+        on line 4 of sass/musical-keys/maj.scss
 
-h2 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.4rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0; }
-  h2 > small {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.4rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0;
-    line-height: 1em;
-    display: inline; }
-  h2.uber, .uber h2 {
-    font-size: 2.4rem;
-    line-height: 4rem;
-    padding-top: 1.2rem;
-    padding-bottom: 0.8rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0; }
+1: $quality: maj;
+2: 
+3: @import "laws/variables";
+4: @import "laws/mixins/font-properties-for";
+5: @import "laws/mixins/queries";
+6: 
+7: h1{
+8: 	@include font-properties-for(h1);
+9: 	>small{
 
-h3 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.4rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0; }
-  h3 > small {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.4rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0;
-    line-height: 1em;
-    display: inline; }
-  h3.uber, .uber h3 {
-    font-size: 2.4rem;
-    line-height: 4rem;
-    padding-top: 1.2rem;
-    padding-bottom: 0.8rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0; }
-
-h4 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.4rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0; }
-  h4 > small {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.4rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0;
-    line-height: 1em;
-    display: inline; }
-  h4.uber, .uber h4 {
-    font-size: 2.4rem;
-    line-height: 4rem;
-    padding-top: 1.2rem;
-    padding-bottom: 0.8rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0; }
-
-h5 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.4rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0; }
-  h5 > small {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.4rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0;
-    line-height: 1em;
-    display: inline; }
-  h5.uber, .uber h5 {
-    font-size: 2.4rem;
-    line-height: 4rem;
-    padding-top: 1.2rem;
-    padding-bottom: 0.8rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0; }
-
-h6 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.4rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0; }
-  h6 > small {
-    font-size: 1rem;
-    line-height: 2rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.25rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0;
-    line-height: 1em;
-    display: inline; }
-  h6.uber, .uber h6 {
-    font-size: 2.4rem;
-    line-height: 4rem;
-    padding-top: 1.2rem;
-    padding-bottom: 0.8rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0; }
-
-p {
-  font-size: 1rem;
-  line-height: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.25rem;
-  font-weight: normal;
-  font-style: normal;
-  margin: 0; }
-  p > small {
-    font-size: 0.85rem;
-    line-height: 1rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.25rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0;
-    line-height: 1em;
-    display: inline; }
-  p.uber, .uber p {
-    font-size: 2rem;
-    line-height: 4rem;
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0; }
+Backtrace:
+sass/musical-keys/maj.scss:4
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/import_node.rb:66:in `rescue in import'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/import_node.rb:45:in `import'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/import_node.rb:28:in `imported_file'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/import_node.rb:37:in `css_import?'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/perform.rb:278:in `visit_import'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/perform.rb:153:in `block in visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/perform.rb:153:in `visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/base.rb:53:in `map'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit_children'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/perform.rb:174:in `with_environment'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/perform.rb:161:in `visit_children'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/perform.rb:181:in `visit_root'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/perform.rb:152:in `visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/tree/root_node.rb:20:in `render'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/engine.rb:277:in `render'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/plugin/compiler.rb:348:in `update_stylesheet'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/plugin/compiler.rb:192:in `block in update_stylesheets'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/plugin/compiler.rb:189:in `each'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/plugin/compiler.rb:189:in `update_stylesheets'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.0.rc.1/lib/sass/plugin/compiler.rb:277:in `block in watch'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/listener.rb:236:in `call'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/listener.rb:236:in `on_change'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/listener.rb:271:in `block in initialize_adapter'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/adapters/polling.rb:48:in `call'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/adapter.rb:289:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: laws/mixins/font-properties-for.\A               Load paths:\A                 c:/xampp/htdocs/Semantic-CSS-Framework (DEPRECATED)\A                 c:/xampp/htdocs/Semantic-CSS-Framework/sass\A                 D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.13.alpha.10/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A                 c:/xampp/htdocs/Semantic-CSS-Framework/sass\A         on line 4 of sass/musical-keys/maj.scss\A \A 1: $quality: maj;\A 2: \A 3: @import \"laws/variables\";\A 4: @import \"laws/mixins/font-properties-for\";\A 5: @import \"laws/mixins/queries\";\A 6: \A 7: h1{\A 8: 	@include font-properties-for(h1);\A 9: 	>small{"; }
